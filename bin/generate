@@ -1,0 +1,39 @@
+#!/usr/bin/env php
+<?php
+
+if (count($argv) !== 2) {
+    fprintf(STDERR, 'Usage: %s {version}%s', $argv[0], PHP_EOL);
+    fprintf(STDERR, 'Example: %s 12%s', $argv[0], PHP_EOL);
+    exit(1);
+}
+
+use Symfony\Component\Filesystem\Filesystem;
+use PMG\BingAds\Generator\Config;
+use PMG\BingAds\Generator\Generator;
+
+
+require __DIR__.'/../vendor/autoload.php';
+
+const NS = 'PMG\\BingAds\\';
+$version = $argv[1];
+$defaultConfig = [
+    // ...
+];
+
+$configs = [
+    new Config(array_replace($defaultConfig, [
+        'inputFile' => sprintf('https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v%s/AdInsightService.svc?singleWsdl', $version),
+        'endpoint' => sprintf('https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v%s/AdInsightService.svc', $version),
+        'wsdlNamespace' => sprintf('Microsoft.Advertiser.AdInsight.Api.Service.V%s', $version),
+        'outputDir' => __DIR__.'/../src/AdInsight',
+        'namespaceName' => NS.'AdInsight',
+    ])),
+];
+
+$fs = new Filesystem();
+$generator = new Generator();
+
+foreach ($configs as $config) {
+    $fs->remove($config->get('outputDir'));
+    $generator->generate($config);
+}

@@ -16,7 +16,7 @@ final class MicrosoftProvider extends AbstractProvider
     const AUTHORIZE_SANDBOX = 'https://login.live-int.com/oauth20_authorize.srf';
     const TOKEN_PROD = 'https://login.live.com/oauth20_token.srf';
     const TOKEN_SANDBOX = 'https://login.live-int.com/oauth20_token.srf';
-    const DEFAULT_OWNER_URL = 'https://apis.live.net/v5.0/me';
+    const OWNER_PROD = 'https://apis.live.net/v5.0/me';
 
     /**
      * @var string[]
@@ -36,22 +36,34 @@ final class MicrosoftProvider extends AbstractProvider
     /**
      * @var string
      */
-    protected $urlResourceOwnerDetails = self::DEFAULT_OWNER_URL;
+    protected $urlResourceOwnerDetails = self::OWNER_PROD;
 
     public static function fromEnvironment(string $env, array $options) : self
     {
         switch (strtolower($env)) {
             case self::PROD:
-                $options['urlAuthorize'] = self::AUTHORIZE_PROD;
-                $options['urlAccessToken'] = self::TOKEN_PROD;
-                break;
+                return self::production($options);
             case self::SANDBOX:
-                $options['urlAuthorize'] = self::AUTHORIZE_SANDBOX;
-                $options['urlAccessToken'] = self::TOKEN_STANDBOX;
-                break;
+                return self::sandbox($options);
             default:
                 throw new Exception\InvalidApiEnvironment($env);
         }
+    }
+
+    public static function production(array $options) : self
+    {
+        return new self(array_replace($options, [
+            'urlAuthorize' => self::AUTHORIZE_PROD,
+            'urlAccessToken' => self::TOKEN_PROD,
+        ]));
+    }
+
+    public static function sandbox(array $options) : self
+    {
+        return new self(array_replace($options, [
+            'urlAuthorize' => self::AUTHORIZE_SANDBOX,
+            'urlAccessToken' => self::TOKEN_SANDBOX,
+        ]));
     }
 
     /**

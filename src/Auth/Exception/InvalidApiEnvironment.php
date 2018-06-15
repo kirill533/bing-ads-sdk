@@ -2,7 +2,6 @@
 
 namespace PMG\BingAds\Auth\Exception;
 
-use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use PMG\BingAds\BingException;
 use PMG\BingAds\Auth\MicrosoftProvider;
 

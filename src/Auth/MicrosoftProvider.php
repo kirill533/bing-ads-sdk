@@ -3,6 +3,7 @@
 namespace PMG\BingAds\Auth;
 
 use GuzzleHttp\Psr7\Uri;
+use League\OAuth2\Client\Grant\AbstractGrant;
 use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
@@ -37,6 +38,11 @@ final class MicrosoftProvider extends AbstractProvider
      * @var string
      */
     protected $urlResourceOwnerDetails = self::OWNER_PROD;
+
+    /**
+     * @var int
+     */
+    protected $tokenExpiresThreshold = MicrosoftAccessToken::DEFAULT_THRESHOLD;
 
     public static function fromEnvironment(string $env, array $options) : self
     {
@@ -85,6 +91,15 @@ final class MicrosoftProvider extends AbstractProvider
     /**
      * {@inheritdoc}
      */
+    public function getResourceOwnerDetailsUrl(AccessToken $token) : string
+    {
+        $uri = new Uri($this->urlResourceOwnerDetails);
+        return (string) Uri::withQueryValue($uri, 'access_token', (string) $token);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     protected function getDefaultScopes() : array
     {
         return $this->defaultScopes;
@@ -115,9 +130,8 @@ final class MicrosoftProvider extends AbstractProvider
     /**
      * {@inheritdoc}
      */
-    public function getResourceOwnerDetailsUrl(AccessToken $token) : string
+    protected function createAccessToken(array $response, AbstractGrant $grant) : MicrosoftAccessToken
     {
-        $uri = new Uri($this->urlResourceOwnerDetails);
-        return (string) Uri::withQueryValue($uri, 'access_token', (string) $token);
+        return new MicrosoftAccessToken($response, $this->tokenExpiresThreshold);
     }
 }

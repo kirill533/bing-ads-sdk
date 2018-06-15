@@ -97,7 +97,7 @@ final class MicrosoftProvider extends AbstractProvider
     {
         if (isset($data['error'])) {
             throw new Exception\AuthenticationError(
-                self::formatErrorMessage($data),
+                trim(json_encode($data['error']), '"'),
                 $response->getStatusCode(),
                 $response
             );
@@ -119,20 +119,5 @@ final class MicrosoftProvider extends AbstractProvider
     {
         $uri = new Uri($this->urlResourceOwnerDetails);
         return (string) Uri::withQueryValue($uri, 'access_token', (string) $token);
-    }
-
-    private static function formatErrorMessage($data) : string
-    {
-        $reason = $data['error'];
-        if (!is_string($reason)) {
-            $reason = var_export($reason, true);
-        }
-
-        $detail = null;
-        if (!empty($data['error_description'])) {
-            $detail = $data['error_description'];
-        }
-
-        return $detail ? sprintf('%s - %s', $reason, $detail) : $reason;
     }
 }

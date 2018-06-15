@@ -15,11 +15,42 @@ final class MicrosoftResourceOwner implements ResourceOwnerInterface
 
     public function getId() : ?string
     {
-        return $this->data['id'] ?: null;
+        return $this->data['id'] ?? null;
+    }
+
+    public function getEmail() : ?string
+    {
+        return $this->data['emails']['preferred'] ?? null;
+    }
+
+    public function getName() : ?string
+    {
+        return $this->data['name'] ?? null;
     }
 
     public function toArray() : array
     {
         return $this->data;
+    }
+
+    public function __toString() : string
+    {
+        $id = $this->getId();
+        $email = $this->getEmail();
+        $name = $this->getName();
+
+        if ($name && $email) {
+            return sprintf('%s <%s>', $name, $email);
+        }
+
+        if ($email) {
+            return $email;
+        }
+
+        if ($name) {
+            return $name;
+        }
+
+        return (string) $id;
     }
 }

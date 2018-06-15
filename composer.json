@@ -16,5 +16,10 @@
         "psr-4": {
             "PMG\\BingAds\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PMG\\BingAds\\": "test/"
+        }
     }
 }

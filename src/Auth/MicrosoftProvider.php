@@ -10,6 +10,8 @@ use Psr\Http\Message\ResponseInterface;
 
 final class MicrosoftProvider extends AbstractProvider
 {
+    const PROD = 'production';
+    const SANDBOX = 'sandbox';
     const AUTHORIZE_PROD = 'https://login.live.com/oauth20_authorize.srf';
     const AUTHORIZE_SANDBOX = 'https://login.live-int.com/oauth20_authorize.srf';
     const TOKEN_PROD = 'https://login.live.com/oauth20_token.srf';
@@ -35,6 +37,22 @@ final class MicrosoftProvider extends AbstractProvider
      * @var string
      */
     protected $urlResourceOwnerDetails = self::DEFAULT_OWNER_URL;
+
+    public static function fromEnvironment(string $env, array $options) : self
+    {
+        switch (strtolower($env)) {
+            case self::PROD:
+                $options['urlAuthorize'] = self::AUTHORIZE_PROD;
+                $options['urlAccessToken'] = self::TOKEN_PROD;
+                break;
+            case self::SANDBOX:
+                $options['urlAuthorize'] = self::AUTHORIZE_SANDBOX;
+                $options['urlAccessToken'] = self::TOKEN_STANDBOX;
+                break;
+            default:
+                throw new Exception\InvalidApiEnvironment($env);
+        }
+    }
 
     /**
      * {@inheritdoc}
@@ -66,7 +84,7 @@ final class MicrosoftProvider extends AbstractProvider
     protected function checkResponse(ResponseInterface $response, $data) : void
     {
         if (isset($data['error'])) {
-            throw new IdentityProviderException(
+            throw new Exception\AuthenticationError(
                 self::formatErrorMessage($data),
                 $response->getStatusCode(),
                 $response

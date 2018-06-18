@@ -28,6 +28,13 @@ $configs = [
         'outputDir' => __DIR__.'/../src/AdInsight',
         'namespaceName' => NS.'AdInsight',
     ])),
+    new Config(array_replace($defaultConfig, [
+        'inputFile' => sprintf('https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v%s/CampaignManagementService.svc?singleWsdl', $version),
+        'endpoint' => sprintf('https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v%s/CampaignManagementService.svc', $version),
+        'wsdlNamespace' => sprintf('https://bingads.microsoft.com/CampaignManagement/v%s', $version),
+        'outputDir' => __DIR__.'/../src/CampaignManagement',
+        'namespaceName' => NS.'CampaignMangagement',
+    ])),
 ];
 
 $fs = new Filesystem();

@@ -1,0 +1,64 @@
+<?php
+
+namespace PMG\BingAds\CampaignMangagement;
+
+class GetAdGroupsByIdsResponse
+{
+
+    /**
+     * @var ArrayOfAdGroup $AdGroups
+     */
+    protected $AdGroups = null;
+
+    /**
+     * @var ArrayOfBatchError $PartialErrors
+     */
+    protected $PartialErrors = null;
+
+    /**
+     * @param ArrayOfAdGroup $AdGroups
+     * @param ArrayOfBatchError $PartialErrors
+     */
+    public function __construct($AdGroups, $PartialErrors)
+    {
+      $this->AdGroups = $AdGroups;
+      $this->PartialErrors = $PartialErrors;
+    }
+
+    /**
+     * @return ArrayOfAdGroup
+     */
+    public function getAdGroups()
+    {
+      return $this->AdGroups;
+    }
+
+    /**
+     * @param ArrayOfAdGroup $AdGroups
+     * @return \PMG\BingAds\CampaignMangagement\GetAdGroupsByIdsResponse
+     */
+    public function setAdGroups($AdGroups)
+    {
+      $this->AdGroups = $AdGroups;
+      return $this;
+    }
+
+    /**
+     * @return ArrayOfBatchError
+     */
+    public function getPartialErrors()
+    {
+      return $this->PartialErrors;
+    }
+
+    /**
+     * @param ArrayOfBatchError $PartialErrors
+     * @return \PMG\BingAds\CampaignMangagement\GetAdGroupsByIdsResponse
+     */
+    public function setPartialErrors($PartialErrors)
+    {
+      $this->PartialErrors = $PartialErrors;
+      return $this;
+    }
+
+}

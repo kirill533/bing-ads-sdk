@@ -14,7 +14,7 @@ use Wsdl2PhpGenerator\PhpSource\PhpDocComment;
 use Wsdl2PhpGenerator\PhpSource\PhpDocElementFactory;
 use Wsdl2PhpGenerator\PhpSource\PhpFunction;
 use Wsdl2PhpGenerator\PhpSource\PhpVariable;
-use PMG\Ddp\DdpSoapClient;
+use PMG\BingAds\BingSoapClient;
 
 class BingService extends Service
 {
@@ -156,7 +156,7 @@ class BingService extends Service
 
         // Create the class object
        $comment = new PhpDocComment($this->description);
-       $this->class = new PhpClass($name, false, '\\'.DdpSoapClient::class, $comment);
+       $this->class = new PhpClass($name, false, '\\'.BingSoapClient::class, $comment);
 
        $this->class->addConstant($this->config->get('wsdlNamespace'), 'WSDL_NAMESPACE');
        $this->class->addConstant($this->config->get('inputFile'), 'WSDL');

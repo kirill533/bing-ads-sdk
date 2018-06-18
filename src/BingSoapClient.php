@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds;
 
-class BingSoapClient extends \SoapClient
+class BingSoapClient extends \SoapClient implements BingService
 {
 
 }

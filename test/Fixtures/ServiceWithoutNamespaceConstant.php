@@ -6,5 +6,5 @@ use PMG\BingAds\BingService;
 
 class ServiceWithoutNamespaceConstant implements BingService
 {
-
+    use RequestHeadersMethod;
 }

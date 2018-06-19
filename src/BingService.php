@@ -22,6 +22,11 @@ interface BingService
     public function setFaultParser(FaultParser $faults) : void;
 
     /**
+     * Set a message converter for the client
+     */
+    public function setMessageConverter(PsrMessageConverter $converter) : void;
+
+    /**
      * Set the session being used by the client
      */
     public function setSession(BingSession $session) : void;

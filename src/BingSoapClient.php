@@ -2,6 +2,7 @@
 
 namespace PMG\BingAds;
 
+use PMG\BingAds\Exception\ApiException;
 use PMG\BingAds\Exception\LogicException;
 
 class BingSoapClient extends \SoapClient implements BingService
@@ -10,6 +11,16 @@ class BingSoapClient extends \SoapClient implements BingService
      * @var array
      */
     private $classmap;
+
+    /**
+     * @var bool
+     */
+    private $trace;
+
+    /**
+     * @var string
+     */
+    private $wsdlScheme;
 
     /**
      * @var RequestHeaders
@@ -27,6 +38,11 @@ class BingSoapClient extends \SoapClient implements BingService
     private $faults;
 
     /**
+     * @var PsrMessageConverter
+     */
+    private $messageConverter;
+
+    /**
      * @var ServiceDescriptor
      */
     private $serviceDescriptor;
@@ -36,23 +52,36 @@ class BingSoapClient extends \SoapClient implements BingService
         $options['exceptions'] = true;
         parent::__construct($wsdl, $options);
         $this->classmap = $options['classmap'] ?? [];
+        $this->trace = filter_var($options['trace'] ?? false, FILTER_VALIDATE_BOOLEAN);
+        $this->wsdlScheme = parse_url($wsdl, PHP_URL_SCHEME);
         $this->serviceDescriptor = $sd ?? new ServiceDescriptor(new \ReflectionClass($this));
     }
 
     public function __soapCall($func, $args, $options=null, $inputHeaders=null, &$outputHeaders=null)
     {
         try {
-            return parent::__soapCall($func, $args, array_merge(
+            return parent::__soapCall($func, $args, $options, array_merge(
                 (array) $inputHeaders,
                 $this->createSoapHeaders()
             ), $outputHeaders);
         } catch (\SoapFault $fault) {
             $exception = $this->getFaultParser()->toException($fault, $this->classmap);
             if (null !== $exception) {
+                $this->maybePopulateRequestResponse($exception);
                 throw $exception;
             }
             throw $fault;
         }
+    }
+
+    public function __doRequest($request, $location, $action, $version, $oneWay=0)
+    {
+        $resp = parent::__doRequest($request, $location, $action, $version, $oneWay);
+        $this->__last_request = $request;
+
+        print_r($request);
+
+        return $resp;
     }
 
     /**
@@ -105,6 +134,15 @@ class BingSoapClient extends \SoapClient implements BingService
         return $this->faults;
     }
 
+    protected function getMessageConverter() :  PsrMessageConverter
+    {
+        if (!$this->messageConverter) {
+            $this->messageConverter = new PsrMessageConverter();
+        }
+
+        return $this->messageConverter;
+    }
+
     protected function getSession() : BingSession
     {
         if (!$this->session) {
@@ -123,27 +161,23 @@ class BingSoapClient extends \SoapClient implements BingService
         return $this->serviceDescriptor;
     }
 
-    /**
-     * the PHP soap libary does not parse fault responses into the domain
-     * objects provided in `classmap`.
-     *
-     * When a `SoapFault` comes back it's `detail` property will have a `stdObject`
-     * with a single key that is the name of the actual type. That key has a
-     * `stdObject` value with all the properties we need to populate our
-     * API exception object(s).
-     */
-    protected function toLibraryException(\SoapFault $e) : ?ApiException
+    protected function maybePopulateRequestResponse(ApiException $ex) : void
     {
-        if (!isset($e->detail)) {
-            return null;
+        if (!$this->trace) {
+            return;
         }
 
-        $type = key(get_object_vars($e->detail));
-        $fault = current(get_object_vars($e->detail));
+        $request = $this->getMessageConverter()->createRequest(
+            $this->__getLastRequestHeaders(),
+            $this->__getLastRequest(),
+            $this->wsdlScheme // guess that the scheme for requests is the same as the WSDL
+        );
+        $response = $this->getMessageConverter()->createResponse(
+            $this->__getLastResponseHeaders(),
+            $this->__getLastResponse()
+        );
 
-        var_dump($this->__getLastResponse());
-        var_dump($type, $fault);
-
-        return null;
+        $ex->setRequest($request);
+        $ex->setResponse($response);
     }
 }

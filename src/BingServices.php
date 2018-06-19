@@ -19,10 +19,19 @@ class BingServices
      */
     private $faults;
 
-    public function __construct(RequestHeaders $headers=null, FaultParser $faults=null)
-    {
+    /**
+     * @var PsrMessageConverter
+     */
+    private $messageConverter;
+
+    public function __construct(
+        RequestHeaders $headers=null,
+        FaultParser $faults=null,
+        PsrMessageConverter $converter=null
+    ) {
         $this->headers = $headers ?? new RequestHeaders();
         $this->faults = $faults ?? new FaultParser();
+        $this->messageConverter = $converter ?? new PsrMessageConverter();
     }
 
     public function create(string $service, BingSession $session, array $soapOptions=[]) : BingService
@@ -34,6 +43,7 @@ class BingServices
         $service->setSession($session);
         $service->setRequestHeaders($this->headers);
         $service->setFaultParser($this->faults);
+        $service->setMessageConverter($this->messageConverter);
 
         return $service;
     }

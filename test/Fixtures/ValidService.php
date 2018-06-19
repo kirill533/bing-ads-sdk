@@ -7,6 +7,7 @@ use PMG\BingAds\RequestHeaders;
 
 class ValidService implements BingService
 {
+    use ConverterMethod;
     use FaultsMethod;
     use RequestHeadersMethod;
     use SessionMethod;

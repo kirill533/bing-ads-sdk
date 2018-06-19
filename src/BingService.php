@@ -15,4 +15,9 @@ interface BingService
      * Set the request headers implementation for the client.
      */
     public function setRequestHeaders(RequestHeaders $headers) : void;
+
+    /**
+     * Set the session being used by the client
+     */
+    public function setSession(BingSession $session) : void;
 }

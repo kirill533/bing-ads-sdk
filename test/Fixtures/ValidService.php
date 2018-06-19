@@ -8,6 +8,7 @@ use PMG\BingAds\RequestHeaders;
 class ValidService implements BingService
 {
     use RequestHeadersMethod;
+    use SessionMethod;
 
     const WSDL_NAMESPACE = 'testme';
     const WSDL_PROD = 'http://www.example.com/soap.wsdl';

@@ -8,11 +8,12 @@ use League\OAuth2\Client\Provider\AbstractProvider;
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
 use Psr\Http\Message\ResponseInterface;
+use PMG\BingAds\Environments;
 
 final class MicrosoftProvider extends AbstractProvider
 {
-    const PROD = 'production';
-    const SANDBOX = 'sandbox';
+    const PROD = Environments::PROD;
+    const SANDBOX = Environments::SANDBOX;
     const AUTHORIZE_PROD = 'https://login.live.com/oauth20_authorize.srf';
     const AUTHORIZE_SANDBOX = 'https://login.live-int.com/oauth20_authorize.srf';
     const TOKEN_PROD = 'https://login.live.com/oauth20_token.srf';

@@ -194,10 +194,10 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      * @param array $options A array of config values
      * @param string $wsdl The wsdl file to use
      */
-    public function __construct(string $wsdl, array $options=array())
+    public function __construct(string $wsdl, array $options=array(), \PMG\BingAds\ServiceDescriptor $sd=null)
     {
     $options["classmap"] = array_replace(self::$classmap, isset($options["classmap"]) ? $options["classmap"] : []);
-    parent::__construct($wsdl, $options);
+    parent::__construct($wsdl, $options, $sd);
     }
 
     /**

@@ -16,6 +16,30 @@ class BingSoapClient extends \SoapClient implements BingService
      */
     private $session;
 
+    /**
+     * @var ServiceDescriptor
+     */
+    private $serviceDescriptor;
+
+    public function __construct(string $wsdl, array $options=[], ServiceDescriptor $sd=null)
+    {
+        $options['exceptions'] = true;
+        parent::__construct($wsdl, $options);
+        $this->serviceDescriptor = $sd ?? new ServiceDescriptor(new \ReflectionClass($this));
+    }
+
+    public function __soapCall($func, array $args, array $options, $inputHeaders, &$outputHeaders)
+    {
+        try {
+            return parent::__soapCall($func, $args, array_merge(
+                (array) $inputHeaders,
+                $this->createSoapHeaders()
+            ), $outputHeaders);
+        } catch (\SoapFault $e) {
+
+        }
+    }
+
     public function setRequestHeaders(RequestHeaders $headers) : void
     {
         $this->headers = $headers;
@@ -26,9 +50,12 @@ class BingSoapClient extends \SoapClient implements BingService
         $this->session = $session;
     }
 
-    protected function soapHeadersFor(ServiceDescriptor $service, BingSession $session) : array
+    protected function createSoapHeaders() : array
     {
-        return $this->getRequestHeaders()->soapHeaderFor($service, $session);
+        return $this->getRequestHeaders()->soapHeadersFor(
+            $this->getServiceDescriptor(),
+            $this->getSession()
+        );
     }
 
     protected function getRequestHeaders() : RequestHeaders
@@ -51,5 +78,10 @@ class BingSoapClient extends \SoapClient implements BingService
         }
 
         return $this->session;
+    }
+
+    protected function getServiceDescriptor() : ServiceDescriptor
+    {
+        return $this->serviceDescriptor;
     }
 }

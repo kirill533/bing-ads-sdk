@@ -15,6 +15,7 @@ use Wsdl2PhpGenerator\PhpSource\PhpDocElementFactory;
 use Wsdl2PhpGenerator\PhpSource\PhpFunction;
 use Wsdl2PhpGenerator\PhpSource\PhpVariable;
 use PMG\BingAds\BingSoapClient;
+use PMG\BingAds\ServiceDescriptor;
 
 class BingService extends Service
 {
@@ -168,9 +169,15 @@ class BingService extends Service
        $comment->addParam(PhpDocElementFactory::getParam('string', 'wsdl', 'The wsdl file to use'));
 
        $source = '$options["classmap"] = array_replace(self::$classmap, isset($options["classmap"]) ? $options["classmap"] : []);'.PHP_EOL
-           .'parent::__construct($wsdl, $options);'.PHP_EOL;
+           .'parent::__construct($wsdl, $options, $sd);'.PHP_EOL;
 
-       $function = new PhpFunction('public', '__construct', 'string $wsdl, array $options=array()', $source, $comment);
+       $function = new PhpFunction(
+           'public',
+           '__construct',
+           sprintf('string $wsdl, array $options=array(), \\%s $sd=null', ServiceDescriptor::class),
+           $source,
+           $comment
+       );
 
        // Add the constructor
        $this->class->addFunction($function);

@@ -2,19 +2,13 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class AdApiFaultDetail extends ApplicationFault
+class AdApiFault extends ApplicationFault
 {
 
     /**
      * @var ArrayOfAdApiError $Errors
      */
     protected $Errors = null;
-
-    
-    public function __construct()
-    {
-      parent::__construct();
-    }
 
     /**
      * @return ArrayOfAdApiError
@@ -26,7 +20,7 @@ class AdApiFaultDetail extends ApplicationFault
 
     /**
      * @param ArrayOfAdApiError $Errors
-     * @return \PMG\BingAds\CampaignManagement\AdApiFaultDetail
+     * @return \PMG\BingAds\CampaignManagement\AdApiFault
      */
     public function setErrors($Errors)
     {

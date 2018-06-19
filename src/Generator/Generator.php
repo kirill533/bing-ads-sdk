@@ -8,10 +8,36 @@ use Wsdl2PhpGenerator\Operation;
 
 class Generator extends WsdlGenerator
 {
+    const FAULT_TYPES = [
+        'ApplicationFault',
+        'ApiFault',
+        'ApiFaultDetail',
+        'AdApiFaultDetail',
+        'EditorialApiFaultDetail',
+    ];
+
     public function __construct(LoggerInterface $logger=null)
     {
         parent::__construct();
         $this->setLogger($logger ?: new StreamLogger());
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function loadTypes()
+    {
+        parent::loadTypes();
+        foreach (self::FAULT_TYPES as $ft) {
+            if (!isset($this->types[$ft])) {
+                continue;
+            }
+
+            $old = $this->types[$ft];
+            $new = new ExceptionType($this->config, preg_replace('/Detail$/i', '', $ft));
+            $new->copyFrom($old);
+            $this->types[$ft] = $new;
+        }
     }
 
     /**

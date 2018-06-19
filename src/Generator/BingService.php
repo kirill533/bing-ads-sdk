@@ -61,10 +61,7 @@ class BingService extends Service
         $this->identifier = $identifier;
         $this->description = $description;
         $this->operations = array();
-        $this->types = array();
-        foreach ($types as $type) {
-            $this->types[$type->getIdentifier()] = $type;
-        }
+        $this->types = $types;
     }
 
     /**
@@ -188,9 +185,9 @@ class BingService extends Service
        $comment->setVar(PhpDocElementFactory::getVar('array', $name, 'The defined classes'));
 
        $init = array();
-       foreach ($this->types as $type) {
+       foreach ($this->types as $typename => $type) {
            if ($type instanceof ComplexType) {
-               $init[$type->getIdentifier()] = $this->config->get('namespaceName') . "\\" . $type->getPhpIdentifier();
+               $init[$typename] = $this->config->get('namespaceName') . "\\" . $type->getPhpIdentifier();
            }
        }
        $var = new PhpVariable('private static', $name, var_export($init, true), $comment);

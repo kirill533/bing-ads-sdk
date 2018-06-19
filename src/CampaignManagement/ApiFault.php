@@ -1,8 +1,8 @@
 <?php
 
-namespace PMG\BingAds\AdInsight;
+namespace PMG\BingAds\CampaignManagement;
 
-class ApiFaultDetail extends ApplicationFault
+class ApiFault extends ApplicationFault
 {
 
     /**
@@ -15,12 +15,6 @@ class ApiFaultDetail extends ApplicationFault
      */
     protected $OperationErrors = null;
 
-    
-    public function __construct()
-    {
-      parent::__construct();
-    }
-
     /**
      * @return ArrayOfBatchError
      */
@@ -31,7 +25,7 @@ class ApiFaultDetail extends ApplicationFault
 
     /**
      * @param ArrayOfBatchError $BatchErrors
-     * @return \PMG\BingAds\AdInsight\ApiFaultDetail
+     * @return \PMG\BingAds\CampaignManagement\ApiFault
      */
     public function setBatchErrors($BatchErrors)
     {
@@ -49,7 +43,7 @@ class ApiFaultDetail extends ApplicationFault
 
     /**
      * @param ArrayOfOperationError $OperationErrors
-     * @return \PMG\BingAds\AdInsight\ApiFaultDetail
+     * @return \PMG\BingAds\CampaignManagement\ApiFault
      */
     public function setOperationErrors($OperationErrors)
     {

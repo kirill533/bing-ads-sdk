@@ -2,19 +2,13 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ApplicationFault
+class ApplicationFault extends \PMG\BingAds\Exception\ApiException
 {
 
     /**
      * @var string $TrackingId
      */
     protected $TrackingId = null;
-
-    
-    public function __construct()
-    {
-    
-    }
 
     /**
      * @return string

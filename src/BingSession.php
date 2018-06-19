@@ -12,6 +12,9 @@ use League\OAuth2\Client\Token\AccessToken;
  */
 class BingSession
 {
+    const PROD = Environments::PROD;
+    const SANDBOX = Environments::SANDBOX;
+
     /**
      * @var OAuth2Provider
      */
@@ -63,6 +66,11 @@ class BingSession
         $this->customerId = $customerId;
         $this->environment = $environment ? Environments::validate($environment) : Environments::PROD;
         $this->currentToken = $currentToken;
+    }
+
+    public static function builder() : BingSessionBuilder
+    {
+        return new BingSessionBuilder();
     }
 
     public function getRefreshToken() : string

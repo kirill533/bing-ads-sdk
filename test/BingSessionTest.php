@@ -94,6 +94,68 @@ class BingSessionTest extends TestCase
         $this->assertSame($token, $result);
     }
 
+    public function testBuilderCanBeUsedToBuildSession()
+    {
+        $s = BingSession::builder()
+            ->withEnvironment(BingSession::SANDBOX)
+            ->withOAuthClientId('oauthid')
+            ->withOAuthClientSecret('oauthsecret')
+            ->withOAuthRedirectUri('http://localhost/oauth')
+            ->withDeveloperToken('devToken')
+            ->withRefreshToken('ssh')
+            ->withCustomerId('customer')
+            ->withAccountId('account')
+            ->build();
+
+        $this->assertInstanceOf(BingSession::class, $s);
+    }
+
+    public function testSessionCanBeBuildWithOauthProvider()
+    {
+        $s = BingSession::builder()
+            ->withOAuth($this->oauth)
+            ->withDeveloperToken('devToken')
+            ->withRefreshToken('ssh')
+            ->withCustomerId('customer')
+            ->withAccountId('account')
+            ->build();
+
+        $this->assertInstanceOf(BingSession::class, $s);
+    }
+
+    public function testBuildingErrorsWhenOAuthValuesAreNotProvided()
+    {
+        $this->expectException(\LogicException::class);
+        BingSession::builder()
+            ->withDeveloperToken('devToken')
+            ->withRefreshToken('ssh')
+            ->withCustomerId('customer')
+            ->withAccountId('account')
+            ->build();
+    }
+
+    public function testBuildingErrorsWhenRefreshTokenIsNotSet()
+    {
+        $this->expectException(\LogicException::class);
+        BingSession::builder()
+            ->withOAuth($this->oauth)
+            ->withDeveloperToken('devToken')
+            ->withCustomerId('customer')
+            ->withAccountId('account')
+            ->build();
+    }
+
+    public function testBuildingErrorsWhenDeveloperTokenIsNotSet()
+    {
+        $this->expectException(\LogicException::class);
+        BingSession::builder()
+            ->withOAuth($this->oauth)
+            ->withRefreshToken('shhh')
+            ->withCustomerId('customer')
+            ->withAccountId('account')
+            ->build();
+    }
+
     protected function setUp()
     {
         $this->oauth = $this->createMock(OAuth2Provider::class);

@@ -7,12 +7,9 @@ use PMG\BingAds\RequestHeaders;
 
 class ValidService implements BingService
 {
+    use RequestHeadersMethod;
+
     const WSDL_NAMESPACE = 'testme';
-
-    public $headers;
-
-    public function setRequestHeaders(RequestHeaders $headers) : void
-    {
-        $this->headers = $headers;
-    }
+    const WSDL_PROD = 'http://www.example.com/soap.wsdl';
+    const WSDL_SANDBOX = 'http://www.example.com/soap.wsdl';
 }

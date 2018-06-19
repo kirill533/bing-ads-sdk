@@ -2,6 +2,8 @@
 
 namespace PMG\BingAds;
 
+use PMG\BingAds\Exception\InvalidApiEnvironment;
+
 /**
  * The various API environments available for bing.
  *
@@ -9,9 +11,19 @@ namespace PMG\BingAds;
  */
 final class Environments
 {
-    const PROD = 'production';
+    const PROD = 'prod';
     const PRODUCTION = self::PROD;
     const SANDBOX = 'sandbox';
+
+    public static function validate(string $env) : string
+    {
+        $e = strtolower($env);
+        if (!in_array($e, [self::PROD, self::SANDBOX], true)) {
+            throw new InvalidApiEnvironemnt($env);
+        }
+
+        return $e;
+    }
 
     // @codeCoverageIgnoreStart
     private function __construct() {}

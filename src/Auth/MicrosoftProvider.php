@@ -9,6 +9,7 @@ use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use League\OAuth2\Client\Token\AccessToken;
 use Psr\Http\Message\ResponseInterface;
 use PMG\BingAds\Environments;
+use PMG\BingAds\Exception\InvalidApiEnvironment;
 
 final class MicrosoftProvider extends AbstractProvider
 {
@@ -53,7 +54,7 @@ final class MicrosoftProvider extends AbstractProvider
             case self::SANDBOX:
                 return self::sandbox($options);
             default:
-                throw new Exception\InvalidApiEnvironment($env);
+                throw new InvalidApiEnvironment($env);
         }
     }
 

@@ -37,7 +37,9 @@ class ServiceDescriptorTest extends TestCase
     {
         $sd = ServiceDescriptor::fromClassName(ValidService::class);
 
-        $this->assertSame(Fixtures\ValidService::WSDL_NAMESPACE, $sd->getSoapHeaderNamespace());
-        $this->assertSame(Fixtures\ValidService::class, $sd->getClassName());
+        $this->assertSame(ValidService::WSDL_NAMESPACE, $sd->getSoapHeaderNamespace());
+        $this->assertSame(ValidService::class, $sd->getClassName());
+        $this->assertSame(ValidService::WSDL_PROD, $sd->wsdlFor(Environments::PROD));
+        $this->assertSame(ValidService::WSDL_SANDBOX, $sd->wsdlFor(Environments::SANDBOX));
     }
 }

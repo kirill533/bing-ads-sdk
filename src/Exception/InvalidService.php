@@ -16,10 +16,10 @@ final class InvalidService extends \RuntimeException implements BingException
         ));
     }
 
-    public static function noXmlNamespace(string $class) : self
+    public static function missingConstants(string $class) : self
     {
         return new self(sprintf(
-            '"%s" does not have a WSDL_NAMESPACE constant',
+            '"%s" is missing required constants: WSDL_NAMESPACE, WSDL_PROD, or WSDL_SANDBOX',
             $class
         ));
     }

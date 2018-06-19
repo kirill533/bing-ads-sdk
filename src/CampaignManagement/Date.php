@@ -25,7 +25,7 @@ class Date
      * @param int $Month
      * @param int $Year
      */
-    public function __construct($Day, $Month, $Year)
+    public function __construct($Day = null, $Month = null, $Year = null)
     {
       $this->Day = $Day;
       $this->Month = $Month;

@@ -25,7 +25,7 @@ class GetSharedEntityAssociationsByEntityIdsRequest
      * @param string $EntityType
      * @param string $SharedEntityType
      */
-    public function __construct($EntityIds, $EntityType, $SharedEntityType)
+    public function __construct($EntityIds = null, $EntityType = null, $SharedEntityType = null)
     {
       $this->EntityIds = $EntityIds;
       $this->EntityType = $EntityType;

@@ -13,7 +13,7 @@ class GetBSCCountriesResponse
     /**
      * @param ArrayOfstring $CountryCodes
      */
-    public function __construct($CountryCodes)
+    public function __construct($CountryCodes = null)
     {
       $this->CountryCodes = $CountryCodes;
     }

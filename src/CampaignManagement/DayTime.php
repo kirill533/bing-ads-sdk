@@ -37,7 +37,7 @@ class DayTime
      * @param int $StartHour
      * @param Minute $StartMinute
      */
-    public function __construct($Day, $EndHour, $EndMinute, $StartHour, $StartMinute)
+    public function __construct($Day = null, $EndHour = null, $EndMinute = null, $StartHour = null, $StartMinute = null)
     {
       $this->Day = $Day;
       $this->EndHour = $EndHour;

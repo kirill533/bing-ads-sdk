@@ -19,7 +19,7 @@ class GetBudgetsByIdsResponse
      * @param ArrayOfBudget $Budgets
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($Budgets, $PartialErrors)
+    public function __construct($Budgets = null, $PartialErrors = null)
     {
       $this->Budgets = $Budgets;
       $this->PartialErrors = $PartialErrors;

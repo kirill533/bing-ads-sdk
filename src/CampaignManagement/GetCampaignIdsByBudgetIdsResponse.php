@@ -19,7 +19,7 @@ class GetCampaignIdsByBudgetIdsResponse
      * @param ArrayOfIdCollection $CampaignIdCollection
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($CampaignIdCollection, $PartialErrors)
+    public function __construct($CampaignIdCollection = null, $PartialErrors = null)
     {
       $this->CampaignIdCollection = $CampaignIdCollection;
       $this->PartialErrors = $PartialErrors;

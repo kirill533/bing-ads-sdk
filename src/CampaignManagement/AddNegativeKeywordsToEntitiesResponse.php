@@ -19,7 +19,7 @@ class AddNegativeKeywordsToEntitiesResponse
      * @param ArrayOfIdCollection $NegativeKeywordIds
      * @param ArrayOfBatchErrorCollection $NestedPartialErrors
      */
-    public function __construct($NegativeKeywordIds, $NestedPartialErrors)
+    public function __construct($NegativeKeywordIds = null, $NestedPartialErrors = null)
     {
       $this->NegativeKeywordIds = $NegativeKeywordIds;
       $this->NestedPartialErrors = $NestedPartialErrors;

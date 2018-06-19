@@ -25,7 +25,7 @@ class GetAdGroupCriterionsByIdsRequest
      * @param int $AdGroupId
      * @param AdGroupCriterionType $CriterionType
      */
-    public function __construct($AdGroupCriterionIds, $AdGroupId, $CriterionType)
+    public function __construct($AdGroupCriterionIds = null, $AdGroupId = null, $CriterionType = null)
     {
       $this->AdGroupCriterionIds = $AdGroupCriterionIds;
       $this->AdGroupId = $AdGroupId;

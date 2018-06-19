@@ -13,7 +13,7 @@ class GetEstimatedBidByKeywordIdsResponse
     /**
      * @param ArrayOfKeywordIdEstimatedBid $KeywordEstimatedBids
      */
-    public function __construct($KeywordEstimatedBids)
+    public function __construct($KeywordEstimatedBids = null)
     {
       $this->KeywordEstimatedBids = $KeywordEstimatedBids;
     }

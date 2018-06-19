@@ -25,7 +25,7 @@ class GetAdsByEditorialStatusRequest
      * @param AdEditorialStatus $EditorialStatus
      * @param ArrayOfAdType $AdTypes
      */
-    public function __construct($AdGroupId, $EditorialStatus, $AdTypes)
+    public function __construct($AdGroupId = null, $EditorialStatus = null, $AdTypes = null)
     {
       $this->AdGroupId = $AdGroupId;
       $this->EditorialStatus = $EditorialStatus;

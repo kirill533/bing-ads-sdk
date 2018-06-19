@@ -13,7 +13,7 @@ class GetListItemsBySharedListRequest
     /**
      * @param SharedList $SharedList
      */
-    public function __construct($SharedList)
+    public function __construct($SharedList = null)
     {
       $this->SharedList = $SharedList;
     }

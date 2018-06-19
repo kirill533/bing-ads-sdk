@@ -13,7 +13,7 @@ class GetKeywordsByAdGroupIdResponse
     /**
      * @param ArrayOfKeyword $Keywords
      */
-    public function __construct($Keywords)
+    public function __construct($Keywords = null)
     {
       $this->Keywords = $Keywords;
     }

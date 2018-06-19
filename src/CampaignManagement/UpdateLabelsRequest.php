@@ -13,7 +13,7 @@ class UpdateLabelsRequest
     /**
      * @param ArrayOfLabel $Labels
      */
-    public function __construct($Labels)
+    public function __construct($Labels = null)
     {
       $this->Labels = $Labels;
     }

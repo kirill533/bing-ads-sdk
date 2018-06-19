@@ -18,7 +18,7 @@ class AccountMigrationStatusesInfo
     /**
      * @param int $AccountId
      */
-    public function __construct($AccountId)
+    public function __construct($AccountId = null)
     {
       $this->AccountId = $AccountId;
     }

@@ -13,7 +13,7 @@ class GetCampaignsByAccountIdResponse
     /**
      * @param ArrayOfCampaign $Campaigns
      */
-    public function __construct($Campaigns)
+    public function __construct($Campaigns = null)
     {
       $this->Campaigns = $Campaigns;
     }

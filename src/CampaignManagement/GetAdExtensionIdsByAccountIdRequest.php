@@ -25,7 +25,7 @@ class GetAdExtensionIdsByAccountIdRequest
      * @param AdExtensionsTypeFilter $AdExtensionType
      * @param AssociationType $AssociationType
      */
-    public function __construct($AccountId, $AdExtensionType, $AssociationType)
+    public function __construct($AccountId = null, $AdExtensionType = null, $AssociationType = null)
     {
       $this->AccountId = $AccountId;
       $this->AdExtensionType = $AdExtensionType;

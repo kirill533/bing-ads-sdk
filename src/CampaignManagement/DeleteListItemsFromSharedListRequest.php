@@ -19,7 +19,7 @@ class DeleteListItemsFromSharedListRequest
      * @param ArrayOflong $ListItemIds
      * @param SharedList $SharedList
      */
-    public function __construct($ListItemIds, $SharedList)
+    public function __construct($ListItemIds = null, $SharedList = null)
     {
       $this->ListItemIds = $ListItemIds;
       $this->SharedList = $SharedList;

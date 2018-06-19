@@ -31,7 +31,7 @@ class GetAdExtensionsAssociationsRequest
      * @param AssociationType $AssociationType
      * @param ArrayOflong $EntityIds
      */
-    public function __construct($AccountId, $AdExtensionType, $AssociationType, $EntityIds)
+    public function __construct($AccountId = null, $AdExtensionType = null, $AssociationType = null, $EntityIds = null)
     {
       $this->AccountId = $AccountId;
       $this->AdExtensionType = $AdExtensionType;

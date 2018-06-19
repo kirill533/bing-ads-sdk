@@ -19,7 +19,7 @@ class DeleteLabelAssociationsRequest
      * @param EntityType $EntityType
      * @param ArrayOfLabelAssociation $LabelAssociations
      */
-    public function __construct($EntityType, $LabelAssociations)
+    public function __construct($EntityType = null, $LabelAssociations = null)
     {
       $this->EntityType = $EntityType;
       $this->LabelAssociations = $LabelAssociations;

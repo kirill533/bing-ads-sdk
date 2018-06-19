@@ -13,7 +13,7 @@ class GetKeywordCategoriesResponse
     /**
      * @param ArrayOfKeywordCategoryResult $Result
      */
-    public function __construct($Result)
+    public function __construct($Result = null)
     {
       $this->Result = $Result;
     }

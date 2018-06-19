@@ -29,7 +29,7 @@ class AdExtensionAssociation
      * @param AssociationType $AssociationType
      * @param int $EntityId
      */
-    public function __construct($AssociationType, $EntityId)
+    public function __construct($AssociationType = null, $EntityId = null)
     {
       $this->AssociationType = $AssociationType;
       $this->EntityId = $EntityId;

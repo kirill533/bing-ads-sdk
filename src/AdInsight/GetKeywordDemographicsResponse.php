@@ -13,7 +13,7 @@ class GetKeywordDemographicsResponse
     /**
      * @param ArrayOfKeywordDemographicResult $KeywordDemographicResult
      */
-    public function __construct($KeywordDemographicResult)
+    public function __construct($KeywordDemographicResult = null)
     {
       $this->KeywordDemographicResult = $KeywordDemographicResult;
     }

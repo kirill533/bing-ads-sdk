@@ -25,7 +25,7 @@ class GetCampaignCriterionsByIdsRequest
      * @param int $CampaignId
      * @param CampaignCriterionType $CriterionType
      */
-    public function __construct($CampaignCriterionIds, $CampaignId, $CriterionType)
+    public function __construct($CampaignCriterionIds = null, $CampaignId = null, $CriterionType = null)
     {
       $this->CampaignCriterionIds = $CampaignCriterionIds;
       $this->CampaignId = $CampaignId;

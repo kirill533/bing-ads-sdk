@@ -13,7 +13,7 @@ class GetBidLandscapeByAdGroupIdsResponse
     /**
      * @param ArrayOfAdGroupBidLandscape $BidLandscape
      */
-    public function __construct($BidLandscape)
+    public function __construct($BidLandscape = null)
     {
       $this->BidLandscape = $BidLandscape;
     }

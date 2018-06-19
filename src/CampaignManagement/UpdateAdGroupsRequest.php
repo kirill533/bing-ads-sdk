@@ -31,7 +31,7 @@ class UpdateAdGroupsRequest
      * @param boolean $UpdateAudienceAdsBidAdjustment
      * @param boolean $ReturnInheritedBidStrategyTypes
      */
-    public function __construct($CampaignId, $AdGroups, $UpdateAudienceAdsBidAdjustment, $ReturnInheritedBidStrategyTypes)
+    public function __construct($CampaignId = null, $AdGroups = null, $UpdateAudienceAdsBidAdjustment = null, $ReturnInheritedBidStrategyTypes = null)
     {
       $this->CampaignId = $CampaignId;
       $this->AdGroups = $AdGroups;

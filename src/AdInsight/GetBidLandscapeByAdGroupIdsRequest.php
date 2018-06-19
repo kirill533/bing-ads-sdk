@@ -13,7 +13,7 @@ class GetBidLandscapeByAdGroupIdsRequest
     /**
      * @param ArrayOfAdGroupBidLandscapeInput $AdGroupBidLandscapeInputs
      */
-    public function __construct($AdGroupBidLandscapeInputs)
+    public function __construct($AdGroupBidLandscapeInputs = null)
     {
       $this->AdGroupBidLandscapeInputs = $AdGroupBidLandscapeInputs;
     }

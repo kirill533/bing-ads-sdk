@@ -55,7 +55,7 @@ class GetEstimatedPositionByKeywordsRequest
      * @param int $CampaignId
      * @param int $AdGroupId
      */
-    public function __construct($Keywords, $MaxBid, $Language, $LocationIds, $CurrencyCode, $MatchTypes, $CampaignId, $AdGroupId)
+    public function __construct($Keywords = null, $MaxBid = null, $Language = null, $LocationIds = null, $CurrencyCode = null, $MatchTypes = null, $CampaignId = null, $AdGroupId = null)
     {
       $this->Keywords = $Keywords;
       $this->MaxBid = $MaxBid;

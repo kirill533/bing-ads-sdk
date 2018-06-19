@@ -19,7 +19,7 @@ class AddAudiencesResponse
      * @param ArrayOfNullableOflong $AudienceIds
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($AudienceIds, $PartialErrors)
+    public function __construct($AudienceIds = null, $PartialErrors = null)
     {
       $this->AudienceIds = $AudienceIds;
       $this->PartialErrors = $PartialErrors;

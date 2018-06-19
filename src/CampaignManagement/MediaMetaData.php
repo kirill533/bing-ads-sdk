@@ -28,7 +28,7 @@ class MediaMetaData
     /**
      * @param int $Id
      */
-    public function __construct($Id)
+    public function __construct($Id = null)
     {
       $this->Id = $Id;
     }

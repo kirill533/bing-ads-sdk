@@ -13,7 +13,7 @@ class GetAdExtensionIdsByAccountIdResponse
     /**
      * @param ArrayOflong $AdExtensionIds
      */
-    public function __construct($AdExtensionIds)
+    public function __construct($AdExtensionIds = null)
     {
       $this->AdExtensionIds = $AdExtensionIds;
     }

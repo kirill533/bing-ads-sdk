@@ -13,7 +13,7 @@ class ApplyProductPartitionActionsRequest
     /**
      * @param ArrayOfAdGroupCriterionAction $CriterionActions
      */
-    public function __construct($CriterionActions)
+    public function __construct($CriterionActions = null)
     {
       $this->CriterionActions = $CriterionActions;
     }

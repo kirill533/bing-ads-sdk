@@ -13,7 +13,7 @@ class GetDomainCategoriesResponse
     /**
      * @param ArrayOfDomainCategory $Categories
      */
-    public function __construct($Categories)
+    public function __construct($Categories = null)
     {
       $this->Categories = $Categories;
     }

@@ -19,7 +19,7 @@ class GetKeywordsByIdsResponse
      * @param ArrayOfKeyword $Keywords
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($Keywords, $PartialErrors)
+    public function __construct($Keywords = null, $PartialErrors = null)
     {
       $this->Keywords = $Keywords;
       $this->PartialErrors = $PartialErrors;

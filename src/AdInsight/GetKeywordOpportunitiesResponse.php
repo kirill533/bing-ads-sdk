@@ -13,7 +13,7 @@ class GetKeywordOpportunitiesResponse
     /**
      * @param ArrayOfKeywordOpportunity $Opportunities
      */
-    public function __construct($Opportunities)
+    public function __construct($Opportunities = null)
     {
       $this->Opportunities = $Opportunities;
     }

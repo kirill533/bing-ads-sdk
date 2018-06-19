@@ -13,7 +13,7 @@ class GetBMCStoresByCustomerIdResponse
     /**
      * @param ArrayOfBMCStore $BMCStores
      */
-    public function __construct($BMCStores)
+    public function __construct($BMCStores = null)
     {
       $this->BMCStores = $BMCStores;
     }

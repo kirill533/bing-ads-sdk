@@ -19,7 +19,7 @@ class GetMediaMetaDataByIdsResponse
      * @param ArrayOfMediaMetaData $MediaMetaData
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($MediaMetaData, $PartialErrors)
+    public function __construct($MediaMetaData = null, $PartialErrors = null)
     {
       $this->MediaMetaData = $MediaMetaData;
       $this->PartialErrors = $PartialErrors;

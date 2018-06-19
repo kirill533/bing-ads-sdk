@@ -13,7 +13,7 @@ class GetHistoricalSearchCountResponse
     /**
      * @param ArrayOfKeywordSearchCount $KeywordSearchCounts
      */
-    public function __construct($KeywordSearchCounts)
+    public function __construct($KeywordSearchCounts = null)
     {
       $this->KeywordSearchCounts = $KeywordSearchCounts;
     }

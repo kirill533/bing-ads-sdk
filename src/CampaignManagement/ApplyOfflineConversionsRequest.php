@@ -13,7 +13,7 @@ class ApplyOfflineConversionsRequest
     /**
      * @param ArrayOfOfflineConversion $OfflineConversions
      */
-    public function __construct($OfflineConversions)
+    public function __construct($OfflineConversions = null)
     {
       $this->OfflineConversions = $OfflineConversions;
     }

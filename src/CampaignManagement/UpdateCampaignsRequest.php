@@ -19,7 +19,7 @@ class UpdateCampaignsRequest
      * @param int $AccountId
      * @param ArrayOfCampaign $Campaigns
      */
-    public function __construct($AccountId, $Campaigns)
+    public function __construct($AccountId = null, $Campaigns = null)
     {
       $this->AccountId = $AccountId;
       $this->Campaigns = $Campaigns;

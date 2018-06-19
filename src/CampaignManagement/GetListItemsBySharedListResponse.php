@@ -13,7 +13,7 @@ class GetListItemsBySharedListResponse
     /**
      * @param ArrayOfSharedListItem $ListItems
      */
-    public function __construct($ListItems)
+    public function __construct($ListItems = null)
     {
       $this->ListItems = $ListItems;
     }

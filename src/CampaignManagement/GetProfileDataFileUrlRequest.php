@@ -19,7 +19,7 @@ class GetProfileDataFileUrlRequest
      * @param string $LanguageLocale
      * @param ProfileType $ProfileType
      */
-    public function __construct($LanguageLocale, $ProfileType)
+    public function __construct($LanguageLocale = null, $ProfileType = null)
     {
       $this->LanguageLocale = $LanguageLocale;
       $this->ProfileType = $ProfileType;

@@ -25,7 +25,7 @@ class GetNegativeKeywordsByEntityIdsRequest
      * @param string $EntityType
      * @param int $ParentEntityId
      */
-    public function __construct($EntityIds, $EntityType, $ParentEntityId)
+    public function __construct($EntityIds = null, $EntityType = null, $ParentEntityId = null)
     {
       $this->EntityIds = $EntityIds;
       $this->EntityType = $EntityType;

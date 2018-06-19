@@ -19,7 +19,7 @@ class SetNegativeSitesToCampaignsRequest
      * @param int $AccountId
      * @param ArrayOfCampaignNegativeSites $CampaignNegativeSites
      */
-    public function __construct($AccountId, $CampaignNegativeSites)
+    public function __construct($AccountId = null, $CampaignNegativeSites = null)
     {
       $this->AccountId = $AccountId;
       $this->CampaignNegativeSites = $CampaignNegativeSites;

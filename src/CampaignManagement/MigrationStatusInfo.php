@@ -23,7 +23,7 @@ class MigrationStatusInfo
     /**
      * @param MigrationStatus $Status
      */
-    public function __construct($Status)
+    public function __construct($Status = null)
     {
       $this->Status = $Status;
     }

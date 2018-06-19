@@ -19,7 +19,7 @@ class GetNegativeSitesByAdGroupIdsResponse
      * @param ArrayOfAdGroupNegativeSites $AdGroupNegativeSites
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($AdGroupNegativeSites, $PartialErrors)
+    public function __construct($AdGroupNegativeSites = null, $PartialErrors = null)
     {
       $this->AdGroupNegativeSites = $AdGroupNegativeSites;
       $this->PartialErrors = $PartialErrors;

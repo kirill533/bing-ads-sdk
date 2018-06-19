@@ -19,7 +19,7 @@ class AddCampaignsResponse
      * @param ArrayOfNullableOflong $CampaignIds
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($CampaignIds, $PartialErrors)
+    public function __construct($CampaignIds = null, $PartialErrors = null)
     {
       $this->CampaignIds = $CampaignIds;
       $this->PartialErrors = $PartialErrors;

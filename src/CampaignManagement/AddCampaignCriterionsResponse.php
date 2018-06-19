@@ -25,7 +25,7 @@ class AddCampaignCriterionsResponse
      * @param boolean $IsMigrated
      * @param ArrayOfBatchErrorCollection $NestedPartialErrors
      */
-    public function __construct($CampaignCriterionIds, $IsMigrated, $NestedPartialErrors)
+    public function __construct($CampaignCriterionIds = null, $IsMigrated = null, $NestedPartialErrors = null)
     {
       $this->CampaignCriterionIds = $CampaignCriterionIds;
       $this->IsMigrated = $IsMigrated;

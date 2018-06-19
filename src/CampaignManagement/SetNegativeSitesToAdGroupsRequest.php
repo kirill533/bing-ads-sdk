@@ -19,7 +19,7 @@ class SetNegativeSitesToAdGroupsRequest
      * @param int $CampaignId
      * @param ArrayOfAdGroupNegativeSites $AdGroupNegativeSites
      */
-    public function __construct($CampaignId, $AdGroupNegativeSites)
+    public function __construct($CampaignId = null, $AdGroupNegativeSites = null)
     {
       $this->CampaignId = $CampaignId;
       $this->AdGroupNegativeSites = $AdGroupNegativeSites;

@@ -13,7 +13,7 @@ class SetSharedEntityAssociationsRequest
     /**
      * @param ArrayOfSharedEntityAssociation $Associations
      */
-    public function __construct($Associations)
+    public function __construct($Associations = null)
     {
       $this->Associations = $Associations;
     }

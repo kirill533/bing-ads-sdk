@@ -19,7 +19,7 @@ class AddAdExtensionsRequest
      * @param int $AccountId
      * @param ArrayOfAdExtension $AdExtensions
      */
-    public function __construct($AccountId, $AdExtensions)
+    public function __construct($AccountId = null, $AdExtensions = null)
     {
       $this->AccountId = $AccountId;
       $this->AdExtensions = $AdExtensions;

@@ -13,7 +13,7 @@ class GetAdGroupsByCampaignIdResponse
     /**
      * @param ArrayOfAdGroup $AdGroups
      */
-    public function __construct($AdGroups)
+    public function __construct($AdGroups = null)
     {
       $this->AdGroups = $AdGroups;
     }

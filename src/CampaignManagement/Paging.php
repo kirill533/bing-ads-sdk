@@ -19,7 +19,7 @@ class Paging
      * @param int $Index
      * @param int $Size
      */
-    public function __construct($Index, $Size)
+    public function __construct($Index = null, $Size = null)
     {
       $this->Index = $Index;
       $this->Size = $Size;

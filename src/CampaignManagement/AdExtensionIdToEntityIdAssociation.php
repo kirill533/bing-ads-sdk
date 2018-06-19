@@ -19,7 +19,7 @@ class AdExtensionIdToEntityIdAssociation
      * @param int $AdExtensionId
      * @param int $EntityId
      */
-    public function __construct($AdExtensionId, $EntityId)
+    public function __construct($AdExtensionId = null, $EntityId = null)
     {
       $this->AdExtensionId = $AdExtensionId;
       $this->EntityId = $EntityId;

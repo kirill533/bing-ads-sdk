@@ -19,7 +19,7 @@ class AddAdGroupCriterionsRequest
      * @param ArrayOfAdGroupCriterion $AdGroupCriterions
      * @param AdGroupCriterionType $CriterionType
      */
-    public function __construct($AdGroupCriterions, $CriterionType)
+    public function __construct($AdGroupCriterions = null, $CriterionType = null)
     {
       $this->AdGroupCriterions = $AdGroupCriterions;
       $this->CriterionType = $CriterionType;

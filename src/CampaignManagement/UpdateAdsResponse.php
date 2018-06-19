@@ -13,7 +13,7 @@ class UpdateAdsResponse
     /**
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($PartialErrors)
+    public function __construct($PartialErrors = null)
     {
       $this->PartialErrors = $PartialErrors;
     }

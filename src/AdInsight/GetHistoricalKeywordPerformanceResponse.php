@@ -13,7 +13,7 @@ class GetHistoricalKeywordPerformanceResponse
     /**
      * @param ArrayOfKeywordHistoricalPerformance $KeywordHistoricalPerformances
      */
-    public function __construct($KeywordHistoricalPerformances)
+    public function __construct($KeywordHistoricalPerformances = null)
     {
       $this->KeywordHistoricalPerformances = $KeywordHistoricalPerformances;
     }

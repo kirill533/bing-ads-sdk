@@ -37,7 +37,7 @@ class SuggestKeywordsForUrlRequest
      * @param float $MinConfidenceScore
      * @param boolean $ExcludeBrand
      */
-    public function __construct($Url, $Language, $MaxKeywords, $MinConfidenceScore, $ExcludeBrand)
+    public function __construct($Url = null, $Language = null, $MaxKeywords = null, $MinConfidenceScore = null, $ExcludeBrand = null)
     {
       $this->Url = $Url;
       $this->Language = $Language;

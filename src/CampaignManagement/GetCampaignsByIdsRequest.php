@@ -25,7 +25,7 @@ class GetCampaignsByIdsRequest
      * @param ArrayOflong $CampaignIds
      * @param CampaignType $CampaignType
      */
-    public function __construct($AccountId, $CampaignIds, $CampaignType)
+    public function __construct($AccountId = null, $CampaignIds = null, $CampaignType = null)
     {
       $this->AccountId = $AccountId;
       $this->CampaignIds = $CampaignIds;

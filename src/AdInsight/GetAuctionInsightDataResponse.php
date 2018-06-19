@@ -13,7 +13,7 @@ class GetAuctionInsightDataResponse
     /**
      * @param AuctionInsightResult $Result
      */
-    public function __construct($Result)
+    public function __construct($Result = null)
     {
       $this->Result = $Result;
     }

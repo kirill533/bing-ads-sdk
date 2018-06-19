@@ -19,7 +19,7 @@ class UpdateAdsRequest
      * @param int $AdGroupId
      * @param ArrayOfAd $Ads
      */
-    public function __construct($AdGroupId, $Ads)
+    public function __construct($AdGroupId = null, $Ads = null)
     {
       $this->AdGroupId = $AdGroupId;
       $this->Ads = $Ads;

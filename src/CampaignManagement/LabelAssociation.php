@@ -19,7 +19,7 @@ class LabelAssociation
      * @param int $EntityId
      * @param int $LabelId
      */
-    public function __construct($EntityId, $LabelId)
+    public function __construct($EntityId = null, $LabelId = null)
     {
       $this->EntityId = $EntityId;
       $this->LabelId = $LabelId;

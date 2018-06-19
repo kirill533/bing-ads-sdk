@@ -19,7 +19,7 @@ class GetAudiencesByIdsRequest
      * @param ArrayOflong $AudienceIds
      * @param AudienceType $Type
      */
-    public function __construct($AudienceIds, $Type)
+    public function __construct($AudienceIds = null, $Type = null)
     {
       $this->AudienceIds = $AudienceIds;
       $this->Type = $Type;

@@ -19,7 +19,7 @@ class GetNegativeSitesByCampaignIdsResponse
      * @param ArrayOfCampaignNegativeSites $CampaignNegativeSites
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($CampaignNegativeSites, $PartialErrors)
+    public function __construct($CampaignNegativeSites = null, $PartialErrors = null)
     {
       $this->CampaignNegativeSites = $CampaignNegativeSites;
       $this->PartialErrors = $PartialErrors;

@@ -19,7 +19,7 @@ class GetEstimatedBidByKeywordIdsRequest
      * @param ArrayOflong $KeywordIds
      * @param TargetAdPosition $TargetPositionForAds
      */
-    public function __construct($KeywordIds, $TargetPositionForAds)
+    public function __construct($KeywordIds = null, $TargetPositionForAds = null)
     {
       $this->KeywordIds = $KeywordIds;
       $this->TargetPositionForAds = $TargetPositionForAds;

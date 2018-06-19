@@ -19,7 +19,7 @@ class GetConversionGoalsByTagIdsRequest
      * @param ArrayOflong $TagIds
      * @param ConversionGoalType $ConversionGoalTypes
      */
-    public function __construct($TagIds, $ConversionGoalTypes)
+    public function __construct($TagIds = null, $ConversionGoalTypes = null)
     {
       $this->TagIds = $TagIds;
       $this->ConversionGoalTypes = $ConversionGoalTypes;

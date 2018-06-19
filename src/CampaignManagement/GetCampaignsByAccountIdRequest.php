@@ -19,7 +19,7 @@ class GetCampaignsByAccountIdRequest
      * @param int $AccountId
      * @param CampaignType $CampaignType
      */
-    public function __construct($AccountId, $CampaignType)
+    public function __construct($AccountId = null, $CampaignType = null)
     {
       $this->AccountId = $AccountId;
       $this->CampaignType = $CampaignType;

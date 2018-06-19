@@ -13,7 +13,7 @@ class GetUetTagsByIdsRequest
     /**
      * @param ArrayOflong $TagIds
      */
-    public function __construct($TagIds)
+    public function __construct($TagIds = null)
     {
       $this->TagIds = $TagIds;
     }

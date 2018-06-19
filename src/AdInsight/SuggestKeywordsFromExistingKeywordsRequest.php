@@ -61,7 +61,7 @@ class SuggestKeywordsFromExistingKeywordsRequest
      * @param int $AdGroupId
      * @param int $CampaignId
      */
-    public function __construct($Keywords, $Language, $PublisherCountries, $MaxSuggestionsPerKeyword, $SuggestionType, $RemoveDuplicates, $ExcludeBrand, $AdGroupId, $CampaignId)
+    public function __construct($Keywords = null, $Language = null, $PublisherCountries = null, $MaxSuggestionsPerKeyword = null, $SuggestionType = null, $RemoveDuplicates = null, $ExcludeBrand = null, $AdGroupId = null, $CampaignId = null)
     {
       $this->Keywords = $Keywords;
       $this->Language = $Language;

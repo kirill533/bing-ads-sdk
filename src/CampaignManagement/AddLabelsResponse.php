@@ -19,7 +19,7 @@ class AddLabelsResponse
      * @param ArrayOfNullableOflong $LabelIds
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($LabelIds, $PartialErrors)
+    public function __construct($LabelIds = null, $PartialErrors = null)
     {
       $this->LabelIds = $LabelIds;
       $this->PartialErrors = $PartialErrors;

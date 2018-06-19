@@ -19,7 +19,7 @@ class GetGeoLocationsFileUrlRequest
      * @param string $Version
      * @param string $LanguageLocale
      */
-    public function __construct($Version, $LanguageLocale)
+    public function __construct($Version = null, $LanguageLocale = null)
     {
       $this->Version = $Version;
       $this->LanguageLocale = $LanguageLocale;

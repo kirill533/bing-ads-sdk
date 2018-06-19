@@ -19,7 +19,7 @@ class UpdateKeywordsResponse
      * @param ArrayOfstring $InheritedBidStrategyTypes
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($InheritedBidStrategyTypes, $PartialErrors)
+    public function __construct($InheritedBidStrategyTypes = null, $PartialErrors = null)
     {
       $this->InheritedBidStrategyTypes = $InheritedBidStrategyTypes;
       $this->PartialErrors = $PartialErrors;

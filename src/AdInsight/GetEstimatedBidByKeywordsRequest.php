@@ -55,7 +55,7 @@ class GetEstimatedBidByKeywordsRequest
      * @param int $AdGroupId
      * @param string $EntityLevelBid
      */
-    public function __construct($Keywords, $TargetPositionForAds, $Language, $LocationIds, $CurrencyCode, $CampaignId, $AdGroupId, $EntityLevelBid)
+    public function __construct($Keywords = null, $TargetPositionForAds = null, $Language = null, $LocationIds = null, $CurrencyCode = null, $CampaignId = null, $AdGroupId = null, $EntityLevelBid = null)
     {
       $this->Keywords = $Keywords;
       $this->TargetPositionForAds = $TargetPositionForAds;

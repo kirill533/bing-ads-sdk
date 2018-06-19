@@ -19,7 +19,7 @@ class GetSharedEntityAssociationsBySharedEntityIdsResponse
      * @param ArrayOfSharedEntityAssociation $Associations
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($Associations, $PartialErrors)
+    public function __construct($Associations = null, $PartialErrors = null)
     {
       $this->Associations = $Associations;
       $this->PartialErrors = $PartialErrors;

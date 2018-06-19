@@ -25,7 +25,7 @@ class GetAdsByIdsRequest
      * @param ArrayOflong $AdIds
      * @param ArrayOfAdType $AdTypes
      */
-    public function __construct($AdGroupId, $AdIds, $AdTypes)
+    public function __construct($AdGroupId = null, $AdIds = null, $AdTypes = null)
     {
       $this->AdGroupId = $AdGroupId;
       $this->AdIds = $AdIds;

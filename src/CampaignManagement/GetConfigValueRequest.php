@@ -13,7 +13,7 @@ class GetConfigValueRequest
     /**
      * @param string $ConfigKey
      */
-    public function __construct($ConfigKey)
+    public function __construct($ConfigKey = null)
     {
       $this->ConfigKey = $ConfigKey;
     }

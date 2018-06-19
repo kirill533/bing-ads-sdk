@@ -19,7 +19,7 @@ class DeleteAdExtensionsRequest
      * @param int $AccountId
      * @param ArrayOflong $AdExtensionIds
      */
-    public function __construct($AccountId, $AdExtensionIds)
+    public function __construct($AccountId = null, $AdExtensionIds = null)
     {
       $this->AccountId = $AccountId;
       $this->AdExtensionIds = $AdExtensionIds;

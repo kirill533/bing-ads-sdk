@@ -13,7 +13,7 @@ class GetKeywordLocationsResponse
     /**
      * @param ArrayOfKeywordLocationResult $KeywordLocationResult
      */
-    public function __construct($KeywordLocationResult)
+    public function __construct($KeywordLocationResult = null)
     {
       $this->KeywordLocationResult = $KeywordLocationResult;
     }

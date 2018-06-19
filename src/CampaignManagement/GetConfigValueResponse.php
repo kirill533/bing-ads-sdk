@@ -13,7 +13,7 @@ class GetConfigValueResponse
     /**
      * @param string $ConfigValue
      */
-    public function __construct($ConfigValue)
+    public function __construct($ConfigValue = null)
     {
       $this->ConfigValue = $ConfigValue;
     }

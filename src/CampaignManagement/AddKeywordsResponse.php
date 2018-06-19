@@ -25,7 +25,7 @@ class AddKeywordsResponse
      * @param ArrayOfNullableOflong $KeywordIds
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($InheritedBidStrategyTypes, $KeywordIds, $PartialErrors)
+    public function __construct($InheritedBidStrategyTypes = null, $KeywordIds = null, $PartialErrors = null)
     {
       $this->InheritedBidStrategyTypes = $InheritedBidStrategyTypes;
       $this->KeywordIds = $KeywordIds;

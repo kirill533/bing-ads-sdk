@@ -13,7 +13,7 @@ class GetMediaMetaDataByAccountIdRequest
     /**
      * @param MediaEnabledEntityFilter $MediaEnabledEntities
      */
-    public function __construct($MediaEnabledEntities)
+    public function __construct($MediaEnabledEntities = null)
     {
       $this->MediaEnabledEntities = $MediaEnabledEntities;
     }

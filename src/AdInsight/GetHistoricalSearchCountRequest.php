@@ -49,7 +49,7 @@ class GetHistoricalSearchCountRequest
      * @param string $TimePeriodRollup
      * @param ArrayOfstring $Devices
      */
-    public function __construct($Keywords, $Language, $PublisherCountries, $StartDate, $EndDate, $TimePeriodRollup, $Devices)
+    public function __construct($Keywords = null, $Language = null, $PublisherCountries = null, $StartDate = null, $EndDate = null, $TimePeriodRollup = null, $Devices = null)
     {
       $this->Keywords = $Keywords;
       $this->Language = $Language;

@@ -31,7 +31,7 @@ class GetKeywordCategoriesRequest
      * @param string $PublisherCountry
      * @param int $MaxCategories
      */
-    public function __construct($Keywords, $Language, $PublisherCountry, $MaxCategories)
+    public function __construct($Keywords = null, $Language = null, $PublisherCountry = null, $MaxCategories = null)
     {
       $this->Keywords = $Keywords;
       $this->Language = $Language;

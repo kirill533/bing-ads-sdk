@@ -13,7 +13,7 @@ class AddUetTagsRequest
     /**
      * @param ArrayOfUetTag $UetTags
      */
-    public function __construct($UetTags)
+    public function __construct($UetTags = null)
     {
       $this->UetTags = $UetTags;
     }

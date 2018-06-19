@@ -19,7 +19,7 @@ class GetLabelAssociationsByEntityIdsResponse
      * @param ArrayOfLabelAssociation $LabelAssociations
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($LabelAssociations, $PartialErrors)
+    public function __construct($LabelAssociations = null, $PartialErrors = null)
     {
       $this->LabelAssociations = $LabelAssociations;
       $this->PartialErrors = $PartialErrors;

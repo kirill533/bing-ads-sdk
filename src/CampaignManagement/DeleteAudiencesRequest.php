@@ -13,7 +13,7 @@ class DeleteAudiencesRequest
     /**
      * @param ArrayOflong $AudienceIds
      */
-    public function __construct($AudienceIds)
+    public function __construct($AudienceIds = null)
     {
       $this->AudienceIds = $AudienceIds;
     }

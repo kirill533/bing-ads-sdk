@@ -19,7 +19,7 @@ class GetEstimatedPositionByKeywordIdsRequest
      * @param ArrayOflong $KeywordIds
      * @param float $MaxBid
      */
-    public function __construct($KeywordIds, $MaxBid)
+    public function __construct($KeywordIds = null, $MaxBid = null)
     {
       $this->KeywordIds = $KeywordIds;
       $this->MaxBid = $MaxBid;

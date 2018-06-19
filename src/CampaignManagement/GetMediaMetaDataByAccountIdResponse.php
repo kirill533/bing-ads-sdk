@@ -13,7 +13,7 @@ class GetMediaMetaDataByAccountIdResponse
     /**
      * @param ArrayOfMediaMetaData $MediaMetaData
      */
-    public function __construct($MediaMetaData)
+    public function __construct($MediaMetaData = null)
     {
       $this->MediaMetaData = $MediaMetaData;
     }

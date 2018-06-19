@@ -31,7 +31,7 @@ class GetKeywordDemographicsRequest
      * @param string $PublisherCountry
      * @param ArrayOfstring $Device
      */
-    public function __construct($Keywords, $Language, $PublisherCountry, $Device)
+    public function __construct($Keywords = null, $Language = null, $PublisherCountry = null, $Device = null)
     {
       $this->Keywords = $Keywords;
       $this->Language = $Language;

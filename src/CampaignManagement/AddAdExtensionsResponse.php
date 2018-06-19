@@ -19,7 +19,7 @@ class AddAdExtensionsResponse
      * @param ArrayOfAdExtensionIdentity $AdExtensionIdentities
      * @param ArrayOfBatchErrorCollection $NestedPartialErrors
      */
-    public function __construct($AdExtensionIdentities, $NestedPartialErrors)
+    public function __construct($AdExtensionIdentities = null, $NestedPartialErrors = null)
     {
       $this->AdExtensionIdentities = $AdExtensionIdentities;
       $this->NestedPartialErrors = $NestedPartialErrors;

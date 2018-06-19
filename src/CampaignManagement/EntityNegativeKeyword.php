@@ -23,7 +23,7 @@ class EntityNegativeKeyword
     /**
      * @param int $EntityId
      */
-    public function __construct($EntityId)
+    public function __construct($EntityId = null)
     {
       $this->EntityId = $EntityId;
     }

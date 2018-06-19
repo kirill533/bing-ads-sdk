@@ -19,7 +19,7 @@ class GetCampaignCriterionsByIdsResponse
      * @param ArrayOfCampaignCriterion $CampaignCriterions
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($CampaignCriterions, $PartialErrors)
+    public function __construct($CampaignCriterions = null, $PartialErrors = null)
     {
       $this->CampaignCriterions = $CampaignCriterions;
       $this->PartialErrors = $PartialErrors;

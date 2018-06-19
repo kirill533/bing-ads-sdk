@@ -19,7 +19,7 @@ class DeleteKeywordsRequest
      * @param int $AdGroupId
      * @param ArrayOflong $KeywordIds
      */
-    public function __construct($AdGroupId, $KeywordIds)
+    public function __construct($AdGroupId = null, $KeywordIds = null)
     {
       $this->AdGroupId = $AdGroupId;
       $this->KeywordIds = $KeywordIds;

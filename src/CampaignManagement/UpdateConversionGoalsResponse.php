@@ -13,7 +13,7 @@ class UpdateConversionGoalsResponse
     /**
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($PartialErrors)
+    public function __construct($PartialErrors = null)
     {
       $this->PartialErrors = $PartialErrors;
     }

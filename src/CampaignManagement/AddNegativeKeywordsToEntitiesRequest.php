@@ -13,7 +13,7 @@ class AddNegativeKeywordsToEntitiesRequest
     /**
      * @param ArrayOfEntityNegativeKeyword $EntityNegativeKeywords
      */
-    public function __construct($EntityNegativeKeywords)
+    public function __construct($EntityNegativeKeywords = null)
     {
       $this->EntityNegativeKeywords = $EntityNegativeKeywords;
     }

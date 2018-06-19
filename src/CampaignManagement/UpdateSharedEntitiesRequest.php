@@ -13,7 +13,7 @@ class UpdateSharedEntitiesRequest
     /**
      * @param ArrayOfSharedEntity $SharedEntities
      */
-    public function __construct($SharedEntities)
+    public function __construct($SharedEntities = null)
     {
       $this->SharedEntities = $SharedEntities;
     }

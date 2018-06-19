@@ -60,7 +60,7 @@ class PriceTableRow
      * @param PriceQualifier $PriceQualifier
      * @param PriceUnit $PriceUnit
      */
-    public function __construct($Price, $PriceQualifier, $PriceUnit)
+    public function __construct($Price = null, $PriceQualifier = null, $PriceUnit = null)
     {
       $this->Price = $Price;
       $this->PriceQualifier = $PriceQualifier;

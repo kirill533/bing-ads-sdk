@@ -19,7 +19,7 @@ class GetBidLandscapeByKeywordIdsRequest
      * @param ArrayOflong $KeywordIds
      * @param boolean $IncludeCurrentBid
      */
-    public function __construct($KeywordIds, $IncludeCurrentBid)
+    public function __construct($KeywordIds = null, $IncludeCurrentBid = null)
     {
       $this->KeywordIds = $KeywordIds;
       $this->IncludeCurrentBid = $IncludeCurrentBid;

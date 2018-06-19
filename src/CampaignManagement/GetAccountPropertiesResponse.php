@@ -19,7 +19,7 @@ class GetAccountPropertiesResponse
      * @param ArrayOfAccountProperty $AccountProperties
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($AccountProperties, $PartialErrors)
+    public function __construct($AccountProperties = null, $PartialErrors = null)
     {
       $this->AccountProperties = $AccountProperties;
       $this->PartialErrors = $PartialErrors;

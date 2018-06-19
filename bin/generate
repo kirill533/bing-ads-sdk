@@ -17,7 +17,7 @@ require __DIR__.'/../vendor/autoload.php';
 const NS = 'PMG\\BingAds\\';
 $version = $argv[1];
 $defaultConfig = [
-    // ...
+    'constructorParamsDefaultToNull' => true,
 ];
 
 $configs = [

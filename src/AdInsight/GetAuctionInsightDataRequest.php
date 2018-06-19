@@ -25,7 +25,7 @@ class GetAuctionInsightDataRequest
      * @param ArrayOflong $EntityIds
      * @param ArrayOfSearchParameter $SearchParameters
      */
-    public function __construct($EntityType, $EntityIds, $SearchParameters)
+    public function __construct($EntityType = null, $EntityIds = null, $SearchParameters = null)
     {
       $this->EntityType = $EntityType;
       $this->EntityIds = $EntityIds;

@@ -25,7 +25,7 @@ class AddAdGroupsRequest
      * @param ArrayOfAdGroup $AdGroups
      * @param boolean $ReturnInheritedBidStrategyTypes
      */
-    public function __construct($CampaignId, $AdGroups, $ReturnInheritedBidStrategyTypes)
+    public function __construct($CampaignId = null, $AdGroups = null, $ReturnInheritedBidStrategyTypes = null)
     {
       $this->CampaignId = $CampaignId;
       $this->AdGroups = $AdGroups;

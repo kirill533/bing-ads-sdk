@@ -25,7 +25,7 @@ class UpdateKeywordsRequest
      * @param ArrayOfKeyword $Keywords
      * @param boolean $ReturnInheritedBidStrategyTypes
      */
-    public function __construct($AdGroupId, $Keywords, $ReturnInheritedBidStrategyTypes)
+    public function __construct($AdGroupId = null, $Keywords = null, $ReturnInheritedBidStrategyTypes = null)
     {
       $this->AdGroupId = $AdGroupId;
       $this->Keywords = $Keywords;

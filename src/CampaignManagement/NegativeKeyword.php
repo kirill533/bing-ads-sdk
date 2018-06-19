@@ -23,7 +23,7 @@ class NegativeKeyword extends SharedListItem
     /**
      * @param MatchType $MatchType
      */
-    public function __construct($MatchType)
+    public function __construct($MatchType = null)
     {
       parent::__construct();
       $this->MatchType = $MatchType;

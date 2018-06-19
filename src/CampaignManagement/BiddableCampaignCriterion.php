@@ -13,7 +13,7 @@ class BiddableCampaignCriterion extends CampaignCriterion
     /**
      * @param int $CampaignId
      */
-    public function __construct($CampaignId)
+    public function __construct($CampaignId = null)
     {
       parent::__construct($CampaignId);
     }

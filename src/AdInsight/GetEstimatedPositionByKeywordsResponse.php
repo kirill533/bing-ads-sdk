@@ -13,7 +13,7 @@ class GetEstimatedPositionByKeywordsResponse
     /**
      * @param ArrayOfKeywordEstimatedPosition $KeywordEstimatedPositions
      */
-    public function __construct($KeywordEstimatedPositions)
+    public function __construct($KeywordEstimatedPositions = null)
     {
       $this->KeywordEstimatedPositions = $KeywordEstimatedPositions;
     }

@@ -25,7 +25,7 @@ class GetKeywordOpportunitiesRequest
      * @param int $CampaignId
      * @param KeywordOpportunityType $OpportunityType
      */
-    public function __construct($AdGroupId, $CampaignId, $OpportunityType)
+    public function __construct($AdGroupId = null, $CampaignId = null, $OpportunityType = null)
     {
       $this->AdGroupId = $AdGroupId;
       $this->CampaignId = $CampaignId;

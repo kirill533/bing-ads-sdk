@@ -19,7 +19,7 @@ class GetAccountMigrationStatusesRequest
      * @param ArrayOflong $AccountIds
      * @param string $MigrationType
      */
-    public function __construct($AccountIds, $MigrationType)
+    public function __construct($AccountIds = null, $MigrationType = null)
     {
       $this->AccountIds = $AccountIds;
       $this->MigrationType = $MigrationType;

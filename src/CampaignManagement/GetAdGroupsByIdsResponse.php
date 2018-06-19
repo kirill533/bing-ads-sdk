@@ -19,7 +19,7 @@ class GetAdGroupsByIdsResponse
      * @param ArrayOfAdGroup $AdGroups
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($AdGroups, $PartialErrors)
+    public function __construct($AdGroups = null, $PartialErrors = null)
     {
       $this->AdGroups = $AdGroups;
       $this->PartialErrors = $PartialErrors;

@@ -13,7 +13,7 @@ class SuggestKeywordsFromExistingKeywordsResponse
     /**
      * @param ArrayOfKeywordSuggestion $KeywordSuggestions
      */
-    public function __construct($KeywordSuggestions)
+    public function __construct($KeywordSuggestions = null)
     {
       $this->KeywordSuggestions = $KeywordSuggestions;
     }

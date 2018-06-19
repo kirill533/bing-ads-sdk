@@ -25,7 +25,7 @@ class AppealEditorialRejectionsRequest
      * @param EntityType $EntityType
      * @param string $JustificationText
      */
-    public function __construct($EntityIdToParentIdAssociations, $EntityType, $JustificationText)
+    public function __construct($EntityIdToParentIdAssociations = null, $EntityType = null, $JustificationText = null)
     {
       $this->EntityIdToParentIdAssociations = $EntityIdToParentIdAssociations;
       $this->EntityType = $EntityType;

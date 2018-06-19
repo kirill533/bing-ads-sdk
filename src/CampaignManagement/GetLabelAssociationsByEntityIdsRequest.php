@@ -19,7 +19,7 @@ class GetLabelAssociationsByEntityIdsRequest
      * @param ArrayOflong $EntityIds
      * @param EntityType $EntityType
      */
-    public function __construct($EntityIds, $EntityType)
+    public function __construct($EntityIds = null, $EntityType = null)
     {
       $this->EntityIds = $EntityIds;
       $this->EntityType = $EntityType;

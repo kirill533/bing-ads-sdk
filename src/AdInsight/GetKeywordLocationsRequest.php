@@ -49,7 +49,7 @@ class GetKeywordLocationsRequest
      * @param string $ParentCountry
      * @param int $MaxLocations
      */
-    public function __construct($Keywords, $Language, $PublisherCountry, $Device, $Level, $ParentCountry, $MaxLocations)
+    public function __construct($Keywords = null, $Language = null, $PublisherCountry = null, $Device = null, $Level = null, $ParentCountry = null, $MaxLocations = null)
     {
       $this->Keywords = $Keywords;
       $this->Language = $Language;

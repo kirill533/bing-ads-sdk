@@ -19,7 +19,7 @@ class GetAdExtensionsByIdsResponse
      * @param ArrayOfAdExtension $AdExtensions
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($AdExtensions, $PartialErrors)
+    public function __construct($AdExtensions = null, $PartialErrors = null)
     {
       $this->AdExtensions = $AdExtensions;
       $this->PartialErrors = $PartialErrors;

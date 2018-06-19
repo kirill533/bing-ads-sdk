@@ -19,7 +19,7 @@ class GetUetTagsByIdsResponse
      * @param ArrayOfUetTag $UetTags
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($UetTags, $PartialErrors)
+    public function __construct($UetTags = null, $PartialErrors = null)
     {
       $this->UetTags = $UetTags;
       $this->PartialErrors = $PartialErrors;

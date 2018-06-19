@@ -19,7 +19,7 @@ class GetLabelsByIdsRequest
      * @param ArrayOflong $LabelIds
      * @param Paging $PageInfo
      */
-    public function __construct($LabelIds, $PageInfo)
+    public function __construct($LabelIds = null, $PageInfo = null)
     {
       $this->LabelIds = $LabelIds;
       $this->PageInfo = $PageInfo;

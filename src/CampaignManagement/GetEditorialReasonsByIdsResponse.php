@@ -19,7 +19,7 @@ class GetEditorialReasonsByIdsResponse
      * @param ArrayOfEditorialReasonCollection $EditorialReasons
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($EditorialReasons, $PartialErrors)
+    public function __construct($EditorialReasons = null, $PartialErrors = null)
     {
       $this->EditorialReasons = $EditorialReasons;
       $this->PartialErrors = $PartialErrors;

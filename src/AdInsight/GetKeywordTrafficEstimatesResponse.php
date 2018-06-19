@@ -13,7 +13,7 @@ class GetKeywordTrafficEstimatesResponse
     /**
      * @param ArrayOfCampaignEstimate $CampaignEstimates
      */
-    public function __construct($CampaignEstimates)
+    public function __construct($CampaignEstimates = null)
     {
       $this->CampaignEstimates = $CampaignEstimates;
     }

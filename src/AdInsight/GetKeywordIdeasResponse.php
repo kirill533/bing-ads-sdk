@@ -13,7 +13,7 @@ class GetKeywordIdeasResponse
     /**
      * @param ArrayOfKeywordIdea $KeywordIdeas
      */
-    public function __construct($KeywordIdeas)
+    public function __construct($KeywordIdeas = null)
     {
       $this->KeywordIdeas = $KeywordIdeas;
     }

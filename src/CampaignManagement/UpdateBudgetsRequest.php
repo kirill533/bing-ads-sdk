@@ -13,7 +13,7 @@ class UpdateBudgetsRequest
     /**
      * @param ArrayOfBudget $Budgets
      */
-    public function __construct($Budgets)
+    public function __construct($Budgets = null)
     {
       $this->Budgets = $Budgets;
     }

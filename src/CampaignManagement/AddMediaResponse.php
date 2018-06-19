@@ -13,7 +13,7 @@ class AddMediaResponse
     /**
      * @param ArrayOflong $MediaIds
      */
-    public function __construct($MediaIds)
+    public function __construct($MediaIds = null)
     {
       $this->MediaIds = $MediaIds;
     }

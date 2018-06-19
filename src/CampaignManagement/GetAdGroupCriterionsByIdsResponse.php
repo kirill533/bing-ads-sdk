@@ -13,7 +13,7 @@ class GetAdGroupCriterionsByIdsResponse
     /**
      * @param ArrayOfAdGroupCriterion $AdGroupCriterions
      */
-    public function __construct($AdGroupCriterions)
+    public function __construct($AdGroupCriterions = null)
     {
       $this->AdGroupCriterions = $AdGroupCriterions;
     }

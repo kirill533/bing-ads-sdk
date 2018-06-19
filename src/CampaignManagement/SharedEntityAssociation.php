@@ -29,7 +29,7 @@ class SharedEntityAssociation
      * @param int $EntityId
      * @param int $SharedEntityId
      */
-    public function __construct($EntityId, $SharedEntityId)
+    public function __construct($EntityId = null, $SharedEntityId = null)
     {
       $this->EntityId = $EntityId;
       $this->SharedEntityId = $SharedEntityId;

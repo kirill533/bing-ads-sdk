@@ -25,7 +25,7 @@ class GetEditorialReasonsByIdsRequest
      * @param ArrayOfEntityIdToParentIdAssociation $EntityIdToParentIdAssociations
      * @param EntityType $EntityType
      */
-    public function __construct($AccountId, $EntityIdToParentIdAssociations, $EntityType)
+    public function __construct($AccountId = null, $EntityIdToParentIdAssociations = null, $EntityType = null)
     {
       $this->AccountId = $AccountId;
       $this->EntityIdToParentIdAssociations = $EntityIdToParentIdAssociations;

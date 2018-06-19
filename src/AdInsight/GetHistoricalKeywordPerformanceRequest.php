@@ -49,7 +49,7 @@ class GetHistoricalKeywordPerformanceRequest
      * @param ArrayOfstring $PublisherCountries
      * @param ArrayOfstring $Devices
      */
-    public function __construct($Keywords, $TimeInterval, $TargetAdPosition, $MatchTypes, $Language, $PublisherCountries, $Devices)
+    public function __construct($Keywords = null, $TimeInterval = null, $TargetAdPosition = null, $MatchTypes = null, $Language = null, $PublisherCountries = null, $Devices = null)
     {
       $this->Keywords = $Keywords;
       $this->TimeInterval = $TimeInterval;

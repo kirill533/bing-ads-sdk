@@ -19,7 +19,7 @@ class GeoPoint
      * @param int $LatitudeInMicroDegrees
      * @param int $LongitudeInMicroDegrees
      */
-    public function __construct($LatitudeInMicroDegrees, $LongitudeInMicroDegrees)
+    public function __construct($LatitudeInMicroDegrees = null, $LongitudeInMicroDegrees = null)
     {
       $this->LatitudeInMicroDegrees = $LatitudeInMicroDegrees;
       $this->LongitudeInMicroDegrees = $LongitudeInMicroDegrees;

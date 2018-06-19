@@ -19,7 +19,7 @@ class ApplyProductPartitionActionsResponse
      * @param ArrayOfNullableOflong $AdGroupCriterionIds
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($AdGroupCriterionIds, $PartialErrors)
+    public function __construct($AdGroupCriterionIds = null, $PartialErrors = null)
     {
       $this->AdGroupCriterionIds = $AdGroupCriterionIds;
       $this->PartialErrors = $PartialErrors;

@@ -25,7 +25,7 @@ class GetKeywordIdeasRequest
      * @param ArrayOfKeywordIdeaAttribute $IdeaAttributes
      * @param ArrayOfSearchParameter $SearchParameters
      */
-    public function __construct($ExpandIdeas, $IdeaAttributes, $SearchParameters)
+    public function __construct($ExpandIdeas = null, $IdeaAttributes = null, $SearchParameters = null)
     {
       $this->ExpandIdeas = $ExpandIdeas;
       $this->IdeaAttributes = $IdeaAttributes;

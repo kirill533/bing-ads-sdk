@@ -13,7 +13,7 @@ class UpdateAudiencesRequest
     /**
      * @param ArrayOfAudience $Audiences
      */
-    public function __construct($Audiences)
+    public function __construct($Audiences = null)
     {
       $this->Audiences = $Audiences;
     }

@@ -19,7 +19,7 @@ class GetNegativeKeywordsByEntityIdsResponse
      * @param ArrayOfEntityNegativeKeyword $EntityNegativeKeywords
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($EntityNegativeKeywords, $PartialErrors)
+    public function __construct($EntityNegativeKeywords = null, $PartialErrors = null)
     {
       $this->EntityNegativeKeywords = $EntityNegativeKeywords;
       $this->PartialErrors = $PartialErrors;

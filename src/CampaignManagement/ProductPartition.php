@@ -23,7 +23,7 @@ class ProductPartition extends Criterion
     /**
      * @param ProductPartitionType $PartitionType
      */
-    public function __construct($PartitionType)
+    public function __construct($PartitionType = null)
     {
       parent::__construct();
       $this->PartitionType = $PartitionType;

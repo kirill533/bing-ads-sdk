@@ -19,7 +19,7 @@ class AddCampaignCriterionsRequest
      * @param ArrayOfCampaignCriterion $CampaignCriterions
      * @param CampaignCriterionType $CriterionType
      */
-    public function __construct($CampaignCriterions, $CriterionType)
+    public function __construct($CampaignCriterions = null, $CriterionType = null)
     {
       $this->CampaignCriterions = $CampaignCriterions;
       $this->CriterionType = $CriterionType;

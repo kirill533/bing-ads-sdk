@@ -19,7 +19,7 @@ class GetCampaignSizesByAccountIdRequest
      * @param int $AccountId
      * @param ArrayOflong $CampaignIds
      */
-    public function __construct($AccountId, $CampaignIds)
+    public function __construct($AccountId = null, $CampaignIds = null)
     {
       $this->AccountId = $AccountId;
       $this->CampaignIds = $CampaignIds;

@@ -13,7 +13,7 @@ class GetSharedEntitiesByAccountIdRequest
     /**
      * @param string $SharedEntityType
      */
-    public function __construct($SharedEntityType)
+    public function __construct($SharedEntityType = null)
     {
       $this->SharedEntityType = $SharedEntityType;
     }

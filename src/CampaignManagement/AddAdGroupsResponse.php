@@ -25,7 +25,7 @@ class AddAdGroupsResponse
      * @param ArrayOfstring $InheritedBidStrategyTypes
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($AdGroupIds, $InheritedBidStrategyTypes, $PartialErrors)
+    public function __construct($AdGroupIds = null, $InheritedBidStrategyTypes = null, $PartialErrors = null)
     {
       $this->AdGroupIds = $AdGroupIds;
       $this->InheritedBidStrategyTypes = $InheritedBidStrategyTypes;

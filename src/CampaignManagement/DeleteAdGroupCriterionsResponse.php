@@ -19,7 +19,7 @@ class DeleteAdGroupCriterionsResponse
      * @param boolean $IsMigrated
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($IsMigrated, $PartialErrors)
+    public function __construct($IsMigrated = null, $PartialErrors = null)
     {
       $this->IsMigrated = $IsMigrated;
       $this->PartialErrors = $PartialErrors;

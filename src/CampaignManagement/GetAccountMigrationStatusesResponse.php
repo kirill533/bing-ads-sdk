@@ -13,7 +13,7 @@ class GetAccountMigrationStatusesResponse
     /**
      * @param ArrayOfAccountMigrationStatusesInfo $MigrationStatuses
      */
-    public function __construct($MigrationStatuses)
+    public function __construct($MigrationStatuses = null)
     {
       $this->MigrationStatuses = $MigrationStatuses;
     }

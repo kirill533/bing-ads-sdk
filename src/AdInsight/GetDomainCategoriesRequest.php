@@ -25,7 +25,7 @@ class GetDomainCategoriesRequest
      * @param string $DomainName
      * @param string $Language
      */
-    public function __construct($CategoryName, $DomainName, $Language)
+    public function __construct($CategoryName = null, $DomainName = null, $Language = null)
     {
       $this->CategoryName = $CategoryName;
       $this->DomainName = $DomainName;

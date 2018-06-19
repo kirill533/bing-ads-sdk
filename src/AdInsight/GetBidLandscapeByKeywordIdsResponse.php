@@ -13,7 +13,7 @@ class GetBidLandscapeByKeywordIdsResponse
     /**
      * @param ArrayOfKeywordBidLandscape $BidLandscape
      */
-    public function __construct($BidLandscape)
+    public function __construct($BidLandscape = null)
     {
       $this->BidLandscape = $BidLandscape;
     }

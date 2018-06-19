@@ -19,7 +19,7 @@ class DeleteAdsRequest
      * @param int $AdGroupId
      * @param ArrayOflong $AdIds
      */
-    public function __construct($AdGroupId, $AdIds)
+    public function __construct($AdGroupId = null, $AdIds = null)
     {
       $this->AdGroupId = $AdGroupId;
       $this->AdIds = $AdIds;

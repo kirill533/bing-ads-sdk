@@ -19,7 +19,7 @@ class GetAdExtensionsAssociationsResponse
      * @param ArrayOfAdExtensionAssociationCollection $AdExtensionAssociationCollection
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($AdExtensionAssociationCollection, $PartialErrors)
+    public function __construct($AdExtensionAssociationCollection = null, $PartialErrors = null)
     {
       $this->AdExtensionAssociationCollection = $AdExtensionAssociationCollection;
       $this->PartialErrors = $PartialErrors;

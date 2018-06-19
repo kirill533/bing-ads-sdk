@@ -13,7 +13,7 @@ class GetKeywordsByAdGroupIdRequest
     /**
      * @param int $AdGroupId
      */
-    public function __construct($AdGroupId)
+    public function __construct($AdGroupId = null)
     {
       $this->AdGroupId = $AdGroupId;
     }

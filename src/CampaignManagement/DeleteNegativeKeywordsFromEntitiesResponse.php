@@ -13,7 +13,7 @@ class DeleteNegativeKeywordsFromEntitiesResponse
     /**
      * @param ArrayOfBatchErrorCollection $NestedPartialErrors
      */
-    public function __construct($NestedPartialErrors)
+    public function __construct($NestedPartialErrors = null)
     {
       $this->NestedPartialErrors = $NestedPartialErrors;
     }

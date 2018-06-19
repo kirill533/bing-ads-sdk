@@ -19,7 +19,7 @@ class AddListItemsToSharedListResponse
      * @param ArrayOflong $ListItemIds
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($ListItemIds, $PartialErrors)
+    public function __construct($ListItemIds = null, $PartialErrors = null)
     {
       $this->ListItemIds = $ListItemIds;
       $this->PartialErrors = $PartialErrors;

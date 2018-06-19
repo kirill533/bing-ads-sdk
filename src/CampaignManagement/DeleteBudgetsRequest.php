@@ -13,7 +13,7 @@ class DeleteBudgetsRequest
     /**
      * @param ArrayOflong $BudgetIds
      */
-    public function __construct($BudgetIds)
+    public function __construct($BudgetIds = null)
     {
       $this->BudgetIds = $BudgetIds;
     }

@@ -19,7 +19,7 @@ class AddBudgetsResponse
      * @param ArrayOfNullableOflong $BudgetIds
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($BudgetIds, $PartialErrors)
+    public function __construct($BudgetIds = null, $PartialErrors = null)
     {
       $this->BudgetIds = $BudgetIds;
       $this->PartialErrors = $PartialErrors;

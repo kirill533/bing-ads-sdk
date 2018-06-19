@@ -19,7 +19,7 @@ class AddListItemsToSharedListRequest
      * @param ArrayOfSharedListItem $ListItems
      * @param SharedList $SharedList
      */
-    public function __construct($ListItems, $SharedList)
+    public function __construct($ListItems = null, $SharedList = null)
     {
       $this->ListItems = $ListItems;
       $this->SharedList = $SharedList;

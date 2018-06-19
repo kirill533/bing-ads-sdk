@@ -19,7 +19,7 @@ class GetMediaAssociationsRequest
      * @param MediaEnabledEntityFilter $MediaEnabledEntities
      * @param ArrayOflong $MediaIds
      */
-    public function __construct($MediaEnabledEntities, $MediaIds)
+    public function __construct($MediaEnabledEntities = null, $MediaIds = null)
     {
       $this->MediaEnabledEntities = $MediaEnabledEntities;
       $this->MediaIds = $MediaIds;

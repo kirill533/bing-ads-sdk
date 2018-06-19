@@ -19,7 +19,7 @@ class GetConversionGoalsByIdsResponse
      * @param ArrayOfConversionGoal $ConversionGoals
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($ConversionGoals, $PartialErrors)
+    public function __construct($ConversionGoals = null, $PartialErrors = null)
     {
       $this->ConversionGoals = $ConversionGoals;
       $this->PartialErrors = $PartialErrors;

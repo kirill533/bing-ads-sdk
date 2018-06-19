@@ -19,7 +19,7 @@ class GetLabelsByIdsResponse
      * @param ArrayOfLabel $Labels
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($Labels, $PartialErrors)
+    public function __construct($Labels = null, $PartialErrors = null)
     {
       $this->Labels = $Labels;
       $this->PartialErrors = $PartialErrors;

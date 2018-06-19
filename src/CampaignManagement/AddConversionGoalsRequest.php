@@ -13,7 +13,7 @@ class AddConversionGoalsRequest
     /**
      * @param ArrayOfConversionGoal $ConversionGoals
      */
-    public function __construct($ConversionGoals)
+    public function __construct($ConversionGoals = null)
     {
       $this->ConversionGoals = $ConversionGoals;
     }

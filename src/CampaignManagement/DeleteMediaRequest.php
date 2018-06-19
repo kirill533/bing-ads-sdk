@@ -19,7 +19,7 @@ class DeleteMediaRequest
      * @param int $AccountId
      * @param ArrayOflong $MediaIds
      */
-    public function __construct($AccountId, $MediaIds)
+    public function __construct($AccountId = null, $MediaIds = null)
     {
       $this->AccountId = $AccountId;
       $this->MediaIds = $MediaIds;

@@ -25,7 +25,7 @@ class SetAdExtensionsAssociationsRequest
      * @param ArrayOfAdExtensionIdToEntityIdAssociation $AdExtensionIdToEntityIdAssociations
      * @param AssociationType $AssociationType
      */
-    public function __construct($AccountId, $AdExtensionIdToEntityIdAssociations, $AssociationType)
+    public function __construct($AccountId = null, $AdExtensionIdToEntityIdAssociations = null, $AssociationType = null)
     {
       $this->AccountId = $AccountId;
       $this->AdExtensionIdToEntityIdAssociations = $AdExtensionIdToEntityIdAssociations;

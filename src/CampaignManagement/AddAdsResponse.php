@@ -19,7 +19,7 @@ class AddAdsResponse
      * @param ArrayOfNullableOflong $AdIds
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($AdIds, $PartialErrors)
+    public function __construct($AdIds = null, $PartialErrors = null)
     {
       $this->AdIds = $AdIds;
       $this->PartialErrors = $PartialErrors;

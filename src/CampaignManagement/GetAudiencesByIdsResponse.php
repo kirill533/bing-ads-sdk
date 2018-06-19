@@ -19,7 +19,7 @@ class GetAudiencesByIdsResponse
      * @param ArrayOfAudience $Audiences
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($Audiences, $PartialErrors)
+    public function __construct($Audiences = null, $PartialErrors = null)
     {
       $this->Audiences = $Audiences;
       $this->PartialErrors = $PartialErrors;

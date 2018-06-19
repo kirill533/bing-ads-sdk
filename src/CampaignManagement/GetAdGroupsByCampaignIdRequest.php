@@ -13,7 +13,7 @@ class GetAdGroupsByCampaignIdRequest
     /**
      * @param int $CampaignId
      */
-    public function __construct($CampaignId)
+    public function __construct($CampaignId = null)
     {
       $this->CampaignId = $CampaignId;
     }

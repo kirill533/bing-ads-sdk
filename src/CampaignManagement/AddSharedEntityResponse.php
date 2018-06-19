@@ -25,7 +25,7 @@ class AddSharedEntityResponse
      * @param ArrayOfBatchError $PartialErrors
      * @param int $SharedEntityId
      */
-    public function __construct($ListItemIds, $PartialErrors, $SharedEntityId)
+    public function __construct($ListItemIds = null, $PartialErrors = null, $SharedEntityId = null)
     {
       $this->ListItemIds = $ListItemIds;
       $this->PartialErrors = $PartialErrors;

@@ -25,7 +25,7 @@ class GetLabelAssociationsByLabelIdsRequest
      * @param ArrayOflong $LabelIds
      * @param Paging $PageInfo
      */
-    public function __construct($EntityType, $LabelIds, $PageInfo)
+    public function __construct($EntityType = null, $LabelIds = null, $PageInfo = null)
     {
       $this->EntityType = $EntityType;
       $this->LabelIds = $LabelIds;

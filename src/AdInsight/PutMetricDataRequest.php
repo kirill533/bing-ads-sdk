@@ -13,7 +13,7 @@ class PutMetricDataRequest
     /**
      * @param ArrayOfMetricData $Metrics
      */
-    public function __construct($Metrics)
+    public function __construct($Metrics = null)
     {
       $this->Metrics = $Metrics;
     }

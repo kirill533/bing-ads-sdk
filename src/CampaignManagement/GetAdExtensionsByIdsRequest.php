@@ -25,7 +25,7 @@ class GetAdExtensionsByIdsRequest
      * @param ArrayOflong $AdExtensionIds
      * @param AdExtensionsTypeFilter $AdExtensionType
      */
-    public function __construct($AccountId, $AdExtensionIds, $AdExtensionType)
+    public function __construct($AccountId = null, $AdExtensionIds = null, $AdExtensionType = null)
     {
       $this->AccountId = $AccountId;
       $this->AdExtensionIds = $AdExtensionIds;

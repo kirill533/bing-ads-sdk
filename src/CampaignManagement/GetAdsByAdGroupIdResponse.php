@@ -13,7 +13,7 @@ class GetAdsByAdGroupIdResponse
     /**
      * @param ArrayOfAd $Ads
      */
-    public function __construct($Ads)
+    public function __construct($Ads = null)
     {
       $this->Ads = $Ads;
     }

@@ -19,7 +19,7 @@ class GetEstimatedBidByKeywordsResponse
      * @param ArrayOfKeywordEstimatedBid $KeywordEstimatedBids
      * @param EstimatedBidAndTraffic $AdGroupEstimatedBid
      */
-    public function __construct($KeywordEstimatedBids, $AdGroupEstimatedBid)
+    public function __construct($KeywordEstimatedBids = null, $AdGroupEstimatedBid = null)
     {
       $this->KeywordEstimatedBids = $KeywordEstimatedBids;
       $this->AdGroupEstimatedBid = $AdGroupEstimatedBid;

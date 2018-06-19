@@ -13,7 +13,7 @@ class GetAccountPropertiesRequest
     /**
      * @param ArrayOfAccountPropertyName $AccountPropertyNames
      */
-    public function __construct($AccountPropertyNames)
+    public function __construct($AccountPropertyNames = null)
     {
       $this->AccountPropertyNames = $AccountPropertyNames;
     }

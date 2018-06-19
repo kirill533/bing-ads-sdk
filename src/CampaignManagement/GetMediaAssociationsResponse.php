@@ -19,7 +19,7 @@ class GetMediaAssociationsResponse
      * @param ArrayOfArrayOfMediaAssociation $MediaAssociations
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($MediaAssociations, $PartialErrors)
+    public function __construct($MediaAssociations = null, $PartialErrors = null)
     {
       $this->MediaAssociations = $MediaAssociations;
       $this->PartialErrors = $PartialErrors;

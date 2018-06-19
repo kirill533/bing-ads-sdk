@@ -19,7 +19,7 @@ class AddMediaRequest
      * @param int $AccountId
      * @param ArrayOfMedia $Media
      */
-    public function __construct($AccountId, $Media)
+    public function __construct($AccountId = null, $Media = null)
     {
       $this->AccountId = $AccountId;
       $this->Media = $Media;

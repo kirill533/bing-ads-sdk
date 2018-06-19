@@ -13,7 +13,7 @@ class SuggestKeywordsForUrlResponse
     /**
      * @param ArrayOfKeywordAndConfidence $Keywords
      */
-    public function __construct($Keywords)
+    public function __construct($Keywords = null)
     {
       $this->Keywords = $Keywords;
     }

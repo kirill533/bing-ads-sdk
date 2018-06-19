@@ -13,7 +13,7 @@ class DeleteLabelsRequest
     /**
      * @param ArrayOflong $LabelIds
      */
-    public function __construct($LabelIds)
+    public function __construct($LabelIds = null)
     {
       $this->LabelIds = $LabelIds;
     }

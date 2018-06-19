@@ -25,11 +25,11 @@ class GetGeoLocationsFileUrlResponse
      * @param \DateTime $FileUrlExpiryTimeUtc
      * @param \DateTime $LastModifiedTimeUtc
      */
-    public function __construct($FileUrl, \DateTime $FileUrlExpiryTimeUtc, \DateTime $LastModifiedTimeUtc)
+    public function __construct($FileUrl = null, \DateTime $FileUrlExpiryTimeUtc = null, \DateTime $LastModifiedTimeUtc = null)
     {
       $this->FileUrl = $FileUrl;
-      $this->FileUrlExpiryTimeUtc = $FileUrlExpiryTimeUtc->format(\DateTime::ATOM);
-      $this->LastModifiedTimeUtc = $LastModifiedTimeUtc->format(\DateTime::ATOM);
+      $this->FileUrlExpiryTimeUtc = $FileUrlExpiryTimeUtc ? $FileUrlExpiryTimeUtc->format(\DateTime::ATOM) : null;
+      $this->LastModifiedTimeUtc = $LastModifiedTimeUtc ? $LastModifiedTimeUtc->format(\DateTime::ATOM) : null;
     }
 
     /**

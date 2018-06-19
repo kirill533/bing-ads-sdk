@@ -18,7 +18,7 @@ class AdGroupCriterionAction
     /**
      * @param ItemAction $Action
      */
-    public function __construct($Action)
+    public function __construct($Action = null)
     {
       $this->Action = $Action;
     }

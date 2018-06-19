@@ -19,7 +19,7 @@ class GetKeywordsByEditorialStatusRequest
      * @param int $AdGroupId
      * @param KeywordEditorialStatus $EditorialStatus
      */
-    public function __construct($AdGroupId, $EditorialStatus)
+    public function __construct($AdGroupId = null, $EditorialStatus = null)
     {
       $this->AdGroupId = $AdGroupId;
       $this->EditorialStatus = $EditorialStatus;

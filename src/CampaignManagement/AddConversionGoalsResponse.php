@@ -19,7 +19,7 @@ class AddConversionGoalsResponse
      * @param ArrayOfNullableOflong $ConversionGoalIds
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($ConversionGoalIds, $PartialErrors)
+    public function __construct($ConversionGoalIds = null, $PartialErrors = null)
     {
       $this->ConversionGoalIds = $ConversionGoalIds;
       $this->PartialErrors = $PartialErrors;

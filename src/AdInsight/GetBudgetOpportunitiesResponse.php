@@ -13,7 +13,7 @@ class GetBudgetOpportunitiesResponse
     /**
      * @param ArrayOfBudgetOpportunity $Opportunities
      */
-    public function __construct($Opportunities)
+    public function __construct($Opportunities = null)
     {
       $this->Opportunities = $Opportunities;
     }

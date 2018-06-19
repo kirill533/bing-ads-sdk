@@ -33,7 +33,7 @@ class PriceAdExtension extends AdExtension
     /**
      * @param PriceExtensionType $PriceExtensionType
      */
-    public function __construct($PriceExtensionType)
+    public function __construct($PriceExtensionType = null)
     {
       parent::__construct();
       $this->PriceExtensionType = $PriceExtensionType;

@@ -13,7 +13,7 @@ class GetCampaignSizesByAccountIdResponse
     /**
      * @param ArrayOfCampaignSize $CampaignSizes
      */
-    public function __construct($CampaignSizes)
+    public function __construct($CampaignSizes = null)
     {
       $this->CampaignSizes = $CampaignSizes;
     }

@@ -25,7 +25,7 @@ class AddAdGroupCriterionsResponse
      * @param boolean $IsMigrated
      * @param ArrayOfBatchErrorCollection $NestedPartialErrors
      */
-    public function __construct($AdGroupCriterionIds, $IsMigrated, $NestedPartialErrors)
+    public function __construct($AdGroupCriterionIds = null, $IsMigrated = null, $NestedPartialErrors = null)
     {
       $this->AdGroupCriterionIds = $AdGroupCriterionIds;
       $this->IsMigrated = $IsMigrated;

@@ -19,7 +19,7 @@ class AddSharedEntityRequest
      * @param SharedEntity $SharedEntity
      * @param ArrayOfSharedListItem $ListItems
      */
-    public function __construct($SharedEntity, $ListItems)
+    public function __construct($SharedEntity = null, $ListItems = null)
     {
       $this->SharedEntity = $SharedEntity;
       $this->ListItems = $ListItems;

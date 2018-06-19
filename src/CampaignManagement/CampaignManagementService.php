@@ -431,7 +431,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddCampaignsRequest $parameters
      * @return AddCampaignsResponse
      */
-    public function AddCampaigns(AddCampaignsRequest $parameters)
+    public function addCampaigns(AddCampaignsRequest $parameters)
     {
       return $this->__soapCall("AddCampaigns", array($parameters));
     }
@@ -440,7 +440,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetCampaignsByAccountIdRequest $parameters
      * @return GetCampaignsByAccountIdResponse
      */
-    public function GetCampaignsByAccountId(GetCampaignsByAccountIdRequest $parameters)
+    public function getCampaignsByAccountId(GetCampaignsByAccountIdRequest $parameters)
     {
       return $this->__soapCall("GetCampaignsByAccountId", array($parameters));
     }
@@ -449,7 +449,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetCampaignsByIdsRequest $parameters
      * @return GetCampaignsByIdsResponse
      */
-    public function GetCampaignsByIds(GetCampaignsByIdsRequest $parameters)
+    public function getCampaignsByIds(GetCampaignsByIdsRequest $parameters)
     {
       return $this->__soapCall("GetCampaignsByIds", array($parameters));
     }
@@ -458,7 +458,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteCampaignsRequest $parameters
      * @return DeleteCampaignsResponse
      */
-    public function DeleteCampaigns(DeleteCampaignsRequest $parameters)
+    public function deleteCampaigns(DeleteCampaignsRequest $parameters)
     {
       return $this->__soapCall("DeleteCampaigns", array($parameters));
     }
@@ -467,7 +467,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param UpdateCampaignsRequest $parameters
      * @return UpdateCampaignsResponse
      */
-    public function UpdateCampaigns(UpdateCampaignsRequest $parameters)
+    public function updateCampaigns(UpdateCampaignsRequest $parameters)
     {
       return $this->__soapCall("UpdateCampaigns", array($parameters));
     }
@@ -476,7 +476,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetNegativeSitesByCampaignIdsRequest $parameters
      * @return GetNegativeSitesByCampaignIdsResponse
      */
-    public function GetNegativeSitesByCampaignIds(GetNegativeSitesByCampaignIdsRequest $parameters)
+    public function getNegativeSitesByCampaignIds(GetNegativeSitesByCampaignIdsRequest $parameters)
     {
       return $this->__soapCall("GetNegativeSitesByCampaignIds", array($parameters));
     }
@@ -485,7 +485,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param SetNegativeSitesToCampaignsRequest $parameters
      * @return SetNegativeSitesToCampaignsResponse
      */
-    public function SetNegativeSitesToCampaigns(SetNegativeSitesToCampaignsRequest $parameters)
+    public function setNegativeSitesToCampaigns(SetNegativeSitesToCampaignsRequest $parameters)
     {
       return $this->__soapCall("SetNegativeSitesToCampaigns", array($parameters));
     }
@@ -494,7 +494,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetConfigValueRequest $parameters
      * @return GetConfigValueResponse
      */
-    public function GetConfigValue(GetConfigValueRequest $parameters)
+    public function getConfigValue(GetConfigValueRequest $parameters)
     {
       return $this->__soapCall("GetConfigValue", array($parameters));
     }
@@ -503,7 +503,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetBSCCountriesRequest $parameters
      * @return GetBSCCountriesResponse
      */
-    public function GetBSCCountries(GetBSCCountriesRequest $parameters)
+    public function getBSCCountries(GetBSCCountriesRequest $parameters)
     {
       return $this->__soapCall("GetBSCCountries", array($parameters));
     }
@@ -512,7 +512,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddAdGroupsRequest $parameters
      * @return AddAdGroupsResponse
      */
-    public function AddAdGroups(AddAdGroupsRequest $parameters)
+    public function addAdGroups(AddAdGroupsRequest $parameters)
     {
       return $this->__soapCall("AddAdGroups", array($parameters));
     }
@@ -521,7 +521,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteAdGroupsRequest $parameters
      * @return DeleteAdGroupsResponse
      */
-    public function DeleteAdGroups(DeleteAdGroupsRequest $parameters)
+    public function deleteAdGroups(DeleteAdGroupsRequest $parameters)
     {
       return $this->__soapCall("DeleteAdGroups", array($parameters));
     }
@@ -530,7 +530,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetAdGroupsByIdsRequest $parameters
      * @return GetAdGroupsByIdsResponse
      */
-    public function GetAdGroupsByIds(GetAdGroupsByIdsRequest $parameters)
+    public function getAdGroupsByIds(GetAdGroupsByIdsRequest $parameters)
     {
       return $this->__soapCall("GetAdGroupsByIds", array($parameters));
     }
@@ -539,7 +539,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetAdGroupsByCampaignIdRequest $parameters
      * @return GetAdGroupsByCampaignIdResponse
      */
-    public function GetAdGroupsByCampaignId(GetAdGroupsByCampaignIdRequest $parameters)
+    public function getAdGroupsByCampaignId(GetAdGroupsByCampaignIdRequest $parameters)
     {
       return $this->__soapCall("GetAdGroupsByCampaignId", array($parameters));
     }
@@ -548,7 +548,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param UpdateAdGroupsRequest $parameters
      * @return UpdateAdGroupsResponse
      */
-    public function UpdateAdGroups(UpdateAdGroupsRequest $parameters)
+    public function updateAdGroups(UpdateAdGroupsRequest $parameters)
     {
       return $this->__soapCall("UpdateAdGroups", array($parameters));
     }
@@ -557,7 +557,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetNegativeSitesByAdGroupIdsRequest $parameters
      * @return GetNegativeSitesByAdGroupIdsResponse
      */
-    public function GetNegativeSitesByAdGroupIds(GetNegativeSitesByAdGroupIdsRequest $parameters)
+    public function getNegativeSitesByAdGroupIds(GetNegativeSitesByAdGroupIdsRequest $parameters)
     {
       return $this->__soapCall("GetNegativeSitesByAdGroupIds", array($parameters));
     }
@@ -566,7 +566,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param SetNegativeSitesToAdGroupsRequest $parameters
      * @return SetNegativeSitesToAdGroupsResponse
      */
-    public function SetNegativeSitesToAdGroups(SetNegativeSitesToAdGroupsRequest $parameters)
+    public function setNegativeSitesToAdGroups(SetNegativeSitesToAdGroupsRequest $parameters)
     {
       return $this->__soapCall("SetNegativeSitesToAdGroups", array($parameters));
     }
@@ -575,7 +575,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetGeoLocationsFileUrlRequest $parameters
      * @return GetGeoLocationsFileUrlResponse
      */
-    public function GetGeoLocationsFileUrl(GetGeoLocationsFileUrlRequest $parameters)
+    public function getGeoLocationsFileUrl(GetGeoLocationsFileUrlRequest $parameters)
     {
       return $this->__soapCall("GetGeoLocationsFileUrl", array($parameters));
     }
@@ -584,7 +584,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddAdsRequest $parameters
      * @return AddAdsResponse
      */
-    public function AddAds(AddAdsRequest $parameters)
+    public function addAds(AddAdsRequest $parameters)
     {
       return $this->__soapCall("AddAds", array($parameters));
     }
@@ -593,7 +593,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteAdsRequest $parameters
      * @return DeleteAdsResponse
      */
-    public function DeleteAds(DeleteAdsRequest $parameters)
+    public function deleteAds(DeleteAdsRequest $parameters)
     {
       return $this->__soapCall("DeleteAds", array($parameters));
     }
@@ -602,7 +602,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetAdsByEditorialStatusRequest $parameters
      * @return GetAdsByEditorialStatusResponse
      */
-    public function GetAdsByEditorialStatus(GetAdsByEditorialStatusRequest $parameters)
+    public function getAdsByEditorialStatus(GetAdsByEditorialStatusRequest $parameters)
     {
       return $this->__soapCall("GetAdsByEditorialStatus", array($parameters));
     }
@@ -611,7 +611,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetAdsByIdsRequest $parameters
      * @return GetAdsByIdsResponse
      */
-    public function GetAdsByIds(GetAdsByIdsRequest $parameters)
+    public function getAdsByIds(GetAdsByIdsRequest $parameters)
     {
       return $this->__soapCall("GetAdsByIds", array($parameters));
     }
@@ -620,7 +620,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetAdsByAdGroupIdRequest $parameters
      * @return GetAdsByAdGroupIdResponse
      */
-    public function GetAdsByAdGroupId(GetAdsByAdGroupIdRequest $parameters)
+    public function getAdsByAdGroupId(GetAdsByAdGroupIdRequest $parameters)
     {
       return $this->__soapCall("GetAdsByAdGroupId", array($parameters));
     }
@@ -629,7 +629,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param UpdateAdsRequest $parameters
      * @return UpdateAdsResponse
      */
-    public function UpdateAds(UpdateAdsRequest $parameters)
+    public function updateAds(UpdateAdsRequest $parameters)
     {
       return $this->__soapCall("UpdateAds", array($parameters));
     }
@@ -638,7 +638,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddKeywordsRequest $parameters
      * @return AddKeywordsResponse
      */
-    public function AddKeywords(AddKeywordsRequest $parameters)
+    public function addKeywords(AddKeywordsRequest $parameters)
     {
       return $this->__soapCall("AddKeywords", array($parameters));
     }
@@ -647,7 +647,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteKeywordsRequest $parameters
      * @return DeleteKeywordsResponse
      */
-    public function DeleteKeywords(DeleteKeywordsRequest $parameters)
+    public function deleteKeywords(DeleteKeywordsRequest $parameters)
     {
       return $this->__soapCall("DeleteKeywords", array($parameters));
     }
@@ -656,7 +656,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetKeywordsByEditorialStatusRequest $parameters
      * @return GetKeywordsByEditorialStatusResponse
      */
-    public function GetKeywordsByEditorialStatus(GetKeywordsByEditorialStatusRequest $parameters)
+    public function getKeywordsByEditorialStatus(GetKeywordsByEditorialStatusRequest $parameters)
     {
       return $this->__soapCall("GetKeywordsByEditorialStatus", array($parameters));
     }
@@ -665,7 +665,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetKeywordsByIdsRequest $parameters
      * @return GetKeywordsByIdsResponse
      */
-    public function GetKeywordsByIds(GetKeywordsByIdsRequest $parameters)
+    public function getKeywordsByIds(GetKeywordsByIdsRequest $parameters)
     {
       return $this->__soapCall("GetKeywordsByIds", array($parameters));
     }
@@ -674,7 +674,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetKeywordsByAdGroupIdRequest $parameters
      * @return GetKeywordsByAdGroupIdResponse
      */
-    public function GetKeywordsByAdGroupId(GetKeywordsByAdGroupIdRequest $parameters)
+    public function getKeywordsByAdGroupId(GetKeywordsByAdGroupIdRequest $parameters)
     {
       return $this->__soapCall("GetKeywordsByAdGroupId", array($parameters));
     }
@@ -683,7 +683,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param UpdateKeywordsRequest $parameters
      * @return UpdateKeywordsResponse
      */
-    public function UpdateKeywords(UpdateKeywordsRequest $parameters)
+    public function updateKeywords(UpdateKeywordsRequest $parameters)
     {
       return $this->__soapCall("UpdateKeywords", array($parameters));
     }
@@ -692,7 +692,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AppealEditorialRejectionsRequest $parameters
      * @return AppealEditorialRejectionsResponse
      */
-    public function AppealEditorialRejections(AppealEditorialRejectionsRequest $parameters)
+    public function appealEditorialRejections(AppealEditorialRejectionsRequest $parameters)
     {
       return $this->__soapCall("AppealEditorialRejections", array($parameters));
     }
@@ -701,7 +701,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetEditorialReasonsByIdsRequest $parameters
      * @return GetEditorialReasonsByIdsResponse
      */
-    public function GetEditorialReasonsByIds(GetEditorialReasonsByIdsRequest $parameters)
+    public function getEditorialReasonsByIds(GetEditorialReasonsByIdsRequest $parameters)
     {
       return $this->__soapCall("GetEditorialReasonsByIds", array($parameters));
     }
@@ -710,7 +710,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetAccountMigrationStatusesRequest $parameters
      * @return GetAccountMigrationStatusesResponse
      */
-    public function GetAccountMigrationStatuses(GetAccountMigrationStatusesRequest $parameters)
+    public function getAccountMigrationStatuses(GetAccountMigrationStatusesRequest $parameters)
     {
       return $this->__soapCall("GetAccountMigrationStatuses", array($parameters));
     }
@@ -719,7 +719,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param SetAccountPropertiesRequest $parameters
      * @return SetAccountPropertiesResponse
      */
-    public function SetAccountProperties(SetAccountPropertiesRequest $parameters)
+    public function setAccountProperties(SetAccountPropertiesRequest $parameters)
     {
       return $this->__soapCall("SetAccountProperties", array($parameters));
     }
@@ -728,7 +728,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetAccountPropertiesRequest $parameters
      * @return GetAccountPropertiesResponse
      */
-    public function GetAccountProperties(GetAccountPropertiesRequest $parameters)
+    public function getAccountProperties(GetAccountPropertiesRequest $parameters)
     {
       return $this->__soapCall("GetAccountProperties", array($parameters));
     }
@@ -737,7 +737,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddAdExtensionsRequest $parameters
      * @return AddAdExtensionsResponse
      */
-    public function AddAdExtensions(AddAdExtensionsRequest $parameters)
+    public function addAdExtensions(AddAdExtensionsRequest $parameters)
     {
       return $this->__soapCall("AddAdExtensions", array($parameters));
     }
@@ -746,7 +746,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetAdExtensionsByIdsRequest $parameters
      * @return GetAdExtensionsByIdsResponse
      */
-    public function GetAdExtensionsByIds(GetAdExtensionsByIdsRequest $parameters)
+    public function getAdExtensionsByIds(GetAdExtensionsByIdsRequest $parameters)
     {
       return $this->__soapCall("GetAdExtensionsByIds", array($parameters));
     }
@@ -755,7 +755,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param UpdateAdExtensionsRequest $parameters
      * @return UpdateAdExtensionsResponse
      */
-    public function UpdateAdExtensions(UpdateAdExtensionsRequest $parameters)
+    public function updateAdExtensions(UpdateAdExtensionsRequest $parameters)
     {
       return $this->__soapCall("UpdateAdExtensions", array($parameters));
     }
@@ -764,7 +764,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteAdExtensionsRequest $parameters
      * @return DeleteAdExtensionsResponse
      */
-    public function DeleteAdExtensions(DeleteAdExtensionsRequest $parameters)
+    public function deleteAdExtensions(DeleteAdExtensionsRequest $parameters)
     {
       return $this->__soapCall("DeleteAdExtensions", array($parameters));
     }
@@ -773,7 +773,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetAdExtensionsEditorialReasonsRequest $parameters
      * @return GetAdExtensionsEditorialReasonsResponse
      */
-    public function GetAdExtensionsEditorialReasons(GetAdExtensionsEditorialReasonsRequest $parameters)
+    public function getAdExtensionsEditorialReasons(GetAdExtensionsEditorialReasonsRequest $parameters)
     {
       return $this->__soapCall("GetAdExtensionsEditorialReasons", array($parameters));
     }
@@ -782,7 +782,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param SetAdExtensionsAssociationsRequest $parameters
      * @return SetAdExtensionsAssociationsResponse
      */
-    public function SetAdExtensionsAssociations(SetAdExtensionsAssociationsRequest $parameters)
+    public function setAdExtensionsAssociations(SetAdExtensionsAssociationsRequest $parameters)
     {
       return $this->__soapCall("SetAdExtensionsAssociations", array($parameters));
     }
@@ -791,7 +791,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetAdExtensionsAssociationsRequest $parameters
      * @return GetAdExtensionsAssociationsResponse
      */
-    public function GetAdExtensionsAssociations(GetAdExtensionsAssociationsRequest $parameters)
+    public function getAdExtensionsAssociations(GetAdExtensionsAssociationsRequest $parameters)
     {
       return $this->__soapCall("GetAdExtensionsAssociations", array($parameters));
     }
@@ -800,7 +800,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteAdExtensionsAssociationsRequest $parameters
      * @return DeleteAdExtensionsAssociationsResponse
      */
-    public function DeleteAdExtensionsAssociations(DeleteAdExtensionsAssociationsRequest $parameters)
+    public function deleteAdExtensionsAssociations(DeleteAdExtensionsAssociationsRequest $parameters)
     {
       return $this->__soapCall("DeleteAdExtensionsAssociations", array($parameters));
     }
@@ -809,7 +809,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetAdExtensionIdsByAccountIdRequest $parameters
      * @return GetAdExtensionIdsByAccountIdResponse
      */
-    public function GetAdExtensionIdsByAccountId(GetAdExtensionIdsByAccountIdRequest $parameters)
+    public function getAdExtensionIdsByAccountId(GetAdExtensionIdsByAccountIdRequest $parameters)
     {
       return $this->__soapCall("GetAdExtensionIdsByAccountId", array($parameters));
     }
@@ -818,7 +818,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddMediaRequest $parameters
      * @return AddMediaResponse
      */
-    public function AddMedia(AddMediaRequest $parameters)
+    public function addMedia(AddMediaRequest $parameters)
     {
       return $this->__soapCall("AddMedia", array($parameters));
     }
@@ -827,7 +827,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteMediaRequest $parameters
      * @return DeleteMediaResponse
      */
-    public function DeleteMedia(DeleteMediaRequest $parameters)
+    public function deleteMedia(DeleteMediaRequest $parameters)
     {
       return $this->__soapCall("DeleteMedia", array($parameters));
     }
@@ -836,7 +836,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetMediaMetaDataByAccountIdRequest $parameters
      * @return GetMediaMetaDataByAccountIdResponse
      */
-    public function GetMediaMetaDataByAccountId(GetMediaMetaDataByAccountIdRequest $parameters)
+    public function getMediaMetaDataByAccountId(GetMediaMetaDataByAccountIdRequest $parameters)
     {
       return $this->__soapCall("GetMediaMetaDataByAccountId", array($parameters));
     }
@@ -845,7 +845,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetMediaMetaDataByIdsRequest $parameters
      * @return GetMediaMetaDataByIdsResponse
      */
-    public function GetMediaMetaDataByIds(GetMediaMetaDataByIdsRequest $parameters)
+    public function getMediaMetaDataByIds(GetMediaMetaDataByIdsRequest $parameters)
     {
       return $this->__soapCall("GetMediaMetaDataByIds", array($parameters));
     }
@@ -854,7 +854,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetMediaAssociationsRequest $parameters
      * @return GetMediaAssociationsResponse
      */
-    public function GetMediaAssociations(GetMediaAssociationsRequest $parameters)
+    public function getMediaAssociations(GetMediaAssociationsRequest $parameters)
     {
       return $this->__soapCall("GetMediaAssociations", array($parameters));
     }
@@ -863,7 +863,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetAdGroupCriterionsByIdsRequest $parameters
      * @return GetAdGroupCriterionsByIdsResponse
      */
-    public function GetAdGroupCriterionsByIds(GetAdGroupCriterionsByIdsRequest $parameters)
+    public function getAdGroupCriterionsByIds(GetAdGroupCriterionsByIdsRequest $parameters)
     {
       return $this->__soapCall("GetAdGroupCriterionsByIds", array($parameters));
     }
@@ -872,7 +872,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddAdGroupCriterionsRequest $parameters
      * @return AddAdGroupCriterionsResponse
      */
-    public function AddAdGroupCriterions(AddAdGroupCriterionsRequest $parameters)
+    public function addAdGroupCriterions(AddAdGroupCriterionsRequest $parameters)
     {
       return $this->__soapCall("AddAdGroupCriterions", array($parameters));
     }
@@ -881,7 +881,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param UpdateAdGroupCriterionsRequest $parameters
      * @return UpdateAdGroupCriterionsResponse
      */
-    public function UpdateAdGroupCriterions(UpdateAdGroupCriterionsRequest $parameters)
+    public function updateAdGroupCriterions(UpdateAdGroupCriterionsRequest $parameters)
     {
       return $this->__soapCall("UpdateAdGroupCriterions", array($parameters));
     }
@@ -890,7 +890,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteAdGroupCriterionsRequest $parameters
      * @return DeleteAdGroupCriterionsResponse
      */
-    public function DeleteAdGroupCriterions(DeleteAdGroupCriterionsRequest $parameters)
+    public function deleteAdGroupCriterions(DeleteAdGroupCriterionsRequest $parameters)
     {
       return $this->__soapCall("DeleteAdGroupCriterions", array($parameters));
     }
@@ -899,7 +899,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param ApplyProductPartitionActionsRequest $parameters
      * @return ApplyProductPartitionActionsResponse
      */
-    public function ApplyProductPartitionActions(ApplyProductPartitionActionsRequest $parameters)
+    public function applyProductPartitionActions(ApplyProductPartitionActionsRequest $parameters)
     {
       return $this->__soapCall("ApplyProductPartitionActions", array($parameters));
     }
@@ -908,7 +908,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetBMCStoresByCustomerIdRequest $parameters
      * @return GetBMCStoresByCustomerIdResponse
      */
-    public function GetBMCStoresByCustomerId(GetBMCStoresByCustomerIdRequest $parameters)
+    public function getBMCStoresByCustomerId(GetBMCStoresByCustomerIdRequest $parameters)
     {
       return $this->__soapCall("GetBMCStoresByCustomerId", array($parameters));
     }
@@ -917,7 +917,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddNegativeKeywordsToEntitiesRequest $parameters
      * @return AddNegativeKeywordsToEntitiesResponse
      */
-    public function AddNegativeKeywordsToEntities(AddNegativeKeywordsToEntitiesRequest $parameters)
+    public function addNegativeKeywordsToEntities(AddNegativeKeywordsToEntitiesRequest $parameters)
     {
       return $this->__soapCall("AddNegativeKeywordsToEntities", array($parameters));
     }
@@ -926,7 +926,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetNegativeKeywordsByEntityIdsRequest $parameters
      * @return GetNegativeKeywordsByEntityIdsResponse
      */
-    public function GetNegativeKeywordsByEntityIds(GetNegativeKeywordsByEntityIdsRequest $parameters)
+    public function getNegativeKeywordsByEntityIds(GetNegativeKeywordsByEntityIdsRequest $parameters)
     {
       return $this->__soapCall("GetNegativeKeywordsByEntityIds", array($parameters));
     }
@@ -935,7 +935,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteNegativeKeywordsFromEntitiesRequest $parameters
      * @return DeleteNegativeKeywordsFromEntitiesResponse
      */
-    public function DeleteNegativeKeywordsFromEntities(DeleteNegativeKeywordsFromEntitiesRequest $parameters)
+    public function deleteNegativeKeywordsFromEntities(DeleteNegativeKeywordsFromEntitiesRequest $parameters)
     {
       return $this->__soapCall("DeleteNegativeKeywordsFromEntities", array($parameters));
     }
@@ -944,7 +944,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetSharedEntitiesByAccountIdRequest $parameters
      * @return GetSharedEntitiesByAccountIdResponse
      */
-    public function GetSharedEntitiesByAccountId(GetSharedEntitiesByAccountIdRequest $parameters)
+    public function getSharedEntitiesByAccountId(GetSharedEntitiesByAccountIdRequest $parameters)
     {
       return $this->__soapCall("GetSharedEntitiesByAccountId", array($parameters));
     }
@@ -953,7 +953,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddSharedEntityRequest $parameters
      * @return AddSharedEntityResponse
      */
-    public function AddSharedEntity(AddSharedEntityRequest $parameters)
+    public function addSharedEntity(AddSharedEntityRequest $parameters)
     {
       return $this->__soapCall("AddSharedEntity", array($parameters));
     }
@@ -962,7 +962,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetListItemsBySharedListRequest $parameters
      * @return GetListItemsBySharedListResponse
      */
-    public function GetListItemsBySharedList(GetListItemsBySharedListRequest $parameters)
+    public function getListItemsBySharedList(GetListItemsBySharedListRequest $parameters)
     {
       return $this->__soapCall("GetListItemsBySharedList", array($parameters));
     }
@@ -971,7 +971,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddListItemsToSharedListRequest $parameters
      * @return AddListItemsToSharedListResponse
      */
-    public function AddListItemsToSharedList(AddListItemsToSharedListRequest $parameters)
+    public function addListItemsToSharedList(AddListItemsToSharedListRequest $parameters)
     {
       return $this->__soapCall("AddListItemsToSharedList", array($parameters));
     }
@@ -980,7 +980,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param UpdateSharedEntitiesRequest $parameters
      * @return UpdateSharedEntitiesResponse
      */
-    public function UpdateSharedEntities(UpdateSharedEntitiesRequest $parameters)
+    public function updateSharedEntities(UpdateSharedEntitiesRequest $parameters)
     {
       return $this->__soapCall("UpdateSharedEntities", array($parameters));
     }
@@ -989,7 +989,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteListItemsFromSharedListRequest $parameters
      * @return DeleteListItemsFromSharedListResponse
      */
-    public function DeleteListItemsFromSharedList(DeleteListItemsFromSharedListRequest $parameters)
+    public function deleteListItemsFromSharedList(DeleteListItemsFromSharedListRequest $parameters)
     {
       return $this->__soapCall("DeleteListItemsFromSharedList", array($parameters));
     }
@@ -998,7 +998,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param SetSharedEntityAssociationsRequest $parameters
      * @return SetSharedEntityAssociationsResponse
      */
-    public function SetSharedEntityAssociations(SetSharedEntityAssociationsRequest $parameters)
+    public function setSharedEntityAssociations(SetSharedEntityAssociationsRequest $parameters)
     {
       return $this->__soapCall("SetSharedEntityAssociations", array($parameters));
     }
@@ -1007,7 +1007,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteSharedEntityAssociationsRequest $parameters
      * @return DeleteSharedEntityAssociationsResponse
      */
-    public function DeleteSharedEntityAssociations(DeleteSharedEntityAssociationsRequest $parameters)
+    public function deleteSharedEntityAssociations(DeleteSharedEntityAssociationsRequest $parameters)
     {
       return $this->__soapCall("DeleteSharedEntityAssociations", array($parameters));
     }
@@ -1016,7 +1016,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetSharedEntityAssociationsBySharedEntityIdsRequest $parameters
      * @return GetSharedEntityAssociationsBySharedEntityIdsResponse
      */
-    public function GetSharedEntityAssociationsBySharedEntityIds(GetSharedEntityAssociationsBySharedEntityIdsRequest $parameters)
+    public function getSharedEntityAssociationsBySharedEntityIds(GetSharedEntityAssociationsBySharedEntityIdsRequest $parameters)
     {
       return $this->__soapCall("GetSharedEntityAssociationsBySharedEntityIds", array($parameters));
     }
@@ -1025,7 +1025,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetSharedEntityAssociationsByEntityIdsRequest $parameters
      * @return GetSharedEntityAssociationsByEntityIdsResponse
      */
-    public function GetSharedEntityAssociationsByEntityIds(GetSharedEntityAssociationsByEntityIdsRequest $parameters)
+    public function getSharedEntityAssociationsByEntityIds(GetSharedEntityAssociationsByEntityIdsRequest $parameters)
     {
       return $this->__soapCall("GetSharedEntityAssociationsByEntityIds", array($parameters));
     }
@@ -1034,7 +1034,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteSharedEntitiesRequest $parameters
      * @return DeleteSharedEntitiesResponse
      */
-    public function DeleteSharedEntities(DeleteSharedEntitiesRequest $parameters)
+    public function deleteSharedEntities(DeleteSharedEntitiesRequest $parameters)
     {
       return $this->__soapCall("DeleteSharedEntities", array($parameters));
     }
@@ -1043,7 +1043,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetCampaignSizesByAccountIdRequest $parameters
      * @return GetCampaignSizesByAccountIdResponse
      */
-    public function GetCampaignSizesByAccountId(GetCampaignSizesByAccountIdRequest $parameters)
+    public function getCampaignSizesByAccountId(GetCampaignSizesByAccountIdRequest $parameters)
     {
       return $this->__soapCall("GetCampaignSizesByAccountId", array($parameters));
     }
@@ -1052,7 +1052,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddCampaignCriterionsRequest $parameters
      * @return AddCampaignCriterionsResponse
      */
-    public function AddCampaignCriterions(AddCampaignCriterionsRequest $parameters)
+    public function addCampaignCriterions(AddCampaignCriterionsRequest $parameters)
     {
       return $this->__soapCall("AddCampaignCriterions", array($parameters));
     }
@@ -1061,7 +1061,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param UpdateCampaignCriterionsRequest $parameters
      * @return UpdateCampaignCriterionsResponse
      */
-    public function UpdateCampaignCriterions(UpdateCampaignCriterionsRequest $parameters)
+    public function updateCampaignCriterions(UpdateCampaignCriterionsRequest $parameters)
     {
       return $this->__soapCall("UpdateCampaignCriterions", array($parameters));
     }
@@ -1070,7 +1070,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteCampaignCriterionsRequest $parameters
      * @return DeleteCampaignCriterionsResponse
      */
-    public function DeleteCampaignCriterions(DeleteCampaignCriterionsRequest $parameters)
+    public function deleteCampaignCriterions(DeleteCampaignCriterionsRequest $parameters)
     {
       return $this->__soapCall("DeleteCampaignCriterions", array($parameters));
     }
@@ -1079,7 +1079,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetCampaignCriterionsByIdsRequest $parameters
      * @return GetCampaignCriterionsByIdsResponse
      */
-    public function GetCampaignCriterionsByIds(GetCampaignCriterionsByIdsRequest $parameters)
+    public function getCampaignCriterionsByIds(GetCampaignCriterionsByIdsRequest $parameters)
     {
       return $this->__soapCall("GetCampaignCriterionsByIds", array($parameters));
     }
@@ -1088,7 +1088,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddBudgetsRequest $parameters
      * @return AddBudgetsResponse
      */
-    public function AddBudgets(AddBudgetsRequest $parameters)
+    public function addBudgets(AddBudgetsRequest $parameters)
     {
       return $this->__soapCall("AddBudgets", array($parameters));
     }
@@ -1097,7 +1097,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param UpdateBudgetsRequest $parameters
      * @return UpdateBudgetsResponse
      */
-    public function UpdateBudgets(UpdateBudgetsRequest $parameters)
+    public function updateBudgets(UpdateBudgetsRequest $parameters)
     {
       return $this->__soapCall("UpdateBudgets", array($parameters));
     }
@@ -1106,7 +1106,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteBudgetsRequest $parameters
      * @return DeleteBudgetsResponse
      */
-    public function DeleteBudgets(DeleteBudgetsRequest $parameters)
+    public function deleteBudgets(DeleteBudgetsRequest $parameters)
     {
       return $this->__soapCall("DeleteBudgets", array($parameters));
     }
@@ -1115,7 +1115,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetBudgetsByIdsRequest $parameters
      * @return GetBudgetsByIdsResponse
      */
-    public function GetBudgetsByIds(GetBudgetsByIdsRequest $parameters)
+    public function getBudgetsByIds(GetBudgetsByIdsRequest $parameters)
     {
       return $this->__soapCall("GetBudgetsByIds", array($parameters));
     }
@@ -1124,7 +1124,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetCampaignIdsByBudgetIdsRequest $parameters
      * @return GetCampaignIdsByBudgetIdsResponse
      */
-    public function GetCampaignIdsByBudgetIds(GetCampaignIdsByBudgetIdsRequest $parameters)
+    public function getCampaignIdsByBudgetIds(GetCampaignIdsByBudgetIdsRequest $parameters)
     {
       return $this->__soapCall("GetCampaignIdsByBudgetIds", array($parameters));
     }
@@ -1133,7 +1133,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddAudiencesRequest $parameters
      * @return AddAudiencesResponse
      */
-    public function AddAudiences(AddAudiencesRequest $parameters)
+    public function addAudiences(AddAudiencesRequest $parameters)
     {
       return $this->__soapCall("AddAudiences", array($parameters));
     }
@@ -1142,7 +1142,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param UpdateAudiencesRequest $parameters
      * @return UpdateAudiencesResponse
      */
-    public function UpdateAudiences(UpdateAudiencesRequest $parameters)
+    public function updateAudiences(UpdateAudiencesRequest $parameters)
     {
       return $this->__soapCall("UpdateAudiences", array($parameters));
     }
@@ -1151,7 +1151,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteAudiencesRequest $parameters
      * @return DeleteAudiencesResponse
      */
-    public function DeleteAudiences(DeleteAudiencesRequest $parameters)
+    public function deleteAudiences(DeleteAudiencesRequest $parameters)
     {
       return $this->__soapCall("DeleteAudiences", array($parameters));
     }
@@ -1160,7 +1160,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetAudiencesByIdsRequest $parameters
      * @return GetAudiencesByIdsResponse
      */
-    public function GetAudiencesByIds(GetAudiencesByIdsRequest $parameters)
+    public function getAudiencesByIds(GetAudiencesByIdsRequest $parameters)
     {
       return $this->__soapCall("GetAudiencesByIds", array($parameters));
     }
@@ -1169,7 +1169,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetUetTagsByIdsRequest $parameters
      * @return GetUetTagsByIdsResponse
      */
-    public function GetUetTagsByIds(GetUetTagsByIdsRequest $parameters)
+    public function getUetTagsByIds(GetUetTagsByIdsRequest $parameters)
     {
       return $this->__soapCall("GetUetTagsByIds", array($parameters));
     }
@@ -1178,7 +1178,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddUetTagsRequest $parameters
      * @return AddUetTagsResponse
      */
-    public function AddUetTags(AddUetTagsRequest $parameters)
+    public function addUetTags(AddUetTagsRequest $parameters)
     {
       return $this->__soapCall("AddUetTags", array($parameters));
     }
@@ -1187,7 +1187,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param UpdateUetTagsRequest $parameters
      * @return UpdateUetTagsResponse
      */
-    public function UpdateUetTags(UpdateUetTagsRequest $parameters)
+    public function updateUetTags(UpdateUetTagsRequest $parameters)
     {
       return $this->__soapCall("UpdateUetTags", array($parameters));
     }
@@ -1196,7 +1196,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetConversionGoalsByIdsRequest $parameters
      * @return GetConversionGoalsByIdsResponse
      */
-    public function GetConversionGoalsByIds(GetConversionGoalsByIdsRequest $parameters)
+    public function getConversionGoalsByIds(GetConversionGoalsByIdsRequest $parameters)
     {
       return $this->__soapCall("GetConversionGoalsByIds", array($parameters));
     }
@@ -1205,7 +1205,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetConversionGoalsByTagIdsRequest $parameters
      * @return GetConversionGoalsByTagIdsResponse
      */
-    public function GetConversionGoalsByTagIds(GetConversionGoalsByTagIdsRequest $parameters)
+    public function getConversionGoalsByTagIds(GetConversionGoalsByTagIdsRequest $parameters)
     {
       return $this->__soapCall("GetConversionGoalsByTagIds", array($parameters));
     }
@@ -1214,7 +1214,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddConversionGoalsRequest $parameters
      * @return AddConversionGoalsResponse
      */
-    public function AddConversionGoals(AddConversionGoalsRequest $parameters)
+    public function addConversionGoals(AddConversionGoalsRequest $parameters)
     {
       return $this->__soapCall("AddConversionGoals", array($parameters));
     }
@@ -1223,7 +1223,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param UpdateConversionGoalsRequest $parameters
      * @return UpdateConversionGoalsResponse
      */
-    public function UpdateConversionGoals(UpdateConversionGoalsRequest $parameters)
+    public function updateConversionGoals(UpdateConversionGoalsRequest $parameters)
     {
       return $this->__soapCall("UpdateConversionGoals", array($parameters));
     }
@@ -1232,7 +1232,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param ApplyOfflineConversionsRequest $parameters
      * @return ApplyOfflineConversionsResponse
      */
-    public function ApplyOfflineConversions(ApplyOfflineConversionsRequest $parameters)
+    public function applyOfflineConversions(ApplyOfflineConversionsRequest $parameters)
     {
       return $this->__soapCall("ApplyOfflineConversions", array($parameters));
     }
@@ -1241,7 +1241,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param AddLabelsRequest $parameters
      * @return AddLabelsResponse
      */
-    public function AddLabels(AddLabelsRequest $parameters)
+    public function addLabels(AddLabelsRequest $parameters)
     {
       return $this->__soapCall("AddLabels", array($parameters));
     }
@@ -1250,7 +1250,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteLabelsRequest $parameters
      * @return DeleteLabelsResponse
      */
-    public function DeleteLabels(DeleteLabelsRequest $parameters)
+    public function deleteLabels(DeleteLabelsRequest $parameters)
     {
       return $this->__soapCall("DeleteLabels", array($parameters));
     }
@@ -1259,7 +1259,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param UpdateLabelsRequest $parameters
      * @return UpdateLabelsResponse
      */
-    public function UpdateLabels(UpdateLabelsRequest $parameters)
+    public function updateLabels(UpdateLabelsRequest $parameters)
     {
       return $this->__soapCall("UpdateLabels", array($parameters));
     }
@@ -1268,7 +1268,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetLabelsByIdsRequest $parameters
      * @return GetLabelsByIdsResponse
      */
-    public function GetLabelsByIds(GetLabelsByIdsRequest $parameters)
+    public function getLabelsByIds(GetLabelsByIdsRequest $parameters)
     {
       return $this->__soapCall("GetLabelsByIds", array($parameters));
     }
@@ -1277,7 +1277,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param SetLabelAssociationsRequest $parameters
      * @return SetLabelAssociationsResponse
      */
-    public function SetLabelAssociations(SetLabelAssociationsRequest $parameters)
+    public function setLabelAssociations(SetLabelAssociationsRequest $parameters)
     {
       return $this->__soapCall("SetLabelAssociations", array($parameters));
     }
@@ -1286,7 +1286,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param DeleteLabelAssociationsRequest $parameters
      * @return DeleteLabelAssociationsResponse
      */
-    public function DeleteLabelAssociations(DeleteLabelAssociationsRequest $parameters)
+    public function deleteLabelAssociations(DeleteLabelAssociationsRequest $parameters)
     {
       return $this->__soapCall("DeleteLabelAssociations", array($parameters));
     }
@@ -1295,7 +1295,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetLabelAssociationsByEntityIdsRequest $parameters
      * @return GetLabelAssociationsByEntityIdsResponse
      */
-    public function GetLabelAssociationsByEntityIds(GetLabelAssociationsByEntityIdsRequest $parameters)
+    public function getLabelAssociationsByEntityIds(GetLabelAssociationsByEntityIdsRequest $parameters)
     {
       return $this->__soapCall("GetLabelAssociationsByEntityIds", array($parameters));
     }
@@ -1304,7 +1304,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetLabelAssociationsByLabelIdsRequest $parameters
      * @return GetLabelAssociationsByLabelIdsResponse
      */
-    public function GetLabelAssociationsByLabelIds(GetLabelAssociationsByLabelIdsRequest $parameters)
+    public function getLabelAssociationsByLabelIds(GetLabelAssociationsByLabelIdsRequest $parameters)
     {
       return $this->__soapCall("GetLabelAssociationsByLabelIds", array($parameters));
     }
@@ -1313,7 +1313,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param GetProfileDataFileUrlRequest $parameters
      * @return GetProfileDataFileUrlResponse
      */
-    public function GetProfileDataFileUrl(GetProfileDataFileUrlRequest $parameters)
+    public function getProfileDataFileUrl(GetProfileDataFileUrlRequest $parameters)
     {
       return $this->__soapCall("GetProfileDataFileUrl", array($parameters));
     }

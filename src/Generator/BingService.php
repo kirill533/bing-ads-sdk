@@ -214,7 +214,7 @@ class BingService extends Service
             );
             $paramStr = $operation->getParamString($this->types);
 
-            $function = new PhpFunction('public', $name, $paramStr, $source, $comment);
+            $function = new PhpFunction('public', lcfirst($name), $paramStr, $source, $comment);
             if ($this->class->functionExists($function->getIdentifier()) == false) {
                 $this->class->addFunction($function);
             }

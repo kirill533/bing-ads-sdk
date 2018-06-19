@@ -28,6 +28,11 @@ class BingSession
     private $developerToken;
 
     /**
+     * @var string
+     */
+    private $environment;
+
+    /**
      * @var string|null
      */
     private $accountId;
@@ -48,6 +53,7 @@ class BingSession
         string $developerToken,
         ?string $accountId,
         ?string $customerId,
+        ?string $environment=null,
         ?AccessToken $currentToken=null
     ) {
         $this->oauth = $oauth;
@@ -55,6 +61,7 @@ class BingSession
         $this->developerToken = $developerToken;
         $this->accountId = $accountId;
         $this->customerId = $customerId;
+        $this->environment = $environment ? Environments::validate($environment) : Environments::PROD;
         $this->currentToken = $currentToken;
     }
 
@@ -76,6 +83,11 @@ class BingSession
     public function getCustomerId() : ?string
     {
         return $this->customerId;
+    }
+
+    public function getEnvironment() : string
+    {
+        return $this->environment;
     }
 
     public function getOrRefreshAccessToken() : AccessToken

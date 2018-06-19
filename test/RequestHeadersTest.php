@@ -31,6 +31,7 @@ class RequestHeadersTest extends TestCase
             'devtoken',
             'accountid',
             'customerid',
+            Environments::SANDBOX,
             new AccessToken([
                 'access_token' => 'shhh',
                 'expires' => time() + 100000,

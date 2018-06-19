@@ -39,6 +39,20 @@ class BingSessionTest extends TestCase
         $this->assertSame('testcustomer', $s->getCustomerId());
     }
 
+    public function testGetEnvironmentReturnsProdWhenNoEnvironmentIsPassedIn()
+    {
+        $s = new BingSession($this->oauth, 'testrefresh', 'ignored', null, null);
+
+        $this->assertSame(Environments::PROD, $s->getEnvironment());
+    }
+
+    public function testGetEnvironmentReturnsValueFromConstructorWhenSet()
+    {
+        $s = new BingSession($this->oauth, 'testrefresh', 'ignored', null, null, Environments::SANDBOX);
+
+        $this->assertSame(Environments::SANDBOX, $s->getEnvironment());
+    }
+
     public function testGetOrRefreshAccessTokenFetchesNewTokenWhenOneIsNotSet()
     {
         $token = $this->createToken();
@@ -93,6 +107,7 @@ class BingSessionTest extends TestCase
             'ignored_dev_token',
             'ignored_account_id',
             'ignored_customer_id',
+            null,
             $token
         );
     }
@@ -103,9 +118,5 @@ class BingSessionTest extends TestCase
             'access_token' => 'shhh',
             'expires' => $expires ?? time() + 10000,
         ]);
-    }
-
-    private function willFetchAccessToken(AccessToken $token) : void
-    {
     }
 }

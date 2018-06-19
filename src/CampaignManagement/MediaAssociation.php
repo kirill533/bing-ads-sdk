@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class MediaAssociation
 {
@@ -36,7 +36,7 @@ class MediaAssociation
 
     /**
      * @param int $EntityId
-     * @return \PMG\BingAds\CampaignMangagement\MediaAssociation
+     * @return \PMG\BingAds\CampaignManagement\MediaAssociation
      */
     public function setEntityId($EntityId)
     {
@@ -54,7 +54,7 @@ class MediaAssociation
 
     /**
      * @param MediaEnabledEntityFilter $MediaEnabledEntity
-     * @return \PMG\BingAds\CampaignMangagement\MediaAssociation
+     * @return \PMG\BingAds\CampaignManagement\MediaAssociation
      */
     public function setMediaEnabledEntity($MediaEnabledEntity)
     {
@@ -72,7 +72,7 @@ class MediaAssociation
 
     /**
      * @param int $MediaId
-     * @return \PMG\BingAds\CampaignMangagement\MediaAssociation
+     * @return \PMG\BingAds\CampaignManagement\MediaAssociation
      */
     public function setMediaId($MediaId)
     {

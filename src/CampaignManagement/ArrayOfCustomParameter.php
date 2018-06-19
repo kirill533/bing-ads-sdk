@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfCustomParameter implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfCustomParameter implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param CustomParameter[] $CustomParameter
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfCustomParameter
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfCustomParameter
      */
     public function setCustomParameter(array $CustomParameter = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfOfflineConversion implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfOfflineConversion implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param OfflineConversion[] $OfflineConversion
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfOfflineConversion
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfOfflineConversion
      */
     public function setOfflineConversion(array $OfflineConversion = null)
     {

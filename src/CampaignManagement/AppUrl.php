@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AppUrl
 {
@@ -31,7 +31,7 @@ class AppUrl
 
     /**
      * @param string $OsType
-     * @return \PMG\BingAds\CampaignMangagement\AppUrl
+     * @return \PMG\BingAds\CampaignManagement\AppUrl
      */
     public function setOsType($OsType)
     {
@@ -49,7 +49,7 @@ class AppUrl
 
     /**
      * @param string $Url
-     * @return \PMG\BingAds\CampaignMangagement\AppUrl
+     * @return \PMG\BingAds\CampaignManagement\AppUrl
      */
     public function setUrl($Url)
     {

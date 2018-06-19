@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class CallAdExtension extends AdExtension
 {
@@ -46,7 +46,7 @@ class CallAdExtension extends AdExtension
 
     /**
      * @param string $CountryCode
-     * @return \PMG\BingAds\CampaignMangagement\CallAdExtension
+     * @return \PMG\BingAds\CampaignManagement\CallAdExtension
      */
     public function setCountryCode($CountryCode)
     {
@@ -64,7 +64,7 @@ class CallAdExtension extends AdExtension
 
     /**
      * @param boolean $IsCallOnly
-     * @return \PMG\BingAds\CampaignMangagement\CallAdExtension
+     * @return \PMG\BingAds\CampaignManagement\CallAdExtension
      */
     public function setIsCallOnly($IsCallOnly)
     {
@@ -82,7 +82,7 @@ class CallAdExtension extends AdExtension
 
     /**
      * @param boolean $IsCallTrackingEnabled
-     * @return \PMG\BingAds\CampaignMangagement\CallAdExtension
+     * @return \PMG\BingAds\CampaignManagement\CallAdExtension
      */
     public function setIsCallTrackingEnabled($IsCallTrackingEnabled)
     {
@@ -100,7 +100,7 @@ class CallAdExtension extends AdExtension
 
     /**
      * @param string $PhoneNumber
-     * @return \PMG\BingAds\CampaignMangagement\CallAdExtension
+     * @return \PMG\BingAds\CampaignManagement\CallAdExtension
      */
     public function setPhoneNumber($PhoneNumber)
     {
@@ -118,7 +118,7 @@ class CallAdExtension extends AdExtension
 
     /**
      * @param boolean $RequireTollFreeTrackingNumber
-     * @return \PMG\BingAds\CampaignMangagement\CallAdExtension
+     * @return \PMG\BingAds\CampaignManagement\CallAdExtension
      */
     public function setRequireTollFreeTrackingNumber($RequireTollFreeTrackingNumber)
     {

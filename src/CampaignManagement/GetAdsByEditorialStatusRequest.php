@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetAdsByEditorialStatusRequest
 {
@@ -42,7 +42,7 @@ class GetAdsByEditorialStatusRequest
 
     /**
      * @param int $AdGroupId
-     * @return \PMG\BingAds\CampaignMangagement\GetAdsByEditorialStatusRequest
+     * @return \PMG\BingAds\CampaignManagement\GetAdsByEditorialStatusRequest
      */
     public function setAdGroupId($AdGroupId)
     {
@@ -60,7 +60,7 @@ class GetAdsByEditorialStatusRequest
 
     /**
      * @param AdEditorialStatus $EditorialStatus
-     * @return \PMG\BingAds\CampaignMangagement\GetAdsByEditorialStatusRequest
+     * @return \PMG\BingAds\CampaignManagement\GetAdsByEditorialStatusRequest
      */
     public function setEditorialStatus($EditorialStatus)
     {
@@ -78,7 +78,7 @@ class GetAdsByEditorialStatusRequest
 
     /**
      * @param ArrayOfAdType $AdTypes
-     * @return \PMG\BingAds\CampaignMangagement\GetAdsByEditorialStatusRequest
+     * @return \PMG\BingAds\CampaignManagement\GetAdsByEditorialStatusRequest
      */
     public function setAdTypes($AdTypes)
     {

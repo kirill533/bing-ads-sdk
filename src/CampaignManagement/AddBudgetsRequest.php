@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddBudgetsRequest
 {
@@ -28,7 +28,7 @@ class AddBudgetsRequest
 
     /**
      * @param ArrayOfBudget $Budgets
-     * @return \PMG\BingAds\CampaignMangagement\AddBudgetsRequest
+     * @return \PMG\BingAds\CampaignManagement\AddBudgetsRequest
      */
     public function setBudgets($Budgets)
     {

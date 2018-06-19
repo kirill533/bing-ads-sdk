@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfAdExtensionEditorialReason implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfAdExtensionEditorialReason implements \ArrayAccess, \Iterator, \Cou
 
     /**
      * @param AdExtensionEditorialReason[] $AdExtensionEditorialReason
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfAdExtensionEditorialReason
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfAdExtensionEditorialReason
      */
     public function setAdExtensionEditorialReason(array $AdExtensionEditorialReason = null)
     {

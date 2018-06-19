@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class UrlGoal extends ConversionGoal
 {
@@ -31,7 +31,7 @@ class UrlGoal extends ConversionGoal
 
     /**
      * @param string $UrlExpression
-     * @return \PMG\BingAds\CampaignMangagement\UrlGoal
+     * @return \PMG\BingAds\CampaignManagement\UrlGoal
      */
     public function setUrlExpression($UrlExpression)
     {
@@ -49,7 +49,7 @@ class UrlGoal extends ConversionGoal
 
     /**
      * @param ExpressionOperator $UrlOperator
-     * @return \PMG\BingAds\CampaignMangagement\UrlGoal
+     * @return \PMG\BingAds\CampaignManagement\UrlGoal
      */
     public function setUrlOperator($UrlOperator)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ProfileCriterion extends Criterion
 {
@@ -31,7 +31,7 @@ class ProfileCriterion extends Criterion
 
     /**
      * @param int $ProfileId
-     * @return \PMG\BingAds\CampaignMangagement\ProfileCriterion
+     * @return \PMG\BingAds\CampaignManagement\ProfileCriterion
      */
     public function setProfileId($ProfileId)
     {
@@ -49,7 +49,7 @@ class ProfileCriterion extends Criterion
 
     /**
      * @param ProfileType $ProfileType
-     * @return \PMG\BingAds\CampaignMangagement\ProfileCriterion
+     * @return \PMG\BingAds\CampaignManagement\ProfileCriterion
      */
     public function setProfileType($ProfileType)
     {

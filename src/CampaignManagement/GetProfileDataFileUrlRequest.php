@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetProfileDataFileUrlRequest
 {
@@ -35,7 +35,7 @@ class GetProfileDataFileUrlRequest
 
     /**
      * @param string $LanguageLocale
-     * @return \PMG\BingAds\CampaignMangagement\GetProfileDataFileUrlRequest
+     * @return \PMG\BingAds\CampaignManagement\GetProfileDataFileUrlRequest
      */
     public function setLanguageLocale($LanguageLocale)
     {
@@ -53,7 +53,7 @@ class GetProfileDataFileUrlRequest
 
     /**
      * @param ProfileType $ProfileType
-     * @return \PMG\BingAds\CampaignMangagement\GetProfileDataFileUrlRequest
+     * @return \PMG\BingAds\CampaignManagement\GetProfileDataFileUrlRequest
      */
     public function setProfileType($ProfileType)
     {

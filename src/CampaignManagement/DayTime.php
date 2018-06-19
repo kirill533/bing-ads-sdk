@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DayTime
 {
@@ -56,7 +56,7 @@ class DayTime
 
     /**
      * @param Day $Day
-     * @return \PMG\BingAds\CampaignMangagement\DayTime
+     * @return \PMG\BingAds\CampaignManagement\DayTime
      */
     public function setDay($Day)
     {
@@ -74,7 +74,7 @@ class DayTime
 
     /**
      * @param int $EndHour
-     * @return \PMG\BingAds\CampaignMangagement\DayTime
+     * @return \PMG\BingAds\CampaignManagement\DayTime
      */
     public function setEndHour($EndHour)
     {
@@ -92,7 +92,7 @@ class DayTime
 
     /**
      * @param Minute $EndMinute
-     * @return \PMG\BingAds\CampaignMangagement\DayTime
+     * @return \PMG\BingAds\CampaignManagement\DayTime
      */
     public function setEndMinute($EndMinute)
     {
@@ -110,7 +110,7 @@ class DayTime
 
     /**
      * @param int $StartHour
-     * @return \PMG\BingAds\CampaignMangagement\DayTime
+     * @return \PMG\BingAds\CampaignManagement\DayTime
      */
     public function setStartHour($StartHour)
     {
@@ -128,7 +128,7 @@ class DayTime
 
     /**
      * @param Minute $StartMinute
-     * @return \PMG\BingAds\CampaignMangagement\DayTime
+     * @return \PMG\BingAds\CampaignManagement\DayTime
      */
     public function setStartMinute($StartMinute)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetKeywordsByIdsResponse
 {
@@ -35,7 +35,7 @@ class GetKeywordsByIdsResponse
 
     /**
      * @param ArrayOfKeyword $Keywords
-     * @return \PMG\BingAds\CampaignMangagement\GetKeywordsByIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetKeywordsByIdsResponse
      */
     public function setKeywords($Keywords)
     {
@@ -53,7 +53,7 @@ class GetKeywordsByIdsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\GetKeywordsByIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetKeywordsByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

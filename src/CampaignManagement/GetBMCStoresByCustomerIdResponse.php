@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetBMCStoresByCustomerIdResponse
 {
@@ -28,7 +28,7 @@ class GetBMCStoresByCustomerIdResponse
 
     /**
      * @param ArrayOfBMCStore $BMCStores
-     * @return \PMG\BingAds\CampaignMangagement\GetBMCStoresByCustomerIdResponse
+     * @return \PMG\BingAds\CampaignManagement\GetBMCStoresByCustomerIdResponse
      */
     public function setBMCStores($BMCStores)
     {

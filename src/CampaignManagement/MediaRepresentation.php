@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class MediaRepresentation
 {
@@ -36,7 +36,7 @@ class MediaRepresentation
 
     /**
      * @param string $Name
-     * @return \PMG\BingAds\CampaignMangagement\MediaRepresentation
+     * @return \PMG\BingAds\CampaignManagement\MediaRepresentation
      */
     public function setName($Name)
     {
@@ -54,7 +54,7 @@ class MediaRepresentation
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\MediaRepresentation
+     * @return \PMG\BingAds\CampaignManagement\MediaRepresentation
      */
     public function setType($Type)
     {
@@ -72,7 +72,7 @@ class MediaRepresentation
 
     /**
      * @param string $Url
-     * @return \PMG\BingAds\CampaignMangagement\MediaRepresentation
+     * @return \PMG\BingAds\CampaignManagement\MediaRepresentation
      */
     public function setUrl($Url)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class WebpageCondition
 {
@@ -31,7 +31,7 @@ class WebpageCondition
 
     /**
      * @param string $Argument
-     * @return \PMG\BingAds\CampaignMangagement\WebpageCondition
+     * @return \PMG\BingAds\CampaignManagement\WebpageCondition
      */
     public function setArgument($Argument)
     {
@@ -49,7 +49,7 @@ class WebpageCondition
 
     /**
      * @param WebpageConditionOperand $Operand
-     * @return \PMG\BingAds\CampaignMangagement\WebpageCondition
+     * @return \PMG\BingAds\CampaignManagement\WebpageCondition
      */
     public function setOperand($Operand)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class CampaignCriterion
 {
@@ -53,7 +53,7 @@ class CampaignCriterion
 
     /**
      * @param int $CampaignId
-     * @return \PMG\BingAds\CampaignMangagement\CampaignCriterion
+     * @return \PMG\BingAds\CampaignManagement\CampaignCriterion
      */
     public function setCampaignId($CampaignId)
     {
@@ -71,7 +71,7 @@ class CampaignCriterion
 
     /**
      * @param Criterion $Criterion
-     * @return \PMG\BingAds\CampaignMangagement\CampaignCriterion
+     * @return \PMG\BingAds\CampaignManagement\CampaignCriterion
      */
     public function setCriterion($Criterion)
     {
@@ -89,7 +89,7 @@ class CampaignCriterion
 
     /**
      * @param ArrayOfKeyValuePairOfstringstring $ForwardCompatibilityMap
-     * @return \PMG\BingAds\CampaignMangagement\CampaignCriterion
+     * @return \PMG\BingAds\CampaignManagement\CampaignCriterion
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
@@ -107,7 +107,7 @@ class CampaignCriterion
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\CampaignCriterion
+     * @return \PMG\BingAds\CampaignManagement\CampaignCriterion
      */
     public function setId($Id)
     {
@@ -125,7 +125,7 @@ class CampaignCriterion
 
     /**
      * @param CampaignCriterionStatus $Status
-     * @return \PMG\BingAds\CampaignMangagement\CampaignCriterion
+     * @return \PMG\BingAds\CampaignManagement\CampaignCriterion
      */
     public function setStatus($Status)
     {
@@ -143,7 +143,7 @@ class CampaignCriterion
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\CampaignCriterion
+     * @return \PMG\BingAds\CampaignManagement\CampaignCriterion
      */
     public function setType($Type)
     {

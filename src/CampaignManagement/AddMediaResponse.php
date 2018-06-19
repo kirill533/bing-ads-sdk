@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddMediaResponse
 {
@@ -28,7 +28,7 @@ class AddMediaResponse
 
     /**
      * @param ArrayOflong $MediaIds
-     * @return \PMG\BingAds\CampaignMangagement\AddMediaResponse
+     * @return \PMG\BingAds\CampaignManagement\AddMediaResponse
      */
     public function setMediaIds($MediaIds)
     {

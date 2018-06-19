@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetLabelsByIdsRequest
 {
@@ -35,7 +35,7 @@ class GetLabelsByIdsRequest
 
     /**
      * @param ArrayOflong $LabelIds
-     * @return \PMG\BingAds\CampaignMangagement\GetLabelsByIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetLabelsByIdsRequest
      */
     public function setLabelIds($LabelIds)
     {
@@ -53,7 +53,7 @@ class GetLabelsByIdsRequest
 
     /**
      * @param Paging $PageInfo
-     * @return \PMG\BingAds\CampaignMangagement\GetLabelsByIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetLabelsByIdsRequest
      */
     public function setPageInfo($PageInfo)
     {

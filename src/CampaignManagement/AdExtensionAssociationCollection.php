@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AdExtensionAssociationCollection
 {
@@ -26,7 +26,7 @@ class AdExtensionAssociationCollection
 
     /**
      * @param ArrayOfAdExtensionAssociation $AdExtensionAssociations
-     * @return \PMG\BingAds\CampaignMangagement\AdExtensionAssociationCollection
+     * @return \PMG\BingAds\CampaignManagement\AdExtensionAssociationCollection
      */
     public function setAdExtensionAssociations($AdExtensionAssociations)
     {

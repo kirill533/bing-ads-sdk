@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class CustomParameters
 {
@@ -26,7 +26,7 @@ class CustomParameters
 
     /**
      * @param ArrayOfCustomParameter $Parameters
-     * @return \PMG\BingAds\CampaignMangagement\CustomParameters
+     * @return \PMG\BingAds\CampaignManagement\CustomParameters
      */
     public function setParameters($Parameters)
     {

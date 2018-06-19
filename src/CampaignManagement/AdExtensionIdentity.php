@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AdExtensionIdentity
 {
@@ -31,7 +31,7 @@ class AdExtensionIdentity
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\AdExtensionIdentity
+     * @return \PMG\BingAds\CampaignManagement\AdExtensionIdentity
      */
     public function setId($Id)
     {
@@ -49,7 +49,7 @@ class AdExtensionIdentity
 
     /**
      * @param int $Version
-     * @return \PMG\BingAds\CampaignMangagement\AdExtensionIdentity
+     * @return \PMG\BingAds\CampaignManagement\AdExtensionIdentity
      */
     public function setVersion($Version)
     {

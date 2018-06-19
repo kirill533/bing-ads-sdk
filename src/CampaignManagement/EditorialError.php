@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class EditorialError extends BatchError
 {
@@ -46,7 +46,7 @@ class EditorialError extends BatchError
 
     /**
      * @param boolean $Appealable
-     * @return \PMG\BingAds\CampaignMangagement\EditorialError
+     * @return \PMG\BingAds\CampaignManagement\EditorialError
      */
     public function setAppealable($Appealable)
     {
@@ -64,7 +64,7 @@ class EditorialError extends BatchError
 
     /**
      * @param string $DisapprovedText
-     * @return \PMG\BingAds\CampaignMangagement\EditorialError
+     * @return \PMG\BingAds\CampaignManagement\EditorialError
      */
     public function setDisapprovedText($DisapprovedText)
     {
@@ -82,7 +82,7 @@ class EditorialError extends BatchError
 
     /**
      * @param string $Location
-     * @return \PMG\BingAds\CampaignMangagement\EditorialError
+     * @return \PMG\BingAds\CampaignManagement\EditorialError
      */
     public function setLocation($Location)
     {
@@ -100,7 +100,7 @@ class EditorialError extends BatchError
 
     /**
      * @param string $PublisherCountry
-     * @return \PMG\BingAds\CampaignMangagement\EditorialError
+     * @return \PMG\BingAds\CampaignManagement\EditorialError
      */
     public function setPublisherCountry($PublisherCountry)
     {
@@ -118,7 +118,7 @@ class EditorialError extends BatchError
 
     /**
      * @param int $ReasonCode
-     * @return \PMG\BingAds\CampaignMangagement\EditorialError
+     * @return \PMG\BingAds\CampaignManagement\EditorialError
      */
     public function setReasonCode($ReasonCode)
     {

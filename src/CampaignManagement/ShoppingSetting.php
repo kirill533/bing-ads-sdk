@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ShoppingSetting extends Setting
 {
@@ -41,7 +41,7 @@ class ShoppingSetting extends Setting
 
     /**
      * @param boolean $LocalInventoryAdsEnabled
-     * @return \PMG\BingAds\CampaignMangagement\ShoppingSetting
+     * @return \PMG\BingAds\CampaignManagement\ShoppingSetting
      */
     public function setLocalInventoryAdsEnabled($LocalInventoryAdsEnabled)
     {
@@ -59,7 +59,7 @@ class ShoppingSetting extends Setting
 
     /**
      * @param int $Priority
-     * @return \PMG\BingAds\CampaignMangagement\ShoppingSetting
+     * @return \PMG\BingAds\CampaignManagement\ShoppingSetting
      */
     public function setPriority($Priority)
     {
@@ -77,7 +77,7 @@ class ShoppingSetting extends Setting
 
     /**
      * @param string $SalesCountryCode
-     * @return \PMG\BingAds\CampaignMangagement\ShoppingSetting
+     * @return \PMG\BingAds\CampaignManagement\ShoppingSetting
      */
     public function setSalesCountryCode($SalesCountryCode)
     {
@@ -95,7 +95,7 @@ class ShoppingSetting extends Setting
 
     /**
      * @param int $StoreId
-     * @return \PMG\BingAds\CampaignMangagement\ShoppingSetting
+     * @return \PMG\BingAds\CampaignManagement\ShoppingSetting
      */
     public function setStoreId($StoreId)
     {

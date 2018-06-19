@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class TargetCpaBiddingScheme extends BiddingScheme
 {
@@ -31,7 +31,7 @@ class TargetCpaBiddingScheme extends BiddingScheme
 
     /**
      * @param Bid $MaxCpc
-     * @return \PMG\BingAds\CampaignMangagement\TargetCpaBiddingScheme
+     * @return \PMG\BingAds\CampaignManagement\TargetCpaBiddingScheme
      */
     public function setMaxCpc($MaxCpc)
     {
@@ -49,7 +49,7 @@ class TargetCpaBiddingScheme extends BiddingScheme
 
     /**
      * @param float $TargetCpa
-     * @return \PMG\BingAds\CampaignMangagement\TargetCpaBiddingScheme
+     * @return \PMG\BingAds\CampaignManagement\TargetCpaBiddingScheme
      */
     public function setTargetCpa($TargetCpa)
     {

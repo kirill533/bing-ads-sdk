@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AppealEditorialRejectionsResponse
 {
@@ -28,7 +28,7 @@ class AppealEditorialRejectionsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\AppealEditorialRejectionsResponse
+     * @return \PMG\BingAds\CampaignManagement\AppealEditorialRejectionsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

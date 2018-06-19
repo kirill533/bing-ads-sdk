@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DynamicSearchAdsSetting extends Setting
 {
@@ -41,7 +41,7 @@ class DynamicSearchAdsSetting extends Setting
 
     /**
      * @param string $DomainName
-     * @return \PMG\BingAds\CampaignMangagement\DynamicSearchAdsSetting
+     * @return \PMG\BingAds\CampaignManagement\DynamicSearchAdsSetting
      */
     public function setDomainName($DomainName)
     {
@@ -59,7 +59,7 @@ class DynamicSearchAdsSetting extends Setting
 
     /**
      * @param string $Language
-     * @return \PMG\BingAds\CampaignMangagement\DynamicSearchAdsSetting
+     * @return \PMG\BingAds\CampaignManagement\DynamicSearchAdsSetting
      */
     public function setLanguage($Language)
     {
@@ -77,7 +77,7 @@ class DynamicSearchAdsSetting extends Setting
 
     /**
      * @param ArrayOflong $PageFeedIds
-     * @return \PMG\BingAds\CampaignMangagement\DynamicSearchAdsSetting
+     * @return \PMG\BingAds\CampaignManagement\DynamicSearchAdsSetting
      */
     public function setPageFeedIds($PageFeedIds)
     {
@@ -95,7 +95,7 @@ class DynamicSearchAdsSetting extends Setting
 
     /**
      * @param DynamicSearchAdsSource $Source
-     * @return \PMG\BingAds\CampaignMangagement\DynamicSearchAdsSetting
+     * @return \PMG\BingAds\CampaignManagement\DynamicSearchAdsSetting
      */
     public function setSource($Source)
     {

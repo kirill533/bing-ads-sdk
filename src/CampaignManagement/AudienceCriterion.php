@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AudienceCriterion extends Criterion
 {
@@ -31,7 +31,7 @@ class AudienceCriterion extends Criterion
 
     /**
      * @param int $AudienceId
-     * @return \PMG\BingAds\CampaignMangagement\AudienceCriterion
+     * @return \PMG\BingAds\CampaignManagement\AudienceCriterion
      */
     public function setAudienceId($AudienceId)
     {
@@ -49,7 +49,7 @@ class AudienceCriterion extends Criterion
 
     /**
      * @param AudienceType $AudienceType
-     * @return \PMG\BingAds\CampaignMangagement\AudienceCriterion
+     * @return \PMG\BingAds\CampaignManagement\AudienceCriterion
      */
     public function setAudienceType($AudienceType)
     {

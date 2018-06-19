@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetSharedEntitiesByAccountIdResponse
 {
@@ -28,7 +28,7 @@ class GetSharedEntitiesByAccountIdResponse
 
     /**
      * @param ArrayOfSharedEntity $SharedEntities
-     * @return \PMG\BingAds\CampaignMangagement\GetSharedEntitiesByAccountIdResponse
+     * @return \PMG\BingAds\CampaignManagement\GetSharedEntitiesByAccountIdResponse
      */
     public function setSharedEntities($SharedEntities)
     {

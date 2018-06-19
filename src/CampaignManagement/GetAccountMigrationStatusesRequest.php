@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetAccountMigrationStatusesRequest
 {
@@ -35,7 +35,7 @@ class GetAccountMigrationStatusesRequest
 
     /**
      * @param ArrayOflong $AccountIds
-     * @return \PMG\BingAds\CampaignMangagement\GetAccountMigrationStatusesRequest
+     * @return \PMG\BingAds\CampaignManagement\GetAccountMigrationStatusesRequest
      */
     public function setAccountIds($AccountIds)
     {
@@ -53,7 +53,7 @@ class GetAccountMigrationStatusesRequest
 
     /**
      * @param string $MigrationType
-     * @return \PMG\BingAds\CampaignMangagement\GetAccountMigrationStatusesRequest
+     * @return \PMG\BingAds\CampaignManagement\GetAccountMigrationStatusesRequest
      */
     public function setMigrationType($MigrationType)
     {

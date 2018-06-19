@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class TextAd extends Ad
 {
@@ -41,7 +41,7 @@ class TextAd extends Ad
 
     /**
      * @param string $DestinationUrl
-     * @return \PMG\BingAds\CampaignMangagement\TextAd
+     * @return \PMG\BingAds\CampaignManagement\TextAd
      */
     public function setDestinationUrl($DestinationUrl)
     {
@@ -59,7 +59,7 @@ class TextAd extends Ad
 
     /**
      * @param string $DisplayUrl
-     * @return \PMG\BingAds\CampaignMangagement\TextAd
+     * @return \PMG\BingAds\CampaignManagement\TextAd
      */
     public function setDisplayUrl($DisplayUrl)
     {
@@ -77,7 +77,7 @@ class TextAd extends Ad
 
     /**
      * @param string $Text
-     * @return \PMG\BingAds\CampaignMangagement\TextAd
+     * @return \PMG\BingAds\CampaignManagement\TextAd
      */
     public function setText($Text)
     {
@@ -95,7 +95,7 @@ class TextAd extends Ad
 
     /**
      * @param string $Title
-     * @return \PMG\BingAds\CampaignMangagement\TextAd
+     * @return \PMG\BingAds\CampaignManagement\TextAd
      */
     public function setTitle($Title)
     {

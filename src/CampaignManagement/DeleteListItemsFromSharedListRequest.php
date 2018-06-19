@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteListItemsFromSharedListRequest
 {
@@ -35,7 +35,7 @@ class DeleteListItemsFromSharedListRequest
 
     /**
      * @param ArrayOflong $ListItemIds
-     * @return \PMG\BingAds\CampaignMangagement\DeleteListItemsFromSharedListRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteListItemsFromSharedListRequest
      */
     public function setListItemIds($ListItemIds)
     {
@@ -53,7 +53,7 @@ class DeleteListItemsFromSharedListRequest
 
     /**
      * @param SharedList $SharedList
-     * @return \PMG\BingAds\CampaignMangagement\DeleteListItemsFromSharedListRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteListItemsFromSharedListRequest
      */
     public function setSharedList($SharedList)
     {

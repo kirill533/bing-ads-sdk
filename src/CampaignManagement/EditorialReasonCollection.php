@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class EditorialReasonCollection
 {
@@ -41,7 +41,7 @@ class EditorialReasonCollection
 
     /**
      * @param int $AdGroupId
-     * @return \PMG\BingAds\CampaignMangagement\EditorialReasonCollection
+     * @return \PMG\BingAds\CampaignManagement\EditorialReasonCollection
      */
     public function setAdGroupId($AdGroupId)
     {
@@ -59,7 +59,7 @@ class EditorialReasonCollection
 
     /**
      * @param int $AdOrKeywordId
-     * @return \PMG\BingAds\CampaignMangagement\EditorialReasonCollection
+     * @return \PMG\BingAds\CampaignManagement\EditorialReasonCollection
      */
     public function setAdOrKeywordId($AdOrKeywordId)
     {
@@ -77,7 +77,7 @@ class EditorialReasonCollection
 
     /**
      * @param AppealStatus $AppealStatus
-     * @return \PMG\BingAds\CampaignMangagement\EditorialReasonCollection
+     * @return \PMG\BingAds\CampaignManagement\EditorialReasonCollection
      */
     public function setAppealStatus($AppealStatus)
     {
@@ -95,7 +95,7 @@ class EditorialReasonCollection
 
     /**
      * @param ArrayOfEditorialReason $Reasons
-     * @return \PMG\BingAds\CampaignMangagement\EditorialReasonCollection
+     * @return \PMG\BingAds\CampaignManagement\EditorialReasonCollection
      */
     public function setReasons($Reasons)
     {

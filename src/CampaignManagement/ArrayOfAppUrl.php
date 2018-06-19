@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfAppUrl implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfAppUrl implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param AppUrl[] $AppUrl
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfAppUrl
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfAppUrl
      */
     public function setAppUrl(array $AppUrl = null)
     {

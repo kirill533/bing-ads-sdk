@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class CalloutAdExtension extends AdExtension
 {
@@ -26,7 +26,7 @@ class CalloutAdExtension extends AdExtension
 
     /**
      * @param string $Text
-     * @return \PMG\BingAds\CampaignMangagement\CalloutAdExtension
+     * @return \PMG\BingAds\CampaignManagement\CalloutAdExtension
      */
     public function setText($Text)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetListItemsBySharedListRequest
 {
@@ -28,7 +28,7 @@ class GetListItemsBySharedListRequest
 
     /**
      * @param SharedList $SharedList
-     * @return \PMG\BingAds\CampaignMangagement\GetListItemsBySharedListRequest
+     * @return \PMG\BingAds\CampaignManagement\GetListItemsBySharedListRequest
      */
     public function setSharedList($SharedList)
     {

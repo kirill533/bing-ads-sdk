@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AdGroupCriterion
 {
@@ -46,7 +46,7 @@ class AdGroupCriterion
 
     /**
      * @param int $AdGroupId
-     * @return \PMG\BingAds\CampaignMangagement\AdGroupCriterion
+     * @return \PMG\BingAds\CampaignManagement\AdGroupCriterion
      */
     public function setAdGroupId($AdGroupId)
     {
@@ -64,7 +64,7 @@ class AdGroupCriterion
 
     /**
      * @param Criterion $Criterion
-     * @return \PMG\BingAds\CampaignMangagement\AdGroupCriterion
+     * @return \PMG\BingAds\CampaignManagement\AdGroupCriterion
      */
     public function setCriterion($Criterion)
     {
@@ -82,7 +82,7 @@ class AdGroupCriterion
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\AdGroupCriterion
+     * @return \PMG\BingAds\CampaignManagement\AdGroupCriterion
      */
     public function setId($Id)
     {
@@ -100,7 +100,7 @@ class AdGroupCriterion
 
     /**
      * @param AdGroupCriterionStatus $Status
-     * @return \PMG\BingAds\CampaignMangagement\AdGroupCriterion
+     * @return \PMG\BingAds\CampaignManagement\AdGroupCriterion
      */
     public function setStatus($Status)
     {
@@ -118,7 +118,7 @@ class AdGroupCriterion
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\AdGroupCriterion
+     * @return \PMG\BingAds\CampaignManagement\AdGroupCriterion
      */
     public function setType($Type)
     {

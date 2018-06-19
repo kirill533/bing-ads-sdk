@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetProfileDataFileUrlResponse
 {
@@ -42,7 +42,7 @@ class GetProfileDataFileUrlResponse
 
     /**
      * @param string $FileUrl
-     * @return \PMG\BingAds\CampaignMangagement\GetProfileDataFileUrlResponse
+     * @return \PMG\BingAds\CampaignManagement\GetProfileDataFileUrlResponse
      */
     public function setFileUrl($FileUrl)
     {
@@ -68,7 +68,7 @@ class GetProfileDataFileUrlResponse
 
     /**
      * @param \DateTime $FileUrlExpiryTimeUtc
-     * @return \PMG\BingAds\CampaignMangagement\GetProfileDataFileUrlResponse
+     * @return \PMG\BingAds\CampaignManagement\GetProfileDataFileUrlResponse
      */
     public function setFileUrlExpiryTimeUtc(\DateTime $FileUrlExpiryTimeUtc)
     {
@@ -94,7 +94,7 @@ class GetProfileDataFileUrlResponse
 
     /**
      * @param \DateTime $LastModifiedTimeUtc
-     * @return \PMG\BingAds\CampaignMangagement\GetProfileDataFileUrlResponse
+     * @return \PMG\BingAds\CampaignManagement\GetProfileDataFileUrlResponse
      */
     public function setLastModifiedTimeUtc(\DateTime $LastModifiedTimeUtc)
     {

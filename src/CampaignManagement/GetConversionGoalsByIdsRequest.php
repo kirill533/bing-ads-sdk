@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetConversionGoalsByIdsRequest
 {
@@ -35,7 +35,7 @@ class GetConversionGoalsByIdsRequest
 
     /**
      * @param ArrayOflong $ConversionGoalIds
-     * @return \PMG\BingAds\CampaignMangagement\GetConversionGoalsByIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetConversionGoalsByIdsRequest
      */
     public function setConversionGoalIds($ConversionGoalIds)
     {
@@ -53,7 +53,7 @@ class GetConversionGoalsByIdsRequest
 
     /**
      * @param ConversionGoalType $ConversionGoalTypes
-     * @return \PMG\BingAds\CampaignMangagement\GetConversionGoalsByIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetConversionGoalsByIdsRequest
      */
     public function setConversionGoalTypes($ConversionGoalTypes)
     {

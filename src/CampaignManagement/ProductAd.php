@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ProductAd extends Ad
 {
@@ -26,7 +26,7 @@ class ProductAd extends Ad
 
     /**
      * @param string $PromotionalText
-     * @return \PMG\BingAds\CampaignMangagement\ProductAd
+     * @return \PMG\BingAds\CampaignManagement\ProductAd
      */
     public function setPromotionalText($PromotionalText)
     {

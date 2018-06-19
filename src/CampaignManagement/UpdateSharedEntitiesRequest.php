@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class UpdateSharedEntitiesRequest
 {
@@ -28,7 +28,7 @@ class UpdateSharedEntitiesRequest
 
     /**
      * @param ArrayOfSharedEntity $SharedEntities
-     * @return \PMG\BingAds\CampaignMangagement\UpdateSharedEntitiesRequest
+     * @return \PMG\BingAds\CampaignManagement\UpdateSharedEntitiesRequest
      */
     public function setSharedEntities($SharedEntities)
     {

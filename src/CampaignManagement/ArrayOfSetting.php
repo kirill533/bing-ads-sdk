@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfSetting implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfSetting implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param Setting[] $Setting
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfSetting
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfSetting
      */
     public function setSetting(array $Setting = null)
     {

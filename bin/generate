@@ -33,7 +33,7 @@ $configs = [
         'sandboxWsdl' => sprintf('https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v%s/CampaignManagementService.svc?singleWsdl', $version),
         'wsdlNamespace' => sprintf('https://bingads.microsoft.com/CampaignManagement/v%s', $version),
         'outputDir' => __DIR__.'/../src/CampaignManagement',
-        'namespaceName' => NS.'CampaignMangagement',
+        'namespaceName' => NS.'CampaignManagement',
     ])),
 ];
 

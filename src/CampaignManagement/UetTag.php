@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class UetTag
 {
@@ -51,7 +51,7 @@ class UetTag
 
     /**
      * @param string $Description
-     * @return \PMG\BingAds\CampaignMangagement\UetTag
+     * @return \PMG\BingAds\CampaignManagement\UetTag
      */
     public function setDescription($Description)
     {
@@ -69,7 +69,7 @@ class UetTag
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\UetTag
+     * @return \PMG\BingAds\CampaignManagement\UetTag
      */
     public function setId($Id)
     {
@@ -87,7 +87,7 @@ class UetTag
 
     /**
      * @param string $Name
-     * @return \PMG\BingAds\CampaignMangagement\UetTag
+     * @return \PMG\BingAds\CampaignManagement\UetTag
      */
     public function setName($Name)
     {
@@ -105,7 +105,7 @@ class UetTag
 
     /**
      * @param string $TrackingNoScript
-     * @return \PMG\BingAds\CampaignMangagement\UetTag
+     * @return \PMG\BingAds\CampaignManagement\UetTag
      */
     public function setTrackingNoScript($TrackingNoScript)
     {
@@ -123,7 +123,7 @@ class UetTag
 
     /**
      * @param string $TrackingScript
-     * @return \PMG\BingAds\CampaignMangagement\UetTag
+     * @return \PMG\BingAds\CampaignManagement\UetTag
      */
     public function setTrackingScript($TrackingScript)
     {
@@ -141,7 +141,7 @@ class UetTag
 
     /**
      * @param UetTagTrackingStatus $TrackingStatus
-     * @return \PMG\BingAds\CampaignMangagement\UetTag
+     * @return \PMG\BingAds\CampaignManagement\UetTag
      */
     public function setTrackingStatus($TrackingStatus)
     {

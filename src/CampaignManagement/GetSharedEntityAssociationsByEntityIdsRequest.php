@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetSharedEntityAssociationsByEntityIdsRequest
 {
@@ -42,7 +42,7 @@ class GetSharedEntityAssociationsByEntityIdsRequest
 
     /**
      * @param ArrayOflong $EntityIds
-     * @return \PMG\BingAds\CampaignMangagement\GetSharedEntityAssociationsByEntityIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetSharedEntityAssociationsByEntityIdsRequest
      */
     public function setEntityIds($EntityIds)
     {
@@ -60,7 +60,7 @@ class GetSharedEntityAssociationsByEntityIdsRequest
 
     /**
      * @param string $EntityType
-     * @return \PMG\BingAds\CampaignMangagement\GetSharedEntityAssociationsByEntityIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetSharedEntityAssociationsByEntityIdsRequest
      */
     public function setEntityType($EntityType)
     {
@@ -78,7 +78,7 @@ class GetSharedEntityAssociationsByEntityIdsRequest
 
     /**
      * @param string $SharedEntityType
-     * @return \PMG\BingAds\CampaignMangagement\GetSharedEntityAssociationsByEntityIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetSharedEntityAssociationsByEntityIdsRequest
      */
     public function setSharedEntityType($SharedEntityType)
     {

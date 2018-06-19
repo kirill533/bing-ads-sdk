@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddConversionGoalsResponse
 {
@@ -35,7 +35,7 @@ class AddConversionGoalsResponse
 
     /**
      * @param ArrayOfNullableOflong $ConversionGoalIds
-     * @return \PMG\BingAds\CampaignMangagement\AddConversionGoalsResponse
+     * @return \PMG\BingAds\CampaignManagement\AddConversionGoalsResponse
      */
     public function setConversionGoalIds($ConversionGoalIds)
     {
@@ -53,7 +53,7 @@ class AddConversionGoalsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\AddConversionGoalsResponse
+     * @return \PMG\BingAds\CampaignManagement\AddConversionGoalsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

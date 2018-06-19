@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetAdsByEditorialStatusResponse
 {
@@ -28,7 +28,7 @@ class GetAdsByEditorialStatusResponse
 
     /**
      * @param ArrayOfAd $Ads
-     * @return \PMG\BingAds\CampaignMangagement\GetAdsByEditorialStatusResponse
+     * @return \PMG\BingAds\CampaignManagement\GetAdsByEditorialStatusResponse
      */
     public function setAds($Ads)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfNullableOflong implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfNullableOflong implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param long[] $long
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfNullableOflong
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfNullableOflong
      */
     public function setLong(array $long = null)
     {

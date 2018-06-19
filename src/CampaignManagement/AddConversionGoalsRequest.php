@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddConversionGoalsRequest
 {
@@ -28,7 +28,7 @@ class AddConversionGoalsRequest
 
     /**
      * @param ArrayOfConversionGoal $ConversionGoals
-     * @return \PMG\BingAds\CampaignMangagement\AddConversionGoalsRequest
+     * @return \PMG\BingAds\CampaignManagement\AddConversionGoalsRequest
      */
     public function setConversionGoals($ConversionGoals)
     {

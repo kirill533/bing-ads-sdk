@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class SetSharedEntityAssociationsRequest
 {
@@ -28,7 +28,7 @@ class SetSharedEntityAssociationsRequest
 
     /**
      * @param ArrayOfSharedEntityAssociation $Associations
-     * @return \PMG\BingAds\CampaignMangagement\SetSharedEntityAssociationsRequest
+     * @return \PMG\BingAds\CampaignManagement\SetSharedEntityAssociationsRequest
      */
     public function setAssociations($Associations)
     {

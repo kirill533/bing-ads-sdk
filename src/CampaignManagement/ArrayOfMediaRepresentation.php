@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfMediaRepresentation implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfMediaRepresentation implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param MediaRepresentation[] $MediaRepresentation
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfMediaRepresentation
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfMediaRepresentation
      */
     public function setMediaRepresentation(array $MediaRepresentation = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class LocationCriterion extends Criterion
 {
@@ -41,7 +41,7 @@ class LocationCriterion extends Criterion
 
     /**
      * @param string $DisplayName
-     * @return \PMG\BingAds\CampaignMangagement\LocationCriterion
+     * @return \PMG\BingAds\CampaignManagement\LocationCriterion
      */
     public function setDisplayName($DisplayName)
     {
@@ -59,7 +59,7 @@ class LocationCriterion extends Criterion
 
     /**
      * @param ArrayOflong $EnclosedLocationIds
-     * @return \PMG\BingAds\CampaignMangagement\LocationCriterion
+     * @return \PMG\BingAds\CampaignManagement\LocationCriterion
      */
     public function setEnclosedLocationIds($EnclosedLocationIds)
     {
@@ -77,7 +77,7 @@ class LocationCriterion extends Criterion
 
     /**
      * @param int $LocationId
-     * @return \PMG\BingAds\CampaignMangagement\LocationCriterion
+     * @return \PMG\BingAds\CampaignManagement\LocationCriterion
      */
     public function setLocationId($LocationId)
     {
@@ -95,7 +95,7 @@ class LocationCriterion extends Criterion
 
     /**
      * @param string $LocationType
-     * @return \PMG\BingAds\CampaignMangagement\LocationCriterion
+     * @return \PMG\BingAds\CampaignManagement\LocationCriterion
      */
     public function setLocationType($LocationType)
     {

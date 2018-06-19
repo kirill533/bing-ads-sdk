@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfCampaignNegativeSites implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfCampaignNegativeSites implements \ArrayAccess, \Iterator, \Countabl
 
     /**
      * @param CampaignNegativeSites[] $CampaignNegativeSites
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfCampaignNegativeSites
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfCampaignNegativeSites
      */
     public function setCampaignNegativeSites(array $CampaignNegativeSites = null)
     {

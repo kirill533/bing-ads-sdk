@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfCampaignCriterion implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfCampaignCriterion implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param CampaignCriterion[] $CampaignCriterion
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfCampaignCriterion
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfCampaignCriterion
      */
     public function setCampaignCriterion(array $CampaignCriterion = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfAdExtensionIdToEntityIdAssociation implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfAdExtensionIdToEntityIdAssociation implements \ArrayAccess, \Iterat
 
     /**
      * @param AdExtensionIdToEntityIdAssociation[] $AdExtensionIdToEntityIdAssociation
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfAdExtensionIdToEntityIdAssociation
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfAdExtensionIdToEntityIdAssociation
      */
     public function setAdExtensionIdToEntityIdAssociation(array $AdExtensionIdToEntityIdAssociation = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class TargetSettingDetail
 {
@@ -31,7 +31,7 @@ class TargetSettingDetail
 
     /**
      * @param CriterionTypeGroup $CriterionTypeGroup
-     * @return \PMG\BingAds\CampaignMangagement\TargetSettingDetail
+     * @return \PMG\BingAds\CampaignManagement\TargetSettingDetail
      */
     public function setCriterionTypeGroup($CriterionTypeGroup)
     {
@@ -49,7 +49,7 @@ class TargetSettingDetail
 
     /**
      * @param boolean $TargetAndBid
-     * @return \PMG\BingAds\CampaignMangagement\TargetSettingDetail
+     * @return \PMG\BingAds\CampaignManagement\TargetSettingDetail
      */
     public function setTargetAndBid($TargetAndBid)
     {

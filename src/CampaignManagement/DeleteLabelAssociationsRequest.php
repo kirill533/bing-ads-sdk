@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteLabelAssociationsRequest
 {
@@ -35,7 +35,7 @@ class DeleteLabelAssociationsRequest
 
     /**
      * @param EntityType $EntityType
-     * @return \PMG\BingAds\CampaignMangagement\DeleteLabelAssociationsRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteLabelAssociationsRequest
      */
     public function setEntityType($EntityType)
     {
@@ -53,7 +53,7 @@ class DeleteLabelAssociationsRequest
 
     /**
      * @param ArrayOfLabelAssociation $LabelAssociations
-     * @return \PMG\BingAds\CampaignMangagement\DeleteLabelAssociationsRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteLabelAssociationsRequest
      */
     public function setLabelAssociations($LabelAssociations)
     {

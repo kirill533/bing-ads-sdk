@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddListItemsToSharedListRequest
 {
@@ -35,7 +35,7 @@ class AddListItemsToSharedListRequest
 
     /**
      * @param ArrayOfSharedListItem $ListItems
-     * @return \PMG\BingAds\CampaignMangagement\AddListItemsToSharedListRequest
+     * @return \PMG\BingAds\CampaignManagement\AddListItemsToSharedListRequest
      */
     public function setListItems($ListItems)
     {
@@ -53,7 +53,7 @@ class AddListItemsToSharedListRequest
 
     /**
      * @param SharedList $SharedList
-     * @return \PMG\BingAds\CampaignMangagement\AddListItemsToSharedListRequest
+     * @return \PMG\BingAds\CampaignManagement\AddListItemsToSharedListRequest
      */
     public function setSharedList($SharedList)
     {

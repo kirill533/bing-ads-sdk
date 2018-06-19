@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Image extends Media
 {
@@ -26,7 +26,7 @@ class Image extends Media
 
     /**
      * @param string $Data
-     * @return \PMG\BingAds\CampaignMangagement\Image
+     * @return \PMG\BingAds\CampaignManagement\Image
      */
     public function setData($Data)
     {

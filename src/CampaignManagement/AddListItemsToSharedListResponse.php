@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddListItemsToSharedListResponse
 {
@@ -35,7 +35,7 @@ class AddListItemsToSharedListResponse
 
     /**
      * @param ArrayOflong $ListItemIds
-     * @return \PMG\BingAds\CampaignMangagement\AddListItemsToSharedListResponse
+     * @return \PMG\BingAds\CampaignManagement\AddListItemsToSharedListResponse
      */
     public function setListItemIds($ListItemIds)
     {
@@ -53,7 +53,7 @@ class AddListItemsToSharedListResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\AddListItemsToSharedListResponse
+     * @return \PMG\BingAds\CampaignManagement\AddListItemsToSharedListResponse
      */
     public function setPartialErrors($PartialErrors)
     {

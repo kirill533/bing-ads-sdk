@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfProductCondition implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfProductCondition implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param ProductCondition[] $ProductCondition
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfProductCondition
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfProductCondition
      */
     public function setProductCondition(array $ProductCondition = null)
     {

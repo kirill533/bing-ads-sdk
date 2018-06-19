@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class SetAdExtensionsAssociationsRequest
 {
@@ -42,7 +42,7 @@ class SetAdExtensionsAssociationsRequest
 
     /**
      * @param int $AccountId
-     * @return \PMG\BingAds\CampaignMangagement\SetAdExtensionsAssociationsRequest
+     * @return \PMG\BingAds\CampaignManagement\SetAdExtensionsAssociationsRequest
      */
     public function setAccountId($AccountId)
     {
@@ -60,7 +60,7 @@ class SetAdExtensionsAssociationsRequest
 
     /**
      * @param ArrayOfAdExtensionIdToEntityIdAssociation $AdExtensionIdToEntityIdAssociations
-     * @return \PMG\BingAds\CampaignMangagement\SetAdExtensionsAssociationsRequest
+     * @return \PMG\BingAds\CampaignManagement\SetAdExtensionsAssociationsRequest
      */
     public function setAdExtensionIdToEntityIdAssociations($AdExtensionIdToEntityIdAssociations)
     {
@@ -78,7 +78,7 @@ class SetAdExtensionsAssociationsRequest
 
     /**
      * @param AssociationType $AssociationType
-     * @return \PMG\BingAds\CampaignMangagement\SetAdExtensionsAssociationsRequest
+     * @return \PMG\BingAds\CampaignManagement\SetAdExtensionsAssociationsRequest
      */
     public function setAssociationType($AssociationType)
     {

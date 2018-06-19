@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddMediaRequest
 {
@@ -35,7 +35,7 @@ class AddMediaRequest
 
     /**
      * @param int $AccountId
-     * @return \PMG\BingAds\CampaignMangagement\AddMediaRequest
+     * @return \PMG\BingAds\CampaignManagement\AddMediaRequest
      */
     public function setAccountId($AccountId)
     {
@@ -53,7 +53,7 @@ class AddMediaRequest
 
     /**
      * @param ArrayOfMedia $Media
-     * @return \PMG\BingAds\CampaignMangagement\AddMediaRequest
+     * @return \PMG\BingAds\CampaignManagement\AddMediaRequest
      */
     public function setMedia($Media)
     {

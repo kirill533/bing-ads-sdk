@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class CampaignSize
 {
@@ -33,7 +33,7 @@ class CampaignSize
 
     /**
      * @param int $CampaignId
-     * @return \PMG\BingAds\CampaignMangagement\CampaignSize
+     * @return \PMG\BingAds\CampaignManagement\CampaignSize
      */
     public function setCampaignId($CampaignId)
     {
@@ -51,7 +51,7 @@ class CampaignSize
 
     /**
      * @param int $Size
-     * @return \PMG\BingAds\CampaignMangagement\CampaignSize
+     * @return \PMG\BingAds\CampaignManagement\CampaignSize
      */
     public function setSize($Size)
     {

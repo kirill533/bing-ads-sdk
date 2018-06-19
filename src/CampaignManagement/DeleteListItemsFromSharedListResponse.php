@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteListItemsFromSharedListResponse
 {
@@ -28,7 +28,7 @@ class DeleteListItemsFromSharedListResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\DeleteListItemsFromSharedListResponse
+     * @return \PMG\BingAds\CampaignManagement\DeleteListItemsFromSharedListResponse
      */
     public function setPartialErrors($PartialErrors)
     {

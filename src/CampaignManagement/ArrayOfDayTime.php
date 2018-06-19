@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfDayTime implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfDayTime implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param DayTime[] $DayTime
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfDayTime
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfDayTime
      */
     public function setDayTime(array $DayTime = null)
     {

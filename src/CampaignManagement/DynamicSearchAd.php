@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DynamicSearchAd extends Ad
 {
@@ -36,7 +36,7 @@ class DynamicSearchAd extends Ad
 
     /**
      * @param string $Path1
-     * @return \PMG\BingAds\CampaignMangagement\DynamicSearchAd
+     * @return \PMG\BingAds\CampaignManagement\DynamicSearchAd
      */
     public function setPath1($Path1)
     {
@@ -54,7 +54,7 @@ class DynamicSearchAd extends Ad
 
     /**
      * @param string $Path2
-     * @return \PMG\BingAds\CampaignMangagement\DynamicSearchAd
+     * @return \PMG\BingAds\CampaignManagement\DynamicSearchAd
      */
     public function setPath2($Path2)
     {
@@ -72,7 +72,7 @@ class DynamicSearchAd extends Ad
 
     /**
      * @param string $Text
-     * @return \PMG\BingAds\CampaignMangagement\DynamicSearchAd
+     * @return \PMG\BingAds\CampaignManagement\DynamicSearchAd
      */
     public function setText($Text)
     {

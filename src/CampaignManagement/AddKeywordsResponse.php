@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddKeywordsResponse
 {
@@ -42,7 +42,7 @@ class AddKeywordsResponse
 
     /**
      * @param ArrayOfstring $InheritedBidStrategyTypes
-     * @return \PMG\BingAds\CampaignMangagement\AddKeywordsResponse
+     * @return \PMG\BingAds\CampaignManagement\AddKeywordsResponse
      */
     public function setInheritedBidStrategyTypes($InheritedBidStrategyTypes)
     {
@@ -60,7 +60,7 @@ class AddKeywordsResponse
 
     /**
      * @param ArrayOfNullableOflong $KeywordIds
-     * @return \PMG\BingAds\CampaignMangagement\AddKeywordsResponse
+     * @return \PMG\BingAds\CampaignManagement\AddKeywordsResponse
      */
     public function setKeywordIds($KeywordIds)
     {
@@ -78,7 +78,7 @@ class AddKeywordsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\AddKeywordsResponse
+     * @return \PMG\BingAds\CampaignManagement\AddKeywordsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

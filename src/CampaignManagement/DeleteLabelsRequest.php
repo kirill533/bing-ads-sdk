@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteLabelsRequest
 {
@@ -28,7 +28,7 @@ class DeleteLabelsRequest
 
     /**
      * @param ArrayOflong $LabelIds
-     * @return \PMG\BingAds\CampaignMangagement\DeleteLabelsRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteLabelsRequest
      */
     public function setLabelIds($LabelIds)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetNegativeSitesByAdGroupIdsResponse
 {
@@ -35,7 +35,7 @@ class GetNegativeSitesByAdGroupIdsResponse
 
     /**
      * @param ArrayOfAdGroupNegativeSites $AdGroupNegativeSites
-     * @return \PMG\BingAds\CampaignMangagement\GetNegativeSitesByAdGroupIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetNegativeSitesByAdGroupIdsResponse
      */
     public function setAdGroupNegativeSites($AdGroupNegativeSites)
     {
@@ -53,7 +53,7 @@ class GetNegativeSitesByAdGroupIdsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\GetNegativeSitesByAdGroupIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetNegativeSitesByAdGroupIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

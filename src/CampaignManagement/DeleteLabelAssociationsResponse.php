@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteLabelAssociationsResponse
 {
@@ -28,7 +28,7 @@ class DeleteLabelAssociationsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\DeleteLabelAssociationsResponse
+     * @return \PMG\BingAds\CampaignManagement\DeleteLabelAssociationsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetGeoLocationsFileUrlRequest
 {
@@ -35,7 +35,7 @@ class GetGeoLocationsFileUrlRequest
 
     /**
      * @param string $Version
-     * @return \PMG\BingAds\CampaignMangagement\GetGeoLocationsFileUrlRequest
+     * @return \PMG\BingAds\CampaignManagement\GetGeoLocationsFileUrlRequest
      */
     public function setVersion($Version)
     {
@@ -53,7 +53,7 @@ class GetGeoLocationsFileUrlRequest
 
     /**
      * @param string $LanguageLocale
-     * @return \PMG\BingAds\CampaignMangagement\GetGeoLocationsFileUrlRequest
+     * @return \PMG\BingAds\CampaignManagement\GetGeoLocationsFileUrlRequest
      */
     public function setLanguageLocale($LanguageLocale)
     {

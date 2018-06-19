@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddUetTagsRequest
 {
@@ -28,7 +28,7 @@ class AddUetTagsRequest
 
     /**
      * @param ArrayOfUetTag $UetTags
-     * @return \PMG\BingAds\CampaignMangagement\AddUetTagsRequest
+     * @return \PMG\BingAds\CampaignManagement\AddUetTagsRequest
      */
     public function setUetTags($UetTags)
     {

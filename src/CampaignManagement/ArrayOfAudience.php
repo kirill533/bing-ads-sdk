@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfAudience implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfAudience implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param Audience[] $Audience
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfAudience
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfAudience
      */
     public function setAudience(array $Audience = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class WebpageParameter
 {
@@ -31,7 +31,7 @@ class WebpageParameter
 
     /**
      * @param ArrayOfWebpageCondition $Conditions
-     * @return \PMG\BingAds\CampaignMangagement\WebpageParameter
+     * @return \PMG\BingAds\CampaignManagement\WebpageParameter
      */
     public function setConditions($Conditions)
     {
@@ -49,7 +49,7 @@ class WebpageParameter
 
     /**
      * @param string $CriterionName
-     * @return \PMG\BingAds\CampaignMangagement\WebpageParameter
+     * @return \PMG\BingAds\CampaignManagement\WebpageParameter
      */
     public function setCriterionName($CriterionName)
     {

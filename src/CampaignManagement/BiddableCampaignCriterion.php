@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class BiddableCampaignCriterion extends CampaignCriterion
 {
@@ -28,7 +28,7 @@ class BiddableCampaignCriterion extends CampaignCriterion
 
     /**
      * @param CriterionBid $CriterionBid
-     * @return \PMG\BingAds\CampaignMangagement\BiddableCampaignCriterion
+     * @return \PMG\BingAds\CampaignManagement\BiddableCampaignCriterion
      */
     public function setCriterionBid($CriterionBid)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfWebpageCondition implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfWebpageCondition implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param WebpageCondition[] $WebpageCondition
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfWebpageCondition
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfWebpageCondition
      */
     public function setWebpageCondition(array $WebpageCondition = null)
     {

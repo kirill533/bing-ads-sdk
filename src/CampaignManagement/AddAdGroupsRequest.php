@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddAdGroupsRequest
 {
@@ -42,7 +42,7 @@ class AddAdGroupsRequest
 
     /**
      * @param int $CampaignId
-     * @return \PMG\BingAds\CampaignMangagement\AddAdGroupsRequest
+     * @return \PMG\BingAds\CampaignManagement\AddAdGroupsRequest
      */
     public function setCampaignId($CampaignId)
     {
@@ -60,7 +60,7 @@ class AddAdGroupsRequest
 
     /**
      * @param ArrayOfAdGroup $AdGroups
-     * @return \PMG\BingAds\CampaignMangagement\AddAdGroupsRequest
+     * @return \PMG\BingAds\CampaignManagement\AddAdGroupsRequest
      */
     public function setAdGroups($AdGroups)
     {
@@ -78,7 +78,7 @@ class AddAdGroupsRequest
 
     /**
      * @param boolean $ReturnInheritedBidStrategyTypes
-     * @return \PMG\BingAds\CampaignMangagement\AddAdGroupsRequest
+     * @return \PMG\BingAds\CampaignManagement\AddAdGroupsRequest
      */
     public function setReturnInheritedBidStrategyTypes($ReturnInheritedBidStrategyTypes)
     {

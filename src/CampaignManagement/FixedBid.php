@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class FixedBid extends CriterionBid
 {
@@ -26,7 +26,7 @@ class FixedBid extends CriterionBid
 
     /**
      * @param float $Amount
-     * @return \PMG\BingAds\CampaignMangagement\FixedBid
+     * @return \PMG\BingAds\CampaignManagement\FixedBid
      */
     public function setAmount($Amount)
     {

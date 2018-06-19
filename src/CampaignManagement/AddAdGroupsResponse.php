@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddAdGroupsResponse
 {
@@ -42,7 +42,7 @@ class AddAdGroupsResponse
 
     /**
      * @param ArrayOfNullableOflong $AdGroupIds
-     * @return \PMG\BingAds\CampaignMangagement\AddAdGroupsResponse
+     * @return \PMG\BingAds\CampaignManagement\AddAdGroupsResponse
      */
     public function setAdGroupIds($AdGroupIds)
     {
@@ -60,7 +60,7 @@ class AddAdGroupsResponse
 
     /**
      * @param ArrayOfstring $InheritedBidStrategyTypes
-     * @return \PMG\BingAds\CampaignMangagement\AddAdGroupsResponse
+     * @return \PMG\BingAds\CampaignManagement\AddAdGroupsResponse
      */
     public function setInheritedBidStrategyTypes($InheritedBidStrategyTypes)
     {
@@ -78,7 +78,7 @@ class AddAdGroupsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\AddAdGroupsResponse
+     * @return \PMG\BingAds\CampaignManagement\AddAdGroupsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

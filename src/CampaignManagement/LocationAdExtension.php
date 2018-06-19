@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class LocationAdExtension extends AdExtension
 {
@@ -46,7 +46,7 @@ class LocationAdExtension extends AdExtension
 
     /**
      * @param Address $Address
-     * @return \PMG\BingAds\CampaignMangagement\LocationAdExtension
+     * @return \PMG\BingAds\CampaignManagement\LocationAdExtension
      */
     public function setAddress($Address)
     {
@@ -64,7 +64,7 @@ class LocationAdExtension extends AdExtension
 
     /**
      * @param string $CompanyName
-     * @return \PMG\BingAds\CampaignMangagement\LocationAdExtension
+     * @return \PMG\BingAds\CampaignManagement\LocationAdExtension
      */
     public function setCompanyName($CompanyName)
     {
@@ -82,7 +82,7 @@ class LocationAdExtension extends AdExtension
 
     /**
      * @param BusinessGeoCodeStatus $GeoCodeStatus
-     * @return \PMG\BingAds\CampaignMangagement\LocationAdExtension
+     * @return \PMG\BingAds\CampaignManagement\LocationAdExtension
      */
     public function setGeoCodeStatus($GeoCodeStatus)
     {
@@ -100,7 +100,7 @@ class LocationAdExtension extends AdExtension
 
     /**
      * @param GeoPoint $GeoPoint
-     * @return \PMG\BingAds\CampaignMangagement\LocationAdExtension
+     * @return \PMG\BingAds\CampaignManagement\LocationAdExtension
      */
     public function setGeoPoint($GeoPoint)
     {
@@ -118,7 +118,7 @@ class LocationAdExtension extends AdExtension
 
     /**
      * @param string $PhoneNumber
-     * @return \PMG\BingAds\CampaignMangagement\LocationAdExtension
+     * @return \PMG\BingAds\CampaignManagement\LocationAdExtension
      */
     public function setPhoneNumber($PhoneNumber)
     {

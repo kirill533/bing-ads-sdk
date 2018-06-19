@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetLabelAssociationsByLabelIdsResponse
 {
@@ -35,7 +35,7 @@ class GetLabelAssociationsByLabelIdsResponse
 
     /**
      * @param ArrayOfLabelAssociation $LabelAssociations
-     * @return \PMG\BingAds\CampaignMangagement\GetLabelAssociationsByLabelIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetLabelAssociationsByLabelIdsResponse
      */
     public function setLabelAssociations($LabelAssociations)
     {
@@ -53,7 +53,7 @@ class GetLabelAssociationsByLabelIdsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\GetLabelAssociationsByLabelIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetLabelAssociationsByLabelIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

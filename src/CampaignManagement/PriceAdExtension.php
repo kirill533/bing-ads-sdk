@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class PriceAdExtension extends AdExtension
 {
@@ -49,7 +49,7 @@ class PriceAdExtension extends AdExtension
 
     /**
      * @param string $Language
-     * @return \PMG\BingAds\CampaignMangagement\PriceAdExtension
+     * @return \PMG\BingAds\CampaignManagement\PriceAdExtension
      */
     public function setLanguage($Language)
     {
@@ -67,7 +67,7 @@ class PriceAdExtension extends AdExtension
 
     /**
      * @param PriceExtensionType $PriceExtensionType
-     * @return \PMG\BingAds\CampaignMangagement\PriceAdExtension
+     * @return \PMG\BingAds\CampaignManagement\PriceAdExtension
      */
     public function setPriceExtensionType($PriceExtensionType)
     {
@@ -85,7 +85,7 @@ class PriceAdExtension extends AdExtension
 
     /**
      * @param ArrayOfPriceTableRow $TableRows
-     * @return \PMG\BingAds\CampaignMangagement\PriceAdExtension
+     * @return \PMG\BingAds\CampaignManagement\PriceAdExtension
      */
     public function setTableRows($TableRows)
     {
@@ -103,7 +103,7 @@ class PriceAdExtension extends AdExtension
 
     /**
      * @param string $TrackingUrlTemplate
-     * @return \PMG\BingAds\CampaignMangagement\PriceAdExtension
+     * @return \PMG\BingAds\CampaignManagement\PriceAdExtension
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
@@ -121,7 +121,7 @@ class PriceAdExtension extends AdExtension
 
     /**
      * @param CustomParameters $UrlCustomParameters
-     * @return \PMG\BingAds\CampaignMangagement\PriceAdExtension
+     * @return \PMG\BingAds\CampaignManagement\PriceAdExtension
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {

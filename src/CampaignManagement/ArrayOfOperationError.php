@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfOperationError implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfOperationError implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param OperationError[] $OperationError
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfOperationError
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfOperationError
      */
     public function setOperationError(array $OperationError = null)
     {

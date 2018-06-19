@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Schedule
 {
@@ -41,7 +41,7 @@ class Schedule
 
     /**
      * @param ArrayOfDayTime $DayTimeRanges
-     * @return \PMG\BingAds\CampaignMangagement\Schedule
+     * @return \PMG\BingAds\CampaignManagement\Schedule
      */
     public function setDayTimeRanges($DayTimeRanges)
     {
@@ -59,7 +59,7 @@ class Schedule
 
     /**
      * @param Date $EndDate
-     * @return \PMG\BingAds\CampaignMangagement\Schedule
+     * @return \PMG\BingAds\CampaignManagement\Schedule
      */
     public function setEndDate($EndDate)
     {
@@ -77,7 +77,7 @@ class Schedule
 
     /**
      * @param Date $StartDate
-     * @return \PMG\BingAds\CampaignMangagement\Schedule
+     * @return \PMG\BingAds\CampaignManagement\Schedule
      */
     public function setStartDate($StartDate)
     {
@@ -95,7 +95,7 @@ class Schedule
 
     /**
      * @param boolean $UseSearcherTimeZone
-     * @return \PMG\BingAds\CampaignMangagement\Schedule
+     * @return \PMG\BingAds\CampaignManagement\Schedule
      */
     public function setUseSearcherTimeZone($UseSearcherTimeZone)
     {

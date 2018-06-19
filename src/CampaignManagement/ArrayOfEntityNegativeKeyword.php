@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfEntityNegativeKeyword implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfEntityNegativeKeyword implements \ArrayAccess, \Iterator, \Countabl
 
     /**
      * @param EntityNegativeKeyword[] $EntityNegativeKeyword
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfEntityNegativeKeyword
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfEntityNegativeKeyword
      */
     public function setEntityNegativeKeyword(array $EntityNegativeKeyword = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddSharedEntityRequest
 {
@@ -35,7 +35,7 @@ class AddSharedEntityRequest
 
     /**
      * @param SharedEntity $SharedEntity
-     * @return \PMG\BingAds\CampaignMangagement\AddSharedEntityRequest
+     * @return \PMG\BingAds\CampaignManagement\AddSharedEntityRequest
      */
     public function setSharedEntity($SharedEntity)
     {
@@ -53,7 +53,7 @@ class AddSharedEntityRequest
 
     /**
      * @param ArrayOfSharedListItem $ListItems
-     * @return \PMG\BingAds\CampaignMangagement\AddSharedEntityRequest
+     * @return \PMG\BingAds\CampaignManagement\AddSharedEntityRequest
      */
     public function setListItems($ListItems)
     {

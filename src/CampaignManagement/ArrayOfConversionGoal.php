@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfConversionGoal implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfConversionGoal implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param ConversionGoal[] $ConversionGoal
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfConversionGoal
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfConversionGoal
      */
     public function setConversionGoal(array $ConversionGoal = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetAdGroupsByIdsRequest
 {
@@ -35,7 +35,7 @@ class GetAdGroupsByIdsRequest
 
     /**
      * @param int $CampaignId
-     * @return \PMG\BingAds\CampaignMangagement\GetAdGroupsByIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetAdGroupsByIdsRequest
      */
     public function setCampaignId($CampaignId)
     {
@@ -53,7 +53,7 @@ class GetAdGroupsByIdsRequest
 
     /**
      * @param ArrayOflong $AdGroupIds
-     * @return \PMG\BingAds\CampaignMangagement\GetAdGroupsByIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetAdGroupsByIdsRequest
      */
     public function setAdGroupIds($AdGroupIds)
     {

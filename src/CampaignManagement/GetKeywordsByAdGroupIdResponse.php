@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetKeywordsByAdGroupIdResponse
 {
@@ -28,7 +28,7 @@ class GetKeywordsByAdGroupIdResponse
 
     /**
      * @param ArrayOfKeyword $Keywords
-     * @return \PMG\BingAds\CampaignMangagement\GetKeywordsByAdGroupIdResponse
+     * @return \PMG\BingAds\CampaignManagement\GetKeywordsByAdGroupIdResponse
      */
     public function setKeywords($Keywords)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetAdExtensionIdsByAccountIdResponse
 {
@@ -28,7 +28,7 @@ class GetAdExtensionIdsByAccountIdResponse
 
     /**
      * @param ArrayOflong $AdExtensionIds
-     * @return \PMG\BingAds\CampaignMangagement\GetAdExtensionIdsByAccountIdResponse
+     * @return \PMG\BingAds\CampaignManagement\GetAdExtensionIdsByAccountIdResponse
      */
     public function setAdExtensionIds($AdExtensionIds)
     {

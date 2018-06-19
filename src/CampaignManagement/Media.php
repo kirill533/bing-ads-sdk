@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Media
 {
@@ -36,7 +36,7 @@ class Media
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\Media
+     * @return \PMG\BingAds\CampaignManagement\Media
      */
     public function setId($Id)
     {
@@ -54,7 +54,7 @@ class Media
 
     /**
      * @param string $MediaType
-     * @return \PMG\BingAds\CampaignMangagement\Media
+     * @return \PMG\BingAds\CampaignManagement\Media
      */
     public function setMediaType($MediaType)
     {
@@ -72,7 +72,7 @@ class Media
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\Media
+     * @return \PMG\BingAds\CampaignManagement\Media
      */
     public function setType($Type)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Address
 {
@@ -56,7 +56,7 @@ class Address
 
     /**
      * @param string $CityName
-     * @return \PMG\BingAds\CampaignMangagement\Address
+     * @return \PMG\BingAds\CampaignManagement\Address
      */
     public function setCityName($CityName)
     {
@@ -74,7 +74,7 @@ class Address
 
     /**
      * @param string $CountryCode
-     * @return \PMG\BingAds\CampaignMangagement\Address
+     * @return \PMG\BingAds\CampaignManagement\Address
      */
     public function setCountryCode($CountryCode)
     {
@@ -92,7 +92,7 @@ class Address
 
     /**
      * @param string $PostalCode
-     * @return \PMG\BingAds\CampaignMangagement\Address
+     * @return \PMG\BingAds\CampaignManagement\Address
      */
     public function setPostalCode($PostalCode)
     {
@@ -110,7 +110,7 @@ class Address
 
     /**
      * @param string $ProvinceCode
-     * @return \PMG\BingAds\CampaignMangagement\Address
+     * @return \PMG\BingAds\CampaignManagement\Address
      */
     public function setProvinceCode($ProvinceCode)
     {
@@ -128,7 +128,7 @@ class Address
 
     /**
      * @param string $ProvinceName
-     * @return \PMG\BingAds\CampaignMangagement\Address
+     * @return \PMG\BingAds\CampaignManagement\Address
      */
     public function setProvinceName($ProvinceName)
     {
@@ -146,7 +146,7 @@ class Address
 
     /**
      * @param string $StreetAddress
-     * @return \PMG\BingAds\CampaignMangagement\Address
+     * @return \PMG\BingAds\CampaignManagement\Address
      */
     public function setStreetAddress($StreetAddress)
     {
@@ -164,7 +164,7 @@ class Address
 
     /**
      * @param string $StreetAddress2
-     * @return \PMG\BingAds\CampaignMangagement\Address
+     * @return \PMG\BingAds\CampaignManagement\Address
      */
     public function setStreetAddress2($StreetAddress2)
     {

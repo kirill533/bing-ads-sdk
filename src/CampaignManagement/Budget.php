@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Budget
 {
@@ -46,7 +46,7 @@ class Budget
 
     /**
      * @param float $Amount
-     * @return \PMG\BingAds\CampaignMangagement\Budget
+     * @return \PMG\BingAds\CampaignManagement\Budget
      */
     public function setAmount($Amount)
     {
@@ -64,7 +64,7 @@ class Budget
 
     /**
      * @param int $AssociationCount
-     * @return \PMG\BingAds\CampaignMangagement\Budget
+     * @return \PMG\BingAds\CampaignManagement\Budget
      */
     public function setAssociationCount($AssociationCount)
     {
@@ -82,7 +82,7 @@ class Budget
 
     /**
      * @param BudgetLimitType $BudgetType
-     * @return \PMG\BingAds\CampaignMangagement\Budget
+     * @return \PMG\BingAds\CampaignManagement\Budget
      */
     public function setBudgetType($BudgetType)
     {
@@ -100,7 +100,7 @@ class Budget
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\Budget
+     * @return \PMG\BingAds\CampaignManagement\Budget
      */
     public function setId($Id)
     {
@@ -118,7 +118,7 @@ class Budget
 
     /**
      * @param string $Name
-     * @return \PMG\BingAds\CampaignMangagement\Budget
+     * @return \PMG\BingAds\CampaignManagement\Budget
      */
     public function setName($Name)
     {

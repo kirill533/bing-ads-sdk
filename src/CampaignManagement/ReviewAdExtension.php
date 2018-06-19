@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ReviewAdExtension extends AdExtension
 {
@@ -41,7 +41,7 @@ class ReviewAdExtension extends AdExtension
 
     /**
      * @param boolean $IsExact
-     * @return \PMG\BingAds\CampaignMangagement\ReviewAdExtension
+     * @return \PMG\BingAds\CampaignManagement\ReviewAdExtension
      */
     public function setIsExact($IsExact)
     {
@@ -59,7 +59,7 @@ class ReviewAdExtension extends AdExtension
 
     /**
      * @param string $Source
-     * @return \PMG\BingAds\CampaignMangagement\ReviewAdExtension
+     * @return \PMG\BingAds\CampaignManagement\ReviewAdExtension
      */
     public function setSource($Source)
     {
@@ -77,7 +77,7 @@ class ReviewAdExtension extends AdExtension
 
     /**
      * @param string $Text
-     * @return \PMG\BingAds\CampaignMangagement\ReviewAdExtension
+     * @return \PMG\BingAds\CampaignManagement\ReviewAdExtension
      */
     public function setText($Text)
     {
@@ -95,7 +95,7 @@ class ReviewAdExtension extends AdExtension
 
     /**
      * @param string $Url
-     * @return \PMG\BingAds\CampaignMangagement\ReviewAdExtension
+     * @return \PMG\BingAds\CampaignManagement\ReviewAdExtension
      */
     public function setUrl($Url)
     {

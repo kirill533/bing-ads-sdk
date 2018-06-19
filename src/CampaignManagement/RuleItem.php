@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class RuleItem
 {
@@ -26,7 +26,7 @@ class RuleItem
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\RuleItem
+     * @return \PMG\BingAds\CampaignManagement\RuleItem
      */
     public function setType($Type)
     {

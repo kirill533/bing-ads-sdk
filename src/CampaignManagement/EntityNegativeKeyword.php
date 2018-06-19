@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class EntityNegativeKeyword
 {
@@ -38,7 +38,7 @@ class EntityNegativeKeyword
 
     /**
      * @param int $EntityId
-     * @return \PMG\BingAds\CampaignMangagement\EntityNegativeKeyword
+     * @return \PMG\BingAds\CampaignManagement\EntityNegativeKeyword
      */
     public function setEntityId($EntityId)
     {
@@ -56,7 +56,7 @@ class EntityNegativeKeyword
 
     /**
      * @param string $EntityType
-     * @return \PMG\BingAds\CampaignMangagement\EntityNegativeKeyword
+     * @return \PMG\BingAds\CampaignManagement\EntityNegativeKeyword
      */
     public function setEntityType($EntityType)
     {
@@ -74,7 +74,7 @@ class EntityNegativeKeyword
 
     /**
      * @param ArrayOfNegativeKeyword $NegativeKeywords
-     * @return \PMG\BingAds\CampaignMangagement\EntityNegativeKeyword
+     * @return \PMG\BingAds\CampaignManagement\EntityNegativeKeyword
      */
     public function setNegativeKeywords($NegativeKeywords)
     {

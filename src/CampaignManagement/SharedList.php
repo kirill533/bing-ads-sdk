@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class SharedList extends SharedEntity
 {
@@ -26,7 +26,7 @@ class SharedList extends SharedEntity
 
     /**
      * @param int $ItemCount
-     * @return \PMG\BingAds\CampaignMangagement\SharedList
+     * @return \PMG\BingAds\CampaignManagement\SharedList
      */
     public function setItemCount($ItemCount)
     {

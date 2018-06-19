@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class UpdateAdExtensionsResponse
 {
@@ -28,7 +28,7 @@ class UpdateAdExtensionsResponse
 
     /**
      * @param ArrayOfBatchErrorCollection $NestedPartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\UpdateAdExtensionsResponse
+     * @return \PMG\BingAds\CampaignManagement\UpdateAdExtensionsResponse
      */
     public function setNestedPartialErrors($NestedPartialErrors)
     {

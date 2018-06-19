@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfAdType implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfAdType implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param AdType[] $AdType
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfAdType
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfAdType
      */
     public function setAdType(array $AdType = null)
     {

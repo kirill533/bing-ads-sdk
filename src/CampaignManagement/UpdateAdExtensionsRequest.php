@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class UpdateAdExtensionsRequest
 {
@@ -35,7 +35,7 @@ class UpdateAdExtensionsRequest
 
     /**
      * @param int $AccountId
-     * @return \PMG\BingAds\CampaignMangagement\UpdateAdExtensionsRequest
+     * @return \PMG\BingAds\CampaignManagement\UpdateAdExtensionsRequest
      */
     public function setAccountId($AccountId)
     {
@@ -53,7 +53,7 @@ class UpdateAdExtensionsRequest
 
     /**
      * @param ArrayOfAdExtension $AdExtensions
-     * @return \PMG\BingAds\CampaignMangagement\UpdateAdExtensionsRequest
+     * @return \PMG\BingAds\CampaignManagement\UpdateAdExtensionsRequest
      */
     public function setAdExtensions($AdExtensions)
     {

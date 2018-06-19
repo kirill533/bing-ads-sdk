@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ProductPartition extends Criterion
 {
@@ -39,7 +39,7 @@ class ProductPartition extends Criterion
 
     /**
      * @param ProductCondition $Condition
-     * @return \PMG\BingAds\CampaignMangagement\ProductPartition
+     * @return \PMG\BingAds\CampaignManagement\ProductPartition
      */
     public function setCondition($Condition)
     {
@@ -57,7 +57,7 @@ class ProductPartition extends Criterion
 
     /**
      * @param int $ParentCriterionId
-     * @return \PMG\BingAds\CampaignMangagement\ProductPartition
+     * @return \PMG\BingAds\CampaignManagement\ProductPartition
      */
     public function setParentCriterionId($ParentCriterionId)
     {
@@ -75,7 +75,7 @@ class ProductPartition extends Criterion
 
     /**
      * @param ProductPartitionType $PartitionType
-     * @return \PMG\BingAds\CampaignMangagement\ProductPartition
+     * @return \PMG\BingAds\CampaignManagement\ProductPartition
      */
     public function setPartitionType($PartitionType)
     {

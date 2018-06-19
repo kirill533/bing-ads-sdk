@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class StringRuleItem extends RuleItem
 {
@@ -36,7 +36,7 @@ class StringRuleItem extends RuleItem
 
     /**
      * @param string $Operand
-     * @return \PMG\BingAds\CampaignMangagement\StringRuleItem
+     * @return \PMG\BingAds\CampaignManagement\StringRuleItem
      */
     public function setOperand($Operand)
     {
@@ -54,7 +54,7 @@ class StringRuleItem extends RuleItem
 
     /**
      * @param StringOperator $Operator
-     * @return \PMG\BingAds\CampaignMangagement\StringRuleItem
+     * @return \PMG\BingAds\CampaignManagement\StringRuleItem
      */
     public function setOperator($Operator)
     {
@@ -72,7 +72,7 @@ class StringRuleItem extends RuleItem
 
     /**
      * @param string $Value
-     * @return \PMG\BingAds\CampaignMangagement\StringRuleItem
+     * @return \PMG\BingAds\CampaignManagement\StringRuleItem
      */
     public function setValue($Value)
     {

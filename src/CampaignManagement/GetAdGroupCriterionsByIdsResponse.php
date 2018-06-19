@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetAdGroupCriterionsByIdsResponse
 {
@@ -28,7 +28,7 @@ class GetAdGroupCriterionsByIdsResponse
 
     /**
      * @param ArrayOfAdGroupCriterion $AdGroupCriterions
-     * @return \PMG\BingAds\CampaignMangagement\GetAdGroupCriterionsByIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetAdGroupCriterionsByIdsResponse
      */
     public function setAdGroupCriterions($AdGroupCriterions)
     {

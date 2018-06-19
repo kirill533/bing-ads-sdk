@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ApplyOfflineConversionsResponse
 {
@@ -28,7 +28,7 @@ class ApplyOfflineConversionsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\ApplyOfflineConversionsResponse
+     * @return \PMG\BingAds\CampaignManagement\ApplyOfflineConversionsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

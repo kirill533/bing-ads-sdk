@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddAdGroupCriterionsRequest
 {
@@ -35,7 +35,7 @@ class AddAdGroupCriterionsRequest
 
     /**
      * @param ArrayOfAdGroupCriterion $AdGroupCriterions
-     * @return \PMG\BingAds\CampaignMangagement\AddAdGroupCriterionsRequest
+     * @return \PMG\BingAds\CampaignManagement\AddAdGroupCriterionsRequest
      */
     public function setAdGroupCriterions($AdGroupCriterions)
     {
@@ -53,7 +53,7 @@ class AddAdGroupCriterionsRequest
 
     /**
      * @param AdGroupCriterionType $CriterionType
-     * @return \PMG\BingAds\CampaignMangagement\AddAdGroupCriterionsRequest
+     * @return \PMG\BingAds\CampaignManagement\AddAdGroupCriterionsRequest
      */
     public function setCriterionType($CriterionType)
     {

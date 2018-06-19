@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteNegativeKeywordsFromEntitiesRequest
 {
@@ -28,7 +28,7 @@ class DeleteNegativeKeywordsFromEntitiesRequest
 
     /**
      * @param ArrayOfEntityNegativeKeyword $EntityNegativeKeywords
-     * @return \PMG\BingAds\CampaignMangagement\DeleteNegativeKeywordsFromEntitiesRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteNegativeKeywordsFromEntitiesRequest
      */
     public function setEntityNegativeKeywords($EntityNegativeKeywords)
     {

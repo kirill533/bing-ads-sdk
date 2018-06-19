@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Audience
 {
@@ -76,7 +76,7 @@ class Audience
 
     /**
      * @param int $AudienceNetworkSize
-     * @return \PMG\BingAds\CampaignMangagement\Audience
+     * @return \PMG\BingAds\CampaignManagement\Audience
      */
     public function setAudienceNetworkSize($AudienceNetworkSize)
     {
@@ -94,7 +94,7 @@ class Audience
 
     /**
      * @param string $Description
-     * @return \PMG\BingAds\CampaignMangagement\Audience
+     * @return \PMG\BingAds\CampaignManagement\Audience
      */
     public function setDescription($Description)
     {
@@ -112,7 +112,7 @@ class Audience
 
     /**
      * @param ArrayOfKeyValuePairOfstringstring $ForwardCompatibilityMap
-     * @return \PMG\BingAds\CampaignMangagement\Audience
+     * @return \PMG\BingAds\CampaignManagement\Audience
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
@@ -130,7 +130,7 @@ class Audience
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\Audience
+     * @return \PMG\BingAds\CampaignManagement\Audience
      */
     public function setId($Id)
     {
@@ -148,7 +148,7 @@ class Audience
 
     /**
      * @param int $MembershipDuration
-     * @return \PMG\BingAds\CampaignMangagement\Audience
+     * @return \PMG\BingAds\CampaignManagement\Audience
      */
     public function setMembershipDuration($MembershipDuration)
     {
@@ -166,7 +166,7 @@ class Audience
 
     /**
      * @param string $Name
-     * @return \PMG\BingAds\CampaignMangagement\Audience
+     * @return \PMG\BingAds\CampaignManagement\Audience
      */
     public function setName($Name)
     {
@@ -184,7 +184,7 @@ class Audience
 
     /**
      * @param int $ParentId
-     * @return \PMG\BingAds\CampaignMangagement\Audience
+     * @return \PMG\BingAds\CampaignManagement\Audience
      */
     public function setParentId($ParentId)
     {
@@ -202,7 +202,7 @@ class Audience
 
     /**
      * @param EntityScope $Scope
-     * @return \PMG\BingAds\CampaignMangagement\Audience
+     * @return \PMG\BingAds\CampaignManagement\Audience
      */
     public function setScope($Scope)
     {
@@ -220,7 +220,7 @@ class Audience
 
     /**
      * @param int $SearchSize
-     * @return \PMG\BingAds\CampaignMangagement\Audience
+     * @return \PMG\BingAds\CampaignManagement\Audience
      */
     public function setSearchSize($SearchSize)
     {
@@ -238,7 +238,7 @@ class Audience
 
     /**
      * @param ArrayOfstring $SupportedCampaignTypes
-     * @return \PMG\BingAds\CampaignMangagement\Audience
+     * @return \PMG\BingAds\CampaignManagement\Audience
      */
     public function setSupportedCampaignTypes($SupportedCampaignTypes)
     {
@@ -256,7 +256,7 @@ class Audience
 
     /**
      * @param AudienceType $Type
-     * @return \PMG\BingAds\CampaignMangagement\Audience
+     * @return \PMG\BingAds\CampaignManagement\Audience
      */
     public function setType($Type)
     {

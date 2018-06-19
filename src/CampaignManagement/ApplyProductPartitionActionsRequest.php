@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ApplyProductPartitionActionsRequest
 {
@@ -28,7 +28,7 @@ class ApplyProductPartitionActionsRequest
 
     /**
      * @param ArrayOfAdGroupCriterionAction $CriterionActions
-     * @return \PMG\BingAds\CampaignMangagement\ApplyProductPartitionActionsRequest
+     * @return \PMG\BingAds\CampaignManagement\ApplyProductPartitionActionsRequest
      */
     public function setCriterionActions($CriterionActions)
     {

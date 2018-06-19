@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class BiddingScheme
 {
@@ -26,7 +26,7 @@ class BiddingScheme
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\BiddingScheme
+     * @return \PMG\BingAds\CampaignManagement\BiddingScheme
      */
     public function setType($Type)
     {

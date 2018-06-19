@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteSharedEntitiesRequest
 {
@@ -28,7 +28,7 @@ class DeleteSharedEntitiesRequest
 
     /**
      * @param ArrayOfSharedEntity $SharedEntities
-     * @return \PMG\BingAds\CampaignMangagement\DeleteSharedEntitiesRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteSharedEntitiesRequest
      */
     public function setSharedEntities($SharedEntities)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class MigrationStatusInfo
 {
@@ -38,7 +38,7 @@ class MigrationStatusInfo
 
     /**
      * @param string $MigrationType
-     * @return \PMG\BingAds\CampaignMangagement\MigrationStatusInfo
+     * @return \PMG\BingAds\CampaignManagement\MigrationStatusInfo
      */
     public function setMigrationType($MigrationType)
     {
@@ -64,7 +64,7 @@ class MigrationStatusInfo
 
     /**
      * @param \DateTime $StartTimeInUtc
-     * @return \PMG\BingAds\CampaignMangagement\MigrationStatusInfo
+     * @return \PMG\BingAds\CampaignManagement\MigrationStatusInfo
      */
     public function setStartTimeInUtc(\DateTime $StartTimeInUtc = null)
     {
@@ -86,7 +86,7 @@ class MigrationStatusInfo
 
     /**
      * @param MigrationStatus $Status
-     * @return \PMG\BingAds\CampaignMangagement\MigrationStatusInfo
+     * @return \PMG\BingAds\CampaignManagement\MigrationStatusInfo
      */
     public function setStatus($Status)
     {

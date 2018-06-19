@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ApplyProductPartitionActionsResponse
 {
@@ -35,7 +35,7 @@ class ApplyProductPartitionActionsResponse
 
     /**
      * @param ArrayOfNullableOflong $AdGroupCriterionIds
-     * @return \PMG\BingAds\CampaignMangagement\ApplyProductPartitionActionsResponse
+     * @return \PMG\BingAds\CampaignManagement\ApplyProductPartitionActionsResponse
      */
     public function setAdGroupCriterionIds($AdGroupCriterionIds)
     {
@@ -53,7 +53,7 @@ class ApplyProductPartitionActionsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\ApplyProductPartitionActionsResponse
+     * @return \PMG\BingAds\CampaignManagement\ApplyProductPartitionActionsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetAdExtensionsEditorialReasonsResponse
 {
@@ -35,7 +35,7 @@ class GetAdExtensionsEditorialReasonsResponse
 
     /**
      * @param ArrayOfAdExtensionEditorialReasonCollection $EditorialReasons
-     * @return \PMG\BingAds\CampaignMangagement\GetAdExtensionsEditorialReasonsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetAdExtensionsEditorialReasonsResponse
      */
     public function setEditorialReasons($EditorialReasons)
     {
@@ -53,7 +53,7 @@ class GetAdExtensionsEditorialReasonsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\GetAdExtensionsEditorialReasonsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetAdExtensionsEditorialReasonsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

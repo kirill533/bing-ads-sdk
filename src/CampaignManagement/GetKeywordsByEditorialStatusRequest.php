@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetKeywordsByEditorialStatusRequest
 {
@@ -35,7 +35,7 @@ class GetKeywordsByEditorialStatusRequest
 
     /**
      * @param int $AdGroupId
-     * @return \PMG\BingAds\CampaignMangagement\GetKeywordsByEditorialStatusRequest
+     * @return \PMG\BingAds\CampaignManagement\GetKeywordsByEditorialStatusRequest
      */
     public function setAdGroupId($AdGroupId)
     {
@@ -53,7 +53,7 @@ class GetKeywordsByEditorialStatusRequest
 
     /**
      * @param KeywordEditorialStatus $EditorialStatus
-     * @return \PMG\BingAds\CampaignMangagement\GetKeywordsByEditorialStatusRequest
+     * @return \PMG\BingAds\CampaignManagement\GetKeywordsByEditorialStatusRequest
      */
     public function setEditorialStatus($EditorialStatus)
     {

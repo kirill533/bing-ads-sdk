@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ImageMediaRepresentation extends MediaRepresentation
 {
@@ -31,7 +31,7 @@ class ImageMediaRepresentation extends MediaRepresentation
 
     /**
      * @param int $Height
-     * @return \PMG\BingAds\CampaignMangagement\ImageMediaRepresentation
+     * @return \PMG\BingAds\CampaignManagement\ImageMediaRepresentation
      */
     public function setHeight($Height)
     {
@@ -49,7 +49,7 @@ class ImageMediaRepresentation extends MediaRepresentation
 
     /**
      * @param int $Width
-     * @return \PMG\BingAds\CampaignMangagement\ImageMediaRepresentation
+     * @return \PMG\BingAds\CampaignManagement\ImageMediaRepresentation
      */
     public function setWidth($Width)
     {

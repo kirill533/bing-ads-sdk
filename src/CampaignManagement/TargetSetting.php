@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class TargetSetting extends Setting
 {
@@ -26,7 +26,7 @@ class TargetSetting extends Setting
 
     /**
      * @param ArrayOfTargetSettingDetail $Details
-     * @return \PMG\BingAds\CampaignMangagement\TargetSetting
+     * @return \PMG\BingAds\CampaignManagement\TargetSetting
      */
     public function setDetails($Details)
     {

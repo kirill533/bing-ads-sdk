@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfAdApiError implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfAdApiError implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param AdApiError[] $AdApiError
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfAdApiError
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfAdApiError
      */
     public function setAdApiError(array $AdApiError = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddCampaignCriterionsRequest
 {
@@ -35,7 +35,7 @@ class AddCampaignCriterionsRequest
 
     /**
      * @param ArrayOfCampaignCriterion $CampaignCriterions
-     * @return \PMG\BingAds\CampaignMangagement\AddCampaignCriterionsRequest
+     * @return \PMG\BingAds\CampaignManagement\AddCampaignCriterionsRequest
      */
     public function setCampaignCriterions($CampaignCriterions)
     {
@@ -53,7 +53,7 @@ class AddCampaignCriterionsRequest
 
     /**
      * @param CampaignCriterionType $CriterionType
-     * @return \PMG\BingAds\CampaignMangagement\AddCampaignCriterionsRequest
+     * @return \PMG\BingAds\CampaignManagement\AddCampaignCriterionsRequest
      */
     public function setCriterionType($CriterionType)
     {

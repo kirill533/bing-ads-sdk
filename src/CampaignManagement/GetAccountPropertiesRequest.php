@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetAccountPropertiesRequest
 {
@@ -28,7 +28,7 @@ class GetAccountPropertiesRequest
 
     /**
      * @param ArrayOfAccountPropertyName $AccountPropertyNames
-     * @return \PMG\BingAds\CampaignMangagement\GetAccountPropertiesRequest
+     * @return \PMG\BingAds\CampaignManagement\GetAccountPropertiesRequest
      */
     public function setAccountPropertyNames($AccountPropertyNames)
     {

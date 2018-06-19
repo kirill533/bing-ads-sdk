@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfBMCStore implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfBMCStore implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param BMCStore[] $BMCStore
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfBMCStore
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfBMCStore
      */
     public function setBMCStore(array $BMCStore = null)
     {

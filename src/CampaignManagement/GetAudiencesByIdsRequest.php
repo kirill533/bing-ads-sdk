@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetAudiencesByIdsRequest
 {
@@ -35,7 +35,7 @@ class GetAudiencesByIdsRequest
 
     /**
      * @param ArrayOflong $AudienceIds
-     * @return \PMG\BingAds\CampaignMangagement\GetAudiencesByIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetAudiencesByIdsRequest
      */
     public function setAudienceIds($AudienceIds)
     {
@@ -53,7 +53,7 @@ class GetAudiencesByIdsRequest
 
     /**
      * @param AudienceType $Type
-     * @return \PMG\BingAds\CampaignMangagement\GetAudiencesByIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetAudiencesByIdsRequest
      */
     public function setType($Type)
     {

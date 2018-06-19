@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class PriceTableRow
 {
@@ -77,7 +77,7 @@ class PriceTableRow
 
     /**
      * @param string $CurrencyCode
-     * @return \PMG\BingAds\CampaignMangagement\PriceTableRow
+     * @return \PMG\BingAds\CampaignManagement\PriceTableRow
      */
     public function setCurrencyCode($CurrencyCode)
     {
@@ -95,7 +95,7 @@ class PriceTableRow
 
     /**
      * @param string $Description
-     * @return \PMG\BingAds\CampaignMangagement\PriceTableRow
+     * @return \PMG\BingAds\CampaignManagement\PriceTableRow
      */
     public function setDescription($Description)
     {
@@ -113,7 +113,7 @@ class PriceTableRow
 
     /**
      * @param ArrayOfstring $FinalMobileUrls
-     * @return \PMG\BingAds\CampaignMangagement\PriceTableRow
+     * @return \PMG\BingAds\CampaignManagement\PriceTableRow
      */
     public function setFinalMobileUrls($FinalMobileUrls)
     {
@@ -131,7 +131,7 @@ class PriceTableRow
 
     /**
      * @param ArrayOfstring $FinalUrls
-     * @return \PMG\BingAds\CampaignMangagement\PriceTableRow
+     * @return \PMG\BingAds\CampaignManagement\PriceTableRow
      */
     public function setFinalUrls($FinalUrls)
     {
@@ -149,7 +149,7 @@ class PriceTableRow
 
     /**
      * @param string $Header
-     * @return \PMG\BingAds\CampaignMangagement\PriceTableRow
+     * @return \PMG\BingAds\CampaignManagement\PriceTableRow
      */
     public function setHeader($Header)
     {
@@ -167,7 +167,7 @@ class PriceTableRow
 
     /**
      * @param float $Price
-     * @return \PMG\BingAds\CampaignMangagement\PriceTableRow
+     * @return \PMG\BingAds\CampaignManagement\PriceTableRow
      */
     public function setPrice($Price)
     {
@@ -185,7 +185,7 @@ class PriceTableRow
 
     /**
      * @param PriceQualifier $PriceQualifier
-     * @return \PMG\BingAds\CampaignMangagement\PriceTableRow
+     * @return \PMG\BingAds\CampaignManagement\PriceTableRow
      */
     public function setPriceQualifier($PriceQualifier)
     {
@@ -203,7 +203,7 @@ class PriceTableRow
 
     /**
      * @param PriceUnit $PriceUnit
-     * @return \PMG\BingAds\CampaignMangagement\PriceTableRow
+     * @return \PMG\BingAds\CampaignManagement\PriceTableRow
      */
     public function setPriceUnit($PriceUnit)
     {
@@ -221,7 +221,7 @@ class PriceTableRow
 
     /**
      * @param string $TermsAndConditions
-     * @return \PMG\BingAds\CampaignMangagement\PriceTableRow
+     * @return \PMG\BingAds\CampaignManagement\PriceTableRow
      */
     public function setTermsAndConditions($TermsAndConditions)
     {
@@ -239,7 +239,7 @@ class PriceTableRow
 
     /**
      * @param string $TermsAndConditionsUrl
-     * @return \PMG\BingAds\CampaignMangagement\PriceTableRow
+     * @return \PMG\BingAds\CampaignManagement\PriceTableRow
      */
     public function setTermsAndConditionsUrl($TermsAndConditionsUrl)
     {

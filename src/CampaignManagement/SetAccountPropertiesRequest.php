@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class SetAccountPropertiesRequest
 {
@@ -28,7 +28,7 @@ class SetAccountPropertiesRequest
 
     /**
      * @param ArrayOfAccountProperty $AccountProperties
-     * @return \PMG\BingAds\CampaignMangagement\SetAccountPropertiesRequest
+     * @return \PMG\BingAds\CampaignManagement\SetAccountPropertiesRequest
      */
     public function setAccountProperties($AccountProperties)
     {

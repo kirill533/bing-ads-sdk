@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class CriterionBid
 {
@@ -26,7 +26,7 @@ class CriterionBid
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\CriterionBid
+     * @return \PMG\BingAds\CampaignManagement\CriterionBid
      */
     public function setType($Type)
     {

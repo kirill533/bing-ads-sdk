@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ProductCondition
 {
@@ -31,7 +31,7 @@ class ProductCondition
 
     /**
      * @param string $Attribute
-     * @return \PMG\BingAds\CampaignMangagement\ProductCondition
+     * @return \PMG\BingAds\CampaignManagement\ProductCondition
      */
     public function setAttribute($Attribute)
     {
@@ -49,7 +49,7 @@ class ProductCondition
 
     /**
      * @param string $Operand
-     * @return \PMG\BingAds\CampaignMangagement\ProductCondition
+     * @return \PMG\BingAds\CampaignManagement\ProductCondition
      */
     public function setOperand($Operand)
     {

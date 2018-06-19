@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetAccountMigrationStatusesResponse
 {
@@ -28,7 +28,7 @@ class GetAccountMigrationStatusesResponse
 
     /**
      * @param ArrayOfAccountMigrationStatusesInfo $MigrationStatuses
-     * @return \PMG\BingAds\CampaignMangagement\GetAccountMigrationStatusesResponse
+     * @return \PMG\BingAds\CampaignManagement\GetAccountMigrationStatusesResponse
      */
     public function setMigrationStatuses($MigrationStatuses)
     {

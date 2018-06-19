@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Date
 {
@@ -42,7 +42,7 @@ class Date
 
     /**
      * @param int $Day
-     * @return \PMG\BingAds\CampaignMangagement\Date
+     * @return \PMG\BingAds\CampaignManagement\Date
      */
     public function setDay($Day)
     {
@@ -60,7 +60,7 @@ class Date
 
     /**
      * @param int $Month
-     * @return \PMG\BingAds\CampaignMangagement\Date
+     * @return \PMG\BingAds\CampaignManagement\Date
      */
     public function setMonth($Month)
     {
@@ -78,7 +78,7 @@ class Date
 
     /**
      * @param int $Year
-     * @return \PMG\BingAds\CampaignMangagement\Date
+     * @return \PMG\BingAds\CampaignManagement\Date
      */
     public function setYear($Year)
     {

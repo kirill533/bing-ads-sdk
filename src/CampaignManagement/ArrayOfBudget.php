@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfBudget implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfBudget implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param Budget[] $Budget
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfBudget
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfBudget
      */
     public function setBudget(array $Budget = null)
     {

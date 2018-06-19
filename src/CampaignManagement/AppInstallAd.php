@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AppInstallAd extends Ad
 {
@@ -41,7 +41,7 @@ class AppInstallAd extends Ad
 
     /**
      * @param string $AppPlatform
-     * @return \PMG\BingAds\CampaignMangagement\AppInstallAd
+     * @return \PMG\BingAds\CampaignManagement\AppInstallAd
      */
     public function setAppPlatform($AppPlatform)
     {
@@ -59,7 +59,7 @@ class AppInstallAd extends Ad
 
     /**
      * @param string $AppStoreId
-     * @return \PMG\BingAds\CampaignMangagement\AppInstallAd
+     * @return \PMG\BingAds\CampaignManagement\AppInstallAd
      */
     public function setAppStoreId($AppStoreId)
     {
@@ -77,7 +77,7 @@ class AppInstallAd extends Ad
 
     /**
      * @param string $Text
-     * @return \PMG\BingAds\CampaignMangagement\AppInstallAd
+     * @return \PMG\BingAds\CampaignManagement\AppInstallAd
      */
     public function setText($Text)
     {
@@ -95,7 +95,7 @@ class AppInstallAd extends Ad
 
     /**
      * @param string $Title
-     * @return \PMG\BingAds\CampaignMangagement\AppInstallAd
+     * @return \PMG\BingAds\CampaignManagement\AppInstallAd
      */
     public function setTitle($Title)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteMediaRequest
 {
@@ -35,7 +35,7 @@ class DeleteMediaRequest
 
     /**
      * @param int $AccountId
-     * @return \PMG\BingAds\CampaignMangagement\DeleteMediaRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteMediaRequest
      */
     public function setAccountId($AccountId)
     {
@@ -53,7 +53,7 @@ class DeleteMediaRequest
 
     /**
      * @param ArrayOflong $MediaIds
-     * @return \PMG\BingAds\CampaignMangagement\DeleteMediaRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteMediaRequest
      */
     public function setMediaIds($MediaIds)
     {

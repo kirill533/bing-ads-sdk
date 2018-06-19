@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfAccountProperty implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfAccountProperty implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param AccountProperty[] $AccountProperty
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfAccountProperty
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfAccountProperty
      */
     public function setAccountProperty(array $AccountProperty = null)
     {

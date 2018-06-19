@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AppInstallGoal extends ConversionGoal
 {
@@ -31,7 +31,7 @@ class AppInstallGoal extends ConversionGoal
 
     /**
      * @param string $AppPlatform
-     * @return \PMG\BingAds\CampaignMangagement\AppInstallGoal
+     * @return \PMG\BingAds\CampaignManagement\AppInstallGoal
      */
     public function setAppPlatform($AppPlatform)
     {
@@ -49,7 +49,7 @@ class AppInstallGoal extends ConversionGoal
 
     /**
      * @param string $AppStoreId
-     * @return \PMG\BingAds\CampaignMangagement\AppInstallGoal
+     * @return \PMG\BingAds\CampaignManagement\AppInstallGoal
      */
     public function setAppStoreId($AppStoreId)
     {

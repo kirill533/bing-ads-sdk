@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class CoOpSetting extends Setting
 {
@@ -36,7 +36,7 @@ class CoOpSetting extends Setting
 
     /**
      * @param float $BidBoostValue
-     * @return \PMG\BingAds\CampaignMangagement\CoOpSetting
+     * @return \PMG\BingAds\CampaignManagement\CoOpSetting
      */
     public function setBidBoostValue($BidBoostValue)
     {
@@ -54,7 +54,7 @@ class CoOpSetting extends Setting
 
     /**
      * @param float $BidMaxValue
-     * @return \PMG\BingAds\CampaignMangagement\CoOpSetting
+     * @return \PMG\BingAds\CampaignManagement\CoOpSetting
      */
     public function setBidMaxValue($BidMaxValue)
     {
@@ -72,7 +72,7 @@ class CoOpSetting extends Setting
 
     /**
      * @param BidOption $BidOption
-     * @return \PMG\BingAds\CampaignMangagement\CoOpSetting
+     * @return \PMG\BingAds\CampaignManagement\CoOpSetting
      */
     public function setBidOption($BidOption)
     {

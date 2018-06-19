@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfTargetSettingDetail implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfTargetSettingDetail implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param TargetSettingDetail[] $TargetSettingDetail
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfTargetSettingDetail
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfTargetSettingDetail
      */
     public function setTargetSettingDetail(array $TargetSettingDetail = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GeoPoint
 {
@@ -35,7 +35,7 @@ class GeoPoint
 
     /**
      * @param int $LatitudeInMicroDegrees
-     * @return \PMG\BingAds\CampaignMangagement\GeoPoint
+     * @return \PMG\BingAds\CampaignManagement\GeoPoint
      */
     public function setLatitudeInMicroDegrees($LatitudeInMicroDegrees)
     {
@@ -53,7 +53,7 @@ class GeoPoint
 
     /**
      * @param int $LongitudeInMicroDegrees
-     * @return \PMG\BingAds\CampaignMangagement\GeoPoint
+     * @return \PMG\BingAds\CampaignManagement\GeoPoint
      */
     public function setLongitudeInMicroDegrees($LongitudeInMicroDegrees)
     {

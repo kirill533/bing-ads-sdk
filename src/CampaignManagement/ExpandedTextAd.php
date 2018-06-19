@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ExpandedTextAd extends Ad
 {
@@ -51,7 +51,7 @@ class ExpandedTextAd extends Ad
 
     /**
      * @param string $Domain
-     * @return \PMG\BingAds\CampaignMangagement\ExpandedTextAd
+     * @return \PMG\BingAds\CampaignManagement\ExpandedTextAd
      */
     public function setDomain($Domain)
     {
@@ -69,7 +69,7 @@ class ExpandedTextAd extends Ad
 
     /**
      * @param string $Path1
-     * @return \PMG\BingAds\CampaignMangagement\ExpandedTextAd
+     * @return \PMG\BingAds\CampaignManagement\ExpandedTextAd
      */
     public function setPath1($Path1)
     {
@@ -87,7 +87,7 @@ class ExpandedTextAd extends Ad
 
     /**
      * @param string $Path2
-     * @return \PMG\BingAds\CampaignMangagement\ExpandedTextAd
+     * @return \PMG\BingAds\CampaignManagement\ExpandedTextAd
      */
     public function setPath2($Path2)
     {
@@ -105,7 +105,7 @@ class ExpandedTextAd extends Ad
 
     /**
      * @param string $Text
-     * @return \PMG\BingAds\CampaignMangagement\ExpandedTextAd
+     * @return \PMG\BingAds\CampaignManagement\ExpandedTextAd
      */
     public function setText($Text)
     {
@@ -123,7 +123,7 @@ class ExpandedTextAd extends Ad
 
     /**
      * @param string $TitlePart1
-     * @return \PMG\BingAds\CampaignMangagement\ExpandedTextAd
+     * @return \PMG\BingAds\CampaignManagement\ExpandedTextAd
      */
     public function setTitlePart1($TitlePart1)
     {
@@ -141,7 +141,7 @@ class ExpandedTextAd extends Ad
 
     /**
      * @param string $TitlePart2
-     * @return \PMG\BingAds\CampaignMangagement\ExpandedTextAd
+     * @return \PMG\BingAds\CampaignManagement\ExpandedTextAd
      */
     public function setTitlePart2($TitlePart2)
     {

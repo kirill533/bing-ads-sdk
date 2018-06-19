@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetLabelAssociationsByLabelIdsRequest
 {
@@ -42,7 +42,7 @@ class GetLabelAssociationsByLabelIdsRequest
 
     /**
      * @param EntityType $EntityType
-     * @return \PMG\BingAds\CampaignMangagement\GetLabelAssociationsByLabelIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetLabelAssociationsByLabelIdsRequest
      */
     public function setEntityType($EntityType)
     {
@@ -60,7 +60,7 @@ class GetLabelAssociationsByLabelIdsRequest
 
     /**
      * @param ArrayOflong $LabelIds
-     * @return \PMG\BingAds\CampaignMangagement\GetLabelAssociationsByLabelIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetLabelAssociationsByLabelIdsRequest
      */
     public function setLabelIds($LabelIds)
     {
@@ -78,7 +78,7 @@ class GetLabelAssociationsByLabelIdsRequest
 
     /**
      * @param Paging $PageInfo
-     * @return \PMG\BingAds\CampaignMangagement\GetLabelAssociationsByLabelIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetLabelAssociationsByLabelIdsRequest
      */
     public function setPageInfo($PageInfo)
     {

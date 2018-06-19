@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfEntityIdToParentIdAssociation implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfEntityIdToParentIdAssociation implements \ArrayAccess, \Iterator, \
 
     /**
      * @param EntityIdToParentIdAssociation[] $EntityIdToParentIdAssociation
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfEntityIdToParentIdAssociation
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfEntityIdToParentIdAssociation
      */
     public function setEntityIdToParentIdAssociation(array $EntityIdToParentIdAssociation = null)
     {

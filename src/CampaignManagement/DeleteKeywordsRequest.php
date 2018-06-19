@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteKeywordsRequest
 {
@@ -35,7 +35,7 @@ class DeleteKeywordsRequest
 
     /**
      * @param int $AdGroupId
-     * @return \PMG\BingAds\CampaignMangagement\DeleteKeywordsRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteKeywordsRequest
      */
     public function setAdGroupId($AdGroupId)
     {
@@ -53,7 +53,7 @@ class DeleteKeywordsRequest
 
     /**
      * @param ArrayOflong $KeywordIds
-     * @return \PMG\BingAds\CampaignMangagement\DeleteKeywordsRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteKeywordsRequest
      */
     public function setKeywordIds($KeywordIds)
     {

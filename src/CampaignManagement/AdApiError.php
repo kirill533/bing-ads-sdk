@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AdApiError
 {
@@ -41,7 +41,7 @@ class AdApiError
 
     /**
      * @param int $Code
-     * @return \PMG\BingAds\CampaignMangagement\AdApiError
+     * @return \PMG\BingAds\CampaignManagement\AdApiError
      */
     public function setCode($Code)
     {
@@ -59,7 +59,7 @@ class AdApiError
 
     /**
      * @param string $Detail
-     * @return \PMG\BingAds\CampaignMangagement\AdApiError
+     * @return \PMG\BingAds\CampaignManagement\AdApiError
      */
     public function setDetail($Detail)
     {
@@ -77,7 +77,7 @@ class AdApiError
 
     /**
      * @param string $ErrorCode
-     * @return \PMG\BingAds\CampaignMangagement\AdApiError
+     * @return \PMG\BingAds\CampaignManagement\AdApiError
      */
     public function setErrorCode($ErrorCode)
     {
@@ -95,7 +95,7 @@ class AdApiError
 
     /**
      * @param string $Message
-     * @return \PMG\BingAds\CampaignMangagement\AdApiError
+     * @return \PMG\BingAds\CampaignManagement\AdApiError
      */
     public function setMessage($Message)
     {

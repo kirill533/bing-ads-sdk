@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class EditorialReason
 {
@@ -41,7 +41,7 @@ class EditorialReason
 
     /**
      * @param string $Location
-     * @return \PMG\BingAds\CampaignMangagement\EditorialReason
+     * @return \PMG\BingAds\CampaignManagement\EditorialReason
      */
     public function setLocation($Location)
     {
@@ -59,7 +59,7 @@ class EditorialReason
 
     /**
      * @param ArrayOfstring $PublisherCountries
-     * @return \PMG\BingAds\CampaignMangagement\EditorialReason
+     * @return \PMG\BingAds\CampaignManagement\EditorialReason
      */
     public function setPublisherCountries($PublisherCountries)
     {
@@ -77,7 +77,7 @@ class EditorialReason
 
     /**
      * @param int $ReasonCode
-     * @return \PMG\BingAds\CampaignMangagement\EditorialReason
+     * @return \PMG\BingAds\CampaignManagement\EditorialReason
      */
     public function setReasonCode($ReasonCode)
     {
@@ -95,7 +95,7 @@ class EditorialReason
 
     /**
      * @param string $Term
-     * @return \PMG\BingAds\CampaignMangagement\EditorialReason
+     * @return \PMG\BingAds\CampaignManagement\EditorialReason
      */
     public function setTerm($Term)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class PageVisitorsWhoDidNotVisitAnotherPageRule extends RemarketingRule
 {
@@ -31,7 +31,7 @@ class PageVisitorsWhoDidNotVisitAnotherPageRule extends RemarketingRule
 
     /**
      * @param ArrayOfRuleItemGroup $ExcludeRuleItemGroups
-     * @return \PMG\BingAds\CampaignMangagement\PageVisitorsWhoDidNotVisitAnotherPageRule
+     * @return \PMG\BingAds\CampaignManagement\PageVisitorsWhoDidNotVisitAnotherPageRule
      */
     public function setExcludeRuleItemGroups($ExcludeRuleItemGroups)
     {
@@ -49,7 +49,7 @@ class PageVisitorsWhoDidNotVisitAnotherPageRule extends RemarketingRule
 
     /**
      * @param ArrayOfRuleItemGroup $IncludeRuleItemGroups
-     * @return \PMG\BingAds\CampaignMangagement\PageVisitorsWhoDidNotVisitAnotherPageRule
+     * @return \PMG\BingAds\CampaignManagement\PageVisitorsWhoDidNotVisitAnotherPageRule
      */
     public function setIncludeRuleItemGroups($IncludeRuleItemGroups)
     {

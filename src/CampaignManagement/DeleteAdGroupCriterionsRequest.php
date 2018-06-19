@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteAdGroupCriterionsRequest
 {
@@ -42,7 +42,7 @@ class DeleteAdGroupCriterionsRequest
 
     /**
      * @param ArrayOflong $AdGroupCriterionIds
-     * @return \PMG\BingAds\CampaignMangagement\DeleteAdGroupCriterionsRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteAdGroupCriterionsRequest
      */
     public function setAdGroupCriterionIds($AdGroupCriterionIds)
     {
@@ -60,7 +60,7 @@ class DeleteAdGroupCriterionsRequest
 
     /**
      * @param int $AdGroupId
-     * @return \PMG\BingAds\CampaignMangagement\DeleteAdGroupCriterionsRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteAdGroupCriterionsRequest
      */
     public function setAdGroupId($AdGroupId)
     {
@@ -78,7 +78,7 @@ class DeleteAdGroupCriterionsRequest
 
     /**
      * @param AdGroupCriterionType $CriterionType
-     * @return \PMG\BingAds\CampaignMangagement\DeleteAdGroupCriterionsRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteAdGroupCriterionsRequest
      */
     public function setCriterionType($CriterionType)
     {

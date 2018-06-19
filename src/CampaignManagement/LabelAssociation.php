@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class LabelAssociation
 {
@@ -35,7 +35,7 @@ class LabelAssociation
 
     /**
      * @param int $EntityId
-     * @return \PMG\BingAds\CampaignMangagement\LabelAssociation
+     * @return \PMG\BingAds\CampaignManagement\LabelAssociation
      */
     public function setEntityId($EntityId)
     {
@@ -53,7 +53,7 @@ class LabelAssociation
 
     /**
      * @param int $LabelId
-     * @return \PMG\BingAds\CampaignMangagement\LabelAssociation
+     * @return \PMG\BingAds\CampaignManagement\LabelAssociation
      */
     public function setLabelId($LabelId)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddSharedEntityResponse
 {
@@ -42,7 +42,7 @@ class AddSharedEntityResponse
 
     /**
      * @param ArrayOflong $ListItemIds
-     * @return \PMG\BingAds\CampaignMangagement\AddSharedEntityResponse
+     * @return \PMG\BingAds\CampaignManagement\AddSharedEntityResponse
      */
     public function setListItemIds($ListItemIds)
     {
@@ -60,7 +60,7 @@ class AddSharedEntityResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\AddSharedEntityResponse
+     * @return \PMG\BingAds\CampaignManagement\AddSharedEntityResponse
      */
     public function setPartialErrors($PartialErrors)
     {
@@ -78,7 +78,7 @@ class AddSharedEntityResponse
 
     /**
      * @param int $SharedEntityId
-     * @return \PMG\BingAds\CampaignMangagement\AddSharedEntityResponse
+     * @return \PMG\BingAds\CampaignManagement\AddSharedEntityResponse
      */
     public function setSharedEntityId($SharedEntityId)
     {

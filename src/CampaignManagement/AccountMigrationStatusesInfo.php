@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AccountMigrationStatusesInfo
 {
@@ -33,7 +33,7 @@ class AccountMigrationStatusesInfo
 
     /**
      * @param int $AccountId
-     * @return \PMG\BingAds\CampaignMangagement\AccountMigrationStatusesInfo
+     * @return \PMG\BingAds\CampaignManagement\AccountMigrationStatusesInfo
      */
     public function setAccountId($AccountId)
     {
@@ -51,7 +51,7 @@ class AccountMigrationStatusesInfo
 
     /**
      * @param ArrayOfMigrationStatusInfo $MigrationStatusInfos
-     * @return \PMG\BingAds\CampaignMangagement\AccountMigrationStatusesInfo
+     * @return \PMG\BingAds\CampaignManagement\AccountMigrationStatusesInfo
      */
     public function setMigrationStatusInfos($MigrationStatusInfos)
     {

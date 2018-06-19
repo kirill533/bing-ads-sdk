@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetMediaMetaDataByAccountIdResponse
 {
@@ -28,7 +28,7 @@ class GetMediaMetaDataByAccountIdResponse
 
     /**
      * @param ArrayOfMediaMetaData $MediaMetaData
-     * @return \PMG\BingAds\CampaignMangagement\GetMediaMetaDataByAccountIdResponse
+     * @return \PMG\BingAds\CampaignManagement\GetMediaMetaDataByAccountIdResponse
      */
     public function setMediaMetaData($MediaMetaData)
     {

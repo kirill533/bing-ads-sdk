@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class BatchError
 {
@@ -61,7 +61,7 @@ class BatchError
 
     /**
      * @param int $Code
-     * @return \PMG\BingAds\CampaignMangagement\BatchError
+     * @return \PMG\BingAds\CampaignManagement\BatchError
      */
     public function setCode($Code)
     {
@@ -79,7 +79,7 @@ class BatchError
 
     /**
      * @param string $Details
-     * @return \PMG\BingAds\CampaignMangagement\BatchError
+     * @return \PMG\BingAds\CampaignManagement\BatchError
      */
     public function setDetails($Details)
     {
@@ -97,7 +97,7 @@ class BatchError
 
     /**
      * @param string $ErrorCode
-     * @return \PMG\BingAds\CampaignMangagement\BatchError
+     * @return \PMG\BingAds\CampaignManagement\BatchError
      */
     public function setErrorCode($ErrorCode)
     {
@@ -115,7 +115,7 @@ class BatchError
 
     /**
      * @param string $FieldPath
-     * @return \PMG\BingAds\CampaignMangagement\BatchError
+     * @return \PMG\BingAds\CampaignManagement\BatchError
      */
     public function setFieldPath($FieldPath)
     {
@@ -133,7 +133,7 @@ class BatchError
 
     /**
      * @param ArrayOfKeyValuePairOfstringstring $ForwardCompatibilityMap
-     * @return \PMG\BingAds\CampaignMangagement\BatchError
+     * @return \PMG\BingAds\CampaignManagement\BatchError
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
@@ -151,7 +151,7 @@ class BatchError
 
     /**
      * @param int $Index
-     * @return \PMG\BingAds\CampaignMangagement\BatchError
+     * @return \PMG\BingAds\CampaignManagement\BatchError
      */
     public function setIndex($Index)
     {
@@ -169,7 +169,7 @@ class BatchError
 
     /**
      * @param string $Message
-     * @return \PMG\BingAds\CampaignMangagement\BatchError
+     * @return \PMG\BingAds\CampaignManagement\BatchError
      */
     public function setMessage($Message)
     {
@@ -187,7 +187,7 @@ class BatchError
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\BatchError
+     * @return \PMG\BingAds\CampaignManagement\BatchError
      */
     public function setType($Type)
     {

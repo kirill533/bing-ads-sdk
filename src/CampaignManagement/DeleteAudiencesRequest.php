@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteAudiencesRequest
 {
@@ -28,7 +28,7 @@ class DeleteAudiencesRequest
 
     /**
      * @param ArrayOflong $AudienceIds
-     * @return \PMG\BingAds\CampaignMangagement\DeleteAudiencesRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteAudiencesRequest
      */
     public function setAudienceIds($AudienceIds)
     {

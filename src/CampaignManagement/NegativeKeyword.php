@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class NegativeKeyword extends SharedListItem
 {
@@ -39,7 +39,7 @@ class NegativeKeyword extends SharedListItem
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\NegativeKeyword
+     * @return \PMG\BingAds\CampaignManagement\NegativeKeyword
      */
     public function setId($Id)
     {
@@ -57,7 +57,7 @@ class NegativeKeyword extends SharedListItem
 
     /**
      * @param MatchType $MatchType
-     * @return \PMG\BingAds\CampaignMangagement\NegativeKeyword
+     * @return \PMG\BingAds\CampaignManagement\NegativeKeyword
      */
     public function setMatchType($MatchType)
     {
@@ -75,7 +75,7 @@ class NegativeKeyword extends SharedListItem
 
     /**
      * @param string $Text
-     * @return \PMG\BingAds\CampaignMangagement\NegativeKeyword
+     * @return \PMG\BingAds\CampaignManagement\NegativeKeyword
      */
     public function setText($Text)
     {

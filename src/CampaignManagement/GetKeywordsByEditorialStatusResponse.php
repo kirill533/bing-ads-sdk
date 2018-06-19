@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetKeywordsByEditorialStatusResponse
 {
@@ -28,7 +28,7 @@ class GetKeywordsByEditorialStatusResponse
 
     /**
      * @param ArrayOfKeyword $Keywords
-     * @return \PMG\BingAds\CampaignMangagement\GetKeywordsByEditorialStatusResponse
+     * @return \PMG\BingAds\CampaignManagement\GetKeywordsByEditorialStatusResponse
      */
     public function setKeywords($Keywords)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetGeoLocationsFileUrlResponse
 {
@@ -42,7 +42,7 @@ class GetGeoLocationsFileUrlResponse
 
     /**
      * @param string $FileUrl
-     * @return \PMG\BingAds\CampaignMangagement\GetGeoLocationsFileUrlResponse
+     * @return \PMG\BingAds\CampaignManagement\GetGeoLocationsFileUrlResponse
      */
     public function setFileUrl($FileUrl)
     {
@@ -68,7 +68,7 @@ class GetGeoLocationsFileUrlResponse
 
     /**
      * @param \DateTime $FileUrlExpiryTimeUtc
-     * @return \PMG\BingAds\CampaignMangagement\GetGeoLocationsFileUrlResponse
+     * @return \PMG\BingAds\CampaignManagement\GetGeoLocationsFileUrlResponse
      */
     public function setFileUrlExpiryTimeUtc(\DateTime $FileUrlExpiryTimeUtc)
     {
@@ -94,7 +94,7 @@ class GetGeoLocationsFileUrlResponse
 
     /**
      * @param \DateTime $LastModifiedTimeUtc
-     * @return \PMG\BingAds\CampaignMangagement\GetGeoLocationsFileUrlResponse
+     * @return \PMG\BingAds\CampaignManagement\GetGeoLocationsFileUrlResponse
      */
     public function setLastModifiedTimeUtc(\DateTime $LastModifiedTimeUtc)
     {

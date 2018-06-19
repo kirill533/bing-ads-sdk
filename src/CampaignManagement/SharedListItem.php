@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class SharedListItem
 {
@@ -31,7 +31,7 @@ class SharedListItem
 
     /**
      * @param ArrayOfKeyValuePairOfstringstring $ForwardCompatibilityMap
-     * @return \PMG\BingAds\CampaignMangagement\SharedListItem
+     * @return \PMG\BingAds\CampaignManagement\SharedListItem
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
@@ -49,7 +49,7 @@ class SharedListItem
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\SharedListItem
+     * @return \PMG\BingAds\CampaignManagement\SharedListItem
      */
     public function setType($Type)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfLabel implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfLabel implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param Label[] $Label
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfLabel
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfLabel
      */
     public function setLabel(array $Label = null)
     {

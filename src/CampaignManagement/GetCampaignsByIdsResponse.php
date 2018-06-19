@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetCampaignsByIdsResponse
 {
@@ -35,7 +35,7 @@ class GetCampaignsByIdsResponse
 
     /**
      * @param ArrayOfCampaign $Campaigns
-     * @return \PMG\BingAds\CampaignMangagement\GetCampaignsByIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetCampaignsByIdsResponse
      */
     public function setCampaigns($Campaigns)
     {
@@ -53,7 +53,7 @@ class GetCampaignsByIdsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\GetCampaignsByIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetCampaignsByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

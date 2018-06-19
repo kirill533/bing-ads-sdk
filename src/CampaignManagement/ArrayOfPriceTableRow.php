@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfPriceTableRow implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfPriceTableRow implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param PriceTableRow[] $PriceTableRow
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfPriceTableRow
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfPriceTableRow
      */
     public function setPriceTableRow(array $PriceTableRow = null)
     {

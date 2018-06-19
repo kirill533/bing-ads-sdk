@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetConfigValueRequest
 {
@@ -28,7 +28,7 @@ class GetConfigValueRequest
 
     /**
      * @param string $ConfigKey
-     * @return \PMG\BingAds\CampaignMangagement\GetConfigValueRequest
+     * @return \PMG\BingAds\CampaignManagement\GetConfigValueRequest
      */
     public function setConfigKey($ConfigKey)
     {

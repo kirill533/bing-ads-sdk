@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfEditorialError implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfEditorialError implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param EditorialError[] $EditorialError
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfEditorialError
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfEditorialError
      */
     public function setEditorialError(array $EditorialError = null)
     {

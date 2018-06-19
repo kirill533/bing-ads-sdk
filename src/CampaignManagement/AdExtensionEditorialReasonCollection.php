@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AdExtensionEditorialReasonCollection
 {
@@ -31,7 +31,7 @@ class AdExtensionEditorialReasonCollection
 
     /**
      * @param int $AdExtensionId
-     * @return \PMG\BingAds\CampaignMangagement\AdExtensionEditorialReasonCollection
+     * @return \PMG\BingAds\CampaignManagement\AdExtensionEditorialReasonCollection
      */
     public function setAdExtensionId($AdExtensionId)
     {
@@ -49,7 +49,7 @@ class AdExtensionEditorialReasonCollection
 
     /**
      * @param ArrayOfAdExtensionEditorialReason $Reasons
-     * @return \PMG\BingAds\CampaignMangagement\AdExtensionEditorialReasonCollection
+     * @return \PMG\BingAds\CampaignManagement\AdExtensionEditorialReasonCollection
      */
     public function setReasons($Reasons)
     {

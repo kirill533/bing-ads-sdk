@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class RadiusCriterion extends Criterion
 {
@@ -46,7 +46,7 @@ class RadiusCriterion extends Criterion
 
     /**
      * @param float $LatitudeDegrees
-     * @return \PMG\BingAds\CampaignMangagement\RadiusCriterion
+     * @return \PMG\BingAds\CampaignManagement\RadiusCriterion
      */
     public function setLatitudeDegrees($LatitudeDegrees)
     {
@@ -64,7 +64,7 @@ class RadiusCriterion extends Criterion
 
     /**
      * @param float $LongitudeDegrees
-     * @return \PMG\BingAds\CampaignMangagement\RadiusCriterion
+     * @return \PMG\BingAds\CampaignManagement\RadiusCriterion
      */
     public function setLongitudeDegrees($LongitudeDegrees)
     {
@@ -82,7 +82,7 @@ class RadiusCriterion extends Criterion
 
     /**
      * @param string $Name
-     * @return \PMG\BingAds\CampaignMangagement\RadiusCriterion
+     * @return \PMG\BingAds\CampaignManagement\RadiusCriterion
      */
     public function setName($Name)
     {
@@ -100,7 +100,7 @@ class RadiusCriterion extends Criterion
 
     /**
      * @param int $Radius
-     * @return \PMG\BingAds\CampaignMangagement\RadiusCriterion
+     * @return \PMG\BingAds\CampaignManagement\RadiusCriterion
      */
     public function setRadius($Radius)
     {
@@ -118,7 +118,7 @@ class RadiusCriterion extends Criterion
 
     /**
      * @param DistanceUnit $RadiusUnit
-     * @return \PMG\BingAds\CampaignMangagement\RadiusCriterion
+     * @return \PMG\BingAds\CampaignManagement\RadiusCriterion
      */
     public function setRadiusUnit($RadiusUnit)
     {

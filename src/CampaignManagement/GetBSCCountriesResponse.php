@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetBSCCountriesResponse
 {
@@ -28,7 +28,7 @@ class GetBSCCountriesResponse
 
     /**
      * @param ArrayOfstring $CountryCodes
-     * @return \PMG\BingAds\CampaignMangagement\GetBSCCountriesResponse
+     * @return \PMG\BingAds\CampaignManagement\GetBSCCountriesResponse
      */
     public function setCountryCodes($CountryCodes)
     {

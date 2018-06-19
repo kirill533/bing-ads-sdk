@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Paging
 {
@@ -35,7 +35,7 @@ class Paging
 
     /**
      * @param int $Index
-     * @return \PMG\BingAds\CampaignMangagement\Paging
+     * @return \PMG\BingAds\CampaignManagement\Paging
      */
     public function setIndex($Index)
     {
@@ -53,7 +53,7 @@ class Paging
 
     /**
      * @param int $Size
-     * @return \PMG\BingAds\CampaignMangagement\Paging
+     * @return \PMG\BingAds\CampaignManagement\Paging
      */
     public function setSize($Size)
     {

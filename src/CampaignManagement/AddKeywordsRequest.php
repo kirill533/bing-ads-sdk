@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddKeywordsRequest
 {
@@ -42,7 +42,7 @@ class AddKeywordsRequest
 
     /**
      * @param int $AdGroupId
-     * @return \PMG\BingAds\CampaignMangagement\AddKeywordsRequest
+     * @return \PMG\BingAds\CampaignManagement\AddKeywordsRequest
      */
     public function setAdGroupId($AdGroupId)
     {
@@ -60,7 +60,7 @@ class AddKeywordsRequest
 
     /**
      * @param ArrayOfKeyword $Keywords
-     * @return \PMG\BingAds\CampaignMangagement\AddKeywordsRequest
+     * @return \PMG\BingAds\CampaignManagement\AddKeywordsRequest
      */
     public function setKeywords($Keywords)
     {
@@ -78,7 +78,7 @@ class AddKeywordsRequest
 
     /**
      * @param boolean $ReturnInheritedBidStrategyTypes
-     * @return \PMG\BingAds\CampaignMangagement\AddKeywordsRequest
+     * @return \PMG\BingAds\CampaignManagement\AddKeywordsRequest
      */
     public function setReturnInheritedBidStrategyTypes($ReturnInheritedBidStrategyTypes)
     {

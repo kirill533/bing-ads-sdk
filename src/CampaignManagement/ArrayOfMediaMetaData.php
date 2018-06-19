@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfMediaMetaData implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfMediaMetaData implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param MediaMetaData[] $MediaMetaData
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfMediaMetaData
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfMediaMetaData
      */
     public function setMediaMetaData(array $MediaMetaData = null)
     {

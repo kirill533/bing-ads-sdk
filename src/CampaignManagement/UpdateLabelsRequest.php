@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class UpdateLabelsRequest
 {
@@ -28,7 +28,7 @@ class UpdateLabelsRequest
 
     /**
      * @param ArrayOfLabel $Labels
-     * @return \PMG\BingAds\CampaignMangagement\UpdateLabelsRequest
+     * @return \PMG\BingAds\CampaignManagement\UpdateLabelsRequest
      */
     public function setLabels($Labels)
     {

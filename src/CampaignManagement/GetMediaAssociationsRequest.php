@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetMediaAssociationsRequest
 {
@@ -35,7 +35,7 @@ class GetMediaAssociationsRequest
 
     /**
      * @param MediaEnabledEntityFilter $MediaEnabledEntities
-     * @return \PMG\BingAds\CampaignMangagement\GetMediaAssociationsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetMediaAssociationsRequest
      */
     public function setMediaEnabledEntities($MediaEnabledEntities)
     {
@@ -53,7 +53,7 @@ class GetMediaAssociationsRequest
 
     /**
      * @param ArrayOflong $MediaIds
-     * @return \PMG\BingAds\CampaignMangagement\GetMediaAssociationsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetMediaAssociationsRequest
      */
     public function setMediaIds($MediaIds)
     {

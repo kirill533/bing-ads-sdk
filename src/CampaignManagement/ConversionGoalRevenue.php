@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ConversionGoalRevenue
 {
@@ -36,7 +36,7 @@ class ConversionGoalRevenue
 
     /**
      * @param string $CurrencyCode
-     * @return \PMG\BingAds\CampaignMangagement\ConversionGoalRevenue
+     * @return \PMG\BingAds\CampaignManagement\ConversionGoalRevenue
      */
     public function setCurrencyCode($CurrencyCode)
     {
@@ -54,7 +54,7 @@ class ConversionGoalRevenue
 
     /**
      * @param ConversionGoalRevenueType $Type
-     * @return \PMG\BingAds\CampaignMangagement\ConversionGoalRevenue
+     * @return \PMG\BingAds\CampaignManagement\ConversionGoalRevenue
      */
     public function setType($Type)
     {
@@ -72,7 +72,7 @@ class ConversionGoalRevenue
 
     /**
      * @param float $Value
-     * @return \PMG\BingAds\CampaignMangagement\ConversionGoalRevenue
+     * @return \PMG\BingAds\CampaignManagement\ConversionGoalRevenue
      */
     public function setValue($Value)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class RuleItemGroup
 {
@@ -26,7 +26,7 @@ class RuleItemGroup
 
     /**
      * @param ArrayOfRuleItem $Items
-     * @return \PMG\BingAds\CampaignMangagement\RuleItemGroup
+     * @return \PMG\BingAds\CampaignManagement\RuleItemGroup
      */
     public function setItems($Items)
     {

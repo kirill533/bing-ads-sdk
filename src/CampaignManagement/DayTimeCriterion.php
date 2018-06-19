@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DayTimeCriterion extends Criterion
 {
@@ -46,7 +46,7 @@ class DayTimeCriterion extends Criterion
 
     /**
      * @param Day $Day
-     * @return \PMG\BingAds\CampaignMangagement\DayTimeCriterion
+     * @return \PMG\BingAds\CampaignManagement\DayTimeCriterion
      */
     public function setDay($Day)
     {
@@ -64,7 +64,7 @@ class DayTimeCriterion extends Criterion
 
     /**
      * @param int $FromHour
-     * @return \PMG\BingAds\CampaignMangagement\DayTimeCriterion
+     * @return \PMG\BingAds\CampaignManagement\DayTimeCriterion
      */
     public function setFromHour($FromHour)
     {
@@ -82,7 +82,7 @@ class DayTimeCriterion extends Criterion
 
     /**
      * @param Minute $FromMinute
-     * @return \PMG\BingAds\CampaignMangagement\DayTimeCriterion
+     * @return \PMG\BingAds\CampaignManagement\DayTimeCriterion
      */
     public function setFromMinute($FromMinute)
     {
@@ -100,7 +100,7 @@ class DayTimeCriterion extends Criterion
 
     /**
      * @param int $ToHour
-     * @return \PMG\BingAds\CampaignMangagement\DayTimeCriterion
+     * @return \PMG\BingAds\CampaignManagement\DayTimeCriterion
      */
     public function setToHour($ToHour)
     {
@@ -118,7 +118,7 @@ class DayTimeCriterion extends Criterion
 
     /**
      * @param Minute $ToMinute
-     * @return \PMG\BingAds\CampaignMangagement\DayTimeCriterion
+     * @return \PMG\BingAds\CampaignManagement\DayTimeCriterion
      */
     public function setToMinute($ToMinute)
     {

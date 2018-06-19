@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Setting
 {
@@ -26,7 +26,7 @@ class Setting
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\Setting
+     * @return \PMG\BingAds\CampaignManagement\Setting
      */
     public function setType($Type)
     {

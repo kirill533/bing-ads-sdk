@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetMediaMetaDataByIdsRequest
 {
@@ -28,7 +28,7 @@ class GetMediaMetaDataByIdsRequest
 
     /**
      * @param ArrayOflong $MediaIds
-     * @return \PMG\BingAds\CampaignMangagement\GetMediaMetaDataByIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetMediaMetaDataByIdsRequest
      */
     public function setMediaIds($MediaIds)
     {

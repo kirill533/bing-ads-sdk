@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ProductAudience extends Audience
 {
@@ -31,7 +31,7 @@ class ProductAudience extends Audience
 
     /**
      * @param ProductAudienceType $ProductAudienceType
-     * @return \PMG\BingAds\CampaignMangagement\ProductAudience
+     * @return \PMG\BingAds\CampaignManagement\ProductAudience
      */
     public function setProductAudienceType($ProductAudienceType)
     {
@@ -49,7 +49,7 @@ class ProductAudience extends Audience
 
     /**
      * @param int $TagId
-     * @return \PMG\BingAds\CampaignMangagement\ProductAudience
+     * @return \PMG\BingAds\CampaignManagement\ProductAudience
      */
     public function setTagId($TagId)
     {

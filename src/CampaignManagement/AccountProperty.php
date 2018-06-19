@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AccountProperty
 {
@@ -31,7 +31,7 @@ class AccountProperty
 
     /**
      * @param AccountPropertyName $Name
-     * @return \PMG\BingAds\CampaignMangagement\AccountProperty
+     * @return \PMG\BingAds\CampaignManagement\AccountProperty
      */
     public function setName($Name)
     {
@@ -49,7 +49,7 @@ class AccountProperty
 
     /**
      * @param string $Value
-     * @return \PMG\BingAds\CampaignMangagement\AccountProperty
+     * @return \PMG\BingAds\CampaignManagement\AccountProperty
      */
     public function setValue($Value)
     {

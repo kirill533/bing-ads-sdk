@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class StructuredSnippetAdExtension extends AdExtension
 {
@@ -31,7 +31,7 @@ class StructuredSnippetAdExtension extends AdExtension
 
     /**
      * @param string $Header
-     * @return \PMG\BingAds\CampaignMangagement\StructuredSnippetAdExtension
+     * @return \PMG\BingAds\CampaignManagement\StructuredSnippetAdExtension
      */
     public function setHeader($Header)
     {
@@ -49,7 +49,7 @@ class StructuredSnippetAdExtension extends AdExtension
 
     /**
      * @param ArrayOfstring $Values
-     * @return \PMG\BingAds\CampaignMangagement\StructuredSnippetAdExtension
+     * @return \PMG\BingAds\CampaignManagement\StructuredSnippetAdExtension
      */
     public function setValues($Values)
     {

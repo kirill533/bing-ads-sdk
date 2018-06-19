@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ApplicationFault
 {
@@ -26,7 +26,7 @@ class ApplicationFault
 
     /**
      * @param string $TrackingId
-     * @return \PMG\BingAds\CampaignMangagement\ApplicationFault
+     * @return \PMG\BingAds\CampaignManagement\ApplicationFault
      */
     public function setTrackingId($TrackingId)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetAdsByAdGroupIdResponse
 {
@@ -28,7 +28,7 @@ class GetAdsByAdGroupIdResponse
 
     /**
      * @param ArrayOfAd $Ads
-     * @return \PMG\BingAds\CampaignMangagement\GetAdsByAdGroupIdResponse
+     * @return \PMG\BingAds\CampaignManagement\GetAdsByAdGroupIdResponse
      */
     public function setAds($Ads)
     {

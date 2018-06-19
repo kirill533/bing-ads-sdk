@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class MaxConversionsBiddingScheme extends BiddingScheme
 {
@@ -26,7 +26,7 @@ class MaxConversionsBiddingScheme extends BiddingScheme
 
     /**
      * @param Bid $MaxCpc
-     * @return \PMG\BingAds\CampaignMangagement\MaxConversionsBiddingScheme
+     * @return \PMG\BingAds\CampaignManagement\MaxConversionsBiddingScheme
      */
     public function setMaxCpc($MaxCpc)
     {

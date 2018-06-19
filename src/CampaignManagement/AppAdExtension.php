@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AppAdExtension extends AdExtension
 {
@@ -66,7 +66,7 @@ class AppAdExtension extends AdExtension
 
     /**
      * @param string $AppPlatform
-     * @return \PMG\BingAds\CampaignMangagement\AppAdExtension
+     * @return \PMG\BingAds\CampaignManagement\AppAdExtension
      */
     public function setAppPlatform($AppPlatform)
     {
@@ -84,7 +84,7 @@ class AppAdExtension extends AdExtension
 
     /**
      * @param string $AppStoreId
-     * @return \PMG\BingAds\CampaignMangagement\AppAdExtension
+     * @return \PMG\BingAds\CampaignManagement\AppAdExtension
      */
     public function setAppStoreId($AppStoreId)
     {
@@ -102,7 +102,7 @@ class AppAdExtension extends AdExtension
 
     /**
      * @param string $DestinationUrl
-     * @return \PMG\BingAds\CampaignMangagement\AppAdExtension
+     * @return \PMG\BingAds\CampaignManagement\AppAdExtension
      */
     public function setDestinationUrl($DestinationUrl)
     {
@@ -120,7 +120,7 @@ class AppAdExtension extends AdExtension
 
     /**
      * @param string $DisplayText
-     * @return \PMG\BingAds\CampaignMangagement\AppAdExtension
+     * @return \PMG\BingAds\CampaignManagement\AppAdExtension
      */
     public function setDisplayText($DisplayText)
     {
@@ -138,7 +138,7 @@ class AppAdExtension extends AdExtension
 
     /**
      * @param ArrayOfAppUrl $FinalAppUrls
-     * @return \PMG\BingAds\CampaignMangagement\AppAdExtension
+     * @return \PMG\BingAds\CampaignManagement\AppAdExtension
      */
     public function setFinalAppUrls($FinalAppUrls)
     {
@@ -156,7 +156,7 @@ class AppAdExtension extends AdExtension
 
     /**
      * @param ArrayOfstring $FinalMobileUrls
-     * @return \PMG\BingAds\CampaignMangagement\AppAdExtension
+     * @return \PMG\BingAds\CampaignManagement\AppAdExtension
      */
     public function setFinalMobileUrls($FinalMobileUrls)
     {
@@ -174,7 +174,7 @@ class AppAdExtension extends AdExtension
 
     /**
      * @param ArrayOfstring $FinalUrls
-     * @return \PMG\BingAds\CampaignMangagement\AppAdExtension
+     * @return \PMG\BingAds\CampaignManagement\AppAdExtension
      */
     public function setFinalUrls($FinalUrls)
     {
@@ -192,7 +192,7 @@ class AppAdExtension extends AdExtension
 
     /**
      * @param string $TrackingUrlTemplate
-     * @return \PMG\BingAds\CampaignMangagement\AppAdExtension
+     * @return \PMG\BingAds\CampaignManagement\AppAdExtension
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
@@ -210,7 +210,7 @@ class AppAdExtension extends AdExtension
 
     /**
      * @param CustomParameters $UrlCustomParameters
-     * @return \PMG\BingAds\CampaignMangagement\AppAdExtension
+     * @return \PMG\BingAds\CampaignManagement\AppAdExtension
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class BidMultiplier extends CriterionBid
 {
@@ -26,7 +26,7 @@ class BidMultiplier extends CriterionBid
 
     /**
      * @param float $Multiplier
-     * @return \PMG\BingAds\CampaignMangagement\BidMultiplier
+     * @return \PMG\BingAds\CampaignManagement\BidMultiplier
      */
     public function setMultiplier($Multiplier)
     {

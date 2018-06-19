@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetCampaignIdsByBudgetIdsRequest
 {
@@ -28,7 +28,7 @@ class GetCampaignIdsByBudgetIdsRequest
 
     /**
      * @param ArrayOflong $BudgetIds
-     * @return \PMG\BingAds\CampaignMangagement\GetCampaignIdsByBudgetIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetCampaignIdsByBudgetIdsRequest
      */
     public function setBudgetIds($BudgetIds)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class SetNegativeSitesToAdGroupsRequest
 {
@@ -35,7 +35,7 @@ class SetNegativeSitesToAdGroupsRequest
 
     /**
      * @param int $CampaignId
-     * @return \PMG\BingAds\CampaignMangagement\SetNegativeSitesToAdGroupsRequest
+     * @return \PMG\BingAds\CampaignManagement\SetNegativeSitesToAdGroupsRequest
      */
     public function setCampaignId($CampaignId)
     {
@@ -53,7 +53,7 @@ class SetNegativeSitesToAdGroupsRequest
 
     /**
      * @param ArrayOfAdGroupNegativeSites $AdGroupNegativeSites
-     * @return \PMG\BingAds\CampaignMangagement\SetNegativeSitesToAdGroupsRequest
+     * @return \PMG\BingAds\CampaignManagement\SetNegativeSitesToAdGroupsRequest
      */
     public function setAdGroupNegativeSites($AdGroupNegativeSites)
     {

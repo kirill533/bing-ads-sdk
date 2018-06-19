@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class UpdateCampaignCriterionsResponse
 {
@@ -35,7 +35,7 @@ class UpdateCampaignCriterionsResponse
 
     /**
      * @param boolean $IsMigrated
-     * @return \PMG\BingAds\CampaignMangagement\UpdateCampaignCriterionsResponse
+     * @return \PMG\BingAds\CampaignManagement\UpdateCampaignCriterionsResponse
      */
     public function setIsMigrated($IsMigrated)
     {
@@ -53,7 +53,7 @@ class UpdateCampaignCriterionsResponse
 
     /**
      * @param ArrayOfBatchErrorCollection $NestedPartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\UpdateCampaignCriterionsResponse
+     * @return \PMG\BingAds\CampaignManagement\UpdateCampaignCriterionsResponse
      */
     public function setNestedPartialErrors($NestedPartialErrors)
     {

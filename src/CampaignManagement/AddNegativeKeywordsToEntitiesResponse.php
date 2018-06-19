@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddNegativeKeywordsToEntitiesResponse
 {
@@ -35,7 +35,7 @@ class AddNegativeKeywordsToEntitiesResponse
 
     /**
      * @param ArrayOfIdCollection $NegativeKeywordIds
-     * @return \PMG\BingAds\CampaignMangagement\AddNegativeKeywordsToEntitiesResponse
+     * @return \PMG\BingAds\CampaignManagement\AddNegativeKeywordsToEntitiesResponse
      */
     public function setNegativeKeywordIds($NegativeKeywordIds)
     {
@@ -53,7 +53,7 @@ class AddNegativeKeywordsToEntitiesResponse
 
     /**
      * @param ArrayOfBatchErrorCollection $NestedPartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\AddNegativeKeywordsToEntitiesResponse
+     * @return \PMG\BingAds\CampaignManagement\AddNegativeKeywordsToEntitiesResponse
      */
     public function setNestedPartialErrors($NestedPartialErrors)
     {

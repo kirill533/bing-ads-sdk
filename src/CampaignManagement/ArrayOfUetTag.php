@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfUetTag implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfUetTag implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param UetTag[] $UetTag
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfUetTag
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfUetTag
      */
     public function setUetTag(array $UetTag = null)
     {

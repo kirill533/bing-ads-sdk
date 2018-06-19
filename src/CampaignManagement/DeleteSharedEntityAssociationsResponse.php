@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteSharedEntityAssociationsResponse
 {
@@ -28,7 +28,7 @@ class DeleteSharedEntityAssociationsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\DeleteSharedEntityAssociationsResponse
+     * @return \PMG\BingAds\CampaignManagement\DeleteSharedEntityAssociationsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

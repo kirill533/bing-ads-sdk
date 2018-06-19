@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetAccountPropertiesResponse
 {
@@ -35,7 +35,7 @@ class GetAccountPropertiesResponse
 
     /**
      * @param ArrayOfAccountProperty $AccountProperties
-     * @return \PMG\BingAds\CampaignMangagement\GetAccountPropertiesResponse
+     * @return \PMG\BingAds\CampaignManagement\GetAccountPropertiesResponse
      */
     public function setAccountProperties($AccountProperties)
     {
@@ -53,7 +53,7 @@ class GetAccountPropertiesResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\GetAccountPropertiesResponse
+     * @return \PMG\BingAds\CampaignManagement\GetAccountPropertiesResponse
      */
     public function setPartialErrors($PartialErrors)
     {

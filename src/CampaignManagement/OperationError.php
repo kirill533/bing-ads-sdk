@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class OperationError
 {
@@ -41,7 +41,7 @@ class OperationError
 
     /**
      * @param int $Code
-     * @return \PMG\BingAds\CampaignMangagement\OperationError
+     * @return \PMG\BingAds\CampaignManagement\OperationError
      */
     public function setCode($Code)
     {
@@ -59,7 +59,7 @@ class OperationError
 
     /**
      * @param string $Details
-     * @return \PMG\BingAds\CampaignMangagement\OperationError
+     * @return \PMG\BingAds\CampaignManagement\OperationError
      */
     public function setDetails($Details)
     {
@@ -77,7 +77,7 @@ class OperationError
 
     /**
      * @param string $ErrorCode
-     * @return \PMG\BingAds\CampaignMangagement\OperationError
+     * @return \PMG\BingAds\CampaignManagement\OperationError
      */
     public function setErrorCode($ErrorCode)
     {
@@ -95,7 +95,7 @@ class OperationError
 
     /**
      * @param string $Message
-     * @return \PMG\BingAds\CampaignMangagement\OperationError
+     * @return \PMG\BingAds\CampaignManagement\OperationError
      */
     public function setMessage($Message)
     {

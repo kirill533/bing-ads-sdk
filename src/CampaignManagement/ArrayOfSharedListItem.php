@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfSharedListItem implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfSharedListItem implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param SharedListItem[] $SharedListItem
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfSharedListItem
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfSharedListItem
      */
     public function setSharedListItem(array $SharedListItem = null)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfSharedEntity implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfSharedEntity implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param SharedEntity[] $SharedEntity
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfSharedEntity
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfSharedEntity
      */
     public function setSharedEntity(array $SharedEntity = null)
     {

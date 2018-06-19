@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AdExtensionAssociation
 {
@@ -45,7 +45,7 @@ class AdExtensionAssociation
 
     /**
      * @param AdExtension $AdExtension
-     * @return \PMG\BingAds\CampaignMangagement\AdExtensionAssociation
+     * @return \PMG\BingAds\CampaignManagement\AdExtensionAssociation
      */
     public function setAdExtension($AdExtension)
     {
@@ -63,7 +63,7 @@ class AdExtensionAssociation
 
     /**
      * @param AssociationType $AssociationType
-     * @return \PMG\BingAds\CampaignMangagement\AdExtensionAssociation
+     * @return \PMG\BingAds\CampaignManagement\AdExtensionAssociation
      */
     public function setAssociationType($AssociationType)
     {
@@ -81,7 +81,7 @@ class AdExtensionAssociation
 
     /**
      * @param AdExtensionEditorialStatus $EditorialStatus
-     * @return \PMG\BingAds\CampaignMangagement\AdExtensionAssociation
+     * @return \PMG\BingAds\CampaignManagement\AdExtensionAssociation
      */
     public function setEditorialStatus($EditorialStatus)
     {
@@ -99,7 +99,7 @@ class AdExtensionAssociation
 
     /**
      * @param int $EntityId
-     * @return \PMG\BingAds\CampaignMangagement\AdExtensionAssociation
+     * @return \PMG\BingAds\CampaignManagement\AdExtensionAssociation
      */
     public function setEntityId($EntityId)
     {

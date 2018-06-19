@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AdGroupCriterionAction
 {
@@ -33,7 +33,7 @@ class AdGroupCriterionAction
 
     /**
      * @param ItemAction $Action
-     * @return \PMG\BingAds\CampaignMangagement\AdGroupCriterionAction
+     * @return \PMG\BingAds\CampaignManagement\AdGroupCriterionAction
      */
     public function setAction($Action)
     {
@@ -51,7 +51,7 @@ class AdGroupCriterionAction
 
     /**
      * @param AdGroupCriterion $AdGroupCriterion
-     * @return \PMG\BingAds\CampaignMangagement\AdGroupCriterionAction
+     * @return \PMG\BingAds\CampaignManagement\AdGroupCriterionAction
      */
     public function setAdGroupCriterion($AdGroupCriterion)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class EntityIdToParentIdAssociation
 {
@@ -31,7 +31,7 @@ class EntityIdToParentIdAssociation
 
     /**
      * @param int $EntityId
-     * @return \PMG\BingAds\CampaignMangagement\EntityIdToParentIdAssociation
+     * @return \PMG\BingAds\CampaignManagement\EntityIdToParentIdAssociation
      */
     public function setEntityId($EntityId)
     {
@@ -49,7 +49,7 @@ class EntityIdToParentIdAssociation
 
     /**
      * @param int $ParentId
-     * @return \PMG\BingAds\CampaignMangagement\EntityIdToParentIdAssociation
+     * @return \PMG\BingAds\CampaignManagement\EntityIdToParentIdAssociation
      */
     public function setParentId($ParentId)
     {

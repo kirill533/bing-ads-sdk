@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class SetLabelAssociationsResponse
 {
@@ -28,7 +28,7 @@ class SetLabelAssociationsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\SetLabelAssociationsResponse
+     * @return \PMG\BingAds\CampaignManagement\SetLabelAssociationsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

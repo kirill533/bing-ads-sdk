@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfSharedEntityAssociation implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfSharedEntityAssociation implements \ArrayAccess, \Iterator, \Counta
 
     /**
      * @param SharedEntityAssociation[] $SharedEntityAssociation
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfSharedEntityAssociation
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfSharedEntityAssociation
      */
     public function setSharedEntityAssociation(array $SharedEntityAssociation = null)
     {

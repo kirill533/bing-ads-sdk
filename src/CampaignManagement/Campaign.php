@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Campaign
 {
@@ -106,7 +106,7 @@ class Campaign
 
     /**
      * @param int $AudienceAdsBidAdjustment
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setAudienceAdsBidAdjustment($AudienceAdsBidAdjustment)
     {
@@ -124,7 +124,7 @@ class Campaign
 
     /**
      * @param BiddingScheme $BiddingScheme
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setBiddingScheme($BiddingScheme)
     {
@@ -142,7 +142,7 @@ class Campaign
 
     /**
      * @param BudgetLimitType $BudgetType
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setBudgetType($BudgetType)
     {
@@ -160,7 +160,7 @@ class Campaign
 
     /**
      * @param float $DailyBudget
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setDailyBudget($DailyBudget)
     {
@@ -178,7 +178,7 @@ class Campaign
 
     /**
      * @param string $Description
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setDescription($Description)
     {
@@ -196,7 +196,7 @@ class Campaign
 
     /**
      * @param ArrayOfKeyValuePairOfstringstring $ForwardCompatibilityMap
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
@@ -214,7 +214,7 @@ class Campaign
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setId($Id)
     {
@@ -232,7 +232,7 @@ class Campaign
 
     /**
      * @param string $Name
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setName($Name)
     {
@@ -250,7 +250,7 @@ class Campaign
 
     /**
      * @param CampaignStatus $Status
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setStatus($Status)
     {
@@ -268,7 +268,7 @@ class Campaign
 
     /**
      * @param string $SubType
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setSubType($SubType)
     {
@@ -286,7 +286,7 @@ class Campaign
 
     /**
      * @param string $TimeZone
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setTimeZone($TimeZone)
     {
@@ -304,7 +304,7 @@ class Campaign
 
     /**
      * @param string $TrackingUrlTemplate
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
@@ -322,7 +322,7 @@ class Campaign
 
     /**
      * @param CustomParameters $UrlCustomParameters
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {
@@ -340,7 +340,7 @@ class Campaign
 
     /**
      * @param CampaignType $CampaignType
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setCampaignType($CampaignType)
     {
@@ -358,7 +358,7 @@ class Campaign
 
     /**
      * @param ArrayOfSetting $Settings
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setSettings($Settings)
     {
@@ -376,7 +376,7 @@ class Campaign
 
     /**
      * @param int $BudgetId
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setBudgetId($BudgetId)
     {
@@ -394,7 +394,7 @@ class Campaign
 
     /**
      * @param ArrayOfstring $Languages
-     * @return \PMG\BingAds\CampaignMangagement\Campaign
+     * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setLanguages($Languages)
     {

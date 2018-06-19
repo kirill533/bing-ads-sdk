@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteNegativeKeywordsFromEntitiesResponse
 {
@@ -28,7 +28,7 @@ class DeleteNegativeKeywordsFromEntitiesResponse
 
     /**
      * @param ArrayOfBatchErrorCollection $NestedPartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\DeleteNegativeKeywordsFromEntitiesResponse
+     * @return \PMG\BingAds\CampaignManagement\DeleteNegativeKeywordsFromEntitiesResponse
      */
     public function setNestedPartialErrors($NestedPartialErrors)
     {

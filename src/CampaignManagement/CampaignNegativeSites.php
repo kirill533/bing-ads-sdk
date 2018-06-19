@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class CampaignNegativeSites
 {
@@ -31,7 +31,7 @@ class CampaignNegativeSites
 
     /**
      * @param int $CampaignId
-     * @return \PMG\BingAds\CampaignMangagement\CampaignNegativeSites
+     * @return \PMG\BingAds\CampaignManagement\CampaignNegativeSites
      */
     public function setCampaignId($CampaignId)
     {
@@ -49,7 +49,7 @@ class CampaignNegativeSites
 
     /**
      * @param ArrayOfstring $NegativeSites
-     * @return \PMG\BingAds\CampaignMangagement\CampaignNegativeSites
+     * @return \PMG\BingAds\CampaignManagement\CampaignNegativeSites
      */
     public function setNegativeSites($NegativeSites)
     {

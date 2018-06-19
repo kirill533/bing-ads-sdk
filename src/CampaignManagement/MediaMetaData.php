@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class MediaMetaData
 {
@@ -43,7 +43,7 @@ class MediaMetaData
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\MediaMetaData
+     * @return \PMG\BingAds\CampaignManagement\MediaMetaData
      */
     public function setId($Id)
     {
@@ -61,7 +61,7 @@ class MediaMetaData
 
     /**
      * @param string $MediaType
-     * @return \PMG\BingAds\CampaignMangagement\MediaMetaData
+     * @return \PMG\BingAds\CampaignManagement\MediaMetaData
      */
     public function setMediaType($MediaType)
     {
@@ -79,7 +79,7 @@ class MediaMetaData
 
     /**
      * @param ArrayOfMediaRepresentation $Representations
-     * @return \PMG\BingAds\CampaignMangagement\MediaMetaData
+     * @return \PMG\BingAds\CampaignManagement\MediaMetaData
      */
     public function setRepresentations($Representations)
     {
@@ -97,7 +97,7 @@ class MediaMetaData
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\MediaMetaData
+     * @return \PMG\BingAds\CampaignManagement\MediaMetaData
      */
     public function setType($Type)
     {

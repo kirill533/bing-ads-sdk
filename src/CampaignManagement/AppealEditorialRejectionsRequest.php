@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AppealEditorialRejectionsRequest
 {
@@ -42,7 +42,7 @@ class AppealEditorialRejectionsRequest
 
     /**
      * @param ArrayOfEntityIdToParentIdAssociation $EntityIdToParentIdAssociations
-     * @return \PMG\BingAds\CampaignMangagement\AppealEditorialRejectionsRequest
+     * @return \PMG\BingAds\CampaignManagement\AppealEditorialRejectionsRequest
      */
     public function setEntityIdToParentIdAssociations($EntityIdToParentIdAssociations)
     {
@@ -60,7 +60,7 @@ class AppealEditorialRejectionsRequest
 
     /**
      * @param EntityType $EntityType
-     * @return \PMG\BingAds\CampaignMangagement\AppealEditorialRejectionsRequest
+     * @return \PMG\BingAds\CampaignManagement\AppealEditorialRejectionsRequest
      */
     public function setEntityType($EntityType)
     {
@@ -78,7 +78,7 @@ class AppealEditorialRejectionsRequest
 
     /**
      * @param string $JustificationText
-     * @return \PMG\BingAds\CampaignMangagement\AppealEditorialRejectionsRequest
+     * @return \PMG\BingAds\CampaignManagement\AppealEditorialRejectionsRequest
      */
     public function setJustificationText($JustificationText)
     {

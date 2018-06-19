@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteAdExtensionsRequest
 {
@@ -35,7 +35,7 @@ class DeleteAdExtensionsRequest
 
     /**
      * @param int $AccountId
-     * @return \PMG\BingAds\CampaignMangagement\DeleteAdExtensionsRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteAdExtensionsRequest
      */
     public function setAccountId($AccountId)
     {
@@ -53,7 +53,7 @@ class DeleteAdExtensionsRequest
 
     /**
      * @param ArrayOflong $AdExtensionIds
-     * @return \PMG\BingAds\CampaignMangagement\DeleteAdExtensionsRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteAdExtensionsRequest
      */
     public function setAdExtensionIds($AdExtensionIds)
     {

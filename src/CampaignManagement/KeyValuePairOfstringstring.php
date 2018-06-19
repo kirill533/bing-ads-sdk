@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class KeyValuePairOfstringstring
 {
@@ -31,7 +31,7 @@ class KeyValuePairOfstringstring
 
     /**
      * @param string $key
-     * @return \PMG\BingAds\CampaignMangagement\KeyValuePairOfstringstring
+     * @return \PMG\BingAds\CampaignManagement\KeyValuePairOfstringstring
      */
     public function setKey($key)
     {
@@ -49,7 +49,7 @@ class KeyValuePairOfstringstring
 
     /**
      * @param string $value
-     * @return \PMG\BingAds\CampaignMangagement\KeyValuePairOfstringstring
+     * @return \PMG\BingAds\CampaignManagement\KeyValuePairOfstringstring
      */
     public function setValue($value)
     {

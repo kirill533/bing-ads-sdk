@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class LocationIntentCriterion extends Criterion
 {
@@ -26,7 +26,7 @@ class LocationIntentCriterion extends Criterion
 
     /**
      * @param IntentOption $IntentOption
-     * @return \PMG\BingAds\CampaignMangagement\LocationIntentCriterion
+     * @return \PMG\BingAds\CampaignManagement\LocationIntentCriterion
      */
     public function setIntentOption($IntentOption)
     {

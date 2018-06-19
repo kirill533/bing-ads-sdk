@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AdExtension
 {
@@ -56,7 +56,7 @@ class AdExtension
 
     /**
      * @param int $DevicePreference
-     * @return \PMG\BingAds\CampaignMangagement\AdExtension
+     * @return \PMG\BingAds\CampaignManagement\AdExtension
      */
     public function setDevicePreference($DevicePreference)
     {
@@ -74,7 +74,7 @@ class AdExtension
 
     /**
      * @param ArrayOfKeyValuePairOfstringstring $ForwardCompatibilityMap
-     * @return \PMG\BingAds\CampaignMangagement\AdExtension
+     * @return \PMG\BingAds\CampaignManagement\AdExtension
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
@@ -92,7 +92,7 @@ class AdExtension
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\AdExtension
+     * @return \PMG\BingAds\CampaignManagement\AdExtension
      */
     public function setId($Id)
     {
@@ -110,7 +110,7 @@ class AdExtension
 
     /**
      * @param Schedule $Scheduling
-     * @return \PMG\BingAds\CampaignMangagement\AdExtension
+     * @return \PMG\BingAds\CampaignManagement\AdExtension
      */
     public function setScheduling($Scheduling)
     {
@@ -128,7 +128,7 @@ class AdExtension
 
     /**
      * @param AdExtensionStatus $Status
-     * @return \PMG\BingAds\CampaignMangagement\AdExtension
+     * @return \PMG\BingAds\CampaignManagement\AdExtension
      */
     public function setStatus($Status)
     {
@@ -146,7 +146,7 @@ class AdExtension
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\AdExtension
+     * @return \PMG\BingAds\CampaignManagement\AdExtension
      */
     public function setType($Type)
     {
@@ -164,7 +164,7 @@ class AdExtension
 
     /**
      * @param int $Version
-     * @return \PMG\BingAds\CampaignMangagement\AdExtension
+     * @return \PMG\BingAds\CampaignManagement\AdExtension
      */
     public function setVersion($Version)
     {

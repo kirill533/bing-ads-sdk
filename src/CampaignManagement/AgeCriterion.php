@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AgeCriterion extends Criterion
 {
@@ -26,7 +26,7 @@ class AgeCriterion extends Criterion
 
     /**
      * @param AgeRange $AgeRange
-     * @return \PMG\BingAds\CampaignMangagement\AgeCriterion
+     * @return \PMG\BingAds\CampaignManagement\AgeCriterion
      */
     public function setAgeRange($AgeRange)
     {

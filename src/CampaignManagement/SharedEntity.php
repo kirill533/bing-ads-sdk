@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class SharedEntity
 {
@@ -46,7 +46,7 @@ class SharedEntity
 
     /**
      * @param int $AssociationCount
-     * @return \PMG\BingAds\CampaignMangagement\SharedEntity
+     * @return \PMG\BingAds\CampaignManagement\SharedEntity
      */
     public function setAssociationCount($AssociationCount)
     {
@@ -64,7 +64,7 @@ class SharedEntity
 
     /**
      * @param ArrayOfKeyValuePairOfstringstring $ForwardCompatibilityMap
-     * @return \PMG\BingAds\CampaignMangagement\SharedEntity
+     * @return \PMG\BingAds\CampaignManagement\SharedEntity
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
@@ -82,7 +82,7 @@ class SharedEntity
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\SharedEntity
+     * @return \PMG\BingAds\CampaignManagement\SharedEntity
      */
     public function setId($Id)
     {
@@ -100,7 +100,7 @@ class SharedEntity
 
     /**
      * @param string $Name
-     * @return \PMG\BingAds\CampaignMangagement\SharedEntity
+     * @return \PMG\BingAds\CampaignManagement\SharedEntity
      */
     public function setName($Name)
     {
@@ -118,7 +118,7 @@ class SharedEntity
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\SharedEntity
+     * @return \PMG\BingAds\CampaignManagement\SharedEntity
      */
     public function setType($Type)
     {

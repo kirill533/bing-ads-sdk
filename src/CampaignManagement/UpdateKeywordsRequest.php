@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class UpdateKeywordsRequest
 {
@@ -42,7 +42,7 @@ class UpdateKeywordsRequest
 
     /**
      * @param int $AdGroupId
-     * @return \PMG\BingAds\CampaignMangagement\UpdateKeywordsRequest
+     * @return \PMG\BingAds\CampaignManagement\UpdateKeywordsRequest
      */
     public function setAdGroupId($AdGroupId)
     {
@@ -60,7 +60,7 @@ class UpdateKeywordsRequest
 
     /**
      * @param ArrayOfKeyword $Keywords
-     * @return \PMG\BingAds\CampaignMangagement\UpdateKeywordsRequest
+     * @return \PMG\BingAds\CampaignManagement\UpdateKeywordsRequest
      */
     public function setKeywords($Keywords)
     {
@@ -78,7 +78,7 @@ class UpdateKeywordsRequest
 
     /**
      * @param boolean $ReturnInheritedBidStrategyTypes
-     * @return \PMG\BingAds\CampaignMangagement\UpdateKeywordsRequest
+     * @return \PMG\BingAds\CampaignManagement\UpdateKeywordsRequest
      */
     public function setReturnInheritedBidStrategyTypes($ReturnInheritedBidStrategyTypes)
     {

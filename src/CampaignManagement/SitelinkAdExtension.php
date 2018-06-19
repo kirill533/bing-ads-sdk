@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class SitelinkAdExtension extends AdExtension
 {
@@ -66,7 +66,7 @@ class SitelinkAdExtension extends AdExtension
 
     /**
      * @param string $Description1
-     * @return \PMG\BingAds\CampaignMangagement\SitelinkAdExtension
+     * @return \PMG\BingAds\CampaignManagement\SitelinkAdExtension
      */
     public function setDescription1($Description1)
     {
@@ -84,7 +84,7 @@ class SitelinkAdExtension extends AdExtension
 
     /**
      * @param string $Description2
-     * @return \PMG\BingAds\CampaignMangagement\SitelinkAdExtension
+     * @return \PMG\BingAds\CampaignManagement\SitelinkAdExtension
      */
     public function setDescription2($Description2)
     {
@@ -102,7 +102,7 @@ class SitelinkAdExtension extends AdExtension
 
     /**
      * @param string $DestinationUrl
-     * @return \PMG\BingAds\CampaignMangagement\SitelinkAdExtension
+     * @return \PMG\BingAds\CampaignManagement\SitelinkAdExtension
      */
     public function setDestinationUrl($DestinationUrl)
     {
@@ -120,7 +120,7 @@ class SitelinkAdExtension extends AdExtension
 
     /**
      * @param string $DisplayText
-     * @return \PMG\BingAds\CampaignMangagement\SitelinkAdExtension
+     * @return \PMG\BingAds\CampaignManagement\SitelinkAdExtension
      */
     public function setDisplayText($DisplayText)
     {
@@ -138,7 +138,7 @@ class SitelinkAdExtension extends AdExtension
 
     /**
      * @param ArrayOfAppUrl $FinalAppUrls
-     * @return \PMG\BingAds\CampaignMangagement\SitelinkAdExtension
+     * @return \PMG\BingAds\CampaignManagement\SitelinkAdExtension
      */
     public function setFinalAppUrls($FinalAppUrls)
     {
@@ -156,7 +156,7 @@ class SitelinkAdExtension extends AdExtension
 
     /**
      * @param ArrayOfstring $FinalMobileUrls
-     * @return \PMG\BingAds\CampaignMangagement\SitelinkAdExtension
+     * @return \PMG\BingAds\CampaignManagement\SitelinkAdExtension
      */
     public function setFinalMobileUrls($FinalMobileUrls)
     {
@@ -174,7 +174,7 @@ class SitelinkAdExtension extends AdExtension
 
     /**
      * @param ArrayOfstring $FinalUrls
-     * @return \PMG\BingAds\CampaignMangagement\SitelinkAdExtension
+     * @return \PMG\BingAds\CampaignManagement\SitelinkAdExtension
      */
     public function setFinalUrls($FinalUrls)
     {
@@ -192,7 +192,7 @@ class SitelinkAdExtension extends AdExtension
 
     /**
      * @param string $TrackingUrlTemplate
-     * @return \PMG\BingAds\CampaignMangagement\SitelinkAdExtension
+     * @return \PMG\BingAds\CampaignManagement\SitelinkAdExtension
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
@@ -210,7 +210,7 @@ class SitelinkAdExtension extends AdExtension
 
     /**
      * @param CustomParameters $UrlCustomParameters
-     * @return \PMG\BingAds\CampaignMangagement\SitelinkAdExtension
+     * @return \PMG\BingAds\CampaignManagement\SitelinkAdExtension
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {

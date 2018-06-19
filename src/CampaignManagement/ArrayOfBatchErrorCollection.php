@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfBatchErrorCollection implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfBatchErrorCollection implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param BatchErrorCollection[] $BatchErrorCollection
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfBatchErrorCollection
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfBatchErrorCollection
      */
     public function setBatchErrorCollection(array $BatchErrorCollection = null)
     {

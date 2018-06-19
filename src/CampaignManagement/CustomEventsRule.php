@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class CustomEventsRule extends RemarketingRule
 {
@@ -61,7 +61,7 @@ class CustomEventsRule extends RemarketingRule
 
     /**
      * @param string $Action
-     * @return \PMG\BingAds\CampaignMangagement\CustomEventsRule
+     * @return \PMG\BingAds\CampaignManagement\CustomEventsRule
      */
     public function setAction($Action)
     {
@@ -79,7 +79,7 @@ class CustomEventsRule extends RemarketingRule
 
     /**
      * @param StringOperator $ActionOperator
-     * @return \PMG\BingAds\CampaignMangagement\CustomEventsRule
+     * @return \PMG\BingAds\CampaignManagement\CustomEventsRule
      */
     public function setActionOperator($ActionOperator)
     {
@@ -97,7 +97,7 @@ class CustomEventsRule extends RemarketingRule
 
     /**
      * @param string $Category
-     * @return \PMG\BingAds\CampaignMangagement\CustomEventsRule
+     * @return \PMG\BingAds\CampaignManagement\CustomEventsRule
      */
     public function setCategory($Category)
     {
@@ -115,7 +115,7 @@ class CustomEventsRule extends RemarketingRule
 
     /**
      * @param StringOperator $CategoryOperator
-     * @return \PMG\BingAds\CampaignMangagement\CustomEventsRule
+     * @return \PMG\BingAds\CampaignManagement\CustomEventsRule
      */
     public function setCategoryOperator($CategoryOperator)
     {
@@ -133,7 +133,7 @@ class CustomEventsRule extends RemarketingRule
 
     /**
      * @param string $Label
-     * @return \PMG\BingAds\CampaignMangagement\CustomEventsRule
+     * @return \PMG\BingAds\CampaignManagement\CustomEventsRule
      */
     public function setLabel($Label)
     {
@@ -151,7 +151,7 @@ class CustomEventsRule extends RemarketingRule
 
     /**
      * @param StringOperator $LabelOperator
-     * @return \PMG\BingAds\CampaignMangagement\CustomEventsRule
+     * @return \PMG\BingAds\CampaignManagement\CustomEventsRule
      */
     public function setLabelOperator($LabelOperator)
     {
@@ -169,7 +169,7 @@ class CustomEventsRule extends RemarketingRule
 
     /**
      * @param float $Value
-     * @return \PMG\BingAds\CampaignMangagement\CustomEventsRule
+     * @return \PMG\BingAds\CampaignManagement\CustomEventsRule
      */
     public function setValue($Value)
     {
@@ -187,7 +187,7 @@ class CustomEventsRule extends RemarketingRule
 
     /**
      * @param NumberOperator $ValueOperator
-     * @return \PMG\BingAds\CampaignMangagement\CustomEventsRule
+     * @return \PMG\BingAds\CampaignManagement\CustomEventsRule
      */
     public function setValueOperator($ValueOperator)
     {

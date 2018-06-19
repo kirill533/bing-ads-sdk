@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Webpage extends Criterion
 {
@@ -26,7 +26,7 @@ class Webpage extends Criterion
 
     /**
      * @param WebpageParameter $Parameter
-     * @return \PMG\BingAds\CampaignMangagement\Webpage
+     * @return \PMG\BingAds\CampaignManagement\Webpage
      */
     public function setParameter($Parameter)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetMediaMetaDataByAccountIdRequest
 {
@@ -28,7 +28,7 @@ class GetMediaMetaDataByAccountIdRequest
 
     /**
      * @param MediaEnabledEntityFilter $MediaEnabledEntities
-     * @return \PMG\BingAds\CampaignMangagement\GetMediaMetaDataByAccountIdRequest
+     * @return \PMG\BingAds\CampaignManagement\GetMediaMetaDataByAccountIdRequest
      */
     public function setMediaEnabledEntities($MediaEnabledEntities)
     {

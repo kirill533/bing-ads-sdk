@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class PagesViewedPerVisitGoal extends ConversionGoal
 {
@@ -26,7 +26,7 @@ class PagesViewedPerVisitGoal extends ConversionGoal
 
     /**
      * @param int $MinimumPagesViewed
-     * @return \PMG\BingAds\CampaignMangagement\PagesViewedPerVisitGoal
+     * @return \PMG\BingAds\CampaignManagement\PagesViewedPerVisitGoal
      */
     public function setMinimumPagesViewed($MinimumPagesViewed)
     {

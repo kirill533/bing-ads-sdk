@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AdGroup
 {
@@ -101,7 +101,7 @@ class AdGroup
 
     /**
      * @param AdRotation $AdRotation
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setAdRotation($AdRotation)
     {
@@ -119,7 +119,7 @@ class AdGroup
 
     /**
      * @param int $AudienceAdsBidAdjustment
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setAudienceAdsBidAdjustment($AudienceAdsBidAdjustment)
     {
@@ -137,7 +137,7 @@ class AdGroup
 
     /**
      * @param BiddingScheme $BiddingScheme
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setBiddingScheme($BiddingScheme)
     {
@@ -155,7 +155,7 @@ class AdGroup
 
     /**
      * @param Bid $CpcBid
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setCpcBid($CpcBid)
     {
@@ -173,7 +173,7 @@ class AdGroup
 
     /**
      * @param Date $EndDate
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setEndDate($EndDate)
     {
@@ -191,7 +191,7 @@ class AdGroup
 
     /**
      * @param ArrayOfKeyValuePairOfstringstring $ForwardCompatibilityMap
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
@@ -209,7 +209,7 @@ class AdGroup
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setId($Id)
     {
@@ -227,7 +227,7 @@ class AdGroup
 
     /**
      * @param string $Language
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setLanguage($Language)
     {
@@ -245,7 +245,7 @@ class AdGroup
 
     /**
      * @param string $Name
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setName($Name)
     {
@@ -263,7 +263,7 @@ class AdGroup
 
     /**
      * @param Network $Network
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setNetwork($Network)
     {
@@ -281,7 +281,7 @@ class AdGroup
 
     /**
      * @param AdGroupPrivacyStatus $PrivacyStatus
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setPrivacyStatus($PrivacyStatus)
     {
@@ -299,7 +299,7 @@ class AdGroup
 
     /**
      * @param ArrayOfSetting $Settings
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setSettings($Settings)
     {
@@ -317,7 +317,7 @@ class AdGroup
 
     /**
      * @param Date $StartDate
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setStartDate($StartDate)
     {
@@ -335,7 +335,7 @@ class AdGroup
 
     /**
      * @param AdGroupStatus $Status
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setStatus($Status)
     {
@@ -353,7 +353,7 @@ class AdGroup
 
     /**
      * @param string $TrackingUrlTemplate
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
@@ -371,7 +371,7 @@ class AdGroup
 
     /**
      * @param CustomParameters $UrlCustomParameters
-     * @return \PMG\BingAds\CampaignMangagement\AdGroup
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {

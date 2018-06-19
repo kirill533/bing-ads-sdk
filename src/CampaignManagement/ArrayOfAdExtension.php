@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfAdExtension implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfAdExtension implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param AdExtension[] $AdExtension
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfAdExtension
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfAdExtension
      */
     public function setAdExtension(array $AdExtension = null)
     {

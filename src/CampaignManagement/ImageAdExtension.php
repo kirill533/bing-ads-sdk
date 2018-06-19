@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ImageAdExtension extends AdExtension
 {
@@ -66,7 +66,7 @@ class ImageAdExtension extends AdExtension
 
     /**
      * @param string $AlternativeText
-     * @return \PMG\BingAds\CampaignMangagement\ImageAdExtension
+     * @return \PMG\BingAds\CampaignManagement\ImageAdExtension
      */
     public function setAlternativeText($AlternativeText)
     {
@@ -84,7 +84,7 @@ class ImageAdExtension extends AdExtension
 
     /**
      * @param string $Description
-     * @return \PMG\BingAds\CampaignMangagement\ImageAdExtension
+     * @return \PMG\BingAds\CampaignManagement\ImageAdExtension
      */
     public function setDescription($Description)
     {
@@ -102,7 +102,7 @@ class ImageAdExtension extends AdExtension
 
     /**
      * @param string $DestinationUrl
-     * @return \PMG\BingAds\CampaignMangagement\ImageAdExtension
+     * @return \PMG\BingAds\CampaignManagement\ImageAdExtension
      */
     public function setDestinationUrl($DestinationUrl)
     {
@@ -120,7 +120,7 @@ class ImageAdExtension extends AdExtension
 
     /**
      * @param ArrayOfAppUrl $FinalAppUrls
-     * @return \PMG\BingAds\CampaignMangagement\ImageAdExtension
+     * @return \PMG\BingAds\CampaignManagement\ImageAdExtension
      */
     public function setFinalAppUrls($FinalAppUrls)
     {
@@ -138,7 +138,7 @@ class ImageAdExtension extends AdExtension
 
     /**
      * @param ArrayOfstring $FinalMobileUrls
-     * @return \PMG\BingAds\CampaignMangagement\ImageAdExtension
+     * @return \PMG\BingAds\CampaignManagement\ImageAdExtension
      */
     public function setFinalMobileUrls($FinalMobileUrls)
     {
@@ -156,7 +156,7 @@ class ImageAdExtension extends AdExtension
 
     /**
      * @param ArrayOfstring $FinalUrls
-     * @return \PMG\BingAds\CampaignMangagement\ImageAdExtension
+     * @return \PMG\BingAds\CampaignManagement\ImageAdExtension
      */
     public function setFinalUrls($FinalUrls)
     {
@@ -174,7 +174,7 @@ class ImageAdExtension extends AdExtension
 
     /**
      * @param ArrayOflong $ImageMediaIds
-     * @return \PMG\BingAds\CampaignMangagement\ImageAdExtension
+     * @return \PMG\BingAds\CampaignManagement\ImageAdExtension
      */
     public function setImageMediaIds($ImageMediaIds)
     {
@@ -192,7 +192,7 @@ class ImageAdExtension extends AdExtension
 
     /**
      * @param string $TrackingUrlTemplate
-     * @return \PMG\BingAds\CampaignMangagement\ImageAdExtension
+     * @return \PMG\BingAds\CampaignManagement\ImageAdExtension
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
@@ -210,7 +210,7 @@ class ImageAdExtension extends AdExtension
 
     /**
      * @param CustomParameters $UrlCustomParameters
-     * @return \PMG\BingAds\CampaignMangagement\ImageAdExtension
+     * @return \PMG\BingAds\CampaignManagement\ImageAdExtension
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {

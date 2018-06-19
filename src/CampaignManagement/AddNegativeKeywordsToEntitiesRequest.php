@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddNegativeKeywordsToEntitiesRequest
 {
@@ -28,7 +28,7 @@ class AddNegativeKeywordsToEntitiesRequest
 
     /**
      * @param ArrayOfEntityNegativeKeyword $EntityNegativeKeywords
-     * @return \PMG\BingAds\CampaignMangagement\AddNegativeKeywordsToEntitiesRequest
+     * @return \PMG\BingAds\CampaignManagement\AddNegativeKeywordsToEntitiesRequest
      */
     public function setEntityNegativeKeywords($EntityNegativeKeywords)
     {

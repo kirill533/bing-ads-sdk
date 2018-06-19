@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetCampaignsByAccountIdRequest
 {
@@ -35,7 +35,7 @@ class GetCampaignsByAccountIdRequest
 
     /**
      * @param int $AccountId
-     * @return \PMG\BingAds\CampaignMangagement\GetCampaignsByAccountIdRequest
+     * @return \PMG\BingAds\CampaignManagement\GetCampaignsByAccountIdRequest
      */
     public function setAccountId($AccountId)
     {
@@ -53,7 +53,7 @@ class GetCampaignsByAccountIdRequest
 
     /**
      * @param CampaignType $CampaignType
-     * @return \PMG\BingAds\CampaignMangagement\GetCampaignsByAccountIdRequest
+     * @return \PMG\BingAds\CampaignManagement\GetCampaignsByAccountIdRequest
      */
     public function setCampaignType($CampaignType)
     {

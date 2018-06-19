@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Ad
 {
@@ -81,7 +81,7 @@ class Ad
 
     /**
      * @param string $AdFormatPreference
-     * @return \PMG\BingAds\CampaignMangagement\Ad
+     * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setAdFormatPreference($AdFormatPreference)
     {
@@ -99,7 +99,7 @@ class Ad
 
     /**
      * @param int $DevicePreference
-     * @return \PMG\BingAds\CampaignMangagement\Ad
+     * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setDevicePreference($DevicePreference)
     {
@@ -117,7 +117,7 @@ class Ad
 
     /**
      * @param AdEditorialStatus $EditorialStatus
-     * @return \PMG\BingAds\CampaignMangagement\Ad
+     * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setEditorialStatus($EditorialStatus)
     {
@@ -135,7 +135,7 @@ class Ad
 
     /**
      * @param ArrayOfAppUrl $FinalAppUrls
-     * @return \PMG\BingAds\CampaignMangagement\Ad
+     * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setFinalAppUrls($FinalAppUrls)
     {
@@ -153,7 +153,7 @@ class Ad
 
     /**
      * @param ArrayOfstring $FinalMobileUrls
-     * @return \PMG\BingAds\CampaignMangagement\Ad
+     * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setFinalMobileUrls($FinalMobileUrls)
     {
@@ -171,7 +171,7 @@ class Ad
 
     /**
      * @param ArrayOfstring $FinalUrls
-     * @return \PMG\BingAds\CampaignMangagement\Ad
+     * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setFinalUrls($FinalUrls)
     {
@@ -189,7 +189,7 @@ class Ad
 
     /**
      * @param ArrayOfKeyValuePairOfstringstring $ForwardCompatibilityMap
-     * @return \PMG\BingAds\CampaignMangagement\Ad
+     * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
@@ -207,7 +207,7 @@ class Ad
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\Ad
+     * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setId($Id)
     {
@@ -225,7 +225,7 @@ class Ad
 
     /**
      * @param AdStatus $Status
-     * @return \PMG\BingAds\CampaignMangagement\Ad
+     * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setStatus($Status)
     {
@@ -243,7 +243,7 @@ class Ad
 
     /**
      * @param string $TrackingUrlTemplate
-     * @return \PMG\BingAds\CampaignMangagement\Ad
+     * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
@@ -261,7 +261,7 @@ class Ad
 
     /**
      * @param AdType $Type
-     * @return \PMG\BingAds\CampaignMangagement\Ad
+     * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setType($Type)
     {
@@ -279,7 +279,7 @@ class Ad
 
     /**
      * @param CustomParameters $UrlCustomParameters
-     * @return \PMG\BingAds\CampaignMangagement\Ad
+     * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {

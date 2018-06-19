@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetMediaMetaDataByIdsResponse
 {
@@ -35,7 +35,7 @@ class GetMediaMetaDataByIdsResponse
 
     /**
      * @param ArrayOfMediaMetaData $MediaMetaData
-     * @return \PMG\BingAds\CampaignMangagement\GetMediaMetaDataByIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetMediaMetaDataByIdsResponse
      */
     public function setMediaMetaData($MediaMetaData)
     {
@@ -53,7 +53,7 @@ class GetMediaMetaDataByIdsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\GetMediaMetaDataByIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetMediaMetaDataByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

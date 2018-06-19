@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ResponsiveAd extends Ad
 {
@@ -66,7 +66,7 @@ class ResponsiveAd extends Ad
 
     /**
      * @param string $BusinessName
-     * @return \PMG\BingAds\CampaignMangagement\ResponsiveAd
+     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
      */
     public function setBusinessName($BusinessName)
     {
@@ -84,7 +84,7 @@ class ResponsiveAd extends Ad
 
     /**
      * @param CallToAction $CallToAction
-     * @return \PMG\BingAds\CampaignMangagement\ResponsiveAd
+     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
      */
     public function setCallToAction($CallToAction)
     {
@@ -102,7 +102,7 @@ class ResponsiveAd extends Ad
 
     /**
      * @param string $Headline
-     * @return \PMG\BingAds\CampaignMangagement\ResponsiveAd
+     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
      */
     public function setHeadline($Headline)
     {
@@ -120,7 +120,7 @@ class ResponsiveAd extends Ad
 
     /**
      * @param int $LandscapeImageMediaId
-     * @return \PMG\BingAds\CampaignMangagement\ResponsiveAd
+     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
      */
     public function setLandscapeImageMediaId($LandscapeImageMediaId)
     {
@@ -138,7 +138,7 @@ class ResponsiveAd extends Ad
 
     /**
      * @param int $LandscapeLogoMediaId
-     * @return \PMG\BingAds\CampaignMangagement\ResponsiveAd
+     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
      */
     public function setLandscapeLogoMediaId($LandscapeLogoMediaId)
     {
@@ -156,7 +156,7 @@ class ResponsiveAd extends Ad
 
     /**
      * @param string $LongHeadline
-     * @return \PMG\BingAds\CampaignMangagement\ResponsiveAd
+     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
      */
     public function setLongHeadline($LongHeadline)
     {
@@ -174,7 +174,7 @@ class ResponsiveAd extends Ad
 
     /**
      * @param int $SquareImageMediaId
-     * @return \PMG\BingAds\CampaignMangagement\ResponsiveAd
+     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
      */
     public function setSquareImageMediaId($SquareImageMediaId)
     {
@@ -192,7 +192,7 @@ class ResponsiveAd extends Ad
 
     /**
      * @param int $SquareLogoMediaId
-     * @return \PMG\BingAds\CampaignMangagement\ResponsiveAd
+     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
      */
     public function setSquareLogoMediaId($SquareLogoMediaId)
     {
@@ -210,7 +210,7 @@ class ResponsiveAd extends Ad
 
     /**
      * @param string $Text
-     * @return \PMG\BingAds\CampaignMangagement\ResponsiveAd
+     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
      */
     public function setText($Text)
     {

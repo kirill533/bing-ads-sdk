@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteCampaignCriterionsResponse
 {
@@ -35,7 +35,7 @@ class DeleteCampaignCriterionsResponse
 
     /**
      * @param boolean $IsMigrated
-     * @return \PMG\BingAds\CampaignMangagement\DeleteCampaignCriterionsResponse
+     * @return \PMG\BingAds\CampaignManagement\DeleteCampaignCriterionsResponse
      */
     public function setIsMigrated($IsMigrated)
     {
@@ -53,7 +53,7 @@ class DeleteCampaignCriterionsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\DeleteCampaignCriterionsResponse
+     * @return \PMG\BingAds\CampaignManagement\DeleteCampaignCriterionsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

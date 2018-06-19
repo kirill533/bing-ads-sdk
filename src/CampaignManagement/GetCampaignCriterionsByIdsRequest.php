@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetCampaignCriterionsByIdsRequest
 {
@@ -42,7 +42,7 @@ class GetCampaignCriterionsByIdsRequest
 
     /**
      * @param ArrayOflong $CampaignCriterionIds
-     * @return \PMG\BingAds\CampaignMangagement\GetCampaignCriterionsByIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetCampaignCriterionsByIdsRequest
      */
     public function setCampaignCriterionIds($CampaignCriterionIds)
     {
@@ -60,7 +60,7 @@ class GetCampaignCriterionsByIdsRequest
 
     /**
      * @param int $CampaignId
-     * @return \PMG\BingAds\CampaignMangagement\GetCampaignCriterionsByIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetCampaignCriterionsByIdsRequest
      */
     public function setCampaignId($CampaignId)
     {
@@ -78,7 +78,7 @@ class GetCampaignCriterionsByIdsRequest
 
     /**
      * @param CampaignCriterionType $CriterionType
-     * @return \PMG\BingAds\CampaignMangagement\GetCampaignCriterionsByIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetCampaignCriterionsByIdsRequest
      */
     public function setCriterionType($CriterionType)
     {

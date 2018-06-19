@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Bid
 {
@@ -26,7 +26,7 @@ class Bid
 
     /**
      * @param float $Amount
-     * @return \PMG\BingAds\CampaignMangagement\Bid
+     * @return \PMG\BingAds\CampaignManagement\Bid
      */
     public function setAmount($Amount)
     {

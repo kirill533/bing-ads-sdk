@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfKeyword implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfKeyword implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param Keyword[] $Keyword
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfKeyword
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfKeyword
      */
     public function setKeyword(array $Keyword = null)
     {

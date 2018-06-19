@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AdApiFaultDetail extends ApplicationFault
 {
@@ -26,7 +26,7 @@ class AdApiFaultDetail extends ApplicationFault
 
     /**
      * @param ArrayOfAdApiError $Errors
-     * @return \PMG\BingAds\CampaignMangagement\AdApiFaultDetail
+     * @return \PMG\BingAds\CampaignManagement\AdApiFaultDetail
      */
     public function setErrors($Errors)
     {

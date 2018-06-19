@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AdRotation
 {
@@ -44,7 +44,7 @@ class AdRotation
 
     /**
      * @param \DateTime $EndDate
-     * @return \PMG\BingAds\CampaignMangagement\AdRotation
+     * @return \PMG\BingAds\CampaignManagement\AdRotation
      */
     public function setEndDate(\DateTime $EndDate = null)
     {
@@ -74,7 +74,7 @@ class AdRotation
 
     /**
      * @param \DateTime $StartDate
-     * @return \PMG\BingAds\CampaignMangagement\AdRotation
+     * @return \PMG\BingAds\CampaignManagement\AdRotation
      */
     public function setStartDate(\DateTime $StartDate = null)
     {
@@ -96,7 +96,7 @@ class AdRotation
 
     /**
      * @param AdRotationType $Type
-     * @return \PMG\BingAds\CampaignMangagement\AdRotation
+     * @return \PMG\BingAds\CampaignManagement\AdRotation
      */
     public function setType($Type)
     {

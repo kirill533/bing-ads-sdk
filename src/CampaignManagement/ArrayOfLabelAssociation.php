@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfLabelAssociation implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfLabelAssociation implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param LabelAssociation[] $LabelAssociation
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfLabelAssociation
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfLabelAssociation
      */
     public function setLabelAssociation(array $LabelAssociation = null)
     {

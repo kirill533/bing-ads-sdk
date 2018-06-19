@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class InheritFromParentBiddingScheme extends BiddingScheme
 {
@@ -26,7 +26,7 @@ class InheritFromParentBiddingScheme extends BiddingScheme
 
     /**
      * @param string $InheritedBidStrategyType
-     * @return \PMG\BingAds\CampaignMangagement\InheritFromParentBiddingScheme
+     * @return \PMG\BingAds\CampaignManagement\InheritFromParentBiddingScheme
      */
     public function setInheritedBidStrategyType($InheritedBidStrategyType)
     {

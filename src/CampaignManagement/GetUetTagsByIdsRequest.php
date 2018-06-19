@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetUetTagsByIdsRequest
 {
@@ -28,7 +28,7 @@ class GetUetTagsByIdsRequest
 
     /**
      * @param ArrayOflong $TagIds
-     * @return \PMG\BingAds\CampaignMangagement\GetUetTagsByIdsRequest
+     * @return \PMG\BingAds\CampaignManagement\GetUetTagsByIdsRequest
      */
     public function setTagIds($TagIds)
     {

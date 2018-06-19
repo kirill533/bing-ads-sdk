@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class OfflineConversion
 {
@@ -46,7 +46,7 @@ class OfflineConversion
 
     /**
      * @param string $ConversionCurrencyCode
-     * @return \PMG\BingAds\CampaignMangagement\OfflineConversion
+     * @return \PMG\BingAds\CampaignManagement\OfflineConversion
      */
     public function setConversionCurrencyCode($ConversionCurrencyCode)
     {
@@ -64,7 +64,7 @@ class OfflineConversion
 
     /**
      * @param string $ConversionName
-     * @return \PMG\BingAds\CampaignMangagement\OfflineConversion
+     * @return \PMG\BingAds\CampaignManagement\OfflineConversion
      */
     public function setConversionName($ConversionName)
     {
@@ -90,7 +90,7 @@ class OfflineConversion
 
     /**
      * @param \DateTime $ConversionTime
-     * @return \PMG\BingAds\CampaignMangagement\OfflineConversion
+     * @return \PMG\BingAds\CampaignManagement\OfflineConversion
      */
     public function setConversionTime(\DateTime $ConversionTime = null)
     {
@@ -112,7 +112,7 @@ class OfflineConversion
 
     /**
      * @param float $ConversionValue
-     * @return \PMG\BingAds\CampaignMangagement\OfflineConversion
+     * @return \PMG\BingAds\CampaignManagement\OfflineConversion
      */
     public function setConversionValue($ConversionValue)
     {
@@ -130,7 +130,7 @@ class OfflineConversion
 
     /**
      * @param string $MicrosoftClickId
-     * @return \PMG\BingAds\CampaignMangagement\OfflineConversion
+     * @return \PMG\BingAds\CampaignManagement\OfflineConversion
      */
     public function setMicrosoftClickId($MicrosoftClickId)
     {

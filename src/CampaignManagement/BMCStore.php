@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class BMCStore
 {
@@ -51,7 +51,7 @@ class BMCStore
 
     /**
      * @param boolean $HasCatalog
-     * @return \PMG\BingAds\CampaignMangagement\BMCStore
+     * @return \PMG\BingAds\CampaignManagement\BMCStore
      */
     public function setHasCatalog($HasCatalog)
     {
@@ -69,7 +69,7 @@ class BMCStore
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\BMCStore
+     * @return \PMG\BingAds\CampaignManagement\BMCStore
      */
     public function setId($Id)
     {
@@ -87,7 +87,7 @@ class BMCStore
 
     /**
      * @param boolean $IsActive
-     * @return \PMG\BingAds\CampaignMangagement\BMCStore
+     * @return \PMG\BingAds\CampaignManagement\BMCStore
      */
     public function setIsActive($IsActive)
     {
@@ -105,7 +105,7 @@ class BMCStore
 
     /**
      * @param boolean $IsProductAdsEnabled
-     * @return \PMG\BingAds\CampaignMangagement\BMCStore
+     * @return \PMG\BingAds\CampaignManagement\BMCStore
      */
     public function setIsProductAdsEnabled($IsProductAdsEnabled)
     {
@@ -123,7 +123,7 @@ class BMCStore
 
     /**
      * @param string $Name
-     * @return \PMG\BingAds\CampaignMangagement\BMCStore
+     * @return \PMG\BingAds\CampaignManagement\BMCStore
      */
     public function setName($Name)
     {
@@ -141,7 +141,7 @@ class BMCStore
 
     /**
      * @param BMCStoreSubType $SubType
-     * @return \PMG\BingAds\CampaignMangagement\BMCStore
+     * @return \PMG\BingAds\CampaignManagement\BMCStore
      */
     public function setSubType($SubType)
     {

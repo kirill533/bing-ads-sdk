@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOflong implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOflong implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param long[] $long
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOflong
+     * @return \PMG\BingAds\CampaignManagement\ArrayOflong
      */
     public function setLong(array $long = null)
     {

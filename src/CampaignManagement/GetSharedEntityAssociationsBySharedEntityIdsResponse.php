@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetSharedEntityAssociationsBySharedEntityIdsResponse
 {
@@ -35,7 +35,7 @@ class GetSharedEntityAssociationsBySharedEntityIdsResponse
 
     /**
      * @param ArrayOfSharedEntityAssociation $Associations
-     * @return \PMG\BingAds\CampaignMangagement\GetSharedEntityAssociationsBySharedEntityIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetSharedEntityAssociationsBySharedEntityIdsResponse
      */
     public function setAssociations($Associations)
     {
@@ -53,7 +53,7 @@ class GetSharedEntityAssociationsBySharedEntityIdsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\GetSharedEntityAssociationsBySharedEntityIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetSharedEntityAssociationsBySharedEntityIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

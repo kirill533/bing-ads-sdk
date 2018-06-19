@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfIdCollection implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfIdCollection implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param IdCollection[] $IdCollection
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfIdCollection
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfIdCollection
      */
     public function setIdCollection(array $IdCollection = null)
     {

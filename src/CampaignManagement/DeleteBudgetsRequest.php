@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeleteBudgetsRequest
 {
@@ -28,7 +28,7 @@ class DeleteBudgetsRequest
 
     /**
      * @param ArrayOflong $BudgetIds
-     * @return \PMG\BingAds\CampaignMangagement\DeleteBudgetsRequest
+     * @return \PMG\BingAds\CampaignManagement\DeleteBudgetsRequest
      */
     public function setBudgetIds($BudgetIds)
     {

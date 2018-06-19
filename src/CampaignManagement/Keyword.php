@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Keyword
 {
@@ -106,7 +106,7 @@ class Keyword
 
     /**
      * @param Bid $Bid
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setBid($Bid)
     {
@@ -124,7 +124,7 @@ class Keyword
 
     /**
      * @param BiddingScheme $BiddingScheme
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setBiddingScheme($BiddingScheme)
     {
@@ -142,7 +142,7 @@ class Keyword
 
     /**
      * @param string $DestinationUrl
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setDestinationUrl($DestinationUrl)
     {
@@ -160,7 +160,7 @@ class Keyword
 
     /**
      * @param KeywordEditorialStatus $EditorialStatus
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setEditorialStatus($EditorialStatus)
     {
@@ -178,7 +178,7 @@ class Keyword
 
     /**
      * @param ArrayOfAppUrl $FinalAppUrls
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setFinalAppUrls($FinalAppUrls)
     {
@@ -196,7 +196,7 @@ class Keyword
 
     /**
      * @param ArrayOfstring $FinalMobileUrls
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setFinalMobileUrls($FinalMobileUrls)
     {
@@ -214,7 +214,7 @@ class Keyword
 
     /**
      * @param ArrayOfstring $FinalUrls
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setFinalUrls($FinalUrls)
     {
@@ -232,7 +232,7 @@ class Keyword
 
     /**
      * @param ArrayOfKeyValuePairOfstringstring $ForwardCompatibilityMap
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
@@ -250,7 +250,7 @@ class Keyword
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setId($Id)
     {
@@ -268,7 +268,7 @@ class Keyword
 
     /**
      * @param MatchType $MatchType
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setMatchType($MatchType)
     {
@@ -286,7 +286,7 @@ class Keyword
 
     /**
      * @param string $Param1
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setParam1($Param1)
     {
@@ -304,7 +304,7 @@ class Keyword
 
     /**
      * @param string $Param2
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setParam2($Param2)
     {
@@ -322,7 +322,7 @@ class Keyword
 
     /**
      * @param string $Param3
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setParam3($Param3)
     {
@@ -340,7 +340,7 @@ class Keyword
 
     /**
      * @param KeywordStatus $Status
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setStatus($Status)
     {
@@ -358,7 +358,7 @@ class Keyword
 
     /**
      * @param string $Text
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setText($Text)
     {
@@ -376,7 +376,7 @@ class Keyword
 
     /**
      * @param string $TrackingUrlTemplate
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
@@ -394,7 +394,7 @@ class Keyword
 
     /**
      * @param CustomParameters $UrlCustomParameters
-     * @return \PMG\BingAds\CampaignMangagement\Keyword
+     * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {

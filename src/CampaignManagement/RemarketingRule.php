@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class RemarketingRule
 {
@@ -26,7 +26,7 @@ class RemarketingRule
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\RemarketingRule
+     * @return \PMG\BingAds\CampaignManagement\RemarketingRule
      */
     public function setType($Type)
     {

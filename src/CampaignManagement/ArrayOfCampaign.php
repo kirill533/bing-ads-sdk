@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfCampaign implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfCampaign implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param Campaign[] $Campaign
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfCampaign
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfCampaign
      */
     public function setCampaign(array $Campaign = null)
     {

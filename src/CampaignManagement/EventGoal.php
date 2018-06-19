@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class EventGoal extends ConversionGoal
 {
@@ -61,7 +61,7 @@ class EventGoal extends ConversionGoal
 
     /**
      * @param string $ActionExpression
-     * @return \PMG\BingAds\CampaignMangagement\EventGoal
+     * @return \PMG\BingAds\CampaignManagement\EventGoal
      */
     public function setActionExpression($ActionExpression)
     {
@@ -79,7 +79,7 @@ class EventGoal extends ConversionGoal
 
     /**
      * @param ExpressionOperator $ActionOperator
-     * @return \PMG\BingAds\CampaignMangagement\EventGoal
+     * @return \PMG\BingAds\CampaignManagement\EventGoal
      */
     public function setActionOperator($ActionOperator)
     {
@@ -97,7 +97,7 @@ class EventGoal extends ConversionGoal
 
     /**
      * @param string $CategoryExpression
-     * @return \PMG\BingAds\CampaignMangagement\EventGoal
+     * @return \PMG\BingAds\CampaignManagement\EventGoal
      */
     public function setCategoryExpression($CategoryExpression)
     {
@@ -115,7 +115,7 @@ class EventGoal extends ConversionGoal
 
     /**
      * @param ExpressionOperator $CategoryOperator
-     * @return \PMG\BingAds\CampaignMangagement\EventGoal
+     * @return \PMG\BingAds\CampaignManagement\EventGoal
      */
     public function setCategoryOperator($CategoryOperator)
     {
@@ -133,7 +133,7 @@ class EventGoal extends ConversionGoal
 
     /**
      * @param string $LabelExpression
-     * @return \PMG\BingAds\CampaignMangagement\EventGoal
+     * @return \PMG\BingAds\CampaignManagement\EventGoal
      */
     public function setLabelExpression($LabelExpression)
     {
@@ -151,7 +151,7 @@ class EventGoal extends ConversionGoal
 
     /**
      * @param ExpressionOperator $LabelOperator
-     * @return \PMG\BingAds\CampaignMangagement\EventGoal
+     * @return \PMG\BingAds\CampaignManagement\EventGoal
      */
     public function setLabelOperator($LabelOperator)
     {
@@ -169,7 +169,7 @@ class EventGoal extends ConversionGoal
 
     /**
      * @param float $Value
-     * @return \PMG\BingAds\CampaignMangagement\EventGoal
+     * @return \PMG\BingAds\CampaignManagement\EventGoal
      */
     public function setValue($Value)
     {
@@ -187,7 +187,7 @@ class EventGoal extends ConversionGoal
 
     /**
      * @param ValueOperator $ValueOperator
-     * @return \PMG\BingAds\CampaignMangagement\EventGoal
+     * @return \PMG\BingAds\CampaignManagement\EventGoal
      */
     public function setValueOperator($ValueOperator)
     {

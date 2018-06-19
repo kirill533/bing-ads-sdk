@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class RemarketingList extends Audience
 {
@@ -31,7 +31,7 @@ class RemarketingList extends Audience
 
     /**
      * @param RemarketingRule $Rule
-     * @return \PMG\BingAds\CampaignMangagement\RemarketingList
+     * @return \PMG\BingAds\CampaignManagement\RemarketingList
      */
     public function setRule($Rule)
     {
@@ -49,7 +49,7 @@ class RemarketingList extends Audience
 
     /**
      * @param int $TagId
-     * @return \PMG\BingAds\CampaignMangagement\RemarketingList
+     * @return \PMG\BingAds\CampaignManagement\RemarketingList
      */
     public function setTagId($TagId)
     {

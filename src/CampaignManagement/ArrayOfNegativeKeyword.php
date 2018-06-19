@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfNegativeKeyword implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfNegativeKeyword implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param NegativeKeyword[] $NegativeKeyword
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfNegativeKeyword
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfNegativeKeyword
      */
     public function setNegativeKeyword(array $NegativeKeyword = null)
     {

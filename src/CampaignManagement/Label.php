@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class Label
 {
@@ -41,7 +41,7 @@ class Label
 
     /**
      * @param string $ColorCode
-     * @return \PMG\BingAds\CampaignMangagement\Label
+     * @return \PMG\BingAds\CampaignManagement\Label
      */
     public function setColorCode($ColorCode)
     {
@@ -59,7 +59,7 @@ class Label
 
     /**
      * @param string $Description
-     * @return \PMG\BingAds\CampaignMangagement\Label
+     * @return \PMG\BingAds\CampaignManagement\Label
      */
     public function setDescription($Description)
     {
@@ -77,7 +77,7 @@ class Label
 
     /**
      * @param int $Id
-     * @return \PMG\BingAds\CampaignMangagement\Label
+     * @return \PMG\BingAds\CampaignManagement\Label
      */
     public function setId($Id)
     {
@@ -95,7 +95,7 @@ class Label
 
     /**
      * @param string $Name
-     * @return \PMG\BingAds\CampaignMangagement\Label
+     * @return \PMG\BingAds\CampaignManagement\Label
      */
     public function setName($Name)
     {

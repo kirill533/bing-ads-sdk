@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GenderCriterion extends Criterion
 {
@@ -26,7 +26,7 @@ class GenderCriterion extends Criterion
 
     /**
      * @param GenderType $GenderType
-     * @return \PMG\BingAds\CampaignMangagement\GenderCriterion
+     * @return \PMG\BingAds\CampaignManagement\GenderCriterion
      */
     public function setGenderType($GenderType)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DurationGoal extends ConversionGoal
 {
@@ -26,7 +26,7 @@ class DurationGoal extends ConversionGoal
 
     /**
      * @param int $MinimumDurationInSeconds
-     * @return \PMG\BingAds\CampaignMangagement\DurationGoal
+     * @return \PMG\BingAds\CampaignManagement\DurationGoal
      */
     public function setMinimumDurationInSeconds($MinimumDurationInSeconds)
     {

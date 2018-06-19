@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddAdGroupCriterionsResponse
 {
@@ -42,7 +42,7 @@ class AddAdGroupCriterionsResponse
 
     /**
      * @param ArrayOfNullableOflong $AdGroupCriterionIds
-     * @return \PMG\BingAds\CampaignMangagement\AddAdGroupCriterionsResponse
+     * @return \PMG\BingAds\CampaignManagement\AddAdGroupCriterionsResponse
      */
     public function setAdGroupCriterionIds($AdGroupCriterionIds)
     {
@@ -60,7 +60,7 @@ class AddAdGroupCriterionsResponse
 
     /**
      * @param boolean $IsMigrated
-     * @return \PMG\BingAds\CampaignMangagement\AddAdGroupCriterionsResponse
+     * @return \PMG\BingAds\CampaignManagement\AddAdGroupCriterionsResponse
      */
     public function setIsMigrated($IsMigrated)
     {
@@ -78,7 +78,7 @@ class AddAdGroupCriterionsResponse
 
     /**
      * @param ArrayOfBatchErrorCollection $NestedPartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\AddAdGroupCriterionsResponse
+     * @return \PMG\BingAds\CampaignManagement\AddAdGroupCriterionsResponse
      */
     public function setNestedPartialErrors($NestedPartialErrors)
     {

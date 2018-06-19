@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetUetTagsByIdsResponse
 {
@@ -35,7 +35,7 @@ class GetUetTagsByIdsResponse
 
     /**
      * @param ArrayOfUetTag $UetTags
-     * @return \PMG\BingAds\CampaignMangagement\GetUetTagsByIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetUetTagsByIdsResponse
      */
     public function setUetTags($UetTags)
     {
@@ -53,7 +53,7 @@ class GetUetTagsByIdsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\GetUetTagsByIdsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetUetTagsByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfMedia implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfMedia implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param Media[] $Media
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfMedia
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfMedia
      */
     public function setMedia(array $Media = null)
     {

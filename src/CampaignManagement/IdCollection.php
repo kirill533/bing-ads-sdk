@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class IdCollection
 {
@@ -26,7 +26,7 @@ class IdCollection
 
     /**
      * @param ArrayOfNullableOflong $Ids
-     * @return \PMG\BingAds\CampaignMangagement\IdCollection
+     * @return \PMG\BingAds\CampaignManagement\IdCollection
      */
     public function setIds($Ids)
     {

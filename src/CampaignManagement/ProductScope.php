@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ProductScope extends Criterion
 {
@@ -26,7 +26,7 @@ class ProductScope extends Criterion
 
     /**
      * @param ArrayOfProductCondition $Conditions
-     * @return \PMG\BingAds\CampaignMangagement\ProductScope
+     * @return \PMG\BingAds\CampaignManagement\ProductScope
      */
     public function setConditions($Conditions)
     {

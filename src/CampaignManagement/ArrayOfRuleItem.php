@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfRuleItem implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfRuleItem implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param RuleItem[] $RuleItem
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfRuleItem
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfRuleItem
      */
     public function setRuleItem(array $RuleItem = null)
     {

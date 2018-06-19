@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfKeyValueOfstringstring implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfKeyValueOfstringstring implements \ArrayAccess, \Iterator, \Countab
 
     /**
      * @param KeyValueOfstringstring[] $KeyValueOfstringstring
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfKeyValueOfstringstring
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfKeyValueOfstringstring
      */
     public function setKeyValueOfstringstring(array $KeyValueOfstringstring = null)
     {

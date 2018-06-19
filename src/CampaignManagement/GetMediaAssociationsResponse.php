@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetMediaAssociationsResponse
 {
@@ -35,7 +35,7 @@ class GetMediaAssociationsResponse
 
     /**
      * @param ArrayOfArrayOfMediaAssociation $MediaAssociations
-     * @return \PMG\BingAds\CampaignMangagement\GetMediaAssociationsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetMediaAssociationsResponse
      */
     public function setMediaAssociations($MediaAssociations)
     {
@@ -53,7 +53,7 @@ class GetMediaAssociationsResponse
 
     /**
      * @param ArrayOfBatchError $PartialErrors
-     * @return \PMG\BingAds\CampaignMangagement\GetMediaAssociationsResponse
+     * @return \PMG\BingAds\CampaignManagement\GetMediaAssociationsResponse
      */
     public function setPartialErrors($PartialErrors)
     {

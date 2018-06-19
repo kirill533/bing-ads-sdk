@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class GetKeywordsByAdGroupIdRequest
 {
@@ -28,7 +28,7 @@ class GetKeywordsByAdGroupIdRequest
 
     /**
      * @param int $AdGroupId
-     * @return \PMG\BingAds\CampaignMangagement\GetKeywordsByAdGroupIdRequest
+     * @return \PMG\BingAds\CampaignManagement\GetKeywordsByAdGroupIdRequest
      */
     public function setAdGroupId($AdGroupId)
     {

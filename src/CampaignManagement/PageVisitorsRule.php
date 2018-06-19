@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class PageVisitorsRule extends RemarketingRule
 {
@@ -26,7 +26,7 @@ class PageVisitorsRule extends RemarketingRule
 
     /**
      * @param ArrayOfRuleItemGroup $RuleItemGroups
-     * @return \PMG\BingAds\CampaignMangagement\PageVisitorsRule
+     * @return \PMG\BingAds\CampaignManagement\PageVisitorsRule
      */
     public function setRuleItemGroups($RuleItemGroups)
     {

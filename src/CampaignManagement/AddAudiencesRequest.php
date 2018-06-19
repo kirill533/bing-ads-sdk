@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class AddAudiencesRequest
 {
@@ -28,7 +28,7 @@ class AddAudiencesRequest
 
     /**
      * @param ArrayOfAudience $Audiences
-     * @return \PMG\BingAds\CampaignMangagement\AddAudiencesRequest
+     * @return \PMG\BingAds\CampaignManagement\AddAudiencesRequest
      */
     public function setAudiences($Audiences)
     {

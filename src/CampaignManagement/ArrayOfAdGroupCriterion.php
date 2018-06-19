@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfAdGroupCriterion implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfAdGroupCriterion implements \ArrayAccess, \Iterator, \Countable
 
     /**
      * @param AdGroupCriterion[] $AdGroupCriterion
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfAdGroupCriterion
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfAdGroupCriterion
      */
     public function setAdGroupCriterion(array $AdGroupCriterion = null)
     {

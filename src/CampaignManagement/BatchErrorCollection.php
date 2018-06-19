@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class BatchErrorCollection
 {
@@ -66,7 +66,7 @@ class BatchErrorCollection
 
     /**
      * @param ArrayOfBatchError $BatchErrors
-     * @return \PMG\BingAds\CampaignMangagement\BatchErrorCollection
+     * @return \PMG\BingAds\CampaignManagement\BatchErrorCollection
      */
     public function setBatchErrors($BatchErrors)
     {
@@ -84,7 +84,7 @@ class BatchErrorCollection
 
     /**
      * @param int $Code
-     * @return \PMG\BingAds\CampaignMangagement\BatchErrorCollection
+     * @return \PMG\BingAds\CampaignManagement\BatchErrorCollection
      */
     public function setCode($Code)
     {
@@ -102,7 +102,7 @@ class BatchErrorCollection
 
     /**
      * @param string $Details
-     * @return \PMG\BingAds\CampaignMangagement\BatchErrorCollection
+     * @return \PMG\BingAds\CampaignManagement\BatchErrorCollection
      */
     public function setDetails($Details)
     {
@@ -120,7 +120,7 @@ class BatchErrorCollection
 
     /**
      * @param string $ErrorCode
-     * @return \PMG\BingAds\CampaignMangagement\BatchErrorCollection
+     * @return \PMG\BingAds\CampaignManagement\BatchErrorCollection
      */
     public function setErrorCode($ErrorCode)
     {
@@ -138,7 +138,7 @@ class BatchErrorCollection
 
     /**
      * @param string $FieldPath
-     * @return \PMG\BingAds\CampaignMangagement\BatchErrorCollection
+     * @return \PMG\BingAds\CampaignManagement\BatchErrorCollection
      */
     public function setFieldPath($FieldPath)
     {
@@ -156,7 +156,7 @@ class BatchErrorCollection
 
     /**
      * @param ArrayOfKeyValuePairOfstringstring $ForwardCompatibilityMap
-     * @return \PMG\BingAds\CampaignMangagement\BatchErrorCollection
+     * @return \PMG\BingAds\CampaignManagement\BatchErrorCollection
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
@@ -174,7 +174,7 @@ class BatchErrorCollection
 
     /**
      * @param int $Index
-     * @return \PMG\BingAds\CampaignMangagement\BatchErrorCollection
+     * @return \PMG\BingAds\CampaignManagement\BatchErrorCollection
      */
     public function setIndex($Index)
     {
@@ -192,7 +192,7 @@ class BatchErrorCollection
 
     /**
      * @param string $Message
-     * @return \PMG\BingAds\CampaignMangagement\BatchErrorCollection
+     * @return \PMG\BingAds\CampaignManagement\BatchErrorCollection
      */
     public function setMessage($Message)
     {
@@ -210,7 +210,7 @@ class BatchErrorCollection
 
     /**
      * @param string $Type
-     * @return \PMG\BingAds\CampaignMangagement\BatchErrorCollection
+     * @return \PMG\BingAds\CampaignManagement\BatchErrorCollection
      */
     public function setType($Type)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class DeviceCriterion extends Criterion
 {
@@ -31,7 +31,7 @@ class DeviceCriterion extends Criterion
 
     /**
      * @param string $DeviceName
-     * @return \PMG\BingAds\CampaignMangagement\DeviceCriterion
+     * @return \PMG\BingAds\CampaignManagement\DeviceCriterion
      */
     public function setDeviceName($DeviceName)
     {
@@ -49,7 +49,7 @@ class DeviceCriterion extends Criterion
 
     /**
      * @param string $OSName
-     * @return \PMG\BingAds\CampaignMangagement\DeviceCriterion
+     * @return \PMG\BingAds\CampaignManagement\DeviceCriterion
      */
     public function setOSName($OSName)
     {

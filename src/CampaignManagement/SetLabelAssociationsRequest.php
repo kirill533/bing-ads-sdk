@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class SetLabelAssociationsRequest
 {
@@ -35,7 +35,7 @@ class SetLabelAssociationsRequest
 
     /**
      * @param EntityType $EntityType
-     * @return \PMG\BingAds\CampaignMangagement\SetLabelAssociationsRequest
+     * @return \PMG\BingAds\CampaignManagement\SetLabelAssociationsRequest
      */
     public function setEntityType($EntityType)
     {
@@ -53,7 +53,7 @@ class SetLabelAssociationsRequest
 
     /**
      * @param ArrayOfLabelAssociation $LabelAssociations
-     * @return \PMG\BingAds\CampaignMangagement\SetLabelAssociationsRequest
+     * @return \PMG\BingAds\CampaignManagement\SetLabelAssociationsRequest
      */
     public function setLabelAssociations($LabelAssociations)
     {

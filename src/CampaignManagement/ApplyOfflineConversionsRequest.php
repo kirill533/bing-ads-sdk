@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ApplyOfflineConversionsRequest
 {
@@ -28,7 +28,7 @@ class ApplyOfflineConversionsRequest
 
     /**
      * @param ArrayOfOfflineConversion $OfflineConversions
-     * @return \PMG\BingAds\CampaignMangagement\ApplyOfflineConversionsRequest
+     * @return \PMG\BingAds\CampaignManagement\ApplyOfflineConversionsRequest
      */
     public function setOfflineConversions($OfflineConversions)
     {

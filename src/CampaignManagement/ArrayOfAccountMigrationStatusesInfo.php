@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class ArrayOfAccountMigrationStatusesInfo implements \ArrayAccess, \Iterator, \Countable
 {
@@ -26,7 +26,7 @@ class ArrayOfAccountMigrationStatusesInfo implements \ArrayAccess, \Iterator, \C
 
     /**
      * @param AccountMigrationStatusesInfo[] $AccountMigrationStatusesInfo
-     * @return \PMG\BingAds\CampaignMangagement\ArrayOfAccountMigrationStatusesInfo
+     * @return \PMG\BingAds\CampaignManagement\ArrayOfAccountMigrationStatusesInfo
      */
     public function setAccountMigrationStatusesInfo(array $AccountMigrationStatusesInfo = null)
     {

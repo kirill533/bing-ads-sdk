@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class EditorialApiFaultDetail extends ApplicationFault
 {
@@ -36,7 +36,7 @@ class EditorialApiFaultDetail extends ApplicationFault
 
     /**
      * @param ArrayOfBatchError $BatchErrors
-     * @return \PMG\BingAds\CampaignMangagement\EditorialApiFaultDetail
+     * @return \PMG\BingAds\CampaignManagement\EditorialApiFaultDetail
      */
     public function setBatchErrors($BatchErrors)
     {
@@ -54,7 +54,7 @@ class EditorialApiFaultDetail extends ApplicationFault
 
     /**
      * @param ArrayOfEditorialError $EditorialErrors
-     * @return \PMG\BingAds\CampaignMangagement\EditorialApiFaultDetail
+     * @return \PMG\BingAds\CampaignManagement\EditorialApiFaultDetail
      */
     public function setEditorialErrors($EditorialErrors)
     {
@@ -72,7 +72,7 @@ class EditorialApiFaultDetail extends ApplicationFault
 
     /**
      * @param ArrayOfOperationError $OperationErrors
-     * @return \PMG\BingAds\CampaignMangagement\EditorialApiFaultDetail
+     * @return \PMG\BingAds\CampaignManagement\EditorialApiFaultDetail
      */
     public function setOperationErrors($OperationErrors)
     {

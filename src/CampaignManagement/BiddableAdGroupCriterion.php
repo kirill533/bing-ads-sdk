@@ -1,6 +1,6 @@
 <?php
 
-namespace PMG\BingAds\CampaignMangagement;
+namespace PMG\BingAds\CampaignManagement;
 
 class BiddableAdGroupCriterion extends AdGroupCriterion
 {
@@ -61,7 +61,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
 
     /**
      * @param CriterionBid $CriterionBid
-     * @return \PMG\BingAds\CampaignMangagement\BiddableAdGroupCriterion
+     * @return \PMG\BingAds\CampaignManagement\BiddableAdGroupCriterion
      */
     public function setCriterionBid($CriterionBid)
     {
@@ -79,7 +79,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
 
     /**
      * @param string $DestinationUrl
-     * @return \PMG\BingAds\CampaignMangagement\BiddableAdGroupCriterion
+     * @return \PMG\BingAds\CampaignManagement\BiddableAdGroupCriterion
      */
     public function setDestinationUrl($DestinationUrl)
     {
@@ -97,7 +97,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
 
     /**
      * @param AdGroupCriterionEditorialStatus $EditorialStatus
-     * @return \PMG\BingAds\CampaignMangagement\BiddableAdGroupCriterion
+     * @return \PMG\BingAds\CampaignManagement\BiddableAdGroupCriterion
      */
     public function setEditorialStatus($EditorialStatus)
     {
@@ -115,7 +115,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
 
     /**
      * @param ArrayOfAppUrl $FinalAppUrls
-     * @return \PMG\BingAds\CampaignMangagement\BiddableAdGroupCriterion
+     * @return \PMG\BingAds\CampaignManagement\BiddableAdGroupCriterion
      */
     public function setFinalAppUrls($FinalAppUrls)
     {
@@ -133,7 +133,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
 
     /**
      * @param ArrayOfstring $FinalMobileUrls
-     * @return \PMG\BingAds\CampaignMangagement\BiddableAdGroupCriterion
+     * @return \PMG\BingAds\CampaignManagement\BiddableAdGroupCriterion
      */
     public function setFinalMobileUrls($FinalMobileUrls)
     {
@@ -151,7 +151,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
 
     /**
      * @param ArrayOfstring $FinalUrls
-     * @return \PMG\BingAds\CampaignMangagement\BiddableAdGroupCriterion
+     * @return \PMG\BingAds\CampaignManagement\BiddableAdGroupCriterion
      */
     public function setFinalUrls($FinalUrls)
     {
@@ -169,7 +169,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
 
     /**
      * @param string $TrackingUrlTemplate
-     * @return \PMG\BingAds\CampaignMangagement\BiddableAdGroupCriterion
+     * @return \PMG\BingAds\CampaignManagement\BiddableAdGroupCriterion
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
@@ -187,7 +187,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
 
     /**
      * @param CustomParameters $UrlCustomParameters
-     * @return \PMG\BingAds\CampaignMangagement\BiddableAdGroupCriterion
+     * @return \PMG\BingAds\CampaignManagement\BiddableAdGroupCriterion
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {

@@ -17,6 +17,11 @@ interface BingService
     public function setRequestHeaders(RequestHeaders $headers) : void;
 
     /**
+     * Set the fault parser implementation
+     */
+    public function setFaultParser(FaultParser $faults) : void;
+
+    /**
      * Set the session being used by the client
      */
     public function setSession(BingSession $session) : void;

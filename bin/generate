@@ -23,14 +23,14 @@ $defaultConfig = [
 $configs = [
     new Config(array_replace($defaultConfig, [
         'inputFile' => sprintf('https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v%s/AdInsightService.svc?singleWsdl', $version),
-        'endpoint' => sprintf('https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v%s/AdInsightService.svc', $version),
+        'sandboxWsdl' => sprintf('https://adinsight.api.sandbox.bingads.microsoft.com/Api/Advertiser/AdInsight/v%s/AdInsightService.svc?singleWsdl', $version),
         'wsdlNamespace' => sprintf('Microsoft.Advertiser.AdInsight.Api.Service.V%s', $version),
         'outputDir' => __DIR__.'/../src/AdInsight',
         'namespaceName' => NS.'AdInsight',
     ])),
     new Config(array_replace($defaultConfig, [
         'inputFile' => sprintf('https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v%s/CampaignManagementService.svc?singleWsdl', $version),
-        'endpoint' => sprintf('https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v%s/CampaignManagementService.svc', $version),
+        'sandboxWsdl' => sprintf('https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v%s/CampaignManagementService.svc?singleWsdl', $version),
         'wsdlNamespace' => sprintf('https://bingads.microsoft.com/CampaignManagement/v%s', $version),
         'outputDir' => __DIR__.'/../src/CampaignManagement',
         'namespaceName' => NS.'CampaignMangagement',

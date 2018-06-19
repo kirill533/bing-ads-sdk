@@ -15,10 +15,10 @@ class Config extends WsdlConfig
     {
         parent::configureOptions($resolver);
         $resolver->setRequired([
-            'endpoint',
             'wsdlNamespace',
+            'sandboxWsdl',
         ]);
-        $resolver->setAllowedTypes('endpoint', 'string');
+        $resolver->setAllowedTypes('sandboxWsdl', 'string');
         $resolver->setAllowedTypes('wsdlNamespace', 'string');
     }
 }

@@ -159,7 +159,8 @@ class BingService extends Service
        $this->class = new PhpClass($name, false, '\\'.BingSoapClient::class, $comment);
 
        $this->class->addConstant($this->config->get('wsdlNamespace'), 'WSDL_NAMESPACE');
-       $this->class->addConstant($this->config->get('inputFile'), 'WSDL');
+       $this->class->addConstant($this->config->get('inputFile'), 'WSDL_PROD');
+       $this->class->addConstant($this->config->get('sandboxWsdl'), 'WSDL_SANDBOX');
 
        // Create the constructor
        $comment = new PhpDocComment();
@@ -167,9 +168,9 @@ class BingService extends Service
        $comment->addParam(PhpDocElementFactory::getParam('string', 'wsdl', 'The wsdl file to use'));
 
        $source = '$options["classmap"] = array_replace(self::$classmap, isset($options["classmap"]) ? $options["classmap"] : []);'.PHP_EOL
-           .'parent::__construct($wsdl ?: self::WSDL, $options);'.PHP_EOL;
+           .'parent::__construct($wsdl, $options);'.PHP_EOL;
 
-       $function = new PhpFunction('public', '__construct', 'array $options=array(), $wsdl=null', $source, $comment);
+       $function = new PhpFunction('public', '__construct', 'string $wsdl, array $options=array()', $source, $comment);
 
        // Add the constructor
        $this->class->addFunction($function);

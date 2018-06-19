@@ -5,7 +5,8 @@ namespace PMG\BingAds\CampaignMangagement;
 class CampaignManagementService extends \PMG\BingAds\BingSoapClient
 {
     const WSDL_NAMESPACE = 'https://bingads.microsoft.com/CampaignManagement/v12';
-    const WSDL = 'https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc?singleWsdl';
+    const WSDL_PROD = 'https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc?singleWsdl';
+    const WSDL_SANDBOX = 'https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc?singleWsdl';
 
 
     /**
@@ -420,10 +421,10 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
      * @param array $options A array of config values
      * @param string $wsdl The wsdl file to use
      */
-    public function __construct(array $options=array(), $wsdl=null)
+    public function __construct(string $wsdl, array $options=array())
     {
     $options["classmap"] = array_replace(self::$classmap, isset($options["classmap"]) ? $options["classmap"] : []);
-    parent::__construct($wsdl ?: self::WSDL, $options);
+    parent::__construct($wsdl, $options);
     }
 
     /**

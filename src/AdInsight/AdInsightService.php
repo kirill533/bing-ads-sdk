@@ -5,7 +5,8 @@ namespace PMG\BingAds\AdInsight;
 class AdInsightService extends \PMG\BingAds\BingSoapClient
 {
     const WSDL_NAMESPACE = 'Microsoft.Advertiser.AdInsight.Api.Service.V12';
-    const WSDL = 'https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc?singleWsdl';
+    const WSDL_PROD = 'https://adinsight.api.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc?singleWsdl';
+    const WSDL_SANDBOX = 'https://adinsight.api.sandbox.bingads.microsoft.com/Api/Advertiser/AdInsight/v12/AdInsightService.svc?singleWsdl';
 
 
     /**
@@ -193,10 +194,10 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      * @param array $options A array of config values
      * @param string $wsdl The wsdl file to use
      */
-    public function __construct(array $options=array(), $wsdl=null)
+    public function __construct(string $wsdl, array $options=array())
     {
     $options["classmap"] = array_replace(self::$classmap, isset($options["classmap"]) ? $options["classmap"] : []);
-    parent::__construct($wsdl ?: self::WSDL, $options);
+    parent::__construct($wsdl, $options);
     }
 
     /**

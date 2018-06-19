@@ -2,6 +2,9 @@
 
 namespace PMG\BingAds;
 
+use PMG\BingAds\Exception\InvalidService;
+use PMG\BingAds\Exception\ServiceClassDoesNotExist;
+
 final class ServiceDescriptor
 {
     const NS_CONST = 'WSDL_NAMESPACE';
@@ -14,25 +17,25 @@ final class ServiceDescriptor
     public function __construct(\ReflectionClass $service)
     {
         if (!$service->implementsInterface(BingService::class)) {
-            throw Exception\InvalidService::notAService($service->getName());
+            throw InvalidService::notAService($service->getName());
         }
         if (!$service->getConstant(self::NS_CONST)) {
-            throw Exception\InvalidService::noXmlNamespace($service->getName());
+            throw InvalidService::noXmlNamespace($service->getName());
         }
 
         $this->service = $service;
     }
 
-    private static function fromClassName(string $fqcn) : self
+    public static function fromClassName(string $fqcn) : self
     {
         try {
             return new self(new \ReflectionClass($fqcn));
-        } catch (\Exception $e) {
-            throw Exception\ServiceClassDoesNotExist::wrap($e);
+        } catch (\ReflectionException $e) {
+            throw ServiceClassDoesNotExist::wrap($e);
         }
     }
 
-    public function getWsdlNamespace() : string
+    public function getSoapHeaderNamespace() : string
     {
         return (string) $this->service->getConstant(self::NS_CONST);
     }

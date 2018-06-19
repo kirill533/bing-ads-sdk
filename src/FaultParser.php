@@ -18,7 +18,7 @@ class FaultParser
 {
     public function toException(\SoapFault $fault, array $classmap) : ?ApiException
     {
-        if (!isset($fault->detail) || !$fault->detail) {
+        if (empty($fault->detail)) {
             return null;
         }
 
@@ -32,11 +32,44 @@ class FaultParser
             '%s: %s',
             $fault->faultcode,
             $fault->getMessage()
-        ));
-
-        // todo populate stuffz
+        ), $fault->getCode(), $fault);
+        $exception->setTrackingId($values->TrackingId); // every fault has one of these
+        $this->setErrors($exception, $values, $classmap);
 
         return $exception;
+    }
+
+    private function setErrors(ApiException $exception, object $values, array $classmap) : void
+    {
+        foreach (get_object_vars($values) as $key => $value) {
+            if ('Errors' !== substr($key, -6)) {
+                continue;
+            }
+
+            $errors = $this->parseErrors($value, $classmap);
+            print_r($errors);
+            call_user_func([$exception, "set{$key}"], $errors);
+        }
+    }
+
+    private function parseErrors($errors, array $classmap) : array
+    {
+        if (!is_array($errors)) {
+            $errors = [$errors];
+        }
+
+        $out = [];
+        foreach ($errors as $error) {
+            [$type, $values] = $this->extractTypeAndValue($error);
+            $cls = $classmap[$type] ?? GenericErrorObject::class;
+            $errobj = new $cls();
+            foreach (get_object_vars($values) as $key => $value) {
+                call_user_func([$errobj, "set{$key}"], $value);
+            }
+            $out[] = $errobj;
+        }
+
+        return $out;
     }
 
     /**

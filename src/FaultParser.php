@@ -47,7 +47,6 @@ class FaultParser
             }
 
             $errors = $this->parseErrors($value, $classmap);
-            print_r($errors);
             call_user_func([$exception, "set{$key}"], $errors);
         }
     }

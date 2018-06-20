@@ -136,4 +136,12 @@ final class MicrosoftProvider extends AbstractProvider
     {
         return new MicrosoftAccessToken($response, $this->tokenExpiresThreshold);
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function getAccessTokenResourceOwnerId() : string
+    {
+        return 'user_id';
+    }
 }

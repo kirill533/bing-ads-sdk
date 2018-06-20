@@ -31,9 +31,7 @@ class PsrMessageConverter
             return null;
         }
 
-        $req->withUri($req->getUri()->withScheme($scheme));
-
-        return $req;
+        return $req->withUri($req->getUri()->withScheme($scheme));
     }
 
     public function createResponse(?string $headers, ?string $body) : ?ResponseInterface
@@ -51,7 +49,14 @@ class PsrMessageConverter
 
     private function scrubRequestHeaders(string $body)
     {
-        // todo
+        foreach (['AuthenticationToken', 'DeveloperToken'] as $tag) {
+            $body = preg_replace(
+                sprintf(self::HEADER_REGEX_FORMAT, $tag),
+                sprintf('\\1%s\\2', self::REDACTED),
+                $body
+            );
+        }
+
         return $body;
     }
 }

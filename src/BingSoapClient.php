@@ -91,6 +91,14 @@ class BingSoapClient extends \SoapClient implements BingService
     /**
      * {@inheritdoc}
      */
+    public function setMessageConverter(PsrMessageConverter $converter) : void
+    {
+        $this->messageConverter = $converter;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function setSession(BingSession $session) : void
     {
         $this->session = $session;
@@ -122,7 +130,7 @@ class BingSoapClient extends \SoapClient implements BingService
         return $this->faults;
     }
 
-    protected function getMessageConverter() :  PsrMessageConverter
+    protected function getMessageConverter() : PsrMessageConverter
     {
         if (!$this->messageConverter) {
             $this->messageConverter = new PsrMessageConverter();

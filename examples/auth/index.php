@@ -14,7 +14,7 @@ $provider = MicrosoftProvider::production([
 ]);
 
 if (!isset($_GET['code'])) {
-    $redir = $provider->getAuthorizationUrl();
+    $redir = $provider->getAuthorizationUrl(['prompt' => 'login']);
     $_SESSION[STATEKEY] = $provider->getState();
     header('Location: '.$redir, true, 303);
     die;
@@ -26,13 +26,12 @@ if (!isset($_GET['code'])) {
     $token = $provider->getAccessToken('authorization_code', [
         'code' => $_GET['code'],
     ]);
-    $owner = $provider->getResourceOwner($token);
+    //$owner = $provider->getResourceOwner($token);
 
     header('HTTP/1.1 200 OK', true, 200);
 
     echo '<pre>';
     print_r($token);
-    print_r($owner->toArray());
     echo '</pre>';
 
     echo '<h1>', htmlentities((string) $owner), '</h1>';

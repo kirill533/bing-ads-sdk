@@ -24,7 +24,7 @@ final class MicrosoftProvider extends AbstractProvider
     /**
      * @var string[]
      */
-    public $defaultScopes = ['wl.basic', 'wl.emails', 'bingads.manage'];
+    public $defaultScopes = ['bingads.manage'];
 
     /**
      * @var string

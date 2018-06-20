@@ -15,8 +15,31 @@ class RequestHeadersTest extends TestCase
         $headers = $this->headers->soapHeadersFor($this->service, $this->session);
 
         $this->assertEquals([
+            new \SoapHeader(ValidService::WSDL_NAMESPACE, 'DeveloperToken', 'devtoken'),
+            new \SoapHeader(ValidService::WSDL_NAMESPACE, 'AuthenticationToken', 'shhh'),
             new \SoapHeader(ValidService::WSDL_NAMESPACE, 'CustomerAccountId', 'accountid'),
             new \SoapHeader(ValidService::WSDL_NAMESPACE, 'CustomerId', 'customerid'),
+        ], $headers);
+    }
+
+    public function testSoapHeadersForDoesNotIncludeCustomerOrAccountIdIfTheyAreEmpty()
+    {
+        $s = new BingSession(
+            $this->createMock(OAuth2Provider::class),
+            'refreshtoken',
+            'devtoken',
+            null,
+            null,
+            Environments::SANDBOX,
+            new AccessToken([
+                'access_token' => 'shhh',
+                'expires' => time() + 100000,
+            ])
+        );
+
+        $headers = $this->headers->soapHeadersFor($this->service, $s);
+
+        $this->assertEquals([
             new \SoapHeader(ValidService::WSDL_NAMESPACE, 'DeveloperToken', 'devtoken'),
             new \SoapHeader(ValidService::WSDL_NAMESPACE, 'AuthenticationToken', 'shhh'),
         ], $headers);

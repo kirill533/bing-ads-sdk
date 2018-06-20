@@ -14,11 +14,19 @@ class RequestHeaders
     public function soapHeadersFor(ServiceDescriptor $service, BingSession $session) : array
     {
         $ns = $service->getSoapHeaderNamespace();
-        return [
-            new \SoapHeader($ns, 'CustomerAccountId', $session->getAccountId()),
-            new \SoapHeader($ns, 'CustomerId', $session->getCustomerId()),
+        $headers = [
             new \SoapHeader($ns, 'DeveloperToken', $session->getDeveloperToken()),
             new \SoapHeader($ns, 'AuthenticationToken', (string) $session->getOrRefreshAccessToken()),
         ];
+
+        if ($aid = $session->getAccountId()) {
+            $headers[] = new \SoapHeader($ns, 'CustomerAccountId', $session->getAccountId());
+        }
+
+        if ($cid = $session->getCustomerId()) {
+            $headers[] = new \SoapHeader($ns, 'CustomerId', $session->getCustomerId());
+        }
+
+        return $headers;
     }
 }

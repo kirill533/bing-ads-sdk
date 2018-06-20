@@ -1,8 +1,18 @@
 {
     "name": "pmg/bing-ads-sdk",
-    "description": "A more sane Bing ads SDK",
+    "description": "An alternate Bing Ads SDK",
     "keywords": ["bing"],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Christopher Davis",
+            "homepage": "https://chrisguitarguy.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/AgencyPMG/bing-ads-php/issues"
+    },
     "require": {
         "php": "~7.2",
         "ext-soap": "*",

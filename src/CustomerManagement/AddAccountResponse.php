@@ -1,0 +1,97 @@
+<?php
+
+namespace PMG\BingAds\CustomerManagement;
+
+class AddAccountResponse
+{
+
+    /**
+     * @var int $AccountId
+     */
+    protected $AccountId = null;
+
+    /**
+     * @var string $AccountNumber
+     */
+    protected $AccountNumber = null;
+
+    /**
+     * @var \DateTime $CreateTime
+     */
+    protected $CreateTime = null;
+
+    /**
+     * @param int $AccountId
+     * @param string $AccountNumber
+     * @param \DateTime $CreateTime
+     */
+    public function __construct($AccountId = null, $AccountNumber = null, \DateTime $CreateTime = null)
+    {
+      $this->AccountId = $AccountId;
+      $this->AccountNumber = $AccountNumber;
+      $this->CreateTime = $CreateTime ? $CreateTime->format(\DateTime::ATOM) : null;
+    }
+
+    /**
+     * @return int
+     */
+    public function getAccountId()
+    {
+      return $this->AccountId;
+    }
+
+    /**
+     * @param int $AccountId
+     * @return \PMG\BingAds\CustomerManagement\AddAccountResponse
+     */
+    public function setAccountId($AccountId)
+    {
+      $this->AccountId = $AccountId;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAccountNumber()
+    {
+      return $this->AccountNumber;
+    }
+
+    /**
+     * @param string $AccountNumber
+     * @return \PMG\BingAds\CustomerManagement\AddAccountResponse
+     */
+    public function setAccountNumber($AccountNumber)
+    {
+      $this->AccountNumber = $AccountNumber;
+      return $this;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getCreateTime()
+    {
+      if ($this->CreateTime == null) {
+        return null;
+      } else {
+        try {
+          return new \DateTime($this->CreateTime);
+        } catch (\Exception $e) {
+          return false;
+        }
+      }
+    }
+
+    /**
+     * @param \DateTime $CreateTime
+     * @return \PMG\BingAds\CustomerManagement\AddAccountResponse
+     */
+    public function setCreateTime(\DateTime $CreateTime)
+    {
+      $this->CreateTime = $CreateTime->format(\DateTime::ATOM);
+      return $this;
+    }
+
+}

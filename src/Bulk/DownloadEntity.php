@@ -1,0 +1,97 @@
+<?php
+
+namespace PMG\BingAds\Bulk;
+
+class DownloadEntity
+{
+    const __default = 'Campaigns';
+    const Campaigns = 'Campaigns';
+    const AdGroups = 'AdGroups';
+    const Ads = 'Ads';
+    const Keywords = 'Keywords';
+    const CampaignNegativeKeywords = 'CampaignNegativeKeywords';
+    const AdGroupNegativeKeywords = 'AdGroupNegativeKeywords';
+    const CampaignTargetCriterions = 'CampaignTargetCriterions';
+    const AdGroupTargetCriterions = 'AdGroupTargetCriterions';
+    const CampaignNegativeSites = 'CampaignNegativeSites';
+    const AdGroupNegativeSites = 'AdGroupNegativeSites';
+    const CampaignLocationAdExtensions = 'CampaignLocationAdExtensions';
+    const CampaignCallAdExtensions = 'CampaignCallAdExtensions';
+    const LocationAdExtensions = 'LocationAdExtensions';
+    const CallAdExtensions = 'CallAdExtensions';
+    const NegativeKeywordLists = 'NegativeKeywordLists';
+    const SharedNegativeKeywords = 'SharedNegativeKeywords';
+    const CampaignNegativeKeywordListAssociations = 'CampaignNegativeKeywordListAssociations';
+    const ImageAdExtensions = 'ImageAdExtensions';
+    const CampaignImageAdExtensions = 'CampaignImageAdExtensions';
+    const AdGroupImageAdExtensions = 'AdGroupImageAdExtensions';
+    const AppAdExtensions = 'AppAdExtensions';
+    const AdGroupAppAdExtensions = 'AdGroupAppAdExtensions';
+    const CampaignAppAdExtensions = 'CampaignAppAdExtensions';
+    const PriceAdExtensions = 'PriceAdExtensions';
+    const ReviewAdExtensions = 'ReviewAdExtensions';
+    const CampaignNegativeDynamicSearchAdTargets = 'CampaignNegativeDynamicSearchAdTargets';
+    const AdGroupProductPartitions = 'AdGroupProductPartitions';
+    const CampaignProductScopes = 'CampaignProductScopes';
+    const CampaignReviewAdExtensions = 'CampaignReviewAdExtensions';
+    const AdGroupReviewAdExtensions = 'AdGroupReviewAdExtensions';
+    const CalloutAdExtensions = 'CalloutAdExtensions';
+    const CampaignCalloutAdExtensions = 'CampaignCalloutAdExtensions';
+    const AdGroupCalloutAdExtensions = 'AdGroupCalloutAdExtensions';
+    const SitelinkAdExtensions = 'SitelinkAdExtensions';
+    const CampaignSitelinkAdExtensions = 'CampaignSitelinkAdExtensions';
+    const AdGroupSitelinkAdExtensions = 'AdGroupSitelinkAdExtensions';
+    const ActionLinkAdExtensions = 'ActionLinkAdExtensions';
+    const CampaignActionLinkAdExtensions = 'CampaignActionLinkAdExtensions';
+    const AdGroupActionLinkAdExtensions = 'AdGroupActionLinkAdExtensions';
+    const StructuredSnippetAdExtensions = 'StructuredSnippetAdExtensions';
+    const CampaignStructuredSnippetAdExtensions = 'CampaignStructuredSnippetAdExtensions';
+    const AdGroupStructuredSnippetAdExtensions = 'AdGroupStructuredSnippetAdExtensions';
+    const RemarketingLists = 'RemarketingLists';
+    const AdGroupRemarketingListAssociations = 'AdGroupRemarketingListAssociations';
+    const Budgets = 'Budgets';
+    const TextAds = 'TextAds';
+    const ProductAds = 'ProductAds';
+    const AppInstallAds = 'AppInstallAds';
+    const ExpandedTextAds = 'ExpandedTextAds';
+    const DynamicSearchAds = 'DynamicSearchAds';
+    const AdGroupDynamicSearchAdTargets = 'AdGroupDynamicSearchAdTargets';
+    const AdGroupNegativeDynamicSearchAdTargets = 'AdGroupNegativeDynamicSearchAdTargets';
+    const CampaignPriceAdExtensions = 'CampaignPriceAdExtensions';
+    const AdGroupPriceAdExtensions = 'AdGroupPriceAdExtensions';
+    const Labels = 'Labels';
+    const CampaignLabels = 'CampaignLabels';
+    const AdGroupLabels = 'AdGroupLabels';
+    const TextAdLabels = 'TextAdLabels';
+    const KeywordLabels = 'KeywordLabels';
+    const AdGroupNegativeRemarketingListAssociations = 'AdGroupNegativeRemarketingListAssociations';
+    const CustomAudiences = 'CustomAudiences';
+    const AdGroupCustomAudienceAssociations = 'AdGroupCustomAudienceAssociations';
+    const AdGroupNegativeCustomAudienceAssociations = 'AdGroupNegativeCustomAudienceAssociations';
+    const InMarketAudiences = 'InMarketAudiences';
+    const AdGroupInMarketAudienceAssociations = 'AdGroupInMarketAudienceAssociations';
+    const AdGroupNegativeInMarketAudienceAssociations = 'AdGroupNegativeInMarketAudienceAssociations';
+    const Audiences = 'Audiences';
+    const AdGroupAudienceAssociations = 'AdGroupAudienceAssociations';
+    const AdGroupNegativeAudienceAssociations = 'AdGroupNegativeAudienceAssociations';
+    const ProductAdLabels = 'ProductAdLabels';
+    const AppInstallAdLabels = 'AppInstallAdLabels';
+    const ExpandedTextAdLabels = 'ExpandedTextAdLabels';
+    const DynamicSearchAdLabels = 'DynamicSearchAdLabels';
+    const AccountLocationAdExtensions = 'AccountLocationAdExtensions';
+    const AccountImageAdExtensions = 'AccountImageAdExtensions';
+    const AccountAppAdExtensions = 'AccountAppAdExtensions';
+    const AccountPriceAdExtensions = 'AccountPriceAdExtensions';
+    const AccountReviewAdExtensions = 'AccountReviewAdExtensions';
+    const AccountCalloutAdExtensions = 'AccountCalloutAdExtensions';
+    const AccountSitelinkAdExtensions = 'AccountSitelinkAdExtensions';
+    const AccountActionLinkAdExtensions = 'AccountActionLinkAdExtensions';
+    const AccountStructuredSnippetAdExtensions = 'AccountStructuredSnippetAdExtensions';
+    const ResponsiveAds = 'ResponsiveAds';
+    const ResponsiveAdLabels = 'ResponsiveAdLabels';
+    const ProductAudiences = 'ProductAudiences';
+    const AdGroupProductAudienceAssociations = 'AdGroupProductAudienceAssociations';
+    const AdGroupNegativeProductAudienceAssociations = 'AdGroupNegativeProductAudienceAssociations';
+
+
+}

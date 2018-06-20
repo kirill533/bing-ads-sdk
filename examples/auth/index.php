@@ -26,13 +26,10 @@ if (!isset($_GET['code'])) {
     $token = $provider->getAccessToken('authorization_code', [
         'code' => $_GET['code'],
     ]);
-    //$owner = $provider->getResourceOwner($token);
 
     header('HTTP/1.1 200 OK', true, 200);
 
     echo '<pre>';
     print_r($token);
     echo '</pre>';
-
-    echo '<h1>', htmlentities((string) $owner), '</h1>';
 }

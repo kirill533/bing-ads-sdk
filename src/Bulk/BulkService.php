@@ -53,7 +53,7 @@ class BulkService extends \PMG\BingAds\BingSoapClient
      */
     public function __construct(\PMG\BingAds\BingSession $session, string $wsdl, array $options=array(), \PMG\BingAds\ServiceDescriptor $sd=null)
     {
-    $options["classmap"] = array_replace(self::$classmap, isset($options["classmap"]) ? $options["classmap"] : []);
+    $options["classmap"] = array_replace(self::$classmap, $options["classmap"] ?? []);
     parent::__construct($session, $wsdl, $options, $sd);
     }
 

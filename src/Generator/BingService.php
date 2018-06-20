@@ -169,7 +169,7 @@ class BingService extends Service
        $comment->addParam(PhpDocElementFactory::getParam(ServiceDescriptor::class, 'sd', 'The services descriptor for the service'));
 
        $source = [
-           '$options["classmap"] = array_replace(self::$classmap, isset($options["classmap"]) ? $options["classmap"] : []);',
+           '$options["classmap"] = array_replace(self::$classmap, $options["classmap"] ?? []);',
            'parent::__construct($session, $wsdl, $options, $sd);'
        ];
 

@@ -3,6 +3,7 @@
 namespace PMG\BingAds;
 
 use PMG\BingAds\Exception\ApiException;
+use PMG\BingAds\Exception\SoapFault;
 
 /**
  * Transforms `SoapFaults` into `ApiException` instances if it can.
@@ -16,15 +17,15 @@ use PMG\BingAds\Exception\ApiException;
  */
 class FaultParser
 {
-    public function toException(\SoapFault $fault, array $classmap) : ?ApiException
+    public function toException(\SoapFault $fault, array $classmap) : ApiException
     {
         if (empty($fault->detail)) {
-            return null;
+            return SoapFault::wrap($fault);
         }
 
         [$type, $values] = $this->extractTypeAndValue($fault->detail);
         if (!isset($classmap[$type]) || !is_subclass_of($classmap[$type], ApiException::class)) {
-            return null; // not identified in our class map
+            return SoapFault::wrap($fault);
         }
 
         $class = $classmap[$type];
@@ -33,7 +34,9 @@ class FaultParser
             $fault->faultcode,
             $fault->getMessage()
         ), $fault->getCode(), $fault);
-        $exception->setTrackingId($values->TrackingId); // every fault has one of these
+        if (isset($values->TrackingId)) {
+            $exception->setTrackingId($values->TrackingId); // every fault has one of these
+        }
         $this->setErrors($exception, $values, $classmap);
 
         return $exception;

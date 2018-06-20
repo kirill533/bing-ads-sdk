@@ -8,6 +8,11 @@ class GenericErrorObject
 {
     private $props = [];
 
+    public function __construct(array $props=[])
+    {
+        $this->props = array_change_key_case($props, CASE_LOWER);
+    }
+
     public function __call($method, $args)
     {
         $type = strtolower(substr($method, 0, 3));

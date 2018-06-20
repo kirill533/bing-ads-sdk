@@ -4,6 +4,7 @@ namespace PMG\BingAds;
 
 use PMG\BingAds\Exception\ApiException;
 use PMG\BingAds\Exception\LogicException;
+use PMG\BingAds\Exception\SoapFault;
 
 class BingSoapClient extends \SoapClient implements BingService
 {
@@ -66,22 +67,9 @@ class BingSoapClient extends \SoapClient implements BingService
             ), $outputHeaders);
         } catch (\SoapFault $fault) {
             $exception = $this->getFaultParser()->toException($fault, $this->classmap);
-            if (null !== $exception) {
-                $this->maybePopulateRequestResponse($exception);
-                throw $exception;
-            }
-            throw $fault;
+            $this->maybePopulateRequestResponse($exception);
+            throw $exception;
         }
-    }
-
-    public function __doRequest($request, $location, $action, $version, $oneWay=0)
-    {
-        $resp = parent::__doRequest($request, $location, $action, $version, $oneWay);
-        $this->__last_request = $request;
-
-        print_r($request);
-
-        return $resp;
     }
 
     /**

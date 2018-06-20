@@ -39,8 +39,7 @@ class BingServices
         $sd = ServiceDescriptor::fromClassName($service);
         $cls = $sd->getClassName();
 
-        $service = new $cls($sd->wsdlFor($session->getEnvironment()), $soapOptions, $sd);
-        $service->setSession($session);
+        $service = new $cls($session, $sd->wsdlFor($session->getEnvironment()), $soapOptions, $sd);
         $service->setRequestHeaders($this->headers);
         $service->setFaultParser($this->faults);
         $service->setMessageConverter($this->messageConverter);

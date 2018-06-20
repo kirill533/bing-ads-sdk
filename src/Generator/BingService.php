@@ -14,6 +14,7 @@ use Wsdl2PhpGenerator\PhpSource\PhpDocComment;
 use Wsdl2PhpGenerator\PhpSource\PhpDocElementFactory;
 use Wsdl2PhpGenerator\PhpSource\PhpFunction;
 use Wsdl2PhpGenerator\PhpSource\PhpVariable;
+use PMG\BingAds\BingSession;
 use PMG\BingAds\BingSoapClient;
 use PMG\BingAds\ServiceDescriptor;
 
@@ -162,19 +163,21 @@ class BingService extends Service
 
        // Create the constructor
        $comment = new PhpDocComment();
+       $comment->addParam(PhpDocElementFactory::getParam(BingSession::class, 'session', 'A session object with credentials, etc'));
        $comment->addParam(PhpDocElementFactory::getParam('array', 'options', 'A array of config values'));
        $comment->addParam(PhpDocElementFactory::getParam('string', 'wsdl', 'The wsdl file to use'));
+       $comment->addParam(PhpDocElementFactory::getParam(ServiceDescriptor::class, 'sd', 'The services descriptor for the service'));
 
-       $source = '$options["classmap"] = array_replace(self::$classmap, isset($options["classmap"]) ? $options["classmap"] : []);'.PHP_EOL
-           .'parent::__construct($wsdl, $options, $sd);'.PHP_EOL;
+       $source = [
+           '$options["classmap"] = array_replace(self::$classmap, isset($options["classmap"]) ? $options["classmap"] : []);',
+           'parent::__construct($session, $wsdl, $options, $sd);'
+       ];
 
-       $function = new PhpFunction(
-           'public',
-           '__construct',
-           sprintf('string $wsdl, array $options=array(), \\%s $sd=null', ServiceDescriptor::class),
-           $source,
-           $comment
-       );
+       $function = new PhpFunction('public', '__construct', sprintf(
+           '\\%s $session, string $wsdl, array $options=array(), \\%s $sd=null',
+           BingSession::class,
+           ServiceDescriptor::class
+       ), implode(PHP_EOL, $source), $comment);
 
        // Add the constructor
        $this->class->addFunction($function);

@@ -191,13 +191,15 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
     );
 
     /**
+     * @param PMG\BingAds\BingSession $session A session object with credentials, etc
      * @param array $options A array of config values
      * @param string $wsdl The wsdl file to use
+     * @param PMG\BingAds\ServiceDescriptor $sd The services descriptor for the service
      */
-    public function __construct(string $wsdl, array $options=array(), \PMG\BingAds\ServiceDescriptor $sd=null)
+    public function __construct(\PMG\BingAds\BingSession $session, string $wsdl, array $options=array(), \PMG\BingAds\ServiceDescriptor $sd=null)
     {
     $options["classmap"] = array_replace(self::$classmap, isset($options["classmap"]) ? $options["classmap"] : []);
-    parent::__construct($wsdl, $options, $sd);
+    parent::__construct($session, $wsdl, $options, $sd);
     }
 
     /**

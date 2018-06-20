@@ -3,8 +3,6 @@
 namespace PMG\BingAds;
 
 use PMG\BingAds\Exception\ApiException;
-use PMG\BingAds\Exception\LogicException;
-use PMG\BingAds\Exception\SoapFault;
 
 class BingSoapClient extends \SoapClient implements BingService
 {
@@ -24,14 +22,14 @@ class BingSoapClient extends \SoapClient implements BingService
     private $wsdlScheme;
 
     /**
-     * @var RequestHeaders
-     */
-    private $headers;
-
-    /**
      * @var BingSession
      */
     private $session;
+
+    /**
+     * @var RequestHeaders
+     */
+    private $headers;
 
     /**
      * @var FaultParser
@@ -48,13 +46,14 @@ class BingSoapClient extends \SoapClient implements BingService
      */
     private $serviceDescriptor;
 
-    public function __construct(string $wsdl, array $options=[], ServiceDescriptor $sd=null)
+    public function __construct(BingSession $session, string $wsdl, array $options=[], ServiceDescriptor $sd=null)
     {
         $options['exceptions'] = true;
         parent::__construct($wsdl, $options);
         $this->classmap = $options['classmap'] ?? [];
         $this->trace = filter_var($options['trace'] ?? false, FILTER_VALIDATE_BOOLEAN);
         $this->wsdlScheme = parse_url($wsdl, PHP_URL_SCHEME);
+        $this->session = $session;
         $this->serviceDescriptor = $sd ?? new ServiceDescriptor(new \ReflectionClass($this));
     }
 
@@ -96,14 +95,6 @@ class BingSoapClient extends \SoapClient implements BingService
         $this->messageConverter = $converter;
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function setSession(BingSession $session) : void
-    {
-        $this->session = $session;
-    }
-
     protected function createSoapHeaders() : array
     {
         return $this->getRequestHeaders()->soapHeadersFor(
@@ -141,14 +132,6 @@ class BingSoapClient extends \SoapClient implements BingService
 
     protected function getSession() : BingSession
     {
-        if (!$this->session) {
-            throw new LogicException(sprintf(
-                '%1$s does not have a BingSession set, call %1$s::setSession or use %2$s to create service objects',
-                get_class($this),
-                BingServices::class
-            ));
-        }
-
         return $this->session;
     }
 

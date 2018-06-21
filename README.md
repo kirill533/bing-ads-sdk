@@ -101,7 +101,7 @@ try {
 
 ## Authentication
 
-See [examples/auth](`example/auth`) for an example.
+See [examples/auth](examples/auth) for an example.
 
 Instantiate a `PMG\BingAds\Auth\MicrosoftProvider` and use it like any other
 [`oauth2-client` provider](http://oauth2-client.thephpleague.com/usage/).

@@ -2,9 +2,7 @@
 
 namespace PMG\BingAds\Fixtures;
 
-use PMG\BingAds\BingService;
-
-class ServiceWithoutNamespaceConstant implements BingService
+class ServiceWithoutNamespaceConstant extends AbstractService
 {
-    use \PMG\BingAds\BingServiceDependencies;
+    // noop
 }

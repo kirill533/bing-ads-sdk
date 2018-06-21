@@ -2,6 +2,8 @@
 
 namespace PMG\BingAds;
 
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 use PMG\BingAds\Exception\ApiException;
 
 class BingSoapClient extends \SoapClient implements BingService
@@ -53,9 +55,33 @@ class BingSoapClient extends \SoapClient implements BingService
             ), $outputHeaders);
         } catch (\SoapFault $fault) {
             $exception = $this->getFaultParser()->toException($fault, $this->classmap);
-            $this->maybePopulateRequestResponse($exception);
+            $exception->setRequest($this->lastRequest());
+            $exception->setResponse($this->lastResponse());
             throw $exception;
         }
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function lastRequest() : ?RequestInterface
+    {
+        return $this->getMessageConverter()->createRequest(
+            $this->__getLastRequestHeaders(),
+            $this->__getLastRequest(),
+            $this->wsdlScheme // guess that the scheme for requests is the same as the WSDL
+        );
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function lastResponse() : ?ResponseInterface
+    {
+        return $this->getMessageConverter()->createResponse(
+            $this->__getLastResponseHeaders(),
+            $this->__getLastResponse()
+        );
     }
 
     protected function createSoapHeaders() : array
@@ -74,25 +100,5 @@ class BingSoapClient extends \SoapClient implements BingService
     protected function getServiceDescriptor() : ServiceDescriptor
     {
         return $this->serviceDescriptor;
-    }
-
-    protected function maybePopulateRequestResponse(ApiException $ex) : void
-    {
-        if (!$this->trace) {
-            return;
-        }
-
-        $request = $this->getMessageConverter()->createRequest(
-            $this->__getLastRequestHeaders(),
-            $this->__getLastRequest(),
-            $this->wsdlScheme // guess that the scheme for requests is the same as the WSDL
-        );
-        $response = $this->getMessageConverter()->createResponse(
-            $this->__getLastResponseHeaders(),
-            $this->__getLastResponse()
-        );
-
-        $ex->setRequest($request);
-        $ex->setResponse($response);
     }
 }

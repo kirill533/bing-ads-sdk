@@ -2,13 +2,8 @@
 
 namespace PMG\BingAds\Fixtures;
 
-use PMG\BingAds\BingService;
-use PMG\BingAds\RequestHeaders;
-
-class ValidService implements BingService
+class ValidService extends AbstractService
 {
-    use \PMG\BingAds\BingServiceDependencies;
-
     const WSDL_NAMESPACE = 'testme';
     const WSDL_PROD = 'http://www.example.com/soap.wsdl';
     const WSDL_SANDBOX = 'http://www.example.com/soap.wsdl';

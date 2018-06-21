@@ -6,6 +6,8 @@ use PMG\BingAds\Exception\ApiException;
 
 class BingSoapClient extends \SoapClient implements BingService
 {
+    use BingServiceDependencies;
+
     /**
      * @var array
      */
@@ -25,21 +27,6 @@ class BingSoapClient extends \SoapClient implements BingService
      * @var BingSession
      */
     private $session;
-
-    /**
-     * @var RequestHeaders
-     */
-    private $headers;
-
-    /**
-     * @var FaultParser
-     */
-    private $faults;
-
-    /**
-     * @var PsrMessageConverter
-     */
-    private $messageConverter;
 
     /**
      * @var ServiceDescriptor
@@ -71,63 +58,12 @@ class BingSoapClient extends \SoapClient implements BingService
         }
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function setRequestHeaders(RequestHeaders $headers) : void
-    {
-        $this->headers = $headers;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function setFaultParser(FaultParser $faults) : void
-    {
-        $this->faults = $faults;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function setMessageConverter(PsrMessageConverter $converter) : void
-    {
-        $this->messageConverter = $converter;
-    }
-
     protected function createSoapHeaders() : array
     {
         return $this->getRequestHeaders()->soapHeadersFor(
             $this->getServiceDescriptor(),
             $this->getSession()
         );
-    }
-
-    protected function getRequestHeaders() : RequestHeaders
-    {
-        if (!$this->headers) {
-            $this->headers = new RequestHeaders();
-        }
-                
-        return $this->headers;
-    }
-
-    protected function getFaultParser() : FaultParser
-    {
-        if (!$this->faults) {
-            $this->faults = new FaultParser();
-        }
-
-        return $this->faults;
-    }
-
-    protected function getMessageConverter() : PsrMessageConverter
-    {
-        if (!$this->messageConverter) {
-            $this->messageConverter = new PsrMessageConverter();
-        }
-
-        return $this->messageConverter;
     }
 
     protected function getSession() : BingSession

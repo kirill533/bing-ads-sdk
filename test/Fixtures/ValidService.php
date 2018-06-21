@@ -7,10 +7,7 @@ use PMG\BingAds\RequestHeaders;
 
 class ValidService implements BingService
 {
-    use ConverterMethod;
-    use FaultsMethod;
-    use RequestHeadersMethod;
-    use SessionMethod;
+    use \PMG\BingAds\BingServiceDependencies;
 
     const WSDL_NAMESPACE = 'testme';
     const WSDL_PROD = 'http://www.example.com/soap.wsdl';

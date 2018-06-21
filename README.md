@@ -99,6 +99,31 @@ try {
 }
 ```
 
+Alternatively, each service provides a `lastRequest` and `lastResponse` method
+to view the HTTP requests/responses.
+
+```php
+use PMG\BingAds\BingSession;
+use PMG\BingAds\BingServices;
+use PMG\BingAds\CustomerManagement as cm;
+
+$session = BingSession::builder()
+    /* build a session as above */
+    ->build()
+    ;
+
+$services = new BingServices();
+
+$service = $services->create(cm\CustomerManagementService::class, $session, [
+    'trace' => true,
+]);
+
+$response = $service->getCustomersInfo(new cm\GetCustomersInfoRequest('a', 10));
+
+print_r($service->lastRequest());
+print_r($service->lastResponse());
+```
+
 ## Authentication
 
 See [examples/auth](examples/auth) for an example.

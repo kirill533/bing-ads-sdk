@@ -2,6 +2,9 @@
 
 namespace PMG\BingAds;
 
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
+
 /**
  * Header interface for the bing services.
  *
@@ -11,6 +14,22 @@ namespace PMG\BingAds;
  */
 interface BingService
 {
+    /**
+     * Get the last request.
+     *
+     * @return RequestInterface|null Will be null if the client is created without
+     *         the `trace` option set to true
+     */
+    public function lastRequest() : ?RequestInterface;
+
+    /**
+     * Get the last response
+     *
+     * @return ResponseInterface|null Will be null if the client is created without
+     *         the `trace` option set to true
+     */
+    public function lastResponse() : ?ResponseInterface;
+
     /**
      * Set the request headers implementation for the client.
      */

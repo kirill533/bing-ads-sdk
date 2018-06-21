@@ -2,10 +2,14 @@
 
 namespace PMG\BingAds;
 
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 use PMG\BingAds\Exception\ApiException;
 
 class BingSoapClient extends \SoapClient implements BingService
 {
+    use BingServiceDependencies;
+
     /**
      * @var array
      */
@@ -25,21 +29,6 @@ class BingSoapClient extends \SoapClient implements BingService
      * @var BingSession
      */
     private $session;
-
-    /**
-     * @var RequestHeaders
-     */
-    private $headers;
-
-    /**
-     * @var FaultParser
-     */
-    private $faults;
-
-    /**
-     * @var PsrMessageConverter
-     */
-    private $messageConverter;
 
     /**
      * @var ServiceDescriptor
@@ -66,7 +55,8 @@ class BingSoapClient extends \SoapClient implements BingService
             ), $outputHeaders);
         } catch (\SoapFault $fault) {
             $exception = $this->getFaultParser()->toException($fault, $this->classmap);
-            $this->maybePopulateRequestResponse($exception);
+            $exception->setRequest($this->lastRequest());
+            $exception->setResponse($this->lastResponse());
             throw $exception;
         }
     }
@@ -74,25 +64,24 @@ class BingSoapClient extends \SoapClient implements BingService
     /**
      * {@inheritdoc}
      */
-    public function setRequestHeaders(RequestHeaders $headers) : void
+    public function lastRequest() : ?RequestInterface
     {
-        $this->headers = $headers;
+        return $this->getMessageConverter()->createRequest(
+            $this->__getLastRequestHeaders(),
+            $this->__getLastRequest(),
+            $this->wsdlScheme // guess that the scheme for requests is the same as the WSDL
+        );
     }
 
     /**
      * {@inheritdoc}
      */
-    public function setFaultParser(FaultParser $faults) : void
+    public function lastResponse() : ?ResponseInterface
     {
-        $this->faults = $faults;
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function setMessageConverter(PsrMessageConverter $converter) : void
-    {
-        $this->messageConverter = $converter;
+        return $this->getMessageConverter()->createResponse(
+            $this->__getLastResponseHeaders(),
+            $this->__getLastResponse()
+        );
     }
 
     protected function createSoapHeaders() : array
@@ -103,33 +92,6 @@ class BingSoapClient extends \SoapClient implements BingService
         );
     }
 
-    protected function getRequestHeaders() : RequestHeaders
-    {
-        if (!$this->headers) {
-            $this->headers = new RequestHeaders();
-        }
-                
-        return $this->headers;
-    }
-
-    protected function getFaultParser() : FaultParser
-    {
-        if (!$this->faults) {
-            $this->faults = new FaultParser();
-        }
-
-        return $this->faults;
-    }
-
-    protected function getMessageConverter() : PsrMessageConverter
-    {
-        if (!$this->messageConverter) {
-            $this->messageConverter = new PsrMessageConverter();
-        }
-
-        return $this->messageConverter;
-    }
-
     protected function getSession() : BingSession
     {
         return $this->session;
@@ -138,25 +100,5 @@ class BingSoapClient extends \SoapClient implements BingService
     protected function getServiceDescriptor() : ServiceDescriptor
     {
         return $this->serviceDescriptor;
-    }
-
-    protected function maybePopulateRequestResponse(ApiException $ex) : void
-    {
-        if (!$this->trace) {
-            return;
-        }
-
-        $request = $this->getMessageConverter()->createRequest(
-            $this->__getLastRequestHeaders(),
-            $this->__getLastRequest(),
-            $this->wsdlScheme // guess that the scheme for requests is the same as the WSDL
-        );
-        $response = $this->getMessageConverter()->createResponse(
-            $this->__getLastResponseHeaders(),
-            $this->__getLastResponse()
-        );
-
-        $ex->setRequest($request);
-        $ex->setResponse($response);
     }
 }

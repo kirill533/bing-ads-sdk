@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f817648798f4e005d46b502f05ecfc41",
+    "content-hash": "4617a48b93d74d071ee0486009346982",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -1109,16 +1109,16 @@
         },
         {
             "name": "pmg/wsdl2phpgenerator",
-            "version": "3.4.1",
+            "version": "3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AgencyPMG/wsdl2phpgenerator.git",
-                "reference": "e5a84d8e781dcc126571edf5b26485715bf7acf7"
+                "reference": "caa8cb3e77ef7a0a9792a78a2126ded64b506e84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AgencyPMG/wsdl2phpgenerator/zipball/e5a84d8e781dcc126571edf5b26485715bf7acf7",
-                "reference": "e5a84d8e781dcc126571edf5b26485715bf7acf7",
+                "url": "https://api.github.com/repos/AgencyPMG/wsdl2phpgenerator/zipball/caa8cb3e77ef7a0a9792a78a2126ded64b506e84",
+                "reference": "caa8cb3e77ef7a0a9792a78a2126ded64b506e84",
                 "shasum": ""
             },
             "require": {
@@ -1157,10 +1157,10 @@
                 "wsdl"
             ],
             "support": {
-                "source": "https://github.com/AgencyPMG/wsdl2phpgenerator/tree/master",
+                "source": "https://github.com/AgencyPMG/wsdl2phpgenerator/tree/3.4.2",
                 "issues": "https://github.com/AgencyPMG/wsdl2phpgenerator/issues"
             },
-            "time": "2018-07-02T18:51:25+00:00"
+            "time": "2018-07-02T20:11:32+00:00"
         },
         {
             "name": "psr/log",

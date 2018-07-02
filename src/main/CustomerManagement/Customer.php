@@ -61,7 +61,7 @@ class Customer
     protected $CustomerLifeCycleStatus = null;
 
     /**
-     * @var base64Binary $TimeStamp
+     * @var string $TimeStamp
      */
     protected $TimeStamp = null;
 
@@ -287,7 +287,7 @@ class Customer
     }
 
     /**
-     * @return base64Binary
+     * @return string
      */
     public function getTimeStamp()
     {
@@ -295,7 +295,7 @@ class Customer
     }
 
     /**
-     * @param base64Binary $TimeStamp
+     * @param string $TimeStamp
      * @return \PMG\BingAds\CustomerManagement\Customer
      */
     public function setTimeStamp($TimeStamp)

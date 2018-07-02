@@ -51,7 +51,7 @@ class Address
     protected $StateOrProvince = null;
 
     /**
-     * @var base64Binary $TimeStamp
+     * @var string $TimeStamp
      */
     protected $TimeStamp = null;
 
@@ -229,7 +229,7 @@ class Address
     }
 
     /**
-     * @return base64Binary
+     * @return string
      */
     public function getTimeStamp()
     {
@@ -237,7 +237,7 @@ class Address
     }
 
     /**
-     * @param base64Binary $TimeStamp
+     * @param string $TimeStamp
      * @return \PMG\BingAds\CustomerManagement\Address
      */
     public function setTimeStamp($TimeStamp)

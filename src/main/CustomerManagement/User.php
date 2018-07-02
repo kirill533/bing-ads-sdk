@@ -66,7 +66,7 @@ class User
     protected $UserLifeCycleStatus = null;
 
     /**
-     * @var base64Binary $TimeStamp
+     * @var string $TimeStamp
      */
     protected $TimeStamp = null;
 
@@ -315,7 +315,7 @@ class User
     }
 
     /**
-     * @return base64Binary
+     * @return string
      */
     public function getTimeStamp()
     {
@@ -323,7 +323,7 @@ class User
     }
 
     /**
-     * @param base64Binary $TimeStamp
+     * @param string $TimeStamp
      * @return \PMG\BingAds\CustomerManagement\User
      */
     public function setTimeStamp($TimeStamp)

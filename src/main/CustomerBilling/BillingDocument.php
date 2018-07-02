@@ -6,7 +6,7 @@ class BillingDocument
 {
 
     /**
-     * @var base64Binary $Data
+     * @var string $Data
      */
     protected $Data = null;
 
@@ -27,7 +27,7 @@ class BillingDocument
     }
 
     /**
-     * @return base64Binary
+     * @return string
      */
     public function getData()
     {
@@ -35,7 +35,7 @@ class BillingDocument
     }
 
     /**
-     * @param base64Binary $Data
+     * @param string $Data
      * @return \PMG\BingAds\CustomerBilling\BillingDocument
      */
     public function setData($Data)

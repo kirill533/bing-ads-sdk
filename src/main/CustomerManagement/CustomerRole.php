@@ -20,6 +20,11 @@ class CustomerRole
      */
     protected $AccountIds = null;
 
+    /**
+     * @var ArrayOflong $LinkedAccountIds
+     */
+    protected $LinkedAccountIds = null;
+
     
     public function __construct()
     {
@@ -77,6 +82,24 @@ class CustomerRole
     public function setAccountIds($AccountIds)
     {
       $this->AccountIds = $AccountIds;
+      return $this;
+    }
+
+    /**
+     * @return ArrayOflong
+     */
+    public function getLinkedAccountIds()
+    {
+      return $this->LinkedAccountIds;
+    }
+
+    /**
+     * @param ArrayOflong $LinkedAccountIds
+     * @return \PMG\BingAds\CustomerManagement\CustomerRole
+     */
+    public function setLinkedAccountIds($LinkedAccountIds)
+    {
+      $this->LinkedAccountIds = $LinkedAccountIds;
       return $this;
     }
 

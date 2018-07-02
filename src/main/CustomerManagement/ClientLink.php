@@ -81,7 +81,7 @@ class ClientLink
     protected $LastModifiedByUserId = null;
 
     /**
-     * @var base64Binary $Timestamp
+     * @var string $Timestamp
      */
     protected $Timestamp = null;
 
@@ -391,7 +391,7 @@ class ClientLink
     }
 
     /**
-     * @return base64Binary
+     * @return string
      */
     public function getTimestamp()
     {
@@ -399,7 +399,7 @@ class ClientLink
     }
 
     /**
-     * @param base64Binary $Timestamp
+     * @param string $Timestamp
      * @return \PMG\BingAds\CustomerManagement\ClientLink
      */
     public function setTimestamp($Timestamp)

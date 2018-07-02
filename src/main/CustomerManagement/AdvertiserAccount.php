@@ -76,7 +76,7 @@ class AdvertiserAccount
     protected $AccountLifeCycleStatus = null;
 
     /**
-     * @var base64Binary $TimeStamp
+     * @var string $TimeStamp
      */
     protected $TimeStamp = null;
 
@@ -406,7 +406,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @return base64Binary
+     * @return string
      */
     public function getTimeStamp()
     {
@@ -414,7 +414,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @param base64Binary $TimeStamp
+     * @param string $TimeStamp
      * @return \PMG\BingAds\CustomerManagement\AdvertiserAccount
      */
     public function setTimeStamp($TimeStamp)

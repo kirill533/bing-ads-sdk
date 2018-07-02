@@ -11,13 +11,13 @@ class DeleteCustomerRequest
     protected $CustomerId = null;
 
     /**
-     * @var base64Binary $TimeStamp
+     * @var string $TimeStamp
      */
     protected $TimeStamp = null;
 
     /**
      * @param int $CustomerId
-     * @param base64Binary $TimeStamp
+     * @param string $TimeStamp
      */
     public function __construct($CustomerId = null, $TimeStamp = null)
     {
@@ -44,7 +44,7 @@ class DeleteCustomerRequest
     }
 
     /**
-     * @return base64Binary
+     * @return string
      */
     public function getTimeStamp()
     {
@@ -52,7 +52,7 @@ class DeleteCustomerRequest
     }
 
     /**
-     * @param base64Binary $TimeStamp
+     * @param string $TimeStamp
      * @return \PMG\BingAds\CustomerManagement\DeleteCustomerRequest
      */
     public function setTimeStamp($TimeStamp)

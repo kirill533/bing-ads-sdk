@@ -6,7 +6,7 @@ class ArrayOflong implements \ArrayAccess, \Iterator, \Countable
 {
 
     /**
-     * @var long[] $long
+     * @var int[] $long
      */
     protected $long = null;
 
@@ -17,7 +17,7 @@ class ArrayOflong implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * @return long[]
+     * @return int[]
      */
     public function getLong()
     {
@@ -25,7 +25,7 @@ class ArrayOflong implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * @param long[] $long
+     * @param int[] $long
      * @return \PMG\BingAds\AdInsight\ArrayOflong
      */
     public function setLong(array $long = null)

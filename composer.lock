@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4919cc15d5cba32aad25c472e60d1c60",
+    "content-hash": "f817648798f4e005d46b502f05ecfc41",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -1025,16 +1025,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "7.2.4",
+            "version": "7.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "00bc0b93f0ff4f557e9ea766557fde96da9a03dd"
+                "reference": "400a3836ee549ae6f665323ac3f21e27eac7155f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/00bc0b93f0ff4f557e9ea766557fde96da9a03dd",
-                "reference": "00bc0b93f0ff4f557e9ea766557fde96da9a03dd",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/400a3836ee549ae6f665323ac3f21e27eac7155f",
+                "reference": "400a3836ee549ae6f665323ac3f21e27eac7155f",
                 "shasum": ""
             },
             "require": {
@@ -1050,7 +1050,7 @@
                 "php": "^7.1",
                 "phpspec/prophecy": "^1.7",
                 "phpunit/php-code-coverage": "^6.0.7",
-                "phpunit/php-file-iterator": "^2.0",
+                "phpunit/php-file-iterator": "^2.0.1",
                 "phpunit/php-text-template": "^1.2.1",
                 "phpunit/php-timer": "^2.0",
                 "sebastian/comparator": "^3.0",
@@ -1105,7 +1105,62 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-06-05T03:40:05+00:00"
+            "time": "2018-06-21T13:13:39+00:00"
+        },
+        {
+            "name": "pmg/wsdl2phpgenerator",
+            "version": "3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AgencyPMG/wsdl2phpgenerator.git",
+                "reference": "e5a84d8e781dcc126571edf5b26485715bf7acf7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AgencyPMG/wsdl2phpgenerator/zipball/e5a84d8e781dcc126571edf5b26485715bf7acf7",
+                "reference": "e5a84d8e781dcc126571edf5b26485715bf7acf7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-soap": "*",
+                "php": "~7.2",
+                "psr/log": "~1.0",
+                "symfony/options-resolver": "~3.0|~4.0",
+                "symfony/polyfill-iconv": "~1.8"
+            },
+            "require-dev": {
+                "php-vcr/php-vcr": "~1.4",
+                "phpunit/phpunit": "~7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Wsdl2PhpGenerator\\": [
+                        "src/",
+                        "lib/"
+                    ]
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Wsdl2PhpGenerator\\Tests\\": [
+                        "tests/src"
+                    ]
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Simple class library for generating php classes from a wsdl file.",
+            "keywords": [
+                "soap",
+                "wsdl"
+            ],
+            "support": {
+                "source": "https://github.com/AgencyPMG/wsdl2phpgenerator/tree/master",
+                "issues": "https://github.com/AgencyPMG/wsdl2phpgenerator/issues"
+            },
+            "time": "2018-07-02T18:51:25+00:00"
         },
         {
             "name": "psr/log",
@@ -1719,7 +1774,7 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.1.0",
+            "version": "v4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -1769,25 +1824,25 @@
         },
         {
             "name": "symfony/options-resolver",
-            "version": "v3.4.11",
+            "version": "v4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "f3109a6aedd20e35c3a33190e932c2b063b7b50e"
+                "reference": "45cdcc8a96ef92b43a50723e6d1f5f83096e8cef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/f3109a6aedd20e35c3a33190e932c2b063b7b50e",
-                "reference": "f3109a6aedd20e35c3a33190e932c2b063b7b50e",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/45cdcc8a96ef92b43a50723e6d1f5f83096e8cef",
+                "reference": "45cdcc8a96ef92b43a50723e6d1f5f83096e8cef",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8"
+                "php": "^7.1.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.4-dev"
+                    "dev-master": "4.1-dev"
                 }
             },
             "autoload": {
@@ -1819,7 +1874,7 @@
                 "configuration",
                 "options"
             ],
-            "time": "2018-01-11T07:56:07+00:00"
+            "time": "2018-05-31T10:17:53+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -2024,55 +2079,6 @@
                 "validate"
             ],
             "time": "2018-01-29T19:49:41+00:00"
-        },
-        {
-            "name": "wsdl2phpgenerator/wsdl2phpgenerator",
-            "version": "3.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wsdl2phpgenerator/wsdl2phpgenerator.git",
-                "reference": "558c8a66677c117de2db5f5a4ae7f327c4b67f67"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wsdl2phpgenerator/wsdl2phpgenerator/zipball/558c8a66677c117de2db5f5a4ae7f327c4b67f67",
-                "reference": "558c8a66677c117de2db5f5a4ae7f327c4b67f67",
-                "shasum": ""
-            },
-            "require": {
-                "ext-soap": "*",
-                "php": ">=5.3.0",
-                "symfony/options-resolver": "~2.6|~3.0",
-                "symfony/polyfill-iconv": "^1.2"
-            },
-            "require-dev": {
-                "kasperg/phing-github": "0.2.*",
-                "phing/phing": "~2.7",
-                "php-vcr/php-vcr": "1.2 - 1.2.7|^1.3.1",
-                "php-vcr/phpunit-testlistener-vcr": "~1.1.2",
-                "phpunit/phpunit": "~4.4",
-                "psr/log": "~1.0",
-                "symfony/yaml": "~2.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Wsdl2PhpGenerator\\": [
-                        "src/",
-                        "lib/"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Simple class library for generating php classes from a wsdl file.",
-            "keywords": [
-                "soap",
-                "wsdl"
-            ],
-            "time": "2016-10-30T21:02:36+00:00"
         }
     ],
     "aliases": [],

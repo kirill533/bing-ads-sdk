@@ -28,12 +28,13 @@
     },
     "autoload": {
         "psr-4": {
-            "PMG\\BingAds\\": "src/"
+            "PMG\\BingAds\\": "src/main/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "PMG\\BingAds\\": "test/"
+            "PMG\\BingAds\\": "test/",
+            "PMG\\BingAds\\Generator\\": "src/generator/"
         }
     }
 }

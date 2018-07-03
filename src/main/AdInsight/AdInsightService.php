@@ -15,7 +15,6 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
     private static $classmap = array (
       'GetBidOpportunitiesRequest' => 'PMG\\BingAds\\AdInsight\\GetBidOpportunitiesRequest',
       'GetBidOpportunitiesResponse' => 'PMG\\BingAds\\AdInsight\\GetBidOpportunitiesResponse',
-      'ApiFaultDetail' => 'PMG\\BingAds\\AdInsight\\ApiFault',
       'GetBudgetOpportunitiesRequest' => 'PMG\\BingAds\\AdInsight\\GetBudgetOpportunitiesRequest',
       'GetBudgetOpportunitiesResponse' => 'PMG\\BingAds\\AdInsight\\GetBudgetOpportunitiesResponse',
       'GetKeywordOpportunitiesRequest' => 'PMG\\BingAds\\AdInsight\\GetKeywordOpportunitiesRequest',
@@ -145,8 +144,6 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
       'ArrayOfKeywordEstimate' => 'PMG\\BingAds\\AdInsight\\ArrayOfKeywordEstimate',
       'KeywordEstimate' => 'PMG\\BingAds\\AdInsight\\KeywordEstimate',
       'TrafficEstimate' => 'PMG\\BingAds\\AdInsight\\TrafficEstimate',
-      'AdApiFaultDetail' => 'PMG\\BingAds\\AdInsight\\AdApiFault',
-      'ApplicationFault' => 'PMG\\BingAds\\AdInsight\\ApplicationFault',
       'ArrayOfAdApiError' => 'PMG\\BingAds\\AdInsight\\ArrayOfAdApiError',
       'AdApiError' => 'PMG\\BingAds\\AdInsight\\AdApiError',
       'ArrayOfBatchError' => 'PMG\\BingAds\\AdInsight\\ArrayOfBatchError',
@@ -188,6 +185,9 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
       'DeviceCriterion' => 'PMG\\BingAds\\AdInsight\\DeviceCriterion',
       'ArrayOfLanguageCriterion' => 'PMG\\BingAds\\AdInsight\\ArrayOfLanguageCriterion',
       'ArrayOfCriterion' => 'PMG\\BingAds\\AdInsight\\ArrayOfCriterion',
+      'ApplicationFault' => 'PMG\\BingAds\\AdInsight\\ApplicationFault',
+      'ApiFaultDetail' => 'PMG\\BingAds\\AdInsight\\ApiFault',
+      'AdApiFaultDetail' => 'PMG\\BingAds\\AdInsight\\AdApiFault',
     );
 
     /**

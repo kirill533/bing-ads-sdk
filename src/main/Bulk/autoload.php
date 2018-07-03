@@ -15,7 +15,6 @@
         'PMG\BingAds\Bulk\Date' => __DIR__ .'/Date.php',
         'PMG\BingAds\Bulk\ReportTimePeriod' => __DIR__ .'/ReportTimePeriod.php',
         'PMG\BingAds\Bulk\DownloadCampaignsByAccountIdsResponse' => __DIR__ .'/DownloadCampaignsByAccountIdsResponse.php',
-        'PMG\BingAds\Bulk\ApiFault' => __DIR__ .'/ApiFault.php',
         'PMG\BingAds\Bulk\ArrayOfBatchError' => __DIR__ .'/ArrayOfBatchError.php',
         'PMG\BingAds\Bulk\BatchError' => __DIR__ .'/BatchError.php',
         'PMG\BingAds\Bulk\EditorialError' => __DIR__ .'/EditorialError.php',
@@ -35,12 +34,13 @@
         'PMG\BingAds\Bulk\ArrayOflong' => __DIR__ .'/ArrayOflong.php',
         'PMG\BingAds\Bulk\ArrayOfKeyValueOfstringstring' => __DIR__ .'/ArrayOfKeyValueOfstringstring.php',
         'PMG\BingAds\Bulk\KeyValueOfstringstring' => __DIR__ .'/KeyValueOfstringstring.php',
-        'PMG\BingAds\Bulk\AdApiFault' => __DIR__ .'/AdApiFault.php',
-        'PMG\BingAds\Bulk\ApplicationFault' => __DIR__ .'/ApplicationFault.php',
         'PMG\BingAds\Bulk\ArrayOfAdApiError' => __DIR__ .'/ArrayOfAdApiError.php',
         'PMG\BingAds\Bulk\AdApiError' => __DIR__ .'/AdApiError.php',
         'PMG\BingAds\Bulk\ArrayOfKeyValuePairOfstringstring' => __DIR__ .'/ArrayOfKeyValuePairOfstringstring.php',
-        'PMG\BingAds\Bulk\KeyValuePairOfstringstring' => __DIR__ .'/KeyValuePairOfstringstring.php'
+        'PMG\BingAds\Bulk\KeyValuePairOfstringstring' => __DIR__ .'/KeyValuePairOfstringstring.php',
+        'PMG\BingAds\Bulk\ApplicationFault' => __DIR__ .'/ApplicationFault.php',
+        'PMG\BingAds\Bulk\ApiFault' => __DIR__ .'/ApiFault.php',
+        'PMG\BingAds\Bulk\AdApiFault' => __DIR__ .'/AdApiFault.php'
     );
     if (!empty($classes[$class])) {
         include $classes[$class];

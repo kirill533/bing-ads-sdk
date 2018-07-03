@@ -40,16 +40,16 @@ class CustomerBillingService extends \PMG\BingAds\BingSoapClient
       'ArrayOfOrderBy' => 'PMG\\BingAds\\CustomerBilling\\ArrayOfOrderBy',
       'OrderBy' => 'PMG\\BingAds\\CustomerBilling\\OrderBy',
       'Paging' => 'PMG\\BingAds\\CustomerBilling\\Paging',
-      'AdApiFaultDetail' => 'PMG\\BingAds\\CustomerBilling\\AdApiFault',
-      'ApplicationFault' => 'PMG\\BingAds\\CustomerBilling\\ApplicationFault',
       'ArrayOfAdApiError' => 'PMG\\BingAds\\CustomerBilling\\ArrayOfAdApiError',
       'AdApiError' => 'PMG\\BingAds\\CustomerBilling\\AdApiError',
       'ApiBatchFault' => 'PMG\\BingAds\\CustomerBilling\\ApiBatchFault',
-      'ApiFault' => 'PMG\\BingAds\\CustomerBilling\\ApiFault',
       'ArrayOfOperationError' => 'PMG\\BingAds\\CustomerBilling\\ArrayOfOperationError',
       'OperationError' => 'PMG\\BingAds\\CustomerBilling\\OperationError',
       'ArrayOfBatchError' => 'PMG\\BingAds\\CustomerBilling\\ArrayOfBatchError',
       'BatchError' => 'PMG\\BingAds\\CustomerBilling\\BatchError',
+      'ApplicationFault' => 'PMG\\BingAds\\CustomerBilling\\ApplicationFault',
+      'ApiFault' => 'PMG\\BingAds\\CustomerBilling\\ApiFault',
+      'AdApiFaultDetail' => 'PMG\\BingAds\\CustomerBilling\\AdApiFault',
     );
 
     /**

@@ -50,7 +50,6 @@
         'PMG\BingAds\CampaignManagement\ArrayOfBatchError' => __DIR__ .'/ArrayOfBatchError.php',
         'PMG\BingAds\CampaignManagement\BatchError' => __DIR__ .'/BatchError.php',
         'PMG\BingAds\CampaignManagement\EditorialError' => __DIR__ .'/EditorialError.php',
-        'PMG\BingAds\CampaignManagement\ApiFault' => __DIR__ .'/ApiFault.php',
         'PMG\BingAds\CampaignManagement\ArrayOfOperationError' => __DIR__ .'/ArrayOfOperationError.php',
         'PMG\BingAds\CampaignManagement\OperationError' => __DIR__ .'/OperationError.php',
         'PMG\BingAds\CampaignManagement\GetCampaignsByAccountIdRequest' => __DIR__ .'/GetCampaignsByAccountIdRequest.php',
@@ -100,7 +99,6 @@
         'PMG\BingAds\CampaignManagement\AddAdsRequest' => __DIR__ .'/AddAdsRequest.php',
         'PMG\BingAds\CampaignManagement\ArrayOfAd' => __DIR__ .'/ArrayOfAd.php',
         'PMG\BingAds\CampaignManagement\AddAdsResponse' => __DIR__ .'/AddAdsResponse.php',
-        'PMG\BingAds\CampaignManagement\EditorialApiFault' => __DIR__ .'/EditorialApiFault.php',
         'PMG\BingAds\CampaignManagement\ArrayOfEditorialError' => __DIR__ .'/ArrayOfEditorialError.php',
         'PMG\BingAds\CampaignManagement\DeleteAdsRequest' => __DIR__ .'/DeleteAdsRequest.php',
         'PMG\BingAds\CampaignManagement\DeleteAdsResponse' => __DIR__ .'/DeleteAdsResponse.php',
@@ -462,10 +460,12 @@
         'PMG\BingAds\CampaignManagement\ArrayOfKeyValuePairOfstringstring' => __DIR__ .'/ArrayOfKeyValuePairOfstringstring.php',
         'PMG\BingAds\CampaignManagement\KeyValuePairOfstringstring' => __DIR__ .'/KeyValuePairOfstringstring.php',
         'PMG\BingAds\CampaignManagement\ArrayOfNullableOflong' => __DIR__ .'/ArrayOfNullableOflong.php',
-        'PMG\BingAds\CampaignManagement\AdApiFault' => __DIR__ .'/AdApiFault.php',
-        'PMG\BingAds\CampaignManagement\ApplicationFault' => __DIR__ .'/ApplicationFault.php',
         'PMG\BingAds\CampaignManagement\ArrayOfAdApiError' => __DIR__ .'/ArrayOfAdApiError.php',
-        'PMG\BingAds\CampaignManagement\AdApiError' => __DIR__ .'/AdApiError.php'
+        'PMG\BingAds\CampaignManagement\AdApiError' => __DIR__ .'/AdApiError.php',
+        'PMG\BingAds\CampaignManagement\ApplicationFault' => __DIR__ .'/ApplicationFault.php',
+        'PMG\BingAds\CampaignManagement\ApiFault' => __DIR__ .'/ApiFault.php',
+        'PMG\BingAds\CampaignManagement\AdApiFault' => __DIR__ .'/AdApiFault.php',
+        'PMG\BingAds\CampaignManagement\EditorialApiFault' => __DIR__ .'/EditorialApiFault.php'
     );
     if (!empty($classes[$class])) {
         include $classes[$class];

@@ -171,7 +171,6 @@
         'PMG\BingAds\Reporting\DSACategoryPerformanceReportColumn' => __DIR__ .'/DSACategoryPerformanceReportColumn.php',
         'PMG\BingAds\Reporting\DSACategoryPerformanceReportFilter' => __DIR__ .'/DSACategoryPerformanceReportFilter.php',
         'PMG\BingAds\Reporting\SubmitGenerateReportResponse' => __DIR__ .'/SubmitGenerateReportResponse.php',
-        'PMG\BingAds\Reporting\ApiFault' => __DIR__ .'/ApiFault.php',
         'PMG\BingAds\Reporting\ArrayOfBatchError' => __DIR__ .'/ArrayOfBatchError.php',
         'PMG\BingAds\Reporting\BatchError' => __DIR__ .'/BatchError.php',
         'PMG\BingAds\Reporting\ArrayOfOperationError' => __DIR__ .'/ArrayOfOperationError.php',
@@ -183,10 +182,11 @@
         'PMG\BingAds\Reporting\ArrayOflong' => __DIR__ .'/ArrayOflong.php',
         'PMG\BingAds\Reporting\ArrayOfstring' => __DIR__ .'/ArrayOfstring.php',
         'PMG\BingAds\Reporting\ArrayOfint' => __DIR__ .'/ArrayOfint.php',
-        'PMG\BingAds\Reporting\AdApiFault' => __DIR__ .'/AdApiFault.php',
-        'PMG\BingAds\Reporting\ApplicationFault' => __DIR__ .'/ApplicationFault.php',
         'PMG\BingAds\Reporting\ArrayOfAdApiError' => __DIR__ .'/ArrayOfAdApiError.php',
-        'PMG\BingAds\Reporting\AdApiError' => __DIR__ .'/AdApiError.php'
+        'PMG\BingAds\Reporting\AdApiError' => __DIR__ .'/AdApiError.php',
+        'PMG\BingAds\Reporting\ApplicationFault' => __DIR__ .'/ApplicationFault.php',
+        'PMG\BingAds\Reporting\ApiFault' => __DIR__ .'/ApiFault.php',
+        'PMG\BingAds\Reporting\AdApiFault' => __DIR__ .'/AdApiFault.php'
     );
     if (!empty($classes[$class])) {
         include $classes[$class];

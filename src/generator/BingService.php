@@ -8,6 +8,7 @@ use Wsdl2PhpGenerator\ComplexType;
 use Wsdl2PhpGenerator\ClassGenerator;
 use Wsdl2PhpGenerator\Operation;
 use Wsdl2PhpGenerator\Service;
+use Wsdl2PhpGenerator\TypeRegistry;
 use Wsdl2PhpGenerator\Validator;
 use Wsdl2PhpGenerator\PhpSource\PhpClass;
 use Wsdl2PhpGenerator\PhpSource\PhpDocComment;
@@ -46,7 +47,7 @@ class BingService extends Service
     private $description;
 
     /**
-     * @var Type[] An array of Types
+     * @var TypeRegistry An array of Types
      */
     private $types;
 
@@ -56,7 +57,7 @@ class BingService extends Service
      * @param array $types The types the service knows about
      * @param string $description The description of the service
      */
-    public function __construct(ConfigInterface $config, $identifier, array $types, $description)
+    public function __construct(ConfigInterface $config, $identifier, TypeRegistry $types, $description)
     {
         $this->config = $config;
         $this->identifier = $identifier;
@@ -116,14 +117,14 @@ class BingService extends Service
      *
      * @return Type|null The type or null if the type does not exist.
      */
-    public function getType($identifier)
+    public function getType(string $identifier)
     {
-        return isset($this->types[$identifier])? $this->types[$identifier]: null;
+        return $this->types->get($identifier);
     }
     /**
      * Returns all types defined by the service.
      *
-     * @return Type[] An array of types.
+     * @return TypeRegistry An array of types.
      */
     public function getTypes()
     {

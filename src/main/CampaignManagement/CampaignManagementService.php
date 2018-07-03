@@ -48,7 +48,6 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'ArrayOfBatchError' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfBatchError',
       'BatchError' => 'PMG\\BingAds\\CampaignManagement\\BatchError',
       'EditorialError' => 'PMG\\BingAds\\CampaignManagement\\EditorialError',
-      'ApiFaultDetail' => 'PMG\\BingAds\\CampaignManagement\\ApiFault',
       'ArrayOfOperationError' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfOperationError',
       'OperationError' => 'PMG\\BingAds\\CampaignManagement\\OperationError',
       'GetCampaignsByAccountIdRequest' => 'PMG\\BingAds\\CampaignManagement\\GetCampaignsByAccountIdRequest',
@@ -94,7 +93,6 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'AddAdsRequest' => 'PMG\\BingAds\\CampaignManagement\\AddAdsRequest',
       'ArrayOfAd' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfAd',
       'AddAdsResponse' => 'PMG\\BingAds\\CampaignManagement\\AddAdsResponse',
-      'EditorialApiFaultDetail' => 'PMG\\BingAds\\CampaignManagement\\EditorialApiFault',
       'ArrayOfEditorialError' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfEditorialError',
       'DeleteAdsRequest' => 'PMG\\BingAds\\CampaignManagement\\DeleteAdsRequest',
       'DeleteAdsResponse' => 'PMG\\BingAds\\CampaignManagement\\DeleteAdsResponse',
@@ -411,10 +409,12 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'ArrayOfKeyValuePairOfstringstring' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfKeyValuePairOfstringstring',
       'KeyValuePairOfstringstring' => 'PMG\\BingAds\\CampaignManagement\\KeyValuePairOfstringstring',
       'ArrayOfNullableOflong' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfNullableOflong',
-      'AdApiFaultDetail' => 'PMG\\BingAds\\CampaignManagement\\AdApiFault',
-      'ApplicationFault' => 'PMG\\BingAds\\CampaignManagement\\ApplicationFault',
       'ArrayOfAdApiError' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfAdApiError',
       'AdApiError' => 'PMG\\BingAds\\CampaignManagement\\AdApiError',
+      'ApplicationFault' => 'PMG\\BingAds\\CampaignManagement\\ApplicationFault',
+      'ApiFaultDetail' => 'PMG\\BingAds\\CampaignManagement\\ApiFault',
+      'AdApiFaultDetail' => 'PMG\\BingAds\\CampaignManagement\\AdApiFault',
+      'EditorialApiFaultDetail' => 'PMG\\BingAds\\CampaignManagement\\EditorialApiFault',
     );
 
     /**

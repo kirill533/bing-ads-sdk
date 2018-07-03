@@ -18,7 +18,6 @@ class BulkService extends \PMG\BingAds\BingSoapClient
       'PerformanceStatsDateRange' => 'PMG\\BingAds\\Bulk\\PerformanceStatsDateRange',
       'Date' => 'PMG\\BingAds\\Bulk\\Date',
       'DownloadCampaignsByAccountIdsResponse' => 'PMG\\BingAds\\Bulk\\DownloadCampaignsByAccountIdsResponse',
-      'ApiFaultDetail' => 'PMG\\BingAds\\Bulk\\ApiFault',
       'ArrayOfBatchError' => 'PMG\\BingAds\\Bulk\\ArrayOfBatchError',
       'BatchError' => 'PMG\\BingAds\\Bulk\\BatchError',
       'EditorialError' => 'PMG\\BingAds\\Bulk\\EditorialError',
@@ -37,12 +36,13 @@ class BulkService extends \PMG\BingAds\BingSoapClient
       'ArrayOflong' => 'PMG\\BingAds\\Bulk\\ArrayOflong',
       'ArrayOfKeyValueOfstringstring' => 'PMG\\BingAds\\Bulk\\ArrayOfKeyValueOfstringstring',
       'KeyValueOfstringstring' => 'PMG\\BingAds\\Bulk\\KeyValueOfstringstring',
-      'AdApiFaultDetail' => 'PMG\\BingAds\\Bulk\\AdApiFault',
-      'ApplicationFault' => 'PMG\\BingAds\\Bulk\\ApplicationFault',
       'ArrayOfAdApiError' => 'PMG\\BingAds\\Bulk\\ArrayOfAdApiError',
       'AdApiError' => 'PMG\\BingAds\\Bulk\\AdApiError',
       'ArrayOfKeyValuePairOfstringstring' => 'PMG\\BingAds\\Bulk\\ArrayOfKeyValuePairOfstringstring',
       'KeyValuePairOfstringstring' => 'PMG\\BingAds\\Bulk\\KeyValuePairOfstringstring',
+      'ApplicationFault' => 'PMG\\BingAds\\Bulk\\ApplicationFault',
+      'ApiFaultDetail' => 'PMG\\BingAds\\Bulk\\ApiFault',
+      'AdApiFaultDetail' => 'PMG\\BingAds\\Bulk\\AdApiFault',
     );
 
     /**

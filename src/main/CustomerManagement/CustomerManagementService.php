@@ -109,11 +109,8 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
       'ArrayOfAdvertiserAccount' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfAdvertiserAccount',
       'UserInvitation' => 'PMG\\BingAds\\CustomerManagement\\UserInvitation',
       'ArrayOfUserInvitation' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfUserInvitation',
-      'AdApiFaultDetail' => 'PMG\\BingAds\\CustomerManagement\\AdApiFault',
-      'ApplicationFault' => 'PMG\\BingAds\\CustomerManagement\\ApplicationFault',
       'ArrayOfAdApiError' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfAdApiError',
       'AdApiError' => 'PMG\\BingAds\\CustomerManagement\\AdApiError',
-      'ApiFault' => 'PMG\\BingAds\\CustomerManagement\\ApiFault',
       'ArrayOfOperationError' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfOperationError',
       'OperationError' => 'PMG\\BingAds\\CustomerManagement\\OperationError',
       'ArrayOfArrayOfOperationError' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfArrayOfOperationError',
@@ -122,6 +119,9 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
       'ArrayOflong' => 'PMG\\BingAds\\CustomerManagement\\ArrayOflong',
       'ArrayOfint' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfint',
       'ArrayOfstring' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfstring',
+      'ApplicationFault' => 'PMG\\BingAds\\CustomerManagement\\ApplicationFault',
+      'ApiFault' => 'PMG\\BingAds\\CustomerManagement\\ApiFault',
+      'AdApiFaultDetail' => 'PMG\\BingAds\\CustomerManagement\\AdApiFault',
     );
 
     /**

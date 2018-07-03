@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b11a8af411c2837efc191692aca38f83",
+    "content-hash": "ffff02fb2444b2384d565af18fa10f9d",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -1109,16 +1109,16 @@
         },
         {
             "name": "pmg/wsdl2phpgenerator",
-            "version": "3.5.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/AgencyPMG/wsdl2phpgenerator.git",
-                "reference": "f7630eb227154291307d6313171c06c4b9fd0bbb"
+                "reference": "8d414026bff3cdbeef775e1588c174821b2550ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AgencyPMG/wsdl2phpgenerator/zipball/f7630eb227154291307d6313171c06c4b9fd0bbb",
-                "reference": "f7630eb227154291307d6313171c06c4b9fd0bbb",
+                "url": "https://api.github.com/repos/AgencyPMG/wsdl2phpgenerator/zipball/8d414026bff3cdbeef775e1588c174821b2550ff",
+                "reference": "8d414026bff3cdbeef775e1588c174821b2550ff",
                 "shasum": ""
             },
             "require": {
@@ -1157,10 +1157,10 @@
                 "wsdl"
             ],
             "support": {
-                "source": "https://github.com/AgencyPMG/wsdl2phpgenerator/tree/3.5.0",
+                "source": "https://github.com/AgencyPMG/wsdl2phpgenerator/tree/master",
                 "issues": "https://github.com/AgencyPMG/wsdl2phpgenerator/issues"
             },
-            "time": "2018-07-03T13:06:20+00:00"
+            "time": "2018-07-03T15:11:39+00:00"
         },
         {
             "name": "psr/log",
@@ -2083,7 +2083,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "pmg/wsdl2phpgenerator": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

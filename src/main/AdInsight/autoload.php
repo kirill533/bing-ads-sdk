@@ -7,7 +7,6 @@
         'PMG\BingAds\AdInsight\AdInsightService' => __DIR__ .'/AdInsightService.php',
         'PMG\BingAds\AdInsight\GetBidOpportunitiesRequest' => __DIR__ .'/GetBidOpportunitiesRequest.php',
         'PMG\BingAds\AdInsight\GetBidOpportunitiesResponse' => __DIR__ .'/GetBidOpportunitiesResponse.php',
-        'PMG\BingAds\AdInsight\ApiFault' => __DIR__ .'/ApiFault.php',
         'PMG\BingAds\AdInsight\GetBudgetOpportunitiesRequest' => __DIR__ .'/GetBudgetOpportunitiesRequest.php',
         'PMG\BingAds\AdInsight\GetBudgetOpportunitiesResponse' => __DIR__ .'/GetBudgetOpportunitiesResponse.php',
         'PMG\BingAds\AdInsight\GetKeywordOpportunitiesRequest' => __DIR__ .'/GetKeywordOpportunitiesRequest.php',
@@ -149,8 +148,6 @@
         'PMG\BingAds\AdInsight\ArrayOfKeywordEstimate' => __DIR__ .'/ArrayOfKeywordEstimate.php',
         'PMG\BingAds\AdInsight\KeywordEstimate' => __DIR__ .'/KeywordEstimate.php',
         'PMG\BingAds\AdInsight\TrafficEstimate' => __DIR__ .'/TrafficEstimate.php',
-        'PMG\BingAds\AdInsight\AdApiFault' => __DIR__ .'/AdApiFault.php',
-        'PMG\BingAds\AdInsight\ApplicationFault' => __DIR__ .'/ApplicationFault.php',
         'PMG\BingAds\AdInsight\ArrayOfAdApiError' => __DIR__ .'/ArrayOfAdApiError.php',
         'PMG\BingAds\AdInsight\AdApiError' => __DIR__ .'/AdApiError.php',
         'PMG\BingAds\AdInsight\ArrayOfBatchError' => __DIR__ .'/ArrayOfBatchError.php',
@@ -195,7 +192,10 @@
         'PMG\BingAds\AdInsight\NetworkCriterion' => __DIR__ .'/NetworkCriterion.php',
         'PMG\BingAds\AdInsight\DeviceCriterion' => __DIR__ .'/DeviceCriterion.php',
         'PMG\BingAds\AdInsight\ArrayOfLanguageCriterion' => __DIR__ .'/ArrayOfLanguageCriterion.php',
-        'PMG\BingAds\AdInsight\ArrayOfCriterion' => __DIR__ .'/ArrayOfCriterion.php'
+        'PMG\BingAds\AdInsight\ArrayOfCriterion' => __DIR__ .'/ArrayOfCriterion.php',
+        'PMG\BingAds\AdInsight\ApplicationFault' => __DIR__ .'/ApplicationFault.php',
+        'PMG\BingAds\AdInsight\ApiFault' => __DIR__ .'/ApiFault.php',
+        'PMG\BingAds\AdInsight\AdApiFault' => __DIR__ .'/AdApiFault.php'
     );
     if (!empty($classes[$class])) {
         include $classes[$class];

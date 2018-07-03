@@ -38,16 +38,16 @@
         'PMG\BingAds\CustomerBilling\OrderByField' => __DIR__ .'/OrderByField.php',
         'PMG\BingAds\CustomerBilling\SortOrder' => __DIR__ .'/SortOrder.php',
         'PMG\BingAds\CustomerBilling\Paging' => __DIR__ .'/Paging.php',
-        'PMG\BingAds\CustomerBilling\AdApiFault' => __DIR__ .'/AdApiFault.php',
-        'PMG\BingAds\CustomerBilling\ApplicationFault' => __DIR__ .'/ApplicationFault.php',
         'PMG\BingAds\CustomerBilling\ArrayOfAdApiError' => __DIR__ .'/ArrayOfAdApiError.php',
         'PMG\BingAds\CustomerBilling\AdApiError' => __DIR__ .'/AdApiError.php',
         'PMG\BingAds\CustomerBilling\ApiBatchFault' => __DIR__ .'/ApiBatchFault.php',
-        'PMG\BingAds\CustomerBilling\ApiFault' => __DIR__ .'/ApiFault.php',
         'PMG\BingAds\CustomerBilling\ArrayOfOperationError' => __DIR__ .'/ArrayOfOperationError.php',
         'PMG\BingAds\CustomerBilling\OperationError' => __DIR__ .'/OperationError.php',
         'PMG\BingAds\CustomerBilling\ArrayOfBatchError' => __DIR__ .'/ArrayOfBatchError.php',
-        'PMG\BingAds\CustomerBilling\BatchError' => __DIR__ .'/BatchError.php'
+        'PMG\BingAds\CustomerBilling\BatchError' => __DIR__ .'/BatchError.php',
+        'PMG\BingAds\CustomerBilling\ApplicationFault' => __DIR__ .'/ApplicationFault.php',
+        'PMG\BingAds\CustomerBilling\ApiFault' => __DIR__ .'/ApiFault.php',
+        'PMG\BingAds\CustomerBilling\AdApiFault' => __DIR__ .'/AdApiFault.php'
     );
     if (!empty($classes[$class])) {
         include $classes[$class];

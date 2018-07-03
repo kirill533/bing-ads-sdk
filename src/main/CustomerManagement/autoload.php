@@ -120,11 +120,8 @@
         'PMG\BingAds\CustomerManagement\ArrayOfAdvertiserAccount' => __DIR__ .'/ArrayOfAdvertiserAccount.php',
         'PMG\BingAds\CustomerManagement\UserInvitation' => __DIR__ .'/UserInvitation.php',
         'PMG\BingAds\CustomerManagement\ArrayOfUserInvitation' => __DIR__ .'/ArrayOfUserInvitation.php',
-        'PMG\BingAds\CustomerManagement\AdApiFault' => __DIR__ .'/AdApiFault.php',
-        'PMG\BingAds\CustomerManagement\ApplicationFault' => __DIR__ .'/ApplicationFault.php',
         'PMG\BingAds\CustomerManagement\ArrayOfAdApiError' => __DIR__ .'/ArrayOfAdApiError.php',
         'PMG\BingAds\CustomerManagement\AdApiError' => __DIR__ .'/AdApiError.php',
-        'PMG\BingAds\CustomerManagement\ApiFault' => __DIR__ .'/ApiFault.php',
         'PMG\BingAds\CustomerManagement\ArrayOfOperationError' => __DIR__ .'/ArrayOfOperationError.php',
         'PMG\BingAds\CustomerManagement\OperationError' => __DIR__ .'/OperationError.php',
         'PMG\BingAds\CustomerManagement\ArrayOfArrayOfOperationError' => __DIR__ .'/ArrayOfArrayOfOperationError.php',
@@ -132,7 +129,10 @@
         'PMG\BingAds\CustomerManagement\KeyValuePairOfstringstring' => __DIR__ .'/KeyValuePairOfstringstring.php',
         'PMG\BingAds\CustomerManagement\ArrayOflong' => __DIR__ .'/ArrayOflong.php',
         'PMG\BingAds\CustomerManagement\ArrayOfint' => __DIR__ .'/ArrayOfint.php',
-        'PMG\BingAds\CustomerManagement\ArrayOfstring' => __DIR__ .'/ArrayOfstring.php'
+        'PMG\BingAds\CustomerManagement\ArrayOfstring' => __DIR__ .'/ArrayOfstring.php',
+        'PMG\BingAds\CustomerManagement\ApplicationFault' => __DIR__ .'/ApplicationFault.php',
+        'PMG\BingAds\CustomerManagement\ApiFault' => __DIR__ .'/ApiFault.php',
+        'PMG\BingAds\CustomerManagement\AdApiFault' => __DIR__ .'/AdApiFault.php'
     );
     if (!empty($classes[$class])) {
         include $classes[$class];

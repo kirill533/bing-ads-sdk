@@ -125,7 +125,6 @@ class ReportingService extends \PMG\BingAds\BingSoapClient
       'ArrayOfDSACategoryPerformanceReportColumn' => 'PMG\\BingAds\\Reporting\\ArrayOfDSACategoryPerformanceReportColumn',
       'DSACategoryPerformanceReportFilter' => 'PMG\\BingAds\\Reporting\\DSACategoryPerformanceReportFilter',
       'SubmitGenerateReportResponse' => 'PMG\\BingAds\\Reporting\\SubmitGenerateReportResponse',
-      'ApiFaultDetail' => 'PMG\\BingAds\\Reporting\\ApiFault',
       'ArrayOfBatchError' => 'PMG\\BingAds\\Reporting\\ArrayOfBatchError',
       'BatchError' => 'PMG\\BingAds\\Reporting\\BatchError',
       'ArrayOfOperationError' => 'PMG\\BingAds\\Reporting\\ArrayOfOperationError',
@@ -136,10 +135,11 @@ class ReportingService extends \PMG\BingAds\BingSoapClient
       'ArrayOflong' => 'PMG\\BingAds\\Reporting\\ArrayOflong',
       'ArrayOfstring' => 'PMG\\BingAds\\Reporting\\ArrayOfstring',
       'ArrayOfint' => 'PMG\\BingAds\\Reporting\\ArrayOfint',
-      'AdApiFaultDetail' => 'PMG\\BingAds\\Reporting\\AdApiFault',
-      'ApplicationFault' => 'PMG\\BingAds\\Reporting\\ApplicationFault',
       'ArrayOfAdApiError' => 'PMG\\BingAds\\Reporting\\ArrayOfAdApiError',
       'AdApiError' => 'PMG\\BingAds\\Reporting\\AdApiError',
+      'ApplicationFault' => 'PMG\\BingAds\\Reporting\\ApplicationFault',
+      'ApiFaultDetail' => 'PMG\\BingAds\\Reporting\\ApiFault',
+      'AdApiFaultDetail' => 'PMG\\BingAds\\Reporting\\AdApiFault',
     );
 
     /**

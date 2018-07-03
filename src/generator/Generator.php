@@ -29,14 +29,15 @@ class Generator extends WsdlGenerator
     {
         parent::loadTypes();
         foreach (self::FAULT_TYPES as $ft) {
-            if (!isset($this->types[$ft])) {
+            if (!$this->types->get($ft)) {
                 continue;
             }
 
-            $old = $this->types[$ft];
+            $old = $this->types->get($ft);
+            $this->types->remove($ft);
             $new = new ExceptionType($this->config, preg_replace('/Detail$/i', '', $ft));
             $new->copyFrom($old);
-            $this->types[$ft] = $new;
+            $this->types->add($new, $ft);
         }
     }
 

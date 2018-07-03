@@ -6,22 +6,18 @@ class KeywordPerformanceReportSort
 {
 
     /**
-     * @see \PMG\BingAds\Reporting\KeywordPerformanceReportColumn for valid values
-     *
-     * @var string $SortColumn
+     * @var KeywordPerformanceReportColumn $SortColumn
      */
     protected $SortColumn = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\SortOrder for valid values
-     *
-     * @var string $SortOrder
+     * @var SortOrder $SortOrder
      */
     protected $SortOrder = null;
 
     /**
-     * @param string $SortColumn
-     * @param string $SortOrder
+     * @param KeywordPerformanceReportColumn $SortColumn
+     * @param SortOrder $SortOrder
      */
     public function __construct($SortColumn = null, $SortOrder = null)
     {
@@ -30,7 +26,7 @@ class KeywordPerformanceReportSort
     }
 
     /**
-     * @return string
+     * @return KeywordPerformanceReportColumn
      */
     public function getSortColumn()
     {
@@ -38,7 +34,7 @@ class KeywordPerformanceReportSort
     }
 
     /**
-     * @param string $SortColumn
+     * @param KeywordPerformanceReportColumn $SortColumn
      * @return \PMG\BingAds\Reporting\KeywordPerformanceReportSort
      */
     public function setSortColumn($SortColumn)
@@ -48,7 +44,7 @@ class KeywordPerformanceReportSort
     }
 
     /**
-     * @return string
+     * @return SortOrder
      */
     public function getSortOrder()
     {
@@ -56,7 +52,7 @@ class KeywordPerformanceReportSort
     }
 
     /**
-     * @param string $SortOrder
+     * @param SortOrder $SortOrder
      * @return \PMG\BingAds\Reporting\KeywordPerformanceReportSort
      */
     public function setSortOrder($SortOrder)

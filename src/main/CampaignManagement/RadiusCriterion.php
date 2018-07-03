@@ -26,9 +26,7 @@ class RadiusCriterion extends Criterion
     protected $Radius = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\DistanceUnit for valid values
-     *
-     * @var string $RadiusUnit
+     * @var DistanceUnit $RadiusUnit
      */
     protected $RadiusUnit = null;
 
@@ -111,7 +109,7 @@ class RadiusCriterion extends Criterion
     }
 
     /**
-     * @return string
+     * @return DistanceUnit
      */
     public function getRadiusUnit()
     {
@@ -119,7 +117,7 @@ class RadiusCriterion extends Criterion
     }
 
     /**
-     * @param string $RadiusUnit
+     * @param DistanceUnit $RadiusUnit
      * @return \PMG\BingAds\CampaignManagement\RadiusCriterion
      */
     public function setRadiusUnit($RadiusUnit)

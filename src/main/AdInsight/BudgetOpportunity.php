@@ -11,9 +11,7 @@ class BudgetOpportunity extends Opportunity
     protected $BudgetPoints = null;
 
     /**
-     * @see \PMG\BingAds\AdInsight\BudgetLimitType for valid values
-     *
-     * @var string $BudgetType
+     * @var BudgetLimitType $BudgetType
      */
     protected $BudgetType = null;
 
@@ -77,7 +75,7 @@ class BudgetOpportunity extends Opportunity
     }
 
     /**
-     * @return string
+     * @return BudgetLimitType
      */
     public function getBudgetType()
     {
@@ -85,7 +83,7 @@ class BudgetOpportunity extends Opportunity
     }
 
     /**
-     * @param string $BudgetType
+     * @param BudgetLimitType $BudgetType
      * @return \PMG\BingAds\AdInsight\BudgetOpportunity
      */
     public function setBudgetType($BudgetType)

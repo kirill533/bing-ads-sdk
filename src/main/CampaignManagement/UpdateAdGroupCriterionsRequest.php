@@ -11,15 +11,13 @@ class UpdateAdGroupCriterionsRequest
     protected $AdGroupCriterions = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\AdGroupCriterionType for valid values
-     *
-     * @var list $CriterionType
+     * @var AdGroupCriterionType $CriterionType
      */
     protected $CriterionType = null;
 
     /**
      * @param ArrayOfAdGroupCriterion $AdGroupCriterions
-     * @param list $CriterionType
+     * @param AdGroupCriterionType $CriterionType
      */
     public function __construct($AdGroupCriterions = null, $CriterionType = null)
     {
@@ -46,7 +44,7 @@ class UpdateAdGroupCriterionsRequest
     }
 
     /**
-     * @return list
+     * @return AdGroupCriterionType
      */
     public function getCriterionType()
     {
@@ -54,7 +52,7 @@ class UpdateAdGroupCriterionsRequest
     }
 
     /**
-     * @param list $CriterionType
+     * @param AdGroupCriterionType $CriterionType
      * @return \PMG\BingAds\CampaignManagement\UpdateAdGroupCriterionsRequest
      */
     public function setCriterionType($CriterionType)

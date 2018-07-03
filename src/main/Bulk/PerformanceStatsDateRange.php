@@ -16,9 +16,7 @@ class PerformanceStatsDateRange
     protected $CustomDateRangeStart = null;
 
     /**
-     * @see \PMG\BingAds\Bulk\ReportTimePeriod for valid values
-     *
-     * @var string $PredefinedTime
+     * @var ReportTimePeriod $PredefinedTime
      */
     protected $PredefinedTime = null;
 
@@ -65,7 +63,7 @@ class PerformanceStatsDateRange
     }
 
     /**
-     * @return string
+     * @return ReportTimePeriod
      */
     public function getPredefinedTime()
     {
@@ -73,7 +71,7 @@ class PerformanceStatsDateRange
     }
 
     /**
-     * @param string $PredefinedTime
+     * @param ReportTimePeriod $PredefinedTime
      * @return \PMG\BingAds\Bulk\PerformanceStatsDateRange
      */
     public function setPredefinedTime($PredefinedTime)

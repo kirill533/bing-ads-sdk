@@ -6,9 +6,7 @@ class GetMediaAssociationsRequest
 {
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\MediaEnabledEntityFilter for valid values
-     *
-     * @var list $MediaEnabledEntities
+     * @var MediaEnabledEntityFilter $MediaEnabledEntities
      */
     protected $MediaEnabledEntities = null;
 
@@ -18,7 +16,7 @@ class GetMediaAssociationsRequest
     protected $MediaIds = null;
 
     /**
-     * @param list $MediaEnabledEntities
+     * @param MediaEnabledEntityFilter $MediaEnabledEntities
      * @param ArrayOflong $MediaIds
      */
     public function __construct($MediaEnabledEntities = null, $MediaIds = null)
@@ -28,7 +26,7 @@ class GetMediaAssociationsRequest
     }
 
     /**
-     * @return list
+     * @return MediaEnabledEntityFilter
      */
     public function getMediaEnabledEntities()
     {
@@ -36,7 +34,7 @@ class GetMediaAssociationsRequest
     }
 
     /**
-     * @param list $MediaEnabledEntities
+     * @param MediaEnabledEntityFilter $MediaEnabledEntities
      * @return \PMG\BingAds\CampaignManagement\GetMediaAssociationsRequest
      */
     public function setMediaEnabledEntities($MediaEnabledEntities)

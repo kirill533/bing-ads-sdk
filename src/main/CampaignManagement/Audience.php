@@ -41,9 +41,7 @@ class Audience
     protected $ParentId = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\EntityScope for valid values
-     *
-     * @var string $Scope
+     * @var EntityScope $Scope
      */
     protected $Scope = null;
 
@@ -58,9 +56,7 @@ class Audience
     protected $SupportedCampaignTypes = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\AudienceType for valid values
-     *
-     * @var list $Type
+     * @var AudienceType $Type
      */
     protected $Type = null;
 
@@ -197,7 +193,7 @@ class Audience
     }
 
     /**
-     * @return string
+     * @return EntityScope
      */
     public function getScope()
     {
@@ -205,7 +201,7 @@ class Audience
     }
 
     /**
-     * @param string $Scope
+     * @param EntityScope $Scope
      * @return \PMG\BingAds\CampaignManagement\Audience
      */
     public function setScope($Scope)
@@ -251,7 +247,7 @@ class Audience
     }
 
     /**
-     * @return list
+     * @return AudienceType
      */
     public function getType()
     {
@@ -259,7 +255,7 @@ class Audience
     }
 
     /**
-     * @param list $Type
+     * @param AudienceType $Type
      * @return \PMG\BingAds\CampaignManagement\Audience
      */
     public function setType($Type)

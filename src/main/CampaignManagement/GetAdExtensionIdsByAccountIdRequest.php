@@ -11,23 +11,19 @@ class GetAdExtensionIdsByAccountIdRequest
     protected $AccountId = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\AdExtensionsTypeFilter for valid values
-     *
-     * @var list $AdExtensionType
+     * @var AdExtensionsTypeFilter $AdExtensionType
      */
     protected $AdExtensionType = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\AssociationType for valid values
-     *
-     * @var string $AssociationType
+     * @var AssociationType $AssociationType
      */
     protected $AssociationType = null;
 
     /**
      * @param int $AccountId
-     * @param list $AdExtensionType
-     * @param string $AssociationType
+     * @param AdExtensionsTypeFilter $AdExtensionType
+     * @param AssociationType $AssociationType
      */
     public function __construct($AccountId = null, $AdExtensionType = null, $AssociationType = null)
     {
@@ -55,7 +51,7 @@ class GetAdExtensionIdsByAccountIdRequest
     }
 
     /**
-     * @return list
+     * @return AdExtensionsTypeFilter
      */
     public function getAdExtensionType()
     {
@@ -63,7 +59,7 @@ class GetAdExtensionIdsByAccountIdRequest
     }
 
     /**
-     * @param list $AdExtensionType
+     * @param AdExtensionsTypeFilter $AdExtensionType
      * @return \PMG\BingAds\CampaignManagement\GetAdExtensionIdsByAccountIdRequest
      */
     public function setAdExtensionType($AdExtensionType)
@@ -73,7 +69,7 @@ class GetAdExtensionIdsByAccountIdRequest
     }
 
     /**
-     * @return string
+     * @return AssociationType
      */
     public function getAssociationType()
     {
@@ -81,7 +77,7 @@ class GetAdExtensionIdsByAccountIdRequest
     }
 
     /**
-     * @param string $AssociationType
+     * @param AssociationType $AssociationType
      * @return \PMG\BingAds\CampaignManagement\GetAdExtensionIdsByAccountIdRequest
      */
     public function setAssociationType($AssociationType)

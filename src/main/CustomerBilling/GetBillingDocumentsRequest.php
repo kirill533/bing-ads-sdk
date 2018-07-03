@@ -11,15 +11,13 @@ class GetBillingDocumentsRequest
     protected $BillingDocumentsInfo = null;
 
     /**
-     * @see \PMG\BingAds\CustomerBilling\DataType for valid values
-     *
-     * @var string $Type
+     * @var DataType $Type
      */
     protected $Type = null;
 
     /**
      * @param ArrayOfBillingDocumentInfo $BillingDocumentsInfo
-     * @param string $Type
+     * @param DataType $Type
      */
     public function __construct($BillingDocumentsInfo = null, $Type = null)
     {
@@ -46,7 +44,7 @@ class GetBillingDocumentsRequest
     }
 
     /**
-     * @return string
+     * @return DataType
      */
     public function getType()
     {
@@ -54,7 +52,7 @@ class GetBillingDocumentsRequest
     }
 
     /**
-     * @param string $Type
+     * @param DataType $Type
      * @return \PMG\BingAds\CustomerBilling\GetBillingDocumentsRequest
      */
     public function setType($Type)

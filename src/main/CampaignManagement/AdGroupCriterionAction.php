@@ -6,9 +6,7 @@ class AdGroupCriterionAction
 {
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\ItemAction for valid values
-     *
-     * @var string $Action
+     * @var ItemAction $Action
      */
     protected $Action = null;
 
@@ -18,7 +16,7 @@ class AdGroupCriterionAction
     protected $AdGroupCriterion = null;
 
     /**
-     * @param string $Action
+     * @param ItemAction $Action
      */
     public function __construct($Action = null)
     {
@@ -26,7 +24,7 @@ class AdGroupCriterionAction
     }
 
     /**
-     * @return string
+     * @return ItemAction
      */
     public function getAction()
     {
@@ -34,7 +32,7 @@ class AdGroupCriterionAction
     }
 
     /**
-     * @param string $Action
+     * @param ItemAction $Action
      * @return \PMG\BingAds\CampaignManagement\AdGroupCriterionAction
      */
     public function setAction($Action)

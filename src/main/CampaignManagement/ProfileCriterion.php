@@ -11,9 +11,7 @@ class ProfileCriterion extends Criterion
     protected $ProfileId = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\ProfileType for valid values
-     *
-     * @var list $ProfileType
+     * @var ProfileType $ProfileType
      */
     protected $ProfileType = null;
 
@@ -42,7 +40,7 @@ class ProfileCriterion extends Criterion
     }
 
     /**
-     * @return list
+     * @return ProfileType
      */
     public function getProfileType()
     {
@@ -50,7 +48,7 @@ class ProfileCriterion extends Criterion
     }
 
     /**
-     * @param list $ProfileType
+     * @param ProfileType $ProfileType
      * @return \PMG\BingAds\CampaignManagement\ProfileCriterion
      */
     public function setProfileType($ProfileType)

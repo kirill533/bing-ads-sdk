@@ -11,16 +11,12 @@ class GetHistoricalKeywordPerformanceRequest
     protected $Keywords = null;
 
     /**
-     * @see \PMG\BingAds\AdInsight\TimeInterval for valid values
-     *
-     * @var string $TimeInterval
+     * @var TimeInterval $TimeInterval
      */
     protected $TimeInterval = null;
 
     /**
-     * @see \PMG\BingAds\AdInsight\AdPosition for valid values
-     *
-     * @var string $TargetAdPosition
+     * @var AdPosition $TargetAdPosition
      */
     protected $TargetAdPosition = null;
 
@@ -46,8 +42,8 @@ class GetHistoricalKeywordPerformanceRequest
 
     /**
      * @param ArrayOfstring $Keywords
-     * @param string $TimeInterval
-     * @param string $TargetAdPosition
+     * @param TimeInterval $TimeInterval
+     * @param AdPosition $TargetAdPosition
      * @param ArrayOfMatchType $MatchTypes
      * @param string $Language
      * @param ArrayOfstring $PublisherCountries
@@ -83,7 +79,7 @@ class GetHistoricalKeywordPerformanceRequest
     }
 
     /**
-     * @return string
+     * @return TimeInterval
      */
     public function getTimeInterval()
     {
@@ -91,7 +87,7 @@ class GetHistoricalKeywordPerformanceRequest
     }
 
     /**
-     * @param string $TimeInterval
+     * @param TimeInterval $TimeInterval
      * @return \PMG\BingAds\AdInsight\GetHistoricalKeywordPerformanceRequest
      */
     public function setTimeInterval($TimeInterval)
@@ -101,7 +97,7 @@ class GetHistoricalKeywordPerformanceRequest
     }
 
     /**
-     * @return string
+     * @return AdPosition
      */
     public function getTargetAdPosition()
     {
@@ -109,7 +105,7 @@ class GetHistoricalKeywordPerformanceRequest
     }
 
     /**
-     * @param string $TargetAdPosition
+     * @param AdPosition $TargetAdPosition
      * @return \PMG\BingAds\AdInsight\GetHistoricalKeywordPerformanceRequest
      */
     public function setTargetAdPosition($TargetAdPosition)

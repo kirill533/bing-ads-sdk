@@ -11,9 +11,7 @@ class StringRuleItem extends RuleItem
     protected $Operand = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\StringOperator for valid values
-     *
-     * @var string $Operator
+     * @var StringOperator $Operator
      */
     protected $Operator = null;
 
@@ -47,7 +45,7 @@ class StringRuleItem extends RuleItem
     }
 
     /**
-     * @return string
+     * @return StringOperator
      */
     public function getOperator()
     {
@@ -55,7 +53,7 @@ class StringRuleItem extends RuleItem
     }
 
     /**
-     * @param string $Operator
+     * @param StringOperator $Operator
      * @return \PMG\BingAds\CampaignManagement\StringRuleItem
      */
     public function setOperator($Operator)

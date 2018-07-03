@@ -6,23 +6,17 @@ class CallDetailReportFilter
 {
 
     /**
-     * @see \PMG\BingAds\Reporting\AccountStatusReportFilter for valid values
-     *
-     * @var list $AccountStatus
+     * @var AccountStatusReportFilter $AccountStatus
      */
     protected $AccountStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\AdGroupStatusReportFilter for valid values
-     *
-     * @var list $AdGroupStatus
+     * @var AdGroupStatusReportFilter $AdGroupStatus
      */
     protected $AdGroupStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\CampaignStatusReportFilter for valid values
-     *
-     * @var list $CampaignStatus
+     * @var CampaignStatusReportFilter $CampaignStatus
      */
     protected $CampaignStatus = null;
 
@@ -33,7 +27,7 @@ class CallDetailReportFilter
     }
 
     /**
-     * @return list
+     * @return AccountStatusReportFilter
      */
     public function getAccountStatus()
     {
@@ -41,7 +35,7 @@ class CallDetailReportFilter
     }
 
     /**
-     * @param list $AccountStatus
+     * @param AccountStatusReportFilter $AccountStatus
      * @return \PMG\BingAds\Reporting\CallDetailReportFilter
      */
     public function setAccountStatus($AccountStatus)
@@ -51,7 +45,7 @@ class CallDetailReportFilter
     }
 
     /**
-     * @return list
+     * @return AdGroupStatusReportFilter
      */
     public function getAdGroupStatus()
     {
@@ -59,7 +53,7 @@ class CallDetailReportFilter
     }
 
     /**
-     * @param list $AdGroupStatus
+     * @param AdGroupStatusReportFilter $AdGroupStatus
      * @return \PMG\BingAds\Reporting\CallDetailReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
@@ -69,7 +63,7 @@ class CallDetailReportFilter
     }
 
     /**
-     * @return list
+     * @return CampaignStatusReportFilter
      */
     public function getCampaignStatus()
     {
@@ -77,7 +71,7 @@ class CallDetailReportFilter
     }
 
     /**
-     * @param list $CampaignStatus
+     * @param CampaignStatusReportFilter $CampaignStatus
      * @return \PMG\BingAds\Reporting\CallDetailReportFilter
      */
     public function setCampaignStatus($CampaignStatus)

@@ -11,9 +11,7 @@ class AudienceCriterion extends Criterion
     protected $AudienceId = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\AudienceType for valid values
-     *
-     * @var list $AudienceType
+     * @var AudienceType $AudienceType
      */
     protected $AudienceType = null;
 
@@ -42,7 +40,7 @@ class AudienceCriterion extends Criterion
     }
 
     /**
-     * @return list
+     * @return AudienceType
      */
     public function getAudienceType()
     {
@@ -50,7 +48,7 @@ class AudienceCriterion extends Criterion
     }
 
     /**
-     * @param list $AudienceType
+     * @param AudienceType $AudienceType
      * @return \PMG\BingAds\CampaignManagement\AudienceCriterion
      */
     public function setAudienceType($AudienceType)

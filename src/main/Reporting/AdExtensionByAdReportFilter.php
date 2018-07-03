@@ -6,44 +6,32 @@ class AdExtensionByAdReportFilter
 {
 
     /**
-     * @see \PMG\BingAds\Reporting\AccountStatusReportFilter for valid values
-     *
-     * @var list $AccountStatus
+     * @var AccountStatusReportFilter $AccountStatus
      */
     protected $AccountStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\AdGroupStatusReportFilter for valid values
-     *
-     * @var list $AdGroupStatus
+     * @var AdGroupStatusReportFilter $AdGroupStatus
      */
     protected $AdGroupStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\AdStatusReportFilter for valid values
-     *
-     * @var list $AdStatus
+     * @var AdStatusReportFilter $AdStatus
      */
     protected $AdStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\CampaignStatusReportFilter for valid values
-     *
-     * @var list $CampaignStatus
+     * @var CampaignStatusReportFilter $CampaignStatus
      */
     protected $CampaignStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\DeviceOSReportFilter for valid values
-     *
-     * @var list $DeviceOS
+     * @var DeviceOSReportFilter $DeviceOS
      */
     protected $DeviceOS = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\DeviceTypeReportFilter for valid values
-     *
-     * @var list $DeviceType
+     * @var DeviceTypeReportFilter $DeviceType
      */
     protected $DeviceType = null;
 
@@ -54,7 +42,7 @@ class AdExtensionByAdReportFilter
     }
 
     /**
-     * @return list
+     * @return AccountStatusReportFilter
      */
     public function getAccountStatus()
     {
@@ -62,7 +50,7 @@ class AdExtensionByAdReportFilter
     }
 
     /**
-     * @param list $AccountStatus
+     * @param AccountStatusReportFilter $AccountStatus
      * @return \PMG\BingAds\Reporting\AdExtensionByAdReportFilter
      */
     public function setAccountStatus($AccountStatus)
@@ -72,7 +60,7 @@ class AdExtensionByAdReportFilter
     }
 
     /**
-     * @return list
+     * @return AdGroupStatusReportFilter
      */
     public function getAdGroupStatus()
     {
@@ -80,7 +68,7 @@ class AdExtensionByAdReportFilter
     }
 
     /**
-     * @param list $AdGroupStatus
+     * @param AdGroupStatusReportFilter $AdGroupStatus
      * @return \PMG\BingAds\Reporting\AdExtensionByAdReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
@@ -90,7 +78,7 @@ class AdExtensionByAdReportFilter
     }
 
     /**
-     * @return list
+     * @return AdStatusReportFilter
      */
     public function getAdStatus()
     {
@@ -98,7 +86,7 @@ class AdExtensionByAdReportFilter
     }
 
     /**
-     * @param list $AdStatus
+     * @param AdStatusReportFilter $AdStatus
      * @return \PMG\BingAds\Reporting\AdExtensionByAdReportFilter
      */
     public function setAdStatus($AdStatus)
@@ -108,7 +96,7 @@ class AdExtensionByAdReportFilter
     }
 
     /**
-     * @return list
+     * @return CampaignStatusReportFilter
      */
     public function getCampaignStatus()
     {
@@ -116,7 +104,7 @@ class AdExtensionByAdReportFilter
     }
 
     /**
-     * @param list $CampaignStatus
+     * @param CampaignStatusReportFilter $CampaignStatus
      * @return \PMG\BingAds\Reporting\AdExtensionByAdReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
@@ -126,7 +114,7 @@ class AdExtensionByAdReportFilter
     }
 
     /**
-     * @return list
+     * @return DeviceOSReportFilter
      */
     public function getDeviceOS()
     {
@@ -134,7 +122,7 @@ class AdExtensionByAdReportFilter
     }
 
     /**
-     * @param list $DeviceOS
+     * @param DeviceOSReportFilter $DeviceOS
      * @return \PMG\BingAds\Reporting\AdExtensionByAdReportFilter
      */
     public function setDeviceOS($DeviceOS)
@@ -144,7 +132,7 @@ class AdExtensionByAdReportFilter
     }
 
     /**
-     * @return list
+     * @return DeviceTypeReportFilter
      */
     public function getDeviceType()
     {
@@ -152,7 +140,7 @@ class AdExtensionByAdReportFilter
     }
 
     /**
-     * @param list $DeviceType
+     * @param DeviceTypeReportFilter $DeviceType
      * @return \PMG\BingAds\Reporting\AdExtensionByAdReportFilter
      */
     public function setDeviceType($DeviceType)

@@ -16,16 +16,12 @@ class ReportTime
     protected $CustomDateRangeStart = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\ReportTimePeriod for valid values
-     *
-     * @var string $PredefinedTime
+     * @var ReportTimePeriod $PredefinedTime
      */
     protected $PredefinedTime = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\ReportTimeZone for valid values
-     *
-     * @var string $ReportTimeZone
+     * @var ReportTimeZone $ReportTimeZone
      */
     protected $ReportTimeZone = null;
 
@@ -72,7 +68,7 @@ class ReportTime
     }
 
     /**
-     * @return string
+     * @return ReportTimePeriod
      */
     public function getPredefinedTime()
     {
@@ -80,7 +76,7 @@ class ReportTime
     }
 
     /**
-     * @param string $PredefinedTime
+     * @param ReportTimePeriod $PredefinedTime
      * @return \PMG\BingAds\Reporting\ReportTime
      */
     public function setPredefinedTime($PredefinedTime)
@@ -90,7 +86,7 @@ class ReportTime
     }
 
     /**
-     * @return string
+     * @return ReportTimeZone
      */
     public function getReportTimeZone()
     {
@@ -98,7 +94,7 @@ class ReportTime
     }
 
     /**
-     * @param string $ReportTimeZone
+     * @param ReportTimeZone $ReportTimeZone
      * @return \PMG\BingAds\Reporting\ReportTime
      */
     public function setReportTimeZone($ReportTimeZone)

@@ -21,9 +21,7 @@ class KeywordIdea
     protected $AdImpressionShare = null;
 
     /**
-     * @see \PMG\BingAds\AdInsight\CompetitionLevel for valid values
-     *
-     * @var string $Competition
+     * @var CompetitionLevel $Competition
      */
     protected $Competition = null;
 
@@ -43,9 +41,7 @@ class KeywordIdea
     protected $Relevance = null;
 
     /**
-     * @see \PMG\BingAds\AdInsight\SourceType for valid values
-     *
-     * @var string $Source
+     * @var SourceType $Source
      */
     protected $Source = null;
 
@@ -115,7 +111,7 @@ class KeywordIdea
     }
 
     /**
-     * @return string
+     * @return CompetitionLevel
      */
     public function getCompetition()
     {
@@ -123,7 +119,7 @@ class KeywordIdea
     }
 
     /**
-     * @param string $Competition
+     * @param CompetitionLevel $Competition
      * @return \PMG\BingAds\AdInsight\KeywordIdea
      */
     public function setCompetition($Competition)
@@ -187,7 +183,7 @@ class KeywordIdea
     }
 
     /**
-     * @return string
+     * @return SourceType
      */
     public function getSource()
     {
@@ -195,7 +191,7 @@ class KeywordIdea
     }
 
     /**
-     * @param string $Source
+     * @param SourceType $Source
      * @return \PMG\BingAds\AdInsight\KeywordIdea
      */
     public function setSource($Source)

@@ -11,9 +11,7 @@ class Keyword
     protected $Id = null;
 
     /**
-     * @see \PMG\BingAds\AdInsight\MatchType for valid values
-     *
-     * @var string $MatchType
+     * @var MatchType $MatchType
      */
     protected $MatchType = null;
 
@@ -47,7 +45,7 @@ class Keyword
     }
 
     /**
-     * @return string
+     * @return MatchType
      */
     public function getMatchType()
     {
@@ -55,7 +53,7 @@ class Keyword
     }
 
     /**
-     * @param string $MatchType
+     * @param MatchType $MatchType
      * @return \PMG\BingAds\AdInsight\Keyword
      */
     public function setMatchType($MatchType)

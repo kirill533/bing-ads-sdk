@@ -16,9 +16,7 @@ class Budget
     protected $AssociationCount = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\BudgetLimitType for valid values
-     *
-     * @var string $BudgetType
+     * @var BudgetLimitType $BudgetType
      */
     protected $BudgetType = null;
 
@@ -75,7 +73,7 @@ class Budget
     }
 
     /**
-     * @return string
+     * @return BudgetLimitType
      */
     public function getBudgetType()
     {
@@ -83,7 +81,7 @@ class Budget
     }
 
     /**
-     * @param string $BudgetType
+     * @param BudgetLimitType $BudgetType
      * @return \PMG\BingAds\CampaignManagement\Budget
      */
     public function setBudgetType($BudgetType)

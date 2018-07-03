@@ -16,9 +16,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
     protected $DestinationUrl = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\AdGroupCriterionEditorialStatus for valid values
-     *
-     * @var string $EditorialStatus
+     * @var AdGroupCriterionEditorialStatus $EditorialStatus
      */
     protected $EditorialStatus = null;
 
@@ -90,7 +88,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
     }
 
     /**
-     * @return string
+     * @return AdGroupCriterionEditorialStatus
      */
     public function getEditorialStatus()
     {
@@ -98,7 +96,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
     }
 
     /**
-     * @param string $EditorialStatus
+     * @param AdGroupCriterionEditorialStatus $EditorialStatus
      * @return \PMG\BingAds\CampaignManagement\BiddableAdGroupCriterion
      */
     public function setEditorialStatus($EditorialStatus)

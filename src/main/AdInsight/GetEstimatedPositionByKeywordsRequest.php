@@ -26,9 +26,7 @@ class GetEstimatedPositionByKeywordsRequest
     protected $LocationIds = null;
 
     /**
-     * @see \PMG\BingAds\AdInsight\CurrencyCode for valid values
-     *
-     * @var string $CurrencyCode
+     * @var CurrencyCode $CurrencyCode
      */
     protected $CurrencyCode = null;
 
@@ -52,7 +50,7 @@ class GetEstimatedPositionByKeywordsRequest
      * @param float $MaxBid
      * @param string $Language
      * @param ArrayOflong $LocationIds
-     * @param string $CurrencyCode
+     * @param CurrencyCode $CurrencyCode
      * @param ArrayOfMatchType $MatchTypes
      * @param int $CampaignId
      * @param int $AdGroupId
@@ -142,7 +140,7 @@ class GetEstimatedPositionByKeywordsRequest
     }
 
     /**
-     * @return string
+     * @return CurrencyCode
      */
     public function getCurrencyCode()
     {
@@ -150,7 +148,7 @@ class GetEstimatedPositionByKeywordsRequest
     }
 
     /**
-     * @param string $CurrencyCode
+     * @param CurrencyCode $CurrencyCode
      * @return \PMG\BingAds\AdInsight\GetEstimatedPositionByKeywordsRequest
      */
     public function setCurrencyCode($CurrencyCode)

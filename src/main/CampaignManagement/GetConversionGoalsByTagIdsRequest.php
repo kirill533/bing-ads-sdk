@@ -11,15 +11,13 @@ class GetConversionGoalsByTagIdsRequest
     protected $TagIds = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\ConversionGoalType for valid values
-     *
-     * @var list $ConversionGoalTypes
+     * @var ConversionGoalType $ConversionGoalTypes
      */
     protected $ConversionGoalTypes = null;
 
     /**
      * @param ArrayOflong $TagIds
-     * @param list $ConversionGoalTypes
+     * @param ConversionGoalType $ConversionGoalTypes
      */
     public function __construct($TagIds = null, $ConversionGoalTypes = null)
     {
@@ -46,7 +44,7 @@ class GetConversionGoalsByTagIdsRequest
     }
 
     /**
-     * @return list
+     * @return ConversionGoalType
      */
     public function getConversionGoalTypes()
     {
@@ -54,7 +52,7 @@ class GetConversionGoalsByTagIdsRequest
     }
 
     /**
-     * @param list $ConversionGoalTypes
+     * @param ConversionGoalType $ConversionGoalTypes
      * @return \PMG\BingAds\CampaignManagement\GetConversionGoalsByTagIdsRequest
      */
     public function setConversionGoalTypes($ConversionGoalTypes)

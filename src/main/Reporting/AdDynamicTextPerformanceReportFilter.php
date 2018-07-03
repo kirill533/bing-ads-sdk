@@ -6,51 +6,37 @@ class AdDynamicTextPerformanceReportFilter
 {
 
     /**
-     * @see \PMG\BingAds\Reporting\AccountStatusReportFilter for valid values
-     *
-     * @var list $AccountStatus
+     * @var AccountStatusReportFilter $AccountStatus
      */
     protected $AccountStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\AdDistributionReportFilter for valid values
-     *
-     * @var list $AdDistribution
+     * @var AdDistributionReportFilter $AdDistribution
      */
     protected $AdDistribution = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\AdGroupStatusReportFilter for valid values
-     *
-     * @var list $AdGroupStatus
+     * @var AdGroupStatusReportFilter $AdGroupStatus
      */
     protected $AdGroupStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\AdStatusReportFilter for valid values
-     *
-     * @var list $AdStatus
+     * @var AdStatusReportFilter $AdStatus
      */
     protected $AdStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\AdTypeReportFilter for valid values
-     *
-     * @var list $AdType
+     * @var AdTypeReportFilter $AdType
      */
     protected $AdType = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\DeviceTypeReportFilter for valid values
-     *
-     * @var list $DeviceType
+     * @var DeviceTypeReportFilter $DeviceType
      */
     protected $DeviceType = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\KeywordStatusReportFilter for valid values
-     *
-     * @var list $KeywordStatus
+     * @var KeywordStatusReportFilter $KeywordStatus
      */
     protected $KeywordStatus = null;
 
@@ -66,7 +52,7 @@ class AdDynamicTextPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AccountStatusReportFilter
      */
     public function getAccountStatus()
     {
@@ -74,7 +60,7 @@ class AdDynamicTextPerformanceReportFilter
     }
 
     /**
-     * @param list $AccountStatus
+     * @param AccountStatusReportFilter $AccountStatus
      * @return \PMG\BingAds\Reporting\AdDynamicTextPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
@@ -84,7 +70,7 @@ class AdDynamicTextPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AdDistributionReportFilter
      */
     public function getAdDistribution()
     {
@@ -92,7 +78,7 @@ class AdDynamicTextPerformanceReportFilter
     }
 
     /**
-     * @param list $AdDistribution
+     * @param AdDistributionReportFilter $AdDistribution
      * @return \PMG\BingAds\Reporting\AdDynamicTextPerformanceReportFilter
      */
     public function setAdDistribution($AdDistribution)
@@ -102,7 +88,7 @@ class AdDynamicTextPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AdGroupStatusReportFilter
      */
     public function getAdGroupStatus()
     {
@@ -110,7 +96,7 @@ class AdDynamicTextPerformanceReportFilter
     }
 
     /**
-     * @param list $AdGroupStatus
+     * @param AdGroupStatusReportFilter $AdGroupStatus
      * @return \PMG\BingAds\Reporting\AdDynamicTextPerformanceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
@@ -120,7 +106,7 @@ class AdDynamicTextPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AdStatusReportFilter
      */
     public function getAdStatus()
     {
@@ -128,7 +114,7 @@ class AdDynamicTextPerformanceReportFilter
     }
 
     /**
-     * @param list $AdStatus
+     * @param AdStatusReportFilter $AdStatus
      * @return \PMG\BingAds\Reporting\AdDynamicTextPerformanceReportFilter
      */
     public function setAdStatus($AdStatus)
@@ -138,7 +124,7 @@ class AdDynamicTextPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AdTypeReportFilter
      */
     public function getAdType()
     {
@@ -146,7 +132,7 @@ class AdDynamicTextPerformanceReportFilter
     }
 
     /**
-     * @param list $AdType
+     * @param AdTypeReportFilter $AdType
      * @return \PMG\BingAds\Reporting\AdDynamicTextPerformanceReportFilter
      */
     public function setAdType($AdType)
@@ -156,7 +142,7 @@ class AdDynamicTextPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return DeviceTypeReportFilter
      */
     public function getDeviceType()
     {
@@ -164,7 +150,7 @@ class AdDynamicTextPerformanceReportFilter
     }
 
     /**
-     * @param list $DeviceType
+     * @param DeviceTypeReportFilter $DeviceType
      * @return \PMG\BingAds\Reporting\AdDynamicTextPerformanceReportFilter
      */
     public function setDeviceType($DeviceType)
@@ -174,7 +160,7 @@ class AdDynamicTextPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return KeywordStatusReportFilter
      */
     public function getKeywordStatus()
     {
@@ -182,7 +168,7 @@ class AdDynamicTextPerformanceReportFilter
     }
 
     /**
-     * @param list $KeywordStatus
+     * @param KeywordStatusReportFilter $KeywordStatus
      * @return \PMG\BingAds\Reporting\AdDynamicTextPerformanceReportFilter
      */
     public function setKeywordStatus($KeywordStatus)

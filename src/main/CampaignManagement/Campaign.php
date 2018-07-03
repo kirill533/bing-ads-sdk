@@ -16,9 +16,7 @@ class Campaign
     protected $BiddingScheme = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\BudgetLimitType for valid values
-     *
-     * @var string $BudgetType
+     * @var BudgetLimitType $BudgetType
      */
     protected $BudgetType = null;
 
@@ -48,9 +46,7 @@ class Campaign
     protected $Name = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\CampaignStatus for valid values
-     *
-     * @var string $Status
+     * @var CampaignStatus $Status
      */
     protected $Status = null;
 
@@ -75,9 +71,7 @@ class Campaign
     protected $UrlCustomParameters = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\CampaignType for valid values
-     *
-     * @var list $CampaignType
+     * @var CampaignType $CampaignType
      */
     protected $CampaignType = null;
 
@@ -139,7 +133,7 @@ class Campaign
     }
 
     /**
-     * @return string
+     * @return BudgetLimitType
      */
     public function getBudgetType()
     {
@@ -147,7 +141,7 @@ class Campaign
     }
 
     /**
-     * @param string $BudgetType
+     * @param BudgetLimitType $BudgetType
      * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setBudgetType($BudgetType)
@@ -247,7 +241,7 @@ class Campaign
     }
 
     /**
-     * @return string
+     * @return CampaignStatus
      */
     public function getStatus()
     {
@@ -255,7 +249,7 @@ class Campaign
     }
 
     /**
-     * @param string $Status
+     * @param CampaignStatus $Status
      * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setStatus($Status)
@@ -337,7 +331,7 @@ class Campaign
     }
 
     /**
-     * @return list
+     * @return CampaignType
      */
     public function getCampaignType()
     {
@@ -345,7 +339,7 @@ class Campaign
     }
 
     /**
-     * @param list $CampaignType
+     * @param CampaignType $CampaignType
      * @return \PMG\BingAds\CampaignManagement\Campaign
      */
     public function setCampaignType($CampaignType)

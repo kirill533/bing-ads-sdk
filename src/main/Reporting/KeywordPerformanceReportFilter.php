@@ -6,23 +6,17 @@ class KeywordPerformanceReportFilter
 {
 
     /**
-     * @see \PMG\BingAds\Reporting\AccountStatusReportFilter for valid values
-     *
-     * @var list $AccountStatus
+     * @var AccountStatusReportFilter $AccountStatus
      */
     protected $AccountStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\AdDistributionReportFilter for valid values
-     *
-     * @var list $AdDistribution
+     * @var AdDistributionReportFilter $AdDistribution
      */
     protected $AdDistribution = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\AdGroupStatusReportFilter for valid values
-     *
-     * @var list $AdGroupStatus
+     * @var AdGroupStatusReportFilter $AdGroupStatus
      */
     protected $AdGroupStatus = null;
 
@@ -32,44 +26,32 @@ class KeywordPerformanceReportFilter
     protected $AdRelevance = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\AdTypeReportFilter for valid values
-     *
-     * @var list $AdType
+     * @var AdTypeReportFilter $AdType
      */
     protected $AdType = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\BidMatchTypeReportFilter for valid values
-     *
-     * @var list $BidMatchType
+     * @var BidMatchTypeReportFilter $BidMatchType
      */
     protected $BidMatchType = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\BidStrategyTypeReportFilter for valid values
-     *
-     * @var list $BidStrategyType
+     * @var BidStrategyTypeReportFilter $BidStrategyType
      */
     protected $BidStrategyType = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\CampaignStatusReportFilter for valid values
-     *
-     * @var list $CampaignStatus
+     * @var CampaignStatusReportFilter $CampaignStatus
      */
     protected $CampaignStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\DeliveredMatchTypeReportFilter for valid values
-     *
-     * @var list $DeliveredMatchType
+     * @var DeliveredMatchTypeReportFilter $DeliveredMatchType
      */
     protected $DeliveredMatchType = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\DeviceTypeReportFilter for valid values
-     *
-     * @var list $DeviceType
+     * @var DeviceTypeReportFilter $DeviceType
      */
     protected $DeviceType = null;
 
@@ -79,9 +61,7 @@ class KeywordPerformanceReportFilter
     protected $ExpectedCtr = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\KeywordStatusReportFilter for valid values
-     *
-     * @var list $KeywordStatus
+     * @var KeywordStatusReportFilter $KeywordStatus
      */
     protected $KeywordStatus = null;
 
@@ -112,7 +92,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AccountStatusReportFilter
      */
     public function getAccountStatus()
     {
@@ -120,7 +100,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @param list $AccountStatus
+     * @param AccountStatusReportFilter $AccountStatus
      * @return \PMG\BingAds\Reporting\KeywordPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
@@ -130,7 +110,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AdDistributionReportFilter
      */
     public function getAdDistribution()
     {
@@ -138,7 +118,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @param list $AdDistribution
+     * @param AdDistributionReportFilter $AdDistribution
      * @return \PMG\BingAds\Reporting\KeywordPerformanceReportFilter
      */
     public function setAdDistribution($AdDistribution)
@@ -148,7 +128,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AdGroupStatusReportFilter
      */
     public function getAdGroupStatus()
     {
@@ -156,7 +136,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @param list $AdGroupStatus
+     * @param AdGroupStatusReportFilter $AdGroupStatus
      * @return \PMG\BingAds\Reporting\KeywordPerformanceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
@@ -184,7 +164,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AdTypeReportFilter
      */
     public function getAdType()
     {
@@ -192,7 +172,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @param list $AdType
+     * @param AdTypeReportFilter $AdType
      * @return \PMG\BingAds\Reporting\KeywordPerformanceReportFilter
      */
     public function setAdType($AdType)
@@ -202,7 +182,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return BidMatchTypeReportFilter
      */
     public function getBidMatchType()
     {
@@ -210,7 +190,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @param list $BidMatchType
+     * @param BidMatchTypeReportFilter $BidMatchType
      * @return \PMG\BingAds\Reporting\KeywordPerformanceReportFilter
      */
     public function setBidMatchType($BidMatchType)
@@ -220,7 +200,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return BidStrategyTypeReportFilter
      */
     public function getBidStrategyType()
     {
@@ -228,7 +208,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @param list $BidStrategyType
+     * @param BidStrategyTypeReportFilter $BidStrategyType
      * @return \PMG\BingAds\Reporting\KeywordPerformanceReportFilter
      */
     public function setBidStrategyType($BidStrategyType)
@@ -238,7 +218,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return CampaignStatusReportFilter
      */
     public function getCampaignStatus()
     {
@@ -246,7 +226,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @param list $CampaignStatus
+     * @param CampaignStatusReportFilter $CampaignStatus
      * @return \PMG\BingAds\Reporting\KeywordPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
@@ -256,7 +236,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return DeliveredMatchTypeReportFilter
      */
     public function getDeliveredMatchType()
     {
@@ -264,7 +244,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @param list $DeliveredMatchType
+     * @param DeliveredMatchTypeReportFilter $DeliveredMatchType
      * @return \PMG\BingAds\Reporting\KeywordPerformanceReportFilter
      */
     public function setDeliveredMatchType($DeliveredMatchType)
@@ -274,7 +254,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return DeviceTypeReportFilter
      */
     public function getDeviceType()
     {
@@ -282,7 +262,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @param list $DeviceType
+     * @param DeviceTypeReportFilter $DeviceType
      * @return \PMG\BingAds\Reporting\KeywordPerformanceReportFilter
      */
     public function setDeviceType($DeviceType)
@@ -310,7 +290,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return KeywordStatusReportFilter
      */
     public function getKeywordStatus()
     {
@@ -318,7 +298,7 @@ class KeywordPerformanceReportFilter
     }
 
     /**
-     * @param list $KeywordStatus
+     * @param KeywordStatusReportFilter $KeywordStatus
      * @return \PMG\BingAds\Reporting\KeywordPerformanceReportFilter
      */
     public function setKeywordStatus($KeywordStatus)

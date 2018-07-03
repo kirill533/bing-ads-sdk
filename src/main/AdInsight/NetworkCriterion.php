@@ -6,9 +6,7 @@ class NetworkCriterion extends Criterion
 {
 
     /**
-     * @see \PMG\BingAds\AdInsight\NetworkType for valid values
-     *
-     * @var string $Network
+     * @var NetworkType $Network
      */
     protected $Network = null;
 
@@ -19,7 +17,7 @@ class NetworkCriterion extends Criterion
     }
 
     /**
-     * @return string
+     * @return NetworkType
      */
     public function getNetwork()
     {
@@ -27,7 +25,7 @@ class NetworkCriterion extends Criterion
     }
 
     /**
-     * @param string $Network
+     * @param NetworkType $Network
      * @return \PMG\BingAds\AdInsight\NetworkCriterion
      */
     public function setNetwork($Network)

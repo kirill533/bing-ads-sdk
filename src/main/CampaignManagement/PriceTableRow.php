@@ -36,16 +36,12 @@ class PriceTableRow
     protected $Price = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\PriceQualifier for valid values
-     *
-     * @var string $PriceQualifier
+     * @var PriceQualifier $PriceQualifier
      */
     protected $PriceQualifier = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\PriceUnit for valid values
-     *
-     * @var string $PriceUnit
+     * @var PriceUnit $PriceUnit
      */
     protected $PriceUnit = null;
 
@@ -61,8 +57,8 @@ class PriceTableRow
 
     /**
      * @param float $Price
-     * @param string $PriceQualifier
-     * @param string $PriceUnit
+     * @param PriceQualifier $PriceQualifier
+     * @param PriceUnit $PriceUnit
      */
     public function __construct($Price = null, $PriceQualifier = null, $PriceUnit = null)
     {
@@ -180,7 +176,7 @@ class PriceTableRow
     }
 
     /**
-     * @return string
+     * @return PriceQualifier
      */
     public function getPriceQualifier()
     {
@@ -188,7 +184,7 @@ class PriceTableRow
     }
 
     /**
-     * @param string $PriceQualifier
+     * @param PriceQualifier $PriceQualifier
      * @return \PMG\BingAds\CampaignManagement\PriceTableRow
      */
     public function setPriceQualifier($PriceQualifier)
@@ -198,7 +194,7 @@ class PriceTableRow
     }
 
     /**
-     * @return string
+     * @return PriceUnit
      */
     public function getPriceUnit()
     {
@@ -206,7 +202,7 @@ class PriceTableRow
     }
 
     /**
-     * @param string $PriceUnit
+     * @param PriceUnit $PriceUnit
      * @return \PMG\BingAds\CampaignManagement\PriceTableRow
      */
     public function setPriceUnit($PriceUnit)

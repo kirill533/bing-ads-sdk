@@ -6,9 +6,7 @@ class DayTimeCriterion extends Criterion
 {
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\Day for valid values
-     *
-     * @var string $Day
+     * @var Day $Day
      */
     protected $Day = null;
 
@@ -18,9 +16,7 @@ class DayTimeCriterion extends Criterion
     protected $FromHour = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\Minute for valid values
-     *
-     * @var string $FromMinute
+     * @var Minute $FromMinute
      */
     protected $FromMinute = null;
 
@@ -30,9 +26,7 @@ class DayTimeCriterion extends Criterion
     protected $ToHour = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\Minute for valid values
-     *
-     * @var string $ToMinute
+     * @var Minute $ToMinute
      */
     protected $ToMinute = null;
 
@@ -43,7 +37,7 @@ class DayTimeCriterion extends Criterion
     }
 
     /**
-     * @return string
+     * @return Day
      */
     public function getDay()
     {
@@ -51,7 +45,7 @@ class DayTimeCriterion extends Criterion
     }
 
     /**
-     * @param string $Day
+     * @param Day $Day
      * @return \PMG\BingAds\CampaignManagement\DayTimeCriterion
      */
     public function setDay($Day)
@@ -79,7 +73,7 @@ class DayTimeCriterion extends Criterion
     }
 
     /**
-     * @return string
+     * @return Minute
      */
     public function getFromMinute()
     {
@@ -87,7 +81,7 @@ class DayTimeCriterion extends Criterion
     }
 
     /**
-     * @param string $FromMinute
+     * @param Minute $FromMinute
      * @return \PMG\BingAds\CampaignManagement\DayTimeCriterion
      */
     public function setFromMinute($FromMinute)
@@ -115,7 +109,7 @@ class DayTimeCriterion extends Criterion
     }
 
     /**
-     * @return string
+     * @return Minute
      */
     public function getToMinute()
     {
@@ -123,7 +117,7 @@ class DayTimeCriterion extends Criterion
     }
 
     /**
-     * @param string $ToMinute
+     * @param Minute $ToMinute
      * @return \PMG\BingAds\CampaignManagement\DayTimeCriterion
      */
     public function setToMinute($ToMinute)

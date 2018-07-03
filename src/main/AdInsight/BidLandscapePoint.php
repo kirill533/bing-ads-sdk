@@ -26,9 +26,7 @@ class BidLandscapePoint
     protected $TopImpressions = null;
 
     /**
-     * @see \PMG\BingAds\AdInsight\CurrencyCode for valid values
-     *
-     * @var string $CurrencyCode
+     * @var CurrencyCode $CurrencyCode
      */
     protected $CurrencyCode = null;
 
@@ -121,7 +119,7 @@ class BidLandscapePoint
     }
 
     /**
-     * @return string
+     * @return CurrencyCode
      */
     public function getCurrencyCode()
     {
@@ -129,7 +127,7 @@ class BidLandscapePoint
     }
 
     /**
-     * @param string $CurrencyCode
+     * @param CurrencyCode $CurrencyCode
      * @return \PMG\BingAds\AdInsight\BidLandscapePoint
      */
     public function setCurrencyCode($CurrencyCode)

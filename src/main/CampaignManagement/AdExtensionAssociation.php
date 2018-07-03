@@ -11,16 +11,12 @@ class AdExtensionAssociation
     protected $AdExtension = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\AssociationType for valid values
-     *
-     * @var string $AssociationType
+     * @var AssociationType $AssociationType
      */
     protected $AssociationType = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\AdExtensionEditorialStatus for valid values
-     *
-     * @var string $EditorialStatus
+     * @var AdExtensionEditorialStatus $EditorialStatus
      */
     protected $EditorialStatus = null;
 
@@ -30,7 +26,7 @@ class AdExtensionAssociation
     protected $EntityId = null;
 
     /**
-     * @param string $AssociationType
+     * @param AssociationType $AssociationType
      * @param int $EntityId
      */
     public function __construct($AssociationType = null, $EntityId = null)
@@ -58,7 +54,7 @@ class AdExtensionAssociation
     }
 
     /**
-     * @return string
+     * @return AssociationType
      */
     public function getAssociationType()
     {
@@ -66,7 +62,7 @@ class AdExtensionAssociation
     }
 
     /**
-     * @param string $AssociationType
+     * @param AssociationType $AssociationType
      * @return \PMG\BingAds\CampaignManagement\AdExtensionAssociation
      */
     public function setAssociationType($AssociationType)
@@ -76,7 +72,7 @@ class AdExtensionAssociation
     }
 
     /**
-     * @return string
+     * @return AdExtensionEditorialStatus
      */
     public function getEditorialStatus()
     {
@@ -84,7 +80,7 @@ class AdExtensionAssociation
     }
 
     /**
-     * @param string $EditorialStatus
+     * @param AdExtensionEditorialStatus $EditorialStatus
      * @return \PMG\BingAds\CampaignManagement\AdExtensionAssociation
      */
     public function setEditorialStatus($EditorialStatus)

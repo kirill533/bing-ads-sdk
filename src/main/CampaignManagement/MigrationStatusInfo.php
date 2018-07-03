@@ -16,14 +16,12 @@ class MigrationStatusInfo
     protected $StartTimeInUtc = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\MigrationStatus for valid values
-     *
-     * @var string $Status
+     * @var MigrationStatus $Status
      */
     protected $Status = null;
 
     /**
-     * @param string $Status
+     * @param MigrationStatus $Status
      */
     public function __construct($Status = null)
     {
@@ -79,7 +77,7 @@ class MigrationStatusInfo
     }
 
     /**
-     * @return string
+     * @return MigrationStatus
      */
     public function getStatus()
     {
@@ -87,7 +85,7 @@ class MigrationStatusInfo
     }
 
     /**
-     * @param string $Status
+     * @param MigrationStatus $Status
      * @return \PMG\BingAds\CampaignManagement\MigrationStatusInfo
      */
     public function setStatus($Status)

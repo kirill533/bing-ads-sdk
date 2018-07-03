@@ -11,15 +11,13 @@ class GetCampaignsByAccountIdRequest
     protected $AccountId = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\CampaignType for valid values
-     *
-     * @var list $CampaignType
+     * @var CampaignType $CampaignType
      */
     protected $CampaignType = null;
 
     /**
      * @param int $AccountId
-     * @param list $CampaignType
+     * @param CampaignType $CampaignType
      */
     public function __construct($AccountId = null, $CampaignType = null)
     {
@@ -46,7 +44,7 @@ class GetCampaignsByAccountIdRequest
     }
 
     /**
-     * @return list
+     * @return CampaignType
      */
     public function getCampaignType()
     {
@@ -54,7 +52,7 @@ class GetCampaignsByAccountIdRequest
     }
 
     /**
-     * @param list $CampaignType
+     * @param CampaignType $CampaignType
      * @return \PMG\BingAds\CampaignManagement\GetCampaignsByAccountIdRequest
      */
     public function setCampaignType($CampaignType)

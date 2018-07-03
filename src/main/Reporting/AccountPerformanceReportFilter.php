@@ -6,30 +6,22 @@ class AccountPerformanceReportFilter
 {
 
     /**
-     * @see \PMG\BingAds\Reporting\AccountStatusReportFilter for valid values
-     *
-     * @var list $AccountStatus
+     * @var AccountStatusReportFilter $AccountStatus
      */
     protected $AccountStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\AdDistributionReportFilter for valid values
-     *
-     * @var list $AdDistribution
+     * @var AdDistributionReportFilter $AdDistribution
      */
     protected $AdDistribution = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\DeviceOSReportFilter for valid values
-     *
-     * @var list $DeviceOS
+     * @var DeviceOSReportFilter $DeviceOS
      */
     protected $DeviceOS = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\DeviceTypeReportFilter for valid values
-     *
-     * @var list $DeviceType
+     * @var DeviceTypeReportFilter $DeviceType
      */
     protected $DeviceType = null;
 
@@ -40,7 +32,7 @@ class AccountPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AccountStatusReportFilter
      */
     public function getAccountStatus()
     {
@@ -48,7 +40,7 @@ class AccountPerformanceReportFilter
     }
 
     /**
-     * @param list $AccountStatus
+     * @param AccountStatusReportFilter $AccountStatus
      * @return \PMG\BingAds\Reporting\AccountPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
@@ -58,7 +50,7 @@ class AccountPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AdDistributionReportFilter
      */
     public function getAdDistribution()
     {
@@ -66,7 +58,7 @@ class AccountPerformanceReportFilter
     }
 
     /**
-     * @param list $AdDistribution
+     * @param AdDistributionReportFilter $AdDistribution
      * @return \PMG\BingAds\Reporting\AccountPerformanceReportFilter
      */
     public function setAdDistribution($AdDistribution)
@@ -76,7 +68,7 @@ class AccountPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return DeviceOSReportFilter
      */
     public function getDeviceOS()
     {
@@ -84,7 +76,7 @@ class AccountPerformanceReportFilter
     }
 
     /**
-     * @param list $DeviceOS
+     * @param DeviceOSReportFilter $DeviceOS
      * @return \PMG\BingAds\Reporting\AccountPerformanceReportFilter
      */
     public function setDeviceOS($DeviceOS)
@@ -94,7 +86,7 @@ class AccountPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return DeviceTypeReportFilter
      */
     public function getDeviceType()
     {
@@ -102,7 +94,7 @@ class AccountPerformanceReportFilter
     }
 
     /**
-     * @param list $DeviceType
+     * @param DeviceTypeReportFilter $DeviceType
      * @return \PMG\BingAds\Reporting\AccountPerformanceReportFilter
      */
     public function setDeviceType($DeviceType)

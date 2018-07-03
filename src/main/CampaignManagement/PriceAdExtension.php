@@ -11,9 +11,7 @@ class PriceAdExtension extends AdExtension
     protected $Language = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\PriceExtensionType for valid values
-     *
-     * @var string $PriceExtensionType
+     * @var PriceExtensionType $PriceExtensionType
      */
     protected $PriceExtensionType = null;
 
@@ -33,7 +31,7 @@ class PriceAdExtension extends AdExtension
     protected $UrlCustomParameters = null;
 
     /**
-     * @param string $PriceExtensionType
+     * @param PriceExtensionType $PriceExtensionType
      */
     public function __construct($PriceExtensionType = null)
     {
@@ -60,7 +58,7 @@ class PriceAdExtension extends AdExtension
     }
 
     /**
-     * @return string
+     * @return PriceExtensionType
      */
     public function getPriceExtensionType()
     {
@@ -68,7 +66,7 @@ class PriceAdExtension extends AdExtension
     }
 
     /**
-     * @param string $PriceExtensionType
+     * @param PriceExtensionType $PriceExtensionType
      * @return \PMG\BingAds\CampaignManagement\PriceAdExtension
      */
     public function setPriceExtensionType($PriceExtensionType)

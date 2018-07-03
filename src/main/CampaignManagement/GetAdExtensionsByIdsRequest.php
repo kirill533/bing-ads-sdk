@@ -16,16 +16,14 @@ class GetAdExtensionsByIdsRequest
     protected $AdExtensionIds = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\AdExtensionsTypeFilter for valid values
-     *
-     * @var list $AdExtensionType
+     * @var AdExtensionsTypeFilter $AdExtensionType
      */
     protected $AdExtensionType = null;
 
     /**
      * @param int $AccountId
      * @param ArrayOflong $AdExtensionIds
-     * @param list $AdExtensionType
+     * @param AdExtensionsTypeFilter $AdExtensionType
      */
     public function __construct($AccountId = null, $AdExtensionIds = null, $AdExtensionType = null)
     {
@@ -71,7 +69,7 @@ class GetAdExtensionsByIdsRequest
     }
 
     /**
-     * @return list
+     * @return AdExtensionsTypeFilter
      */
     public function getAdExtensionType()
     {
@@ -79,7 +77,7 @@ class GetAdExtensionsByIdsRequest
     }
 
     /**
-     * @param list $AdExtensionType
+     * @param AdExtensionsTypeFilter $AdExtensionType
      * @return \PMG\BingAds\CampaignManagement\GetAdExtensionsByIdsRequest
      */
     public function setAdExtensionType($AdExtensionType)

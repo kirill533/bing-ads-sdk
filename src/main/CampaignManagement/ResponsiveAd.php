@@ -11,9 +11,7 @@ class ResponsiveAd extends Ad
     protected $BusinessName = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\CallToAction for valid values
-     *
-     * @var string $CallToAction
+     * @var CallToAction $CallToAction
      */
     protected $CallToAction = null;
 
@@ -77,7 +75,7 @@ class ResponsiveAd extends Ad
     }
 
     /**
-     * @return string
+     * @return CallToAction
      */
     public function getCallToAction()
     {
@@ -85,7 +83,7 @@ class ResponsiveAd extends Ad
     }
 
     /**
-     * @param string $CallToAction
+     * @param CallToAction $CallToAction
      * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
      */
     public function setCallToAction($CallToAction)

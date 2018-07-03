@@ -11,9 +11,7 @@ class BudgetPoint
     protected $BudgetAmount = null;
 
     /**
-     * @see \PMG\BingAds\AdInsight\BudgetPointType for valid values
-     *
-     * @var string $BudgetPointType
+     * @var BudgetPointType $BudgetPointType
      */
     protected $BudgetPointType = null;
 
@@ -57,7 +55,7 @@ class BudgetPoint
     }
 
     /**
-     * @return string
+     * @return BudgetPointType
      */
     public function getBudgetPointType()
     {
@@ -65,7 +63,7 @@ class BudgetPoint
     }
 
     /**
-     * @param string $BudgetPointType
+     * @param BudgetPointType $BudgetPointType
      * @return \PMG\BingAds\AdInsight\BudgetPoint
      */
     public function setBudgetPointType($BudgetPointType)

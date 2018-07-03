@@ -16,16 +16,14 @@ class GetCampaignCriterionsByIdsRequest
     protected $CampaignId = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\CampaignCriterionType for valid values
-     *
-     * @var list $CriterionType
+     * @var CampaignCriterionType $CriterionType
      */
     protected $CriterionType = null;
 
     /**
      * @param ArrayOflong $CampaignCriterionIds
      * @param int $CampaignId
-     * @param list $CriterionType
+     * @param CampaignCriterionType $CriterionType
      */
     public function __construct($CampaignCriterionIds = null, $CampaignId = null, $CriterionType = null)
     {
@@ -71,7 +69,7 @@ class GetCampaignCriterionsByIdsRequest
     }
 
     /**
-     * @return list
+     * @return CampaignCriterionType
      */
     public function getCriterionType()
     {
@@ -79,7 +77,7 @@ class GetCampaignCriterionsByIdsRequest
     }
 
     /**
-     * @param list $CriterionType
+     * @param CampaignCriterionType $CriterionType
      * @return \PMG\BingAds\CampaignManagement\GetCampaignCriterionsByIdsRequest
      */
     public function setCriterionType($CriterionType)

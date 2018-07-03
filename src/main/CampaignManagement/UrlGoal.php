@@ -11,9 +11,7 @@ class UrlGoal extends ConversionGoal
     protected $UrlExpression = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\ExpressionOperator for valid values
-     *
-     * @var string $UrlOperator
+     * @var ExpressionOperator $UrlOperator
      */
     protected $UrlOperator = null;
 
@@ -42,7 +40,7 @@ class UrlGoal extends ConversionGoal
     }
 
     /**
-     * @return string
+     * @return ExpressionOperator
      */
     public function getUrlOperator()
     {
@@ -50,7 +48,7 @@ class UrlGoal extends ConversionGoal
     }
 
     /**
-     * @param string $UrlOperator
+     * @param ExpressionOperator $UrlOperator
      * @return \PMG\BingAds\CampaignManagement\UrlGoal
      */
     public function setUrlOperator($UrlOperator)

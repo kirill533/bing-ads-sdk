@@ -11,16 +11,12 @@ class AdvertiserAccount
     protected $BillToCustomerId = null;
 
     /**
-     * @see \PMG\BingAds\CustomerManagement\CurrencyCode for valid values
-     *
-     * @var string $CurrencyCode
+     * @var CurrencyCode $CurrencyCode
      */
     protected $CurrencyCode = null;
 
     /**
-     * @see \PMG\BingAds\CustomerManagement\AccountFinancialStatus for valid values
-     *
-     * @var string $AccountFinancialStatus
+     * @var AccountFinancialStatus $AccountFinancialStatus
      */
     protected $AccountFinancialStatus = null;
 
@@ -30,9 +26,7 @@ class AdvertiserAccount
     protected $Id = null;
 
     /**
-     * @see \PMG\BingAds\CustomerManagement\LanguageType for valid values
-     *
-     * @var string $Language
+     * @var LanguageType $Language
      */
     protected $Language = null;
 
@@ -67,9 +61,7 @@ class AdvertiserAccount
     protected $PaymentMethodId = null;
 
     /**
-     * @see \PMG\BingAds\CustomerManagement\PaymentMethodType for valid values
-     *
-     * @var string $PaymentMethodType
+     * @var PaymentMethodType $PaymentMethodType
      */
     protected $PaymentMethodType = null;
 
@@ -79,9 +71,7 @@ class AdvertiserAccount
     protected $PrimaryUserId = null;
 
     /**
-     * @see \PMG\BingAds\CustomerManagement\AccountLifeCycleStatus for valid values
-     *
-     * @var string $AccountLifeCycleStatus
+     * @var AccountLifeCycleStatus $AccountLifeCycleStatus
      */
     protected $AccountLifeCycleStatus = null;
 
@@ -91,9 +81,7 @@ class AdvertiserAccount
     protected $TimeStamp = null;
 
     /**
-     * @see \PMG\BingAds\CustomerManagement\TimeZoneType for valid values
-     *
-     * @var string $TimeZone
+     * @var TimeZoneType $TimeZone
      */
     protected $TimeZone = null;
 
@@ -138,9 +126,7 @@ class AdvertiserAccount
     protected $BusinessAddress = null;
 
     /**
-     * @see \PMG\BingAds\CustomerManagement\AutoTagType for valid values
-     *
-     * @var string $AutoTagType
+     * @var AutoTagType $AutoTagType
      */
     protected $AutoTagType = null;
 
@@ -174,7 +160,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @return string
+     * @return CurrencyCode
      */
     public function getCurrencyCode()
     {
@@ -182,7 +168,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @param string $CurrencyCode
+     * @param CurrencyCode $CurrencyCode
      * @return \PMG\BingAds\CustomerManagement\AdvertiserAccount
      */
     public function setCurrencyCode($CurrencyCode)
@@ -192,7 +178,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @return string
+     * @return AccountFinancialStatus
      */
     public function getAccountFinancialStatus()
     {
@@ -200,7 +186,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @param string $AccountFinancialStatus
+     * @param AccountFinancialStatus $AccountFinancialStatus
      * @return \PMG\BingAds\CustomerManagement\AdvertiserAccount
      */
     public function setAccountFinancialStatus($AccountFinancialStatus)
@@ -228,7 +214,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @return string
+     * @return LanguageType
      */
     public function getLanguage()
     {
@@ -236,7 +222,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @param string $Language
+     * @param LanguageType $Language
      * @return \PMG\BingAds\CustomerManagement\AdvertiserAccount
      */
     public function setLanguage($Language)
@@ -366,7 +352,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @return string
+     * @return PaymentMethodType
      */
     public function getPaymentMethodType()
     {
@@ -374,7 +360,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @param string $PaymentMethodType
+     * @param PaymentMethodType $PaymentMethodType
      * @return \PMG\BingAds\CustomerManagement\AdvertiserAccount
      */
     public function setPaymentMethodType($PaymentMethodType)
@@ -402,7 +388,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @return string
+     * @return AccountLifeCycleStatus
      */
     public function getAccountLifeCycleStatus()
     {
@@ -410,7 +396,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @param string $AccountLifeCycleStatus
+     * @param AccountLifeCycleStatus $AccountLifeCycleStatus
      * @return \PMG\BingAds\CustomerManagement\AdvertiserAccount
      */
     public function setAccountLifeCycleStatus($AccountLifeCycleStatus)
@@ -438,7 +424,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @return string
+     * @return TimeZoneType
      */
     public function getTimeZone()
     {
@@ -446,7 +432,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @param string $TimeZone
+     * @param TimeZoneType $TimeZone
      * @return \PMG\BingAds\CustomerManagement\AdvertiserAccount
      */
     public function setTimeZone($TimeZone)
@@ -600,7 +586,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @return string
+     * @return AutoTagType
      */
     public function getAutoTagType()
     {
@@ -608,7 +594,7 @@ class AdvertiserAccount
     }
 
     /**
-     * @param string $AutoTagType
+     * @param AutoTagType $AutoTagType
      * @return \PMG\BingAds\CustomerManagement\AdvertiserAccount
      */
     public function setAutoTagType($AutoTagType)

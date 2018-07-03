@@ -6,23 +6,17 @@ class SearchCampaignChangeHistoryReportFilter
 {
 
     /**
-     * @see \PMG\BingAds\Reporting\AdDistributionReportFilter for valid values
-     *
-     * @var list $AdDistribution
+     * @var AdDistributionReportFilter $AdDistribution
      */
     protected $AdDistribution = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\ChangeTypeReportFilter for valid values
-     *
-     * @var list $HowChanged
+     * @var ChangeTypeReportFilter $HowChanged
      */
     protected $HowChanged = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\ChangeEntityReportFilter for valid values
-     *
-     * @var list $ItemChanged
+     * @var ChangeEntityReportFilter $ItemChanged
      */
     protected $ItemChanged = null;
 
@@ -33,7 +27,7 @@ class SearchCampaignChangeHistoryReportFilter
     }
 
     /**
-     * @return list
+     * @return AdDistributionReportFilter
      */
     public function getAdDistribution()
     {
@@ -41,7 +35,7 @@ class SearchCampaignChangeHistoryReportFilter
     }
 
     /**
-     * @param list $AdDistribution
+     * @param AdDistributionReportFilter $AdDistribution
      * @return \PMG\BingAds\Reporting\SearchCampaignChangeHistoryReportFilter
      */
     public function setAdDistribution($AdDistribution)
@@ -51,7 +45,7 @@ class SearchCampaignChangeHistoryReportFilter
     }
 
     /**
-     * @return list
+     * @return ChangeTypeReportFilter
      */
     public function getHowChanged()
     {
@@ -59,7 +53,7 @@ class SearchCampaignChangeHistoryReportFilter
     }
 
     /**
-     * @param list $HowChanged
+     * @param ChangeTypeReportFilter $HowChanged
      * @return \PMG\BingAds\Reporting\SearchCampaignChangeHistoryReportFilter
      */
     public function setHowChanged($HowChanged)
@@ -69,7 +63,7 @@ class SearchCampaignChangeHistoryReportFilter
     }
 
     /**
-     * @return list
+     * @return ChangeEntityReportFilter
      */
     public function getItemChanged()
     {
@@ -77,7 +71,7 @@ class SearchCampaignChangeHistoryReportFilter
     }
 
     /**
-     * @param list $ItemChanged
+     * @param ChangeEntityReportFilter $ItemChanged
      * @return \PMG\BingAds\Reporting\SearchCampaignChangeHistoryReportFilter
      */
     public function setItemChanged($ItemChanged)

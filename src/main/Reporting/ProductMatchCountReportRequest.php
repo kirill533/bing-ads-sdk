@@ -6,9 +6,7 @@ class ProductMatchCountReportRequest extends ReportRequest
 {
 
     /**
-     * @see \PMG\BingAds\Reporting\ReportAggregation for valid values
-     *
-     * @var string $Aggregation
+     * @var ReportAggregation $Aggregation
      */
     protected $Aggregation = null;
 
@@ -28,7 +26,7 @@ class ProductMatchCountReportRequest extends ReportRequest
     protected $Time = null;
 
     /**
-     * @param string $Aggregation
+     * @param ReportAggregation $Aggregation
      */
     public function __construct($Aggregation = null)
     {
@@ -37,7 +35,7 @@ class ProductMatchCountReportRequest extends ReportRequest
     }
 
     /**
-     * @return string
+     * @return ReportAggregation
      */
     public function getAggregation()
     {
@@ -45,7 +43,7 @@ class ProductMatchCountReportRequest extends ReportRequest
     }
 
     /**
-     * @param string $Aggregation
+     * @param ReportAggregation $Aggregation
      * @return \PMG\BingAds\Reporting\ProductMatchCountReportRequest
      */
     public function setAggregation($Aggregation)

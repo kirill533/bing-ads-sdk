@@ -6,44 +6,32 @@ class SearchQueryPerformanceReportFilter
 {
 
     /**
-     * @see \PMG\BingAds\Reporting\AccountStatusReportFilter for valid values
-     *
-     * @var list $AccountStatus
+     * @var AccountStatusReportFilter $AccountStatus
      */
     protected $AccountStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\AdGroupStatusReportFilter for valid values
-     *
-     * @var list $AdGroupStatus
+     * @var AdGroupStatusReportFilter $AdGroupStatus
      */
     protected $AdGroupStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\AdStatusReportFilter for valid values
-     *
-     * @var list $AdStatus
+     * @var AdStatusReportFilter $AdStatus
      */
     protected $AdStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\AdTypeReportFilter for valid values
-     *
-     * @var list $AdType
+     * @var AdTypeReportFilter $AdType
      */
     protected $AdType = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\CampaignStatusReportFilter for valid values
-     *
-     * @var list $CampaignStatus
+     * @var CampaignStatusReportFilter $CampaignStatus
      */
     protected $CampaignStatus = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\DeliveredMatchTypeReportFilter for valid values
-     *
-     * @var list $DeliveredMatchType
+     * @var DeliveredMatchTypeReportFilter $DeliveredMatchType
      */
     protected $DeliveredMatchType = null;
 
@@ -53,9 +41,7 @@ class SearchQueryPerformanceReportFilter
     protected $ExcludeZeroClicks = null;
 
     /**
-     * @see \PMG\BingAds\Reporting\KeywordStatusReportFilter for valid values
-     *
-     * @var list $KeywordStatus
+     * @var KeywordStatusReportFilter $KeywordStatus
      */
     protected $KeywordStatus = null;
 
@@ -76,7 +62,7 @@ class SearchQueryPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AccountStatusReportFilter
      */
     public function getAccountStatus()
     {
@@ -84,7 +70,7 @@ class SearchQueryPerformanceReportFilter
     }
 
     /**
-     * @param list $AccountStatus
+     * @param AccountStatusReportFilter $AccountStatus
      * @return \PMG\BingAds\Reporting\SearchQueryPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
@@ -94,7 +80,7 @@ class SearchQueryPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AdGroupStatusReportFilter
      */
     public function getAdGroupStatus()
     {
@@ -102,7 +88,7 @@ class SearchQueryPerformanceReportFilter
     }
 
     /**
-     * @param list $AdGroupStatus
+     * @param AdGroupStatusReportFilter $AdGroupStatus
      * @return \PMG\BingAds\Reporting\SearchQueryPerformanceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
@@ -112,7 +98,7 @@ class SearchQueryPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AdStatusReportFilter
      */
     public function getAdStatus()
     {
@@ -120,7 +106,7 @@ class SearchQueryPerformanceReportFilter
     }
 
     /**
-     * @param list $AdStatus
+     * @param AdStatusReportFilter $AdStatus
      * @return \PMG\BingAds\Reporting\SearchQueryPerformanceReportFilter
      */
     public function setAdStatus($AdStatus)
@@ -130,7 +116,7 @@ class SearchQueryPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return AdTypeReportFilter
      */
     public function getAdType()
     {
@@ -138,7 +124,7 @@ class SearchQueryPerformanceReportFilter
     }
 
     /**
-     * @param list $AdType
+     * @param AdTypeReportFilter $AdType
      * @return \PMG\BingAds\Reporting\SearchQueryPerformanceReportFilter
      */
     public function setAdType($AdType)
@@ -148,7 +134,7 @@ class SearchQueryPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return CampaignStatusReportFilter
      */
     public function getCampaignStatus()
     {
@@ -156,7 +142,7 @@ class SearchQueryPerformanceReportFilter
     }
 
     /**
-     * @param list $CampaignStatus
+     * @param CampaignStatusReportFilter $CampaignStatus
      * @return \PMG\BingAds\Reporting\SearchQueryPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
@@ -166,7 +152,7 @@ class SearchQueryPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return DeliveredMatchTypeReportFilter
      */
     public function getDeliveredMatchType()
     {
@@ -174,7 +160,7 @@ class SearchQueryPerformanceReportFilter
     }
 
     /**
-     * @param list $DeliveredMatchType
+     * @param DeliveredMatchTypeReportFilter $DeliveredMatchType
      * @return \PMG\BingAds\Reporting\SearchQueryPerformanceReportFilter
      */
     public function setDeliveredMatchType($DeliveredMatchType)
@@ -202,7 +188,7 @@ class SearchQueryPerformanceReportFilter
     }
 
     /**
-     * @return list
+     * @return KeywordStatusReportFilter
      */
     public function getKeywordStatus()
     {
@@ -210,7 +196,7 @@ class SearchQueryPerformanceReportFilter
     }
 
     /**
-     * @param list $KeywordStatus
+     * @param KeywordStatusReportFilter $KeywordStatus
      * @return \PMG\BingAds\Reporting\SearchQueryPerformanceReportFilter
      */
     public function setKeywordStatus($KeywordStatus)

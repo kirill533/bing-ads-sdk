@@ -61,9 +61,7 @@ class ClientLink
     protected $StartDate = null;
 
     /**
-     * @see \PMG\BingAds\CustomerManagement\ClientLinkStatus for valid values
-     *
-     * @var string $Status
+     * @var ClientLinkStatus $Status
      */
     protected $Status = null;
 
@@ -309,7 +307,7 @@ class ClientLink
     }
 
     /**
-     * @return string
+     * @return ClientLinkStatus
      */
     public function getStatus()
     {
@@ -317,7 +315,7 @@ class ClientLink
     }
 
     /**
-     * @param string $Status
+     * @param ClientLinkStatus $Status
      * @return \PMG\BingAds\CustomerManagement\ClientLink
      */
     public function setStatus($Status)

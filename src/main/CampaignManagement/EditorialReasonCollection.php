@@ -16,9 +16,7 @@ class EditorialReasonCollection
     protected $AdOrKeywordId = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\AppealStatus for valid values
-     *
-     * @var string $AppealStatus
+     * @var AppealStatus $AppealStatus
      */
     protected $AppealStatus = null;
 
@@ -70,7 +68,7 @@ class EditorialReasonCollection
     }
 
     /**
-     * @return string
+     * @return AppealStatus
      */
     public function getAppealStatus()
     {
@@ -78,7 +76,7 @@ class EditorialReasonCollection
     }
 
     /**
-     * @param string $AppealStatus
+     * @param AppealStatus $AppealStatus
      * @return \PMG\BingAds\CampaignManagement\EditorialReasonCollection
      */
     public function setAppealStatus($AppealStatus)

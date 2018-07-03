@@ -31,9 +31,7 @@ class UetTag
     protected $TrackingScript = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\UetTagTrackingStatus for valid values
-     *
-     * @var string $TrackingStatus
+     * @var UetTagTrackingStatus $TrackingStatus
      */
     protected $TrackingStatus = null;
 
@@ -134,7 +132,7 @@ class UetTag
     }
 
     /**
-     * @return string
+     * @return UetTagTrackingStatus
      */
     public function getTrackingStatus()
     {
@@ -142,7 +140,7 @@ class UetTag
     }
 
     /**
-     * @param string $TrackingStatus
+     * @param UetTagTrackingStatus $TrackingStatus
      * @return \PMG\BingAds\CampaignManagement\UetTag
      */
     public function setTrackingStatus($TrackingStatus)

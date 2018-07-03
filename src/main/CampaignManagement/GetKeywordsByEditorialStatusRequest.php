@@ -11,15 +11,13 @@ class GetKeywordsByEditorialStatusRequest
     protected $AdGroupId = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\KeywordEditorialStatus for valid values
-     *
-     * @var string $EditorialStatus
+     * @var KeywordEditorialStatus $EditorialStatus
      */
     protected $EditorialStatus = null;
 
     /**
      * @param int $AdGroupId
-     * @param string $EditorialStatus
+     * @param KeywordEditorialStatus $EditorialStatus
      */
     public function __construct($AdGroupId = null, $EditorialStatus = null)
     {
@@ -46,7 +44,7 @@ class GetKeywordsByEditorialStatusRequest
     }
 
     /**
-     * @return string
+     * @return KeywordEditorialStatus
      */
     public function getEditorialStatus()
     {
@@ -54,7 +52,7 @@ class GetKeywordsByEditorialStatusRequest
     }
 
     /**
-     * @param string $EditorialStatus
+     * @param KeywordEditorialStatus $EditorialStatus
      * @return \PMG\BingAds\CampaignManagement\GetKeywordsByEditorialStatusRequest
      */
     public function setEditorialStatus($EditorialStatus)

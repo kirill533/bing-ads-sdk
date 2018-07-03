@@ -11,15 +11,13 @@ class GetUsersInfoRequest
     protected $CustomerId = null;
 
     /**
-     * @see \PMG\BingAds\CustomerManagement\UserLifeCycleStatus for valid values
-     *
-     * @var string $StatusFilter
+     * @var UserLifeCycleStatus $StatusFilter
      */
     protected $StatusFilter = null;
 
     /**
      * @param int $CustomerId
-     * @param string $StatusFilter
+     * @param UserLifeCycleStatus $StatusFilter
      */
     public function __construct($CustomerId = null, $StatusFilter = null)
     {
@@ -46,7 +44,7 @@ class GetUsersInfoRequest
     }
 
     /**
-     * @return string
+     * @return UserLifeCycleStatus
      */
     public function getStatusFilter()
     {
@@ -54,7 +52,7 @@ class GetUsersInfoRequest
     }
 
     /**
-     * @param string $StatusFilter
+     * @param UserLifeCycleStatus $StatusFilter
      * @return \PMG\BingAds\CustomerManagement\GetUsersInfoRequest
      */
     public function setStatusFilter($StatusFilter)

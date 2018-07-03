@@ -6,9 +6,7 @@ class AuctionSegmentSearchParameter extends SearchParameter
 {
 
     /**
-     * @see \PMG\BingAds\AdInsight\AuctionSegment for valid values
-     *
-     * @var string $Segment
+     * @var AuctionSegment $Segment
      */
     protected $Segment = null;
 
@@ -19,7 +17,7 @@ class AuctionSegmentSearchParameter extends SearchParameter
     }
 
     /**
-     * @return string
+     * @return AuctionSegment
      */
     public function getSegment()
     {
@@ -27,7 +25,7 @@ class AuctionSegmentSearchParameter extends SearchParameter
     }
 
     /**
-     * @param string $Segment
+     * @param AuctionSegment $Segment
      * @return \PMG\BingAds\AdInsight\AuctionSegmentSearchParameter
      */
     public function setSegment($Segment)

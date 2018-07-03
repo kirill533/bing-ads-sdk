@@ -11,9 +11,7 @@ class CustomEventsRule extends RemarketingRule
     protected $Action = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\StringOperator for valid values
-     *
-     * @var string $ActionOperator
+     * @var StringOperator $ActionOperator
      */
     protected $ActionOperator = null;
 
@@ -23,9 +21,7 @@ class CustomEventsRule extends RemarketingRule
     protected $Category = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\StringOperator for valid values
-     *
-     * @var string $CategoryOperator
+     * @var StringOperator $CategoryOperator
      */
     protected $CategoryOperator = null;
 
@@ -35,9 +31,7 @@ class CustomEventsRule extends RemarketingRule
     protected $Label = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\StringOperator for valid values
-     *
-     * @var string $LabelOperator
+     * @var StringOperator $LabelOperator
      */
     protected $LabelOperator = null;
 
@@ -47,9 +41,7 @@ class CustomEventsRule extends RemarketingRule
     protected $Value = null;
 
     /**
-     * @see \PMG\BingAds\CampaignManagement\NumberOperator for valid values
-     *
-     * @var string $ValueOperator
+     * @var NumberOperator $ValueOperator
      */
     protected $ValueOperator = null;
 
@@ -78,7 +70,7 @@ class CustomEventsRule extends RemarketingRule
     }
 
     /**
-     * @return string
+     * @return StringOperator
      */
     public function getActionOperator()
     {
@@ -86,7 +78,7 @@ class CustomEventsRule extends RemarketingRule
     }
 
     /**
-     * @param string $ActionOperator
+     * @param StringOperator $ActionOperator
      * @return \PMG\BingAds\CampaignManagement\CustomEventsRule
      */
     public function setActionOperator($ActionOperator)
@@ -114,7 +106,7 @@ class CustomEventsRule extends RemarketingRule
     }
 
     /**
-     * @return string
+     * @return StringOperator
      */
     public function getCategoryOperator()
     {
@@ -122,7 +114,7 @@ class CustomEventsRule extends RemarketingRule
     }
 
     /**
-     * @param string $CategoryOperator
+     * @param StringOperator $CategoryOperator
      * @return \PMG\BingAds\CampaignManagement\CustomEventsRule
      */
     public function setCategoryOperator($CategoryOperator)
@@ -150,7 +142,7 @@ class CustomEventsRule extends RemarketingRule
     }
 
     /**
-     * @return string
+     * @return StringOperator
      */
     public function getLabelOperator()
     {
@@ -158,7 +150,7 @@ class CustomEventsRule extends RemarketingRule
     }
 
     /**
-     * @param string $LabelOperator
+     * @param StringOperator $LabelOperator
      * @return \PMG\BingAds\CampaignManagement\CustomEventsRule
      */
     public function setLabelOperator($LabelOperator)
@@ -186,7 +178,7 @@ class CustomEventsRule extends RemarketingRule
     }
 
     /**
-     * @return string
+     * @return NumberOperator
      */
     public function getValueOperator()
     {
@@ -194,7 +186,7 @@ class CustomEventsRule extends RemarketingRule
     }
 
     /**
-     * @param string $ValueOperator
+     * @param NumberOperator $ValueOperator
      * @return \PMG\BingAds\CampaignManagement\CustomEventsRule
      */
     public function setValueOperator($ValueOperator)

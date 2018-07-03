@@ -46,9 +46,7 @@ class UserInvitation
     protected $ExpirationDate = null;
 
     /**
-     * @see \PMG\BingAds\CustomerManagement\LCID for valid values
-     *
-     * @var string $Lcid
+     * @var LCID $Lcid
      */
     protected $Lcid = null;
 
@@ -215,7 +213,7 @@ class UserInvitation
     }
 
     /**
-     * @return string
+     * @return LCID
      */
     public function getLcid()
     {
@@ -223,7 +221,7 @@ class UserInvitation
     }
 
     /**
-     * @param string $Lcid
+     * @param LCID $Lcid
      * @return \PMG\BingAds\CustomerManagement\UserInvitation
      */
     public function setLcid($Lcid)

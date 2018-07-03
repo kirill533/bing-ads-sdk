@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfCampaignEstimate implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfCampaignEstimate implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfCampaignEstimate implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return CampaignEstimate Return the current element
+     * @return CampaignEstimate[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->CampaignEstimate);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->CampaignEstimate);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->CampaignEstimate);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->CampaignEstimate);
+        return new \ArrayIterator($this->CampaignEstimate);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfCampaignEstimate implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->CampaignEstimate);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return CampaignEstimate[]|null The previous array if present
+     */
+    public function exchangeArray(array $CampaignEstimate)
+    {
+        $prev = $this->CampaignEstimate;
+        $this->CampaignEstimate = $CampaignEstimate;
+        return $prev;
     }
 
 }

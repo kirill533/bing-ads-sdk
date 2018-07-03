@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfKeywordIdea implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfKeywordIdea implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfKeywordIdea implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return KeywordIdea Return the current element
+     * @return KeywordIdea[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->KeywordIdea);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->KeywordIdea);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->KeywordIdea);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->KeywordIdea);
+        return new \ArrayIterator($this->KeywordIdea);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfKeywordIdea implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->KeywordIdea);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return KeywordIdea[]|null The previous array if present
+     */
+    public function exchangeArray(array $KeywordIdea)
+    {
+        $prev = $this->KeywordIdea;
+        $this->KeywordIdea = $KeywordIdea;
+        return $prev;
     }
 
 }

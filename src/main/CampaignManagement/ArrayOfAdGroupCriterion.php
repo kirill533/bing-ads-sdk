@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ArrayOfAdGroupCriterion implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAdGroupCriterion implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAdGroupCriterion implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AdGroupCriterion Return the current element
+     * @return AdGroupCriterion[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AdGroupCriterion);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AdGroupCriterion);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AdGroupCriterion);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AdGroupCriterion);
+        return new \ArrayIterator($this->AdGroupCriterion);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAdGroupCriterion implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->AdGroupCriterion);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AdGroupCriterion[]|null The previous array if present
+     */
+    public function exchangeArray(array $AdGroupCriterion)
+    {
+        $prev = $this->AdGroupCriterion;
+        $this->AdGroupCriterion = $AdGroupCriterion;
+        return $prev;
     }
 
 }

@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CustomerBilling;
 
-class ArrayOfBillingDocument implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfBillingDocument implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfBillingDocument implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return BillingDocument Return the current element
+     * @return BillingDocument[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->BillingDocument);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->BillingDocument);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->BillingDocument);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->BillingDocument);
+        return new \ArrayIterator($this->BillingDocument);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfBillingDocument implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->BillingDocument);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return BillingDocument[]|null The previous array if present
+     */
+    public function exchangeArray(array $BillingDocument)
+    {
+        $prev = $this->BillingDocument;
+        $this->BillingDocument = $BillingDocument;
+        return $prev;
     }
 
 }

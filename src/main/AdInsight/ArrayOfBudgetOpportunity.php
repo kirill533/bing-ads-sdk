@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfBudgetOpportunity implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfBudgetOpportunity implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfBudgetOpportunity implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return BudgetOpportunity Return the current element
+     * @return BudgetOpportunity[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->BudgetOpportunity);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->BudgetOpportunity);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->BudgetOpportunity);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->BudgetOpportunity);
+        return new \ArrayIterator($this->BudgetOpportunity);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfBudgetOpportunity implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->BudgetOpportunity);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return BudgetOpportunity[]|null The previous array if present
+     */
+    public function exchangeArray(array $BudgetOpportunity)
+    {
+        $prev = $this->BudgetOpportunity;
+        $this->BudgetOpportunity = $BudgetOpportunity;
+        return $prev;
     }
 
 }

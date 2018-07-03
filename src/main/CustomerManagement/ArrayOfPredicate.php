@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CustomerManagement;
 
-class ArrayOfPredicate implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfPredicate implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfPredicate implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return Predicate Return the current element
+     * @return Predicate[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->Predicate);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->Predicate);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->Predicate);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->Predicate);
+        return new \ArrayIterator($this->Predicate);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfPredicate implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->Predicate);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return Predicate[]|null The previous array if present
+     */
+    public function exchangeArray(array $Predicate)
+    {
+        $prev = $this->Predicate;
+        $this->Predicate = $Predicate;
+        return $prev;
     }
 
 }

@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfSearchParameter implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfSearchParameter implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfSearchParameter implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return SearchParameter Return the current element
+     * @return SearchParameter[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->SearchParameter);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->SearchParameter);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->SearchParameter);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->SearchParameter);
+        return new \ArrayIterator($this->SearchParameter);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfSearchParameter implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->SearchParameter);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return SearchParameter[]|null The previous array if present
+     */
+    public function exchangeArray(array $SearchParameter)
+    {
+        $prev = $this->SearchParameter;
+        $this->SearchParameter = $SearchParameter;
+        return $prev;
     }
 
 }

@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfPublisherUsagePerformanceReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfPublisherUsagePerformanceReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfPublisherUsagePerformanceReportColumn implements \ArrayAccess, \Ite
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return PublisherUsagePerformanceReportColumn Return the current element
+     * @return PublisherUsagePerformanceReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->PublisherUsagePerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->PublisherUsagePerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->PublisherUsagePerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->PublisherUsagePerformanceReportColumn);
+        return new \ArrayIterator($this->PublisherUsagePerformanceReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfPublisherUsagePerformanceReportColumn implements \ArrayAccess, \Ite
     public function count()
     {
       return count($this->PublisherUsagePerformanceReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return PublisherUsagePerformanceReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $PublisherUsagePerformanceReportColumn)
+    {
+        $prev = $this->PublisherUsagePerformanceReportColumn;
+        $this->PublisherUsagePerformanceReportColumn = $PublisherUsagePerformanceReportColumn;
+        return $prev;
     }
 
 }

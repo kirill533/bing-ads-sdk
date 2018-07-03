@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfBatchError implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfBatchError implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfBatchError implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return BatchError Return the current element
+     * @return BatchError[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->BatchError);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->BatchError);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->BatchError);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->BatchError);
+        return new \ArrayIterator($this->BatchError);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfBatchError implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->BatchError);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return BatchError[]|null The previous array if present
+     */
+    public function exchangeArray(array $BatchError)
+    {
+        $prev = $this->BatchError;
+        $this->BatchError = $BatchError;
+        return $prev;
     }
 
 }

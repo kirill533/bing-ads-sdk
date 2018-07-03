@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfDSASearchQueryPerformanceReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfDSASearchQueryPerformanceReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfDSASearchQueryPerformanceReportColumn implements \ArrayAccess, \Ite
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return DSASearchQueryPerformanceReportColumn Return the current element
+     * @return DSASearchQueryPerformanceReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->DSASearchQueryPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->DSASearchQueryPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->DSASearchQueryPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->DSASearchQueryPerformanceReportColumn);
+        return new \ArrayIterator($this->DSASearchQueryPerformanceReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfDSASearchQueryPerformanceReportColumn implements \ArrayAccess, \Ite
     public function count()
     {
       return count($this->DSASearchQueryPerformanceReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return DSASearchQueryPerformanceReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $DSASearchQueryPerformanceReportColumn)
+    {
+        $prev = $this->DSASearchQueryPerformanceReportColumn;
+        $this->DSASearchQueryPerformanceReportColumn = $DSASearchQueryPerformanceReportColumn;
+        return $prev;
     }
 
 }

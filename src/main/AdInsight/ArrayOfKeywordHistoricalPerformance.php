@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfKeywordHistoricalPerformance implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfKeywordHistoricalPerformance implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfKeywordHistoricalPerformance implements \ArrayAccess, \Iterator, \C
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return KeywordHistoricalPerformance Return the current element
+     * @return KeywordHistoricalPerformance[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->KeywordHistoricalPerformance);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->KeywordHistoricalPerformance);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->KeywordHistoricalPerformance);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->KeywordHistoricalPerformance);
+        return new \ArrayIterator($this->KeywordHistoricalPerformance);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfKeywordHistoricalPerformance implements \ArrayAccess, \Iterator, \C
     public function count()
     {
       return count($this->KeywordHistoricalPerformance);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return KeywordHistoricalPerformance[]|null The previous array if present
+     */
+    public function exchangeArray(array $KeywordHistoricalPerformance)
+    {
+        $prev = $this->KeywordHistoricalPerformance;
+        $this->KeywordHistoricalPerformance = $KeywordHistoricalPerformance;
+        return $prev;
     }
 
 }

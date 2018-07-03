@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfKeywordOpportunity implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfKeywordOpportunity implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfKeywordOpportunity implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return KeywordOpportunity Return the current element
+     * @return KeywordOpportunity[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->KeywordOpportunity);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->KeywordOpportunity);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->KeywordOpportunity);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->KeywordOpportunity);
+        return new \ArrayIterator($this->KeywordOpportunity);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfKeywordOpportunity implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->KeywordOpportunity);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return KeywordOpportunity[]|null The previous array if present
+     */
+    public function exchangeArray(array $KeywordOpportunity)
+    {
+        $prev = $this->KeywordOpportunity;
+        $this->KeywordOpportunity = $KeywordOpportunity;
+        return $prev;
     }
 
 }

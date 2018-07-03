@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ArrayOfMediaMetaData implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfMediaMetaData implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfMediaMetaData implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return MediaMetaData Return the current element
+     * @return MediaMetaData[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->MediaMetaData);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->MediaMetaData);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->MediaMetaData);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->MediaMetaData);
+        return new \ArrayIterator($this->MediaMetaData);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfMediaMetaData implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->MediaMetaData);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return MediaMetaData[]|null The previous array if present
+     */
+    public function exchangeArray(array $MediaMetaData)
+    {
+        $prev = $this->MediaMetaData;
+        $this->MediaMetaData = $MediaMetaData;
+        return $prev;
     }
 
 }

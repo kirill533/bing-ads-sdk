@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfConversionPerformanceReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfConversionPerformanceReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfConversionPerformanceReportColumn implements \ArrayAccess, \Iterato
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return ConversionPerformanceReportColumn Return the current element
+     * @return ConversionPerformanceReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->ConversionPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->ConversionPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->ConversionPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->ConversionPerformanceReportColumn);
+        return new \ArrayIterator($this->ConversionPerformanceReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfConversionPerformanceReportColumn implements \ArrayAccess, \Iterato
     public function count()
     {
       return count($this->ConversionPerformanceReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return ConversionPerformanceReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $ConversionPerformanceReportColumn)
+    {
+        $prev = $this->ConversionPerformanceReportColumn;
+        $this->ConversionPerformanceReportColumn = $ConversionPerformanceReportColumn;
+        return $prev;
     }
 
 }

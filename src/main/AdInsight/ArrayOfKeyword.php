@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfKeyword implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfKeyword implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfKeyword implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return Keyword Return the current element
+     * @return Keyword[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->Keyword);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->Keyword);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->Keyword);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->Keyword);
+        return new \ArrayIterator($this->Keyword);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfKeyword implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->Keyword);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return Keyword[]|null The previous array if present
+     */
+    public function exchangeArray(array $Keyword)
+    {
+        $prev = $this->Keyword;
+        $this->Keyword = $Keyword;
+        return $prev;
     }
 
 }

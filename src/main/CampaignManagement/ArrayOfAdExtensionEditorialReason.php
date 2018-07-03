@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ArrayOfAdExtensionEditorialReason implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAdExtensionEditorialReason implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAdExtensionEditorialReason implements \ArrayAccess, \Iterator, \Cou
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AdExtensionEditorialReason Return the current element
+     * @return AdExtensionEditorialReason[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AdExtensionEditorialReason);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AdExtensionEditorialReason);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AdExtensionEditorialReason);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AdExtensionEditorialReason);
+        return new \ArrayIterator($this->AdExtensionEditorialReason);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAdExtensionEditorialReason implements \ArrayAccess, \Iterator, \Cou
     public function count()
     {
       return count($this->AdExtensionEditorialReason);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AdExtensionEditorialReason[]|null The previous array if present
+     */
+    public function exchangeArray(array $AdExtensionEditorialReason)
+    {
+        $prev = $this->AdExtensionEditorialReason;
+        $this->AdExtensionEditorialReason = $AdExtensionEditorialReason;
+        return $prev;
     }
 
 }

@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfAdGroupBidLandscapeInput implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAdGroupBidLandscapeInput implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAdGroupBidLandscapeInput implements \ArrayAccess, \Iterator, \Count
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AdGroupBidLandscapeInput Return the current element
+     * @return AdGroupBidLandscapeInput[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AdGroupBidLandscapeInput);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AdGroupBidLandscapeInput);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AdGroupBidLandscapeInput);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AdGroupBidLandscapeInput);
+        return new \ArrayIterator($this->AdGroupBidLandscapeInput);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAdGroupBidLandscapeInput implements \ArrayAccess, \Iterator, \Count
     public function count()
     {
       return count($this->AdGroupBidLandscapeInput);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AdGroupBidLandscapeInput[]|null The previous array if present
+     */
+    public function exchangeArray(array $AdGroupBidLandscapeInput)
+    {
+        $prev = $this->AdGroupBidLandscapeInput;
+        $this->AdGroupBidLandscapeInput = $AdGroupBidLandscapeInput;
+        return $prev;
     }
 
 }

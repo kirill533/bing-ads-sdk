@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfAuctionSegment implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAuctionSegment implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAuctionSegment implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AuctionSegment Return the current element
+     * @return AuctionSegment[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AuctionSegment);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AuctionSegment);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AuctionSegment);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AuctionSegment);
+        return new \ArrayIterator($this->AuctionSegment);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAuctionSegment implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->AuctionSegment);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AuctionSegment[]|null The previous array if present
+     */
+    public function exchangeArray(array $AuctionSegment)
+    {
+        $prev = $this->AuctionSegment;
+        $this->AuctionSegment = $AuctionSegment;
+        return $prev;
     }
 
 }

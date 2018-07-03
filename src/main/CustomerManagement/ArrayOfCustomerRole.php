@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CustomerManagement;
 
-class ArrayOfCustomerRole implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfCustomerRole implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfCustomerRole implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return CustomerRole Return the current element
+     * @return CustomerRole[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->CustomerRole);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->CustomerRole);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->CustomerRole);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->CustomerRole);
+        return new \ArrayIterator($this->CustomerRole);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfCustomerRole implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->CustomerRole);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return CustomerRole[]|null The previous array if present
+     */
+    public function exchangeArray(array $CustomerRole)
+    {
+        $prev = $this->CustomerRole;
+        $this->CustomerRole = $CustomerRole;
+        return $prev;
     }
 
 }

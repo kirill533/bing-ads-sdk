@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfOperationError implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfOperationError implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfOperationError implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return OperationError Return the current element
+     * @return OperationError[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->OperationError);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->OperationError);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->OperationError);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->OperationError);
+        return new \ArrayIterator($this->OperationError);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfOperationError implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->OperationError);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return OperationError[]|null The previous array if present
+     */
+    public function exchangeArray(array $OperationError)
+    {
+        $prev = $this->OperationError;
+        $this->OperationError = $OperationError;
+        return $prev;
     }
 
 }

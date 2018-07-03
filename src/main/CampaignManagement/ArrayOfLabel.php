@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ArrayOfLabel implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfLabel implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfLabel implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return Label Return the current element
+     * @return Label[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->Label);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->Label);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->Label);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->Label);
+        return new \ArrayIterator($this->Label);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfLabel implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->Label);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return Label[]|null The previous array if present
+     */
+    public function exchangeArray(array $Label)
+    {
+        $prev = $this->Label;
+        $this->Label = $Label;
+        return $prev;
     }
 
 }

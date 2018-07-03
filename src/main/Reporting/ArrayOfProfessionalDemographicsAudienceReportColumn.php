@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfProfessionalDemographicsAudienceReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfProfessionalDemographicsAudienceReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfProfessionalDemographicsAudienceReportColumn implements \ArrayAcces
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return ProfessionalDemographicsAudienceReportColumn Return the current element
+     * @return ProfessionalDemographicsAudienceReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->ProfessionalDemographicsAudienceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->ProfessionalDemographicsAudienceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->ProfessionalDemographicsAudienceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->ProfessionalDemographicsAudienceReportColumn);
+        return new \ArrayIterator($this->ProfessionalDemographicsAudienceReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfProfessionalDemographicsAudienceReportColumn implements \ArrayAcces
     public function count()
     {
       return count($this->ProfessionalDemographicsAudienceReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return ProfessionalDemographicsAudienceReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $ProfessionalDemographicsAudienceReportColumn)
+    {
+        $prev = $this->ProfessionalDemographicsAudienceReportColumn;
+        $this->ProfessionalDemographicsAudienceReportColumn = $ProfessionalDemographicsAudienceReportColumn;
+        return $prev;
     }
 
 }

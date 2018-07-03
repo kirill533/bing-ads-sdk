@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfKeywordEstimatedBid implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfKeywordEstimatedBid implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfKeywordEstimatedBid implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return KeywordEstimatedBid Return the current element
+     * @return KeywordEstimatedBid[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->KeywordEstimatedBid);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->KeywordEstimatedBid);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->KeywordEstimatedBid);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->KeywordEstimatedBid);
+        return new \ArrayIterator($this->KeywordEstimatedBid);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfKeywordEstimatedBid implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->KeywordEstimatedBid);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return KeywordEstimatedBid[]|null The previous array if present
+     */
+    public function exchangeArray(array $KeywordEstimatedBid)
+    {
+        $prev = $this->KeywordEstimatedBid;
+        $this->KeywordEstimatedBid = $KeywordEstimatedBid;
+        return $prev;
     }
 
 }

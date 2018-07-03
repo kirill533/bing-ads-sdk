@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfAuctionInsightKpi implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAuctionInsightKpi implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAuctionInsightKpi implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AuctionInsightKpi Return the current element
+     * @return AuctionInsightKpi[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AuctionInsightKpi);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AuctionInsightKpi);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AuctionInsightKpi);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AuctionInsightKpi);
+        return new \ArrayIterator($this->AuctionInsightKpi);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAuctionInsightKpi implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->AuctionInsightKpi);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AuctionInsightKpi[]|null The previous array if present
+     */
+    public function exchangeArray(array $AuctionInsightKpi)
+    {
+        $prev = $this->AuctionInsightKpi;
+        $this->AuctionInsightKpi = $AuctionInsightKpi;
+        return $prev;
     }
 
 }

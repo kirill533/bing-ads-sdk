@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfBidLandscapePoint implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfBidLandscapePoint implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfBidLandscapePoint implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return BidLandscapePoint Return the current element
+     * @return BidLandscapePoint[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->BidLandscapePoint);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->BidLandscapePoint);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->BidLandscapePoint);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->BidLandscapePoint);
+        return new \ArrayIterator($this->BidLandscapePoint);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfBidLandscapePoint implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->BidLandscapePoint);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return BidLandscapePoint[]|null The previous array if present
+     */
+    public function exchangeArray(array $BidLandscapePoint)
+    {
+        $prev = $this->BidLandscapePoint;
+        $this->BidLandscapePoint = $BidLandscapePoint;
+        return $prev;
     }
 
 }

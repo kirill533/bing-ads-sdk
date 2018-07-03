@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfSearchQueryPerformanceReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfSearchQueryPerformanceReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfSearchQueryPerformanceReportColumn implements \ArrayAccess, \Iterat
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return SearchQueryPerformanceReportColumn Return the current element
+     * @return SearchQueryPerformanceReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->SearchQueryPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->SearchQueryPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->SearchQueryPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->SearchQueryPerformanceReportColumn);
+        return new \ArrayIterator($this->SearchQueryPerformanceReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfSearchQueryPerformanceReportColumn implements \ArrayAccess, \Iterat
     public function count()
     {
       return count($this->SearchQueryPerformanceReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return SearchQueryPerformanceReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $SearchQueryPerformanceReportColumn)
+    {
+        $prev = $this->SearchQueryPerformanceReportColumn;
+        $this->SearchQueryPerformanceReportColumn = $SearchQueryPerformanceReportColumn;
+        return $prev;
     }
 
 }

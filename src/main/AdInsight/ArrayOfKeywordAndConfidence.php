@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfKeywordAndConfidence implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfKeywordAndConfidence implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfKeywordAndConfidence implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return KeywordAndConfidence Return the current element
+     * @return KeywordAndConfidence[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->KeywordAndConfidence);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->KeywordAndConfidence);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->KeywordAndConfidence);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->KeywordAndConfidence);
+        return new \ArrayIterator($this->KeywordAndConfidence);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfKeywordAndConfidence implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->KeywordAndConfidence);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return KeywordAndConfidence[]|null The previous array if present
+     */
+    public function exchangeArray(array $KeywordAndConfidence)
+    {
+        $prev = $this->KeywordAndConfidence;
+        $this->KeywordAndConfidence = $KeywordAndConfidence;
+        return $prev;
     }
 
 }

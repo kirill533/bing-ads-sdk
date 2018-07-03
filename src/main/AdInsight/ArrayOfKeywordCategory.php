@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfKeywordCategory implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfKeywordCategory implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfKeywordCategory implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return KeywordCategory Return the current element
+     * @return KeywordCategory[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->KeywordCategory);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->KeywordCategory);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->KeywordCategory);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->KeywordCategory);
+        return new \ArrayIterator($this->KeywordCategory);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfKeywordCategory implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->KeywordCategory);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return KeywordCategory[]|null The previous array if present
+     */
+    public function exchangeArray(array $KeywordCategory)
+    {
+        $prev = $this->KeywordCategory;
+        $this->KeywordCategory = $KeywordCategory;
+        return $prev;
     }
 
 }

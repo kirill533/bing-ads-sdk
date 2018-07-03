@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfKeywordDemographic implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfKeywordDemographic implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfKeywordDemographic implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return KeywordDemographic Return the current element
+     * @return KeywordDemographic[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->KeywordDemographic);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->KeywordDemographic);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->KeywordDemographic);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->KeywordDemographic);
+        return new \ArrayIterator($this->KeywordDemographic);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfKeywordDemographic implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->KeywordDemographic);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return KeywordDemographic[]|null The previous array if present
+     */
+    public function exchangeArray(array $KeywordDemographic)
+    {
+        $prev = $this->KeywordDemographic;
+        $this->KeywordDemographic = $KeywordDemographic;
+        return $prev;
     }
 
 }

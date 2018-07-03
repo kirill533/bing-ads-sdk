@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CustomerManagement;
 
-class ArrayOfArrayOfOperationError implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfArrayOfOperationError implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfArrayOfOperationError implements \ArrayAccess, \Iterator, \Countabl
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return ArrayOfOperationError Return the current element
+     * @return ArrayOfOperationError[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->ArrayOfOperationError);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->ArrayOfOperationError);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->ArrayOfOperationError);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->ArrayOfOperationError);
+        return new \ArrayIterator($this->ArrayOfOperationError);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfArrayOfOperationError implements \ArrayAccess, \Iterator, \Countabl
     public function count()
     {
       return count($this->ArrayOfOperationError);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return ArrayOfOperationError[]|null The previous array if present
+     */
+    public function exchangeArray(array $ArrayOfOperationError)
+    {
+        $prev = $this->ArrayOfOperationError;
+        $this->ArrayOfOperationError = $ArrayOfOperationError;
+        return $prev;
     }
 
 }

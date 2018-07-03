@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ArrayOfAdExtensionAssociationCollection implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAdExtensionAssociationCollection implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAdExtensionAssociationCollection implements \ArrayAccess, \Iterator
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AdExtensionAssociationCollection Return the current element
+     * @return AdExtensionAssociationCollection[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AdExtensionAssociationCollection);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AdExtensionAssociationCollection);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AdExtensionAssociationCollection);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AdExtensionAssociationCollection);
+        return new \ArrayIterator($this->AdExtensionAssociationCollection);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAdExtensionAssociationCollection implements \ArrayAccess, \Iterator
     public function count()
     {
       return count($this->AdExtensionAssociationCollection);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AdExtensionAssociationCollection[]|null The previous array if present
+     */
+    public function exchangeArray(array $AdExtensionAssociationCollection)
+    {
+        $prev = $this->AdExtensionAssociationCollection;
+        $this->AdExtensionAssociationCollection = $AdExtensionAssociationCollection;
+        return $prev;
     }
 
 }

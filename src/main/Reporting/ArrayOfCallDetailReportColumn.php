@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfCallDetailReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfCallDetailReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfCallDetailReportColumn implements \ArrayAccess, \Iterator, \Countab
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return CallDetailReportColumn Return the current element
+     * @return CallDetailReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->CallDetailReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->CallDetailReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->CallDetailReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->CallDetailReportColumn);
+        return new \ArrayIterator($this->CallDetailReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfCallDetailReportColumn implements \ArrayAccess, \Iterator, \Countab
     public function count()
     {
       return count($this->CallDetailReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return CallDetailReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $CallDetailReportColumn)
+    {
+        $prev = $this->CallDetailReportColumn;
+        $this->CallDetailReportColumn = $CallDetailReportColumn;
+        return $prev;
     }
 
 }

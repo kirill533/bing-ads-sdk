@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfCompetitionLevel implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfCompetitionLevel implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfCompetitionLevel implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return CompetitionLevel Return the current element
+     * @return CompetitionLevel[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->CompetitionLevel);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->CompetitionLevel);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->CompetitionLevel);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->CompetitionLevel);
+        return new \ArrayIterator($this->CompetitionLevel);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfCompetitionLevel implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->CompetitionLevel);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return CompetitionLevel[]|null The previous array if present
+     */
+    public function exchangeArray(array $CompetitionLevel)
+    {
+        $prev = $this->CompetitionLevel;
+        $this->CompetitionLevel = $CompetitionLevel;
+        return $prev;
     }
 
 }

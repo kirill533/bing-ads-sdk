@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfCriterion implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfCriterion implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfCriterion implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return Criterion Return the current element
+     * @return Criterion[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->Criterion);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->Criterion);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->Criterion);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->Criterion);
+        return new \ArrayIterator($this->Criterion);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfCriterion implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->Criterion);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return Criterion[]|null The previous array if present
+     */
+    public function exchangeArray(array $Criterion)
+    {
+        $prev = $this->Criterion;
+        $this->Criterion = $Criterion;
+        return $prev;
     }
 
 }

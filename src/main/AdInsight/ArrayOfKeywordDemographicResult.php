@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfKeywordDemographicResult implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfKeywordDemographicResult implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfKeywordDemographicResult implements \ArrayAccess, \Iterator, \Count
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return KeywordDemographicResult Return the current element
+     * @return KeywordDemographicResult[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->KeywordDemographicResult);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->KeywordDemographicResult);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->KeywordDemographicResult);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->KeywordDemographicResult);
+        return new \ArrayIterator($this->KeywordDemographicResult);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfKeywordDemographicResult implements \ArrayAccess, \Iterator, \Count
     public function count()
     {
       return count($this->KeywordDemographicResult);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return KeywordDemographicResult[]|null The previous array if present
+     */
+    public function exchangeArray(array $KeywordDemographicResult)
+    {
+        $prev = $this->KeywordDemographicResult;
+        $this->KeywordDemographicResult = $KeywordDemographicResult;
+        return $prev;
     }
 
 }

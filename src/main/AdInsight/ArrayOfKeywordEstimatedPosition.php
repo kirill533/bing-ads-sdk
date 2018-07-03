@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfKeywordEstimatedPosition implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfKeywordEstimatedPosition implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfKeywordEstimatedPosition implements \ArrayAccess, \Iterator, \Count
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return KeywordEstimatedPosition Return the current element
+     * @return KeywordEstimatedPosition[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->KeywordEstimatedPosition);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->KeywordEstimatedPosition);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->KeywordEstimatedPosition);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->KeywordEstimatedPosition);
+        return new \ArrayIterator($this->KeywordEstimatedPosition);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfKeywordEstimatedPosition implements \ArrayAccess, \Iterator, \Count
     public function count()
     {
       return count($this->KeywordEstimatedPosition);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return KeywordEstimatedPosition[]|null The previous array if present
+     */
+    public function exchangeArray(array $KeywordEstimatedPosition)
+    {
+        $prev = $this->KeywordEstimatedPosition;
+        $this->KeywordEstimatedPosition = $KeywordEstimatedPosition;
+        return $prev;
     }
 
 }

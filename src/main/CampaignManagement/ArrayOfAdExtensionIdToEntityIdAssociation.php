@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ArrayOfAdExtensionIdToEntityIdAssociation implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAdExtensionIdToEntityIdAssociation implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAdExtensionIdToEntityIdAssociation implements \ArrayAccess, \Iterat
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AdExtensionIdToEntityIdAssociation Return the current element
+     * @return AdExtensionIdToEntityIdAssociation[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AdExtensionIdToEntityIdAssociation);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AdExtensionIdToEntityIdAssociation);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AdExtensionIdToEntityIdAssociation);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AdExtensionIdToEntityIdAssociation);
+        return new \ArrayIterator($this->AdExtensionIdToEntityIdAssociation);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAdExtensionIdToEntityIdAssociation implements \ArrayAccess, \Iterat
     public function count()
     {
       return count($this->AdExtensionIdToEntityIdAssociation);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AdExtensionIdToEntityIdAssociation[]|null The previous array if present
+     */
+    public function exchangeArray(array $AdExtensionIdToEntityIdAssociation)
+    {
+        $prev = $this->AdExtensionIdToEntityIdAssociation;
+        $this->AdExtensionIdToEntityIdAssociation = $AdExtensionIdToEntityIdAssociation;
+        return $prev;
     }
 
 }

@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ArrayOfSharedEntity implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfSharedEntity implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfSharedEntity implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return SharedEntity Return the current element
+     * @return SharedEntity[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->SharedEntity);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->SharedEntity);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->SharedEntity);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->SharedEntity);
+        return new \ArrayIterator($this->SharedEntity);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfSharedEntity implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->SharedEntity);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return SharedEntity[]|null The previous array if present
+     */
+    public function exchangeArray(array $SharedEntity)
+    {
+        $prev = $this->SharedEntity;
+        $this->SharedEntity = $SharedEntity;
+        return $prev;
     }
 
 }

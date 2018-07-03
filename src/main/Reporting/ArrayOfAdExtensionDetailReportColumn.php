@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfAdExtensionDetailReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAdExtensionDetailReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAdExtensionDetailReportColumn implements \ArrayAccess, \Iterator, \
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AdExtensionDetailReportColumn Return the current element
+     * @return AdExtensionDetailReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AdExtensionDetailReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AdExtensionDetailReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AdExtensionDetailReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AdExtensionDetailReportColumn);
+        return new \ArrayIterator($this->AdExtensionDetailReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAdExtensionDetailReportColumn implements \ArrayAccess, \Iterator, \
     public function count()
     {
       return count($this->AdExtensionDetailReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AdExtensionDetailReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $AdExtensionDetailReportColumn)
+    {
+        $prev = $this->AdExtensionDetailReportColumn;
+        $this->AdExtensionDetailReportColumn = $AdExtensionDetailReportColumn;
+        return $prev;
     }
 
 }

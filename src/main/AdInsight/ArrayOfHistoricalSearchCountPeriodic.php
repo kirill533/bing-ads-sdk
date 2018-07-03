@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfHistoricalSearchCountPeriodic implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfHistoricalSearchCountPeriodic implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfHistoricalSearchCountPeriodic implements \ArrayAccess, \Iterator, \
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return HistoricalSearchCountPeriodic Return the current element
+     * @return HistoricalSearchCountPeriodic[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->HistoricalSearchCountPeriodic);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->HistoricalSearchCountPeriodic);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->HistoricalSearchCountPeriodic);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->HistoricalSearchCountPeriodic);
+        return new \ArrayIterator($this->HistoricalSearchCountPeriodic);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfHistoricalSearchCountPeriodic implements \ArrayAccess, \Iterator, \
     public function count()
     {
       return count($this->HistoricalSearchCountPeriodic);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return HistoricalSearchCountPeriodic[]|null The previous array if present
+     */
+    public function exchangeArray(array $HistoricalSearchCountPeriodic)
+    {
+        $prev = $this->HistoricalSearchCountPeriodic;
+        $this->HistoricalSearchCountPeriodic = $HistoricalSearchCountPeriodic;
+        return $prev;
     }
 
 }

@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ArrayOfSharedListItem implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfSharedListItem implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfSharedListItem implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return SharedListItem Return the current element
+     * @return SharedListItem[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->SharedListItem);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->SharedListItem);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->SharedListItem);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->SharedListItem);
+        return new \ArrayIterator($this->SharedListItem);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfSharedListItem implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->SharedListItem);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return SharedListItem[]|null The previous array if present
+     */
+    public function exchangeArray(array $SharedListItem)
+    {
+        $prev = $this->SharedListItem;
+        $this->SharedListItem = $SharedListItem;
+        return $prev;
     }
 
 }

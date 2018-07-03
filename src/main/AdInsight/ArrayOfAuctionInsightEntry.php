@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfAuctionInsightEntry implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAuctionInsightEntry implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAuctionInsightEntry implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AuctionInsightEntry Return the current element
+     * @return AuctionInsightEntry[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AuctionInsightEntry);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AuctionInsightEntry);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AuctionInsightEntry);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AuctionInsightEntry);
+        return new \ArrayIterator($this->AuctionInsightEntry);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAuctionInsightEntry implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->AuctionInsightEntry);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AuctionInsightEntry[]|null The previous array if present
+     */
+    public function exchangeArray(array $AuctionInsightEntry)
+    {
+        $prev = $this->AuctionInsightEntry;
+        $this->AuctionInsightEntry = $AuctionInsightEntry;
+        return $prev;
     }
 
 }

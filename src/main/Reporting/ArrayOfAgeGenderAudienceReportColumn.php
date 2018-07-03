@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfAgeGenderAudienceReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAgeGenderAudienceReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAgeGenderAudienceReportColumn implements \ArrayAccess, \Iterator, \
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AgeGenderAudienceReportColumn Return the current element
+     * @return AgeGenderAudienceReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AgeGenderAudienceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AgeGenderAudienceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AgeGenderAudienceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AgeGenderAudienceReportColumn);
+        return new \ArrayIterator($this->AgeGenderAudienceReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAgeGenderAudienceReportColumn implements \ArrayAccess, \Iterator, \
     public function count()
     {
       return count($this->AgeGenderAudienceReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AgeGenderAudienceReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $AgeGenderAudienceReportColumn)
+    {
+        $prev = $this->AgeGenderAudienceReportColumn;
+        $this->AgeGenderAudienceReportColumn = $AgeGenderAudienceReportColumn;
+        return $prev;
     }
 
 }

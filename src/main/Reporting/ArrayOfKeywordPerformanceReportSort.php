@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfKeywordPerformanceReportSort implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfKeywordPerformanceReportSort implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfKeywordPerformanceReportSort implements \ArrayAccess, \Iterator, \C
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return KeywordPerformanceReportSort Return the current element
+     * @return KeywordPerformanceReportSort[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->KeywordPerformanceReportSort);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->KeywordPerformanceReportSort);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->KeywordPerformanceReportSort);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->KeywordPerformanceReportSort);
+        return new \ArrayIterator($this->KeywordPerformanceReportSort);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfKeywordPerformanceReportSort implements \ArrayAccess, \Iterator, \C
     public function count()
     {
       return count($this->KeywordPerformanceReportSort);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return KeywordPerformanceReportSort[]|null The previous array if present
+     */
+    public function exchangeArray(array $KeywordPerformanceReportSort)
+    {
+        $prev = $this->KeywordPerformanceReportSort;
+        $this->KeywordPerformanceReportSort = $KeywordPerformanceReportSort;
+        return $prev;
     }
 
 }

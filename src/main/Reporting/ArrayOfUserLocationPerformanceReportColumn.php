@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfUserLocationPerformanceReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfUserLocationPerformanceReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfUserLocationPerformanceReportColumn implements \ArrayAccess, \Itera
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return UserLocationPerformanceReportColumn Return the current element
+     * @return UserLocationPerformanceReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->UserLocationPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->UserLocationPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->UserLocationPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->UserLocationPerformanceReportColumn);
+        return new \ArrayIterator($this->UserLocationPerformanceReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfUserLocationPerformanceReportColumn implements \ArrayAccess, \Itera
     public function count()
     {
       return count($this->UserLocationPerformanceReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return UserLocationPerformanceReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $UserLocationPerformanceReportColumn)
+    {
+        $prev = $this->UserLocationPerformanceReportColumn;
+        $this->UserLocationPerformanceReportColumn = $UserLocationPerformanceReportColumn;
+        return $prev;
     }
 
 }

@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CustomerManagement;
 
-class ArrayOfUserInfo implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfUserInfo implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfUserInfo implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return UserInfo Return the current element
+     * @return UserInfo[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->UserInfo);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->UserInfo);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->UserInfo);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->UserInfo);
+        return new \ArrayIterator($this->UserInfo);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfUserInfo implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->UserInfo);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return UserInfo[]|null The previous array if present
+     */
+    public function exchangeArray(array $UserInfo)
+    {
+        $prev = $this->UserInfo;
+        $this->UserInfo = $UserInfo;
+        return $prev;
     }
 
 }

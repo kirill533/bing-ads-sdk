@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfAudiencePerformanceReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAudiencePerformanceReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAudiencePerformanceReportColumn implements \ArrayAccess, \Iterator,
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AudiencePerformanceReportColumn Return the current element
+     * @return AudiencePerformanceReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AudiencePerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AudiencePerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AudiencePerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AudiencePerformanceReportColumn);
+        return new \ArrayIterator($this->AudiencePerformanceReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAudiencePerformanceReportColumn implements \ArrayAccess, \Iterator,
     public function count()
     {
       return count($this->AudiencePerformanceReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AudiencePerformanceReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $AudiencePerformanceReportColumn)
+    {
+        $prev = $this->AudiencePerformanceReportColumn;
+        $this->AudiencePerformanceReportColumn = $AudiencePerformanceReportColumn;
+        return $prev;
     }
 
 }

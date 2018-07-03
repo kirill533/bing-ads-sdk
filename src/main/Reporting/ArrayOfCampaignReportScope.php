@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfCampaignReportScope implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfCampaignReportScope implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfCampaignReportScope implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return CampaignReportScope Return the current element
+     * @return CampaignReportScope[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->CampaignReportScope);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->CampaignReportScope);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->CampaignReportScope);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->CampaignReportScope);
+        return new \ArrayIterator($this->CampaignReportScope);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfCampaignReportScope implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->CampaignReportScope);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return CampaignReportScope[]|null The previous array if present
+     */
+    public function exchangeArray(array $CampaignReportScope)
+    {
+        $prev = $this->CampaignReportScope;
+        $this->CampaignReportScope = $CampaignReportScope;
+        return $prev;
     }
 
 }

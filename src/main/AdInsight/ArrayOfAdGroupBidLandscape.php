@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfAdGroupBidLandscape implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAdGroupBidLandscape implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAdGroupBidLandscape implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AdGroupBidLandscape Return the current element
+     * @return AdGroupBidLandscape[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AdGroupBidLandscape);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AdGroupBidLandscape);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AdGroupBidLandscape);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AdGroupBidLandscape);
+        return new \ArrayIterator($this->AdGroupBidLandscape);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAdGroupBidLandscape implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->AdGroupBidLandscape);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AdGroupBidLandscape[]|null The previous array if present
+     */
+    public function exchangeArray(array $AdGroupBidLandscape)
+    {
+        $prev = $this->AdGroupBidLandscape;
+        $this->AdGroupBidLandscape = $AdGroupBidLandscape;
+        return $prev;
     }
 
 }

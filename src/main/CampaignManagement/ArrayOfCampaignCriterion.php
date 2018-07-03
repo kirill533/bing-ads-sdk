@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ArrayOfCampaignCriterion implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfCampaignCriterion implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfCampaignCriterion implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return CampaignCriterion Return the current element
+     * @return CampaignCriterion[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->CampaignCriterion);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->CampaignCriterion);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->CampaignCriterion);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->CampaignCriterion);
+        return new \ArrayIterator($this->CampaignCriterion);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfCampaignCriterion implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->CampaignCriterion);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return CampaignCriterion[]|null The previous array if present
+     */
+    public function exchangeArray(array $CampaignCriterion)
+    {
+        $prev = $this->CampaignCriterion;
+        $this->CampaignCriterion = $CampaignCriterion;
+        return $prev;
     }
 
 }

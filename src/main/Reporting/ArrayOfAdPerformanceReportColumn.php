@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfAdPerformanceReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAdPerformanceReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAdPerformanceReportColumn implements \ArrayAccess, \Iterator, \Coun
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AdPerformanceReportColumn Return the current element
+     * @return AdPerformanceReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AdPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AdPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AdPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AdPerformanceReportColumn);
+        return new \ArrayIterator($this->AdPerformanceReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAdPerformanceReportColumn implements \ArrayAccess, \Iterator, \Coun
     public function count()
     {
       return count($this->AdPerformanceReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AdPerformanceReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $AdPerformanceReportColumn)
+    {
+        $prev = $this->AdPerformanceReportColumn;
+        $this->AdPerformanceReportColumn = $AdPerformanceReportColumn;
+        return $prev;
     }
 
 }

@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfGoalsAndFunnelsReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfGoalsAndFunnelsReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfGoalsAndFunnelsReportColumn implements \ArrayAccess, \Iterator, \Co
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return GoalsAndFunnelsReportColumn Return the current element
+     * @return GoalsAndFunnelsReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->GoalsAndFunnelsReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->GoalsAndFunnelsReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->GoalsAndFunnelsReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->GoalsAndFunnelsReportColumn);
+        return new \ArrayIterator($this->GoalsAndFunnelsReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfGoalsAndFunnelsReportColumn implements \ArrayAccess, \Iterator, \Co
     public function count()
     {
       return count($this->GoalsAndFunnelsReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return GoalsAndFunnelsReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $GoalsAndFunnelsReportColumn)
+    {
+        $prev = $this->GoalsAndFunnelsReportColumn;
+        $this->GoalsAndFunnelsReportColumn = $GoalsAndFunnelsReportColumn;
+        return $prev;
     }
 
 }

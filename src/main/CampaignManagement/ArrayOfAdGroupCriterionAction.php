@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ArrayOfAdGroupCriterionAction implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAdGroupCriterionAction implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAdGroupCriterionAction implements \ArrayAccess, \Iterator, \Countab
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AdGroupCriterionAction Return the current element
+     * @return AdGroupCriterionAction[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AdGroupCriterionAction);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AdGroupCriterionAction);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AdGroupCriterionAction);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AdGroupCriterionAction);
+        return new \ArrayIterator($this->AdGroupCriterionAction);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAdGroupCriterionAction implements \ArrayAccess, \Iterator, \Countab
     public function count()
     {
       return count($this->AdGroupCriterionAction);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AdGroupCriterionAction[]|null The previous array if present
+     */
+    public function exchangeArray(array $AdGroupCriterionAction)
+    {
+        $prev = $this->AdGroupCriterionAction;
+        $this->AdGroupCriterionAction = $AdGroupCriterionAction;
+        return $prev;
     }
 
 }

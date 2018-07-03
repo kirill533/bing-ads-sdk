@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ArrayOfDayTime implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfDayTime implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfDayTime implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return DayTime Return the current element
+     * @return DayTime[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->DayTime);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->DayTime);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->DayTime);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->DayTime);
+        return new \ArrayIterator($this->DayTime);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfDayTime implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->DayTime);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return DayTime[]|null The previous array if present
+     */
+    public function exchangeArray(array $DayTime)
+    {
+        $prev = $this->DayTime;
+        $this->DayTime = $DayTime;
+        return $prev;
     }
 
 }

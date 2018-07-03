@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CustomerManagement;
 
-class ArrayOfAccountInfoWithCustomerData implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAccountInfoWithCustomerData implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAccountInfoWithCustomerData implements \ArrayAccess, \Iterator, \Co
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AccountInfoWithCustomerData Return the current element
+     * @return AccountInfoWithCustomerData[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AccountInfoWithCustomerData);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AccountInfoWithCustomerData);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AccountInfoWithCustomerData);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AccountInfoWithCustomerData);
+        return new \ArrayIterator($this->AccountInfoWithCustomerData);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAccountInfoWithCustomerData implements \ArrayAccess, \Iterator, \Co
     public function count()
     {
       return count($this->AccountInfoWithCustomerData);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AccountInfoWithCustomerData[]|null The previous array if present
+     */
+    public function exchangeArray(array $AccountInfoWithCustomerData)
+    {
+        $prev = $this->AccountInfoWithCustomerData;
+        $this->AccountInfoWithCustomerData = $AccountInfoWithCustomerData;
+        return $prev;
     }
 
 }

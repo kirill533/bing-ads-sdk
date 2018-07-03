@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfProductPartitionPerformanceReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfProductPartitionPerformanceReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfProductPartitionPerformanceReportColumn implements \ArrayAccess, \I
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return ProductPartitionPerformanceReportColumn Return the current element
+     * @return ProductPartitionPerformanceReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->ProductPartitionPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->ProductPartitionPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->ProductPartitionPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->ProductPartitionPerformanceReportColumn);
+        return new \ArrayIterator($this->ProductPartitionPerformanceReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfProductPartitionPerformanceReportColumn implements \ArrayAccess, \I
     public function count()
     {
       return count($this->ProductPartitionPerformanceReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return ProductPartitionPerformanceReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $ProductPartitionPerformanceReportColumn)
+    {
+        $prev = $this->ProductPartitionPerformanceReportColumn;
+        $this->ProductPartitionPerformanceReportColumn = $ProductPartitionPerformanceReportColumn;
+        return $prev;
     }
 
 }

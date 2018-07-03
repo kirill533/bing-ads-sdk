@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ArrayOfArrayOfMediaAssociation implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfArrayOfMediaAssociation implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfArrayOfMediaAssociation implements \ArrayAccess, \Iterator, \Counta
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return ArrayOfMediaAssociation Return the current element
+     * @return ArrayOfMediaAssociation[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->ArrayOfMediaAssociation);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->ArrayOfMediaAssociation);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->ArrayOfMediaAssociation);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->ArrayOfMediaAssociation);
+        return new \ArrayIterator($this->ArrayOfMediaAssociation);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfArrayOfMediaAssociation implements \ArrayAccess, \Iterator, \Counta
     public function count()
     {
       return count($this->ArrayOfMediaAssociation);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return ArrayOfMediaAssociation[]|null The previous array if present
+     */
+    public function exchangeArray(array $ArrayOfMediaAssociation)
+    {
+        $prev = $this->ArrayOfMediaAssociation;
+        $this->ArrayOfMediaAssociation = $ArrayOfMediaAssociation;
+        return $prev;
     }
 
 }

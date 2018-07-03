@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfLanguageCriterion implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfLanguageCriterion implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfLanguageCriterion implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return LanguageCriterion Return the current element
+     * @return LanguageCriterion[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->LanguageCriterion);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->LanguageCriterion);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->LanguageCriterion);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->LanguageCriterion);
+        return new \ArrayIterator($this->LanguageCriterion);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfLanguageCriterion implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->LanguageCriterion);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return LanguageCriterion[]|null The previous array if present
+     */
+    public function exchangeArray(array $LanguageCriterion)
+    {
+        $prev = $this->LanguageCriterion;
+        $this->LanguageCriterion = $LanguageCriterion;
+        return $prev;
     }
 
 }

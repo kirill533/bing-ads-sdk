@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfSearchCampaignChangeHistoryReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfSearchCampaignChangeHistoryReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfSearchCampaignChangeHistoryReportColumn implements \ArrayAccess, \I
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return SearchCampaignChangeHistoryReportColumn Return the current element
+     * @return SearchCampaignChangeHistoryReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->SearchCampaignChangeHistoryReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->SearchCampaignChangeHistoryReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->SearchCampaignChangeHistoryReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->SearchCampaignChangeHistoryReportColumn);
+        return new \ArrayIterator($this->SearchCampaignChangeHistoryReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfSearchCampaignChangeHistoryReportColumn implements \ArrayAccess, \I
     public function count()
     {
       return count($this->SearchCampaignChangeHistoryReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return SearchCampaignChangeHistoryReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $SearchCampaignChangeHistoryReportColumn)
+    {
+        $prev = $this->SearchCampaignChangeHistoryReportColumn;
+        $this->SearchCampaignChangeHistoryReportColumn = $SearchCampaignChangeHistoryReportColumn;
+        return $prev;
     }
 
 }

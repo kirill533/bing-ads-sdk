@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CustomerManagement;
 
-class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAccountInfo implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AccountInfo Return the current element
+     * @return AccountInfo[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AccountInfo);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AccountInfo);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AccountInfo);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AccountInfo);
+        return new \ArrayIterator($this->AccountInfo);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAccountInfo implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->AccountInfo);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AccountInfo[]|null The previous array if present
+     */
+    public function exchangeArray(array $AccountInfo)
+    {
+        $prev = $this->AccountInfo;
+        $this->AccountInfo = $AccountInfo;
+        return $prev;
     }
 
 }

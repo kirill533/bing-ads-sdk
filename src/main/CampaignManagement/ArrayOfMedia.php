@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ArrayOfMedia implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfMedia implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfMedia implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return Media Return the current element
+     * @return Media[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->Media);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->Media);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->Media);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->Media);
+        return new \ArrayIterator($this->Media);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfMedia implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->Media);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return Media[]|null The previous array if present
+     */
+    public function exchangeArray(array $Media)
+    {
+        $prev = $this->Media;
+        $this->Media = $Media;
+        return $prev;
     }
 
 }

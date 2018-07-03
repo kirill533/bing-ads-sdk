@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfEstimatedPositionAndTraffic implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfEstimatedPositionAndTraffic implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfEstimatedPositionAndTraffic implements \ArrayAccess, \Iterator, \Co
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return EstimatedPositionAndTraffic Return the current element
+     * @return EstimatedPositionAndTraffic[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->EstimatedPositionAndTraffic);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->EstimatedPositionAndTraffic);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->EstimatedPositionAndTraffic);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->EstimatedPositionAndTraffic);
+        return new \ArrayIterator($this->EstimatedPositionAndTraffic);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfEstimatedPositionAndTraffic implements \ArrayAccess, \Iterator, \Co
     public function count()
     {
       return count($this->EstimatedPositionAndTraffic);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return EstimatedPositionAndTraffic[]|null The previous array if present
+     */
+    public function exchangeArray(array $EstimatedPositionAndTraffic)
+    {
+        $prev = $this->EstimatedPositionAndTraffic;
+        $this->EstimatedPositionAndTraffic = $EstimatedPositionAndTraffic;
+        return $prev;
     }
 
 }

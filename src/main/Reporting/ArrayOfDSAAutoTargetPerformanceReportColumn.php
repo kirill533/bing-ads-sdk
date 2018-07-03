@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\Reporting;
 
-class ArrayOfDSAAutoTargetPerformanceReportColumn implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfDSAAutoTargetPerformanceReportColumn implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfDSAAutoTargetPerformanceReportColumn implements \ArrayAccess, \Iter
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return DSAAutoTargetPerformanceReportColumn Return the current element
+     * @return DSAAutoTargetPerformanceReportColumn[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->DSAAutoTargetPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->DSAAutoTargetPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->DSAAutoTargetPerformanceReportColumn);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->DSAAutoTargetPerformanceReportColumn);
+        return new \ArrayIterator($this->DSAAutoTargetPerformanceReportColumn);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfDSAAutoTargetPerformanceReportColumn implements \ArrayAccess, \Iter
     public function count()
     {
       return count($this->DSAAutoTargetPerformanceReportColumn);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return DSAAutoTargetPerformanceReportColumn[]|null The previous array if present
+     */
+    public function exchangeArray(array $DSAAutoTargetPerformanceReportColumn)
+    {
+        $prev = $this->DSAAutoTargetPerformanceReportColumn;
+        $this->DSAAutoTargetPerformanceReportColumn = $DSAAutoTargetPerformanceReportColumn;
+        return $prev;
     }
 
 }

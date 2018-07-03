@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfMetricData implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfMetricData implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfMetricData implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return MetricData Return the current element
+     * @return MetricData[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->MetricData);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->MetricData);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->MetricData);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->MetricData);
+        return new \ArrayIterator($this->MetricData);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfMetricData implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->MetricData);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return MetricData[]|null The previous array if present
+     */
+    public function exchangeArray(array $MetricData)
+    {
+        $prev = $this->MetricData;
+        $this->MetricData = $MetricData;
+        return $prev;
     }
 
 }

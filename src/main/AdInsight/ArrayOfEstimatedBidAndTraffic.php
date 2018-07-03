@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\AdInsight;
 
-class ArrayOfEstimatedBidAndTraffic implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfEstimatedBidAndTraffic implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfEstimatedBidAndTraffic implements \ArrayAccess, \Iterator, \Countab
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return EstimatedBidAndTraffic Return the current element
+     * @return EstimatedBidAndTraffic[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->EstimatedBidAndTraffic);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->EstimatedBidAndTraffic);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->EstimatedBidAndTraffic);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->EstimatedBidAndTraffic);
+        return new \ArrayIterator($this->EstimatedBidAndTraffic);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfEstimatedBidAndTraffic implements \ArrayAccess, \Iterator, \Countab
     public function count()
     {
       return count($this->EstimatedBidAndTraffic);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return EstimatedBidAndTraffic[]|null The previous array if present
+     */
+    public function exchangeArray(array $EstimatedBidAndTraffic)
+    {
+        $prev = $this->EstimatedBidAndTraffic;
+        $this->EstimatedBidAndTraffic = $EstimatedBidAndTraffic;
+        return $prev;
     }
 
 }

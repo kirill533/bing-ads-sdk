@@ -2,7 +2,7 @@
 
 namespace PMG\BingAds\CampaignManagement;
 
-class ArrayOfAdType implements \ArrayAccess, \Iterator, \Countable
+class ArrayOfAdType implements \ArrayAccess, \IteratorAggregate, \Countable
 {
 
     /**
@@ -84,55 +84,13 @@ class ArrayOfAdType implements \ArrayAccess, \Iterator, \Countable
     }
 
     /**
-     * Iterator implementation
+     * Traversable Implementation
      *
-     * @return AdType Return the current element
+     * @return AdType[] Return an iterator of the elements
      */
-    public function current()
+    public function getIterator()
     {
-      return current($this->AdType);
-    }
-
-    /**
-     * Iterator implementation
-     * Move forward to next element
-     *
-     * @return void
-     */
-    public function next()
-    {
-      next($this->AdType);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return string|null Return the key of the current element or null
-     */
-    public function key()
-    {
-      return key($this->AdType);
-    }
-
-    /**
-     * Iterator implementation
-     *
-     * @return boolean Return the validity of the current position
-     */
-    public function valid()
-    {
-      return $this->key() !== null;
-    }
-
-    /**
-     * Iterator implementation
-     * Rewind the Iterator to the first element
-     *
-     * @return void
-     */
-    public function rewind()
-    {
-      reset($this->AdType);
+        return new \ArrayIterator($this->AdType);
     }
 
     /**
@@ -143,6 +101,18 @@ class ArrayOfAdType implements \ArrayAccess, \Iterator, \Countable
     public function count()
     {
       return count($this->AdType);
+    }
+
+    /**
+     * Change the current array with another
+     *
+     * @return AdType[]|null The previous array if present
+     */
+    public function exchangeArray(array $AdType)
+    {
+        $prev = $this->AdType;
+        $this->AdType = $AdType;
+        return $prev;
     }
 
 }

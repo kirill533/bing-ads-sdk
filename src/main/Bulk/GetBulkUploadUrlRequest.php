@@ -6,7 +6,9 @@ class GetBulkUploadUrlRequest
 {
 
     /**
-     * @var ResponseMode $ResponseMode
+     * @see \PMG\BingAds\Bulk\ResponseMode for valid values
+     *
+     * @var string $ResponseMode
      */
     protected $ResponseMode = null;
 
@@ -16,7 +18,7 @@ class GetBulkUploadUrlRequest
     protected $AccountId = null;
 
     /**
-     * @param ResponseMode $ResponseMode
+     * @param string $ResponseMode
      * @param int $AccountId
      */
     public function __construct($ResponseMode = null, $AccountId = null)
@@ -26,7 +28,7 @@ class GetBulkUploadUrlRequest
     }
 
     /**
-     * @return ResponseMode
+     * @return string
      */
     public function getResponseMode()
     {
@@ -34,7 +36,7 @@ class GetBulkUploadUrlRequest
     }
 
     /**
-     * @param ResponseMode $ResponseMode
+     * @param string $ResponseMode
      * @return \PMG\BingAds\Bulk\GetBulkUploadUrlRequest
      */
     public function setResponseMode($ResponseMode)

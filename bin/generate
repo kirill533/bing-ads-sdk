@@ -18,6 +18,7 @@ const NS = 'PMG\\BingAds\\';
 $version = $argv[1];
 $defaultConfig = [
     'constructorParamsDefaultToNull' => true,
+    'useUnderlyingEnumTypes' => true,
 ];
 
 $configs = [

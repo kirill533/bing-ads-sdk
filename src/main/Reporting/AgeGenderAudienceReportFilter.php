@@ -6,22 +6,30 @@ class AgeGenderAudienceReportFilter
 {
 
     /**
-     * @var AccountStatusReportFilter $AccountStatus
+     * @see \PMG\BingAds\Reporting\AccountStatusReportFilter for valid values
+     *
+     * @var list $AccountStatus
      */
     protected $AccountStatus = null;
 
     /**
-     * @var AdDistributionReportFilter $AdDistribution
+     * @see \PMG\BingAds\Reporting\AdDistributionReportFilter for valid values
+     *
+     * @var list $AdDistribution
      */
     protected $AdDistribution = null;
 
     /**
-     * @var AdGroupStatusReportFilter $AdGroupStatus
+     * @see \PMG\BingAds\Reporting\AdGroupStatusReportFilter for valid values
+     *
+     * @var list $AdGroupStatus
      */
     protected $AdGroupStatus = null;
 
     /**
-     * @var CampaignStatusReportFilter $CampaignStatus
+     * @see \PMG\BingAds\Reporting\CampaignStatusReportFilter for valid values
+     *
+     * @var list $CampaignStatus
      */
     protected $CampaignStatus = null;
 
@@ -37,7 +45,7 @@ class AgeGenderAudienceReportFilter
     }
 
     /**
-     * @return AccountStatusReportFilter
+     * @return list
      */
     public function getAccountStatus()
     {
@@ -45,7 +53,7 @@ class AgeGenderAudienceReportFilter
     }
 
     /**
-     * @param AccountStatusReportFilter $AccountStatus
+     * @param list $AccountStatus
      * @return \PMG\BingAds\Reporting\AgeGenderAudienceReportFilter
      */
     public function setAccountStatus($AccountStatus)
@@ -55,7 +63,7 @@ class AgeGenderAudienceReportFilter
     }
 
     /**
-     * @return AdDistributionReportFilter
+     * @return list
      */
     public function getAdDistribution()
     {
@@ -63,7 +71,7 @@ class AgeGenderAudienceReportFilter
     }
 
     /**
-     * @param AdDistributionReportFilter $AdDistribution
+     * @param list $AdDistribution
      * @return \PMG\BingAds\Reporting\AgeGenderAudienceReportFilter
      */
     public function setAdDistribution($AdDistribution)
@@ -73,7 +81,7 @@ class AgeGenderAudienceReportFilter
     }
 
     /**
-     * @return AdGroupStatusReportFilter
+     * @return list
      */
     public function getAdGroupStatus()
     {
@@ -81,7 +89,7 @@ class AgeGenderAudienceReportFilter
     }
 
     /**
-     * @param AdGroupStatusReportFilter $AdGroupStatus
+     * @param list $AdGroupStatus
      * @return \PMG\BingAds\Reporting\AgeGenderAudienceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
@@ -91,7 +99,7 @@ class AgeGenderAudienceReportFilter
     }
 
     /**
-     * @return CampaignStatusReportFilter
+     * @return list
      */
     public function getCampaignStatus()
     {
@@ -99,7 +107,7 @@ class AgeGenderAudienceReportFilter
     }
 
     /**
-     * @param CampaignStatusReportFilter $CampaignStatus
+     * @param list $CampaignStatus
      * @return \PMG\BingAds\Reporting\AgeGenderAudienceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)

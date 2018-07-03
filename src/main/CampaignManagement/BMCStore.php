@@ -31,7 +31,9 @@ class BMCStore
     protected $Name = null;
 
     /**
-     * @var BMCStoreSubType $SubType
+     * @see \PMG\BingAds\CampaignManagement\BMCStoreSubType for valid values
+     *
+     * @var string $SubType
      */
     protected $SubType = null;
 
@@ -132,7 +134,7 @@ class BMCStore
     }
 
     /**
-     * @return BMCStoreSubType
+     * @return string
      */
     public function getSubType()
     {
@@ -140,7 +142,7 @@ class BMCStore
     }
 
     /**
-     * @param BMCStoreSubType $SubType
+     * @param string $SubType
      * @return \PMG\BingAds\CampaignManagement\BMCStore
      */
     public function setSubType($SubType)

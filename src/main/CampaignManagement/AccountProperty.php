@@ -6,7 +6,9 @@ class AccountProperty
 {
 
     /**
-     * @var AccountPropertyName $Name
+     * @see \PMG\BingAds\CampaignManagement\AccountPropertyName for valid values
+     *
+     * @var string $Name
      */
     protected $Name = null;
 
@@ -22,7 +24,7 @@ class AccountProperty
     }
 
     /**
-     * @return AccountPropertyName
+     * @return string
      */
     public function getName()
     {
@@ -30,7 +32,7 @@ class AccountProperty
     }
 
     /**
-     * @param AccountPropertyName $Name
+     * @param string $Name
      * @return \PMG\BingAds\CampaignManagement\AccountProperty
      */
     public function setName($Name)

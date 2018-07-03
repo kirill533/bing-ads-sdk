@@ -21,12 +21,16 @@ class ReportRequest
     protected $ExcludeReportHeader = null;
 
     /**
-     * @var ReportFormat $Format
+     * @see \PMG\BingAds\Reporting\ReportFormat for valid values
+     *
+     * @var string $Format
      */
     protected $Format = null;
 
     /**
-     * @var ReportLanguage $Language
+     * @see \PMG\BingAds\Reporting\ReportLanguage for valid values
+     *
+     * @var string $Language
      */
     protected $Language = null;
 
@@ -101,7 +105,7 @@ class ReportRequest
     }
 
     /**
-     * @return ReportFormat
+     * @return string
      */
     public function getFormat()
     {
@@ -109,7 +113,7 @@ class ReportRequest
     }
 
     /**
-     * @param ReportFormat $Format
+     * @param string $Format
      * @return \PMG\BingAds\Reporting\ReportRequest
      */
     public function setFormat($Format)
@@ -119,7 +123,7 @@ class ReportRequest
     }
 
     /**
-     * @return ReportLanguage
+     * @return string
      */
     public function getLanguage()
     {
@@ -127,7 +131,7 @@ class ReportRequest
     }
 
     /**
-     * @param ReportLanguage $Language
+     * @param string $Language
      * @return \PMG\BingAds\Reporting\ReportRequest
      */
     public function setLanguage($Language)

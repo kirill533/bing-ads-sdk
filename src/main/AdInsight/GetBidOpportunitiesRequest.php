@@ -16,14 +16,16 @@ class GetBidOpportunitiesRequest
     protected $CampaignId = null;
 
     /**
-     * @var BidOpportunityType $OpportunityType
+     * @see \PMG\BingAds\AdInsight\BidOpportunityType for valid values
+     *
+     * @var list $OpportunityType
      */
     protected $OpportunityType = null;
 
     /**
      * @param int $AdGroupId
      * @param int $CampaignId
-     * @param BidOpportunityType $OpportunityType
+     * @param list $OpportunityType
      */
     public function __construct($AdGroupId = null, $CampaignId = null, $OpportunityType = null)
     {
@@ -69,7 +71,7 @@ class GetBidOpportunitiesRequest
     }
 
     /**
-     * @return BidOpportunityType
+     * @return list
      */
     public function getOpportunityType()
     {
@@ -77,7 +79,7 @@ class GetBidOpportunitiesRequest
     }
 
     /**
-     * @param BidOpportunityType $OpportunityType
+     * @param list $OpportunityType
      * @return \PMG\BingAds\AdInsight\GetBidOpportunitiesRequest
      */
     public function setOpportunityType($OpportunityType)

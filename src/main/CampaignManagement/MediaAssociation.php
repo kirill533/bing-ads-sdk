@@ -11,7 +11,9 @@ class MediaAssociation
     protected $EntityId = null;
 
     /**
-     * @var MediaEnabledEntityFilter $MediaEnabledEntity
+     * @see \PMG\BingAds\CampaignManagement\MediaEnabledEntityFilter for valid values
+     *
+     * @var list $MediaEnabledEntity
      */
     protected $MediaEnabledEntity = null;
 
@@ -45,7 +47,7 @@ class MediaAssociation
     }
 
     /**
-     * @return MediaEnabledEntityFilter
+     * @return list
      */
     public function getMediaEnabledEntity()
     {
@@ -53,7 +55,7 @@ class MediaAssociation
     }
 
     /**
-     * @param MediaEnabledEntityFilter $MediaEnabledEntity
+     * @param list $MediaEnabledEntity
      * @return \PMG\BingAds\CampaignManagement\MediaAssociation
      */
     public function setMediaEnabledEntity($MediaEnabledEntity)

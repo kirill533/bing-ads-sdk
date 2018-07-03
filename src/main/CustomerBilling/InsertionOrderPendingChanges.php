@@ -56,7 +56,9 @@ class InsertionOrderPendingChanges
     protected $PurchaseOrder = null;
 
     /**
-     * @var InsertionOrderPendingChangesStatus $ChangeStatus
+     * @see \PMG\BingAds\CustomerBilling\InsertionOrderPendingChangesStatus for valid values
+     *
+     * @var string $ChangeStatus
      */
     protected $ChangeStatus = null;
 
@@ -283,7 +285,7 @@ class InsertionOrderPendingChanges
     }
 
     /**
-     * @return InsertionOrderPendingChangesStatus
+     * @return string
      */
     public function getChangeStatus()
     {
@@ -291,7 +293,7 @@ class InsertionOrderPendingChanges
     }
 
     /**
-     * @param InsertionOrderPendingChangesStatus $ChangeStatus
+     * @param string $ChangeStatus
      * @return \PMG\BingAds\CustomerBilling\InsertionOrderPendingChanges
      */
     public function setChangeStatus($ChangeStatus)

@@ -16,7 +16,9 @@ class LocationAdExtension extends AdExtension
     protected $CompanyName = null;
 
     /**
-     * @var BusinessGeoCodeStatus $GeoCodeStatus
+     * @see \PMG\BingAds\CampaignManagement\BusinessGeoCodeStatus for valid values
+     *
+     * @var string $GeoCodeStatus
      */
     protected $GeoCodeStatus = null;
 
@@ -73,7 +75,7 @@ class LocationAdExtension extends AdExtension
     }
 
     /**
-     * @return BusinessGeoCodeStatus
+     * @return string
      */
     public function getGeoCodeStatus()
     {
@@ -81,7 +83,7 @@ class LocationAdExtension extends AdExtension
     }
 
     /**
-     * @param BusinessGeoCodeStatus $GeoCodeStatus
+     * @param string $GeoCodeStatus
      * @return \PMG\BingAds\CampaignManagement\LocationAdExtension
      */
     public function setGeoCodeStatus($GeoCodeStatus)

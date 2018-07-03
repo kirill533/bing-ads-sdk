@@ -6,32 +6,44 @@ class ConversionPerformanceReportFilter
 {
 
     /**
-     * @var AccountStatusReportFilter $AccountStatus
+     * @see \PMG\BingAds\Reporting\AccountStatusReportFilter for valid values
+     *
+     * @var list $AccountStatus
      */
     protected $AccountStatus = null;
 
     /**
-     * @var AdDistributionReportFilter $AdDistribution
+     * @see \PMG\BingAds\Reporting\AdDistributionReportFilter for valid values
+     *
+     * @var list $AdDistribution
      */
     protected $AdDistribution = null;
 
     /**
-     * @var AdGroupStatusReportFilter $AdGroupStatus
+     * @see \PMG\BingAds\Reporting\AdGroupStatusReportFilter for valid values
+     *
+     * @var list $AdGroupStatus
      */
     protected $AdGroupStatus = null;
 
     /**
-     * @var CampaignStatusReportFilter $CampaignStatus
+     * @see \PMG\BingAds\Reporting\CampaignStatusReportFilter for valid values
+     *
+     * @var list $CampaignStatus
      */
     protected $CampaignStatus = null;
 
     /**
-     * @var DeviceTypeReportFilter $DeviceType
+     * @see \PMG\BingAds\Reporting\DeviceTypeReportFilter for valid values
+     *
+     * @var list $DeviceType
      */
     protected $DeviceType = null;
 
     /**
-     * @var KeywordStatusReportFilter $KeywordStatus
+     * @see \PMG\BingAds\Reporting\KeywordStatusReportFilter for valid values
+     *
+     * @var list $KeywordStatus
      */
     protected $KeywordStatus = null;
 
@@ -47,7 +59,7 @@ class ConversionPerformanceReportFilter
     }
 
     /**
-     * @return AccountStatusReportFilter
+     * @return list
      */
     public function getAccountStatus()
     {
@@ -55,7 +67,7 @@ class ConversionPerformanceReportFilter
     }
 
     /**
-     * @param AccountStatusReportFilter $AccountStatus
+     * @param list $AccountStatus
      * @return \PMG\BingAds\Reporting\ConversionPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
@@ -65,7 +77,7 @@ class ConversionPerformanceReportFilter
     }
 
     /**
-     * @return AdDistributionReportFilter
+     * @return list
      */
     public function getAdDistribution()
     {
@@ -73,7 +85,7 @@ class ConversionPerformanceReportFilter
     }
 
     /**
-     * @param AdDistributionReportFilter $AdDistribution
+     * @param list $AdDistribution
      * @return \PMG\BingAds\Reporting\ConversionPerformanceReportFilter
      */
     public function setAdDistribution($AdDistribution)
@@ -83,7 +95,7 @@ class ConversionPerformanceReportFilter
     }
 
     /**
-     * @return AdGroupStatusReportFilter
+     * @return list
      */
     public function getAdGroupStatus()
     {
@@ -91,7 +103,7 @@ class ConversionPerformanceReportFilter
     }
 
     /**
-     * @param AdGroupStatusReportFilter $AdGroupStatus
+     * @param list $AdGroupStatus
      * @return \PMG\BingAds\Reporting\ConversionPerformanceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
@@ -101,7 +113,7 @@ class ConversionPerformanceReportFilter
     }
 
     /**
-     * @return CampaignStatusReportFilter
+     * @return list
      */
     public function getCampaignStatus()
     {
@@ -109,7 +121,7 @@ class ConversionPerformanceReportFilter
     }
 
     /**
-     * @param CampaignStatusReportFilter $CampaignStatus
+     * @param list $CampaignStatus
      * @return \PMG\BingAds\Reporting\ConversionPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
@@ -119,7 +131,7 @@ class ConversionPerformanceReportFilter
     }
 
     /**
-     * @return DeviceTypeReportFilter
+     * @return list
      */
     public function getDeviceType()
     {
@@ -127,7 +139,7 @@ class ConversionPerformanceReportFilter
     }
 
     /**
-     * @param DeviceTypeReportFilter $DeviceType
+     * @param list $DeviceType
      * @return \PMG\BingAds\Reporting\ConversionPerformanceReportFilter
      */
     public function setDeviceType($DeviceType)
@@ -137,7 +149,7 @@ class ConversionPerformanceReportFilter
     }
 
     /**
-     * @return KeywordStatusReportFilter
+     * @return list
      */
     public function getKeywordStatus()
     {
@@ -145,7 +157,7 @@ class ConversionPerformanceReportFilter
     }
 
     /**
-     * @param KeywordStatusReportFilter $KeywordStatus
+     * @param list $KeywordStatus
      * @return \PMG\BingAds\Reporting\ConversionPerformanceReportFilter
      */
     public function setKeywordStatus($KeywordStatus)

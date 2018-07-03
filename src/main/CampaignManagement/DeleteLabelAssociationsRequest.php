@@ -6,7 +6,9 @@ class DeleteLabelAssociationsRequest
 {
 
     /**
-     * @var EntityType $EntityType
+     * @see \PMG\BingAds\CampaignManagement\EntityType for valid values
+     *
+     * @var string $EntityType
      */
     protected $EntityType = null;
 
@@ -16,7 +18,7 @@ class DeleteLabelAssociationsRequest
     protected $LabelAssociations = null;
 
     /**
-     * @param EntityType $EntityType
+     * @param string $EntityType
      * @param ArrayOfLabelAssociation $LabelAssociations
      */
     public function __construct($EntityType = null, $LabelAssociations = null)
@@ -26,7 +28,7 @@ class DeleteLabelAssociationsRequest
     }
 
     /**
-     * @return EntityType
+     * @return string
      */
     public function getEntityType()
     {
@@ -34,7 +36,7 @@ class DeleteLabelAssociationsRequest
     }
 
     /**
-     * @param EntityType $EntityType
+     * @param string $EntityType
      * @return \PMG\BingAds\CampaignManagement\DeleteLabelAssociationsRequest
      */
     public function setEntityType($EntityType)

@@ -6,22 +6,30 @@ class NegativeKeywordConflictReportFilter
 {
 
     /**
-     * @var AccountStatusReportFilter $AccountStatus
+     * @see \PMG\BingAds\Reporting\AccountStatusReportFilter for valid values
+     *
+     * @var list $AccountStatus
      */
     protected $AccountStatus = null;
 
     /**
-     * @var AdGroupStatusReportFilter $AdGroupStatus
+     * @see \PMG\BingAds\Reporting\AdGroupStatusReportFilter for valid values
+     *
+     * @var list $AdGroupStatus
      */
     protected $AdGroupStatus = null;
 
     /**
-     * @var CampaignStatusReportFilter $CampaignStatus
+     * @see \PMG\BingAds\Reporting\CampaignStatusReportFilter for valid values
+     *
+     * @var list $CampaignStatus
      */
     protected $CampaignStatus = null;
 
     /**
-     * @var KeywordStatusReportFilter $KeywordStatus
+     * @see \PMG\BingAds\Reporting\KeywordStatusReportFilter for valid values
+     *
+     * @var list $KeywordStatus
      */
     protected $KeywordStatus = null;
 
@@ -32,7 +40,7 @@ class NegativeKeywordConflictReportFilter
     }
 
     /**
-     * @return AccountStatusReportFilter
+     * @return list
      */
     public function getAccountStatus()
     {
@@ -40,7 +48,7 @@ class NegativeKeywordConflictReportFilter
     }
 
     /**
-     * @param AccountStatusReportFilter $AccountStatus
+     * @param list $AccountStatus
      * @return \PMG\BingAds\Reporting\NegativeKeywordConflictReportFilter
      */
     public function setAccountStatus($AccountStatus)
@@ -50,7 +58,7 @@ class NegativeKeywordConflictReportFilter
     }
 
     /**
-     * @return AdGroupStatusReportFilter
+     * @return list
      */
     public function getAdGroupStatus()
     {
@@ -58,7 +66,7 @@ class NegativeKeywordConflictReportFilter
     }
 
     /**
-     * @param AdGroupStatusReportFilter $AdGroupStatus
+     * @param list $AdGroupStatus
      * @return \PMG\BingAds\Reporting\NegativeKeywordConflictReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
@@ -68,7 +76,7 @@ class NegativeKeywordConflictReportFilter
     }
 
     /**
-     * @return CampaignStatusReportFilter
+     * @return list
      */
     public function getCampaignStatus()
     {
@@ -76,7 +84,7 @@ class NegativeKeywordConflictReportFilter
     }
 
     /**
-     * @param CampaignStatusReportFilter $CampaignStatus
+     * @param list $CampaignStatus
      * @return \PMG\BingAds\Reporting\NegativeKeywordConflictReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
@@ -86,7 +94,7 @@ class NegativeKeywordConflictReportFilter
     }
 
     /**
-     * @return KeywordStatusReportFilter
+     * @return list
      */
     public function getKeywordStatus()
     {
@@ -94,7 +102,7 @@ class NegativeKeywordConflictReportFilter
     }
 
     /**
-     * @param KeywordStatusReportFilter $KeywordStatus
+     * @param list $KeywordStatus
      * @return \PMG\BingAds\Reporting\NegativeKeywordConflictReportFilter
      */
     public function setKeywordStatus($KeywordStatus)

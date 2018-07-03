@@ -11,7 +11,9 @@ class AppealEditorialRejectionsRequest
     protected $EntityIdToParentIdAssociations = null;
 
     /**
-     * @var EntityType $EntityType
+     * @see \PMG\BingAds\CampaignManagement\EntityType for valid values
+     *
+     * @var string $EntityType
      */
     protected $EntityType = null;
 
@@ -22,7 +24,7 @@ class AppealEditorialRejectionsRequest
 
     /**
      * @param ArrayOfEntityIdToParentIdAssociation $EntityIdToParentIdAssociations
-     * @param EntityType $EntityType
+     * @param string $EntityType
      * @param string $JustificationText
      */
     public function __construct($EntityIdToParentIdAssociations = null, $EntityType = null, $JustificationText = null)
@@ -51,7 +53,7 @@ class AppealEditorialRejectionsRequest
     }
 
     /**
-     * @return EntityType
+     * @return string
      */
     public function getEntityType()
     {
@@ -59,7 +61,7 @@ class AppealEditorialRejectionsRequest
     }
 
     /**
-     * @param EntityType $EntityType
+     * @param string $EntityType
      * @return \PMG\BingAds\CampaignManagement\AppealEditorialRejectionsRequest
      */
     public function setEntityType($EntityType)

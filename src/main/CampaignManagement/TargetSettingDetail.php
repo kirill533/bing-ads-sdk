@@ -6,7 +6,9 @@ class TargetSettingDetail
 {
 
     /**
-     * @var CriterionTypeGroup $CriterionTypeGroup
+     * @see \PMG\BingAds\CampaignManagement\CriterionTypeGroup for valid values
+     *
+     * @var string $CriterionTypeGroup
      */
     protected $CriterionTypeGroup = null;
 
@@ -22,7 +24,7 @@ class TargetSettingDetail
     }
 
     /**
-     * @return CriterionTypeGroup
+     * @return string
      */
     public function getCriterionTypeGroup()
     {
@@ -30,7 +32,7 @@ class TargetSettingDetail
     }
 
     /**
-     * @param CriterionTypeGroup $CriterionTypeGroup
+     * @param string $CriterionTypeGroup
      * @return \PMG\BingAds\CampaignManagement\TargetSettingDetail
      */
     public function setCriterionTypeGroup($CriterionTypeGroup)

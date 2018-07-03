@@ -6,7 +6,9 @@ class ProductAudience extends Audience
 {
 
     /**
-     * @var ProductAudienceType $ProductAudienceType
+     * @see \PMG\BingAds\CampaignManagement\ProductAudienceType for valid values
+     *
+     * @var list $ProductAudienceType
      */
     protected $ProductAudienceType = null;
 
@@ -22,7 +24,7 @@ class ProductAudience extends Audience
     }
 
     /**
-     * @return ProductAudienceType
+     * @return list
      */
     public function getProductAudienceType()
     {
@@ -30,7 +32,7 @@ class ProductAudience extends Audience
     }
 
     /**
-     * @param ProductAudienceType $ProductAudienceType
+     * @param list $ProductAudienceType
      * @return \PMG\BingAds\CampaignManagement\ProductAudience
      */
     public function setProductAudienceType($ProductAudienceType)

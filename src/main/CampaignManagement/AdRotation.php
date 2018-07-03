@@ -16,7 +16,9 @@ class AdRotation
     protected $StartDate = null;
 
     /**
-     * @var AdRotationType $Type
+     * @see \PMG\BingAds\CampaignManagement\AdRotationType for valid values
+     *
+     * @var string $Type
      */
     protected $Type = null;
 
@@ -87,7 +89,7 @@ class AdRotation
     }
 
     /**
-     * @return AdRotationType
+     * @return string
      */
     public function getType()
     {
@@ -95,7 +97,7 @@ class AdRotation
     }
 
     /**
-     * @param AdRotationType $Type
+     * @param string $Type
      * @return \PMG\BingAds\CampaignManagement\AdRotation
      */
     public function setType($Type)

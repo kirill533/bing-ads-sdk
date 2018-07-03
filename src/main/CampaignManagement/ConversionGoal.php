@@ -11,7 +11,9 @@ class ConversionGoal
     protected $ConversionWindowInMinutes = null;
 
     /**
-     * @var ConversionGoalCountType $CountType
+     * @see \PMG\BingAds\CampaignManagement\ConversionGoalCountType for valid values
+     *
+     * @var string $CountType
      */
     protected $CountType = null;
 
@@ -31,12 +33,16 @@ class ConversionGoal
     protected $Revenue = null;
 
     /**
-     * @var EntityScope $Scope
+     * @see \PMG\BingAds\CampaignManagement\EntityScope for valid values
+     *
+     * @var string $Scope
      */
     protected $Scope = null;
 
     /**
-     * @var ConversionGoalStatus $Status
+     * @see \PMG\BingAds\CampaignManagement\ConversionGoalStatus for valid values
+     *
+     * @var string $Status
      */
     protected $Status = null;
 
@@ -46,12 +52,16 @@ class ConversionGoal
     protected $TagId = null;
 
     /**
-     * @var ConversionGoalTrackingStatus $TrackingStatus
+     * @see \PMG\BingAds\CampaignManagement\ConversionGoalTrackingStatus for valid values
+     *
+     * @var string $TrackingStatus
      */
     protected $TrackingStatus = null;
 
     /**
-     * @var ConversionGoalType $Type
+     * @see \PMG\BingAds\CampaignManagement\ConversionGoalType for valid values
+     *
+     * @var list $Type
      */
     protected $Type = null;
 
@@ -80,7 +90,7 @@ class ConversionGoal
     }
 
     /**
-     * @return ConversionGoalCountType
+     * @return string
      */
     public function getCountType()
     {
@@ -88,7 +98,7 @@ class ConversionGoal
     }
 
     /**
-     * @param ConversionGoalCountType $CountType
+     * @param string $CountType
      * @return \PMG\BingAds\CampaignManagement\ConversionGoal
      */
     public function setCountType($CountType)
@@ -152,7 +162,7 @@ class ConversionGoal
     }
 
     /**
-     * @return EntityScope
+     * @return string
      */
     public function getScope()
     {
@@ -160,7 +170,7 @@ class ConversionGoal
     }
 
     /**
-     * @param EntityScope $Scope
+     * @param string $Scope
      * @return \PMG\BingAds\CampaignManagement\ConversionGoal
      */
     public function setScope($Scope)
@@ -170,7 +180,7 @@ class ConversionGoal
     }
 
     /**
-     * @return ConversionGoalStatus
+     * @return string
      */
     public function getStatus()
     {
@@ -178,7 +188,7 @@ class ConversionGoal
     }
 
     /**
-     * @param ConversionGoalStatus $Status
+     * @param string $Status
      * @return \PMG\BingAds\CampaignManagement\ConversionGoal
      */
     public function setStatus($Status)
@@ -206,7 +216,7 @@ class ConversionGoal
     }
 
     /**
-     * @return ConversionGoalTrackingStatus
+     * @return string
      */
     public function getTrackingStatus()
     {
@@ -214,7 +224,7 @@ class ConversionGoal
     }
 
     /**
-     * @param ConversionGoalTrackingStatus $TrackingStatus
+     * @param string $TrackingStatus
      * @return \PMG\BingAds\CampaignManagement\ConversionGoal
      */
     public function setTrackingStatus($TrackingStatus)
@@ -224,7 +234,7 @@ class ConversionGoal
     }
 
     /**
-     * @return ConversionGoalType
+     * @return list
      */
     public function getType()
     {
@@ -232,7 +242,7 @@ class ConversionGoal
     }
 
     /**
-     * @param ConversionGoalType $Type
+     * @param list $Type
      * @return \PMG\BingAds\CampaignManagement\ConversionGoal
      */
     public function setType($Type)

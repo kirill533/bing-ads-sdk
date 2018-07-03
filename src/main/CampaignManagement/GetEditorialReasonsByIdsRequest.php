@@ -16,14 +16,16 @@ class GetEditorialReasonsByIdsRequest
     protected $EntityIdToParentIdAssociations = null;
 
     /**
-     * @var EntityType $EntityType
+     * @see \PMG\BingAds\CampaignManagement\EntityType for valid values
+     *
+     * @var string $EntityType
      */
     protected $EntityType = null;
 
     /**
      * @param int $AccountId
      * @param ArrayOfEntityIdToParentIdAssociation $EntityIdToParentIdAssociations
-     * @param EntityType $EntityType
+     * @param string $EntityType
      */
     public function __construct($AccountId = null, $EntityIdToParentIdAssociations = null, $EntityType = null)
     {
@@ -69,7 +71,7 @@ class GetEditorialReasonsByIdsRequest
     }
 
     /**
-     * @return EntityType
+     * @return string
      */
     public function getEntityType()
     {
@@ -77,7 +79,7 @@ class GetEditorialReasonsByIdsRequest
     }
 
     /**
-     * @param EntityType $EntityType
+     * @param string $EntityType
      * @return \PMG\BingAds\CampaignManagement\GetEditorialReasonsByIdsRequest
      */
     public function setEntityType($EntityType)

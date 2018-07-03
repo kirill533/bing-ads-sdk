@@ -11,13 +11,15 @@ class GetAudiencesByIdsRequest
     protected $AudienceIds = null;
 
     /**
-     * @var AudienceType $Type
+     * @see \PMG\BingAds\CampaignManagement\AudienceType for valid values
+     *
+     * @var list $Type
      */
     protected $Type = null;
 
     /**
      * @param ArrayOflong $AudienceIds
-     * @param AudienceType $Type
+     * @param list $Type
      */
     public function __construct($AudienceIds = null, $Type = null)
     {
@@ -44,7 +46,7 @@ class GetAudiencesByIdsRequest
     }
 
     /**
-     * @return AudienceType
+     * @return list
      */
     public function getType()
     {
@@ -52,7 +54,7 @@ class GetAudiencesByIdsRequest
     }
 
     /**
-     * @param AudienceType $Type
+     * @param list $Type
      * @return \PMG\BingAds\CampaignManagement\GetAudiencesByIdsRequest
      */
     public function setType($Type)

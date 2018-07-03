@@ -11,13 +11,15 @@ class GetEstimatedBidByKeywordIdsRequest
     protected $KeywordIds = null;
 
     /**
-     * @var TargetAdPosition $TargetPositionForAds
+     * @see \PMG\BingAds\AdInsight\TargetAdPosition for valid values
+     *
+     * @var string $TargetPositionForAds
      */
     protected $TargetPositionForAds = null;
 
     /**
      * @param ArrayOflong $KeywordIds
-     * @param TargetAdPosition $TargetPositionForAds
+     * @param string $TargetPositionForAds
      */
     public function __construct($KeywordIds = null, $TargetPositionForAds = null)
     {
@@ -44,7 +46,7 @@ class GetEstimatedBidByKeywordIdsRequest
     }
 
     /**
-     * @return TargetAdPosition
+     * @return string
      */
     public function getTargetPositionForAds()
     {
@@ -52,7 +54,7 @@ class GetEstimatedBidByKeywordIdsRequest
     }
 
     /**
-     * @param TargetAdPosition $TargetPositionForAds
+     * @param string $TargetPositionForAds
      * @return \PMG\BingAds\AdInsight\GetEstimatedBidByKeywordIdsRequest
      */
     public function setTargetPositionForAds($TargetPositionForAds)

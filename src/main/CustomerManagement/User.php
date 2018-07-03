@@ -36,7 +36,9 @@ class User
     protected $LastModifiedTime = null;
 
     /**
-     * @var LCID $Lcid
+     * @see \PMG\BingAds\CustomerManagement\LCID for valid values
+     *
+     * @var string $Lcid
      */
     protected $Lcid = null;
 
@@ -56,12 +58,16 @@ class User
     protected $SecretAnswer = null;
 
     /**
-     * @var SecretQuestion $SecretQuestion
+     * @see \PMG\BingAds\CustomerManagement\SecretQuestion for valid values
+     *
+     * @var string $SecretQuestion
      */
     protected $SecretQuestion = null;
 
     /**
-     * @var UserLifeCycleStatus $UserLifeCycleStatus
+     * @see \PMG\BingAds\CustomerManagement\UserLifeCycleStatus for valid values
+     *
+     * @var string $UserLifeCycleStatus
      */
     protected $UserLifeCycleStatus = null;
 
@@ -207,7 +213,7 @@ class User
     }
 
     /**
-     * @return LCID
+     * @return string
      */
     public function getLcid()
     {
@@ -215,7 +221,7 @@ class User
     }
 
     /**
-     * @param LCID $Lcid
+     * @param string $Lcid
      * @return \PMG\BingAds\CustomerManagement\User
      */
     public function setLcid($Lcid)
@@ -279,7 +285,7 @@ class User
     }
 
     /**
-     * @return SecretQuestion
+     * @return string
      */
     public function getSecretQuestion()
     {
@@ -287,7 +293,7 @@ class User
     }
 
     /**
-     * @param SecretQuestion $SecretQuestion
+     * @param string $SecretQuestion
      * @return \PMG\BingAds\CustomerManagement\User
      */
     public function setSecretQuestion($SecretQuestion)
@@ -297,7 +303,7 @@ class User
     }
 
     /**
-     * @return UserLifeCycleStatus
+     * @return string
      */
     public function getUserLifeCycleStatus()
     {
@@ -305,7 +311,7 @@ class User
     }
 
     /**
-     * @param UserLifeCycleStatus $UserLifeCycleStatus
+     * @param string $UserLifeCycleStatus
      * @return \PMG\BingAds\CustomerManagement\User
      */
     public function setUserLifeCycleStatus($UserLifeCycleStatus)

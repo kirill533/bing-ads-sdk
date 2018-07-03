@@ -26,7 +26,9 @@ class CampaignCriterion
     protected $Id = null;
 
     /**
-     * @var CampaignCriterionStatus $Status
+     * @see \PMG\BingAds\CampaignManagement\CampaignCriterionStatus for valid values
+     *
+     * @var string $Status
      */
     protected $Status = null;
 
@@ -116,7 +118,7 @@ class CampaignCriterion
     }
 
     /**
-     * @return CampaignCriterionStatus
+     * @return string
      */
     public function getStatus()
     {
@@ -124,7 +126,7 @@ class CampaignCriterion
     }
 
     /**
-     * @param CampaignCriterionStatus $Status
+     * @param string $Status
      * @return \PMG\BingAds\CampaignManagement\CampaignCriterion
      */
     public function setStatus($Status)

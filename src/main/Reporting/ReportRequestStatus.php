@@ -11,7 +11,9 @@ class ReportRequestStatus
     protected $ReportDownloadUrl = null;
 
     /**
-     * @var ReportRequestStatusType $Status
+     * @see \PMG\BingAds\Reporting\ReportRequestStatusType for valid values
+     *
+     * @var string $Status
      */
     protected $Status = null;
 
@@ -40,7 +42,7 @@ class ReportRequestStatus
     }
 
     /**
-     * @return ReportRequestStatusType
+     * @return string
      */
     public function getStatus()
     {
@@ -48,7 +50,7 @@ class ReportRequestStatus
     }
 
     /**
-     * @param ReportRequestStatusType $Status
+     * @param string $Status
      * @return \PMG\BingAds\Reporting\ReportRequestStatus
      */
     public function setStatus($Status)

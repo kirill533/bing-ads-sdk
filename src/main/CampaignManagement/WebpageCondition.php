@@ -11,7 +11,9 @@ class WebpageCondition
     protected $Argument = null;
 
     /**
-     * @var WebpageConditionOperand $Operand
+     * @see \PMG\BingAds\CampaignManagement\WebpageConditionOperand for valid values
+     *
+     * @var string $Operand
      */
     protected $Operand = null;
 
@@ -40,7 +42,7 @@ class WebpageCondition
     }
 
     /**
-     * @return WebpageConditionOperand
+     * @return string
      */
     public function getOperand()
     {
@@ -48,7 +50,7 @@ class WebpageCondition
     }
 
     /**
-     * @param WebpageConditionOperand $Operand
+     * @param string $Operand
      * @return \PMG\BingAds\CampaignManagement\WebpageCondition
      */
     public function setOperand($Operand)

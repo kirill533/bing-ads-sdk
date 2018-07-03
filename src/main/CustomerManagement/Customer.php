@@ -6,7 +6,9 @@ class Customer
 {
 
     /**
-     * @var CustomerFinancialStatus $CustomerFinancialStatus
+     * @see \PMG\BingAds\CustomerManagement\CustomerFinancialStatus for valid values
+     *
+     * @var string $CustomerFinancialStatus
      */
     protected $CustomerFinancialStatus = null;
 
@@ -16,7 +18,9 @@ class Customer
     protected $Id = null;
 
     /**
-     * @var Industry $Industry
+     * @see \PMG\BingAds\CustomerManagement\Industry for valid values
+     *
+     * @var string $Industry
      */
     protected $Industry = null;
 
@@ -41,7 +45,9 @@ class Customer
     protected $ForwardCompatibilityMap = null;
 
     /**
-     * @var LanguageType $MarketLanguage
+     * @see \PMG\BingAds\CustomerManagement\LanguageType for valid values
+     *
+     * @var string $MarketLanguage
      */
     protected $MarketLanguage = null;
 
@@ -51,12 +57,16 @@ class Customer
     protected $Name = null;
 
     /**
-     * @var ServiceLevel $ServiceLevel
+     * @see \PMG\BingAds\CustomerManagement\ServiceLevel for valid values
+     *
+     * @var string $ServiceLevel
      */
     protected $ServiceLevel = null;
 
     /**
-     * @var CustomerLifeCycleStatus $CustomerLifeCycleStatus
+     * @see \PMG\BingAds\CustomerManagement\CustomerLifeCycleStatus for valid values
+     *
+     * @var string $CustomerLifeCycleStatus
      */
     protected $CustomerLifeCycleStatus = null;
 
@@ -77,7 +87,7 @@ class Customer
     }
 
     /**
-     * @return CustomerFinancialStatus
+     * @return string
      */
     public function getCustomerFinancialStatus()
     {
@@ -85,7 +95,7 @@ class Customer
     }
 
     /**
-     * @param CustomerFinancialStatus $CustomerFinancialStatus
+     * @param string $CustomerFinancialStatus
      * @return \PMG\BingAds\CustomerManagement\Customer
      */
     public function setCustomerFinancialStatus($CustomerFinancialStatus)
@@ -113,7 +123,7 @@ class Customer
     }
 
     /**
-     * @return Industry
+     * @return string
      */
     public function getIndustry()
     {
@@ -121,7 +131,7 @@ class Customer
     }
 
     /**
-     * @param Industry $Industry
+     * @param string $Industry
      * @return \PMG\BingAds\CustomerManagement\Customer
      */
     public function setIndustry($Industry)
@@ -215,7 +225,7 @@ class Customer
     }
 
     /**
-     * @return LanguageType
+     * @return string
      */
     public function getMarketLanguage()
     {
@@ -223,7 +233,7 @@ class Customer
     }
 
     /**
-     * @param LanguageType $MarketLanguage
+     * @param string $MarketLanguage
      * @return \PMG\BingAds\CustomerManagement\Customer
      */
     public function setMarketLanguage($MarketLanguage)
@@ -251,7 +261,7 @@ class Customer
     }
 
     /**
-     * @return ServiceLevel
+     * @return string
      */
     public function getServiceLevel()
     {
@@ -259,7 +269,7 @@ class Customer
     }
 
     /**
-     * @param ServiceLevel $ServiceLevel
+     * @param string $ServiceLevel
      * @return \PMG\BingAds\CustomerManagement\Customer
      */
     public function setServiceLevel($ServiceLevel)
@@ -269,7 +279,7 @@ class Customer
     }
 
     /**
-     * @return CustomerLifeCycleStatus
+     * @return string
      */
     public function getCustomerLifeCycleStatus()
     {
@@ -277,7 +287,7 @@ class Customer
     }
 
     /**
-     * @param CustomerLifeCycleStatus $CustomerLifeCycleStatus
+     * @param string $CustomerLifeCycleStatus
      * @return \PMG\BingAds\CustomerManagement\Customer
      */
     public function setCustomerLifeCycleStatus($CustomerLifeCycleStatus)

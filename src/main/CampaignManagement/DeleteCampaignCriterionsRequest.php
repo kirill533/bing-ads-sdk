@@ -16,14 +16,16 @@ class DeleteCampaignCriterionsRequest
     protected $CampaignId = null;
 
     /**
-     * @var CampaignCriterionType $CriterionType
+     * @see \PMG\BingAds\CampaignManagement\CampaignCriterionType for valid values
+     *
+     * @var list $CriterionType
      */
     protected $CriterionType = null;
 
     /**
      * @param ArrayOflong $CampaignCriterionIds
      * @param int $CampaignId
-     * @param CampaignCriterionType $CriterionType
+     * @param list $CriterionType
      */
     public function __construct($CampaignCriterionIds = null, $CampaignId = null, $CriterionType = null)
     {
@@ -69,7 +71,7 @@ class DeleteCampaignCriterionsRequest
     }
 
     /**
-     * @return CampaignCriterionType
+     * @return list
      */
     public function getCriterionType()
     {
@@ -77,7 +79,7 @@ class DeleteCampaignCriterionsRequest
     }
 
     /**
-     * @param CampaignCriterionType $CriterionType
+     * @param list $CriterionType
      * @return \PMG\BingAds\CampaignManagement\DeleteCampaignCriterionsRequest
      */
     public function setCriterionType($CriterionType)

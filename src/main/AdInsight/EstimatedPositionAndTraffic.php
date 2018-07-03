@@ -6,7 +6,9 @@ class EstimatedPositionAndTraffic
 {
 
     /**
-     * @var MatchType $MatchType
+     * @see \PMG\BingAds\AdInsight\MatchType for valid values
+     *
+     * @var string $MatchType
      */
     protected $MatchType = null;
 
@@ -51,7 +53,9 @@ class EstimatedPositionAndTraffic
     protected $MaxTotalCostPerWeek = null;
 
     /**
-     * @var CurrencyCode $CurrencyCode
+     * @see \PMG\BingAds\AdInsight\CurrencyCode for valid values
+     *
+     * @var string $CurrencyCode
      */
     protected $CurrencyCode = null;
 
@@ -67,7 +71,7 @@ class EstimatedPositionAndTraffic
     }
 
     /**
-     * @return MatchType
+     * @return string
      */
     public function getMatchType()
     {
@@ -75,7 +79,7 @@ class EstimatedPositionAndTraffic
     }
 
     /**
-     * @param MatchType $MatchType
+     * @param string $MatchType
      * @return \PMG\BingAds\AdInsight\EstimatedPositionAndTraffic
      */
     public function setMatchType($MatchType)
@@ -229,7 +233,7 @@ class EstimatedPositionAndTraffic
     }
 
     /**
-     * @return CurrencyCode
+     * @return string
      */
     public function getCurrencyCode()
     {
@@ -237,7 +241,7 @@ class EstimatedPositionAndTraffic
     }
 
     /**
-     * @param CurrencyCode $CurrencyCode
+     * @param string $CurrencyCode
      * @return \PMG\BingAds\AdInsight\EstimatedPositionAndTraffic
      */
     public function setCurrencyCode($CurrencyCode)

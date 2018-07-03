@@ -6,7 +6,9 @@ class AgeCriterion extends Criterion
 {
 
     /**
-     * @var AgeRange $AgeRange
+     * @see \PMG\BingAds\CampaignManagement\AgeRange for valid values
+     *
+     * @var string $AgeRange
      */
     protected $AgeRange = null;
 
@@ -17,7 +19,7 @@ class AgeCriterion extends Criterion
     }
 
     /**
-     * @return AgeRange
+     * @return string
      */
     public function getAgeRange()
     {
@@ -25,7 +27,7 @@ class AgeCriterion extends Criterion
     }
 
     /**
-     * @param AgeRange $AgeRange
+     * @param string $AgeRange
      * @return \PMG\BingAds\CampaignManagement\AgeCriterion
      */
     public function setAgeRange($AgeRange)

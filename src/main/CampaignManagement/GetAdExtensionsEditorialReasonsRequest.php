@@ -16,14 +16,16 @@ class GetAdExtensionsEditorialReasonsRequest
     protected $AdExtensionIdToEntityIdAssociations = null;
 
     /**
-     * @var AssociationType $AssociationType
+     * @see \PMG\BingAds\CampaignManagement\AssociationType for valid values
+     *
+     * @var string $AssociationType
      */
     protected $AssociationType = null;
 
     /**
      * @param int $AccountId
      * @param ArrayOfAdExtensionIdToEntityIdAssociation $AdExtensionIdToEntityIdAssociations
-     * @param AssociationType $AssociationType
+     * @param string $AssociationType
      */
     public function __construct($AccountId = null, $AdExtensionIdToEntityIdAssociations = null, $AssociationType = null)
     {
@@ -69,7 +71,7 @@ class GetAdExtensionsEditorialReasonsRequest
     }
 
     /**
-     * @return AssociationType
+     * @return string
      */
     public function getAssociationType()
     {
@@ -77,7 +79,7 @@ class GetAdExtensionsEditorialReasonsRequest
     }
 
     /**
-     * @param AssociationType $AssociationType
+     * @param string $AssociationType
      * @return \PMG\BingAds\CampaignManagement\GetAdExtensionsEditorialReasonsRequest
      */
     public function setAssociationType($AssociationType)

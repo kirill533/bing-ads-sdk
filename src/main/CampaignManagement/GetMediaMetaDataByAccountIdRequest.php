@@ -6,12 +6,14 @@ class GetMediaMetaDataByAccountIdRequest
 {
 
     /**
-     * @var MediaEnabledEntityFilter $MediaEnabledEntities
+     * @see \PMG\BingAds\CampaignManagement\MediaEnabledEntityFilter for valid values
+     *
+     * @var list $MediaEnabledEntities
      */
     protected $MediaEnabledEntities = null;
 
     /**
-     * @param MediaEnabledEntityFilter $MediaEnabledEntities
+     * @param list $MediaEnabledEntities
      */
     public function __construct($MediaEnabledEntities = null)
     {
@@ -19,7 +21,7 @@ class GetMediaMetaDataByAccountIdRequest
     }
 
     /**
-     * @return MediaEnabledEntityFilter
+     * @return list
      */
     public function getMediaEnabledEntities()
     {
@@ -27,7 +29,7 @@ class GetMediaMetaDataByAccountIdRequest
     }
 
     /**
-     * @param MediaEnabledEntityFilter $MediaEnabledEntities
+     * @param list $MediaEnabledEntities
      * @return \PMG\BingAds\CampaignManagement\GetMediaMetaDataByAccountIdRequest
      */
     public function setMediaEnabledEntities($MediaEnabledEntities)

@@ -11,7 +11,9 @@ class GetAdsByEditorialStatusRequest
     protected $AdGroupId = null;
 
     /**
-     * @var AdEditorialStatus $EditorialStatus
+     * @see \PMG\BingAds\CampaignManagement\AdEditorialStatus for valid values
+     *
+     * @var string $EditorialStatus
      */
     protected $EditorialStatus = null;
 
@@ -22,7 +24,7 @@ class GetAdsByEditorialStatusRequest
 
     /**
      * @param int $AdGroupId
-     * @param AdEditorialStatus $EditorialStatus
+     * @param string $EditorialStatus
      * @param ArrayOfAdType $AdTypes
      */
     public function __construct($AdGroupId = null, $EditorialStatus = null, $AdTypes = null)
@@ -51,7 +53,7 @@ class GetAdsByEditorialStatusRequest
     }
 
     /**
-     * @return AdEditorialStatus
+     * @return string
      */
     public function getEditorialStatus()
     {
@@ -59,7 +61,7 @@ class GetAdsByEditorialStatusRequest
     }
 
     /**
-     * @param AdEditorialStatus $EditorialStatus
+     * @param string $EditorialStatus
      * @return \PMG\BingAds\CampaignManagement\GetAdsByEditorialStatusRequest
      */
     public function setEditorialStatus($EditorialStatus)

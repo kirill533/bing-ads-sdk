@@ -16,7 +16,9 @@ class Ad
     protected $DevicePreference = null;
 
     /**
-     * @var AdEditorialStatus $EditorialStatus
+     * @see \PMG\BingAds\CampaignManagement\AdEditorialStatus for valid values
+     *
+     * @var string $EditorialStatus
      */
     protected $EditorialStatus = null;
 
@@ -46,7 +48,9 @@ class Ad
     protected $Id = null;
 
     /**
-     * @var AdStatus $Status
+     * @see \PMG\BingAds\CampaignManagement\AdStatus for valid values
+     *
+     * @var string $Status
      */
     protected $Status = null;
 
@@ -56,7 +60,9 @@ class Ad
     protected $TrackingUrlTemplate = null;
 
     /**
-     * @var AdType $Type
+     * @see \PMG\BingAds\CampaignManagement\AdType for valid values
+     *
+     * @var string $Type
      */
     protected $Type = null;
 
@@ -108,7 +114,7 @@ class Ad
     }
 
     /**
-     * @return AdEditorialStatus
+     * @return string
      */
     public function getEditorialStatus()
     {
@@ -116,7 +122,7 @@ class Ad
     }
 
     /**
-     * @param AdEditorialStatus $EditorialStatus
+     * @param string $EditorialStatus
      * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setEditorialStatus($EditorialStatus)
@@ -216,7 +222,7 @@ class Ad
     }
 
     /**
-     * @return AdStatus
+     * @return string
      */
     public function getStatus()
     {
@@ -224,7 +230,7 @@ class Ad
     }
 
     /**
-     * @param AdStatus $Status
+     * @param string $Status
      * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setStatus($Status)
@@ -252,7 +258,7 @@ class Ad
     }
 
     /**
-     * @return AdType
+     * @return string
      */
     public function getType()
     {
@@ -260,7 +266,7 @@ class Ad
     }
 
     /**
-     * @param AdType $Type
+     * @param string $Type
      * @return \PMG\BingAds\CampaignManagement\Ad
      */
     public function setType($Type)

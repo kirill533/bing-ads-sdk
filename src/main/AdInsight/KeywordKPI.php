@@ -11,12 +11,16 @@ class KeywordKPI
     protected $Device = null;
 
     /**
-     * @var MatchType $MatchType
+     * @see \PMG\BingAds\AdInsight\MatchType for valid values
+     *
+     * @var string $MatchType
      */
     protected $MatchType = null;
 
     /**
-     * @var AdPosition $AdPosition
+     * @see \PMG\BingAds\AdInsight\AdPosition for valid values
+     *
+     * @var string $AdPosition
      */
     protected $AdPosition = null;
 
@@ -75,7 +79,7 @@ class KeywordKPI
     }
 
     /**
-     * @return MatchType
+     * @return string
      */
     public function getMatchType()
     {
@@ -83,7 +87,7 @@ class KeywordKPI
     }
 
     /**
-     * @param MatchType $MatchType
+     * @param string $MatchType
      * @return \PMG\BingAds\AdInsight\KeywordKPI
      */
     public function setMatchType($MatchType)
@@ -93,7 +97,7 @@ class KeywordKPI
     }
 
     /**
-     * @return AdPosition
+     * @return string
      */
     public function getAdPosition()
     {
@@ -101,7 +105,7 @@ class KeywordKPI
     }
 
     /**
-     * @param AdPosition $AdPosition
+     * @param string $AdPosition
      * @return \PMG\BingAds\AdInsight\KeywordKPI
      */
     public function setAdPosition($AdPosition)

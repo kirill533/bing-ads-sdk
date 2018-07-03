@@ -11,13 +11,15 @@ class GetProfileDataFileUrlRequest
     protected $LanguageLocale = null;
 
     /**
-     * @var ProfileType $ProfileType
+     * @see \PMG\BingAds\CampaignManagement\ProfileType for valid values
+     *
+     * @var list $ProfileType
      */
     protected $ProfileType = null;
 
     /**
      * @param string $LanguageLocale
-     * @param ProfileType $ProfileType
+     * @param list $ProfileType
      */
     public function __construct($LanguageLocale = null, $ProfileType = null)
     {
@@ -44,7 +46,7 @@ class GetProfileDataFileUrlRequest
     }
 
     /**
-     * @return ProfileType
+     * @return list
      */
     public function getProfileType()
     {
@@ -52,7 +54,7 @@ class GetProfileDataFileUrlRequest
     }
 
     /**
-     * @param ProfileType $ProfileType
+     * @param list $ProfileType
      * @return \PMG\BingAds\CampaignManagement\GetProfileDataFileUrlRequest
      */
     public function setProfileType($ProfileType)

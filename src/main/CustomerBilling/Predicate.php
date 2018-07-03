@@ -11,7 +11,9 @@ class Predicate
     protected $Field = null;
 
     /**
-     * @var PredicateOperator $Operator
+     * @see \PMG\BingAds\CustomerBilling\PredicateOperator for valid values
+     *
+     * @var string $Operator
      */
     protected $Operator = null;
 
@@ -45,7 +47,7 @@ class Predicate
     }
 
     /**
-     * @return PredicateOperator
+     * @return string
      */
     public function getOperator()
     {
@@ -53,7 +55,7 @@ class Predicate
     }
 
     /**
-     * @param PredicateOperator $Operator
+     * @param string $Operator
      * @return \PMG\BingAds\CustomerBilling\Predicate
      */
     public function setOperator($Operator)

@@ -6,7 +6,9 @@ class GenderCriterion extends Criterion
 {
 
     /**
-     * @var GenderType $GenderType
+     * @see \PMG\BingAds\CampaignManagement\GenderType for valid values
+     *
+     * @var string $GenderType
      */
     protected $GenderType = null;
 
@@ -17,7 +19,7 @@ class GenderCriterion extends Criterion
     }
 
     /**
-     * @return GenderType
+     * @return string
      */
     public function getGenderType()
     {
@@ -25,7 +27,7 @@ class GenderCriterion extends Criterion
     }
 
     /**
-     * @param GenderType $GenderType
+     * @param string $GenderType
      * @return \PMG\BingAds\CampaignManagement\GenderCriterion
      */
     public function setGenderType($GenderType)

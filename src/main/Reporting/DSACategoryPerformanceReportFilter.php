@@ -6,22 +6,30 @@ class DSACategoryPerformanceReportFilter
 {
 
     /**
-     * @var AccountStatusReportFilter $AccountStatus
+     * @see \PMG\BingAds\Reporting\AccountStatusReportFilter for valid values
+     *
+     * @var list $AccountStatus
      */
     protected $AccountStatus = null;
 
     /**
-     * @var AdGroupStatusReportFilter $AdGroupStatus
+     * @see \PMG\BingAds\Reporting\AdGroupStatusReportFilter for valid values
+     *
+     * @var list $AdGroupStatus
      */
     protected $AdGroupStatus = null;
 
     /**
-     * @var AdStatusReportFilter $AdStatus
+     * @see \PMG\BingAds\Reporting\AdStatusReportFilter for valid values
+     *
+     * @var list $AdStatus
      */
     protected $AdStatus = null;
 
     /**
-     * @var CampaignStatusReportFilter $CampaignStatus
+     * @see \PMG\BingAds\Reporting\CampaignStatusReportFilter for valid values
+     *
+     * @var list $CampaignStatus
      */
     protected $CampaignStatus = null;
 
@@ -37,7 +45,7 @@ class DSACategoryPerformanceReportFilter
     }
 
     /**
-     * @return AccountStatusReportFilter
+     * @return list
      */
     public function getAccountStatus()
     {
@@ -45,7 +53,7 @@ class DSACategoryPerformanceReportFilter
     }
 
     /**
-     * @param AccountStatusReportFilter $AccountStatus
+     * @param list $AccountStatus
      * @return \PMG\BingAds\Reporting\DSACategoryPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
@@ -55,7 +63,7 @@ class DSACategoryPerformanceReportFilter
     }
 
     /**
-     * @return AdGroupStatusReportFilter
+     * @return list
      */
     public function getAdGroupStatus()
     {
@@ -63,7 +71,7 @@ class DSACategoryPerformanceReportFilter
     }
 
     /**
-     * @param AdGroupStatusReportFilter $AdGroupStatus
+     * @param list $AdGroupStatus
      * @return \PMG\BingAds\Reporting\DSACategoryPerformanceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
@@ -73,7 +81,7 @@ class DSACategoryPerformanceReportFilter
     }
 
     /**
-     * @return AdStatusReportFilter
+     * @return list
      */
     public function getAdStatus()
     {
@@ -81,7 +89,7 @@ class DSACategoryPerformanceReportFilter
     }
 
     /**
-     * @param AdStatusReportFilter $AdStatus
+     * @param list $AdStatus
      * @return \PMG\BingAds\Reporting\DSACategoryPerformanceReportFilter
      */
     public function setAdStatus($AdStatus)
@@ -91,7 +99,7 @@ class DSACategoryPerformanceReportFilter
     }
 
     /**
-     * @return CampaignStatusReportFilter
+     * @return list
      */
     public function getCampaignStatus()
     {
@@ -99,7 +107,7 @@ class DSACategoryPerformanceReportFilter
     }
 
     /**
-     * @param CampaignStatusReportFilter $CampaignStatus
+     * @param list $CampaignStatus
      * @return \PMG\BingAds\Reporting\DSACategoryPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)

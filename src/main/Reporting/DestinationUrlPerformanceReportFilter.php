@@ -6,32 +6,44 @@ class DestinationUrlPerformanceReportFilter
 {
 
     /**
-     * @var AccountStatusReportFilter $AccountStatus
+     * @see \PMG\BingAds\Reporting\AccountStatusReportFilter for valid values
+     *
+     * @var list $AccountStatus
      */
     protected $AccountStatus = null;
 
     /**
-     * @var AdDistributionReportFilter $AdDistribution
+     * @see \PMG\BingAds\Reporting\AdDistributionReportFilter for valid values
+     *
+     * @var list $AdDistribution
      */
     protected $AdDistribution = null;
 
     /**
-     * @var AdGroupStatusReportFilter $AdGroupStatus
+     * @see \PMG\BingAds\Reporting\AdGroupStatusReportFilter for valid values
+     *
+     * @var list $AdGroupStatus
      */
     protected $AdGroupStatus = null;
 
     /**
-     * @var AdStatusReportFilter $AdStatus
+     * @see \PMG\BingAds\Reporting\AdStatusReportFilter for valid values
+     *
+     * @var list $AdStatus
      */
     protected $AdStatus = null;
 
     /**
-     * @var CampaignStatusReportFilter $CampaignStatus
+     * @see \PMG\BingAds\Reporting\CampaignStatusReportFilter for valid values
+     *
+     * @var list $CampaignStatus
      */
     protected $CampaignStatus = null;
 
     /**
-     * @var DeviceTypeReportFilter $DeviceType
+     * @see \PMG\BingAds\Reporting\DeviceTypeReportFilter for valid values
+     *
+     * @var list $DeviceType
      */
     protected $DeviceType = null;
 
@@ -47,7 +59,7 @@ class DestinationUrlPerformanceReportFilter
     }
 
     /**
-     * @return AccountStatusReportFilter
+     * @return list
      */
     public function getAccountStatus()
     {
@@ -55,7 +67,7 @@ class DestinationUrlPerformanceReportFilter
     }
 
     /**
-     * @param AccountStatusReportFilter $AccountStatus
+     * @param list $AccountStatus
      * @return \PMG\BingAds\Reporting\DestinationUrlPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
@@ -65,7 +77,7 @@ class DestinationUrlPerformanceReportFilter
     }
 
     /**
-     * @return AdDistributionReportFilter
+     * @return list
      */
     public function getAdDistribution()
     {
@@ -73,7 +85,7 @@ class DestinationUrlPerformanceReportFilter
     }
 
     /**
-     * @param AdDistributionReportFilter $AdDistribution
+     * @param list $AdDistribution
      * @return \PMG\BingAds\Reporting\DestinationUrlPerformanceReportFilter
      */
     public function setAdDistribution($AdDistribution)
@@ -83,7 +95,7 @@ class DestinationUrlPerformanceReportFilter
     }
 
     /**
-     * @return AdGroupStatusReportFilter
+     * @return list
      */
     public function getAdGroupStatus()
     {
@@ -91,7 +103,7 @@ class DestinationUrlPerformanceReportFilter
     }
 
     /**
-     * @param AdGroupStatusReportFilter $AdGroupStatus
+     * @param list $AdGroupStatus
      * @return \PMG\BingAds\Reporting\DestinationUrlPerformanceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
@@ -101,7 +113,7 @@ class DestinationUrlPerformanceReportFilter
     }
 
     /**
-     * @return AdStatusReportFilter
+     * @return list
      */
     public function getAdStatus()
     {
@@ -109,7 +121,7 @@ class DestinationUrlPerformanceReportFilter
     }
 
     /**
-     * @param AdStatusReportFilter $AdStatus
+     * @param list $AdStatus
      * @return \PMG\BingAds\Reporting\DestinationUrlPerformanceReportFilter
      */
     public function setAdStatus($AdStatus)
@@ -119,7 +131,7 @@ class DestinationUrlPerformanceReportFilter
     }
 
     /**
-     * @return CampaignStatusReportFilter
+     * @return list
      */
     public function getCampaignStatus()
     {
@@ -127,7 +139,7 @@ class DestinationUrlPerformanceReportFilter
     }
 
     /**
-     * @param CampaignStatusReportFilter $CampaignStatus
+     * @param list $CampaignStatus
      * @return \PMG\BingAds\Reporting\DestinationUrlPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
@@ -137,7 +149,7 @@ class DestinationUrlPerformanceReportFilter
     }
 
     /**
-     * @return DeviceTypeReportFilter
+     * @return list
      */
     public function getDeviceType()
     {
@@ -145,7 +157,7 @@ class DestinationUrlPerformanceReportFilter
     }
 
     /**
-     * @param DeviceTypeReportFilter $DeviceType
+     * @param list $DeviceType
      * @return \PMG\BingAds\Reporting\DestinationUrlPerformanceReportFilter
      */
     public function setDeviceType($DeviceType)

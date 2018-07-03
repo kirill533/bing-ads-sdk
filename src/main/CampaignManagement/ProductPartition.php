@@ -16,12 +16,14 @@ class ProductPartition extends Criterion
     protected $ParentCriterionId = null;
 
     /**
-     * @var ProductPartitionType $PartitionType
+     * @see \PMG\BingAds\CampaignManagement\ProductPartitionType for valid values
+     *
+     * @var string $PartitionType
      */
     protected $PartitionType = null;
 
     /**
-     * @param ProductPartitionType $PartitionType
+     * @param string $PartitionType
      */
     public function __construct($PartitionType = null)
     {
@@ -66,7 +68,7 @@ class ProductPartition extends Criterion
     }
 
     /**
-     * @return ProductPartitionType
+     * @return string
      */
     public function getPartitionType()
     {
@@ -74,7 +76,7 @@ class ProductPartition extends Criterion
     }
 
     /**
-     * @param ProductPartitionType $PartitionType
+     * @param string $PartitionType
      * @return \PMG\BingAds\CampaignManagement\ProductPartition
      */
     public function setPartitionType($PartitionType)

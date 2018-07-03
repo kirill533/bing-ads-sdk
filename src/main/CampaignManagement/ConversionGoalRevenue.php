@@ -11,7 +11,9 @@ class ConversionGoalRevenue
     protected $CurrencyCode = null;
 
     /**
-     * @var ConversionGoalRevenueType $Type
+     * @see \PMG\BingAds\CampaignManagement\ConversionGoalRevenueType for valid values
+     *
+     * @var string $Type
      */
     protected $Type = null;
 
@@ -45,7 +47,7 @@ class ConversionGoalRevenue
     }
 
     /**
-     * @return ConversionGoalRevenueType
+     * @return string
      */
     public function getType()
     {
@@ -53,7 +55,7 @@ class ConversionGoalRevenue
     }
 
     /**
-     * @param ConversionGoalRevenueType $Type
+     * @param string $Type
      * @return \PMG\BingAds\CampaignManagement\ConversionGoalRevenue
      */
     public function setType($Type)

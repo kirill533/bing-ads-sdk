@@ -6,27 +6,37 @@ class DSAAutoTargetPerformanceReportFilter
 {
 
     /**
-     * @var AccountStatusReportFilter $AccountStatus
+     * @see \PMG\BingAds\Reporting\AccountStatusReportFilter for valid values
+     *
+     * @var list $AccountStatus
      */
     protected $AccountStatus = null;
 
     /**
-     * @var AdGroupStatusReportFilter $AdGroupStatus
+     * @see \PMG\BingAds\Reporting\AdGroupStatusReportFilter for valid values
+     *
+     * @var list $AdGroupStatus
      */
     protected $AdGroupStatus = null;
 
     /**
-     * @var BidStrategyTypeReportFilter $BidStrategyType
+     * @see \PMG\BingAds\Reporting\BidStrategyTypeReportFilter for valid values
+     *
+     * @var list $BidStrategyType
      */
     protected $BidStrategyType = null;
 
     /**
-     * @var CampaignStatusReportFilter $CampaignStatus
+     * @see \PMG\BingAds\Reporting\CampaignStatusReportFilter for valid values
+     *
+     * @var list $CampaignStatus
      */
     protected $CampaignStatus = null;
 
     /**
-     * @var DynamicAdTargetStatusReportFilter $DynamicAdTargetStatus
+     * @see \PMG\BingAds\Reporting\DynamicAdTargetStatusReportFilter for valid values
+     *
+     * @var list $DynamicAdTargetStatus
      */
     protected $DynamicAdTargetStatus = null;
 
@@ -42,7 +52,7 @@ class DSAAutoTargetPerformanceReportFilter
     }
 
     /**
-     * @return AccountStatusReportFilter
+     * @return list
      */
     public function getAccountStatus()
     {
@@ -50,7 +60,7 @@ class DSAAutoTargetPerformanceReportFilter
     }
 
     /**
-     * @param AccountStatusReportFilter $AccountStatus
+     * @param list $AccountStatus
      * @return \PMG\BingAds\Reporting\DSAAutoTargetPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
@@ -60,7 +70,7 @@ class DSAAutoTargetPerformanceReportFilter
     }
 
     /**
-     * @return AdGroupStatusReportFilter
+     * @return list
      */
     public function getAdGroupStatus()
     {
@@ -68,7 +78,7 @@ class DSAAutoTargetPerformanceReportFilter
     }
 
     /**
-     * @param AdGroupStatusReportFilter $AdGroupStatus
+     * @param list $AdGroupStatus
      * @return \PMG\BingAds\Reporting\DSAAutoTargetPerformanceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
@@ -78,7 +88,7 @@ class DSAAutoTargetPerformanceReportFilter
     }
 
     /**
-     * @return BidStrategyTypeReportFilter
+     * @return list
      */
     public function getBidStrategyType()
     {
@@ -86,7 +96,7 @@ class DSAAutoTargetPerformanceReportFilter
     }
 
     /**
-     * @param BidStrategyTypeReportFilter $BidStrategyType
+     * @param list $BidStrategyType
      * @return \PMG\BingAds\Reporting\DSAAutoTargetPerformanceReportFilter
      */
     public function setBidStrategyType($BidStrategyType)
@@ -96,7 +106,7 @@ class DSAAutoTargetPerformanceReportFilter
     }
 
     /**
-     * @return CampaignStatusReportFilter
+     * @return list
      */
     public function getCampaignStatus()
     {
@@ -104,7 +114,7 @@ class DSAAutoTargetPerformanceReportFilter
     }
 
     /**
-     * @param CampaignStatusReportFilter $CampaignStatus
+     * @param list $CampaignStatus
      * @return \PMG\BingAds\Reporting\DSAAutoTargetPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
@@ -114,7 +124,7 @@ class DSAAutoTargetPerformanceReportFilter
     }
 
     /**
-     * @return DynamicAdTargetStatusReportFilter
+     * @return list
      */
     public function getDynamicAdTargetStatus()
     {
@@ -122,7 +132,7 @@ class DSAAutoTargetPerformanceReportFilter
     }
 
     /**
-     * @param DynamicAdTargetStatusReportFilter $DynamicAdTargetStatus
+     * @param list $DynamicAdTargetStatus
      * @return \PMG\BingAds\Reporting\DSAAutoTargetPerformanceReportFilter
      */
     public function setDynamicAdTargetStatus($DynamicAdTargetStatus)

@@ -71,7 +71,9 @@ class InsertionOrder
     protected $Name = null;
 
     /**
-     * @var InsertionOrderStatus $Status
+     * @see \PMG\BingAds\CustomerBilling\InsertionOrderStatus for valid values
+     *
+     * @var string $Status
      */
     protected $Status = null;
 
@@ -362,7 +364,7 @@ class InsertionOrder
     }
 
     /**
-     * @return InsertionOrderStatus
+     * @return string
      */
     public function getStatus()
     {
@@ -370,7 +372,7 @@ class InsertionOrder
     }
 
     /**
-     * @param InsertionOrderStatus $Status
+     * @param string $Status
      * @return \PMG\BingAds\CustomerBilling\InsertionOrder
      */
     public function setStatus($Status)

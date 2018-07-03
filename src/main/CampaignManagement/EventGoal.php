@@ -11,7 +11,9 @@ class EventGoal extends ConversionGoal
     protected $ActionExpression = null;
 
     /**
-     * @var ExpressionOperator $ActionOperator
+     * @see \PMG\BingAds\CampaignManagement\ExpressionOperator for valid values
+     *
+     * @var string $ActionOperator
      */
     protected $ActionOperator = null;
 
@@ -21,7 +23,9 @@ class EventGoal extends ConversionGoal
     protected $CategoryExpression = null;
 
     /**
-     * @var ExpressionOperator $CategoryOperator
+     * @see \PMG\BingAds\CampaignManagement\ExpressionOperator for valid values
+     *
+     * @var string $CategoryOperator
      */
     protected $CategoryOperator = null;
 
@@ -31,7 +35,9 @@ class EventGoal extends ConversionGoal
     protected $LabelExpression = null;
 
     /**
-     * @var ExpressionOperator $LabelOperator
+     * @see \PMG\BingAds\CampaignManagement\ExpressionOperator for valid values
+     *
+     * @var string $LabelOperator
      */
     protected $LabelOperator = null;
 
@@ -41,7 +47,9 @@ class EventGoal extends ConversionGoal
     protected $Value = null;
 
     /**
-     * @var ValueOperator $ValueOperator
+     * @see \PMG\BingAds\CampaignManagement\ValueOperator for valid values
+     *
+     * @var string $ValueOperator
      */
     protected $ValueOperator = null;
 
@@ -70,7 +78,7 @@ class EventGoal extends ConversionGoal
     }
 
     /**
-     * @return ExpressionOperator
+     * @return string
      */
     public function getActionOperator()
     {
@@ -78,7 +86,7 @@ class EventGoal extends ConversionGoal
     }
 
     /**
-     * @param ExpressionOperator $ActionOperator
+     * @param string $ActionOperator
      * @return \PMG\BingAds\CampaignManagement\EventGoal
      */
     public function setActionOperator($ActionOperator)
@@ -106,7 +114,7 @@ class EventGoal extends ConversionGoal
     }
 
     /**
-     * @return ExpressionOperator
+     * @return string
      */
     public function getCategoryOperator()
     {
@@ -114,7 +122,7 @@ class EventGoal extends ConversionGoal
     }
 
     /**
-     * @param ExpressionOperator $CategoryOperator
+     * @param string $CategoryOperator
      * @return \PMG\BingAds\CampaignManagement\EventGoal
      */
     public function setCategoryOperator($CategoryOperator)
@@ -142,7 +150,7 @@ class EventGoal extends ConversionGoal
     }
 
     /**
-     * @return ExpressionOperator
+     * @return string
      */
     public function getLabelOperator()
     {
@@ -150,7 +158,7 @@ class EventGoal extends ConversionGoal
     }
 
     /**
-     * @param ExpressionOperator $LabelOperator
+     * @param string $LabelOperator
      * @return \PMG\BingAds\CampaignManagement\EventGoal
      */
     public function setLabelOperator($LabelOperator)
@@ -178,7 +186,7 @@ class EventGoal extends ConversionGoal
     }
 
     /**
-     * @return ValueOperator
+     * @return string
      */
     public function getValueOperator()
     {
@@ -186,7 +194,7 @@ class EventGoal extends ConversionGoal
     }
 
     /**
-     * @param ValueOperator $ValueOperator
+     * @param string $ValueOperator
      * @return \PMG\BingAds\CampaignManagement\EventGoal
      */
     public function setValueOperator($ValueOperator)

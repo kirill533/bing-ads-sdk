@@ -16,7 +16,9 @@ class CoOpSetting extends Setting
     protected $BidMaxValue = null;
 
     /**
-     * @var BidOption $BidOption
+     * @see \PMG\BingAds\CampaignManagement\BidOption for valid values
+     *
+     * @var string $BidOption
      */
     protected $BidOption = null;
 
@@ -63,7 +65,7 @@ class CoOpSetting extends Setting
     }
 
     /**
-     * @return BidOption
+     * @return string
      */
     public function getBidOption()
     {
@@ -71,7 +73,7 @@ class CoOpSetting extends Setting
     }
 
     /**
-     * @param BidOption $BidOption
+     * @param string $BidOption
      * @return \PMG\BingAds\CampaignManagement\CoOpSetting
      */
     public function setBidOption($BidOption)

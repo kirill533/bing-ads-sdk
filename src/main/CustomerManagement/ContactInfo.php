@@ -26,7 +26,9 @@ class ContactInfo
     protected $Email = null;
 
     /**
-     * @var EmailFormat $EmailFormat
+     * @see \PMG\BingAds\CustomerManagement\EmailFormat for valid values
+     *
+     * @var string $EmailFormat
      */
     protected $EmailFormat = null;
 
@@ -139,7 +141,7 @@ class ContactInfo
     }
 
     /**
-     * @return EmailFormat
+     * @return string
      */
     public function getEmailFormat()
     {
@@ -147,7 +149,7 @@ class ContactInfo
     }
 
     /**
-     * @param EmailFormat $EmailFormat
+     * @param string $EmailFormat
      * @return \PMG\BingAds\CustomerManagement\ContactInfo
      */
     public function setEmailFormat($EmailFormat)

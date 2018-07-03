@@ -6,47 +6,65 @@ class ShareOfVoiceReportFilter
 {
 
     /**
-     * @var AccountStatusReportFilter $AccountStatus
+     * @see \PMG\BingAds\Reporting\AccountStatusReportFilter for valid values
+     *
+     * @var list $AccountStatus
      */
     protected $AccountStatus = null;
 
     /**
-     * @var AdDistributionReportFilter $AdDistribution
+     * @see \PMG\BingAds\Reporting\AdDistributionReportFilter for valid values
+     *
+     * @var list $AdDistribution
      */
     protected $AdDistribution = null;
 
     /**
-     * @var AdGroupStatusReportFilter $AdGroupStatus
+     * @see \PMG\BingAds\Reporting\AdGroupStatusReportFilter for valid values
+     *
+     * @var list $AdGroupStatus
      */
     protected $AdGroupStatus = null;
 
     /**
-     * @var BidMatchTypeReportFilter $BidMatchType
+     * @see \PMG\BingAds\Reporting\BidMatchTypeReportFilter for valid values
+     *
+     * @var list $BidMatchType
      */
     protected $BidMatchType = null;
 
     /**
-     * @var BidStrategyTypeReportFilter $BidStrategyType
+     * @see \PMG\BingAds\Reporting\BidStrategyTypeReportFilter for valid values
+     *
+     * @var list $BidStrategyType
      */
     protected $BidStrategyType = null;
 
     /**
-     * @var CampaignStatusReportFilter $CampaignStatus
+     * @see \PMG\BingAds\Reporting\CampaignStatusReportFilter for valid values
+     *
+     * @var list $CampaignStatus
      */
     protected $CampaignStatus = null;
 
     /**
-     * @var DeliveredMatchTypeReportFilter $DeliveredMatchType
+     * @see \PMG\BingAds\Reporting\DeliveredMatchTypeReportFilter for valid values
+     *
+     * @var list $DeliveredMatchType
      */
     protected $DeliveredMatchType = null;
 
     /**
-     * @var DeviceTypeReportFilter $DeviceType
+     * @see \PMG\BingAds\Reporting\DeviceTypeReportFilter for valid values
+     *
+     * @var list $DeviceType
      */
     protected $DeviceType = null;
 
     /**
-     * @var KeywordStatusReportFilter $KeywordStatus
+     * @see \PMG\BingAds\Reporting\KeywordStatusReportFilter for valid values
+     *
+     * @var list $KeywordStatus
      */
     protected $KeywordStatus = null;
 
@@ -67,7 +85,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @return AccountStatusReportFilter
+     * @return list
      */
     public function getAccountStatus()
     {
@@ -75,7 +93,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @param AccountStatusReportFilter $AccountStatus
+     * @param list $AccountStatus
      * @return \PMG\BingAds\Reporting\ShareOfVoiceReportFilter
      */
     public function setAccountStatus($AccountStatus)
@@ -85,7 +103,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @return AdDistributionReportFilter
+     * @return list
      */
     public function getAdDistribution()
     {
@@ -93,7 +111,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @param AdDistributionReportFilter $AdDistribution
+     * @param list $AdDistribution
      * @return \PMG\BingAds\Reporting\ShareOfVoiceReportFilter
      */
     public function setAdDistribution($AdDistribution)
@@ -103,7 +121,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @return AdGroupStatusReportFilter
+     * @return list
      */
     public function getAdGroupStatus()
     {
@@ -111,7 +129,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @param AdGroupStatusReportFilter $AdGroupStatus
+     * @param list $AdGroupStatus
      * @return \PMG\BingAds\Reporting\ShareOfVoiceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
@@ -121,7 +139,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @return BidMatchTypeReportFilter
+     * @return list
      */
     public function getBidMatchType()
     {
@@ -129,7 +147,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @param BidMatchTypeReportFilter $BidMatchType
+     * @param list $BidMatchType
      * @return \PMG\BingAds\Reporting\ShareOfVoiceReportFilter
      */
     public function setBidMatchType($BidMatchType)
@@ -139,7 +157,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @return BidStrategyTypeReportFilter
+     * @return list
      */
     public function getBidStrategyType()
     {
@@ -147,7 +165,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @param BidStrategyTypeReportFilter $BidStrategyType
+     * @param list $BidStrategyType
      * @return \PMG\BingAds\Reporting\ShareOfVoiceReportFilter
      */
     public function setBidStrategyType($BidStrategyType)
@@ -157,7 +175,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @return CampaignStatusReportFilter
+     * @return list
      */
     public function getCampaignStatus()
     {
@@ -165,7 +183,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @param CampaignStatusReportFilter $CampaignStatus
+     * @param list $CampaignStatus
      * @return \PMG\BingAds\Reporting\ShareOfVoiceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
@@ -175,7 +193,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @return DeliveredMatchTypeReportFilter
+     * @return list
      */
     public function getDeliveredMatchType()
     {
@@ -183,7 +201,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @param DeliveredMatchTypeReportFilter $DeliveredMatchType
+     * @param list $DeliveredMatchType
      * @return \PMG\BingAds\Reporting\ShareOfVoiceReportFilter
      */
     public function setDeliveredMatchType($DeliveredMatchType)
@@ -193,7 +211,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @return DeviceTypeReportFilter
+     * @return list
      */
     public function getDeviceType()
     {
@@ -201,7 +219,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @param DeviceTypeReportFilter $DeviceType
+     * @param list $DeviceType
      * @return \PMG\BingAds\Reporting\ShareOfVoiceReportFilter
      */
     public function setDeviceType($DeviceType)
@@ -211,7 +229,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @return KeywordStatusReportFilter
+     * @return list
      */
     public function getKeywordStatus()
     {
@@ -219,7 +237,7 @@ class ShareOfVoiceReportFilter
     }
 
     /**
-     * @param KeywordStatusReportFilter $KeywordStatus
+     * @param list $KeywordStatus
      * @return \PMG\BingAds\Reporting\ShareOfVoiceReportFilter
      */
     public function setKeywordStatus($KeywordStatus)

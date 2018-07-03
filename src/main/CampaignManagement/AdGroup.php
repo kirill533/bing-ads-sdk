@@ -51,12 +51,16 @@ class AdGroup
     protected $Name = null;
 
     /**
-     * @var Network $Network
+     * @see \PMG\BingAds\CampaignManagement\Network for valid values
+     *
+     * @var string $Network
      */
     protected $Network = null;
 
     /**
-     * @var AdGroupPrivacyStatus $PrivacyStatus
+     * @see \PMG\BingAds\CampaignManagement\AdGroupPrivacyStatus for valid values
+     *
+     * @var string $PrivacyStatus
      */
     protected $PrivacyStatus = null;
 
@@ -71,7 +75,9 @@ class AdGroup
     protected $StartDate = null;
 
     /**
-     * @var AdGroupStatus $Status
+     * @see \PMG\BingAds\CampaignManagement\AdGroupStatus for valid values
+     *
+     * @var string $Status
      */
     protected $Status = null;
 
@@ -254,7 +260,7 @@ class AdGroup
     }
 
     /**
-     * @return Network
+     * @return string
      */
     public function getNetwork()
     {
@@ -262,7 +268,7 @@ class AdGroup
     }
 
     /**
-     * @param Network $Network
+     * @param string $Network
      * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setNetwork($Network)
@@ -272,7 +278,7 @@ class AdGroup
     }
 
     /**
-     * @return AdGroupPrivacyStatus
+     * @return string
      */
     public function getPrivacyStatus()
     {
@@ -280,7 +286,7 @@ class AdGroup
     }
 
     /**
-     * @param AdGroupPrivacyStatus $PrivacyStatus
+     * @param string $PrivacyStatus
      * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setPrivacyStatus($PrivacyStatus)
@@ -326,7 +332,7 @@ class AdGroup
     }
 
     /**
-     * @return AdGroupStatus
+     * @return string
      */
     public function getStatus()
     {
@@ -334,7 +340,7 @@ class AdGroup
     }
 
     /**
-     * @param AdGroupStatus $Status
+     * @param string $Status
      * @return \PMG\BingAds\CampaignManagement\AdGroup
      */
     public function setStatus($Status)

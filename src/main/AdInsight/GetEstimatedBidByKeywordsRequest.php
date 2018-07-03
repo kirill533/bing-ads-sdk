@@ -11,7 +11,9 @@ class GetEstimatedBidByKeywordsRequest
     protected $Keywords = null;
 
     /**
-     * @var TargetAdPosition $TargetPositionForAds
+     * @see \PMG\BingAds\AdInsight\TargetAdPosition for valid values
+     *
+     * @var string $TargetPositionForAds
      */
     protected $TargetPositionForAds = null;
 
@@ -26,7 +28,9 @@ class GetEstimatedBidByKeywordsRequest
     protected $LocationIds = null;
 
     /**
-     * @var CurrencyCode $CurrencyCode
+     * @see \PMG\BingAds\AdInsight\CurrencyCode for valid values
+     *
+     * @var string $CurrencyCode
      */
     protected $CurrencyCode = null;
 
@@ -47,10 +51,10 @@ class GetEstimatedBidByKeywordsRequest
 
     /**
      * @param ArrayOfKeywordAndMatchType $Keywords
-     * @param TargetAdPosition $TargetPositionForAds
+     * @param string $TargetPositionForAds
      * @param string $Language
      * @param ArrayOflong $LocationIds
-     * @param CurrencyCode $CurrencyCode
+     * @param string $CurrencyCode
      * @param int $CampaignId
      * @param int $AdGroupId
      * @param string $EntityLevelBid
@@ -86,7 +90,7 @@ class GetEstimatedBidByKeywordsRequest
     }
 
     /**
-     * @return TargetAdPosition
+     * @return string
      */
     public function getTargetPositionForAds()
     {
@@ -94,7 +98,7 @@ class GetEstimatedBidByKeywordsRequest
     }
 
     /**
-     * @param TargetAdPosition $TargetPositionForAds
+     * @param string $TargetPositionForAds
      * @return \PMG\BingAds\AdInsight\GetEstimatedBidByKeywordsRequest
      */
     public function setTargetPositionForAds($TargetPositionForAds)
@@ -140,7 +144,7 @@ class GetEstimatedBidByKeywordsRequest
     }
 
     /**
-     * @return CurrencyCode
+     * @return string
      */
     public function getCurrencyCode()
     {
@@ -148,7 +152,7 @@ class GetEstimatedBidByKeywordsRequest
     }
 
     /**
-     * @param CurrencyCode $CurrencyCode
+     * @param string $CurrencyCode
      * @return \PMG\BingAds\AdInsight\GetEstimatedBidByKeywordsRequest
      */
     public function setCurrencyCode($CurrencyCode)

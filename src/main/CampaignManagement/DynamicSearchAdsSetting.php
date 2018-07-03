@@ -21,7 +21,9 @@ class DynamicSearchAdsSetting extends Setting
     protected $PageFeedIds = null;
 
     /**
-     * @var DynamicSearchAdsSource $Source
+     * @see \PMG\BingAds\CampaignManagement\DynamicSearchAdsSource for valid values
+     *
+     * @var string $Source
      */
     protected $Source = null;
 
@@ -86,7 +88,7 @@ class DynamicSearchAdsSetting extends Setting
     }
 
     /**
-     * @return DynamicSearchAdsSource
+     * @return string
      */
     public function getSource()
     {
@@ -94,7 +96,7 @@ class DynamicSearchAdsSetting extends Setting
     }
 
     /**
-     * @param DynamicSearchAdsSource $Source
+     * @param string $Source
      * @return \PMG\BingAds\CampaignManagement\DynamicSearchAdsSetting
      */
     public function setSource($Source)

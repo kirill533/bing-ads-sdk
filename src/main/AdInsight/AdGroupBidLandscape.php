@@ -11,7 +11,9 @@ class AdGroupBidLandscape
     protected $AdGroupId = null;
 
     /**
-     * @var AdGroupBidLandscapeType $AdGroupBidLandscapeType
+     * @see \PMG\BingAds\AdInsight\AdGroupBidLandscapeType for valid values
+     *
+     * @var string $AdGroupBidLandscapeType
      */
     protected $AdGroupBidLandscapeType = null;
 
@@ -55,7 +57,7 @@ class AdGroupBidLandscape
     }
 
     /**
-     * @return AdGroupBidLandscapeType
+     * @return string
      */
     public function getAdGroupBidLandscapeType()
     {
@@ -63,7 +65,7 @@ class AdGroupBidLandscape
     }
 
     /**
-     * @param AdGroupBidLandscapeType $AdGroupBidLandscapeType
+     * @param string $AdGroupBidLandscapeType
      * @return \PMG\BingAds\AdInsight\AdGroupBidLandscape
      */
     public function setAdGroupBidLandscapeType($AdGroupBidLandscapeType)

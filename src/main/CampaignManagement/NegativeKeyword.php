@@ -11,7 +11,9 @@ class NegativeKeyword extends SharedListItem
     protected $Id = null;
 
     /**
-     * @var MatchType $MatchType
+     * @see \PMG\BingAds\CampaignManagement\MatchType for valid values
+     *
+     * @var string $MatchType
      */
     protected $MatchType = null;
 
@@ -21,7 +23,7 @@ class NegativeKeyword extends SharedListItem
     protected $Text = null;
 
     /**
-     * @param MatchType $MatchType
+     * @param string $MatchType
      */
     public function __construct($MatchType = null)
     {
@@ -48,7 +50,7 @@ class NegativeKeyword extends SharedListItem
     }
 
     /**
-     * @return MatchType
+     * @return string
      */
     public function getMatchType()
     {
@@ -56,7 +58,7 @@ class NegativeKeyword extends SharedListItem
     }
 
     /**
-     * @param MatchType $MatchType
+     * @param string $MatchType
      * @return \PMG\BingAds\CampaignManagement\NegativeKeyword
      */
     public function setMatchType($MatchType)

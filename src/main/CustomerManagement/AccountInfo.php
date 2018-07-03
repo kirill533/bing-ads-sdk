@@ -21,7 +21,9 @@ class AccountInfo
     protected $Number = null;
 
     /**
-     * @var AccountLifeCycleStatus $AccountLifeCycleStatus
+     * @see \PMG\BingAds\CustomerManagement\AccountLifeCycleStatus for valid values
+     *
+     * @var string $AccountLifeCycleStatus
      */
     protected $AccountLifeCycleStatus = null;
 
@@ -91,7 +93,7 @@ class AccountInfo
     }
 
     /**
-     * @return AccountLifeCycleStatus
+     * @return string
      */
     public function getAccountLifeCycleStatus()
     {
@@ -99,7 +101,7 @@ class AccountInfo
     }
 
     /**
-     * @param AccountLifeCycleStatus $AccountLifeCycleStatus
+     * @param string $AccountLifeCycleStatus
      * @return \PMG\BingAds\CustomerManagement\AccountInfo
      */
     public function setAccountLifeCycleStatus($AccountLifeCycleStatus)

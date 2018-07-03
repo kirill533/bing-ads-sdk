@@ -16,14 +16,16 @@ class DeleteAdGroupCriterionsRequest
     protected $AdGroupId = null;
 
     /**
-     * @var AdGroupCriterionType $CriterionType
+     * @see \PMG\BingAds\CampaignManagement\AdGroupCriterionType for valid values
+     *
+     * @var list $CriterionType
      */
     protected $CriterionType = null;
 
     /**
      * @param ArrayOflong $AdGroupCriterionIds
      * @param int $AdGroupId
-     * @param AdGroupCriterionType $CriterionType
+     * @param list $CriterionType
      */
     public function __construct($AdGroupCriterionIds = null, $AdGroupId = null, $CriterionType = null)
     {
@@ -69,7 +71,7 @@ class DeleteAdGroupCriterionsRequest
     }
 
     /**
-     * @return AdGroupCriterionType
+     * @return list
      */
     public function getCriterionType()
     {
@@ -77,7 +79,7 @@ class DeleteAdGroupCriterionsRequest
     }
 
     /**
-     * @param AdGroupCriterionType $CriterionType
+     * @param list $CriterionType
      * @return \PMG\BingAds\CampaignManagement\DeleteAdGroupCriterionsRequest
      */
     public function setCriterionType($CriterionType)

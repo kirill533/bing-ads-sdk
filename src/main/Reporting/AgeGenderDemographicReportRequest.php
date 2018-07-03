@@ -6,7 +6,9 @@ class AgeGenderDemographicReportRequest extends ReportRequest
 {
 
     /**
-     * @var ReportAggregation $Aggregation
+     * @see \PMG\BingAds\Reporting\ReportAggregation for valid values
+     *
+     * @var string $Aggregation
      */
     protected $Aggregation = null;
 
@@ -31,7 +33,7 @@ class AgeGenderDemographicReportRequest extends ReportRequest
     protected $Time = null;
 
     /**
-     * @param ReportAggregation $Aggregation
+     * @param string $Aggregation
      */
     public function __construct($Aggregation = null)
     {
@@ -40,7 +42,7 @@ class AgeGenderDemographicReportRequest extends ReportRequest
     }
 
     /**
-     * @return ReportAggregation
+     * @return string
      */
     public function getAggregation()
     {
@@ -48,7 +50,7 @@ class AgeGenderDemographicReportRequest extends ReportRequest
     }
 
     /**
-     * @param ReportAggregation $Aggregation
+     * @param string $Aggregation
      * @return \PMG\BingAds\Reporting\AgeGenderDemographicReportRequest
      */
     public function setAggregation($Aggregation)

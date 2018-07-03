@@ -6,7 +6,9 @@ class GetAuctionInsightDataRequest
 {
 
     /**
-     * @var EntityType $EntityType
+     * @see \PMG\BingAds\AdInsight\EntityType for valid values
+     *
+     * @var string $EntityType
      */
     protected $EntityType = null;
 
@@ -21,7 +23,7 @@ class GetAuctionInsightDataRequest
     protected $SearchParameters = null;
 
     /**
-     * @param EntityType $EntityType
+     * @param string $EntityType
      * @param ArrayOflong $EntityIds
      * @param ArrayOfSearchParameter $SearchParameters
      */
@@ -33,7 +35,7 @@ class GetAuctionInsightDataRequest
     }
 
     /**
-     * @return EntityType
+     * @return string
      */
     public function getEntityType()
     {
@@ -41,7 +43,7 @@ class GetAuctionInsightDataRequest
     }
 
     /**
-     * @param EntityType $EntityType
+     * @param string $EntityType
      * @return \PMG\BingAds\AdInsight\GetAuctionInsightDataRequest
      */
     public function setEntityType($EntityType)

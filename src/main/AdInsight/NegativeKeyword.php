@@ -11,7 +11,9 @@ class NegativeKeyword
     protected $Id = null;
 
     /**
-     * @var MatchType $MatchType
+     * @see \PMG\BingAds\AdInsight\MatchType for valid values
+     *
+     * @var string $MatchType
      */
     protected $MatchType = null;
 
@@ -45,7 +47,7 @@ class NegativeKeyword
     }
 
     /**
-     * @return MatchType
+     * @return string
      */
     public function getMatchType()
     {
@@ -53,7 +55,7 @@ class NegativeKeyword
     }
 
     /**
-     * @param MatchType $MatchType
+     * @param string $MatchType
      * @return \PMG\BingAds\AdInsight\NegativeKeyword
      */
     public function setMatchType($MatchType)

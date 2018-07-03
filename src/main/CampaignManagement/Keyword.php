@@ -21,7 +21,9 @@ class Keyword
     protected $DestinationUrl = null;
 
     /**
-     * @var KeywordEditorialStatus $EditorialStatus
+     * @see \PMG\BingAds\CampaignManagement\KeywordEditorialStatus for valid values
+     *
+     * @var string $EditorialStatus
      */
     protected $EditorialStatus = null;
 
@@ -51,7 +53,9 @@ class Keyword
     protected $Id = null;
 
     /**
-     * @var MatchType $MatchType
+     * @see \PMG\BingAds\CampaignManagement\MatchType for valid values
+     *
+     * @var string $MatchType
      */
     protected $MatchType = null;
 
@@ -71,7 +75,9 @@ class Keyword
     protected $Param3 = null;
 
     /**
-     * @var KeywordStatus $Status
+     * @see \PMG\BingAds\CampaignManagement\KeywordStatus for valid values
+     *
+     * @var string $Status
      */
     protected $Status = null;
 
@@ -151,7 +157,7 @@ class Keyword
     }
 
     /**
-     * @return KeywordEditorialStatus
+     * @return string
      */
     public function getEditorialStatus()
     {
@@ -159,7 +165,7 @@ class Keyword
     }
 
     /**
-     * @param KeywordEditorialStatus $EditorialStatus
+     * @param string $EditorialStatus
      * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setEditorialStatus($EditorialStatus)
@@ -259,7 +265,7 @@ class Keyword
     }
 
     /**
-     * @return MatchType
+     * @return string
      */
     public function getMatchType()
     {
@@ -267,7 +273,7 @@ class Keyword
     }
 
     /**
-     * @param MatchType $MatchType
+     * @param string $MatchType
      * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setMatchType($MatchType)
@@ -331,7 +337,7 @@ class Keyword
     }
 
     /**
-     * @return KeywordStatus
+     * @return string
      */
     public function getStatus()
     {
@@ -339,7 +345,7 @@ class Keyword
     }
 
     /**
-     * @param KeywordStatus $Status
+     * @param string $Status
      * @return \PMG\BingAds\CampaignManagement\Keyword
      */
     public function setStatus($Status)

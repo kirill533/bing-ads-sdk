@@ -6,27 +6,37 @@ class AdGroupPerformanceReportFilter
 {
 
     /**
-     * @var AccountStatusReportFilter $AccountStatus
+     * @see \PMG\BingAds\Reporting\AccountStatusReportFilter for valid values
+     *
+     * @var list $AccountStatus
      */
     protected $AccountStatus = null;
 
     /**
-     * @var AdDistributionReportFilter $AdDistribution
+     * @see \PMG\BingAds\Reporting\AdDistributionReportFilter for valid values
+     *
+     * @var list $AdDistribution
      */
     protected $AdDistribution = null;
 
     /**
-     * @var CampaignStatusReportFilter $CampaignStatus
+     * @see \PMG\BingAds\Reporting\CampaignStatusReportFilter for valid values
+     *
+     * @var list $CampaignStatus
      */
     protected $CampaignStatus = null;
 
     /**
-     * @var DeviceOSReportFilter $DeviceOS
+     * @see \PMG\BingAds\Reporting\DeviceOSReportFilter for valid values
+     *
+     * @var list $DeviceOS
      */
     protected $DeviceOS = null;
 
     /**
-     * @var DeviceTypeReportFilter $DeviceType
+     * @see \PMG\BingAds\Reporting\DeviceTypeReportFilter for valid values
+     *
+     * @var list $DeviceType
      */
     protected $DeviceType = null;
 
@@ -36,7 +46,9 @@ class AdGroupPerformanceReportFilter
     protected $LanguageCode = null;
 
     /**
-     * @var AdGroupStatusReportFilter $Status
+     * @see \PMG\BingAds\Reporting\AdGroupStatusReportFilter for valid values
+     *
+     * @var list $Status
      */
     protected $Status = null;
 
@@ -47,7 +59,7 @@ class AdGroupPerformanceReportFilter
     }
 
     /**
-     * @return AccountStatusReportFilter
+     * @return list
      */
     public function getAccountStatus()
     {
@@ -55,7 +67,7 @@ class AdGroupPerformanceReportFilter
     }
 
     /**
-     * @param AccountStatusReportFilter $AccountStatus
+     * @param list $AccountStatus
      * @return \PMG\BingAds\Reporting\AdGroupPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
@@ -65,7 +77,7 @@ class AdGroupPerformanceReportFilter
     }
 
     /**
-     * @return AdDistributionReportFilter
+     * @return list
      */
     public function getAdDistribution()
     {
@@ -73,7 +85,7 @@ class AdGroupPerformanceReportFilter
     }
 
     /**
-     * @param AdDistributionReportFilter $AdDistribution
+     * @param list $AdDistribution
      * @return \PMG\BingAds\Reporting\AdGroupPerformanceReportFilter
      */
     public function setAdDistribution($AdDistribution)
@@ -83,7 +95,7 @@ class AdGroupPerformanceReportFilter
     }
 
     /**
-     * @return CampaignStatusReportFilter
+     * @return list
      */
     public function getCampaignStatus()
     {
@@ -91,7 +103,7 @@ class AdGroupPerformanceReportFilter
     }
 
     /**
-     * @param CampaignStatusReportFilter $CampaignStatus
+     * @param list $CampaignStatus
      * @return \PMG\BingAds\Reporting\AdGroupPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
@@ -101,7 +113,7 @@ class AdGroupPerformanceReportFilter
     }
 
     /**
-     * @return DeviceOSReportFilter
+     * @return list
      */
     public function getDeviceOS()
     {
@@ -109,7 +121,7 @@ class AdGroupPerformanceReportFilter
     }
 
     /**
-     * @param DeviceOSReportFilter $DeviceOS
+     * @param list $DeviceOS
      * @return \PMG\BingAds\Reporting\AdGroupPerformanceReportFilter
      */
     public function setDeviceOS($DeviceOS)
@@ -119,7 +131,7 @@ class AdGroupPerformanceReportFilter
     }
 
     /**
-     * @return DeviceTypeReportFilter
+     * @return list
      */
     public function getDeviceType()
     {
@@ -127,7 +139,7 @@ class AdGroupPerformanceReportFilter
     }
 
     /**
-     * @param DeviceTypeReportFilter $DeviceType
+     * @param list $DeviceType
      * @return \PMG\BingAds\Reporting\AdGroupPerformanceReportFilter
      */
     public function setDeviceType($DeviceType)
@@ -155,7 +167,7 @@ class AdGroupPerformanceReportFilter
     }
 
     /**
-     * @return AdGroupStatusReportFilter
+     * @return list
      */
     public function getStatus()
     {
@@ -163,7 +175,7 @@ class AdGroupPerformanceReportFilter
     }
 
     /**
-     * @param AdGroupStatusReportFilter $Status
+     * @param list $Status
      * @return \PMG\BingAds\Reporting\AdGroupPerformanceReportFilter
      */
     public function setStatus($Status)

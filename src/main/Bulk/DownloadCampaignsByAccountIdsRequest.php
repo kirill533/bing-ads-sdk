@@ -11,12 +11,16 @@ class DownloadCampaignsByAccountIdsRequest
     protected $AccountIds = null;
 
     /**
-     * @var CompressionType $CompressionType
+     * @see \PMG\BingAds\Bulk\CompressionType for valid values
+     *
+     * @var string $CompressionType
      */
     protected $CompressionType = null;
 
     /**
-     * @var DataScope $DataScope
+     * @see \PMG\BingAds\Bulk\DataScope for valid values
+     *
+     * @var list $DataScope
      */
     protected $DataScope = null;
 
@@ -26,7 +30,9 @@ class DownloadCampaignsByAccountIdsRequest
     protected $DownloadEntities = null;
 
     /**
-     * @var DownloadFileType $DownloadFileType
+     * @see \PMG\BingAds\Bulk\DownloadFileType for valid values
+     *
+     * @var string $DownloadFileType
      */
     protected $DownloadFileType = null;
 
@@ -47,10 +53,10 @@ class DownloadCampaignsByAccountIdsRequest
 
     /**
      * @param ArrayOflong $AccountIds
-     * @param CompressionType $CompressionType
-     * @param DataScope $DataScope
+     * @param string $CompressionType
+     * @param list $DataScope
      * @param ArrayOfDownloadEntity $DownloadEntities
-     * @param DownloadFileType $DownloadFileType
+     * @param string $DownloadFileType
      * @param string $FormatVersion
      * @param \DateTime $LastSyncTimeInUTC
      * @param PerformanceStatsDateRange $PerformanceStatsDateRange
@@ -86,7 +92,7 @@ class DownloadCampaignsByAccountIdsRequest
     }
 
     /**
-     * @return CompressionType
+     * @return string
      */
     public function getCompressionType()
     {
@@ -94,7 +100,7 @@ class DownloadCampaignsByAccountIdsRequest
     }
 
     /**
-     * @param CompressionType $CompressionType
+     * @param string $CompressionType
      * @return \PMG\BingAds\Bulk\DownloadCampaignsByAccountIdsRequest
      */
     public function setCompressionType($CompressionType)
@@ -104,7 +110,7 @@ class DownloadCampaignsByAccountIdsRequest
     }
 
     /**
-     * @return DataScope
+     * @return list
      */
     public function getDataScope()
     {
@@ -112,7 +118,7 @@ class DownloadCampaignsByAccountIdsRequest
     }
 
     /**
-     * @param DataScope $DataScope
+     * @param list $DataScope
      * @return \PMG\BingAds\Bulk\DownloadCampaignsByAccountIdsRequest
      */
     public function setDataScope($DataScope)
@@ -140,7 +146,7 @@ class DownloadCampaignsByAccountIdsRequest
     }
 
     /**
-     * @return DownloadFileType
+     * @return string
      */
     public function getDownloadFileType()
     {
@@ -148,7 +154,7 @@ class DownloadCampaignsByAccountIdsRequest
     }
 
     /**
-     * @param DownloadFileType $DownloadFileType
+     * @param string $DownloadFileType
      * @return \PMG\BingAds\Bulk\DownloadCampaignsByAccountIdsRequest
      */
     public function setDownloadFileType($DownloadFileType)

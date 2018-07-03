@@ -6,7 +6,9 @@ class UserLocationPerformanceReportFilter
 {
 
     /**
-     * @var AdDistributionReportFilter $AdDistribution
+     * @see \PMG\BingAds\Reporting\AdDistributionReportFilter for valid values
+     *
+     * @var list $AdDistribution
      */
     protected $AdDistribution = null;
 
@@ -27,7 +29,7 @@ class UserLocationPerformanceReportFilter
     }
 
     /**
-     * @return AdDistributionReportFilter
+     * @return list
      */
     public function getAdDistribution()
     {
@@ -35,7 +37,7 @@ class UserLocationPerformanceReportFilter
     }
 
     /**
-     * @param AdDistributionReportFilter $AdDistribution
+     * @param list $AdDistribution
      * @return \PMG\BingAds\Reporting\UserLocationPerformanceReportFilter
      */
     public function setAdDistribution($AdDistribution)

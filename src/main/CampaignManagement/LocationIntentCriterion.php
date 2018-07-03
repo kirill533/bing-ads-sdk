@@ -6,7 +6,9 @@ class LocationIntentCriterion extends Criterion
 {
 
     /**
-     * @var IntentOption $IntentOption
+     * @see \PMG\BingAds\CampaignManagement\IntentOption for valid values
+     *
+     * @var string $IntentOption
      */
     protected $IntentOption = null;
 
@@ -17,7 +19,7 @@ class LocationIntentCriterion extends Criterion
     }
 
     /**
-     * @return IntentOption
+     * @return string
      */
     public function getIntentOption()
     {
@@ -25,7 +27,7 @@ class LocationIntentCriterion extends Criterion
     }
 
     /**
-     * @param IntentOption $IntentOption
+     * @param string $IntentOption
      * @return \PMG\BingAds\CampaignManagement\LocationIntentCriterion
      */
     public function setIntentOption($IntentOption)

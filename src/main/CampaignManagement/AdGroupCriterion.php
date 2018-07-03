@@ -21,7 +21,9 @@ class AdGroupCriterion
     protected $Id = null;
 
     /**
-     * @var AdGroupCriterionStatus $Status
+     * @see \PMG\BingAds\CampaignManagement\AdGroupCriterionStatus for valid values
+     *
+     * @var string $Status
      */
     protected $Status = null;
 
@@ -91,7 +93,7 @@ class AdGroupCriterion
     }
 
     /**
-     * @return AdGroupCriterionStatus
+     * @return string
      */
     public function getStatus()
     {
@@ -99,7 +101,7 @@ class AdGroupCriterion
     }
 
     /**
-     * @param AdGroupCriterionStatus $Status
+     * @param string $Status
      * @return \PMG\BingAds\CampaignManagement\AdGroupCriterion
      */
     public function setStatus($Status)

@@ -6,7 +6,9 @@ class DayTime
 {
 
     /**
-     * @var Day $Day
+     * @see \PMG\BingAds\CampaignManagement\Day for valid values
+     *
+     * @var string $Day
      */
     protected $Day = null;
 
@@ -16,7 +18,9 @@ class DayTime
     protected $EndHour = null;
 
     /**
-     * @var Minute $EndMinute
+     * @see \PMG\BingAds\CampaignManagement\Minute for valid values
+     *
+     * @var string $EndMinute
      */
     protected $EndMinute = null;
 
@@ -26,16 +30,18 @@ class DayTime
     protected $StartHour = null;
 
     /**
-     * @var Minute $StartMinute
+     * @see \PMG\BingAds\CampaignManagement\Minute for valid values
+     *
+     * @var string $StartMinute
      */
     protected $StartMinute = null;
 
     /**
-     * @param Day $Day
+     * @param string $Day
      * @param int $EndHour
-     * @param Minute $EndMinute
+     * @param string $EndMinute
      * @param int $StartHour
-     * @param Minute $StartMinute
+     * @param string $StartMinute
      */
     public function __construct($Day = null, $EndHour = null, $EndMinute = null, $StartHour = null, $StartMinute = null)
     {
@@ -47,7 +53,7 @@ class DayTime
     }
 
     /**
-     * @return Day
+     * @return string
      */
     public function getDay()
     {
@@ -55,7 +61,7 @@ class DayTime
     }
 
     /**
-     * @param Day $Day
+     * @param string $Day
      * @return \PMG\BingAds\CampaignManagement\DayTime
      */
     public function setDay($Day)
@@ -83,7 +89,7 @@ class DayTime
     }
 
     /**
-     * @return Minute
+     * @return string
      */
     public function getEndMinute()
     {
@@ -91,7 +97,7 @@ class DayTime
     }
 
     /**
-     * @param Minute $EndMinute
+     * @param string $EndMinute
      * @return \PMG\BingAds\CampaignManagement\DayTime
      */
     public function setEndMinute($EndMinute)
@@ -119,7 +125,7 @@ class DayTime
     }
 
     /**
-     * @return Minute
+     * @return string
      */
     public function getStartMinute()
     {
@@ -127,7 +133,7 @@ class DayTime
     }
 
     /**
-     * @param Minute $StartMinute
+     * @param string $StartMinute
      * @return \PMG\BingAds\CampaignManagement\DayTime
      */
     public function setStartMinute($StartMinute)

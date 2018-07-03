@@ -6,7 +6,9 @@ class GetLabelAssociationsByLabelIdsRequest
 {
 
     /**
-     * @var EntityType $EntityType
+     * @see \PMG\BingAds\CampaignManagement\EntityType for valid values
+     *
+     * @var string $EntityType
      */
     protected $EntityType = null;
 
@@ -21,7 +23,7 @@ class GetLabelAssociationsByLabelIdsRequest
     protected $PageInfo = null;
 
     /**
-     * @param EntityType $EntityType
+     * @param string $EntityType
      * @param ArrayOflong $LabelIds
      * @param Paging $PageInfo
      */
@@ -33,7 +35,7 @@ class GetLabelAssociationsByLabelIdsRequest
     }
 
     /**
-     * @return EntityType
+     * @return string
      */
     public function getEntityType()
     {
@@ -41,7 +43,7 @@ class GetLabelAssociationsByLabelIdsRequest
     }
 
     /**
-     * @param EntityType $EntityType
+     * @param string $EntityType
      * @return \PMG\BingAds\CampaignManagement\GetLabelAssociationsByLabelIdsRequest
      */
     public function setEntityType($EntityType)

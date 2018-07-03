@@ -16,14 +16,16 @@ class GetKeywordOpportunitiesRequest
     protected $CampaignId = null;
 
     /**
-     * @var KeywordOpportunityType $OpportunityType
+     * @see \PMG\BingAds\AdInsight\KeywordOpportunityType for valid values
+     *
+     * @var list $OpportunityType
      */
     protected $OpportunityType = null;
 
     /**
      * @param int $AdGroupId
      * @param int $CampaignId
-     * @param KeywordOpportunityType $OpportunityType
+     * @param list $OpportunityType
      */
     public function __construct($AdGroupId = null, $CampaignId = null, $OpportunityType = null)
     {
@@ -69,7 +71,7 @@ class GetKeywordOpportunitiesRequest
     }
 
     /**
-     * @return KeywordOpportunityType
+     * @return list
      */
     public function getOpportunityType()
     {
@@ -77,7 +79,7 @@ class GetKeywordOpportunitiesRequest
     }
 
     /**
-     * @param KeywordOpportunityType $OpportunityType
+     * @param list $OpportunityType
      * @return \PMG\BingAds\AdInsight\GetKeywordOpportunitiesRequest
      */
     public function setOpportunityType($OpportunityType)

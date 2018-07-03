@@ -16,7 +16,9 @@ class BillingDocument
     protected $Id = null;
 
     /**
-     * @var DataType $Type
+     * @see \PMG\BingAds\CustomerBilling\DataType for valid values
+     *
+     * @var string $Type
      */
     protected $Type = null;
 
@@ -63,7 +65,7 @@ class BillingDocument
     }
 
     /**
-     * @return DataType
+     * @return string
      */
     public function getType()
     {
@@ -71,7 +73,7 @@ class BillingDocument
     }
 
     /**
-     * @param DataType $Type
+     * @param string $Type
      * @return \PMG\BingAds\CustomerBilling\BillingDocument
      */
     public function setType($Type)

@@ -16,12 +16,16 @@ class BudgetSummaryReportTime
     protected $CustomDateRangeStart = null;
 
     /**
-     * @var ReportTimePeriod $PredefinedTime
+     * @see \PMG\BingAds\Reporting\ReportTimePeriod for valid values
+     *
+     * @var string $PredefinedTime
      */
     protected $PredefinedTime = null;
 
     /**
-     * @var ReportTimeZone $ReportTimeZone
+     * @see \PMG\BingAds\Reporting\ReportTimeZone for valid values
+     *
+     * @var string $ReportTimeZone
      */
     protected $ReportTimeZone = null;
 
@@ -68,7 +72,7 @@ class BudgetSummaryReportTime
     }
 
     /**
-     * @return ReportTimePeriod
+     * @return string
      */
     public function getPredefinedTime()
     {
@@ -76,7 +80,7 @@ class BudgetSummaryReportTime
     }
 
     /**
-     * @param ReportTimePeriod $PredefinedTime
+     * @param string $PredefinedTime
      * @return \PMG\BingAds\Reporting\BudgetSummaryReportTime
      */
     public function setPredefinedTime($PredefinedTime)
@@ -86,7 +90,7 @@ class BudgetSummaryReportTime
     }
 
     /**
-     * @return ReportTimeZone
+     * @return string
      */
     public function getReportTimeZone()
     {
@@ -94,7 +98,7 @@ class BudgetSummaryReportTime
     }
 
     /**
-     * @param ReportTimeZone $ReportTimeZone
+     * @param string $ReportTimeZone
      * @return \PMG\BingAds\Reporting\BudgetSummaryReportTime
      */
     public function setReportTimeZone($ReportTimeZone)

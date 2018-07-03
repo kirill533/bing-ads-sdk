@@ -6,12 +6,16 @@ class OrderBy
 {
 
     /**
-     * @var OrderByField $Field
+     * @see \PMG\BingAds\CustomerBilling\OrderByField for valid values
+     *
+     * @var string $Field
      */
     protected $Field = null;
 
     /**
-     * @var SortOrder $Order
+     * @see \PMG\BingAds\CustomerBilling\SortOrder for valid values
+     *
+     * @var string $Order
      */
     protected $Order = null;
 
@@ -22,7 +26,7 @@ class OrderBy
     }
 
     /**
-     * @return OrderByField
+     * @return string
      */
     public function getField()
     {
@@ -30,7 +34,7 @@ class OrderBy
     }
 
     /**
-     * @param OrderByField $Field
+     * @param string $Field
      * @return \PMG\BingAds\CustomerBilling\OrderBy
      */
     public function setField($Field)
@@ -40,7 +44,7 @@ class OrderBy
     }
 
     /**
-     * @return SortOrder
+     * @return string
      */
     public function getOrder()
     {
@@ -48,7 +52,7 @@ class OrderBy
     }
 
     /**
-     * @param SortOrder $Order
+     * @param string $Order
      * @return \PMG\BingAds\CustomerBilling\OrderBy
      */
     public function setOrder($Order)

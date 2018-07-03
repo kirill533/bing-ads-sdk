@@ -1113,12 +1113,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/AgencyPMG/wsdl2phpgenerator.git",
-                "reference": "8d414026bff3cdbeef775e1588c174821b2550ff"
+                "reference": "44fd86f5cd9b5f9fc47203e599324e2b36d256b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/AgencyPMG/wsdl2phpgenerator/zipball/8d414026bff3cdbeef775e1588c174821b2550ff",
-                "reference": "8d414026bff3cdbeef775e1588c174821b2550ff",
+                "url": "https://api.github.com/repos/AgencyPMG/wsdl2phpgenerator/zipball/44fd86f5cd9b5f9fc47203e599324e2b36d256b6",
+                "reference": "44fd86f5cd9b5f9fc47203e599324e2b36d256b6",
                 "shasum": ""
             },
             "require": {
@@ -1160,7 +1160,7 @@
                 "source": "https://github.com/AgencyPMG/wsdl2phpgenerator/tree/master",
                 "issues": "https://github.com/AgencyPMG/wsdl2phpgenerator/issues"
             },
-            "time": "2018-07-03T15:11:39+00:00"
+            "time": "2018-07-03T16:24:16+00:00"
         },
         {
             "name": "psr/log",

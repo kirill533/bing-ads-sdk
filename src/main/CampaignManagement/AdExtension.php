@@ -26,7 +26,9 @@ class AdExtension
     protected $Scheduling = null;
 
     /**
-     * @var AdExtensionStatus $Status
+     * @see \PMG\BingAds\CampaignManagement\AdExtensionStatus for valid values
+     *
+     * @var string $Status
      */
     protected $Status = null;
 
@@ -119,7 +121,7 @@ class AdExtension
     }
 
     /**
-     * @return AdExtensionStatus
+     * @return string
      */
     public function getStatus()
     {
@@ -127,7 +129,7 @@ class AdExtension
     }
 
     /**
-     * @param AdExtensionStatus $Status
+     * @param string $Status
      * @return \PMG\BingAds\CampaignManagement\AdExtension
      */
     public function setStatus($Status)

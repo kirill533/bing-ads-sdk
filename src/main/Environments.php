@@ -19,7 +19,7 @@ final class Environments
     {
         $e = strtolower($env);
         if (!in_array($e, [self::PROD, self::SANDBOX], true)) {
-            throw new InvalidApiEnvironemnt($env);
+            throw new InvalidApiEnvironment($env);
         }
 
         return $e;

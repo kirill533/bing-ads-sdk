@@ -105,8 +105,6 @@ class FaultParserTest extends TestCase
 
         $result = $this->faults->toException($fault, $this->classmap);
 
-        // var_dump($result->getErrors(), 'yeah here');exit;
-
         $this->assertInstanceOf(AdApiFault::class, $result);
         $err = new GenericErrorObject([
             'Message' => '',

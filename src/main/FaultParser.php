@@ -63,8 +63,7 @@ class FaultParser
         $out = [];
         foreach ($errors as $error) {
             if (!is_object($error)) {
-                $cls = GenericErrorObject::class;
-                $errobj = new $cls();
+                $errobj = new GenericErrorObject;
                 $errobj->setMessage($error);
             } else {
                 [$type, $values] = $this->extractTypeAndValue($error);

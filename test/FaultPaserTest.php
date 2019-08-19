@@ -96,6 +96,22 @@ class FaultParserTest extends TestCase
         $this->assertEquals([$err], $result->getErrors());
     }
 
+    public function testFaultWithEmptyStringAsErrorsArrayValue()
+    {
+        $fault = self::makeFaultWithDetail('AdApiFaultDetail', [
+            'TrackingId' => '123',
+            'Errors' => '',
+        ]);
+
+        $result = $this->faults->toException($fault, $this->classmap);
+
+        $this->assertInstanceOf(AdApiFault::class, $result);
+        $err = new GenericErrorObject([
+            'Message' => '',
+        ]);
+        $this->assertEquals([$err], $result->getErrors());
+    }
+
     public static function faultProps()
     {
         return [

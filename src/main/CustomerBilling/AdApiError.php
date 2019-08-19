@@ -25,10 +25,10 @@ class AdApiError
      */
     protected $Message = null;
 
-    
+
     public function __construct()
     {
-    
+
     }
 
     /**

@@ -62,11 +62,17 @@ class FaultParser
 
         $out = [];
         foreach ($errors as $error) {
-            [$type, $values] = $this->extractTypeAndValue($error);
-            $cls = $classmap[$type] ?? GenericErrorObject::class;
-            $errobj = new $cls();
-            foreach (get_object_vars($values) as $key => $value) {
-                call_user_func([$errobj, "set{$key}"], $value);
+            if (!is_object($error)) {
+                $cls = GenericErrorObject::class;
+                $errobj = new $cls();
+                $errobj->setMessage($error);
+            } else {
+                [$type, $values] = $this->extractTypeAndValue($error);
+                $cls = $classmap[$type] ?? GenericErrorObject::class;
+                $errobj = new $cls();
+                foreach (get_object_vars($values) as $key => $value) {
+                    call_user_func([$errobj, "set{$key}"], $value);
+                }
             }
             $out[] = $errobj;
         }

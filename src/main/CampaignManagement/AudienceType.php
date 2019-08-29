@@ -9,6 +9,7 @@ class AudienceType
     const Custom = 'Custom';
     const InMarket = 'InMarket';
     const Product = 'Product';
+    const SimilarRemarketingList = 'SimilarRemarketingList';
 
 
 }

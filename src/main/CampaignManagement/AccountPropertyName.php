@@ -8,6 +8,8 @@ class AccountPropertyName
     const None = 'None';
     const TrackingUrlTemplate = 'TrackingUrlTemplate';
     const MSCLKIDAutoTaggingEnabled = 'MSCLKIDAutoTaggingEnabled';
+    const AdClickParallelTracking = 'AdClickParallelTracking';
+    const FinalUrlSuffix = 'FinalUrlSuffix';
 
 
 }

@@ -31,6 +31,11 @@ class DSASearchQueryPerformanceReportFilter
     protected $ExcludeZeroClicks = null;
 
     /**
+     * @var boolean $FeedUrl
+     */
+    protected $FeedUrl = null;
+
+    /**
      * @var ArrayOfstring $LanguageCode
      */
     protected $LanguageCode = null;
@@ -133,6 +138,24 @@ class DSASearchQueryPerformanceReportFilter
     public function setExcludeZeroClicks($ExcludeZeroClicks)
     {
       $this->ExcludeZeroClicks = $ExcludeZeroClicks;
+      return $this;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getFeedUrl()
+    {
+      return $this->FeedUrl;
+    }
+
+    /**
+     * @param boolean $FeedUrl
+     * @return \PMG\BingAds\Reporting\DSASearchQueryPerformanceReportFilter
+     */
+    public function setFeedUrl($FeedUrl)
+    {
+      $this->FeedUrl = $FeedUrl;
       return $this;
     }
 

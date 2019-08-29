@@ -34,6 +34,7 @@ class AudiencePerformanceReportColumn
     const CampaignStatus = 'CampaignStatus';
     const AdGroupStatus = 'AdGroupStatus';
     const AudienceType = 'AudienceType';
+    const AssociationId = 'AssociationId';
 
 
 }

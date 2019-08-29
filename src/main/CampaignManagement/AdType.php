@@ -12,6 +12,7 @@ class AdType
     const ExpandedText = 'ExpandedText';
     const DynamicSearch = 'DynamicSearch';
     const ResponsiveAd = 'ResponsiveAd';
+    const ResponsiveSearch = 'ResponsiveSearch';
 
 
 }

@@ -25,6 +25,7 @@ class NegativeKeywordConflictReportColumn
     const CampaignStatus = 'CampaignStatus';
     const AdGroupStatus = 'AdGroupStatus';
     const KeywordStatus = 'KeywordStatus';
+    const ConflictType = 'ConflictType';
 
 
 }

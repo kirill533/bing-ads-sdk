@@ -6,6 +6,11 @@ class PriceAdExtension extends AdExtension
 {
 
     /**
+     * @var string $FinalUrlSuffix
+     */
+    protected $FinalUrlSuffix = null;
+
+    /**
      * @var string $Language
      */
     protected $Language = null;
@@ -37,6 +42,24 @@ class PriceAdExtension extends AdExtension
     {
       parent::__construct();
       $this->PriceExtensionType = $PriceExtensionType;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFinalUrlSuffix()
+    {
+      return $this->FinalUrlSuffix;
+    }
+
+    /**
+     * @param string $FinalUrlSuffix
+     * @return \PMG\BingAds\CampaignManagement\PriceAdExtension
+     */
+    public function setFinalUrlSuffix($FinalUrlSuffix)
+    {
+      $this->FinalUrlSuffix = $FinalUrlSuffix;
+      return $this;
     }
 
     /**

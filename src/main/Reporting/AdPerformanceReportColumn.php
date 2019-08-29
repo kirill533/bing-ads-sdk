@@ -16,6 +16,7 @@ class AdPerformanceReportColumn
     const AdGroupId = 'AdGroupId';
     const AdTitle = 'AdTitle';
     const AdDescription = 'AdDescription';
+    const AdDescription2 = 'AdDescription2';
     const AdType = 'AdType';
     const CurrencyCode = 'CurrencyCode';
     const AdDistribution = 'AdDistribution';
@@ -54,12 +55,16 @@ class AdPerformanceReportColumn
     const AdGroupStatus = 'AdGroupStatus';
     const TitlePart1 = 'TitlePart1';
     const TitlePart2 = 'TitlePart2';
+    const TitlePart3 = 'TitlePart3';
     const Headline = 'Headline';
     const LongHeadline = 'LongHeadline';
     const BusinessName = 'BusinessName';
     const Path1 = 'Path1';
     const Path2 = 'Path2';
     const AdLabels = 'AdLabels';
+    const CustomerId = 'CustomerId';
+    const CustomerName = 'CustomerName';
+    const CampaignType = 'CampaignType';
 
 
 }

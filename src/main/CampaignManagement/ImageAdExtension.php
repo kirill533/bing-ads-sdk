@@ -31,6 +31,11 @@ class ImageAdExtension extends AdExtension
     protected $FinalMobileUrls = null;
 
     /**
+     * @var string $FinalUrlSuffix
+     */
+    protected $FinalUrlSuffix = null;
+
+    /**
      * @var ArrayOfstring $FinalUrls
      */
     protected $FinalUrls = null;
@@ -143,6 +148,24 @@ class ImageAdExtension extends AdExtension
     public function setFinalMobileUrls($FinalMobileUrls)
     {
       $this->FinalMobileUrls = $FinalMobileUrls;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFinalUrlSuffix()
+    {
+      return $this->FinalUrlSuffix;
+    }
+
+    /**
+     * @param string $FinalUrlSuffix
+     * @return \PMG\BingAds\CampaignManagement\ImageAdExtension
+     */
+    public function setFinalUrlSuffix($FinalUrlSuffix)
+    {
+      $this->FinalUrlSuffix = $FinalUrlSuffix;
       return $this;
     }
 

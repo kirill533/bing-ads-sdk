@@ -66,6 +66,7 @@ class KeywordPerformanceReportColumn
     const Mainline1Bid = 'Mainline1Bid';
     const MainlineBid = 'MainlineBid';
     const FirstPageBid = 'FirstPageBid';
+    const FinalUrlSuffix = 'FinalUrlSuffix';
 
 
 }

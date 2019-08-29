@@ -20,6 +20,11 @@ class DynamicSearchAd extends Ad
      */
     protected $Text = null;
 
+    /**
+     * @var string $TextPart2
+     */
+    protected $TextPart2 = null;
+
     
     public function __construct()
     {
@@ -77,6 +82,24 @@ class DynamicSearchAd extends Ad
     public function setText($Text)
     {
       $this->Text = $Text;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTextPart2()
+    {
+      return $this->TextPart2;
+    }
+
+    /**
+     * @param string $TextPart2
+     * @return \PMG\BingAds\CampaignManagement\DynamicSearchAd
+     */
+    public function setTextPart2($TextPart2)
+    {
+      $this->TextPart2 = $TextPart2;
       return $this;
     }
 

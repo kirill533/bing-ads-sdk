@@ -31,6 +31,11 @@ class AdGroup
     protected $EndDate = null;
 
     /**
+     * @var string $FinalUrlSuffix
+     */
+    protected $FinalUrlSuffix = null;
+
+    /**
      * @var ArrayOfKeyValuePairOfstringstring $ForwardCompatibilityMap
      */
     protected $ForwardCompatibilityMap = null;
@@ -178,6 +183,24 @@ class AdGroup
     public function setEndDate($EndDate)
     {
       $this->EndDate = $EndDate;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFinalUrlSuffix()
+    {
+      return $this->FinalUrlSuffix;
+    }
+
+    /**
+     * @param string $FinalUrlSuffix
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
+     */
+    public function setFinalUrlSuffix($FinalUrlSuffix)
+    {
+      $this->FinalUrlSuffix = $FinalUrlSuffix;
       return $this;
     }
 

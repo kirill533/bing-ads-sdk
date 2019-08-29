@@ -48,6 +48,8 @@ class SearchQueryPerformanceReportColumn
     const AdGroupStatus = 'AdGroupStatus';
     const KeywordStatus = 'KeywordStatus';
     const CampaignType = 'CampaignType';
+    const CustomerId = 'CustomerId';
+    const CustomerName = 'CustomerName';
 
 
 }

@@ -16,13 +16,20 @@ class AddCampaignsRequest
     protected $Campaigns = null;
 
     /**
+     * @var boolean $IncludeDynamicSearchAdsSource
+     */
+    protected $IncludeDynamicSearchAdsSource = null;
+
+    /**
      * @param int $AccountId
      * @param ArrayOfCampaign $Campaigns
+     * @param boolean $IncludeDynamicSearchAdsSource
      */
-    public function __construct($AccountId = null, $Campaigns = null)
+    public function __construct($AccountId = null, $Campaigns = null, $IncludeDynamicSearchAdsSource = null)
     {
       $this->AccountId = $AccountId;
       $this->Campaigns = $Campaigns;
+      $this->IncludeDynamicSearchAdsSource = $IncludeDynamicSearchAdsSource;
     }
 
     /**
@@ -58,6 +65,24 @@ class AddCampaignsRequest
     public function setCampaigns($Campaigns)
     {
       $this->Campaigns = $Campaigns;
+      return $this;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getIncludeDynamicSearchAdsSource()
+    {
+      return $this->IncludeDynamicSearchAdsSource;
+    }
+
+    /**
+     * @param boolean $IncludeDynamicSearchAdsSource
+     * @return \PMG\BingAds\CampaignManagement\AddCampaignsRequest
+     */
+    public function setIncludeDynamicSearchAdsSource($IncludeDynamicSearchAdsSource)
+    {
+      $this->IncludeDynamicSearchAdsSource = $IncludeDynamicSearchAdsSource;
       return $this;
     }
 

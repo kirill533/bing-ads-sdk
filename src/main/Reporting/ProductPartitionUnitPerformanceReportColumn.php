@@ -47,6 +47,8 @@ class ProductPartitionUnitPerformanceReportColumn
     const ReturnOnAdSpend = 'ReturnOnAdSpend';
     const BidStrategyType = 'BidStrategyType';
     const LocalStoreCode = 'LocalStoreCode';
+    const AssistedImpressions = 'AssistedImpressions';
+    const AssistedClicks = 'AssistedClicks';
 
 
 }

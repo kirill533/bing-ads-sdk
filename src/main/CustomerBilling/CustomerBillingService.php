@@ -49,7 +49,7 @@ class CustomerBillingService extends \PMG\BingAds\BingSoapClient
       'BatchError' => 'PMG\\BingAds\\CustomerBilling\\BatchError',
       'ApplicationFault' => 'PMG\\BingAds\\CustomerBilling\\ApplicationFault',
       'ApiFault' => 'PMG\\BingAds\\CustomerBilling\\ApiFault',
-      'AdApiFaultDetail' => 'PMG\\BingAds\\CustomerBilling\\AdApiFault',
+      'AdApiFault' => 'PMG\\BingAds\\CustomerBilling\\AdApiFault',
     );
 
     /**
@@ -70,7 +70,7 @@ class CustomerBillingService extends \PMG\BingAds\BingSoapClient
      */
     public function getBillingDocumentsInfo(GetBillingDocumentsInfoRequest $parameters)
     {
-      return $this->__soapCall("GetBillingDocumentsInfo", array($parameters));
+        return $this->__soapCall("GetBillingDocumentsInfo", [$parameters]);
     }
 
     /**
@@ -79,7 +79,7 @@ class CustomerBillingService extends \PMG\BingAds\BingSoapClient
      */
     public function getBillingDocuments(GetBillingDocumentsRequest $parameters)
     {
-      return $this->__soapCall("GetBillingDocuments", array($parameters));
+        return $this->__soapCall("GetBillingDocuments", [$parameters]);
     }
 
     /**
@@ -88,7 +88,7 @@ class CustomerBillingService extends \PMG\BingAds\BingSoapClient
      */
     public function addInsertionOrder(AddInsertionOrderRequest $parameters)
     {
-      return $this->__soapCall("AddInsertionOrder", array($parameters));
+        return $this->__soapCall("AddInsertionOrder", [$parameters]);
     }
 
     /**
@@ -97,7 +97,7 @@ class CustomerBillingService extends \PMG\BingAds\BingSoapClient
      */
     public function updateInsertionOrder(UpdateInsertionOrderRequest $parameters)
     {
-      return $this->__soapCall("UpdateInsertionOrder", array($parameters));
+        return $this->__soapCall("UpdateInsertionOrder", [$parameters]);
     }
 
     /**
@@ -106,7 +106,7 @@ class CustomerBillingService extends \PMG\BingAds\BingSoapClient
      */
     public function getInsertionOrdersByAccount(GetInsertionOrdersByAccountRequest $parameters)
     {
-      return $this->__soapCall("GetInsertionOrdersByAccount", array($parameters));
+        return $this->__soapCall("GetInsertionOrdersByAccount", [$parameters]);
     }
 
     /**
@@ -115,7 +115,7 @@ class CustomerBillingService extends \PMG\BingAds\BingSoapClient
      */
     public function searchInsertionOrders(SearchInsertionOrdersRequest $parameters)
     {
-      return $this->__soapCall("SearchInsertionOrders", array($parameters));
+        return $this->__soapCall("SearchInsertionOrders", [$parameters]);
     }
 
     /**
@@ -124,7 +124,7 @@ class CustomerBillingService extends \PMG\BingAds\BingSoapClient
      */
     public function getAccountMonthlySpend(GetAccountMonthlySpendRequest $parameters)
     {
-      return $this->__soapCall("GetAccountMonthlySpend", array($parameters));
+        return $this->__soapCall("GetAccountMonthlySpend", [$parameters]);
     }
 
 }

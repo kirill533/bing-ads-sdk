@@ -21,6 +21,11 @@ class ResponsiveAd extends Ad
     protected $Headline = null;
 
     /**
+     * @var ArrayOfAssetLink $Images
+     */
+    protected $Images = null;
+
+    /**
      * @var int $LandscapeImageMediaId
      */
     protected $LandscapeImageMediaId = null;
@@ -107,6 +112,24 @@ class ResponsiveAd extends Ad
     public function setHeadline($Headline)
     {
       $this->Headline = $Headline;
+      return $this;
+    }
+
+    /**
+     * @return ArrayOfAssetLink
+     */
+    public function getImages()
+    {
+      return $this->Images;
+    }
+
+    /**
+     * @param ArrayOfAssetLink $Images
+     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
+     */
+    public function setImages($Images)
+    {
+      $this->Images = $Images;
       return $this;
     }
 

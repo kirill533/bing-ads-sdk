@@ -11,6 +11,8 @@ class AdTypeReportFilter
     const AppInstall = 'AppInstall';
     const DynamicSearchAd = 'DynamicSearchAd';
     const ExpandedText = 'ExpandedText';
+    const ResponsiveAd = 'ResponsiveAd';
+    const ResponsiveSearchAd = 'ResponsiveSearchAd';
 
 
 }

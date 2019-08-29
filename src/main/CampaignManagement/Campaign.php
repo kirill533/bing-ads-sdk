@@ -31,6 +31,16 @@ class Campaign
     protected $Description = null;
 
     /**
+     * @var int $ExperimentId
+     */
+    protected $ExperimentId = null;
+
+    /**
+     * @var string $FinalUrlSuffix
+     */
+    protected $FinalUrlSuffix = null;
+
+    /**
      * @var ArrayOfKeyValuePairOfstringstring $ForwardCompatibilityMap
      */
     protected $ForwardCompatibilityMap = null;
@@ -183,6 +193,42 @@ class Campaign
     public function setDescription($Description)
     {
       $this->Description = $Description;
+      return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getExperimentId()
+    {
+      return $this->ExperimentId;
+    }
+
+    /**
+     * @param int $ExperimentId
+     * @return \PMG\BingAds\CampaignManagement\Campaign
+     */
+    public function setExperimentId($ExperimentId)
+    {
+      $this->ExperimentId = $ExperimentId;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFinalUrlSuffix()
+    {
+      return $this->FinalUrlSuffix;
+    }
+
+    /**
+     * @param string $FinalUrlSuffix
+     * @return \PMG\BingAds\CampaignManagement\Campaign
+     */
+    public function setFinalUrlSuffix($FinalUrlSuffix)
+    {
+      $this->FinalUrlSuffix = $FinalUrlSuffix;
       return $this;
     }
 

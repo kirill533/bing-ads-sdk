@@ -26,6 +26,11 @@ class ExpandedTextAd extends Ad
     protected $Text = null;
 
     /**
+     * @var string $TextPart2
+     */
+    protected $TextPart2 = null;
+
+    /**
      * @var string $TitlePart1
      */
     protected $TitlePart1 = null;
@@ -34,6 +39,11 @@ class ExpandedTextAd extends Ad
      * @var string $TitlePart2
      */
     protected $TitlePart2 = null;
+
+    /**
+     * @var string $TitlePart3
+     */
+    protected $TitlePart3 = null;
 
     
     public function __construct()
@@ -116,6 +126,24 @@ class ExpandedTextAd extends Ad
     /**
      * @return string
      */
+    public function getTextPart2()
+    {
+      return $this->TextPart2;
+    }
+
+    /**
+     * @param string $TextPart2
+     * @return \PMG\BingAds\CampaignManagement\ExpandedTextAd
+     */
+    public function setTextPart2($TextPart2)
+    {
+      $this->TextPart2 = $TextPart2;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
     public function getTitlePart1()
     {
       return $this->TitlePart1;
@@ -146,6 +174,24 @@ class ExpandedTextAd extends Ad
     public function setTitlePart2($TitlePart2)
     {
       $this->TitlePart2 = $TitlePart2;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTitlePart3()
+    {
+      return $this->TitlePart3;
+    }
+
+    /**
+     * @param string $TitlePart3
+     * @return \PMG\BingAds\CampaignManagement\ExpandedTextAd
+     */
+    public function setTitlePart3($TitlePart3)
+    {
+      $this->TitlePart3 = $TitlePart3;
       return $this;
     }
 

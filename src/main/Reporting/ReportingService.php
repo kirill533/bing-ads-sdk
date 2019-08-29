@@ -138,8 +138,8 @@ class ReportingService extends \PMG\BingAds\BingSoapClient
       'ArrayOfAdApiError' => 'PMG\\BingAds\\Reporting\\ArrayOfAdApiError',
       'AdApiError' => 'PMG\\BingAds\\Reporting\\AdApiError',
       'ApplicationFault' => 'PMG\\BingAds\\Reporting\\ApplicationFault',
-      'ApiFaultDetail' => 'PMG\\BingAds\\Reporting\\ApiFault',
-      'AdApiFaultDetail' => 'PMG\\BingAds\\Reporting\\AdApiFault',
+      'ApiFault' => 'PMG\\BingAds\\Reporting\\ApiFault',
+      'AdApiFault' => 'PMG\\BingAds\\Reporting\\AdApiFault',
     );
 
     /**
@@ -160,7 +160,7 @@ class ReportingService extends \PMG\BingAds\BingSoapClient
      */
     public function submitGenerateReport(SubmitGenerateReportRequest $parameters)
     {
-      return $this->__soapCall("SubmitGenerateReport", array($parameters));
+        return $this->__soapCall("SubmitGenerateReport", [$parameters]);
     }
 
     /**
@@ -169,7 +169,7 @@ class ReportingService extends \PMG\BingAds\BingSoapClient
      */
     public function pollGenerateReport(PollGenerateReportRequest $parameters)
     {
-      return $this->__soapCall("PollGenerateReport", array($parameters));
+        return $this->__soapCall("PollGenerateReport", [$parameters]);
     }
 
 }

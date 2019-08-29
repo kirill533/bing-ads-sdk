@@ -54,6 +54,10 @@ class AccountPerformanceReportColumn
     const LowQualityGeneralClicks = 'LowQualityGeneralClicks';
     const LowQualitySophisticatedClicks = 'LowQualitySophisticatedClicks';
     const ExactMatchImpressionSharePercent = 'ExactMatchImpressionSharePercent';
+    const CustomerId = 'CustomerId';
+    const CustomerName = 'CustomerName';
+    const ClickSharePercent = 'ClickSharePercent';
+    const AbsoluteTopImpressionSharePercent = 'AbsoluteTopImpressionSharePercent';
 
 
 }

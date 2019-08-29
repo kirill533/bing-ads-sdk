@@ -70,6 +70,11 @@ class Customer
      */
     protected $Number = null;
 
+    /**
+     * @var Address $CustomerAddress
+     */
+    protected $CustomerAddress = null;
+
     
     public function __construct()
     {
@@ -319,6 +324,24 @@ class Customer
     public function setNumber($Number)
     {
       $this->Number = $Number;
+      return $this;
+    }
+
+    /**
+     * @return Address
+     */
+    public function getCustomerAddress()
+    {
+      return $this->CustomerAddress;
+    }
+
+    /**
+     * @param Address $CustomerAddress
+     * @return \PMG\BingAds\CustomerManagement\Customer
+     */
+    public function setCustomerAddress($CustomerAddress)
+    {
+      $this->CustomerAddress = $CustomerAddress;
       return $this;
     }
 

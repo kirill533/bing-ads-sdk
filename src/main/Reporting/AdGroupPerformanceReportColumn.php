@@ -64,6 +64,12 @@ class AdGroupPerformanceReportColumn
     const CampaignStatus = 'CampaignStatus';
     const AdGroupLabels = 'AdGroupLabels';
     const ExactMatchImpressionSharePercent = 'ExactMatchImpressionSharePercent';
+    const CustomerId = 'CustomerId';
+    const CustomerName = 'CustomerName';
+    const ClickSharePercent = 'ClickSharePercent';
+    const AbsoluteTopImpressionSharePercent = 'AbsoluteTopImpressionSharePercent';
+    const FinalUrlSuffix = 'FinalUrlSuffix';
+    const CampaignType = 'CampaignType';
 
 
 }

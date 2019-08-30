@@ -93,7 +93,7 @@ class OfflineConversion
      */
     public function setConversionTime(\DateTime $ConversionTime = null)
     {
-        $this->ConversionTime = null === $ConversionTime ? null : $ConversionTime->format(\DateTime::ATOM);
+        $this->ConversionTime = null === $ConversionTime ? null : $ConversionTime->setTimezone(new \DateTimeZone("UTC"))->format("Y-m-d\TH:i:s.u\Z");
         return $this;
     }
 

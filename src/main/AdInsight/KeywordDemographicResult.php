@@ -26,7 +26,7 @@ class KeywordDemographicResult
      */
     public function getKeyword()
     {
-      return $this->Keyword;
+        return $this->Keyword;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeywordDemographicResult
      */
     public function setKeyword($Keyword)
     {
-      $this->Keyword = $Keyword;
-      return $this;
+        $this->Keyword = $Keyword;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeywordDemographicResult
      */
     public function getKeywordDemographics()
     {
-      return $this->KeywordDemographics;
+        return $this->KeywordDemographics;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeywordDemographicResult
      */
     public function setKeywordDemographics($KeywordDemographics)
     {
-      $this->KeywordDemographics = $KeywordDemographics;
-      return $this;
+        $this->KeywordDemographics = $KeywordDemographics;
+        return $this;
     }
 
 }

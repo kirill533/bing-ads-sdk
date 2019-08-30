@@ -13,7 +13,7 @@ class ApiBatchFault extends ApiFault
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class ApiBatchFault extends ApiFault
      */
     public function getBatchErrors()
     {
-      return $this->BatchErrors;
+        return $this->BatchErrors;
     }
 
     /**
@@ -30,8 +30,8 @@ class ApiBatchFault extends ApiFault
      */
     public function setBatchErrors($BatchErrors)
     {
-      $this->BatchErrors = $BatchErrors;
-      return $this;
+        $this->BatchErrors = $BatchErrors;
+        return $this;
     }
 
 }

@@ -28,7 +28,7 @@ class ReviewAdExtension extends AdExtension
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -36,7 +36,7 @@ class ReviewAdExtension extends AdExtension
      */
     public function getIsExact()
     {
-      return $this->IsExact;
+        return $this->IsExact;
     }
 
     /**
@@ -45,8 +45,8 @@ class ReviewAdExtension extends AdExtension
      */
     public function setIsExact($IsExact)
     {
-      $this->IsExact = $IsExact;
-      return $this;
+        $this->IsExact = $IsExact;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class ReviewAdExtension extends AdExtension
      */
     public function getSource()
     {
-      return $this->Source;
+        return $this->Source;
     }
 
     /**
@@ -63,8 +63,8 @@ class ReviewAdExtension extends AdExtension
      */
     public function setSource($Source)
     {
-      $this->Source = $Source;
-      return $this;
+        $this->Source = $Source;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class ReviewAdExtension extends AdExtension
      */
     public function getText()
     {
-      return $this->Text;
+        return $this->Text;
     }
 
     /**
@@ -81,8 +81,8 @@ class ReviewAdExtension extends AdExtension
      */
     public function setText($Text)
     {
-      $this->Text = $Text;
-      return $this;
+        $this->Text = $Text;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class ReviewAdExtension extends AdExtension
      */
     public function getUrl()
     {
-      return $this->Url;
+        return $this->Url;
     }
 
     /**
@@ -99,8 +99,8 @@ class ReviewAdExtension extends AdExtension
      */
     public function setUrl($Url)
     {
-      $this->Url = $Url;
-      return $this;
+        $this->Url = $Url;
+        return $this;
     }
 
 }

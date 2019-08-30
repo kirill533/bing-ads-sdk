@@ -26,7 +26,7 @@ class KeywordHistoricalPerformance
      */
     public function getKeyword()
     {
-      return $this->Keyword;
+        return $this->Keyword;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeywordHistoricalPerformance
      */
     public function setKeyword($Keyword)
     {
-      $this->Keyword = $Keyword;
-      return $this;
+        $this->Keyword = $Keyword;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeywordHistoricalPerformance
      */
     public function getKeywordKPIs()
     {
-      return $this->KeywordKPIs;
+        return $this->KeywordKPIs;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeywordHistoricalPerformance
      */
     public function setKeywordKPIs($KeywordKPIs)
     {
-      $this->KeywordKPIs = $KeywordKPIs;
-      return $this;
+        $this->KeywordKPIs = $KeywordKPIs;
+        return $this;
     }
 
 }

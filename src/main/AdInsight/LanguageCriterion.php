@@ -21,7 +21,7 @@ class LanguageCriterion extends Criterion
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -30,8 +30,8 @@ class LanguageCriterion extends Criterion
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
 }

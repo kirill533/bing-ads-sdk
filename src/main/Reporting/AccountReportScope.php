@@ -21,7 +21,7 @@ class AccountReportScope
      */
     public function getAccountIds()
     {
-      return $this->AccountIds;
+        return $this->AccountIds;
     }
 
     /**
@@ -30,8 +30,8 @@ class AccountReportScope
      */
     public function setAccountIds($AccountIds)
     {
-      $this->AccountIds = $AccountIds;
-      return $this;
+        $this->AccountIds = $AccountIds;
+        return $this;
     }
 
 }

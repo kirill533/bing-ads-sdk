@@ -15,7 +15,7 @@ class AdApiFault extends ApplicationFault
      */
     public function getErrors()
     {
-      return $this->Errors;
+        return $this->Errors;
     }
 
     /**
@@ -24,8 +24,8 @@ class AdApiFault extends ApplicationFault
      */
     public function setErrors($Errors)
     {
-      $this->Errors = $Errors;
-      return $this;
+        $this->Errors = $Errors;
+        return $this;
     }
 
 }

@@ -25,7 +25,7 @@ class EntityNegativeKeyword
      */
     public function __construct($EntityId = null)
     {
-      $this->EntityId = $EntityId;
+    $this->EntityId = $EntityId;
     }
 
     /**
@@ -33,7 +33,7 @@ class EntityNegativeKeyword
      */
     public function getEntityId()
     {
-      return $this->EntityId;
+        return $this->EntityId;
     }
 
     /**
@@ -42,8 +42,8 @@ class EntityNegativeKeyword
      */
     public function setEntityId($EntityId)
     {
-      $this->EntityId = $EntityId;
-      return $this;
+        $this->EntityId = $EntityId;
+        return $this;
     }
 
     /**
@@ -51,7 +51,7 @@ class EntityNegativeKeyword
      */
     public function getEntityType()
     {
-      return $this->EntityType;
+        return $this->EntityType;
     }
 
     /**
@@ -60,8 +60,8 @@ class EntityNegativeKeyword
      */
     public function setEntityType($EntityType)
     {
-      $this->EntityType = $EntityType;
-      return $this;
+        $this->EntityType = $EntityType;
+        return $this;
     }
 
     /**
@@ -69,7 +69,7 @@ class EntityNegativeKeyword
      */
     public function getNegativeKeywords()
     {
-      return $this->NegativeKeywords;
+        return $this->NegativeKeywords;
     }
 
     /**
@@ -78,8 +78,8 @@ class EntityNegativeKeyword
      */
     public function setNegativeKeywords($NegativeKeywords)
     {
-      $this->NegativeKeywords = $NegativeKeywords;
-      return $this;
+        $this->NegativeKeywords = $NegativeKeywords;
+        return $this;
     }
 
 }

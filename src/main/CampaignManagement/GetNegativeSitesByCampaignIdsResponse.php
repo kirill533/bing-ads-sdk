@@ -21,8 +21,8 @@ class GetNegativeSitesByCampaignIdsResponse
      */
     public function __construct($CampaignNegativeSites = null, $PartialErrors = null)
     {
-      $this->CampaignNegativeSites = $CampaignNegativeSites;
-      $this->PartialErrors = $PartialErrors;
+    $this->CampaignNegativeSites = $CampaignNegativeSites;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetNegativeSitesByCampaignIdsResponse
      */
     public function getCampaignNegativeSites()
     {
-      return $this->CampaignNegativeSites;
+        return $this->CampaignNegativeSites;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetNegativeSitesByCampaignIdsResponse
      */
     public function setCampaignNegativeSites($CampaignNegativeSites)
     {
-      $this->CampaignNegativeSites = $CampaignNegativeSites;
-      return $this;
+        $this->CampaignNegativeSites = $CampaignNegativeSites;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetNegativeSitesByCampaignIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetNegativeSitesByCampaignIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

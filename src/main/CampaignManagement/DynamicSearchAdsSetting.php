@@ -28,7 +28,7 @@ class DynamicSearchAdsSetting extends Setting
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -36,7 +36,7 @@ class DynamicSearchAdsSetting extends Setting
      */
     public function getDomainName()
     {
-      return $this->DomainName;
+        return $this->DomainName;
     }
 
     /**
@@ -45,8 +45,8 @@ class DynamicSearchAdsSetting extends Setting
      */
     public function setDomainName($DomainName)
     {
-      $this->DomainName = $DomainName;
-      return $this;
+        $this->DomainName = $DomainName;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class DynamicSearchAdsSetting extends Setting
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -63,8 +63,8 @@ class DynamicSearchAdsSetting extends Setting
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class DynamicSearchAdsSetting extends Setting
      */
     public function getPageFeedIds()
     {
-      return $this->PageFeedIds;
+        return $this->PageFeedIds;
     }
 
     /**
@@ -81,8 +81,8 @@ class DynamicSearchAdsSetting extends Setting
      */
     public function setPageFeedIds($PageFeedIds)
     {
-      $this->PageFeedIds = $PageFeedIds;
-      return $this;
+        $this->PageFeedIds = $PageFeedIds;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class DynamicSearchAdsSetting extends Setting
      */
     public function getSource()
     {
-      return $this->Source;
+        return $this->Source;
     }
 
     /**
@@ -99,8 +99,8 @@ class DynamicSearchAdsSetting extends Setting
      */
     public function setSource($Source)
     {
-      $this->Source = $Source;
-      return $this;
+        $this->Source = $Source;
+        return $this;
     }
 
 }

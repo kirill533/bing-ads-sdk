@@ -21,7 +21,7 @@ class ArrayOfEstimatedBidAndTraffic implements \ArrayAccess, \IteratorAggregate,
      */
     public function getEstimatedBidAndTraffic()
     {
-      return $this->EstimatedBidAndTraffic;
+        return $this->EstimatedBidAndTraffic;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfEstimatedBidAndTraffic implements \ArrayAccess, \IteratorAggregate,
      */
     public function setEstimatedBidAndTraffic(array $EstimatedBidAndTraffic = null)
     {
-      $this->EstimatedBidAndTraffic = $EstimatedBidAndTraffic;
-      return $this;
+        $this->EstimatedBidAndTraffic = $EstimatedBidAndTraffic;
+        return $this;
     }
 
     /**

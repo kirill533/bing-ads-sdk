@@ -26,7 +26,7 @@ class CustomParameter
      */
     public function getKey()
     {
-      return $this->Key;
+        return $this->Key;
     }
 
     /**
@@ -35,8 +35,8 @@ class CustomParameter
      */
     public function setKey($Key)
     {
-      $this->Key = $Key;
-      return $this;
+        $this->Key = $Key;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class CustomParameter
      */
     public function getValue()
     {
-      return $this->Value;
+        return $this->Value;
     }
 
     /**
@@ -53,8 +53,8 @@ class CustomParameter
      */
     public function setValue($Value)
     {
-      $this->Value = $Value;
-      return $this;
+        $this->Value = $Value;
+        return $this;
     }
 
 }

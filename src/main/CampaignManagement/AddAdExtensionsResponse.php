@@ -21,8 +21,8 @@ class AddAdExtensionsResponse
      */
     public function __construct($AdExtensionIdentities = null, $NestedPartialErrors = null)
     {
-      $this->AdExtensionIdentities = $AdExtensionIdentities;
-      $this->NestedPartialErrors = $NestedPartialErrors;
+    $this->AdExtensionIdentities = $AdExtensionIdentities;
+    $this->NestedPartialErrors = $NestedPartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class AddAdExtensionsResponse
      */
     public function getAdExtensionIdentities()
     {
-      return $this->AdExtensionIdentities;
+        return $this->AdExtensionIdentities;
     }
 
     /**
@@ -39,8 +39,8 @@ class AddAdExtensionsResponse
      */
     public function setAdExtensionIdentities($AdExtensionIdentities)
     {
-      $this->AdExtensionIdentities = $AdExtensionIdentities;
-      return $this;
+        $this->AdExtensionIdentities = $AdExtensionIdentities;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class AddAdExtensionsResponse
      */
     public function getNestedPartialErrors()
     {
-      return $this->NestedPartialErrors;
+        return $this->NestedPartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class AddAdExtensionsResponse
      */
     public function setNestedPartialErrors($NestedPartialErrors)
     {
-      $this->NestedPartialErrors = $NestedPartialErrors;
-      return $this;
+        $this->NestedPartialErrors = $NestedPartialErrors;
+        return $this;
     }
 
 }

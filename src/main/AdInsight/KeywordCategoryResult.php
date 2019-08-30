@@ -26,7 +26,7 @@ class KeywordCategoryResult
      */
     public function getKeyword()
     {
-      return $this->Keyword;
+        return $this->Keyword;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeywordCategoryResult
      */
     public function setKeyword($Keyword)
     {
-      $this->Keyword = $Keyword;
-      return $this;
+        $this->Keyword = $Keyword;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeywordCategoryResult
      */
     public function getKeywordCategories()
     {
-      return $this->KeywordCategories;
+        return $this->KeywordCategories;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeywordCategoryResult
      */
     public function setKeywordCategories($KeywordCategories)
     {
-      $this->KeywordCategories = $KeywordCategories;
-      return $this;
+        $this->KeywordCategories = $KeywordCategories;
+        return $this;
     }
 
 }

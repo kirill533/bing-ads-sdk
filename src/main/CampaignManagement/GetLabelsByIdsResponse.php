@@ -21,8 +21,8 @@ class GetLabelsByIdsResponse
      */
     public function __construct($Labels = null, $PartialErrors = null)
     {
-      $this->Labels = $Labels;
-      $this->PartialErrors = $PartialErrors;
+    $this->Labels = $Labels;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetLabelsByIdsResponse
      */
     public function getLabels()
     {
-      return $this->Labels;
+        return $this->Labels;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetLabelsByIdsResponse
      */
     public function setLabels($Labels)
     {
-      $this->Labels = $Labels;
-      return $this;
+        $this->Labels = $Labels;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetLabelsByIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetLabelsByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

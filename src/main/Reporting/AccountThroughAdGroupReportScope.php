@@ -31,7 +31,7 @@ class AccountThroughAdGroupReportScope
      */
     public function getAccountIds()
     {
-      return $this->AccountIds;
+        return $this->AccountIds;
     }
 
     /**
@@ -40,8 +40,8 @@ class AccountThroughAdGroupReportScope
      */
     public function setAccountIds($AccountIds)
     {
-      $this->AccountIds = $AccountIds;
-      return $this;
+        $this->AccountIds = $AccountIds;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class AccountThroughAdGroupReportScope
      */
     public function getAdGroups()
     {
-      return $this->AdGroups;
+        return $this->AdGroups;
     }
 
     /**
@@ -58,8 +58,8 @@ class AccountThroughAdGroupReportScope
      */
     public function setAdGroups($AdGroups)
     {
-      $this->AdGroups = $AdGroups;
-      return $this;
+        $this->AdGroups = $AdGroups;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class AccountThroughAdGroupReportScope
      */
     public function getCampaigns()
     {
-      return $this->Campaigns;
+        return $this->Campaigns;
     }
 
     /**
@@ -76,8 +76,8 @@ class AccountThroughAdGroupReportScope
      */
     public function setCampaigns($Campaigns)
     {
-      $this->Campaigns = $Campaigns;
-      return $this;
+        $this->Campaigns = $Campaigns;
+        return $this;
     }
 
 }

@@ -20,7 +20,7 @@ class ApiFault extends ApplicationFault
      */
     public function getBatchErrors()
     {
-      return $this->BatchErrors;
+        return $this->BatchErrors;
     }
 
     /**
@@ -29,8 +29,8 @@ class ApiFault extends ApplicationFault
      */
     public function setBatchErrors($BatchErrors)
     {
-      $this->BatchErrors = $BatchErrors;
-      return $this;
+        $this->BatchErrors = $BatchErrors;
+        return $this;
     }
 
     /**
@@ -38,7 +38,7 @@ class ApiFault extends ApplicationFault
      */
     public function getOperationErrors()
     {
-      return $this->OperationErrors;
+        return $this->OperationErrors;
     }
 
     /**
@@ -47,8 +47,8 @@ class ApiFault extends ApplicationFault
      */
     public function setOperationErrors($OperationErrors)
     {
-      $this->OperationErrors = $OperationErrors;
-      return $this;
+        $this->OperationErrors = $OperationErrors;
+        return $this;
     }
 
 }

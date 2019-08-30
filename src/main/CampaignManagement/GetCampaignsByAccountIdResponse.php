@@ -15,7 +15,7 @@ class GetCampaignsByAccountIdResponse
      */
     public function __construct($Campaigns = null)
     {
-      $this->Campaigns = $Campaigns;
+    $this->Campaigns = $Campaigns;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetCampaignsByAccountIdResponse
      */
     public function getCampaigns()
     {
-      return $this->Campaigns;
+        return $this->Campaigns;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetCampaignsByAccountIdResponse
      */
     public function setCampaigns($Campaigns)
     {
-      $this->Campaigns = $Campaigns;
-      return $this;
+        $this->Campaigns = $Campaigns;
+        return $this;
     }
 
 }

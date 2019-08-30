@@ -21,8 +21,8 @@ class SearchCompaniesRequest
      */
     public function __construct($CompanyNameFilter = null, $LanguageLocale = null)
     {
-      $this->CompanyNameFilter = $CompanyNameFilter;
-      $this->LanguageLocale = $LanguageLocale;
+    $this->CompanyNameFilter = $CompanyNameFilter;
+    $this->LanguageLocale = $LanguageLocale;
     }
 
     /**
@@ -30,7 +30,7 @@ class SearchCompaniesRequest
      */
     public function getCompanyNameFilter()
     {
-      return $this->CompanyNameFilter;
+        return $this->CompanyNameFilter;
     }
 
     /**
@@ -39,8 +39,8 @@ class SearchCompaniesRequest
      */
     public function setCompanyNameFilter($CompanyNameFilter)
     {
-      $this->CompanyNameFilter = $CompanyNameFilter;
-      return $this;
+        $this->CompanyNameFilter = $CompanyNameFilter;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class SearchCompaniesRequest
      */
     public function getLanguageLocale()
     {
-      return $this->LanguageLocale;
+        return $this->LanguageLocale;
     }
 
     /**
@@ -57,8 +57,8 @@ class SearchCompaniesRequest
      */
     public function setLanguageLocale($LanguageLocale)
     {
-      $this->LanguageLocale = $LanguageLocale;
-      return $this;
+        $this->LanguageLocale = $LanguageLocale;
+        return $this;
     }
 
 }

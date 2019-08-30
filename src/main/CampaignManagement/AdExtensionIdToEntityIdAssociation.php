@@ -21,8 +21,8 @@ class AdExtensionIdToEntityIdAssociation
      */
     public function __construct($AdExtensionId = null, $EntityId = null)
     {
-      $this->AdExtensionId = $AdExtensionId;
-      $this->EntityId = $EntityId;
+    $this->AdExtensionId = $AdExtensionId;
+    $this->EntityId = $EntityId;
     }
 
     /**
@@ -30,7 +30,7 @@ class AdExtensionIdToEntityIdAssociation
      */
     public function getAdExtensionId()
     {
-      return $this->AdExtensionId;
+        return $this->AdExtensionId;
     }
 
     /**
@@ -39,8 +39,8 @@ class AdExtensionIdToEntityIdAssociation
      */
     public function setAdExtensionId($AdExtensionId)
     {
-      $this->AdExtensionId = $AdExtensionId;
-      return $this;
+        $this->AdExtensionId = $AdExtensionId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class AdExtensionIdToEntityIdAssociation
      */
     public function getEntityId()
     {
-      return $this->EntityId;
+        return $this->EntityId;
     }
 
     /**
@@ -57,8 +57,8 @@ class AdExtensionIdToEntityIdAssociation
      */
     public function setEntityId($EntityId)
     {
-      $this->EntityId = $EntityId;
-      return $this;
+        $this->EntityId = $EntityId;
+        return $this;
     }
 
 }

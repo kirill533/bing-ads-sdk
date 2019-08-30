@@ -31,15 +31,14 @@ class AdRotation
      */
     public function getEndDate()
     {
-      if ($this->EndDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->EndDate);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->EndDate) {
+            return $this->EndDate;
         }
-      }
+        try {
+            return new \DateTime($this->EndDate);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -48,12 +47,8 @@ class AdRotation
      */
     public function setEndDate(\DateTime $EndDate = null)
     {
-      if ($EndDate == null) {
-       $this->EndDate = null;
-      } else {
-        $this->EndDate = $EndDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->EndDate = null === $EndDate ? null : $EndDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -61,15 +56,14 @@ class AdRotation
      */
     public function getStartDate()
     {
-      if ($this->StartDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->StartDate);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->StartDate) {
+            return $this->StartDate;
         }
-      }
+        try {
+            return new \DateTime($this->StartDate);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -78,12 +72,8 @@ class AdRotation
      */
     public function setStartDate(\DateTime $StartDate = null)
     {
-      if ($StartDate == null) {
-       $this->StartDate = null;
-      } else {
-        $this->StartDate = $StartDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->StartDate = null === $StartDate ? null : $StartDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -91,7 +81,7 @@ class AdRotation
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -100,8 +90,8 @@ class AdRotation
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
 }

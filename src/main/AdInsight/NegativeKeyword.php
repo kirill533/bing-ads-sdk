@@ -31,7 +31,7 @@ class NegativeKeyword
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -40,8 +40,8 @@ class NegativeKeyword
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class NegativeKeyword
      */
     public function getMatchType()
     {
-      return $this->MatchType;
+        return $this->MatchType;
     }
 
     /**
@@ -58,8 +58,8 @@ class NegativeKeyword
      */
     public function setMatchType($MatchType)
     {
-      $this->MatchType = $MatchType;
-      return $this;
+        $this->MatchType = $MatchType;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class NegativeKeyword
      */
     public function getText()
     {
-      return $this->Text;
+        return $this->Text;
     }
 
     /**
@@ -76,8 +76,8 @@ class NegativeKeyword
      */
     public function setText($Text)
     {
-      $this->Text = $Text;
-      return $this;
+        $this->Text = $Text;
+        return $this;
     }
 
 }

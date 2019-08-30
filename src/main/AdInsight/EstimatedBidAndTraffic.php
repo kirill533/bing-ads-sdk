@@ -71,7 +71,7 @@ class EstimatedBidAndTraffic
      */
     public function getMinClicksPerWeek()
     {
-      return $this->MinClicksPerWeek;
+        return $this->MinClicksPerWeek;
     }
 
     /**
@@ -80,8 +80,8 @@ class EstimatedBidAndTraffic
      */
     public function setMinClicksPerWeek($MinClicksPerWeek)
     {
-      $this->MinClicksPerWeek = $MinClicksPerWeek;
-      return $this;
+        $this->MinClicksPerWeek = $MinClicksPerWeek;
+        return $this;
     }
 
     /**
@@ -89,7 +89,7 @@ class EstimatedBidAndTraffic
      */
     public function getMaxClicksPerWeek()
     {
-      return $this->MaxClicksPerWeek;
+        return $this->MaxClicksPerWeek;
     }
 
     /**
@@ -98,8 +98,8 @@ class EstimatedBidAndTraffic
      */
     public function setMaxClicksPerWeek($MaxClicksPerWeek)
     {
-      $this->MaxClicksPerWeek = $MaxClicksPerWeek;
-      return $this;
+        $this->MaxClicksPerWeek = $MaxClicksPerWeek;
+        return $this;
     }
 
     /**
@@ -107,7 +107,7 @@ class EstimatedBidAndTraffic
      */
     public function getAverageCPC()
     {
-      return $this->AverageCPC;
+        return $this->AverageCPC;
     }
 
     /**
@@ -116,8 +116,8 @@ class EstimatedBidAndTraffic
      */
     public function setAverageCPC($AverageCPC)
     {
-      $this->AverageCPC = $AverageCPC;
-      return $this;
+        $this->AverageCPC = $AverageCPC;
+        return $this;
     }
 
     /**
@@ -125,7 +125,7 @@ class EstimatedBidAndTraffic
      */
     public function getMinImpressionsPerWeek()
     {
-      return $this->MinImpressionsPerWeek;
+        return $this->MinImpressionsPerWeek;
     }
 
     /**
@@ -134,8 +134,8 @@ class EstimatedBidAndTraffic
      */
     public function setMinImpressionsPerWeek($MinImpressionsPerWeek)
     {
-      $this->MinImpressionsPerWeek = $MinImpressionsPerWeek;
-      return $this;
+        $this->MinImpressionsPerWeek = $MinImpressionsPerWeek;
+        return $this;
     }
 
     /**
@@ -143,7 +143,7 @@ class EstimatedBidAndTraffic
      */
     public function getMaxImpressionsPerWeek()
     {
-      return $this->MaxImpressionsPerWeek;
+        return $this->MaxImpressionsPerWeek;
     }
 
     /**
@@ -152,8 +152,8 @@ class EstimatedBidAndTraffic
      */
     public function setMaxImpressionsPerWeek($MaxImpressionsPerWeek)
     {
-      $this->MaxImpressionsPerWeek = $MaxImpressionsPerWeek;
-      return $this;
+        $this->MaxImpressionsPerWeek = $MaxImpressionsPerWeek;
+        return $this;
     }
 
     /**
@@ -161,7 +161,7 @@ class EstimatedBidAndTraffic
      */
     public function getCTR()
     {
-      return $this->CTR;
+        return $this->CTR;
     }
 
     /**
@@ -170,8 +170,8 @@ class EstimatedBidAndTraffic
      */
     public function setCTR($CTR)
     {
-      $this->CTR = $CTR;
-      return $this;
+        $this->CTR = $CTR;
+        return $this;
     }
 
     /**
@@ -179,7 +179,7 @@ class EstimatedBidAndTraffic
      */
     public function getMinTotalCostPerWeek()
     {
-      return $this->MinTotalCostPerWeek;
+        return $this->MinTotalCostPerWeek;
     }
 
     /**
@@ -188,8 +188,8 @@ class EstimatedBidAndTraffic
      */
     public function setMinTotalCostPerWeek($MinTotalCostPerWeek)
     {
-      $this->MinTotalCostPerWeek = $MinTotalCostPerWeek;
-      return $this;
+        $this->MinTotalCostPerWeek = $MinTotalCostPerWeek;
+        return $this;
     }
 
     /**
@@ -197,7 +197,7 @@ class EstimatedBidAndTraffic
      */
     public function getMaxTotalCostPerWeek()
     {
-      return $this->MaxTotalCostPerWeek;
+        return $this->MaxTotalCostPerWeek;
     }
 
     /**
@@ -206,8 +206,8 @@ class EstimatedBidAndTraffic
      */
     public function setMaxTotalCostPerWeek($MaxTotalCostPerWeek)
     {
-      $this->MaxTotalCostPerWeek = $MaxTotalCostPerWeek;
-      return $this;
+        $this->MaxTotalCostPerWeek = $MaxTotalCostPerWeek;
+        return $this;
     }
 
     /**
@@ -215,7 +215,7 @@ class EstimatedBidAndTraffic
      */
     public function getCurrencyCode()
     {
-      return $this->CurrencyCode;
+        return $this->CurrencyCode;
     }
 
     /**
@@ -224,8 +224,8 @@ class EstimatedBidAndTraffic
      */
     public function setCurrencyCode($CurrencyCode)
     {
-      $this->CurrencyCode = $CurrencyCode;
-      return $this;
+        $this->CurrencyCode = $CurrencyCode;
+        return $this;
     }
 
     /**
@@ -233,7 +233,7 @@ class EstimatedBidAndTraffic
      */
     public function getMatchType()
     {
-      return $this->MatchType;
+        return $this->MatchType;
     }
 
     /**
@@ -242,8 +242,8 @@ class EstimatedBidAndTraffic
      */
     public function setMatchType($MatchType)
     {
-      $this->MatchType = $MatchType;
-      return $this;
+        $this->MatchType = $MatchType;
+        return $this;
     }
 
     /**
@@ -251,7 +251,7 @@ class EstimatedBidAndTraffic
      */
     public function getEstimatedMinBid()
     {
-      return $this->EstimatedMinBid;
+        return $this->EstimatedMinBid;
     }
 
     /**
@@ -260,8 +260,8 @@ class EstimatedBidAndTraffic
      */
     public function setEstimatedMinBid($EstimatedMinBid)
     {
-      $this->EstimatedMinBid = $EstimatedMinBid;
-      return $this;
+        $this->EstimatedMinBid = $EstimatedMinBid;
+        return $this;
     }
 
 }

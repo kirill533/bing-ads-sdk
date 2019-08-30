@@ -21,7 +21,7 @@ class LanguageSearchParameter extends SearchParameter
      */
     public function getLanguages()
     {
-      return $this->Languages;
+        return $this->Languages;
     }
 
     /**
@@ -30,8 +30,8 @@ class LanguageSearchParameter extends SearchParameter
      */
     public function setLanguages($Languages)
     {
-      $this->Languages = $Languages;
-      return $this;
+        $this->Languages = $Languages;
+        return $this;
     }
 
 }

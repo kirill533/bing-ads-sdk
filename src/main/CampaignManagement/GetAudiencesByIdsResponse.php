@@ -21,8 +21,8 @@ class GetAudiencesByIdsResponse
      */
     public function __construct($Audiences = null, $PartialErrors = null)
     {
-      $this->Audiences = $Audiences;
-      $this->PartialErrors = $PartialErrors;
+    $this->Audiences = $Audiences;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetAudiencesByIdsResponse
      */
     public function getAudiences()
     {
-      return $this->Audiences;
+        return $this->Audiences;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetAudiencesByIdsResponse
      */
     public function setAudiences($Audiences)
     {
-      $this->Audiences = $Audiences;
-      return $this;
+        $this->Audiences = $Audiences;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetAudiencesByIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetAudiencesByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

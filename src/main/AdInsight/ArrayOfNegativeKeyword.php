@@ -21,7 +21,7 @@ class ArrayOfNegativeKeyword implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getNegativeKeyword()
     {
-      return $this->NegativeKeyword;
+        return $this->NegativeKeyword;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfNegativeKeyword implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function setNegativeKeyword(array $NegativeKeyword = null)
     {
-      $this->NegativeKeyword = $NegativeKeyword;
-      return $this;
+        $this->NegativeKeyword = $NegativeKeyword;
+        return $this;
     }
 
     /**

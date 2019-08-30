@@ -21,7 +21,7 @@ class ArrayOfstring implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getString()
     {
-      return $this->string;
+        return $this->string;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfstring implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setString(array $string = null)
     {
-      $this->string = $string;
-      return $this;
+        $this->string = $string;
+        return $this;
     }
 
     /**

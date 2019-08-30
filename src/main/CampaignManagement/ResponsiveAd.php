@@ -58,7 +58,7 @@ class ResponsiveAd extends Ad
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -66,7 +66,7 @@ class ResponsiveAd extends Ad
      */
     public function getBusinessName()
     {
-      return $this->BusinessName;
+        return $this->BusinessName;
     }
 
     /**
@@ -75,8 +75,8 @@ class ResponsiveAd extends Ad
      */
     public function setBusinessName($BusinessName)
     {
-      $this->BusinessName = $BusinessName;
-      return $this;
+        $this->BusinessName = $BusinessName;
+        return $this;
     }
 
     /**
@@ -84,7 +84,7 @@ class ResponsiveAd extends Ad
      */
     public function getCallToAction()
     {
-      return $this->CallToAction;
+        return $this->CallToAction;
     }
 
     /**
@@ -93,8 +93,8 @@ class ResponsiveAd extends Ad
      */
     public function setCallToAction($CallToAction)
     {
-      $this->CallToAction = $CallToAction;
-      return $this;
+        $this->CallToAction = $CallToAction;
+        return $this;
     }
 
     /**
@@ -102,7 +102,7 @@ class ResponsiveAd extends Ad
      */
     public function getHeadline()
     {
-      return $this->Headline;
+        return $this->Headline;
     }
 
     /**
@@ -111,8 +111,8 @@ class ResponsiveAd extends Ad
      */
     public function setHeadline($Headline)
     {
-      $this->Headline = $Headline;
-      return $this;
+        $this->Headline = $Headline;
+        return $this;
     }
 
     /**
@@ -120,7 +120,7 @@ class ResponsiveAd extends Ad
      */
     public function getImages()
     {
-      return $this->Images;
+        return $this->Images;
     }
 
     /**
@@ -129,8 +129,8 @@ class ResponsiveAd extends Ad
      */
     public function setImages($Images)
     {
-      $this->Images = $Images;
-      return $this;
+        $this->Images = $Images;
+        return $this;
     }
 
     /**
@@ -138,7 +138,7 @@ class ResponsiveAd extends Ad
      */
     public function getLandscapeImageMediaId()
     {
-      return $this->LandscapeImageMediaId;
+        return $this->LandscapeImageMediaId;
     }
 
     /**
@@ -147,8 +147,8 @@ class ResponsiveAd extends Ad
      */
     public function setLandscapeImageMediaId($LandscapeImageMediaId)
     {
-      $this->LandscapeImageMediaId = $LandscapeImageMediaId;
-      return $this;
+        $this->LandscapeImageMediaId = $LandscapeImageMediaId;
+        return $this;
     }
 
     /**
@@ -156,7 +156,7 @@ class ResponsiveAd extends Ad
      */
     public function getLandscapeLogoMediaId()
     {
-      return $this->LandscapeLogoMediaId;
+        return $this->LandscapeLogoMediaId;
     }
 
     /**
@@ -165,8 +165,8 @@ class ResponsiveAd extends Ad
      */
     public function setLandscapeLogoMediaId($LandscapeLogoMediaId)
     {
-      $this->LandscapeLogoMediaId = $LandscapeLogoMediaId;
-      return $this;
+        $this->LandscapeLogoMediaId = $LandscapeLogoMediaId;
+        return $this;
     }
 
     /**
@@ -174,7 +174,7 @@ class ResponsiveAd extends Ad
      */
     public function getLongHeadline()
     {
-      return $this->LongHeadline;
+        return $this->LongHeadline;
     }
 
     /**
@@ -183,8 +183,8 @@ class ResponsiveAd extends Ad
      */
     public function setLongHeadline($LongHeadline)
     {
-      $this->LongHeadline = $LongHeadline;
-      return $this;
+        $this->LongHeadline = $LongHeadline;
+        return $this;
     }
 
     /**
@@ -192,7 +192,7 @@ class ResponsiveAd extends Ad
      */
     public function getSquareImageMediaId()
     {
-      return $this->SquareImageMediaId;
+        return $this->SquareImageMediaId;
     }
 
     /**
@@ -201,8 +201,8 @@ class ResponsiveAd extends Ad
      */
     public function setSquareImageMediaId($SquareImageMediaId)
     {
-      $this->SquareImageMediaId = $SquareImageMediaId;
-      return $this;
+        $this->SquareImageMediaId = $SquareImageMediaId;
+        return $this;
     }
 
     /**
@@ -210,7 +210,7 @@ class ResponsiveAd extends Ad
      */
     public function getSquareLogoMediaId()
     {
-      return $this->SquareLogoMediaId;
+        return $this->SquareLogoMediaId;
     }
 
     /**
@@ -219,8 +219,8 @@ class ResponsiveAd extends Ad
      */
     public function setSquareLogoMediaId($SquareLogoMediaId)
     {
-      $this->SquareLogoMediaId = $SquareLogoMediaId;
-      return $this;
+        $this->SquareLogoMediaId = $SquareLogoMediaId;
+        return $this;
     }
 
     /**
@@ -228,7 +228,7 @@ class ResponsiveAd extends Ad
      */
     public function getText()
     {
-      return $this->Text;
+        return $this->Text;
     }
 
     /**
@@ -237,8 +237,8 @@ class ResponsiveAd extends Ad
      */
     public function setText($Text)
     {
-      $this->Text = $Text;
-      return $this;
+        $this->Text = $Text;
+        return $this;
     }
 
 }

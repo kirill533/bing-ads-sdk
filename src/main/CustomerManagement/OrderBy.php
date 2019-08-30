@@ -26,7 +26,7 @@ class OrderBy
      */
     public function getField()
     {
-      return $this->Field;
+        return $this->Field;
     }
 
     /**
@@ -35,8 +35,8 @@ class OrderBy
      */
     public function setField($Field)
     {
-      $this->Field = $Field;
-      return $this;
+        $this->Field = $Field;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class OrderBy
      */
     public function getOrder()
     {
-      return $this->Order;
+        return $this->Order;
     }
 
     /**
@@ -53,8 +53,8 @@ class OrderBy
      */
     public function setOrder($Order)
     {
-      $this->Order = $Order;
-      return $this;
+        $this->Order = $Order;
+        return $this;
     }
 
 }

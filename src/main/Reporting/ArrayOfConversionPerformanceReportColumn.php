@@ -21,7 +21,7 @@ class ArrayOfConversionPerformanceReportColumn implements \ArrayAccess, \Iterato
      */
     public function getConversionPerformanceReportColumn()
     {
-      return $this->ConversionPerformanceReportColumn;
+        return $this->ConversionPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfConversionPerformanceReportColumn implements \ArrayAccess, \Iterato
      */
     public function setConversionPerformanceReportColumn(array $ConversionPerformanceReportColumn = null)
     {
-      $this->ConversionPerformanceReportColumn = $ConversionPerformanceReportColumn;
-      return $this;
+        $this->ConversionPerformanceReportColumn = $ConversionPerformanceReportColumn;
+        return $this;
     }
 
     /**

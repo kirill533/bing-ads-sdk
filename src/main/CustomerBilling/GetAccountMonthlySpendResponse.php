@@ -15,7 +15,7 @@ class GetAccountMonthlySpendResponse
      */
     public function __construct($Amount = null)
     {
-      $this->Amount = $Amount;
+    $this->Amount = $Amount;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetAccountMonthlySpendResponse
      */
     public function getAmount()
     {
-      return $this->Amount;
+        return $this->Amount;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetAccountMonthlySpendResponse
      */
     public function setAmount($Amount)
     {
-      $this->Amount = $Amount;
-      return $this;
+        $this->Amount = $Amount;
+        return $this;
     }
 
 }

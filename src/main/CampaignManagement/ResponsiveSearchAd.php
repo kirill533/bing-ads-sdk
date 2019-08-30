@@ -33,7 +33,7 @@ class ResponsiveSearchAd extends Ad
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -41,7 +41,7 @@ class ResponsiveSearchAd extends Ad
      */
     public function getDescriptions()
     {
-      return $this->Descriptions;
+        return $this->Descriptions;
     }
 
     /**
@@ -50,8 +50,8 @@ class ResponsiveSearchAd extends Ad
      */
     public function setDescriptions($Descriptions)
     {
-      $this->Descriptions = $Descriptions;
-      return $this;
+        $this->Descriptions = $Descriptions;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class ResponsiveSearchAd extends Ad
      */
     public function getDomain()
     {
-      return $this->Domain;
+        return $this->Domain;
     }
 
     /**
@@ -68,8 +68,8 @@ class ResponsiveSearchAd extends Ad
      */
     public function setDomain($Domain)
     {
-      $this->Domain = $Domain;
-      return $this;
+        $this->Domain = $Domain;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class ResponsiveSearchAd extends Ad
      */
     public function getHeadlines()
     {
-      return $this->Headlines;
+        return $this->Headlines;
     }
 
     /**
@@ -86,8 +86,8 @@ class ResponsiveSearchAd extends Ad
      */
     public function setHeadlines($Headlines)
     {
-      $this->Headlines = $Headlines;
-      return $this;
+        $this->Headlines = $Headlines;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class ResponsiveSearchAd extends Ad
      */
     public function getPath1()
     {
-      return $this->Path1;
+        return $this->Path1;
     }
 
     /**
@@ -104,8 +104,8 @@ class ResponsiveSearchAd extends Ad
      */
     public function setPath1($Path1)
     {
-      $this->Path1 = $Path1;
-      return $this;
+        $this->Path1 = $Path1;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class ResponsiveSearchAd extends Ad
      */
     public function getPath2()
     {
-      return $this->Path2;
+        return $this->Path2;
     }
 
     /**
@@ -122,8 +122,8 @@ class ResponsiveSearchAd extends Ad
      */
     public function setPath2($Path2)
     {
-      $this->Path2 = $Path2;
-      return $this;
+        $this->Path2 = $Path2;
+        return $this;
     }
 
 }

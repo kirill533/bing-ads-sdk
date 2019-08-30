@@ -15,7 +15,7 @@ class ApplyOfflineConversionsRequest
      */
     public function __construct($OfflineConversions = null)
     {
-      $this->OfflineConversions = $OfflineConversions;
+    $this->OfflineConversions = $OfflineConversions;
     }
 
     /**
@@ -23,7 +23,7 @@ class ApplyOfflineConversionsRequest
      */
     public function getOfflineConversions()
     {
-      return $this->OfflineConversions;
+        return $this->OfflineConversions;
     }
 
     /**
@@ -32,8 +32,8 @@ class ApplyOfflineConversionsRequest
      */
     public function setOfflineConversions($OfflineConversions)
     {
-      $this->OfflineConversions = $OfflineConversions;
-      return $this;
+        $this->OfflineConversions = $OfflineConversions;
+        return $this;
     }
 
 }

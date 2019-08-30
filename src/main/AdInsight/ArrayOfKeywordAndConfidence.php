@@ -21,7 +21,7 @@ class ArrayOfKeywordAndConfidence implements \ArrayAccess, \IteratorAggregate, \
      */
     public function getKeywordAndConfidence()
     {
-      return $this->KeywordAndConfidence;
+        return $this->KeywordAndConfidence;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordAndConfidence implements \ArrayAccess, \IteratorAggregate, \
      */
     public function setKeywordAndConfidence(array $KeywordAndConfidence = null)
     {
-      $this->KeywordAndConfidence = $KeywordAndConfidence;
-      return $this;
+        $this->KeywordAndConfidence = $KeywordAndConfidence;
+        return $this;
     }
 
     /**

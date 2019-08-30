@@ -21,8 +21,8 @@ class Paging
      */
     public function __construct($Index = null, $Size = null)
     {
-      $this->Index = $Index;
-      $this->Size = $Size;
+    $this->Index = $Index;
+    $this->Size = $Size;
     }
 
     /**
@@ -30,7 +30,7 @@ class Paging
      */
     public function getIndex()
     {
-      return $this->Index;
+        return $this->Index;
     }
 
     /**
@@ -39,8 +39,8 @@ class Paging
      */
     public function setIndex($Index)
     {
-      $this->Index = $Index;
-      return $this;
+        $this->Index = $Index;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class Paging
      */
     public function getSize()
     {
-      return $this->Size;
+        return $this->Size;
     }
 
     /**
@@ -57,8 +57,8 @@ class Paging
      */
     public function setSize($Size)
     {
-      $this->Size = $Size;
-      return $this;
+        $this->Size = $Size;
+        return $this;
     }
 
 }

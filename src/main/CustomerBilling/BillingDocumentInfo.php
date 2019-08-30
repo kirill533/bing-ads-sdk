@@ -56,7 +56,7 @@ class BillingDocumentInfo
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -65,8 +65,8 @@ class BillingDocumentInfo
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -74,7 +74,7 @@ class BillingDocumentInfo
      */
     public function getAccountName()
     {
-      return $this->AccountName;
+        return $this->AccountName;
     }
 
     /**
@@ -83,8 +83,8 @@ class BillingDocumentInfo
      */
     public function setAccountName($AccountName)
     {
-      $this->AccountName = $AccountName;
-      return $this;
+        $this->AccountName = $AccountName;
+        return $this;
     }
 
     /**
@@ -92,7 +92,7 @@ class BillingDocumentInfo
      */
     public function getAccountNumber()
     {
-      return $this->AccountNumber;
+        return $this->AccountNumber;
     }
 
     /**
@@ -101,8 +101,8 @@ class BillingDocumentInfo
      */
     public function setAccountNumber($AccountNumber)
     {
-      $this->AccountNumber = $AccountNumber;
-      return $this;
+        $this->AccountNumber = $AccountNumber;
+        return $this;
     }
 
     /**
@@ -110,7 +110,7 @@ class BillingDocumentInfo
      */
     public function getAmount()
     {
-      return $this->Amount;
+        return $this->Amount;
     }
 
     /**
@@ -119,8 +119,8 @@ class BillingDocumentInfo
      */
     public function setAmount($Amount)
     {
-      $this->Amount = $Amount;
-      return $this;
+        $this->Amount = $Amount;
+        return $this;
     }
 
     /**
@@ -128,7 +128,7 @@ class BillingDocumentInfo
      */
     public function getCurrencyCode()
     {
-      return $this->CurrencyCode;
+        return $this->CurrencyCode;
     }
 
     /**
@@ -137,8 +137,8 @@ class BillingDocumentInfo
      */
     public function setCurrencyCode($CurrencyCode)
     {
-      $this->CurrencyCode = $CurrencyCode;
-      return $this;
+        $this->CurrencyCode = $CurrencyCode;
+        return $this;
     }
 
     /**
@@ -146,15 +146,14 @@ class BillingDocumentInfo
      */
     public function getDocumentDate()
     {
-      if ($this->DocumentDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->DocumentDate);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->DocumentDate) {
+            return $this->DocumentDate;
         }
-      }
+        try {
+            return new \DateTime($this->DocumentDate);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -163,12 +162,8 @@ class BillingDocumentInfo
      */
     public function setDocumentDate(\DateTime $DocumentDate = null)
     {
-      if ($DocumentDate == null) {
-       $this->DocumentDate = null;
-      } else {
-        $this->DocumentDate = $DocumentDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->DocumentDate = null === $DocumentDate ? null : $DocumentDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -176,7 +171,7 @@ class BillingDocumentInfo
      */
     public function getDocumentId()
     {
-      return $this->DocumentId;
+        return $this->DocumentId;
     }
 
     /**
@@ -185,8 +180,8 @@ class BillingDocumentInfo
      */
     public function setDocumentId($DocumentId)
     {
-      $this->DocumentId = $DocumentId;
-      return $this;
+        $this->DocumentId = $DocumentId;
+        return $this;
     }
 
     /**
@@ -194,7 +189,7 @@ class BillingDocumentInfo
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
@@ -203,8 +198,8 @@ class BillingDocumentInfo
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
     }
 
 }

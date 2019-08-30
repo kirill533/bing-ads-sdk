@@ -21,7 +21,7 @@ class ArrayOfBroadMatchSearchQueryKPI implements \ArrayAccess, \IteratorAggregat
      */
     public function getBroadMatchSearchQueryKPI()
     {
-      return $this->BroadMatchSearchQueryKPI;
+        return $this->BroadMatchSearchQueryKPI;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfBroadMatchSearchQueryKPI implements \ArrayAccess, \IteratorAggregat
      */
     public function setBroadMatchSearchQueryKPI(array $BroadMatchSearchQueryKPI = null)
     {
-      $this->BroadMatchSearchQueryKPI = $BroadMatchSearchQueryKPI;
-      return $this;
+        $this->BroadMatchSearchQueryKPI = $BroadMatchSearchQueryKPI;
+        return $this;
     }
 
     /**

@@ -21,8 +21,8 @@ class GetCustomerRequest
      */
     public function __construct($CustomerId = null, $IncludeCustomerAddress = null)
     {
-      $this->CustomerId = $CustomerId;
-      $this->IncludeCustomerAddress = $IncludeCustomerAddress;
+    $this->CustomerId = $CustomerId;
+    $this->IncludeCustomerAddress = $IncludeCustomerAddress;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetCustomerRequest
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetCustomerRequest
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetCustomerRequest
      */
     public function getIncludeCustomerAddress()
     {
-      return $this->IncludeCustomerAddress;
+        return $this->IncludeCustomerAddress;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetCustomerRequest
      */
     public function setIncludeCustomerAddress($IncludeCustomerAddress)
     {
-      $this->IncludeCustomerAddress = $IncludeCustomerAddress;
-      return $this;
+        $this->IncludeCustomerAddress = $IncludeCustomerAddress;
+        return $this;
     }
 
 }

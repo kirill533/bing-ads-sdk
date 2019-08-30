@@ -21,7 +21,7 @@ class ArrayOfGeographicPerformanceReportColumn implements \ArrayAccess, \Iterato
      */
     public function getGeographicPerformanceReportColumn()
     {
-      return $this->GeographicPerformanceReportColumn;
+        return $this->GeographicPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfGeographicPerformanceReportColumn implements \ArrayAccess, \Iterato
      */
     public function setGeographicPerformanceReportColumn(array $GeographicPerformanceReportColumn = null)
     {
-      $this->GeographicPerformanceReportColumn = $GeographicPerformanceReportColumn;
-      return $this;
+        $this->GeographicPerformanceReportColumn = $GeographicPerformanceReportColumn;
+        return $this;
     }
 
     /**

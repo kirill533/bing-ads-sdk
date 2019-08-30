@@ -15,7 +15,7 @@ class DeleteExperimentsRequest
      */
     public function __construct($ExperimentIds = null)
     {
-      $this->ExperimentIds = $ExperimentIds;
+    $this->ExperimentIds = $ExperimentIds;
     }
 
     /**
@@ -23,7 +23,7 @@ class DeleteExperimentsRequest
      */
     public function getExperimentIds()
     {
-      return $this->ExperimentIds;
+        return $this->ExperimentIds;
     }
 
     /**
@@ -32,8 +32,8 @@ class DeleteExperimentsRequest
      */
     public function setExperimentIds($ExperimentIds)
     {
-      $this->ExperimentIds = $ExperimentIds;
-      return $this;
+        $this->ExperimentIds = $ExperimentIds;
+        return $this;
     }
 
 }

@@ -27,9 +27,9 @@ class GetSharedEntityAssociationsByEntityIdsRequest
      */
     public function __construct($EntityIds = null, $EntityType = null, $SharedEntityType = null)
     {
-      $this->EntityIds = $EntityIds;
-      $this->EntityType = $EntityType;
-      $this->SharedEntityType = $SharedEntityType;
+    $this->EntityIds = $EntityIds;
+    $this->EntityType = $EntityType;
+    $this->SharedEntityType = $SharedEntityType;
     }
 
     /**
@@ -37,7 +37,7 @@ class GetSharedEntityAssociationsByEntityIdsRequest
      */
     public function getEntityIds()
     {
-      return $this->EntityIds;
+        return $this->EntityIds;
     }
 
     /**
@@ -46,8 +46,8 @@ class GetSharedEntityAssociationsByEntityIdsRequest
      */
     public function setEntityIds($EntityIds)
     {
-      $this->EntityIds = $EntityIds;
-      return $this;
+        $this->EntityIds = $EntityIds;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class GetSharedEntityAssociationsByEntityIdsRequest
      */
     public function getEntityType()
     {
-      return $this->EntityType;
+        return $this->EntityType;
     }
 
     /**
@@ -64,8 +64,8 @@ class GetSharedEntityAssociationsByEntityIdsRequest
      */
     public function setEntityType($EntityType)
     {
-      $this->EntityType = $EntityType;
-      return $this;
+        $this->EntityType = $EntityType;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetSharedEntityAssociationsByEntityIdsRequest
      */
     public function getSharedEntityType()
     {
-      return $this->SharedEntityType;
+        return $this->SharedEntityType;
     }
 
     /**
@@ -82,8 +82,8 @@ class GetSharedEntityAssociationsByEntityIdsRequest
      */
     public function setSharedEntityType($SharedEntityType)
     {
-      $this->SharedEntityType = $SharedEntityType;
-      return $this;
+        $this->SharedEntityType = $SharedEntityType;
+        return $this;
     }
 
 }

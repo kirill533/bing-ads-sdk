@@ -28,7 +28,7 @@ class SearchCampaignChangeHistoryReportRequest extends ReportRequest
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -36,7 +36,7 @@ class SearchCampaignChangeHistoryReportRequest extends ReportRequest
      */
     public function getColumns()
     {
-      return $this->Columns;
+        return $this->Columns;
     }
 
     /**
@@ -45,8 +45,8 @@ class SearchCampaignChangeHistoryReportRequest extends ReportRequest
      */
     public function setColumns($Columns)
     {
-      $this->Columns = $Columns;
-      return $this;
+        $this->Columns = $Columns;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class SearchCampaignChangeHistoryReportRequest extends ReportRequest
      */
     public function getFilter()
     {
-      return $this->Filter;
+        return $this->Filter;
     }
 
     /**
@@ -63,8 +63,8 @@ class SearchCampaignChangeHistoryReportRequest extends ReportRequest
      */
     public function setFilter($Filter)
     {
-      $this->Filter = $Filter;
-      return $this;
+        $this->Filter = $Filter;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class SearchCampaignChangeHistoryReportRequest extends ReportRequest
      */
     public function getScope()
     {
-      return $this->Scope;
+        return $this->Scope;
     }
 
     /**
@@ -81,8 +81,8 @@ class SearchCampaignChangeHistoryReportRequest extends ReportRequest
      */
     public function setScope($Scope)
     {
-      $this->Scope = $Scope;
-      return $this;
+        $this->Scope = $Scope;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class SearchCampaignChangeHistoryReportRequest extends ReportRequest
      */
     public function getTime()
     {
-      return $this->Time;
+        return $this->Time;
     }
 
     /**
@@ -99,8 +99,8 @@ class SearchCampaignChangeHistoryReportRequest extends ReportRequest
      */
     public function setTime($Time)
     {
-      $this->Time = $Time;
-      return $this;
+        $this->Time = $Time;
+        return $this;
     }
 
 }

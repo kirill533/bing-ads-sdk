@@ -21,8 +21,8 @@ class GetGeoLocationsFileUrlRequest
      */
     public function __construct($Version = null, $LanguageLocale = null)
     {
-      $this->Version = $Version;
-      $this->LanguageLocale = $LanguageLocale;
+    $this->Version = $Version;
+    $this->LanguageLocale = $LanguageLocale;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetGeoLocationsFileUrlRequest
      */
     public function getVersion()
     {
-      return $this->Version;
+        return $this->Version;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetGeoLocationsFileUrlRequest
      */
     public function setVersion($Version)
     {
-      $this->Version = $Version;
-      return $this;
+        $this->Version = $Version;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetGeoLocationsFileUrlRequest
      */
     public function getLanguageLocale()
     {
-      return $this->LanguageLocale;
+        return $this->LanguageLocale;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetGeoLocationsFileUrlRequest
      */
     public function setLanguageLocale($LanguageLocale)
     {
-      $this->LanguageLocale = $LanguageLocale;
-      return $this;
+        $this->LanguageLocale = $LanguageLocale;
+        return $this;
     }
 
 }

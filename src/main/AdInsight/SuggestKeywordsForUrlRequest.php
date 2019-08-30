@@ -39,11 +39,11 @@ class SuggestKeywordsForUrlRequest
      */
     public function __construct($Url = null, $Language = null, $MaxKeywords = null, $MinConfidenceScore = null, $ExcludeBrand = null)
     {
-      $this->Url = $Url;
-      $this->Language = $Language;
-      $this->MaxKeywords = $MaxKeywords;
-      $this->MinConfidenceScore = $MinConfidenceScore;
-      $this->ExcludeBrand = $ExcludeBrand;
+    $this->Url = $Url;
+    $this->Language = $Language;
+    $this->MaxKeywords = $MaxKeywords;
+    $this->MinConfidenceScore = $MinConfidenceScore;
+    $this->ExcludeBrand = $ExcludeBrand;
     }
 
     /**
@@ -51,7 +51,7 @@ class SuggestKeywordsForUrlRequest
      */
     public function getUrl()
     {
-      return $this->Url;
+        return $this->Url;
     }
 
     /**
@@ -60,8 +60,8 @@ class SuggestKeywordsForUrlRequest
      */
     public function setUrl($Url)
     {
-      $this->Url = $Url;
-      return $this;
+        $this->Url = $Url;
+        return $this;
     }
 
     /**
@@ -69,7 +69,7 @@ class SuggestKeywordsForUrlRequest
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -78,8 +78,8 @@ class SuggestKeywordsForUrlRequest
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
     /**
@@ -87,7 +87,7 @@ class SuggestKeywordsForUrlRequest
      */
     public function getMaxKeywords()
     {
-      return $this->MaxKeywords;
+        return $this->MaxKeywords;
     }
 
     /**
@@ -96,8 +96,8 @@ class SuggestKeywordsForUrlRequest
      */
     public function setMaxKeywords($MaxKeywords)
     {
-      $this->MaxKeywords = $MaxKeywords;
-      return $this;
+        $this->MaxKeywords = $MaxKeywords;
+        return $this;
     }
 
     /**
@@ -105,7 +105,7 @@ class SuggestKeywordsForUrlRequest
      */
     public function getMinConfidenceScore()
     {
-      return $this->MinConfidenceScore;
+        return $this->MinConfidenceScore;
     }
 
     /**
@@ -114,8 +114,8 @@ class SuggestKeywordsForUrlRequest
      */
     public function setMinConfidenceScore($MinConfidenceScore)
     {
-      $this->MinConfidenceScore = $MinConfidenceScore;
-      return $this;
+        $this->MinConfidenceScore = $MinConfidenceScore;
+        return $this;
     }
 
     /**
@@ -123,7 +123,7 @@ class SuggestKeywordsForUrlRequest
      */
     public function getExcludeBrand()
     {
-      return $this->ExcludeBrand;
+        return $this->ExcludeBrand;
     }
 
     /**
@@ -132,8 +132,8 @@ class SuggestKeywordsForUrlRequest
      */
     public function setExcludeBrand($ExcludeBrand)
     {
-      $this->ExcludeBrand = $ExcludeBrand;
-      return $this;
+        $this->ExcludeBrand = $ExcludeBrand;
+        return $this;
     }
 
 }

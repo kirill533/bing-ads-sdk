@@ -21,7 +21,7 @@ class ArrayOfRuleItem implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getRuleItem()
     {
-      return $this->RuleItem;
+        return $this->RuleItem;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfRuleItem implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setRuleItem(array $RuleItem = null)
     {
-      $this->RuleItem = $RuleItem;
-      return $this;
+        $this->RuleItem = $RuleItem;
+        return $this;
     }
 
     /**

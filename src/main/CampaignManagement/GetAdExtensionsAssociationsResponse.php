@@ -21,8 +21,8 @@ class GetAdExtensionsAssociationsResponse
      */
     public function __construct($AdExtensionAssociationCollection = null, $PartialErrors = null)
     {
-      $this->AdExtensionAssociationCollection = $AdExtensionAssociationCollection;
-      $this->PartialErrors = $PartialErrors;
+    $this->AdExtensionAssociationCollection = $AdExtensionAssociationCollection;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetAdExtensionsAssociationsResponse
      */
     public function getAdExtensionAssociationCollection()
     {
-      return $this->AdExtensionAssociationCollection;
+        return $this->AdExtensionAssociationCollection;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetAdExtensionsAssociationsResponse
      */
     public function setAdExtensionAssociationCollection($AdExtensionAssociationCollection)
     {
-      $this->AdExtensionAssociationCollection = $AdExtensionAssociationCollection;
-      return $this;
+        $this->AdExtensionAssociationCollection = $AdExtensionAssociationCollection;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetAdExtensionsAssociationsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetAdExtensionsAssociationsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

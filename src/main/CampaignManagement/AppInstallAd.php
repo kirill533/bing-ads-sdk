@@ -28,7 +28,7 @@ class AppInstallAd extends Ad
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -36,7 +36,7 @@ class AppInstallAd extends Ad
      */
     public function getAppPlatform()
     {
-      return $this->AppPlatform;
+        return $this->AppPlatform;
     }
 
     /**
@@ -45,8 +45,8 @@ class AppInstallAd extends Ad
      */
     public function setAppPlatform($AppPlatform)
     {
-      $this->AppPlatform = $AppPlatform;
-      return $this;
+        $this->AppPlatform = $AppPlatform;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class AppInstallAd extends Ad
      */
     public function getAppStoreId()
     {
-      return $this->AppStoreId;
+        return $this->AppStoreId;
     }
 
     /**
@@ -63,8 +63,8 @@ class AppInstallAd extends Ad
      */
     public function setAppStoreId($AppStoreId)
     {
-      $this->AppStoreId = $AppStoreId;
-      return $this;
+        $this->AppStoreId = $AppStoreId;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class AppInstallAd extends Ad
      */
     public function getText()
     {
-      return $this->Text;
+        return $this->Text;
     }
 
     /**
@@ -81,8 +81,8 @@ class AppInstallAd extends Ad
      */
     public function setText($Text)
     {
-      $this->Text = $Text;
-      return $this;
+        $this->Text = $Text;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class AppInstallAd extends Ad
      */
     public function getTitle()
     {
-      return $this->Title;
+        return $this->Title;
     }
 
     /**
@@ -99,8 +99,8 @@ class AppInstallAd extends Ad
      */
     public function setTitle($Title)
     {
-      $this->Title = $Title;
-      return $this;
+        $this->Title = $Title;
+        return $this;
     }
 
 }

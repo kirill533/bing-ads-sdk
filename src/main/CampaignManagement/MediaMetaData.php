@@ -30,7 +30,7 @@ class MediaMetaData
      */
     public function __construct($Id = null)
     {
-      $this->Id = $Id;
+    $this->Id = $Id;
     }
 
     /**
@@ -38,7 +38,7 @@ class MediaMetaData
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -47,8 +47,8 @@ class MediaMetaData
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -56,7 +56,7 @@ class MediaMetaData
      */
     public function getMediaType()
     {
-      return $this->MediaType;
+        return $this->MediaType;
     }
 
     /**
@@ -65,8 +65,8 @@ class MediaMetaData
      */
     public function setMediaType($MediaType)
     {
-      $this->MediaType = $MediaType;
-      return $this;
+        $this->MediaType = $MediaType;
+        return $this;
     }
 
     /**
@@ -74,7 +74,7 @@ class MediaMetaData
      */
     public function getRepresentations()
     {
-      return $this->Representations;
+        return $this->Representations;
     }
 
     /**
@@ -83,8 +83,8 @@ class MediaMetaData
      */
     public function setRepresentations($Representations)
     {
-      $this->Representations = $Representations;
-      return $this;
+        $this->Representations = $Representations;
+        return $this;
     }
 
     /**
@@ -92,7 +92,7 @@ class MediaMetaData
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -101,8 +101,8 @@ class MediaMetaData
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
 }

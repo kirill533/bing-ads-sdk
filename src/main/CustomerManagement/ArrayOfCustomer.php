@@ -21,7 +21,7 @@ class ArrayOfCustomer implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getCustomer()
     {
-      return $this->Customer;
+        return $this->Customer;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCustomer implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setCustomer(array $Customer = null)
     {
-      $this->Customer = $Customer;
-      return $this;
+        $this->Customer = $Customer;
+        return $this;
     }
 
     /**

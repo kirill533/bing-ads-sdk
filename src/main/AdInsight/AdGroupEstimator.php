@@ -31,7 +31,7 @@ class AdGroupEstimator
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -40,8 +40,8 @@ class AdGroupEstimator
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class AdGroupEstimator
      */
     public function getKeywordEstimators()
     {
-      return $this->KeywordEstimators;
+        return $this->KeywordEstimators;
     }
 
     /**
@@ -58,8 +58,8 @@ class AdGroupEstimator
      */
     public function setKeywordEstimators($KeywordEstimators)
     {
-      $this->KeywordEstimators = $KeywordEstimators;
-      return $this;
+        $this->KeywordEstimators = $KeywordEstimators;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class AdGroupEstimator
      */
     public function getMaxCpc()
     {
-      return $this->MaxCpc;
+        return $this->MaxCpc;
     }
 
     /**
@@ -76,8 +76,8 @@ class AdGroupEstimator
      */
     public function setMaxCpc($MaxCpc)
     {
-      $this->MaxCpc = $MaxCpc;
-      return $this;
+        $this->MaxCpc = $MaxCpc;
+        return $this;
     }
 
 }

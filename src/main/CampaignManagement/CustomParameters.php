@@ -21,7 +21,7 @@ class CustomParameters
      */
     public function getParameters()
     {
-      return $this->Parameters;
+        return $this->Parameters;
     }
 
     /**
@@ -30,8 +30,8 @@ class CustomParameters
      */
     public function setParameters($Parameters)
     {
-      $this->Parameters = $Parameters;
-      return $this;
+        $this->Parameters = $Parameters;
+        return $this;
     }
 
 }

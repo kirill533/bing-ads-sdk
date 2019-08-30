@@ -21,7 +21,7 @@ class ArrayOfKeywordHistoricalPerformance implements \ArrayAccess, \IteratorAggr
      */
     public function getKeywordHistoricalPerformance()
     {
-      return $this->KeywordHistoricalPerformance;
+        return $this->KeywordHistoricalPerformance;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordHistoricalPerformance implements \ArrayAccess, \IteratorAggr
      */
     public function setKeywordHistoricalPerformance(array $KeywordHistoricalPerformance = null)
     {
-      $this->KeywordHistoricalPerformance = $KeywordHistoricalPerformance;
-      return $this;
+        $this->KeywordHistoricalPerformance = $KeywordHistoricalPerformance;
+        return $this;
     }
 
     /**

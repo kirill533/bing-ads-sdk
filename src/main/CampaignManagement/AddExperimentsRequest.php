@@ -15,7 +15,7 @@ class AddExperimentsRequest
      */
     public function __construct($Experiments = null)
     {
-      $this->Experiments = $Experiments;
+    $this->Experiments = $Experiments;
     }
 
     /**
@@ -23,7 +23,7 @@ class AddExperimentsRequest
      */
     public function getExperiments()
     {
-      return $this->Experiments;
+        return $this->Experiments;
     }
 
     /**
@@ -32,8 +32,8 @@ class AddExperimentsRequest
      */
     public function setExperiments($Experiments)
     {
-      $this->Experiments = $Experiments;
-      return $this;
+        $this->Experiments = $Experiments;
+        return $this;
     }
 
 }

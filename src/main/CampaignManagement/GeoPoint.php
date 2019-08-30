@@ -21,8 +21,8 @@ class GeoPoint
      */
     public function __construct($LatitudeInMicroDegrees = null, $LongitudeInMicroDegrees = null)
     {
-      $this->LatitudeInMicroDegrees = $LatitudeInMicroDegrees;
-      $this->LongitudeInMicroDegrees = $LongitudeInMicroDegrees;
+    $this->LatitudeInMicroDegrees = $LatitudeInMicroDegrees;
+    $this->LongitudeInMicroDegrees = $LongitudeInMicroDegrees;
     }
 
     /**
@@ -30,7 +30,7 @@ class GeoPoint
      */
     public function getLatitudeInMicroDegrees()
     {
-      return $this->LatitudeInMicroDegrees;
+        return $this->LatitudeInMicroDegrees;
     }
 
     /**
@@ -39,8 +39,8 @@ class GeoPoint
      */
     public function setLatitudeInMicroDegrees($LatitudeInMicroDegrees)
     {
-      $this->LatitudeInMicroDegrees = $LatitudeInMicroDegrees;
-      return $this;
+        $this->LatitudeInMicroDegrees = $LatitudeInMicroDegrees;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GeoPoint
      */
     public function getLongitudeInMicroDegrees()
     {
-      return $this->LongitudeInMicroDegrees;
+        return $this->LongitudeInMicroDegrees;
     }
 
     /**
@@ -57,8 +57,8 @@ class GeoPoint
      */
     public function setLongitudeInMicroDegrees($LongitudeInMicroDegrees)
     {
-      $this->LongitudeInMicroDegrees = $LongitudeInMicroDegrees;
-      return $this;
+        $this->LongitudeInMicroDegrees = $LongitudeInMicroDegrees;
+        return $this;
     }
 
 }

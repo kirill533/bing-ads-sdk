@@ -21,8 +21,8 @@ class GetAudiencesByIdsRequest
      */
     public function __construct($AudienceIds = null, $Type = null)
     {
-      $this->AudienceIds = $AudienceIds;
-      $this->Type = $Type;
+    $this->AudienceIds = $AudienceIds;
+    $this->Type = $Type;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetAudiencesByIdsRequest
      */
     public function getAudienceIds()
     {
-      return $this->AudienceIds;
+        return $this->AudienceIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetAudiencesByIdsRequest
      */
     public function setAudienceIds($AudienceIds)
     {
-      $this->AudienceIds = $AudienceIds;
-      return $this;
+        $this->AudienceIds = $AudienceIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetAudiencesByIdsRequest
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetAudiencesByIdsRequest
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
 }

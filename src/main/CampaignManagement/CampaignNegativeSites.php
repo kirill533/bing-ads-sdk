@@ -26,7 +26,7 @@ class CampaignNegativeSites
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -35,8 +35,8 @@ class CampaignNegativeSites
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class CampaignNegativeSites
      */
     public function getNegativeSites()
     {
-      return $this->NegativeSites;
+        return $this->NegativeSites;
     }
 
     /**
@@ -53,8 +53,8 @@ class CampaignNegativeSites
      */
     public function setNegativeSites($NegativeSites)
     {
-      $this->NegativeSites = $NegativeSites;
-      return $this;
+        $this->NegativeSites = $NegativeSites;
+        return $this;
     }
 
 }

@@ -21,7 +21,7 @@ class ArrayOfMigrationStatusInfo implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getMigrationStatusInfo()
     {
-      return $this->MigrationStatusInfo;
+        return $this->MigrationStatusInfo;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfMigrationStatusInfo implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function setMigrationStatusInfo(array $MigrationStatusInfo = null)
     {
-      $this->MigrationStatusInfo = $MigrationStatusInfo;
-      return $this;
+        $this->MigrationStatusInfo = $MigrationStatusInfo;
+        return $this;
     }
 
     /**

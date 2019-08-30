@@ -15,7 +15,7 @@ class GetUsersInfoResponse
      */
     public function __construct($UsersInfo = null)
     {
-      $this->UsersInfo = $UsersInfo;
+    $this->UsersInfo = $UsersInfo;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetUsersInfoResponse
      */
     public function getUsersInfo()
     {
-      return $this->UsersInfo;
+        return $this->UsersInfo;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetUsersInfoResponse
      */
     public function setUsersInfo($UsersInfo)
     {
-      $this->UsersInfo = $UsersInfo;
-      return $this;
+        $this->UsersInfo = $UsersInfo;
+        return $this;
     }
 
 }

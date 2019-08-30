@@ -26,7 +26,7 @@ class MetricData
      */
     public function getMetricDetail()
     {
-      return $this->MetricDetail;
+        return $this->MetricDetail;
     }
 
     /**
@@ -35,8 +35,8 @@ class MetricData
      */
     public function setMetricDetail($MetricDetail)
     {
-      $this->MetricDetail = $MetricDetail;
-      return $this;
+        $this->MetricDetail = $MetricDetail;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class MetricData
      */
     public function getMetricType()
     {
-      return $this->MetricType;
+        return $this->MetricType;
     }
 
     /**
@@ -53,8 +53,8 @@ class MetricData
      */
     public function setMetricType($MetricType)
     {
-      $this->MetricType = $MetricType;
-      return $this;
+        $this->MetricType = $MetricType;
+        return $this;
     }
 
 }

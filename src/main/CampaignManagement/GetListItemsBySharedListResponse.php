@@ -15,7 +15,7 @@ class GetListItemsBySharedListResponse
      */
     public function __construct($ListItems = null)
     {
-      $this->ListItems = $ListItems;
+    $this->ListItems = $ListItems;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetListItemsBySharedListResponse
      */
     public function getListItems()
     {
-      return $this->ListItems;
+        return $this->ListItems;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetListItemsBySharedListResponse
      */
     public function setListItems($ListItems)
     {
-      $this->ListItems = $ListItems;
-      return $this;
+        $this->ListItems = $ListItems;
+        return $this;
     }
 
 }

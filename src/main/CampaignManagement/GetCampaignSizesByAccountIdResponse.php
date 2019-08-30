@@ -15,7 +15,7 @@ class GetCampaignSizesByAccountIdResponse
      */
     public function __construct($CampaignSizes = null)
     {
-      $this->CampaignSizes = $CampaignSizes;
+    $this->CampaignSizes = $CampaignSizes;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetCampaignSizesByAccountIdResponse
      */
     public function getCampaignSizes()
     {
-      return $this->CampaignSizes;
+        return $this->CampaignSizes;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetCampaignSizesByAccountIdResponse
      */
     public function setCampaignSizes($CampaignSizes)
     {
-      $this->CampaignSizes = $CampaignSizes;
-      return $this;
+        $this->CampaignSizes = $CampaignSizes;
+        return $this;
     }
 
 }

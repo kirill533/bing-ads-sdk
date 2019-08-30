@@ -21,7 +21,7 @@ class ArrayOfAdExtensionEditorialReason implements \ArrayAccess, \IteratorAggreg
      */
     public function getAdExtensionEditorialReason()
     {
-      return $this->AdExtensionEditorialReason;
+        return $this->AdExtensionEditorialReason;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdExtensionEditorialReason implements \ArrayAccess, \IteratorAggreg
      */
     public function setAdExtensionEditorialReason(array $AdExtensionEditorialReason = null)
     {
-      $this->AdExtensionEditorialReason = $AdExtensionEditorialReason;
-      return $this;
+        $this->AdExtensionEditorialReason = $AdExtensionEditorialReason;
+        return $this;
     }
 
     /**

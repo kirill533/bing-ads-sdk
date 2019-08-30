@@ -21,8 +21,8 @@ class AddExperimentsResponse
      */
     public function __construct($ExperimentIds = null, $PartialErrors = null)
     {
-      $this->ExperimentIds = $ExperimentIds;
-      $this->PartialErrors = $PartialErrors;
+    $this->ExperimentIds = $ExperimentIds;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class AddExperimentsResponse
      */
     public function getExperimentIds()
     {
-      return $this->ExperimentIds;
+        return $this->ExperimentIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class AddExperimentsResponse
      */
     public function setExperimentIds($ExperimentIds)
     {
-      $this->ExperimentIds = $ExperimentIds;
-      return $this;
+        $this->ExperimentIds = $ExperimentIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class AddExperimentsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class AddExperimentsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

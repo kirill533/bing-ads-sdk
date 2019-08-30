@@ -15,7 +15,7 @@ class DeleteNegativeKeywordsFromEntitiesResponse
      */
     public function __construct($NestedPartialErrors = null)
     {
-      $this->NestedPartialErrors = $NestedPartialErrors;
+    $this->NestedPartialErrors = $NestedPartialErrors;
     }
 
     /**
@@ -23,7 +23,7 @@ class DeleteNegativeKeywordsFromEntitiesResponse
      */
     public function getNestedPartialErrors()
     {
-      return $this->NestedPartialErrors;
+        return $this->NestedPartialErrors;
     }
 
     /**
@@ -32,8 +32,8 @@ class DeleteNegativeKeywordsFromEntitiesResponse
      */
     public function setNestedPartialErrors($NestedPartialErrors)
     {
-      $this->NestedPartialErrors = $NestedPartialErrors;
-      return $this;
+        $this->NestedPartialErrors = $NestedPartialErrors;
+        return $this;
     }
 
 }

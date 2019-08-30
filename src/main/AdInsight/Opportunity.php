@@ -21,7 +21,7 @@ class Opportunity
      */
     public function getOpportunityKey()
     {
-      return $this->OpportunityKey;
+        return $this->OpportunityKey;
     }
 
     /**
@@ -30,8 +30,8 @@ class Opportunity
      */
     public function setOpportunityKey($OpportunityKey)
     {
-      $this->OpportunityKey = $OpportunityKey;
-      return $this;
+        $this->OpportunityKey = $OpportunityKey;
+        return $this;
     }
 
 }

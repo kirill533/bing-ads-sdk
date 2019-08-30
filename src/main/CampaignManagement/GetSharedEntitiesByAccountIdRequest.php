@@ -15,7 +15,7 @@ class GetSharedEntitiesByAccountIdRequest
      */
     public function __construct($SharedEntityType = null)
     {
-      $this->SharedEntityType = $SharedEntityType;
+    $this->SharedEntityType = $SharedEntityType;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetSharedEntitiesByAccountIdRequest
      */
     public function getSharedEntityType()
     {
-      return $this->SharedEntityType;
+        return $this->SharedEntityType;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetSharedEntitiesByAccountIdRequest
      */
     public function setSharedEntityType($SharedEntityType)
     {
-      $this->SharedEntityType = $SharedEntityType;
-      return $this;
+        $this->SharedEntityType = $SharedEntityType;
+        return $this;
     }
 
 }

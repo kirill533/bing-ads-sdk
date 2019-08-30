@@ -21,7 +21,7 @@ class ArrayOfDomainCategory implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getDomainCategory()
     {
-      return $this->DomainCategory;
+        return $this->DomainCategory;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfDomainCategory implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function setDomainCategory(array $DomainCategory = null)
     {
-      $this->DomainCategory = $DomainCategory;
-      return $this;
+        $this->DomainCategory = $DomainCategory;
+        return $this;
     }
 
     /**

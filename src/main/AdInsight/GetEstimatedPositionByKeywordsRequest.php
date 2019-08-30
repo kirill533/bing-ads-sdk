@@ -57,14 +57,14 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function __construct($Keywords = null, $MaxBid = null, $Language = null, $LocationIds = null, $CurrencyCode = null, $MatchTypes = null, $CampaignId = null, $AdGroupId = null)
     {
-      $this->Keywords = $Keywords;
-      $this->MaxBid = $MaxBid;
-      $this->Language = $Language;
-      $this->LocationIds = $LocationIds;
-      $this->CurrencyCode = $CurrencyCode;
-      $this->MatchTypes = $MatchTypes;
-      $this->CampaignId = $CampaignId;
-      $this->AdGroupId = $AdGroupId;
+    $this->Keywords = $Keywords;
+    $this->MaxBid = $MaxBid;
+    $this->Language = $Language;
+    $this->LocationIds = $LocationIds;
+    $this->CurrencyCode = $CurrencyCode;
+    $this->MatchTypes = $MatchTypes;
+    $this->CampaignId = $CampaignId;
+    $this->AdGroupId = $AdGroupId;
     }
 
     /**
@@ -72,7 +72,7 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function getKeywords()
     {
-      return $this->Keywords;
+        return $this->Keywords;
     }
 
     /**
@@ -81,8 +81,8 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function setKeywords($Keywords)
     {
-      $this->Keywords = $Keywords;
-      return $this;
+        $this->Keywords = $Keywords;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function getMaxBid()
     {
-      return $this->MaxBid;
+        return $this->MaxBid;
     }
 
     /**
@@ -99,8 +99,8 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function setMaxBid($MaxBid)
     {
-      $this->MaxBid = $MaxBid;
-      return $this;
+        $this->MaxBid = $MaxBid;
+        return $this;
     }
 
     /**
@@ -108,7 +108,7 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -117,8 +117,8 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
     /**
@@ -126,7 +126,7 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function getLocationIds()
     {
-      return $this->LocationIds;
+        return $this->LocationIds;
     }
 
     /**
@@ -135,8 +135,8 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function setLocationIds($LocationIds)
     {
-      $this->LocationIds = $LocationIds;
-      return $this;
+        $this->LocationIds = $LocationIds;
+        return $this;
     }
 
     /**
@@ -144,7 +144,7 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function getCurrencyCode()
     {
-      return $this->CurrencyCode;
+        return $this->CurrencyCode;
     }
 
     /**
@@ -153,8 +153,8 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function setCurrencyCode($CurrencyCode)
     {
-      $this->CurrencyCode = $CurrencyCode;
-      return $this;
+        $this->CurrencyCode = $CurrencyCode;
+        return $this;
     }
 
     /**
@@ -162,7 +162,7 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function getMatchTypes()
     {
-      return $this->MatchTypes;
+        return $this->MatchTypes;
     }
 
     /**
@@ -171,8 +171,8 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function setMatchTypes($MatchTypes)
     {
-      $this->MatchTypes = $MatchTypes;
-      return $this;
+        $this->MatchTypes = $MatchTypes;
+        return $this;
     }
 
     /**
@@ -180,7 +180,7 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -189,8 +189,8 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -198,7 +198,7 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -207,8 +207,8 @@ class GetEstimatedPositionByKeywordsRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
 }

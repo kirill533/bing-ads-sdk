@@ -21,7 +21,7 @@ class ArrayOfOfflineConversion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getOfflineConversion()
     {
-      return $this->OfflineConversion;
+        return $this->OfflineConversion;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfOfflineConversion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function setOfflineConversion(array $OfflineConversion = null)
     {
-      $this->OfflineConversion = $OfflineConversion;
-      return $this;
+        $this->OfflineConversion = $OfflineConversion;
+        return $this;
     }
 
     /**

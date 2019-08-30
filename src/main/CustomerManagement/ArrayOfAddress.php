@@ -21,7 +21,7 @@ class ArrayOfAddress implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getAddress()
     {
-      return $this->Address;
+        return $this->Address;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAddress implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setAddress(array $Address = null)
     {
-      $this->Address = $Address;
-      return $this;
+        $this->Address = $Address;
+        return $this;
     }
 
     /**

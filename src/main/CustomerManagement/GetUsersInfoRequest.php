@@ -21,8 +21,8 @@ class GetUsersInfoRequest
      */
     public function __construct($CustomerId = null, $StatusFilter = null)
     {
-      $this->CustomerId = $CustomerId;
-      $this->StatusFilter = $StatusFilter;
+    $this->CustomerId = $CustomerId;
+    $this->StatusFilter = $StatusFilter;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetUsersInfoRequest
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetUsersInfoRequest
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetUsersInfoRequest
      */
     public function getStatusFilter()
     {
-      return $this->StatusFilter;
+        return $this->StatusFilter;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetUsersInfoRequest
      */
     public function setStatusFilter($StatusFilter)
     {
-      $this->StatusFilter = $StatusFilter;
-      return $this;
+        $this->StatusFilter = $StatusFilter;
+        return $this;
     }
 
 }

@@ -21,7 +21,7 @@ class AuctionSegmentSearchParameter extends SearchParameter
      */
     public function getSegment()
     {
-      return $this->Segment;
+        return $this->Segment;
     }
 
     /**
@@ -30,8 +30,8 @@ class AuctionSegmentSearchParameter extends SearchParameter
      */
     public function setSegment($Segment)
     {
-      $this->Segment = $Segment;
-      return $this;
+        $this->Segment = $Segment;
+        return $this;
     }
 
 }

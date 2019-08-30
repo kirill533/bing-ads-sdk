@@ -46,7 +46,7 @@ class UetTag
      */
     public function getDescription()
     {
-      return $this->Description;
+        return $this->Description;
     }
 
     /**
@@ -55,8 +55,8 @@ class UetTag
      */
     public function setDescription($Description)
     {
-      $this->Description = $Description;
-      return $this;
+        $this->Description = $Description;
+        return $this;
     }
 
     /**
@@ -64,7 +64,7 @@ class UetTag
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -73,8 +73,8 @@ class UetTag
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -82,7 +82,7 @@ class UetTag
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -91,8 +91,8 @@ class UetTag
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -100,7 +100,7 @@ class UetTag
      */
     public function getTrackingNoScript()
     {
-      return $this->TrackingNoScript;
+        return $this->TrackingNoScript;
     }
 
     /**
@@ -109,8 +109,8 @@ class UetTag
      */
     public function setTrackingNoScript($TrackingNoScript)
     {
-      $this->TrackingNoScript = $TrackingNoScript;
-      return $this;
+        $this->TrackingNoScript = $TrackingNoScript;
+        return $this;
     }
 
     /**
@@ -118,7 +118,7 @@ class UetTag
      */
     public function getTrackingScript()
     {
-      return $this->TrackingScript;
+        return $this->TrackingScript;
     }
 
     /**
@@ -127,8 +127,8 @@ class UetTag
      */
     public function setTrackingScript($TrackingScript)
     {
-      $this->TrackingScript = $TrackingScript;
-      return $this;
+        $this->TrackingScript = $TrackingScript;
+        return $this;
     }
 
     /**
@@ -136,7 +136,7 @@ class UetTag
      */
     public function getTrackingStatus()
     {
-      return $this->TrackingStatus;
+        return $this->TrackingStatus;
     }
 
     /**
@@ -145,8 +145,8 @@ class UetTag
      */
     public function setTrackingStatus($TrackingStatus)
     {
-      $this->TrackingStatus = $TrackingStatus;
-      return $this;
+        $this->TrackingStatus = $TrackingStatus;
+        return $this;
     }
 
 }

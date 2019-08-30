@@ -48,7 +48,7 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -56,7 +56,7 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function getAverageCPC()
     {
-      return $this->AverageCPC;
+        return $this->AverageCPC;
     }
 
     /**
@@ -65,8 +65,8 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function setAverageCPC($AverageCPC)
     {
-      $this->AverageCPC = $AverageCPC;
-      return $this;
+        $this->AverageCPC = $AverageCPC;
+        return $this;
     }
 
     /**
@@ -74,7 +74,7 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function getAverageCTR()
     {
-      return $this->AverageCTR;
+        return $this->AverageCTR;
     }
 
     /**
@@ -83,8 +83,8 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function setAverageCTR($AverageCTR)
     {
-      $this->AverageCTR = $AverageCTR;
-      return $this;
+        $this->AverageCTR = $AverageCTR;
+        return $this;
     }
 
     /**
@@ -92,7 +92,7 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function getClickShare()
     {
-      return $this->ClickShare;
+        return $this->ClickShare;
     }
 
     /**
@@ -101,8 +101,8 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function setClickShare($ClickShare)
     {
-      $this->ClickShare = $ClickShare;
-      return $this;
+        $this->ClickShare = $ClickShare;
+        return $this;
     }
 
     /**
@@ -110,7 +110,7 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function getImpressionShare()
     {
-      return $this->ImpressionShare;
+        return $this->ImpressionShare;
     }
 
     /**
@@ -119,8 +119,8 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function setImpressionShare($ImpressionShare)
     {
-      $this->ImpressionShare = $ImpressionShare;
-      return $this;
+        $this->ImpressionShare = $ImpressionShare;
+        return $this;
     }
 
     /**
@@ -128,7 +128,7 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function getReferenceKeywordBid()
     {
-      return $this->ReferenceKeywordBid;
+        return $this->ReferenceKeywordBid;
     }
 
     /**
@@ -137,8 +137,8 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function setReferenceKeywordBid($ReferenceKeywordBid)
     {
-      $this->ReferenceKeywordBid = $ReferenceKeywordBid;
-      return $this;
+        $this->ReferenceKeywordBid = $ReferenceKeywordBid;
+        return $this;
     }
 
     /**
@@ -146,7 +146,7 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function getReferenceKeywordId()
     {
-      return $this->ReferenceKeywordId;
+        return $this->ReferenceKeywordId;
     }
 
     /**
@@ -155,8 +155,8 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function setReferenceKeywordId($ReferenceKeywordId)
     {
-      $this->ReferenceKeywordId = $ReferenceKeywordId;
-      return $this;
+        $this->ReferenceKeywordId = $ReferenceKeywordId;
+        return $this;
     }
 
     /**
@@ -164,7 +164,7 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function getReferenceKeywordMatchType()
     {
-      return $this->ReferenceKeywordMatchType;
+        return $this->ReferenceKeywordMatchType;
     }
 
     /**
@@ -173,8 +173,8 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function setReferenceKeywordMatchType($ReferenceKeywordMatchType)
     {
-      $this->ReferenceKeywordMatchType = $ReferenceKeywordMatchType;
-      return $this;
+        $this->ReferenceKeywordMatchType = $ReferenceKeywordMatchType;
+        return $this;
     }
 
     /**
@@ -182,7 +182,7 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function getSearchQueryKPIs()
     {
-      return $this->SearchQueryKPIs;
+        return $this->SearchQueryKPIs;
     }
 
     /**
@@ -191,8 +191,8 @@ class BroadMatchKeywordOpportunity extends KeywordOpportunity
      */
     public function setSearchQueryKPIs($SearchQueryKPIs)
     {
-      $this->SearchQueryKPIs = $SearchQueryKPIs;
-      return $this;
+        $this->SearchQueryKPIs = $SearchQueryKPIs;
+        return $this;
     }
 
 }

@@ -27,9 +27,9 @@ class AppealEditorialRejectionsRequest
      */
     public function __construct($EntityIdToParentIdAssociations = null, $EntityType = null, $JustificationText = null)
     {
-      $this->EntityIdToParentIdAssociations = $EntityIdToParentIdAssociations;
-      $this->EntityType = $EntityType;
-      $this->JustificationText = $JustificationText;
+    $this->EntityIdToParentIdAssociations = $EntityIdToParentIdAssociations;
+    $this->EntityType = $EntityType;
+    $this->JustificationText = $JustificationText;
     }
 
     /**
@@ -37,7 +37,7 @@ class AppealEditorialRejectionsRequest
      */
     public function getEntityIdToParentIdAssociations()
     {
-      return $this->EntityIdToParentIdAssociations;
+        return $this->EntityIdToParentIdAssociations;
     }
 
     /**
@@ -46,8 +46,8 @@ class AppealEditorialRejectionsRequest
      */
     public function setEntityIdToParentIdAssociations($EntityIdToParentIdAssociations)
     {
-      $this->EntityIdToParentIdAssociations = $EntityIdToParentIdAssociations;
-      return $this;
+        $this->EntityIdToParentIdAssociations = $EntityIdToParentIdAssociations;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class AppealEditorialRejectionsRequest
      */
     public function getEntityType()
     {
-      return $this->EntityType;
+        return $this->EntityType;
     }
 
     /**
@@ -64,8 +64,8 @@ class AppealEditorialRejectionsRequest
      */
     public function setEntityType($EntityType)
     {
-      $this->EntityType = $EntityType;
-      return $this;
+        $this->EntityType = $EntityType;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class AppealEditorialRejectionsRequest
      */
     public function getJustificationText()
     {
-      return $this->JustificationText;
+        return $this->JustificationText;
     }
 
     /**
@@ -82,8 +82,8 @@ class AppealEditorialRejectionsRequest
      */
     public function setJustificationText($JustificationText)
     {
-      $this->JustificationText = $JustificationText;
-      return $this;
+        $this->JustificationText = $JustificationText;
+        return $this;
     }
 
 }

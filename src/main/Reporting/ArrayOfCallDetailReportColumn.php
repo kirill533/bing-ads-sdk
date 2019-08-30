@@ -21,7 +21,7 @@ class ArrayOfCallDetailReportColumn implements \ArrayAccess, \IteratorAggregate,
      */
     public function getCallDetailReportColumn()
     {
-      return $this->CallDetailReportColumn;
+        return $this->CallDetailReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCallDetailReportColumn implements \ArrayAccess, \IteratorAggregate,
      */
     public function setCallDetailReportColumn(array $CallDetailReportColumn = null)
     {
-      $this->CallDetailReportColumn = $CallDetailReportColumn;
-      return $this;
+        $this->CallDetailReportColumn = $CallDetailReportColumn;
+        return $this;
     }
 
     /**

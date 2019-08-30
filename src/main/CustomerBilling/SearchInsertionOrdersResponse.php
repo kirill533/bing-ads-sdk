@@ -15,7 +15,7 @@ class SearchInsertionOrdersResponse
      */
     public function __construct($InsertionOrders = null)
     {
-      $this->InsertionOrders = $InsertionOrders;
+    $this->InsertionOrders = $InsertionOrders;
     }
 
     /**
@@ -23,7 +23,7 @@ class SearchInsertionOrdersResponse
      */
     public function getInsertionOrders()
     {
-      return $this->InsertionOrders;
+        return $this->InsertionOrders;
     }
 
     /**
@@ -32,8 +32,8 @@ class SearchInsertionOrdersResponse
      */
     public function setInsertionOrders($InsertionOrders)
     {
-      $this->InsertionOrders = $InsertionOrders;
-      return $this;
+        $this->InsertionOrders = $InsertionOrders;
+        return $this;
     }
 
 }

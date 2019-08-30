@@ -21,7 +21,7 @@ class ArrayOfProfessionalDemographicsAudienceReportColumn implements \ArrayAcces
      */
     public function getProfessionalDemographicsAudienceReportColumn()
     {
-      return $this->ProfessionalDemographicsAudienceReportColumn;
+        return $this->ProfessionalDemographicsAudienceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfProfessionalDemographicsAudienceReportColumn implements \ArrayAcces
      */
     public function setProfessionalDemographicsAudienceReportColumn(array $ProfessionalDemographicsAudienceReportColumn = null)
     {
-      $this->ProfessionalDemographicsAudienceReportColumn = $ProfessionalDemographicsAudienceReportColumn;
-      return $this;
+        $this->ProfessionalDemographicsAudienceReportColumn = $ProfessionalDemographicsAudienceReportColumn;
+        return $this;
     }
 
     /**

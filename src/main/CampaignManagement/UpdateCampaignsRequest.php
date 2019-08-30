@@ -27,9 +27,9 @@ class UpdateCampaignsRequest
      */
     public function __construct($AccountId = null, $Campaigns = null, $IncludeDynamicSearchAdsSource = null)
     {
-      $this->AccountId = $AccountId;
-      $this->Campaigns = $Campaigns;
-      $this->IncludeDynamicSearchAdsSource = $IncludeDynamicSearchAdsSource;
+    $this->AccountId = $AccountId;
+    $this->Campaigns = $Campaigns;
+    $this->IncludeDynamicSearchAdsSource = $IncludeDynamicSearchAdsSource;
     }
 
     /**
@@ -37,7 +37,7 @@ class UpdateCampaignsRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -46,8 +46,8 @@ class UpdateCampaignsRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class UpdateCampaignsRequest
      */
     public function getCampaigns()
     {
-      return $this->Campaigns;
+        return $this->Campaigns;
     }
 
     /**
@@ -64,8 +64,8 @@ class UpdateCampaignsRequest
      */
     public function setCampaigns($Campaigns)
     {
-      $this->Campaigns = $Campaigns;
-      return $this;
+        $this->Campaigns = $Campaigns;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class UpdateCampaignsRequest
      */
     public function getIncludeDynamicSearchAdsSource()
     {
-      return $this->IncludeDynamicSearchAdsSource;
+        return $this->IncludeDynamicSearchAdsSource;
     }
 
     /**
@@ -82,8 +82,8 @@ class UpdateCampaignsRequest
      */
     public function setIncludeDynamicSearchAdsSource($IncludeDynamicSearchAdsSource)
     {
-      $this->IncludeDynamicSearchAdsSource = $IncludeDynamicSearchAdsSource;
-      return $this;
+        $this->IncludeDynamicSearchAdsSource = $IncludeDynamicSearchAdsSource;
+        return $this;
     }
 
 }

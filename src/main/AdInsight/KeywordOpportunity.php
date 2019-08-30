@@ -68,7 +68,7 @@ class KeywordOpportunity extends Opportunity
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -76,7 +76,7 @@ class KeywordOpportunity extends Opportunity
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -85,8 +85,8 @@ class KeywordOpportunity extends Opportunity
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -94,7 +94,7 @@ class KeywordOpportunity extends Opportunity
      */
     public function getAdGroupName()
     {
-      return $this->AdGroupName;
+        return $this->AdGroupName;
     }
 
     /**
@@ -103,8 +103,8 @@ class KeywordOpportunity extends Opportunity
      */
     public function setAdGroupName($AdGroupName)
     {
-      $this->AdGroupName = $AdGroupName;
-      return $this;
+        $this->AdGroupName = $AdGroupName;
+        return $this;
     }
 
     /**
@@ -112,7 +112,7 @@ class KeywordOpportunity extends Opportunity
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -121,8 +121,8 @@ class KeywordOpportunity extends Opportunity
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -130,7 +130,7 @@ class KeywordOpportunity extends Opportunity
      */
     public function getCampaignName()
     {
-      return $this->CampaignName;
+        return $this->CampaignName;
     }
 
     /**
@@ -139,8 +139,8 @@ class KeywordOpportunity extends Opportunity
      */
     public function setCampaignName($CampaignName)
     {
-      $this->CampaignName = $CampaignName;
-      return $this;
+        $this->CampaignName = $CampaignName;
+        return $this;
     }
 
     /**
@@ -148,7 +148,7 @@ class KeywordOpportunity extends Opportunity
      */
     public function getCompetition()
     {
-      return $this->Competition;
+        return $this->Competition;
     }
 
     /**
@@ -157,8 +157,8 @@ class KeywordOpportunity extends Opportunity
      */
     public function setCompetition($Competition)
     {
-      $this->Competition = $Competition;
-      return $this;
+        $this->Competition = $Competition;
+        return $this;
     }
 
     /**
@@ -166,7 +166,7 @@ class KeywordOpportunity extends Opportunity
      */
     public function getEstimatedIncreaseInClicks()
     {
-      return $this->EstimatedIncreaseInClicks;
+        return $this->EstimatedIncreaseInClicks;
     }
 
     /**
@@ -175,8 +175,8 @@ class KeywordOpportunity extends Opportunity
      */
     public function setEstimatedIncreaseInClicks($EstimatedIncreaseInClicks)
     {
-      $this->EstimatedIncreaseInClicks = $EstimatedIncreaseInClicks;
-      return $this;
+        $this->EstimatedIncreaseInClicks = $EstimatedIncreaseInClicks;
+        return $this;
     }
 
     /**
@@ -184,7 +184,7 @@ class KeywordOpportunity extends Opportunity
      */
     public function getEstimatedIncreaseInCost()
     {
-      return $this->EstimatedIncreaseInCost;
+        return $this->EstimatedIncreaseInCost;
     }
 
     /**
@@ -193,8 +193,8 @@ class KeywordOpportunity extends Opportunity
      */
     public function setEstimatedIncreaseInCost($EstimatedIncreaseInCost)
     {
-      $this->EstimatedIncreaseInCost = $EstimatedIncreaseInCost;
-      return $this;
+        $this->EstimatedIncreaseInCost = $EstimatedIncreaseInCost;
+        return $this;
     }
 
     /**
@@ -202,7 +202,7 @@ class KeywordOpportunity extends Opportunity
      */
     public function getEstimatedIncreaseInImpressions()
     {
-      return $this->EstimatedIncreaseInImpressions;
+        return $this->EstimatedIncreaseInImpressions;
     }
 
     /**
@@ -211,8 +211,8 @@ class KeywordOpportunity extends Opportunity
      */
     public function setEstimatedIncreaseInImpressions($EstimatedIncreaseInImpressions)
     {
-      $this->EstimatedIncreaseInImpressions = $EstimatedIncreaseInImpressions;
-      return $this;
+        $this->EstimatedIncreaseInImpressions = $EstimatedIncreaseInImpressions;
+        return $this;
     }
 
     /**
@@ -220,7 +220,7 @@ class KeywordOpportunity extends Opportunity
      */
     public function getMatchType()
     {
-      return $this->MatchType;
+        return $this->MatchType;
     }
 
     /**
@@ -229,8 +229,8 @@ class KeywordOpportunity extends Opportunity
      */
     public function setMatchType($MatchType)
     {
-      $this->MatchType = $MatchType;
-      return $this;
+        $this->MatchType = $MatchType;
+        return $this;
     }
 
     /**
@@ -238,7 +238,7 @@ class KeywordOpportunity extends Opportunity
      */
     public function getMonthlySearches()
     {
-      return $this->MonthlySearches;
+        return $this->MonthlySearches;
     }
 
     /**
@@ -247,8 +247,8 @@ class KeywordOpportunity extends Opportunity
      */
     public function setMonthlySearches($MonthlySearches)
     {
-      $this->MonthlySearches = $MonthlySearches;
-      return $this;
+        $this->MonthlySearches = $MonthlySearches;
+        return $this;
     }
 
     /**
@@ -256,7 +256,7 @@ class KeywordOpportunity extends Opportunity
      */
     public function getSuggestedBid()
     {
-      return $this->SuggestedBid;
+        return $this->SuggestedBid;
     }
 
     /**
@@ -265,8 +265,8 @@ class KeywordOpportunity extends Opportunity
      */
     public function setSuggestedBid($SuggestedBid)
     {
-      $this->SuggestedBid = $SuggestedBid;
-      return $this;
+        $this->SuggestedBid = $SuggestedBid;
+        return $this;
     }
 
     /**
@@ -274,7 +274,7 @@ class KeywordOpportunity extends Opportunity
      */
     public function getSuggestedKeyword()
     {
-      return $this->SuggestedKeyword;
+        return $this->SuggestedKeyword;
     }
 
     /**
@@ -283,8 +283,8 @@ class KeywordOpportunity extends Opportunity
      */
     public function setSuggestedKeyword($SuggestedKeyword)
     {
-      $this->SuggestedKeyword = $SuggestedKeyword;
-      return $this;
+        $this->SuggestedKeyword = $SuggestedKeyword;
+        return $this;
     }
 
 }

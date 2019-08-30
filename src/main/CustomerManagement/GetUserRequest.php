@@ -21,8 +21,8 @@ class GetUserRequest
      */
     public function __construct($UserId = null, $IncludeLinkedAccountIds = null)
     {
-      $this->UserId = $UserId;
-      $this->IncludeLinkedAccountIds = $IncludeLinkedAccountIds;
+    $this->UserId = $UserId;
+    $this->IncludeLinkedAccountIds = $IncludeLinkedAccountIds;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetUserRequest
      */
     public function getUserId()
     {
-      return $this->UserId;
+        return $this->UserId;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetUserRequest
      */
     public function setUserId($UserId)
     {
-      $this->UserId = $UserId;
-      return $this;
+        $this->UserId = $UserId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetUserRequest
      */
     public function getIncludeLinkedAccountIds()
     {
-      return $this->IncludeLinkedAccountIds;
+        return $this->IncludeLinkedAccountIds;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetUserRequest
      */
     public function setIncludeLinkedAccountIds($IncludeLinkedAccountIds)
     {
-      $this->IncludeLinkedAccountIds = $IncludeLinkedAccountIds;
-      return $this;
+        $this->IncludeLinkedAccountIds = $IncludeLinkedAccountIds;
+        return $this;
     }
 
 }

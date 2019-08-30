@@ -27,9 +27,9 @@ class GetSharedEntityAssociationsBySharedEntityIdsRequest
      */
     public function __construct($EntityType = null, $SharedEntityIds = null, $SharedEntityType = null)
     {
-      $this->EntityType = $EntityType;
-      $this->SharedEntityIds = $SharedEntityIds;
-      $this->SharedEntityType = $SharedEntityType;
+    $this->EntityType = $EntityType;
+    $this->SharedEntityIds = $SharedEntityIds;
+    $this->SharedEntityType = $SharedEntityType;
     }
 
     /**
@@ -37,7 +37,7 @@ class GetSharedEntityAssociationsBySharedEntityIdsRequest
      */
     public function getEntityType()
     {
-      return $this->EntityType;
+        return $this->EntityType;
     }
 
     /**
@@ -46,8 +46,8 @@ class GetSharedEntityAssociationsBySharedEntityIdsRequest
      */
     public function setEntityType($EntityType)
     {
-      $this->EntityType = $EntityType;
-      return $this;
+        $this->EntityType = $EntityType;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class GetSharedEntityAssociationsBySharedEntityIdsRequest
      */
     public function getSharedEntityIds()
     {
-      return $this->SharedEntityIds;
+        return $this->SharedEntityIds;
     }
 
     /**
@@ -64,8 +64,8 @@ class GetSharedEntityAssociationsBySharedEntityIdsRequest
      */
     public function setSharedEntityIds($SharedEntityIds)
     {
-      $this->SharedEntityIds = $SharedEntityIds;
-      return $this;
+        $this->SharedEntityIds = $SharedEntityIds;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetSharedEntityAssociationsBySharedEntityIdsRequest
      */
     public function getSharedEntityType()
     {
-      return $this->SharedEntityType;
+        return $this->SharedEntityType;
     }
 
     /**
@@ -82,8 +82,8 @@ class GetSharedEntityAssociationsBySharedEntityIdsRequest
      */
     public function setSharedEntityType($SharedEntityType)
     {
-      $this->SharedEntityType = $SharedEntityType;
-      return $this;
+        $this->SharedEntityType = $SharedEntityType;
+        return $this;
     }
 
 }

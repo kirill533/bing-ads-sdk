@@ -31,7 +31,7 @@ class BillingDocument
      */
     public function getData()
     {
-      return $this->Data;
+        return $this->Data;
     }
 
     /**
@@ -40,8 +40,8 @@ class BillingDocument
      */
     public function setData($Data)
     {
-      $this->Data = $Data;
-      return $this;
+        $this->Data = $Data;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class BillingDocument
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -58,8 +58,8 @@ class BillingDocument
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class BillingDocument
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -76,8 +76,8 @@ class BillingDocument
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
 }

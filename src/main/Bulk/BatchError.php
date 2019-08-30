@@ -56,7 +56,7 @@ class BatchError
      */
     public function getCode()
     {
-      return $this->Code;
+        return $this->Code;
     }
 
     /**
@@ -65,8 +65,8 @@ class BatchError
      */
     public function setCode($Code)
     {
-      $this->Code = $Code;
-      return $this;
+        $this->Code = $Code;
+        return $this;
     }
 
     /**
@@ -74,7 +74,7 @@ class BatchError
      */
     public function getDetails()
     {
-      return $this->Details;
+        return $this->Details;
     }
 
     /**
@@ -83,8 +83,8 @@ class BatchError
      */
     public function setDetails($Details)
     {
-      $this->Details = $Details;
-      return $this;
+        $this->Details = $Details;
+        return $this;
     }
 
     /**
@@ -92,7 +92,7 @@ class BatchError
      */
     public function getErrorCode()
     {
-      return $this->ErrorCode;
+        return $this->ErrorCode;
     }
 
     /**
@@ -101,8 +101,8 @@ class BatchError
      */
     public function setErrorCode($ErrorCode)
     {
-      $this->ErrorCode = $ErrorCode;
-      return $this;
+        $this->ErrorCode = $ErrorCode;
+        return $this;
     }
 
     /**
@@ -110,7 +110,7 @@ class BatchError
      */
     public function getFieldPath()
     {
-      return $this->FieldPath;
+        return $this->FieldPath;
     }
 
     /**
@@ -119,8 +119,8 @@ class BatchError
      */
     public function setFieldPath($FieldPath)
     {
-      $this->FieldPath = $FieldPath;
-      return $this;
+        $this->FieldPath = $FieldPath;
+        return $this;
     }
 
     /**
@@ -128,7 +128,7 @@ class BatchError
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -137,8 +137,8 @@ class BatchError
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
     /**
@@ -146,7 +146,7 @@ class BatchError
      */
     public function getIndex()
     {
-      return $this->Index;
+        return $this->Index;
     }
 
     /**
@@ -155,8 +155,8 @@ class BatchError
      */
     public function setIndex($Index)
     {
-      $this->Index = $Index;
-      return $this;
+        $this->Index = $Index;
+        return $this;
     }
 
     /**
@@ -164,7 +164,7 @@ class BatchError
      */
     public function getMessage()
     {
-      return $this->Message;
+        return $this->Message;
     }
 
     /**
@@ -173,8 +173,8 @@ class BatchError
      */
     public function setMessage($Message)
     {
-      $this->Message = $Message;
-      return $this;
+        $this->Message = $Message;
+        return $this;
     }
 
     /**
@@ -182,7 +182,7 @@ class BatchError
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -191,8 +191,8 @@ class BatchError
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
 }

@@ -21,7 +21,7 @@ class ArrayOfAdExtensionIdToEntityIdAssociation implements \ArrayAccess, \Iterat
      */
     public function getAdExtensionIdToEntityIdAssociation()
     {
-      return $this->AdExtensionIdToEntityIdAssociation;
+        return $this->AdExtensionIdToEntityIdAssociation;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdExtensionIdToEntityIdAssociation implements \ArrayAccess, \Iterat
      */
     public function setAdExtensionIdToEntityIdAssociation(array $AdExtensionIdToEntityIdAssociation = null)
     {
-      $this->AdExtensionIdToEntityIdAssociation = $AdExtensionIdToEntityIdAssociation;
-      return $this;
+        $this->AdExtensionIdToEntityIdAssociation = $AdExtensionIdToEntityIdAssociation;
+        return $this;
     }
 
     /**

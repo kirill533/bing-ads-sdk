@@ -30,7 +30,7 @@ class Company
      */
     public function __construct($ProfileId = null)
     {
-      $this->ProfileId = $ProfileId;
+    $this->ProfileId = $ProfileId;
     }
 
     /**
@@ -38,7 +38,7 @@ class Company
      */
     public function getLogoUrl()
     {
-      return $this->LogoUrl;
+        return $this->LogoUrl;
     }
 
     /**
@@ -47,8 +47,8 @@ class Company
      */
     public function setLogoUrl($LogoUrl)
     {
-      $this->LogoUrl = $LogoUrl;
-      return $this;
+        $this->LogoUrl = $LogoUrl;
+        return $this;
     }
 
     /**
@@ -56,7 +56,7 @@ class Company
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -65,8 +65,8 @@ class Company
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -74,7 +74,7 @@ class Company
      */
     public function getProfileId()
     {
-      return $this->ProfileId;
+        return $this->ProfileId;
     }
 
     /**
@@ -83,8 +83,8 @@ class Company
      */
     public function setProfileId($ProfileId)
     {
-      $this->ProfileId = $ProfileId;
-      return $this;
+        $this->ProfileId = $ProfileId;
+        return $this;
     }
 
     /**
@@ -92,7 +92,7 @@ class Company
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -101,8 +101,8 @@ class Company
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
 }

@@ -39,11 +39,11 @@ class DayTime
      */
     public function __construct($Day = null, $EndHour = null, $EndMinute = null, $StartHour = null, $StartMinute = null)
     {
-      $this->Day = $Day;
-      $this->EndHour = $EndHour;
-      $this->EndMinute = $EndMinute;
-      $this->StartHour = $StartHour;
-      $this->StartMinute = $StartMinute;
+    $this->Day = $Day;
+    $this->EndHour = $EndHour;
+    $this->EndMinute = $EndMinute;
+    $this->StartHour = $StartHour;
+    $this->StartMinute = $StartMinute;
     }
 
     /**
@@ -51,7 +51,7 @@ class DayTime
      */
     public function getDay()
     {
-      return $this->Day;
+        return $this->Day;
     }
 
     /**
@@ -60,8 +60,8 @@ class DayTime
      */
     public function setDay($Day)
     {
-      $this->Day = $Day;
-      return $this;
+        $this->Day = $Day;
+        return $this;
     }
 
     /**
@@ -69,7 +69,7 @@ class DayTime
      */
     public function getEndHour()
     {
-      return $this->EndHour;
+        return $this->EndHour;
     }
 
     /**
@@ -78,8 +78,8 @@ class DayTime
      */
     public function setEndHour($EndHour)
     {
-      $this->EndHour = $EndHour;
-      return $this;
+        $this->EndHour = $EndHour;
+        return $this;
     }
 
     /**
@@ -87,7 +87,7 @@ class DayTime
      */
     public function getEndMinute()
     {
-      return $this->EndMinute;
+        return $this->EndMinute;
     }
 
     /**
@@ -96,8 +96,8 @@ class DayTime
      */
     public function setEndMinute($EndMinute)
     {
-      $this->EndMinute = $EndMinute;
-      return $this;
+        $this->EndMinute = $EndMinute;
+        return $this;
     }
 
     /**
@@ -105,7 +105,7 @@ class DayTime
      */
     public function getStartHour()
     {
-      return $this->StartHour;
+        return $this->StartHour;
     }
 
     /**
@@ -114,8 +114,8 @@ class DayTime
      */
     public function setStartHour($StartHour)
     {
-      $this->StartHour = $StartHour;
-      return $this;
+        $this->StartHour = $StartHour;
+        return $this;
     }
 
     /**
@@ -123,7 +123,7 @@ class DayTime
      */
     public function getStartMinute()
     {
-      return $this->StartMinute;
+        return $this->StartMinute;
     }
 
     /**
@@ -132,8 +132,8 @@ class DayTime
      */
     public function setStartMinute($StartMinute)
     {
-      $this->StartMinute = $StartMinute;
-      return $this;
+        $this->StartMinute = $StartMinute;
+        return $this;
     }
 
 }

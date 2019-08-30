@@ -21,7 +21,7 @@ class ArrayOfShareOfVoiceReportColumn implements \ArrayAccess, \IteratorAggregat
      */
     public function getShareOfVoiceReportColumn()
     {
-      return $this->ShareOfVoiceReportColumn;
+        return $this->ShareOfVoiceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfShareOfVoiceReportColumn implements \ArrayAccess, \IteratorAggregat
      */
     public function setShareOfVoiceReportColumn(array $ShareOfVoiceReportColumn = null)
     {
-      $this->ShareOfVoiceReportColumn = $ShareOfVoiceReportColumn;
-      return $this;
+        $this->ShareOfVoiceReportColumn = $ShareOfVoiceReportColumn;
+        return $this;
     }
 
     /**

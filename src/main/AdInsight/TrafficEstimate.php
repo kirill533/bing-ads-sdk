@@ -46,7 +46,7 @@ class TrafficEstimate
      */
     public function getAverageCpc()
     {
-      return $this->AverageCpc;
+        return $this->AverageCpc;
     }
 
     /**
@@ -55,8 +55,8 @@ class TrafficEstimate
      */
     public function setAverageCpc($AverageCpc)
     {
-      $this->AverageCpc = $AverageCpc;
-      return $this;
+        $this->AverageCpc = $AverageCpc;
+        return $this;
     }
 
     /**
@@ -64,7 +64,7 @@ class TrafficEstimate
      */
     public function getAveragePosition()
     {
-      return $this->AveragePosition;
+        return $this->AveragePosition;
     }
 
     /**
@@ -73,8 +73,8 @@ class TrafficEstimate
      */
     public function setAveragePosition($AveragePosition)
     {
-      $this->AveragePosition = $AveragePosition;
-      return $this;
+        $this->AveragePosition = $AveragePosition;
+        return $this;
     }
 
     /**
@@ -82,7 +82,7 @@ class TrafficEstimate
      */
     public function getClicks()
     {
-      return $this->Clicks;
+        return $this->Clicks;
     }
 
     /**
@@ -91,8 +91,8 @@ class TrafficEstimate
      */
     public function setClicks($Clicks)
     {
-      $this->Clicks = $Clicks;
-      return $this;
+        $this->Clicks = $Clicks;
+        return $this;
     }
 
     /**
@@ -100,7 +100,7 @@ class TrafficEstimate
      */
     public function getCtr()
     {
-      return $this->Ctr;
+        return $this->Ctr;
     }
 
     /**
@@ -109,8 +109,8 @@ class TrafficEstimate
      */
     public function setCtr($Ctr)
     {
-      $this->Ctr = $Ctr;
-      return $this;
+        $this->Ctr = $Ctr;
+        return $this;
     }
 
     /**
@@ -118,7 +118,7 @@ class TrafficEstimate
      */
     public function getImpressions()
     {
-      return $this->Impressions;
+        return $this->Impressions;
     }
 
     /**
@@ -127,8 +127,8 @@ class TrafficEstimate
      */
     public function setImpressions($Impressions)
     {
-      $this->Impressions = $Impressions;
-      return $this;
+        $this->Impressions = $Impressions;
+        return $this;
     }
 
     /**
@@ -136,7 +136,7 @@ class TrafficEstimate
      */
     public function getTotalCost()
     {
-      return $this->TotalCost;
+        return $this->TotalCost;
     }
 
     /**
@@ -145,8 +145,8 @@ class TrafficEstimate
      */
     public function setTotalCost($TotalCost)
     {
-      $this->TotalCost = $TotalCost;
-      return $this;
+        $this->TotalCost = $TotalCost;
+        return $this;
     }
 
 }

@@ -27,9 +27,9 @@ class AddCampaignCriterionsResponse
      */
     public function __construct($CampaignCriterionIds = null, $IsMigrated = null, $NestedPartialErrors = null)
     {
-      $this->CampaignCriterionIds = $CampaignCriterionIds;
-      $this->IsMigrated = $IsMigrated;
-      $this->NestedPartialErrors = $NestedPartialErrors;
+    $this->CampaignCriterionIds = $CampaignCriterionIds;
+    $this->IsMigrated = $IsMigrated;
+    $this->NestedPartialErrors = $NestedPartialErrors;
     }
 
     /**
@@ -37,7 +37,7 @@ class AddCampaignCriterionsResponse
      */
     public function getCampaignCriterionIds()
     {
-      return $this->CampaignCriterionIds;
+        return $this->CampaignCriterionIds;
     }
 
     /**
@@ -46,8 +46,8 @@ class AddCampaignCriterionsResponse
      */
     public function setCampaignCriterionIds($CampaignCriterionIds)
     {
-      $this->CampaignCriterionIds = $CampaignCriterionIds;
-      return $this;
+        $this->CampaignCriterionIds = $CampaignCriterionIds;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class AddCampaignCriterionsResponse
      */
     public function getIsMigrated()
     {
-      return $this->IsMigrated;
+        return $this->IsMigrated;
     }
 
     /**
@@ -64,8 +64,8 @@ class AddCampaignCriterionsResponse
      */
     public function setIsMigrated($IsMigrated)
     {
-      $this->IsMigrated = $IsMigrated;
-      return $this;
+        $this->IsMigrated = $IsMigrated;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class AddCampaignCriterionsResponse
      */
     public function getNestedPartialErrors()
     {
-      return $this->NestedPartialErrors;
+        return $this->NestedPartialErrors;
     }
 
     /**
@@ -82,8 +82,8 @@ class AddCampaignCriterionsResponse
      */
     public function setNestedPartialErrors($NestedPartialErrors)
     {
-      $this->NestedPartialErrors = $NestedPartialErrors;
-      return $this;
+        $this->NestedPartialErrors = $NestedPartialErrors;
+        return $this;
     }
 
 }

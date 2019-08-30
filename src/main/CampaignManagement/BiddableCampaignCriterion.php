@@ -15,7 +15,7 @@ class BiddableCampaignCriterion extends CampaignCriterion
      */
     public function __construct($CampaignId = null)
     {
-      parent::__construct($CampaignId);
+        parent::__construct($CampaignId);
     }
 
     /**
@@ -23,7 +23,7 @@ class BiddableCampaignCriterion extends CampaignCriterion
      */
     public function getCriterionBid()
     {
-      return $this->CriterionBid;
+        return $this->CriterionBid;
     }
 
     /**
@@ -32,8 +32,8 @@ class BiddableCampaignCriterion extends CampaignCriterion
      */
     public function setCriterionBid($CriterionBid)
     {
-      $this->CriterionBid = $CriterionBid;
-      return $this;
+        $this->CriterionBid = $CriterionBid;
+        return $this;
     }
 
 }

@@ -13,7 +13,7 @@ class Webpage extends Criterion
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class Webpage extends Criterion
      */
     public function getParameter()
     {
-      return $this->Parameter;
+        return $this->Parameter;
     }
 
     /**
@@ -30,8 +30,8 @@ class Webpage extends Criterion
      */
     public function setParameter($Parameter)
     {
-      $this->Parameter = $Parameter;
-      return $this;
+        $this->Parameter = $Parameter;
+        return $this;
     }
 
 }

@@ -21,8 +21,8 @@ class GetCampaignIdsByBudgetIdsResponse
      */
     public function __construct($CampaignIdCollection = null, $PartialErrors = null)
     {
-      $this->CampaignIdCollection = $CampaignIdCollection;
-      $this->PartialErrors = $PartialErrors;
+    $this->CampaignIdCollection = $CampaignIdCollection;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetCampaignIdsByBudgetIdsResponse
      */
     public function getCampaignIdCollection()
     {
-      return $this->CampaignIdCollection;
+        return $this->CampaignIdCollection;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetCampaignIdsByBudgetIdsResponse
      */
     public function setCampaignIdCollection($CampaignIdCollection)
     {
-      $this->CampaignIdCollection = $CampaignIdCollection;
-      return $this;
+        $this->CampaignIdCollection = $CampaignIdCollection;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetCampaignIdsByBudgetIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetCampaignIdsByBudgetIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

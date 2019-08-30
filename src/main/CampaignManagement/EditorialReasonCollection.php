@@ -36,7 +36,7 @@ class EditorialReasonCollection
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -45,8 +45,8 @@ class EditorialReasonCollection
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class EditorialReasonCollection
      */
     public function getAdOrKeywordId()
     {
-      return $this->AdOrKeywordId;
+        return $this->AdOrKeywordId;
     }
 
     /**
@@ -63,8 +63,8 @@ class EditorialReasonCollection
      */
     public function setAdOrKeywordId($AdOrKeywordId)
     {
-      $this->AdOrKeywordId = $AdOrKeywordId;
-      return $this;
+        $this->AdOrKeywordId = $AdOrKeywordId;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class EditorialReasonCollection
      */
     public function getAppealStatus()
     {
-      return $this->AppealStatus;
+        return $this->AppealStatus;
     }
 
     /**
@@ -81,8 +81,8 @@ class EditorialReasonCollection
      */
     public function setAppealStatus($AppealStatus)
     {
-      $this->AppealStatus = $AppealStatus;
-      return $this;
+        $this->AppealStatus = $AppealStatus;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class EditorialReasonCollection
      */
     public function getReasons()
     {
-      return $this->Reasons;
+        return $this->Reasons;
     }
 
     /**
@@ -99,8 +99,8 @@ class EditorialReasonCollection
      */
     public function setReasons($Reasons)
     {
-      $this->Reasons = $Reasons;
-      return $this;
+        $this->Reasons = $Reasons;
+        return $this;
     }
 
 }

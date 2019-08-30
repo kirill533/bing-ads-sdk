@@ -18,7 +18,7 @@ class UrlGoal extends ConversionGoal
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -26,7 +26,7 @@ class UrlGoal extends ConversionGoal
      */
     public function getUrlExpression()
     {
-      return $this->UrlExpression;
+        return $this->UrlExpression;
     }
 
     /**
@@ -35,8 +35,8 @@ class UrlGoal extends ConversionGoal
      */
     public function setUrlExpression($UrlExpression)
     {
-      $this->UrlExpression = $UrlExpression;
-      return $this;
+        $this->UrlExpression = $UrlExpression;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class UrlGoal extends ConversionGoal
      */
     public function getUrlOperator()
     {
-      return $this->UrlOperator;
+        return $this->UrlOperator;
     }
 
     /**
@@ -53,8 +53,8 @@ class UrlGoal extends ConversionGoal
      */
     public function setUrlOperator($UrlOperator)
     {
-      $this->UrlOperator = $UrlOperator;
-      return $this;
+        $this->UrlOperator = $UrlOperator;
+        return $this;
     }
 
 }

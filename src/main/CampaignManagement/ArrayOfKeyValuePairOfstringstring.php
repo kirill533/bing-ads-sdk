@@ -21,7 +21,7 @@ class ArrayOfKeyValuePairOfstringstring implements \ArrayAccess, \IteratorAggreg
      */
     public function getKeyValuePairOfstringstring()
     {
-      return $this->KeyValuePairOfstringstring;
+        return $this->KeyValuePairOfstringstring;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeyValuePairOfstringstring implements \ArrayAccess, \IteratorAggreg
      */
     public function setKeyValuePairOfstringstring(array $KeyValuePairOfstringstring = null)
     {
-      $this->KeyValuePairOfstringstring = $KeyValuePairOfstringstring;
-      return $this;
+        $this->KeyValuePairOfstringstring = $KeyValuePairOfstringstring;
+        return $this;
     }
 
     /**

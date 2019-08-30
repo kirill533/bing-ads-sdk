@@ -21,8 +21,8 @@ class AddClientLinksResponse
      */
     public function __construct($OperationErrors = null, $PartialErrors = null)
     {
-      $this->OperationErrors = $OperationErrors;
-      $this->PartialErrors = $PartialErrors;
+    $this->OperationErrors = $OperationErrors;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class AddClientLinksResponse
      */
     public function getOperationErrors()
     {
-      return $this->OperationErrors;
+        return $this->OperationErrors;
     }
 
     /**
@@ -39,8 +39,8 @@ class AddClientLinksResponse
      */
     public function setOperationErrors($OperationErrors)
     {
-      $this->OperationErrors = $OperationErrors;
-      return $this;
+        $this->OperationErrors = $OperationErrors;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class AddClientLinksResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class AddClientLinksResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

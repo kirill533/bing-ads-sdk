@@ -21,7 +21,7 @@ class ArrayOflong implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getLong()
     {
-      return $this->long;
+        return $this->long;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOflong implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setLong(array $long = null)
     {
-      $this->long = $long;
-      return $this;
+        $this->long = $long;
+        return $this;
     }
 
     /**

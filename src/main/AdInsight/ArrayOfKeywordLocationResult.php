@@ -21,7 +21,7 @@ class ArrayOfKeywordLocationResult implements \ArrayAccess, \IteratorAggregate, 
      */
     public function getKeywordLocationResult()
     {
-      return $this->KeywordLocationResult;
+        return $this->KeywordLocationResult;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordLocationResult implements \ArrayAccess, \IteratorAggregate, 
      */
     public function setKeywordLocationResult(array $KeywordLocationResult = null)
     {
-      $this->KeywordLocationResult = $KeywordLocationResult;
-      return $this;
+        $this->KeywordLocationResult = $KeywordLocationResult;
+        return $this;
     }
 
     /**

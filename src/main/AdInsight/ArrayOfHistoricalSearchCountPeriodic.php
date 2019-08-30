@@ -21,7 +21,7 @@ class ArrayOfHistoricalSearchCountPeriodic implements \ArrayAccess, \IteratorAgg
      */
     public function getHistoricalSearchCountPeriodic()
     {
-      return $this->HistoricalSearchCountPeriodic;
+        return $this->HistoricalSearchCountPeriodic;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfHistoricalSearchCountPeriodic implements \ArrayAccess, \IteratorAgg
      */
     public function setHistoricalSearchCountPeriodic(array $HistoricalSearchCountPeriodic = null)
     {
-      $this->HistoricalSearchCountPeriodic = $HistoricalSearchCountPeriodic;
-      return $this;
+        $this->HistoricalSearchCountPeriodic = $HistoricalSearchCountPeriodic;
+        return $this;
     }
 
     /**

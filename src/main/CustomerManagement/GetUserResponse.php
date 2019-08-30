@@ -21,8 +21,8 @@ class GetUserResponse
      */
     public function __construct($User = null, $CustomerRoles = null)
     {
-      $this->User = $User;
-      $this->CustomerRoles = $CustomerRoles;
+    $this->User = $User;
+    $this->CustomerRoles = $CustomerRoles;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetUserResponse
      */
     public function getUser()
     {
-      return $this->User;
+        return $this->User;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetUserResponse
      */
     public function setUser($User)
     {
-      $this->User = $User;
-      return $this;
+        $this->User = $User;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetUserResponse
      */
     public function getCustomerRoles()
     {
-      return $this->CustomerRoles;
+        return $this->CustomerRoles;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetUserResponse
      */
     public function setCustomerRoles($CustomerRoles)
     {
-      $this->CustomerRoles = $CustomerRoles;
-      return $this;
+        $this->CustomerRoles = $CustomerRoles;
+        return $this;
     }
 
 }

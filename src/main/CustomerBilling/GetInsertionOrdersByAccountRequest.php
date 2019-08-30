@@ -21,8 +21,8 @@ class GetInsertionOrdersByAccountRequest
      */
     public function __construct($AccountId = null, $InsertionOrderIds = null)
     {
-      $this->AccountId = $AccountId;
-      $this->InsertionOrderIds = $InsertionOrderIds;
+    $this->AccountId = $AccountId;
+    $this->InsertionOrderIds = $InsertionOrderIds;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetInsertionOrdersByAccountRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetInsertionOrdersByAccountRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetInsertionOrdersByAccountRequest
      */
     public function getInsertionOrderIds()
     {
-      return $this->InsertionOrderIds;
+        return $this->InsertionOrderIds;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetInsertionOrdersByAccountRequest
      */
     public function setInsertionOrderIds($InsertionOrderIds)
     {
-      $this->InsertionOrderIds = $InsertionOrderIds;
-      return $this;
+        $this->InsertionOrderIds = $InsertionOrderIds;
+        return $this;
     }
 
 }

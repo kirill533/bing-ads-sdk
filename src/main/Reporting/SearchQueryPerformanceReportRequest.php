@@ -35,8 +35,8 @@ class SearchQueryPerformanceReportRequest extends ReportRequest
      */
     public function __construct($Aggregation = null)
     {
-      parent::__construct();
-      $this->Aggregation = $Aggregation;
+        parent::__construct();
+    $this->Aggregation = $Aggregation;
     }
 
     /**
@@ -44,7 +44,7 @@ class SearchQueryPerformanceReportRequest extends ReportRequest
      */
     public function getAggregation()
     {
-      return $this->Aggregation;
+        return $this->Aggregation;
     }
 
     /**
@@ -53,8 +53,8 @@ class SearchQueryPerformanceReportRequest extends ReportRequest
      */
     public function setAggregation($Aggregation)
     {
-      $this->Aggregation = $Aggregation;
-      return $this;
+        $this->Aggregation = $Aggregation;
+        return $this;
     }
 
     /**
@@ -62,7 +62,7 @@ class SearchQueryPerformanceReportRequest extends ReportRequest
      */
     public function getColumns()
     {
-      return $this->Columns;
+        return $this->Columns;
     }
 
     /**
@@ -71,8 +71,8 @@ class SearchQueryPerformanceReportRequest extends ReportRequest
      */
     public function setColumns($Columns)
     {
-      $this->Columns = $Columns;
-      return $this;
+        $this->Columns = $Columns;
+        return $this;
     }
 
     /**
@@ -80,7 +80,7 @@ class SearchQueryPerformanceReportRequest extends ReportRequest
      */
     public function getFilter()
     {
-      return $this->Filter;
+        return $this->Filter;
     }
 
     /**
@@ -89,8 +89,8 @@ class SearchQueryPerformanceReportRequest extends ReportRequest
      */
     public function setFilter($Filter)
     {
-      $this->Filter = $Filter;
-      return $this;
+        $this->Filter = $Filter;
+        return $this;
     }
 
     /**
@@ -98,7 +98,7 @@ class SearchQueryPerformanceReportRequest extends ReportRequest
      */
     public function getScope()
     {
-      return $this->Scope;
+        return $this->Scope;
     }
 
     /**
@@ -107,8 +107,8 @@ class SearchQueryPerformanceReportRequest extends ReportRequest
      */
     public function setScope($Scope)
     {
-      $this->Scope = $Scope;
-      return $this;
+        $this->Scope = $Scope;
+        return $this;
     }
 
     /**
@@ -116,7 +116,7 @@ class SearchQueryPerformanceReportRequest extends ReportRequest
      */
     public function getTime()
     {
-      return $this->Time;
+        return $this->Time;
     }
 
     /**
@@ -125,8 +125,8 @@ class SearchQueryPerformanceReportRequest extends ReportRequest
      */
     public function setTime($Time)
     {
-      $this->Time = $Time;
-      return $this;
+        $this->Time = $Time;
+        return $this;
     }
 
 }

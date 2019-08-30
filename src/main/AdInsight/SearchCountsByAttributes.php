@@ -26,7 +26,7 @@ class SearchCountsByAttributes
      */
     public function getDevice()
     {
-      return $this->Device;
+        return $this->Device;
     }
 
     /**
@@ -35,8 +35,8 @@ class SearchCountsByAttributes
      */
     public function setDevice($Device)
     {
-      $this->Device = $Device;
-      return $this;
+        $this->Device = $Device;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class SearchCountsByAttributes
      */
     public function getHistoricalSearchCounts()
     {
-      return $this->HistoricalSearchCounts;
+        return $this->HistoricalSearchCounts;
     }
 
     /**
@@ -53,8 +53,8 @@ class SearchCountsByAttributes
      */
     public function setHistoricalSearchCounts($HistoricalSearchCounts)
     {
-      $this->HistoricalSearchCounts = $HistoricalSearchCounts;
-      return $this;
+        $this->HistoricalSearchCounts = $HistoricalSearchCounts;
+        return $this;
     }
 
 }

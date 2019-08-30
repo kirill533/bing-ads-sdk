@@ -30,8 +30,8 @@ class ProductMatchCountReportRequest extends ReportRequest
      */
     public function __construct($Aggregation = null)
     {
-      parent::__construct();
-      $this->Aggregation = $Aggregation;
+        parent::__construct();
+    $this->Aggregation = $Aggregation;
     }
 
     /**
@@ -39,7 +39,7 @@ class ProductMatchCountReportRequest extends ReportRequest
      */
     public function getAggregation()
     {
-      return $this->Aggregation;
+        return $this->Aggregation;
     }
 
     /**
@@ -48,8 +48,8 @@ class ProductMatchCountReportRequest extends ReportRequest
      */
     public function setAggregation($Aggregation)
     {
-      $this->Aggregation = $Aggregation;
-      return $this;
+        $this->Aggregation = $Aggregation;
+        return $this;
     }
 
     /**
@@ -57,7 +57,7 @@ class ProductMatchCountReportRequest extends ReportRequest
      */
     public function getColumns()
     {
-      return $this->Columns;
+        return $this->Columns;
     }
 
     /**
@@ -66,8 +66,8 @@ class ProductMatchCountReportRequest extends ReportRequest
      */
     public function setColumns($Columns)
     {
-      $this->Columns = $Columns;
-      return $this;
+        $this->Columns = $Columns;
+        return $this;
     }
 
     /**
@@ -75,7 +75,7 @@ class ProductMatchCountReportRequest extends ReportRequest
      */
     public function getScope()
     {
-      return $this->Scope;
+        return $this->Scope;
     }
 
     /**
@@ -84,8 +84,8 @@ class ProductMatchCountReportRequest extends ReportRequest
      */
     public function setScope($Scope)
     {
-      $this->Scope = $Scope;
-      return $this;
+        $this->Scope = $Scope;
+        return $this;
     }
 
     /**
@@ -93,7 +93,7 @@ class ProductMatchCountReportRequest extends ReportRequest
      */
     public function getTime()
     {
-      return $this->Time;
+        return $this->Time;
     }
 
     /**
@@ -102,8 +102,8 @@ class ProductMatchCountReportRequest extends ReportRequest
      */
     public function setTime($Time)
     {
-      $this->Time = $Time;
-      return $this;
+        $this->Time = $Time;
+        return $this;
     }
 
 }

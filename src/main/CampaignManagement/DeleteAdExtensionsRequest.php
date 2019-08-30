@@ -21,8 +21,8 @@ class DeleteAdExtensionsRequest
      */
     public function __construct($AccountId = null, $AdExtensionIds = null)
     {
-      $this->AccountId = $AccountId;
-      $this->AdExtensionIds = $AdExtensionIds;
+    $this->AccountId = $AccountId;
+    $this->AdExtensionIds = $AdExtensionIds;
     }
 
     /**
@@ -30,7 +30,7 @@ class DeleteAdExtensionsRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -39,8 +39,8 @@ class DeleteAdExtensionsRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class DeleteAdExtensionsRequest
      */
     public function getAdExtensionIds()
     {
-      return $this->AdExtensionIds;
+        return $this->AdExtensionIds;
     }
 
     /**
@@ -57,8 +57,8 @@ class DeleteAdExtensionsRequest
      */
     public function setAdExtensionIds($AdExtensionIds)
     {
-      $this->AdExtensionIds = $AdExtensionIds;
-      return $this;
+        $this->AdExtensionIds = $AdExtensionIds;
+        return $this;
     }
 
 }

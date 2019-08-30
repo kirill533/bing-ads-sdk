@@ -18,7 +18,7 @@ class AppInstallGoal extends ConversionGoal
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -26,7 +26,7 @@ class AppInstallGoal extends ConversionGoal
      */
     public function getAppPlatform()
     {
-      return $this->AppPlatform;
+        return $this->AppPlatform;
     }
 
     /**
@@ -35,8 +35,8 @@ class AppInstallGoal extends ConversionGoal
      */
     public function setAppPlatform($AppPlatform)
     {
-      $this->AppPlatform = $AppPlatform;
-      return $this;
+        $this->AppPlatform = $AppPlatform;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class AppInstallGoal extends ConversionGoal
      */
     public function getAppStoreId()
     {
-      return $this->AppStoreId;
+        return $this->AppStoreId;
     }
 
     /**
@@ -53,8 +53,8 @@ class AppInstallGoal extends ConversionGoal
      */
     public function setAppStoreId($AppStoreId)
     {
-      $this->AppStoreId = $AppStoreId;
-      return $this;
+        $this->AppStoreId = $AppStoreId;
+        return $this;
     }
 
 }

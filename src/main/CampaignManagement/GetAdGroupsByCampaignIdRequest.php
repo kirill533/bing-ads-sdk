@@ -21,8 +21,8 @@ class GetAdGroupsByCampaignIdRequest
      */
     public function __construct($CampaignId = null, $ReturnAdditionalFields = null)
     {
-      $this->CampaignId = $CampaignId;
-      $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+    $this->CampaignId = $CampaignId;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetAdGroupsByCampaignIdRequest
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetAdGroupsByCampaignIdRequest
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetAdGroupsByCampaignIdRequest
      */
     public function getReturnAdditionalFields()
     {
-      return $this->ReturnAdditionalFields;
+        return $this->ReturnAdditionalFields;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetAdGroupsByCampaignIdRequest
      */
     public function setReturnAdditionalFields($ReturnAdditionalFields)
     {
-      $this->ReturnAdditionalFields = $ReturnAdditionalFields;
-      return $this;
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

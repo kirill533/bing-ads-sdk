@@ -21,7 +21,7 @@ class ArrayOfAdPerformanceReportColumn implements \ArrayAccess, \IteratorAggrega
      */
     public function getAdPerformanceReportColumn()
     {
-      return $this->AdPerformanceReportColumn;
+        return $this->AdPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdPerformanceReportColumn implements \ArrayAccess, \IteratorAggrega
      */
     public function setAdPerformanceReportColumn(array $AdPerformanceReportColumn = null)
     {
-      $this->AdPerformanceReportColumn = $AdPerformanceReportColumn;
-      return $this;
+        $this->AdPerformanceReportColumn = $AdPerformanceReportColumn;
+        return $this;
     }
 
     /**

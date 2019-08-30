@@ -21,7 +21,7 @@ class ArrayOfAdExtensionIdentity implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getAdExtensionIdentity()
     {
-      return $this->AdExtensionIdentity;
+        return $this->AdExtensionIdentity;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdExtensionIdentity implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function setAdExtensionIdentity(array $AdExtensionIdentity = null)
     {
-      $this->AdExtensionIdentity = $AdExtensionIdentity;
-      return $this;
+        $this->AdExtensionIdentity = $AdExtensionIdentity;
+        return $this;
     }
 
     /**

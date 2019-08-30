@@ -21,7 +21,7 @@ class ArrayOfAppUrl implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getAppUrl()
     {
-      return $this->AppUrl;
+        return $this->AppUrl;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAppUrl implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setAppUrl(array $AppUrl = null)
     {
-      $this->AppUrl = $AppUrl;
-      return $this;
+        $this->AppUrl = $AppUrl;
+        return $this;
     }
 
     /**

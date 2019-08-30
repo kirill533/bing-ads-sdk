@@ -21,7 +21,7 @@ class ArrayOfEditorialReason implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getEditorialReason()
     {
-      return $this->EditorialReason;
+        return $this->EditorialReason;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfEditorialReason implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function setEditorialReason(array $EditorialReason = null)
     {
-      $this->EditorialReason = $EditorialReason;
-      return $this;
+        $this->EditorialReason = $EditorialReason;
+        return $this;
     }
 
     /**

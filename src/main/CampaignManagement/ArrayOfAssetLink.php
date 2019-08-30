@@ -21,7 +21,7 @@ class ArrayOfAssetLink implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getAssetLink()
     {
-      return $this->AssetLink;
+        return $this->AssetLink;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAssetLink implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setAssetLink(array $AssetLink = null)
     {
-      $this->AssetLink = $AssetLink;
-      return $this;
+        $this->AssetLink = $AssetLink;
+        return $this;
     }
 
     /**

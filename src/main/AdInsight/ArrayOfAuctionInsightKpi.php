@@ -21,7 +21,7 @@ class ArrayOfAuctionInsightKpi implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getAuctionInsightKpi()
     {
-      return $this->AuctionInsightKpi;
+        return $this->AuctionInsightKpi;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAuctionInsightKpi implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function setAuctionInsightKpi(array $AuctionInsightKpi = null)
     {
-      $this->AuctionInsightKpi = $AuctionInsightKpi;
-      return $this;
+        $this->AuctionInsightKpi = $AuctionInsightKpi;
+        return $this;
     }
 
     /**

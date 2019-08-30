@@ -41,7 +41,7 @@ class AdGroupBidLandscape
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -50,8 +50,8 @@ class AdGroupBidLandscape
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class AdGroupBidLandscape
      */
     public function getAdGroupBidLandscapeType()
     {
-      return $this->AdGroupBidLandscapeType;
+        return $this->AdGroupBidLandscapeType;
     }
 
     /**
@@ -68,8 +68,8 @@ class AdGroupBidLandscape
      */
     public function setAdGroupBidLandscapeType($AdGroupBidLandscapeType)
     {
-      $this->AdGroupBidLandscapeType = $AdGroupBidLandscapeType;
-      return $this;
+        $this->AdGroupBidLandscapeType = $AdGroupBidLandscapeType;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class AdGroupBidLandscape
      */
     public function getStartDate()
     {
-      return $this->StartDate;
+        return $this->StartDate;
     }
 
     /**
@@ -86,8 +86,8 @@ class AdGroupBidLandscape
      */
     public function setStartDate($StartDate)
     {
-      $this->StartDate = $StartDate;
-      return $this;
+        $this->StartDate = $StartDate;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class AdGroupBidLandscape
      */
     public function getEndDate()
     {
-      return $this->EndDate;
+        return $this->EndDate;
     }
 
     /**
@@ -104,8 +104,8 @@ class AdGroupBidLandscape
      */
     public function setEndDate($EndDate)
     {
-      $this->EndDate = $EndDate;
-      return $this;
+        $this->EndDate = $EndDate;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class AdGroupBidLandscape
      */
     public function getBidLandscapePoints()
     {
-      return $this->BidLandscapePoints;
+        return $this->BidLandscapePoints;
     }
 
     /**
@@ -122,8 +122,8 @@ class AdGroupBidLandscape
      */
     public function setBidLandscapePoints($BidLandscapePoints)
     {
-      $this->BidLandscapePoints = $BidLandscapePoints;
-      return $this;
+        $this->BidLandscapePoints = $BidLandscapePoints;
+        return $this;
     }
 
 }

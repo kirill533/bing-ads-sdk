@@ -51,13 +51,13 @@ class GetHistoricalSearchCountRequest
      */
     public function __construct($Keywords = null, $Language = null, $PublisherCountries = null, $StartDate = null, $EndDate = null, $TimePeriodRollup = null, $Devices = null)
     {
-      $this->Keywords = $Keywords;
-      $this->Language = $Language;
-      $this->PublisherCountries = $PublisherCountries;
-      $this->StartDate = $StartDate;
-      $this->EndDate = $EndDate;
-      $this->TimePeriodRollup = $TimePeriodRollup;
-      $this->Devices = $Devices;
+    $this->Keywords = $Keywords;
+    $this->Language = $Language;
+    $this->PublisherCountries = $PublisherCountries;
+    $this->StartDate = $StartDate;
+    $this->EndDate = $EndDate;
+    $this->TimePeriodRollup = $TimePeriodRollup;
+    $this->Devices = $Devices;
     }
 
     /**
@@ -65,7 +65,7 @@ class GetHistoricalSearchCountRequest
      */
     public function getKeywords()
     {
-      return $this->Keywords;
+        return $this->Keywords;
     }
 
     /**
@@ -74,8 +74,8 @@ class GetHistoricalSearchCountRequest
      */
     public function setKeywords($Keywords)
     {
-      $this->Keywords = $Keywords;
-      return $this;
+        $this->Keywords = $Keywords;
+        return $this;
     }
 
     /**
@@ -83,7 +83,7 @@ class GetHistoricalSearchCountRequest
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -92,8 +92,8 @@ class GetHistoricalSearchCountRequest
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
     /**
@@ -101,7 +101,7 @@ class GetHistoricalSearchCountRequest
      */
     public function getPublisherCountries()
     {
-      return $this->PublisherCountries;
+        return $this->PublisherCountries;
     }
 
     /**
@@ -110,8 +110,8 @@ class GetHistoricalSearchCountRequest
      */
     public function setPublisherCountries($PublisherCountries)
     {
-      $this->PublisherCountries = $PublisherCountries;
-      return $this;
+        $this->PublisherCountries = $PublisherCountries;
+        return $this;
     }
 
     /**
@@ -119,7 +119,7 @@ class GetHistoricalSearchCountRequest
      */
     public function getStartDate()
     {
-      return $this->StartDate;
+        return $this->StartDate;
     }
 
     /**
@@ -128,8 +128,8 @@ class GetHistoricalSearchCountRequest
      */
     public function setStartDate($StartDate)
     {
-      $this->StartDate = $StartDate;
-      return $this;
+        $this->StartDate = $StartDate;
+        return $this;
     }
 
     /**
@@ -137,7 +137,7 @@ class GetHistoricalSearchCountRequest
      */
     public function getEndDate()
     {
-      return $this->EndDate;
+        return $this->EndDate;
     }
 
     /**
@@ -146,8 +146,8 @@ class GetHistoricalSearchCountRequest
      */
     public function setEndDate($EndDate)
     {
-      $this->EndDate = $EndDate;
-      return $this;
+        $this->EndDate = $EndDate;
+        return $this;
     }
 
     /**
@@ -155,7 +155,7 @@ class GetHistoricalSearchCountRequest
      */
     public function getTimePeriodRollup()
     {
-      return $this->TimePeriodRollup;
+        return $this->TimePeriodRollup;
     }
 
     /**
@@ -164,8 +164,8 @@ class GetHistoricalSearchCountRequest
      */
     public function setTimePeriodRollup($TimePeriodRollup)
     {
-      $this->TimePeriodRollup = $TimePeriodRollup;
-      return $this;
+        $this->TimePeriodRollup = $TimePeriodRollup;
+        return $this;
     }
 
     /**
@@ -173,7 +173,7 @@ class GetHistoricalSearchCountRequest
      */
     public function getDevices()
     {
-      return $this->Devices;
+        return $this->Devices;
     }
 
     /**
@@ -182,8 +182,8 @@ class GetHistoricalSearchCountRequest
      */
     public function setDevices($Devices)
     {
-      $this->Devices = $Devices;
-      return $this;
+        $this->Devices = $Devices;
+        return $this;
     }
 
 }

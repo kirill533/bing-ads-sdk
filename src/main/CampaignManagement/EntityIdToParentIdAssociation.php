@@ -26,7 +26,7 @@ class EntityIdToParentIdAssociation
      */
     public function getEntityId()
     {
-      return $this->EntityId;
+        return $this->EntityId;
     }
 
     /**
@@ -35,8 +35,8 @@ class EntityIdToParentIdAssociation
      */
     public function setEntityId($EntityId)
     {
-      $this->EntityId = $EntityId;
-      return $this;
+        $this->EntityId = $EntityId;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class EntityIdToParentIdAssociation
      */
     public function getParentId()
     {
-      return $this->ParentId;
+        return $this->ParentId;
     }
 
     /**
@@ -53,8 +53,8 @@ class EntityIdToParentIdAssociation
      */
     public function setParentId($ParentId)
     {
-      $this->ParentId = $ParentId;
-      return $this;
+        $this->ParentId = $ParentId;
+        return $this;
     }
 
 }

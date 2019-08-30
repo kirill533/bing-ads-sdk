@@ -50,6 +50,7 @@ class CustomerBillingService extends \PMG\BingAds\BingSoapClient
       'ApplicationFault' => 'PMG\\BingAds\\CustomerBilling\\ApplicationFault',
       'ApiFault' => 'PMG\\BingAds\\CustomerBilling\\ApiFault',
       'AdApiFault' => 'PMG\\BingAds\\CustomerBilling\\AdApiFault',
+      'AdApiFaultDetail' => 'PMG\\BingAds\\CustomerBilling\\AdApiFault',
     );
 
     /**

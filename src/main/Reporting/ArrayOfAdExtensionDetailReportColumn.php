@@ -21,7 +21,7 @@ class ArrayOfAdExtensionDetailReportColumn implements \ArrayAccess, \IteratorAgg
      */
     public function getAdExtensionDetailReportColumn()
     {
-      return $this->AdExtensionDetailReportColumn;
+        return $this->AdExtensionDetailReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdExtensionDetailReportColumn implements \ArrayAccess, \IteratorAgg
      */
     public function setAdExtensionDetailReportColumn(array $AdExtensionDetailReportColumn = null)
     {
-      $this->AdExtensionDetailReportColumn = $AdExtensionDetailReportColumn;
-      return $this;
+        $this->AdExtensionDetailReportColumn = $AdExtensionDetailReportColumn;
+        return $this;
     }
 
     /**

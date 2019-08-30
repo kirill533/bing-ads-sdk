@@ -53,7 +53,7 @@ class BudgetOpportunity extends Opportunity
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -61,7 +61,7 @@ class BudgetOpportunity extends Opportunity
      */
     public function getBudgetPoints()
     {
-      return $this->BudgetPoints;
+        return $this->BudgetPoints;
     }
 
     /**
@@ -70,8 +70,8 @@ class BudgetOpportunity extends Opportunity
      */
     public function setBudgetPoints($BudgetPoints)
     {
-      $this->BudgetPoints = $BudgetPoints;
-      return $this;
+        $this->BudgetPoints = $BudgetPoints;
+        return $this;
     }
 
     /**
@@ -79,7 +79,7 @@ class BudgetOpportunity extends Opportunity
      */
     public function getBudgetType()
     {
-      return $this->BudgetType;
+        return $this->BudgetType;
     }
 
     /**
@@ -88,8 +88,8 @@ class BudgetOpportunity extends Opportunity
      */
     public function setBudgetType($BudgetType)
     {
-      $this->BudgetType = $BudgetType;
-      return $this;
+        $this->BudgetType = $BudgetType;
+        return $this;
     }
 
     /**
@@ -97,7 +97,7 @@ class BudgetOpportunity extends Opportunity
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -106,8 +106,8 @@ class BudgetOpportunity extends Opportunity
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -115,7 +115,7 @@ class BudgetOpportunity extends Opportunity
      */
     public function getCurrentBudget()
     {
-      return $this->CurrentBudget;
+        return $this->CurrentBudget;
     }
 
     /**
@@ -124,8 +124,8 @@ class BudgetOpportunity extends Opportunity
      */
     public function setCurrentBudget($CurrentBudget)
     {
-      $this->CurrentBudget = $CurrentBudget;
-      return $this;
+        $this->CurrentBudget = $CurrentBudget;
+        return $this;
     }
 
     /**
@@ -133,7 +133,7 @@ class BudgetOpportunity extends Opportunity
      */
     public function getIncreaseInClicks()
     {
-      return $this->IncreaseInClicks;
+        return $this->IncreaseInClicks;
     }
 
     /**
@@ -142,8 +142,8 @@ class BudgetOpportunity extends Opportunity
      */
     public function setIncreaseInClicks($IncreaseInClicks)
     {
-      $this->IncreaseInClicks = $IncreaseInClicks;
-      return $this;
+        $this->IncreaseInClicks = $IncreaseInClicks;
+        return $this;
     }
 
     /**
@@ -151,7 +151,7 @@ class BudgetOpportunity extends Opportunity
      */
     public function getIncreaseInImpressions()
     {
-      return $this->IncreaseInImpressions;
+        return $this->IncreaseInImpressions;
     }
 
     /**
@@ -160,8 +160,8 @@ class BudgetOpportunity extends Opportunity
      */
     public function setIncreaseInImpressions($IncreaseInImpressions)
     {
-      $this->IncreaseInImpressions = $IncreaseInImpressions;
-      return $this;
+        $this->IncreaseInImpressions = $IncreaseInImpressions;
+        return $this;
     }
 
     /**
@@ -169,7 +169,7 @@ class BudgetOpportunity extends Opportunity
      */
     public function getPercentageIncreaseInClicks()
     {
-      return $this->PercentageIncreaseInClicks;
+        return $this->PercentageIncreaseInClicks;
     }
 
     /**
@@ -178,8 +178,8 @@ class BudgetOpportunity extends Opportunity
      */
     public function setPercentageIncreaseInClicks($PercentageIncreaseInClicks)
     {
-      $this->PercentageIncreaseInClicks = $PercentageIncreaseInClicks;
-      return $this;
+        $this->PercentageIncreaseInClicks = $PercentageIncreaseInClicks;
+        return $this;
     }
 
     /**
@@ -187,7 +187,7 @@ class BudgetOpportunity extends Opportunity
      */
     public function getPercentageIncreaseInImpressions()
     {
-      return $this->PercentageIncreaseInImpressions;
+        return $this->PercentageIncreaseInImpressions;
     }
 
     /**
@@ -196,8 +196,8 @@ class BudgetOpportunity extends Opportunity
      */
     public function setPercentageIncreaseInImpressions($PercentageIncreaseInImpressions)
     {
-      $this->PercentageIncreaseInImpressions = $PercentageIncreaseInImpressions;
-      return $this;
+        $this->PercentageIncreaseInImpressions = $PercentageIncreaseInImpressions;
+        return $this;
     }
 
     /**
@@ -205,7 +205,7 @@ class BudgetOpportunity extends Opportunity
      */
     public function getRecommendedBudget()
     {
-      return $this->RecommendedBudget;
+        return $this->RecommendedBudget;
     }
 
     /**
@@ -214,8 +214,8 @@ class BudgetOpportunity extends Opportunity
      */
     public function setRecommendedBudget($RecommendedBudget)
     {
-      $this->RecommendedBudget = $RecommendedBudget;
-      return $this;
+        $this->RecommendedBudget = $RecommendedBudget;
+        return $this;
     }
 
 }

@@ -27,9 +27,9 @@ class SetAdExtensionsAssociationsRequest
      */
     public function __construct($AccountId = null, $AdExtensionIdToEntityIdAssociations = null, $AssociationType = null)
     {
-      $this->AccountId = $AccountId;
-      $this->AdExtensionIdToEntityIdAssociations = $AdExtensionIdToEntityIdAssociations;
-      $this->AssociationType = $AssociationType;
+    $this->AccountId = $AccountId;
+    $this->AdExtensionIdToEntityIdAssociations = $AdExtensionIdToEntityIdAssociations;
+    $this->AssociationType = $AssociationType;
     }
 
     /**
@@ -37,7 +37,7 @@ class SetAdExtensionsAssociationsRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -46,8 +46,8 @@ class SetAdExtensionsAssociationsRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class SetAdExtensionsAssociationsRequest
      */
     public function getAdExtensionIdToEntityIdAssociations()
     {
-      return $this->AdExtensionIdToEntityIdAssociations;
+        return $this->AdExtensionIdToEntityIdAssociations;
     }
 
     /**
@@ -64,8 +64,8 @@ class SetAdExtensionsAssociationsRequest
      */
     public function setAdExtensionIdToEntityIdAssociations($AdExtensionIdToEntityIdAssociations)
     {
-      $this->AdExtensionIdToEntityIdAssociations = $AdExtensionIdToEntityIdAssociations;
-      return $this;
+        $this->AdExtensionIdToEntityIdAssociations = $AdExtensionIdToEntityIdAssociations;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class SetAdExtensionsAssociationsRequest
      */
     public function getAssociationType()
     {
-      return $this->AssociationType;
+        return $this->AssociationType;
     }
 
     /**
@@ -82,8 +82,8 @@ class SetAdExtensionsAssociationsRequest
      */
     public function setAssociationType($AssociationType)
     {
-      $this->AssociationType = $AssociationType;
-      return $this;
+        $this->AssociationType = $AssociationType;
+        return $this;
     }
 
 }

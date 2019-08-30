@@ -15,7 +15,7 @@ class GetKeywordsByAdGroupIdResponse
      */
     public function __construct($Keywords = null)
     {
-      $this->Keywords = $Keywords;
+    $this->Keywords = $Keywords;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetKeywordsByAdGroupIdResponse
      */
     public function getKeywords()
     {
-      return $this->Keywords;
+        return $this->Keywords;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetKeywordsByAdGroupIdResponse
      */
     public function setKeywords($Keywords)
     {
-      $this->Keywords = $Keywords;
-      return $this;
+        $this->Keywords = $Keywords;
+        return $this;
     }
 
 }

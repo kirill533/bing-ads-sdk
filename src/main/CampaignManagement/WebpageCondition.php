@@ -26,7 +26,7 @@ class WebpageCondition
      */
     public function getArgument()
     {
-      return $this->Argument;
+        return $this->Argument;
     }
 
     /**
@@ -35,8 +35,8 @@ class WebpageCondition
      */
     public function setArgument($Argument)
     {
-      $this->Argument = $Argument;
-      return $this;
+        $this->Argument = $Argument;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class WebpageCondition
      */
     public function getOperand()
     {
-      return $this->Operand;
+        return $this->Operand;
     }
 
     /**
@@ -53,8 +53,8 @@ class WebpageCondition
      */
     public function setOperand($Operand)
     {
-      $this->Operand = $Operand;
-      return $this;
+        $this->Operand = $Operand;
+        return $this;
     }
 
 }

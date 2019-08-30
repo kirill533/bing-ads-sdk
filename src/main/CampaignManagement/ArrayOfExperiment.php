@@ -21,7 +21,7 @@ class ArrayOfExperiment implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getExperiment()
     {
-      return $this->Experiment;
+        return $this->Experiment;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfExperiment implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setExperiment(array $Experiment = null)
     {
-      $this->Experiment = $Experiment;
-      return $this;
+        $this->Experiment = $Experiment;
+        return $this;
     }
 
     /**

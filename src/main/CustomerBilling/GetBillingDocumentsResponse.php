@@ -15,7 +15,7 @@ class GetBillingDocumentsResponse
      */
     public function __construct($BillingDocuments = null)
     {
-      $this->BillingDocuments = $BillingDocuments;
+    $this->BillingDocuments = $BillingDocuments;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetBillingDocumentsResponse
      */
     public function getBillingDocuments()
     {
-      return $this->BillingDocuments;
+        return $this->BillingDocuments;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetBillingDocumentsResponse
      */
     public function setBillingDocuments($BillingDocuments)
     {
-      $this->BillingDocuments = $BillingDocuments;
-      return $this;
+        $this->BillingDocuments = $BillingDocuments;
+        return $this;
     }
 
 }

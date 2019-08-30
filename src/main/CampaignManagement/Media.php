@@ -31,7 +31,7 @@ class Media
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -40,8 +40,8 @@ class Media
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class Media
      */
     public function getMediaType()
     {
-      return $this->MediaType;
+        return $this->MediaType;
     }
 
     /**
@@ -58,8 +58,8 @@ class Media
      */
     public function setMediaType($MediaType)
     {
-      $this->MediaType = $MediaType;
-      return $this;
+        $this->MediaType = $MediaType;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class Media
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -76,8 +76,8 @@ class Media
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
 }

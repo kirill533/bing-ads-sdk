@@ -13,7 +13,7 @@ class ProductScope extends Criterion
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class ProductScope extends Criterion
      */
     public function getConditions()
     {
-      return $this->Conditions;
+        return $this->Conditions;
     }
 
     /**
@@ -30,8 +30,8 @@ class ProductScope extends Criterion
      */
     public function setConditions($Conditions)
     {
-      $this->Conditions = $Conditions;
-      return $this;
+        $this->Conditions = $Conditions;
+        return $this;
     }
 
 }

@@ -33,7 +33,7 @@ class RadiusCriterion extends Criterion
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -41,7 +41,7 @@ class RadiusCriterion extends Criterion
      */
     public function getLatitudeDegrees()
     {
-      return $this->LatitudeDegrees;
+        return $this->LatitudeDegrees;
     }
 
     /**
@@ -50,8 +50,8 @@ class RadiusCriterion extends Criterion
      */
     public function setLatitudeDegrees($LatitudeDegrees)
     {
-      $this->LatitudeDegrees = $LatitudeDegrees;
-      return $this;
+        $this->LatitudeDegrees = $LatitudeDegrees;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class RadiusCriterion extends Criterion
      */
     public function getLongitudeDegrees()
     {
-      return $this->LongitudeDegrees;
+        return $this->LongitudeDegrees;
     }
 
     /**
@@ -68,8 +68,8 @@ class RadiusCriterion extends Criterion
      */
     public function setLongitudeDegrees($LongitudeDegrees)
     {
-      $this->LongitudeDegrees = $LongitudeDegrees;
-      return $this;
+        $this->LongitudeDegrees = $LongitudeDegrees;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class RadiusCriterion extends Criterion
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -86,8 +86,8 @@ class RadiusCriterion extends Criterion
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class RadiusCriterion extends Criterion
      */
     public function getRadius()
     {
-      return $this->Radius;
+        return $this->Radius;
     }
 
     /**
@@ -104,8 +104,8 @@ class RadiusCriterion extends Criterion
      */
     public function setRadius($Radius)
     {
-      $this->Radius = $Radius;
-      return $this;
+        $this->Radius = $Radius;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class RadiusCriterion extends Criterion
      */
     public function getRadiusUnit()
     {
-      return $this->RadiusUnit;
+        return $this->RadiusUnit;
     }
 
     /**
@@ -122,8 +122,8 @@ class RadiusCriterion extends Criterion
      */
     public function setRadiusUnit($RadiusUnit)
     {
-      $this->RadiusUnit = $RadiusUnit;
-      return $this;
+        $this->RadiusUnit = $RadiusUnit;
+        return $this;
     }
 
 }

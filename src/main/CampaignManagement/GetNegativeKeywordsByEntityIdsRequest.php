@@ -27,9 +27,9 @@ class GetNegativeKeywordsByEntityIdsRequest
      */
     public function __construct($EntityIds = null, $EntityType = null, $ParentEntityId = null)
     {
-      $this->EntityIds = $EntityIds;
-      $this->EntityType = $EntityType;
-      $this->ParentEntityId = $ParentEntityId;
+    $this->EntityIds = $EntityIds;
+    $this->EntityType = $EntityType;
+    $this->ParentEntityId = $ParentEntityId;
     }
 
     /**
@@ -37,7 +37,7 @@ class GetNegativeKeywordsByEntityIdsRequest
      */
     public function getEntityIds()
     {
-      return $this->EntityIds;
+        return $this->EntityIds;
     }
 
     /**
@@ -46,8 +46,8 @@ class GetNegativeKeywordsByEntityIdsRequest
      */
     public function setEntityIds($EntityIds)
     {
-      $this->EntityIds = $EntityIds;
-      return $this;
+        $this->EntityIds = $EntityIds;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class GetNegativeKeywordsByEntityIdsRequest
      */
     public function getEntityType()
     {
-      return $this->EntityType;
+        return $this->EntityType;
     }
 
     /**
@@ -64,8 +64,8 @@ class GetNegativeKeywordsByEntityIdsRequest
      */
     public function setEntityType($EntityType)
     {
-      $this->EntityType = $EntityType;
-      return $this;
+        $this->EntityType = $EntityType;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetNegativeKeywordsByEntityIdsRequest
      */
     public function getParentEntityId()
     {
-      return $this->ParentEntityId;
+        return $this->ParentEntityId;
     }
 
     /**
@@ -82,8 +82,8 @@ class GetNegativeKeywordsByEntityIdsRequest
      */
     public function setParentEntityId($ParentEntityId)
     {
-      $this->ParentEntityId = $ParentEntityId;
-      return $this;
+        $this->ParentEntityId = $ParentEntityId;
+        return $this;
     }
 
 }

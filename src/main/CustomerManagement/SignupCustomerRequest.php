@@ -27,9 +27,9 @@ class SignupCustomerRequest
      */
     public function __construct($Customer = null, $Account = null, $ParentCustomerId = null)
     {
-      $this->Customer = $Customer;
-      $this->Account = $Account;
-      $this->ParentCustomerId = $ParentCustomerId;
+    $this->Customer = $Customer;
+    $this->Account = $Account;
+    $this->ParentCustomerId = $ParentCustomerId;
     }
 
     /**
@@ -37,7 +37,7 @@ class SignupCustomerRequest
      */
     public function getCustomer()
     {
-      return $this->Customer;
+        return $this->Customer;
     }
 
     /**
@@ -46,8 +46,8 @@ class SignupCustomerRequest
      */
     public function setCustomer($Customer)
     {
-      $this->Customer = $Customer;
-      return $this;
+        $this->Customer = $Customer;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class SignupCustomerRequest
      */
     public function getAccount()
     {
-      return $this->Account;
+        return $this->Account;
     }
 
     /**
@@ -64,8 +64,8 @@ class SignupCustomerRequest
      */
     public function setAccount($Account)
     {
-      $this->Account = $Account;
-      return $this;
+        $this->Account = $Account;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class SignupCustomerRequest
      */
     public function getParentCustomerId()
     {
-      return $this->ParentCustomerId;
+        return $this->ParentCustomerId;
     }
 
     /**
@@ -82,8 +82,8 @@ class SignupCustomerRequest
      */
     public function setParentCustomerId($ParentCustomerId)
     {
-      $this->ParentCustomerId = $ParentCustomerId;
-      return $this;
+        $this->ParentCustomerId = $ParentCustomerId;
+        return $this;
     }
 
 }

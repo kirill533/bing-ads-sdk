@@ -21,7 +21,7 @@ class ArrayOfSearchCountsByAttributes implements \ArrayAccess, \IteratorAggregat
      */
     public function getSearchCountsByAttributes()
     {
-      return $this->SearchCountsByAttributes;
+        return $this->SearchCountsByAttributes;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfSearchCountsByAttributes implements \ArrayAccess, \IteratorAggregat
      */
     public function setSearchCountsByAttributes(array $SearchCountsByAttributes = null)
     {
-      $this->SearchCountsByAttributes = $SearchCountsByAttributes;
-      return $this;
+        $this->SearchCountsByAttributes = $SearchCountsByAttributes;
+        return $this;
     }
 
     /**

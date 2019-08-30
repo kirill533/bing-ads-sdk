@@ -21,7 +21,7 @@ class ArrayOfKeywordSuggestion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getKeywordSuggestion()
     {
-      return $this->KeywordSuggestion;
+        return $this->KeywordSuggestion;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordSuggestion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function setKeywordSuggestion(array $KeywordSuggestion = null)
     {
-      $this->KeywordSuggestion = $KeywordSuggestion;
-      return $this;
+        $this->KeywordSuggestion = $KeywordSuggestion;
+        return $this;
     }
 
     /**

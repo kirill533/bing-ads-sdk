@@ -21,7 +21,7 @@ class ArrayOfMediaMetaData implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function getMediaMetaData()
     {
-      return $this->MediaMetaData;
+        return $this->MediaMetaData;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfMediaMetaData implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function setMediaMetaData(array $MediaMetaData = null)
     {
-      $this->MediaMetaData = $MediaMetaData;
-      return $this;
+        $this->MediaMetaData = $MediaMetaData;
+        return $this;
     }
 
     /**

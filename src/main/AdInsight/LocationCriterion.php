@@ -21,7 +21,7 @@ class LocationCriterion extends Criterion
      */
     public function getLocationId()
     {
-      return $this->LocationId;
+        return $this->LocationId;
     }
 
     /**
@@ -30,8 +30,8 @@ class LocationCriterion extends Criterion
      */
     public function setLocationId($LocationId)
     {
-      $this->LocationId = $LocationId;
-      return $this;
+        $this->LocationId = $LocationId;
+        return $this;
     }
 
 }

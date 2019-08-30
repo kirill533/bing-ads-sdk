@@ -21,7 +21,7 @@ class ArrayOfint implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getInt()
     {
-      return $this->int;
+        return $this->int;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfint implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setInt(array $int = null)
     {
-      $this->int = $int;
-      return $this;
+        $this->int = $int;
+        return $this;
     }
 
     /**

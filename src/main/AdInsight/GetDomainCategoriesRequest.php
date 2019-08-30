@@ -27,9 +27,9 @@ class GetDomainCategoriesRequest
      */
     public function __construct($CategoryName = null, $DomainName = null, $Language = null)
     {
-      $this->CategoryName = $CategoryName;
-      $this->DomainName = $DomainName;
-      $this->Language = $Language;
+    $this->CategoryName = $CategoryName;
+    $this->DomainName = $DomainName;
+    $this->Language = $Language;
     }
 
     /**
@@ -37,7 +37,7 @@ class GetDomainCategoriesRequest
      */
     public function getCategoryName()
     {
-      return $this->CategoryName;
+        return $this->CategoryName;
     }
 
     /**
@@ -46,8 +46,8 @@ class GetDomainCategoriesRequest
      */
     public function setCategoryName($CategoryName)
     {
-      $this->CategoryName = $CategoryName;
-      return $this;
+        $this->CategoryName = $CategoryName;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class GetDomainCategoriesRequest
      */
     public function getDomainName()
     {
-      return $this->DomainName;
+        return $this->DomainName;
     }
 
     /**
@@ -64,8 +64,8 @@ class GetDomainCategoriesRequest
      */
     public function setDomainName($DomainName)
     {
-      $this->DomainName = $DomainName;
-      return $this;
+        $this->DomainName = $DomainName;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetDomainCategoriesRequest
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -82,8 +82,8 @@ class GetDomainCategoriesRequest
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
 }

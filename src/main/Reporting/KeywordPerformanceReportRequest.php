@@ -45,8 +45,8 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function __construct($Aggregation = null)
     {
-      parent::__construct();
-      $this->Aggregation = $Aggregation;
+        parent::__construct();
+    $this->Aggregation = $Aggregation;
     }
 
     /**
@@ -54,7 +54,7 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function getAggregation()
     {
-      return $this->Aggregation;
+        return $this->Aggregation;
     }
 
     /**
@@ -63,8 +63,8 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function setAggregation($Aggregation)
     {
-      $this->Aggregation = $Aggregation;
-      return $this;
+        $this->Aggregation = $Aggregation;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function getColumns()
     {
-      return $this->Columns;
+        return $this->Columns;
     }
 
     /**
@@ -81,8 +81,8 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function setColumns($Columns)
     {
-      $this->Columns = $Columns;
-      return $this;
+        $this->Columns = $Columns;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function getFilter()
     {
-      return $this->Filter;
+        return $this->Filter;
     }
 
     /**
@@ -99,8 +99,8 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function setFilter($Filter)
     {
-      $this->Filter = $Filter;
-      return $this;
+        $this->Filter = $Filter;
+        return $this;
     }
 
     /**
@@ -108,7 +108,7 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function getMaxRows()
     {
-      return $this->MaxRows;
+        return $this->MaxRows;
     }
 
     /**
@@ -117,8 +117,8 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function setMaxRows($MaxRows)
     {
-      $this->MaxRows = $MaxRows;
-      return $this;
+        $this->MaxRows = $MaxRows;
+        return $this;
     }
 
     /**
@@ -126,7 +126,7 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function getScope()
     {
-      return $this->Scope;
+        return $this->Scope;
     }
 
     /**
@@ -135,8 +135,8 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function setScope($Scope)
     {
-      $this->Scope = $Scope;
-      return $this;
+        $this->Scope = $Scope;
+        return $this;
     }
 
     /**
@@ -144,7 +144,7 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function getSort()
     {
-      return $this->Sort;
+        return $this->Sort;
     }
 
     /**
@@ -153,8 +153,8 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function setSort($Sort)
     {
-      $this->Sort = $Sort;
-      return $this;
+        $this->Sort = $Sort;
+        return $this;
     }
 
     /**
@@ -162,7 +162,7 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function getTime()
     {
-      return $this->Time;
+        return $this->Time;
     }
 
     /**
@@ -171,8 +171,8 @@ class KeywordPerformanceReportRequest extends ReportRequest
      */
     public function setTime($Time)
     {
-      $this->Time = $Time;
-      return $this;
+        $this->Time = $Time;
+        return $this;
     }
 
 }

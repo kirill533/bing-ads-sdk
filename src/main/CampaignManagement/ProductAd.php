@@ -13,7 +13,7 @@ class ProductAd extends Ad
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class ProductAd extends Ad
      */
     public function getPromotionalText()
     {
-      return $this->PromotionalText;
+        return $this->PromotionalText;
     }
 
     /**
@@ -30,8 +30,8 @@ class ProductAd extends Ad
      */
     public function setPromotionalText($PromotionalText)
     {
-      $this->PromotionalText = $PromotionalText;
-      return $this;
+        $this->PromotionalText = $PromotionalText;
+        return $this;
     }
 
 }

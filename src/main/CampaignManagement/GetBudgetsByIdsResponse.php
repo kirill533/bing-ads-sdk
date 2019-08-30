@@ -21,8 +21,8 @@ class GetBudgetsByIdsResponse
      */
     public function __construct($Budgets = null, $PartialErrors = null)
     {
-      $this->Budgets = $Budgets;
-      $this->PartialErrors = $PartialErrors;
+    $this->Budgets = $Budgets;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetBudgetsByIdsResponse
      */
     public function getBudgets()
     {
-      return $this->Budgets;
+        return $this->Budgets;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetBudgetsByIdsResponse
      */
     public function setBudgets($Budgets)
     {
-      $this->Budgets = $Budgets;
-      return $this;
+        $this->Budgets = $Budgets;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetBudgetsByIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetBudgetsByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

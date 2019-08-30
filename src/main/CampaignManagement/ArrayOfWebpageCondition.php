@@ -21,7 +21,7 @@ class ArrayOfWebpageCondition implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function getWebpageCondition()
     {
-      return $this->WebpageCondition;
+        return $this->WebpageCondition;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfWebpageCondition implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function setWebpageCondition(array $WebpageCondition = null)
     {
-      $this->WebpageCondition = $WebpageCondition;
-      return $this;
+        $this->WebpageCondition = $WebpageCondition;
+        return $this;
     }
 
     /**

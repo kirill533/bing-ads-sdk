@@ -15,7 +15,7 @@ class ApplyProductPartitionActionsRequest
      */
     public function __construct($CriterionActions = null)
     {
-      $this->CriterionActions = $CriterionActions;
+    $this->CriterionActions = $CriterionActions;
     }
 
     /**
@@ -23,7 +23,7 @@ class ApplyProductPartitionActionsRequest
      */
     public function getCriterionActions()
     {
-      return $this->CriterionActions;
+        return $this->CriterionActions;
     }
 
     /**
@@ -32,8 +32,8 @@ class ApplyProductPartitionActionsRequest
      */
     public function setCriterionActions($CriterionActions)
     {
-      $this->CriterionActions = $CriterionActions;
-      return $this;
+        $this->CriterionActions = $CriterionActions;
+        return $this;
     }
 
 }

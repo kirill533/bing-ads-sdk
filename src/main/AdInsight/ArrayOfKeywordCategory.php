@@ -21,7 +21,7 @@ class ArrayOfKeywordCategory implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getKeywordCategory()
     {
-      return $this->KeywordCategory;
+        return $this->KeywordCategory;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordCategory implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function setKeywordCategory(array $KeywordCategory = null)
     {
-      $this->KeywordCategory = $KeywordCategory;
-      return $this;
+        $this->KeywordCategory = $KeywordCategory;
+        return $this;
     }
 
     /**

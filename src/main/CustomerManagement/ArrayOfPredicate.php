@@ -21,7 +21,7 @@ class ArrayOfPredicate implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getPredicate()
     {
-      return $this->Predicate;
+        return $this->Predicate;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfPredicate implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setPredicate(array $Predicate = null)
     {
-      $this->Predicate = $Predicate;
-      return $this;
+        $this->Predicate = $Predicate;
+        return $this;
     }
 
     /**

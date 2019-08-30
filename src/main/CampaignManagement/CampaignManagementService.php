@@ -434,8 +434,11 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'AdApiError' => 'PMG\\BingAds\\CampaignManagement\\AdApiError',
       'ApplicationFault' => 'PMG\\BingAds\\CampaignManagement\\ApplicationFault',
       'ApiFault' => 'PMG\\BingAds\\CampaignManagement\\ApiFault',
+      'ApiFaultDetail' => 'PMG\\BingAds\\CampaignManagement\\ApiFault',
       'AdApiFault' => 'PMG\\BingAds\\CampaignManagement\\AdApiFault',
+      'AdApiFaultDetail' => 'PMG\\BingAds\\CampaignManagement\\AdApiFault',
       'EditorialApiFault' => 'PMG\\BingAds\\CampaignManagement\\EditorialApiFault',
+      'EditorialApiFaultDetail' => 'PMG\\BingAds\\CampaignManagement\\EditorialApiFault',
     );
 
     /**

@@ -21,8 +21,8 @@ class GetBulkUploadUrlRequest
      */
     public function __construct($ResponseMode = null, $AccountId = null)
     {
-      $this->ResponseMode = $ResponseMode;
-      $this->AccountId = $AccountId;
+    $this->ResponseMode = $ResponseMode;
+    $this->AccountId = $AccountId;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetBulkUploadUrlRequest
      */
     public function getResponseMode()
     {
-      return $this->ResponseMode;
+        return $this->ResponseMode;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetBulkUploadUrlRequest
      */
     public function setResponseMode($ResponseMode)
     {
-      $this->ResponseMode = $ResponseMode;
-      return $this;
+        $this->ResponseMode = $ResponseMode;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetBulkUploadUrlRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetBulkUploadUrlRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
 }

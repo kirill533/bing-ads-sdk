@@ -21,7 +21,7 @@ class ArrayOfConversionGoal implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getConversionGoal()
     {
-      return $this->ConversionGoal;
+        return $this->ConversionGoal;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfConversionGoal implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function setConversionGoal(array $ConversionGoal = null)
     {
-      $this->ConversionGoal = $ConversionGoal;
-      return $this;
+        $this->ConversionGoal = $ConversionGoal;
+        return $this;
     }
 
     /**

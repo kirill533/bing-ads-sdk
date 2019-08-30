@@ -21,7 +21,7 @@ class DeviceSearchParameter extends SearchParameter
      */
     public function getDevice()
     {
-      return $this->Device;
+        return $this->Device;
     }
 
     /**
@@ -30,8 +30,8 @@ class DeviceSearchParameter extends SearchParameter
      */
     public function setDevice($Device)
     {
-      $this->Device = $Device;
-      return $this;
+        $this->Device = $Device;
+        return $this;
     }
 
 }

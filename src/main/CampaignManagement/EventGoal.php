@@ -48,7 +48,7 @@ class EventGoal extends ConversionGoal
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -56,7 +56,7 @@ class EventGoal extends ConversionGoal
      */
     public function getActionExpression()
     {
-      return $this->ActionExpression;
+        return $this->ActionExpression;
     }
 
     /**
@@ -65,8 +65,8 @@ class EventGoal extends ConversionGoal
      */
     public function setActionExpression($ActionExpression)
     {
-      $this->ActionExpression = $ActionExpression;
-      return $this;
+        $this->ActionExpression = $ActionExpression;
+        return $this;
     }
 
     /**
@@ -74,7 +74,7 @@ class EventGoal extends ConversionGoal
      */
     public function getActionOperator()
     {
-      return $this->ActionOperator;
+        return $this->ActionOperator;
     }
 
     /**
@@ -83,8 +83,8 @@ class EventGoal extends ConversionGoal
      */
     public function setActionOperator($ActionOperator)
     {
-      $this->ActionOperator = $ActionOperator;
-      return $this;
+        $this->ActionOperator = $ActionOperator;
+        return $this;
     }
 
     /**
@@ -92,7 +92,7 @@ class EventGoal extends ConversionGoal
      */
     public function getCategoryExpression()
     {
-      return $this->CategoryExpression;
+        return $this->CategoryExpression;
     }
 
     /**
@@ -101,8 +101,8 @@ class EventGoal extends ConversionGoal
      */
     public function setCategoryExpression($CategoryExpression)
     {
-      $this->CategoryExpression = $CategoryExpression;
-      return $this;
+        $this->CategoryExpression = $CategoryExpression;
+        return $this;
     }
 
     /**
@@ -110,7 +110,7 @@ class EventGoal extends ConversionGoal
      */
     public function getCategoryOperator()
     {
-      return $this->CategoryOperator;
+        return $this->CategoryOperator;
     }
 
     /**
@@ -119,8 +119,8 @@ class EventGoal extends ConversionGoal
      */
     public function setCategoryOperator($CategoryOperator)
     {
-      $this->CategoryOperator = $CategoryOperator;
-      return $this;
+        $this->CategoryOperator = $CategoryOperator;
+        return $this;
     }
 
     /**
@@ -128,7 +128,7 @@ class EventGoal extends ConversionGoal
      */
     public function getLabelExpression()
     {
-      return $this->LabelExpression;
+        return $this->LabelExpression;
     }
 
     /**
@@ -137,8 +137,8 @@ class EventGoal extends ConversionGoal
      */
     public function setLabelExpression($LabelExpression)
     {
-      $this->LabelExpression = $LabelExpression;
-      return $this;
+        $this->LabelExpression = $LabelExpression;
+        return $this;
     }
 
     /**
@@ -146,7 +146,7 @@ class EventGoal extends ConversionGoal
      */
     public function getLabelOperator()
     {
-      return $this->LabelOperator;
+        return $this->LabelOperator;
     }
 
     /**
@@ -155,8 +155,8 @@ class EventGoal extends ConversionGoal
      */
     public function setLabelOperator($LabelOperator)
     {
-      $this->LabelOperator = $LabelOperator;
-      return $this;
+        $this->LabelOperator = $LabelOperator;
+        return $this;
     }
 
     /**
@@ -164,7 +164,7 @@ class EventGoal extends ConversionGoal
      */
     public function getValue()
     {
-      return $this->Value;
+        return $this->Value;
     }
 
     /**
@@ -173,8 +173,8 @@ class EventGoal extends ConversionGoal
      */
     public function setValue($Value)
     {
-      $this->Value = $Value;
-      return $this;
+        $this->Value = $Value;
+        return $this;
     }
 
     /**
@@ -182,7 +182,7 @@ class EventGoal extends ConversionGoal
      */
     public function getValueOperator()
     {
-      return $this->ValueOperator;
+        return $this->ValueOperator;
     }
 
     /**
@@ -191,8 +191,8 @@ class EventGoal extends ConversionGoal
      */
     public function setValueOperator($ValueOperator)
     {
-      $this->ValueOperator = $ValueOperator;
-      return $this;
+        $this->ValueOperator = $ValueOperator;
+        return $this;
     }
 
 }

@@ -26,7 +26,7 @@ class CampaignScope
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -35,8 +35,8 @@ class CampaignScope
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class CampaignScope
      */
     public function getParentAccountId()
     {
-      return $this->ParentAccountId;
+        return $this->ParentAccountId;
     }
 
     /**
@@ -53,8 +53,8 @@ class CampaignScope
      */
     public function setParentAccountId($ParentAccountId)
     {
-      $this->ParentAccountId = $ParentAccountId;
-      return $this;
+        $this->ParentAccountId = $ParentAccountId;
+        return $this;
     }
 
 }

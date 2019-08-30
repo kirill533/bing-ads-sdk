@@ -15,7 +15,7 @@ class DeleteSharedEntityAssociationsRequest
      */
     public function __construct($Associations = null)
     {
-      $this->Associations = $Associations;
+    $this->Associations = $Associations;
     }
 
     /**
@@ -23,7 +23,7 @@ class DeleteSharedEntityAssociationsRequest
      */
     public function getAssociations()
     {
-      return $this->Associations;
+        return $this->Associations;
     }
 
     /**
@@ -32,8 +32,8 @@ class DeleteSharedEntityAssociationsRequest
      */
     public function setAssociations($Associations)
     {
-      $this->Associations = $Associations;
-      return $this;
+        $this->Associations = $Associations;
+        return $this;
     }
 
 }

@@ -18,7 +18,7 @@ class TargetCpaBiddingScheme extends BiddingScheme
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -26,7 +26,7 @@ class TargetCpaBiddingScheme extends BiddingScheme
      */
     public function getMaxCpc()
     {
-      return $this->MaxCpc;
+        return $this->MaxCpc;
     }
 
     /**
@@ -35,8 +35,8 @@ class TargetCpaBiddingScheme extends BiddingScheme
      */
     public function setMaxCpc($MaxCpc)
     {
-      $this->MaxCpc = $MaxCpc;
-      return $this;
+        $this->MaxCpc = $MaxCpc;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class TargetCpaBiddingScheme extends BiddingScheme
      */
     public function getTargetCpa()
     {
-      return $this->TargetCpa;
+        return $this->TargetCpa;
     }
 
     /**
@@ -53,8 +53,8 @@ class TargetCpaBiddingScheme extends BiddingScheme
      */
     public function setTargetCpa($TargetCpa)
     {
-      $this->TargetCpa = $TargetCpa;
-      return $this;
+        $this->TargetCpa = $TargetCpa;
+        return $this;
     }
 
 }

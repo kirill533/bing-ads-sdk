@@ -21,7 +21,7 @@ class NetworkCriterion extends Criterion
      */
     public function getNetwork()
     {
-      return $this->Network;
+        return $this->Network;
     }
 
     /**
@@ -30,8 +30,8 @@ class NetworkCriterion extends Criterion
      */
     public function setNetwork($Network)
     {
-      $this->Network = $Network;
-      return $this;
+        $this->Network = $Network;
+        return $this;
     }
 
 }

@@ -21,7 +21,7 @@ class ArrayOfAdGroupCriterion implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function getAdGroupCriterion()
     {
-      return $this->AdGroupCriterion;
+        return $this->AdGroupCriterion;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdGroupCriterion implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function setAdGroupCriterion(array $AdGroupCriterion = null)
     {
-      $this->AdGroupCriterion = $AdGroupCriterion;
-      return $this;
+        $this->AdGroupCriterion = $AdGroupCriterion;
+        return $this;
     }
 
     /**

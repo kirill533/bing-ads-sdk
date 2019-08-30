@@ -51,7 +51,7 @@ class AdExtension
      */
     public function getDevicePreference()
     {
-      return $this->DevicePreference;
+        return $this->DevicePreference;
     }
 
     /**
@@ -60,8 +60,8 @@ class AdExtension
      */
     public function setDevicePreference($DevicePreference)
     {
-      $this->DevicePreference = $DevicePreference;
-      return $this;
+        $this->DevicePreference = $DevicePreference;
+        return $this;
     }
 
     /**
@@ -69,7 +69,7 @@ class AdExtension
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -78,8 +78,8 @@ class AdExtension
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
     /**
@@ -87,7 +87,7 @@ class AdExtension
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -96,8 +96,8 @@ class AdExtension
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -105,7 +105,7 @@ class AdExtension
      */
     public function getScheduling()
     {
-      return $this->Scheduling;
+        return $this->Scheduling;
     }
 
     /**
@@ -114,8 +114,8 @@ class AdExtension
      */
     public function setScheduling($Scheduling)
     {
-      $this->Scheduling = $Scheduling;
-      return $this;
+        $this->Scheduling = $Scheduling;
+        return $this;
     }
 
     /**
@@ -123,7 +123,7 @@ class AdExtension
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -132,8 +132,8 @@ class AdExtension
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
     /**
@@ -141,7 +141,7 @@ class AdExtension
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -150,8 +150,8 @@ class AdExtension
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
     /**
@@ -159,7 +159,7 @@ class AdExtension
      */
     public function getVersion()
     {
-      return $this->Version;
+        return $this->Version;
     }
 
     /**
@@ -168,8 +168,8 @@ class AdExtension
      */
     public function setVersion($Version)
     {
-      $this->Version = $Version;
-      return $this;
+        $this->Version = $Version;
+        return $this;
     }
 
 }

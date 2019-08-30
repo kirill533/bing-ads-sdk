@@ -31,8 +31,8 @@ class AdExtensionAssociation
      */
     public function __construct($AssociationType = null, $EntityId = null)
     {
-      $this->AssociationType = $AssociationType;
-      $this->EntityId = $EntityId;
+    $this->AssociationType = $AssociationType;
+    $this->EntityId = $EntityId;
     }
 
     /**
@@ -40,7 +40,7 @@ class AdExtensionAssociation
      */
     public function getAdExtension()
     {
-      return $this->AdExtension;
+        return $this->AdExtension;
     }
 
     /**
@@ -49,8 +49,8 @@ class AdExtensionAssociation
      */
     public function setAdExtension($AdExtension)
     {
-      $this->AdExtension = $AdExtension;
-      return $this;
+        $this->AdExtension = $AdExtension;
+        return $this;
     }
 
     /**
@@ -58,7 +58,7 @@ class AdExtensionAssociation
      */
     public function getAssociationType()
     {
-      return $this->AssociationType;
+        return $this->AssociationType;
     }
 
     /**
@@ -67,8 +67,8 @@ class AdExtensionAssociation
      */
     public function setAssociationType($AssociationType)
     {
-      $this->AssociationType = $AssociationType;
-      return $this;
+        $this->AssociationType = $AssociationType;
+        return $this;
     }
 
     /**
@@ -76,7 +76,7 @@ class AdExtensionAssociation
      */
     public function getEditorialStatus()
     {
-      return $this->EditorialStatus;
+        return $this->EditorialStatus;
     }
 
     /**
@@ -85,8 +85,8 @@ class AdExtensionAssociation
      */
     public function setEditorialStatus($EditorialStatus)
     {
-      $this->EditorialStatus = $EditorialStatus;
-      return $this;
+        $this->EditorialStatus = $EditorialStatus;
+        return $this;
     }
 
     /**
@@ -94,7 +94,7 @@ class AdExtensionAssociation
      */
     public function getEntityId()
     {
-      return $this->EntityId;
+        return $this->EntityId;
     }
 
     /**
@@ -103,8 +103,8 @@ class AdExtensionAssociation
      */
     public function setEntityId($EntityId)
     {
-      $this->EntityId = $EntityId;
-      return $this;
+        $this->EntityId = $EntityId;
+        return $this;
     }
 
 }

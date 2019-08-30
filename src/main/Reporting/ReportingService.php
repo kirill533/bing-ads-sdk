@@ -139,7 +139,9 @@ class ReportingService extends \PMG\BingAds\BingSoapClient
       'AdApiError' => 'PMG\\BingAds\\Reporting\\AdApiError',
       'ApplicationFault' => 'PMG\\BingAds\\Reporting\\ApplicationFault',
       'ApiFault' => 'PMG\\BingAds\\Reporting\\ApiFault',
+      'ApiFaultDetail' => 'PMG\\BingAds\\Reporting\\ApiFault',
       'AdApiFault' => 'PMG\\BingAds\\Reporting\\AdApiFault',
+      'AdApiFaultDetail' => 'PMG\\BingAds\\Reporting\\AdApiFault',
     );
 
     /**

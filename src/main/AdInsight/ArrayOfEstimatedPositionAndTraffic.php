@@ -21,7 +21,7 @@ class ArrayOfEstimatedPositionAndTraffic implements \ArrayAccess, \IteratorAggre
      */
     public function getEstimatedPositionAndTraffic()
     {
-      return $this->EstimatedPositionAndTraffic;
+        return $this->EstimatedPositionAndTraffic;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfEstimatedPositionAndTraffic implements \ArrayAccess, \IteratorAggre
      */
     public function setEstimatedPositionAndTraffic(array $EstimatedPositionAndTraffic = null)
     {
-      $this->EstimatedPositionAndTraffic = $EstimatedPositionAndTraffic;
-      return $this;
+        $this->EstimatedPositionAndTraffic = $EstimatedPositionAndTraffic;
+        return $this;
     }
 
     /**

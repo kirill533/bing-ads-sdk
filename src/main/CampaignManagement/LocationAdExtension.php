@@ -33,7 +33,7 @@ class LocationAdExtension extends AdExtension
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -41,7 +41,7 @@ class LocationAdExtension extends AdExtension
      */
     public function getAddress()
     {
-      return $this->Address;
+        return $this->Address;
     }
 
     /**
@@ -50,8 +50,8 @@ class LocationAdExtension extends AdExtension
      */
     public function setAddress($Address)
     {
-      $this->Address = $Address;
-      return $this;
+        $this->Address = $Address;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class LocationAdExtension extends AdExtension
      */
     public function getCompanyName()
     {
-      return $this->CompanyName;
+        return $this->CompanyName;
     }
 
     /**
@@ -68,8 +68,8 @@ class LocationAdExtension extends AdExtension
      */
     public function setCompanyName($CompanyName)
     {
-      $this->CompanyName = $CompanyName;
-      return $this;
+        $this->CompanyName = $CompanyName;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class LocationAdExtension extends AdExtension
      */
     public function getGeoCodeStatus()
     {
-      return $this->GeoCodeStatus;
+        return $this->GeoCodeStatus;
     }
 
     /**
@@ -86,8 +86,8 @@ class LocationAdExtension extends AdExtension
      */
     public function setGeoCodeStatus($GeoCodeStatus)
     {
-      $this->GeoCodeStatus = $GeoCodeStatus;
-      return $this;
+        $this->GeoCodeStatus = $GeoCodeStatus;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class LocationAdExtension extends AdExtension
      */
     public function getGeoPoint()
     {
-      return $this->GeoPoint;
+        return $this->GeoPoint;
     }
 
     /**
@@ -104,8 +104,8 @@ class LocationAdExtension extends AdExtension
      */
     public function setGeoPoint($GeoPoint)
     {
-      $this->GeoPoint = $GeoPoint;
-      return $this;
+        $this->GeoPoint = $GeoPoint;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class LocationAdExtension extends AdExtension
      */
     public function getPhoneNumber()
     {
-      return $this->PhoneNumber;
+        return $this->PhoneNumber;
     }
 
     /**
@@ -122,8 +122,8 @@ class LocationAdExtension extends AdExtension
      */
     public function setPhoneNumber($PhoneNumber)
     {
-      $this->PhoneNumber = $PhoneNumber;
-      return $this;
+        $this->PhoneNumber = $PhoneNumber;
+        return $this;
     }
 
 }

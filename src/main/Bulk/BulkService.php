@@ -42,7 +42,9 @@ class BulkService extends \PMG\BingAds\BingSoapClient
       'KeyValuePairOfstringstring' => 'PMG\\BingAds\\Bulk\\KeyValuePairOfstringstring',
       'ApplicationFault' => 'PMG\\BingAds\\Bulk\\ApplicationFault',
       'ApiFault' => 'PMG\\BingAds\\Bulk\\ApiFault',
+      'ApiFaultDetail' => 'PMG\\BingAds\\Bulk\\ApiFault',
       'AdApiFault' => 'PMG\\BingAds\\Bulk\\AdApiFault',
+      'AdApiFaultDetail' => 'PMG\\BingAds\\Bulk\\AdApiFault',
     );
 
     /**

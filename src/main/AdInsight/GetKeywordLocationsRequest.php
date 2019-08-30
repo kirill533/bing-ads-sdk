@@ -51,13 +51,13 @@ class GetKeywordLocationsRequest
      */
     public function __construct($Keywords = null, $Language = null, $PublisherCountry = null, $Device = null, $Level = null, $ParentCountry = null, $MaxLocations = null)
     {
-      $this->Keywords = $Keywords;
-      $this->Language = $Language;
-      $this->PublisherCountry = $PublisherCountry;
-      $this->Device = $Device;
-      $this->Level = $Level;
-      $this->ParentCountry = $ParentCountry;
-      $this->MaxLocations = $MaxLocations;
+    $this->Keywords = $Keywords;
+    $this->Language = $Language;
+    $this->PublisherCountry = $PublisherCountry;
+    $this->Device = $Device;
+    $this->Level = $Level;
+    $this->ParentCountry = $ParentCountry;
+    $this->MaxLocations = $MaxLocations;
     }
 
     /**
@@ -65,7 +65,7 @@ class GetKeywordLocationsRequest
      */
     public function getKeywords()
     {
-      return $this->Keywords;
+        return $this->Keywords;
     }
 
     /**
@@ -74,8 +74,8 @@ class GetKeywordLocationsRequest
      */
     public function setKeywords($Keywords)
     {
-      $this->Keywords = $Keywords;
-      return $this;
+        $this->Keywords = $Keywords;
+        return $this;
     }
 
     /**
@@ -83,7 +83,7 @@ class GetKeywordLocationsRequest
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -92,8 +92,8 @@ class GetKeywordLocationsRequest
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
     /**
@@ -101,7 +101,7 @@ class GetKeywordLocationsRequest
      */
     public function getPublisherCountry()
     {
-      return $this->PublisherCountry;
+        return $this->PublisherCountry;
     }
 
     /**
@@ -110,8 +110,8 @@ class GetKeywordLocationsRequest
      */
     public function setPublisherCountry($PublisherCountry)
     {
-      $this->PublisherCountry = $PublisherCountry;
-      return $this;
+        $this->PublisherCountry = $PublisherCountry;
+        return $this;
     }
 
     /**
@@ -119,7 +119,7 @@ class GetKeywordLocationsRequest
      */
     public function getDevice()
     {
-      return $this->Device;
+        return $this->Device;
     }
 
     /**
@@ -128,8 +128,8 @@ class GetKeywordLocationsRequest
      */
     public function setDevice($Device)
     {
-      $this->Device = $Device;
-      return $this;
+        $this->Device = $Device;
+        return $this;
     }
 
     /**
@@ -137,7 +137,7 @@ class GetKeywordLocationsRequest
      */
     public function getLevel()
     {
-      return $this->Level;
+        return $this->Level;
     }
 
     /**
@@ -146,8 +146,8 @@ class GetKeywordLocationsRequest
      */
     public function setLevel($Level)
     {
-      $this->Level = $Level;
-      return $this;
+        $this->Level = $Level;
+        return $this;
     }
 
     /**
@@ -155,7 +155,7 @@ class GetKeywordLocationsRequest
      */
     public function getParentCountry()
     {
-      return $this->ParentCountry;
+        return $this->ParentCountry;
     }
 
     /**
@@ -164,8 +164,8 @@ class GetKeywordLocationsRequest
      */
     public function setParentCountry($ParentCountry)
     {
-      $this->ParentCountry = $ParentCountry;
-      return $this;
+        $this->ParentCountry = $ParentCountry;
+        return $this;
     }
 
     /**
@@ -173,7 +173,7 @@ class GetKeywordLocationsRequest
      */
     public function getMaxLocations()
     {
-      return $this->MaxLocations;
+        return $this->MaxLocations;
     }
 
     /**
@@ -182,8 +182,8 @@ class GetKeywordLocationsRequest
      */
     public function setMaxLocations($MaxLocations)
     {
-      $this->MaxLocations = $MaxLocations;
-      return $this;
+        $this->MaxLocations = $MaxLocations;
+        return $this;
     }
 
 }

@@ -21,8 +21,8 @@ class GetExperimentsByIdsResponse
      */
     public function __construct($Experiments = null, $PartialErrors = null)
     {
-      $this->Experiments = $Experiments;
-      $this->PartialErrors = $PartialErrors;
+    $this->Experiments = $Experiments;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetExperimentsByIdsResponse
      */
     public function getExperiments()
     {
-      return $this->Experiments;
+        return $this->Experiments;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetExperimentsByIdsResponse
      */
     public function setExperiments($Experiments)
     {
-      $this->Experiments = $Experiments;
-      return $this;
+        $this->Experiments = $Experiments;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetExperimentsByIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetExperimentsByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

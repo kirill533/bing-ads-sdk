@@ -71,7 +71,7 @@ class ShareOfVoiceReportFilter
      */
     public function getAccountStatus()
     {
-      return $this->AccountStatus;
+        return $this->AccountStatus;
     }
 
     /**
@@ -80,8 +80,8 @@ class ShareOfVoiceReportFilter
      */
     public function setAccountStatus($AccountStatus)
     {
-      $this->AccountStatus = $AccountStatus;
-      return $this;
+        $this->AccountStatus = $AccountStatus;
+        return $this;
     }
 
     /**
@@ -89,7 +89,7 @@ class ShareOfVoiceReportFilter
      */
     public function getAdDistribution()
     {
-      return $this->AdDistribution;
+        return $this->AdDistribution;
     }
 
     /**
@@ -98,8 +98,8 @@ class ShareOfVoiceReportFilter
      */
     public function setAdDistribution($AdDistribution)
     {
-      $this->AdDistribution = $AdDistribution;
-      return $this;
+        $this->AdDistribution = $AdDistribution;
+        return $this;
     }
 
     /**
@@ -107,7 +107,7 @@ class ShareOfVoiceReportFilter
      */
     public function getAdGroupStatus()
     {
-      return $this->AdGroupStatus;
+        return $this->AdGroupStatus;
     }
 
     /**
@@ -116,8 +116,8 @@ class ShareOfVoiceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
     {
-      $this->AdGroupStatus = $AdGroupStatus;
-      return $this;
+        $this->AdGroupStatus = $AdGroupStatus;
+        return $this;
     }
 
     /**
@@ -125,7 +125,7 @@ class ShareOfVoiceReportFilter
      */
     public function getBidMatchType()
     {
-      return $this->BidMatchType;
+        return $this->BidMatchType;
     }
 
     /**
@@ -134,8 +134,8 @@ class ShareOfVoiceReportFilter
      */
     public function setBidMatchType($BidMatchType)
     {
-      $this->BidMatchType = $BidMatchType;
-      return $this;
+        $this->BidMatchType = $BidMatchType;
+        return $this;
     }
 
     /**
@@ -143,7 +143,7 @@ class ShareOfVoiceReportFilter
      */
     public function getBidStrategyType()
     {
-      return $this->BidStrategyType;
+        return $this->BidStrategyType;
     }
 
     /**
@@ -152,8 +152,8 @@ class ShareOfVoiceReportFilter
      */
     public function setBidStrategyType($BidStrategyType)
     {
-      $this->BidStrategyType = $BidStrategyType;
-      return $this;
+        $this->BidStrategyType = $BidStrategyType;
+        return $this;
     }
 
     /**
@@ -161,7 +161,7 @@ class ShareOfVoiceReportFilter
      */
     public function getCampaignStatus()
     {
-      return $this->CampaignStatus;
+        return $this->CampaignStatus;
     }
 
     /**
@@ -170,8 +170,8 @@ class ShareOfVoiceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
     {
-      $this->CampaignStatus = $CampaignStatus;
-      return $this;
+        $this->CampaignStatus = $CampaignStatus;
+        return $this;
     }
 
     /**
@@ -179,7 +179,7 @@ class ShareOfVoiceReportFilter
      */
     public function getDeliveredMatchType()
     {
-      return $this->DeliveredMatchType;
+        return $this->DeliveredMatchType;
     }
 
     /**
@@ -188,8 +188,8 @@ class ShareOfVoiceReportFilter
      */
     public function setDeliveredMatchType($DeliveredMatchType)
     {
-      $this->DeliveredMatchType = $DeliveredMatchType;
-      return $this;
+        $this->DeliveredMatchType = $DeliveredMatchType;
+        return $this;
     }
 
     /**
@@ -197,7 +197,7 @@ class ShareOfVoiceReportFilter
      */
     public function getDeviceType()
     {
-      return $this->DeviceType;
+        return $this->DeviceType;
     }
 
     /**
@@ -206,8 +206,8 @@ class ShareOfVoiceReportFilter
      */
     public function setDeviceType($DeviceType)
     {
-      $this->DeviceType = $DeviceType;
-      return $this;
+        $this->DeviceType = $DeviceType;
+        return $this;
     }
 
     /**
@@ -215,7 +215,7 @@ class ShareOfVoiceReportFilter
      */
     public function getKeywordStatus()
     {
-      return $this->KeywordStatus;
+        return $this->KeywordStatus;
     }
 
     /**
@@ -224,8 +224,8 @@ class ShareOfVoiceReportFilter
      */
     public function setKeywordStatus($KeywordStatus)
     {
-      $this->KeywordStatus = $KeywordStatus;
-      return $this;
+        $this->KeywordStatus = $KeywordStatus;
+        return $this;
     }
 
     /**
@@ -233,7 +233,7 @@ class ShareOfVoiceReportFilter
      */
     public function getKeywords()
     {
-      return $this->Keywords;
+        return $this->Keywords;
     }
 
     /**
@@ -242,8 +242,8 @@ class ShareOfVoiceReportFilter
      */
     public function setKeywords($Keywords)
     {
-      $this->Keywords = $Keywords;
-      return $this;
+        $this->Keywords = $Keywords;
+        return $this;
     }
 
     /**
@@ -251,7 +251,7 @@ class ShareOfVoiceReportFilter
      */
     public function getLanguageCode()
     {
-      return $this->LanguageCode;
+        return $this->LanguageCode;
     }
 
     /**
@@ -260,8 +260,8 @@ class ShareOfVoiceReportFilter
      */
     public function setLanguageCode($LanguageCode)
     {
-      $this->LanguageCode = $LanguageCode;
-      return $this;
+        $this->LanguageCode = $LanguageCode;
+        return $this;
     }
 
 }

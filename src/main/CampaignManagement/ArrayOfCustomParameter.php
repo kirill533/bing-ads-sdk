@@ -21,7 +21,7 @@ class ArrayOfCustomParameter implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getCustomParameter()
     {
-      return $this->CustomParameter;
+        return $this->CustomParameter;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCustomParameter implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function setCustomParameter(array $CustomParameter = null)
     {
-      $this->CustomParameter = $CustomParameter;
-      return $this;
+        $this->CustomParameter = $CustomParameter;
+        return $this;
     }
 
     /**

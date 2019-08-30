@@ -21,8 +21,8 @@ class GetNegativeSitesByAdGroupIdsRequest
      */
     public function __construct($CampaignId = null, $AdGroupIds = null)
     {
-      $this->CampaignId = $CampaignId;
-      $this->AdGroupIds = $AdGroupIds;
+    $this->CampaignId = $CampaignId;
+    $this->AdGroupIds = $AdGroupIds;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetNegativeSitesByAdGroupIdsRequest
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetNegativeSitesByAdGroupIdsRequest
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetNegativeSitesByAdGroupIdsRequest
      */
     public function getAdGroupIds()
     {
-      return $this->AdGroupIds;
+        return $this->AdGroupIds;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetNegativeSitesByAdGroupIdsRequest
      */
     public function setAdGroupIds($AdGroupIds)
     {
-      $this->AdGroupIds = $AdGroupIds;
-      return $this;
+        $this->AdGroupIds = $AdGroupIds;
+        return $this;
     }
 
 }

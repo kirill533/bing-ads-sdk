@@ -41,7 +41,7 @@ class SharedEntity
      */
     public function getAssociationCount()
     {
-      return $this->AssociationCount;
+        return $this->AssociationCount;
     }
 
     /**
@@ -50,8 +50,8 @@ class SharedEntity
      */
     public function setAssociationCount($AssociationCount)
     {
-      $this->AssociationCount = $AssociationCount;
-      return $this;
+        $this->AssociationCount = $AssociationCount;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class SharedEntity
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -68,8 +68,8 @@ class SharedEntity
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class SharedEntity
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -86,8 +86,8 @@ class SharedEntity
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class SharedEntity
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -104,8 +104,8 @@ class SharedEntity
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class SharedEntity
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -122,8 +122,8 @@ class SharedEntity
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
 }

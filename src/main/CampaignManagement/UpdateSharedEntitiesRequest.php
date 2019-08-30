@@ -15,7 +15,7 @@ class UpdateSharedEntitiesRequest
      */
     public function __construct($SharedEntities = null)
     {
-      $this->SharedEntities = $SharedEntities;
+    $this->SharedEntities = $SharedEntities;
     }
 
     /**
@@ -23,7 +23,7 @@ class UpdateSharedEntitiesRequest
      */
     public function getSharedEntities()
     {
-      return $this->SharedEntities;
+        return $this->SharedEntities;
     }
 
     /**
@@ -32,8 +32,8 @@ class UpdateSharedEntitiesRequest
      */
     public function setSharedEntities($SharedEntities)
     {
-      $this->SharedEntities = $SharedEntities;
-      return $this;
+        $this->SharedEntities = $SharedEntities;
+        return $this;
     }
 
 }

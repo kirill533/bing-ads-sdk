@@ -21,8 +21,8 @@ class UpdateAdGroupCriterionsResponse
      */
     public function __construct($IsMigrated = null, $NestedPartialErrors = null)
     {
-      $this->IsMigrated = $IsMigrated;
-      $this->NestedPartialErrors = $NestedPartialErrors;
+    $this->IsMigrated = $IsMigrated;
+    $this->NestedPartialErrors = $NestedPartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class UpdateAdGroupCriterionsResponse
      */
     public function getIsMigrated()
     {
-      return $this->IsMigrated;
+        return $this->IsMigrated;
     }
 
     /**
@@ -39,8 +39,8 @@ class UpdateAdGroupCriterionsResponse
      */
     public function setIsMigrated($IsMigrated)
     {
-      $this->IsMigrated = $IsMigrated;
-      return $this;
+        $this->IsMigrated = $IsMigrated;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class UpdateAdGroupCriterionsResponse
      */
     public function getNestedPartialErrors()
     {
-      return $this->NestedPartialErrors;
+        return $this->NestedPartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class UpdateAdGroupCriterionsResponse
      */
     public function setNestedPartialErrors($NestedPartialErrors)
     {
-      $this->NestedPartialErrors = $NestedPartialErrors;
-      return $this;
+        $this->NestedPartialErrors = $NestedPartialErrors;
+        return $this;
     }
 
 }

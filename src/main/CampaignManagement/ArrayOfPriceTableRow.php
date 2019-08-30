@@ -21,7 +21,7 @@ class ArrayOfPriceTableRow implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function getPriceTableRow()
     {
-      return $this->PriceTableRow;
+        return $this->PriceTableRow;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfPriceTableRow implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function setPriceTableRow(array $PriceTableRow = null)
     {
-      $this->PriceTableRow = $PriceTableRow;
-      return $this;
+        $this->PriceTableRow = $PriceTableRow;
+        return $this;
     }
 
     /**

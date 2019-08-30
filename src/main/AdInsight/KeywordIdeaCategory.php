@@ -26,7 +26,7 @@ class KeywordIdeaCategory
      */
     public function getCategoryId()
     {
-      return $this->CategoryId;
+        return $this->CategoryId;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeywordIdeaCategory
      */
     public function setCategoryId($CategoryId)
     {
-      $this->CategoryId = $CategoryId;
-      return $this;
+        $this->CategoryId = $CategoryId;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeywordIdeaCategory
      */
     public function getCategoryName()
     {
-      return $this->CategoryName;
+        return $this->CategoryName;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeywordIdeaCategory
      */
     public function setCategoryName($CategoryName)
     {
-      $this->CategoryName = $CategoryName;
-      return $this;
+        $this->CategoryName = $CategoryName;
+        return $this;
     }
 
 }

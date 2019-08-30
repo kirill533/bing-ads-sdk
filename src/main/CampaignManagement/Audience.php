@@ -71,7 +71,7 @@ class Audience
      */
     public function getAudienceNetworkSize()
     {
-      return $this->AudienceNetworkSize;
+        return $this->AudienceNetworkSize;
     }
 
     /**
@@ -80,8 +80,8 @@ class Audience
      */
     public function setAudienceNetworkSize($AudienceNetworkSize)
     {
-      $this->AudienceNetworkSize = $AudienceNetworkSize;
-      return $this;
+        $this->AudienceNetworkSize = $AudienceNetworkSize;
+        return $this;
     }
 
     /**
@@ -89,7 +89,7 @@ class Audience
      */
     public function getDescription()
     {
-      return $this->Description;
+        return $this->Description;
     }
 
     /**
@@ -98,8 +98,8 @@ class Audience
      */
     public function setDescription($Description)
     {
-      $this->Description = $Description;
-      return $this;
+        $this->Description = $Description;
+        return $this;
     }
 
     /**
@@ -107,7 +107,7 @@ class Audience
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -116,8 +116,8 @@ class Audience
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
     /**
@@ -125,7 +125,7 @@ class Audience
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -134,8 +134,8 @@ class Audience
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -143,7 +143,7 @@ class Audience
      */
     public function getMembershipDuration()
     {
-      return $this->MembershipDuration;
+        return $this->MembershipDuration;
     }
 
     /**
@@ -152,8 +152,8 @@ class Audience
      */
     public function setMembershipDuration($MembershipDuration)
     {
-      $this->MembershipDuration = $MembershipDuration;
-      return $this;
+        $this->MembershipDuration = $MembershipDuration;
+        return $this;
     }
 
     /**
@@ -161,7 +161,7 @@ class Audience
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -170,8 +170,8 @@ class Audience
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -179,7 +179,7 @@ class Audience
      */
     public function getParentId()
     {
-      return $this->ParentId;
+        return $this->ParentId;
     }
 
     /**
@@ -188,8 +188,8 @@ class Audience
      */
     public function setParentId($ParentId)
     {
-      $this->ParentId = $ParentId;
-      return $this;
+        $this->ParentId = $ParentId;
+        return $this;
     }
 
     /**
@@ -197,7 +197,7 @@ class Audience
      */
     public function getScope()
     {
-      return $this->Scope;
+        return $this->Scope;
     }
 
     /**
@@ -206,8 +206,8 @@ class Audience
      */
     public function setScope($Scope)
     {
-      $this->Scope = $Scope;
-      return $this;
+        $this->Scope = $Scope;
+        return $this;
     }
 
     /**
@@ -215,7 +215,7 @@ class Audience
      */
     public function getSearchSize()
     {
-      return $this->SearchSize;
+        return $this->SearchSize;
     }
 
     /**
@@ -224,8 +224,8 @@ class Audience
      */
     public function setSearchSize($SearchSize)
     {
-      $this->SearchSize = $SearchSize;
-      return $this;
+        $this->SearchSize = $SearchSize;
+        return $this;
     }
 
     /**
@@ -233,7 +233,7 @@ class Audience
      */
     public function getSupportedCampaignTypes()
     {
-      return $this->SupportedCampaignTypes;
+        return $this->SupportedCampaignTypes;
     }
 
     /**
@@ -242,8 +242,8 @@ class Audience
      */
     public function setSupportedCampaignTypes($SupportedCampaignTypes)
     {
-      $this->SupportedCampaignTypes = $SupportedCampaignTypes;
-      return $this;
+        $this->SupportedCampaignTypes = $SupportedCampaignTypes;
+        return $this;
     }
 
     /**
@@ -251,7 +251,7 @@ class Audience
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -260,8 +260,8 @@ class Audience
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
 }

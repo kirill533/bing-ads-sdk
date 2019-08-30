@@ -21,8 +21,8 @@ class GetExperimentsByIdsRequest
      */
     public function __construct($ExperimentIds = null, $PageInfo = null)
     {
-      $this->ExperimentIds = $ExperimentIds;
-      $this->PageInfo = $PageInfo;
+    $this->ExperimentIds = $ExperimentIds;
+    $this->PageInfo = $PageInfo;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetExperimentsByIdsRequest
      */
     public function getExperimentIds()
     {
-      return $this->ExperimentIds;
+        return $this->ExperimentIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetExperimentsByIdsRequest
      */
     public function setExperimentIds($ExperimentIds)
     {
-      $this->ExperimentIds = $ExperimentIds;
-      return $this;
+        $this->ExperimentIds = $ExperimentIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetExperimentsByIdsRequest
      */
     public function getPageInfo()
     {
-      return $this->PageInfo;
+        return $this->PageInfo;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetExperimentsByIdsRequest
      */
     public function setPageInfo($PageInfo)
     {
-      $this->PageInfo = $PageInfo;
-      return $this;
+        $this->PageInfo = $PageInfo;
+        return $this;
     }
 
 }

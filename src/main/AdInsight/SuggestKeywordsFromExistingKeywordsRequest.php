@@ -63,15 +63,15 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function __construct($Keywords = null, $Language = null, $PublisherCountries = null, $MaxSuggestionsPerKeyword = null, $SuggestionType = null, $RemoveDuplicates = null, $ExcludeBrand = null, $AdGroupId = null, $CampaignId = null)
     {
-      $this->Keywords = $Keywords;
-      $this->Language = $Language;
-      $this->PublisherCountries = $PublisherCountries;
-      $this->MaxSuggestionsPerKeyword = $MaxSuggestionsPerKeyword;
-      $this->SuggestionType = $SuggestionType;
-      $this->RemoveDuplicates = $RemoveDuplicates;
-      $this->ExcludeBrand = $ExcludeBrand;
-      $this->AdGroupId = $AdGroupId;
-      $this->CampaignId = $CampaignId;
+    $this->Keywords = $Keywords;
+    $this->Language = $Language;
+    $this->PublisherCountries = $PublisherCountries;
+    $this->MaxSuggestionsPerKeyword = $MaxSuggestionsPerKeyword;
+    $this->SuggestionType = $SuggestionType;
+    $this->RemoveDuplicates = $RemoveDuplicates;
+    $this->ExcludeBrand = $ExcludeBrand;
+    $this->AdGroupId = $AdGroupId;
+    $this->CampaignId = $CampaignId;
     }
 
     /**
@@ -79,7 +79,7 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function getKeywords()
     {
-      return $this->Keywords;
+        return $this->Keywords;
     }
 
     /**
@@ -88,8 +88,8 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function setKeywords($Keywords)
     {
-      $this->Keywords = $Keywords;
-      return $this;
+        $this->Keywords = $Keywords;
+        return $this;
     }
 
     /**
@@ -97,7 +97,7 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -106,8 +106,8 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
     /**
@@ -115,7 +115,7 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function getPublisherCountries()
     {
-      return $this->PublisherCountries;
+        return $this->PublisherCountries;
     }
 
     /**
@@ -124,8 +124,8 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function setPublisherCountries($PublisherCountries)
     {
-      $this->PublisherCountries = $PublisherCountries;
-      return $this;
+        $this->PublisherCountries = $PublisherCountries;
+        return $this;
     }
 
     /**
@@ -133,7 +133,7 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function getMaxSuggestionsPerKeyword()
     {
-      return $this->MaxSuggestionsPerKeyword;
+        return $this->MaxSuggestionsPerKeyword;
     }
 
     /**
@@ -142,8 +142,8 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function setMaxSuggestionsPerKeyword($MaxSuggestionsPerKeyword)
     {
-      $this->MaxSuggestionsPerKeyword = $MaxSuggestionsPerKeyword;
-      return $this;
+        $this->MaxSuggestionsPerKeyword = $MaxSuggestionsPerKeyword;
+        return $this;
     }
 
     /**
@@ -151,7 +151,7 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function getSuggestionType()
     {
-      return $this->SuggestionType;
+        return $this->SuggestionType;
     }
 
     /**
@@ -160,8 +160,8 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function setSuggestionType($SuggestionType)
     {
-      $this->SuggestionType = $SuggestionType;
-      return $this;
+        $this->SuggestionType = $SuggestionType;
+        return $this;
     }
 
     /**
@@ -169,7 +169,7 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function getRemoveDuplicates()
     {
-      return $this->RemoveDuplicates;
+        return $this->RemoveDuplicates;
     }
 
     /**
@@ -178,8 +178,8 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function setRemoveDuplicates($RemoveDuplicates)
     {
-      $this->RemoveDuplicates = $RemoveDuplicates;
-      return $this;
+        $this->RemoveDuplicates = $RemoveDuplicates;
+        return $this;
     }
 
     /**
@@ -187,7 +187,7 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function getExcludeBrand()
     {
-      return $this->ExcludeBrand;
+        return $this->ExcludeBrand;
     }
 
     /**
@@ -196,8 +196,8 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function setExcludeBrand($ExcludeBrand)
     {
-      $this->ExcludeBrand = $ExcludeBrand;
-      return $this;
+        $this->ExcludeBrand = $ExcludeBrand;
+        return $this;
     }
 
     /**
@@ -205,7 +205,7 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -214,8 +214,8 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -223,7 +223,7 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -232,8 +232,8 @@ class SuggestKeywordsFromExistingKeywordsRequest
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
 }

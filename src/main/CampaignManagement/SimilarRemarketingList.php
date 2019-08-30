@@ -13,7 +13,7 @@ class SimilarRemarketingList extends Audience
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class SimilarRemarketingList extends Audience
      */
     public function getSourceId()
     {
-      return $this->SourceId;
+        return $this->SourceId;
     }
 
     /**
@@ -30,8 +30,8 @@ class SimilarRemarketingList extends Audience
      */
     public function setSourceId($SourceId)
     {
-      $this->SourceId = $SourceId;
-      return $this;
+        $this->SourceId = $SourceId;
+        return $this;
     }
 
 }

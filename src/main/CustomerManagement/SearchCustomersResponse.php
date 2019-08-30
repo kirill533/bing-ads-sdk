@@ -15,7 +15,7 @@ class SearchCustomersResponse
      */
     public function __construct($Customers = null)
     {
-      $this->Customers = $Customers;
+    $this->Customers = $Customers;
     }
 
     /**
@@ -23,7 +23,7 @@ class SearchCustomersResponse
      */
     public function getCustomers()
     {
-      return $this->Customers;
+        return $this->Customers;
     }
 
     /**
@@ -32,8 +32,8 @@ class SearchCustomersResponse
      */
     public function setCustomers($Customers)
     {
-      $this->Customers = $Customers;
-      return $this;
+        $this->Customers = $Customers;
+        return $this;
     }
 
 }

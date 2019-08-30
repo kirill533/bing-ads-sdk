@@ -36,7 +36,7 @@ class KeywordBidLandscape
      */
     public function getKeywordId()
     {
-      return $this->KeywordId;
+        return $this->KeywordId;
     }
 
     /**
@@ -45,8 +45,8 @@ class KeywordBidLandscape
      */
     public function setKeywordId($KeywordId)
     {
-      $this->KeywordId = $KeywordId;
-      return $this;
+        $this->KeywordId = $KeywordId;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class KeywordBidLandscape
      */
     public function getStartDate()
     {
-      return $this->StartDate;
+        return $this->StartDate;
     }
 
     /**
@@ -63,8 +63,8 @@ class KeywordBidLandscape
      */
     public function setStartDate($StartDate)
     {
-      $this->StartDate = $StartDate;
-      return $this;
+        $this->StartDate = $StartDate;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class KeywordBidLandscape
      */
     public function getEndDate()
     {
-      return $this->EndDate;
+        return $this->EndDate;
     }
 
     /**
@@ -81,8 +81,8 @@ class KeywordBidLandscape
      */
     public function setEndDate($EndDate)
     {
-      $this->EndDate = $EndDate;
-      return $this;
+        $this->EndDate = $EndDate;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class KeywordBidLandscape
      */
     public function getBidLandscapePoints()
     {
-      return $this->BidLandscapePoints;
+        return $this->BidLandscapePoints;
     }
 
     /**
@@ -99,8 +99,8 @@ class KeywordBidLandscape
      */
     public function setBidLandscapePoints($BidLandscapePoints)
     {
-      $this->BidLandscapePoints = $BidLandscapePoints;
-      return $this;
+        $this->BidLandscapePoints = $BidLandscapePoints;
+        return $this;
     }
 
 }

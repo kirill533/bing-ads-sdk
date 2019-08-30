@@ -15,7 +15,7 @@ class GetBMCStoresByCustomerIdResponse
      */
     public function __construct($BMCStores = null)
     {
-      $this->BMCStores = $BMCStores;
+    $this->BMCStores = $BMCStores;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetBMCStoresByCustomerIdResponse
      */
     public function getBMCStores()
     {
-      return $this->BMCStores;
+        return $this->BMCStores;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetBMCStoresByCustomerIdResponse
      */
     public function setBMCStores($BMCStores)
     {
-      $this->BMCStores = $BMCStores;
-      return $this;
+        $this->BMCStores = $BMCStores;
+        return $this;
     }
 
 }

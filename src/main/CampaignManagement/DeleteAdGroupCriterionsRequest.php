@@ -27,9 +27,9 @@ class DeleteAdGroupCriterionsRequest
      */
     public function __construct($AdGroupCriterionIds = null, $AdGroupId = null, $CriterionType = null)
     {
-      $this->AdGroupCriterionIds = $AdGroupCriterionIds;
-      $this->AdGroupId = $AdGroupId;
-      $this->CriterionType = $CriterionType;
+    $this->AdGroupCriterionIds = $AdGroupCriterionIds;
+    $this->AdGroupId = $AdGroupId;
+    $this->CriterionType = $CriterionType;
     }
 
     /**
@@ -37,7 +37,7 @@ class DeleteAdGroupCriterionsRequest
      */
     public function getAdGroupCriterionIds()
     {
-      return $this->AdGroupCriterionIds;
+        return $this->AdGroupCriterionIds;
     }
 
     /**
@@ -46,8 +46,8 @@ class DeleteAdGroupCriterionsRequest
      */
     public function setAdGroupCriterionIds($AdGroupCriterionIds)
     {
-      $this->AdGroupCriterionIds = $AdGroupCriterionIds;
-      return $this;
+        $this->AdGroupCriterionIds = $AdGroupCriterionIds;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class DeleteAdGroupCriterionsRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -64,8 +64,8 @@ class DeleteAdGroupCriterionsRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class DeleteAdGroupCriterionsRequest
      */
     public function getCriterionType()
     {
-      return $this->CriterionType;
+        return $this->CriterionType;
     }
 
     /**
@@ -82,8 +82,8 @@ class DeleteAdGroupCriterionsRequest
      */
     public function setCriterionType($CriterionType)
     {
-      $this->CriterionType = $CriterionType;
-      return $this;
+        $this->CriterionType = $CriterionType;
+        return $this;
     }
 
 }

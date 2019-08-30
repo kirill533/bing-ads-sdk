@@ -23,7 +23,7 @@ class CoOpSetting extends Setting
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -31,7 +31,7 @@ class CoOpSetting extends Setting
      */
     public function getBidBoostValue()
     {
-      return $this->BidBoostValue;
+        return $this->BidBoostValue;
     }
 
     /**
@@ -40,8 +40,8 @@ class CoOpSetting extends Setting
      */
     public function setBidBoostValue($BidBoostValue)
     {
-      $this->BidBoostValue = $BidBoostValue;
-      return $this;
+        $this->BidBoostValue = $BidBoostValue;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class CoOpSetting extends Setting
      */
     public function getBidMaxValue()
     {
-      return $this->BidMaxValue;
+        return $this->BidMaxValue;
     }
 
     /**
@@ -58,8 +58,8 @@ class CoOpSetting extends Setting
      */
     public function setBidMaxValue($BidMaxValue)
     {
-      $this->BidMaxValue = $BidMaxValue;
-      return $this;
+        $this->BidMaxValue = $BidMaxValue;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class CoOpSetting extends Setting
      */
     public function getBidOption()
     {
-      return $this->BidOption;
+        return $this->BidOption;
     }
 
     /**
@@ -76,8 +76,8 @@ class CoOpSetting extends Setting
      */
     public function setBidOption($BidOption)
     {
-      $this->BidOption = $BidOption;
-      return $this;
+        $this->BidOption = $BidOption;
+        return $this;
     }
 
 }

@@ -71,7 +71,7 @@ class EstimatedPositionAndTraffic
      */
     public function getMatchType()
     {
-      return $this->MatchType;
+        return $this->MatchType;
     }
 
     /**
@@ -80,8 +80,8 @@ class EstimatedPositionAndTraffic
      */
     public function setMatchType($MatchType)
     {
-      $this->MatchType = $MatchType;
-      return $this;
+        $this->MatchType = $MatchType;
+        return $this;
     }
 
     /**
@@ -89,7 +89,7 @@ class EstimatedPositionAndTraffic
      */
     public function getMinClicksPerWeek()
     {
-      return $this->MinClicksPerWeek;
+        return $this->MinClicksPerWeek;
     }
 
     /**
@@ -98,8 +98,8 @@ class EstimatedPositionAndTraffic
      */
     public function setMinClicksPerWeek($MinClicksPerWeek)
     {
-      $this->MinClicksPerWeek = $MinClicksPerWeek;
-      return $this;
+        $this->MinClicksPerWeek = $MinClicksPerWeek;
+        return $this;
     }
 
     /**
@@ -107,7 +107,7 @@ class EstimatedPositionAndTraffic
      */
     public function getMaxClicksPerWeek()
     {
-      return $this->MaxClicksPerWeek;
+        return $this->MaxClicksPerWeek;
     }
 
     /**
@@ -116,8 +116,8 @@ class EstimatedPositionAndTraffic
      */
     public function setMaxClicksPerWeek($MaxClicksPerWeek)
     {
-      $this->MaxClicksPerWeek = $MaxClicksPerWeek;
-      return $this;
+        $this->MaxClicksPerWeek = $MaxClicksPerWeek;
+        return $this;
     }
 
     /**
@@ -125,7 +125,7 @@ class EstimatedPositionAndTraffic
      */
     public function getAverageCPC()
     {
-      return $this->AverageCPC;
+        return $this->AverageCPC;
     }
 
     /**
@@ -134,8 +134,8 @@ class EstimatedPositionAndTraffic
      */
     public function setAverageCPC($AverageCPC)
     {
-      $this->AverageCPC = $AverageCPC;
-      return $this;
+        $this->AverageCPC = $AverageCPC;
+        return $this;
     }
 
     /**
@@ -143,7 +143,7 @@ class EstimatedPositionAndTraffic
      */
     public function getMinImpressionsPerWeek()
     {
-      return $this->MinImpressionsPerWeek;
+        return $this->MinImpressionsPerWeek;
     }
 
     /**
@@ -152,8 +152,8 @@ class EstimatedPositionAndTraffic
      */
     public function setMinImpressionsPerWeek($MinImpressionsPerWeek)
     {
-      $this->MinImpressionsPerWeek = $MinImpressionsPerWeek;
-      return $this;
+        $this->MinImpressionsPerWeek = $MinImpressionsPerWeek;
+        return $this;
     }
 
     /**
@@ -161,7 +161,7 @@ class EstimatedPositionAndTraffic
      */
     public function getMaxImpressionsPerWeek()
     {
-      return $this->MaxImpressionsPerWeek;
+        return $this->MaxImpressionsPerWeek;
     }
 
     /**
@@ -170,8 +170,8 @@ class EstimatedPositionAndTraffic
      */
     public function setMaxImpressionsPerWeek($MaxImpressionsPerWeek)
     {
-      $this->MaxImpressionsPerWeek = $MaxImpressionsPerWeek;
-      return $this;
+        $this->MaxImpressionsPerWeek = $MaxImpressionsPerWeek;
+        return $this;
     }
 
     /**
@@ -179,7 +179,7 @@ class EstimatedPositionAndTraffic
      */
     public function getCTR()
     {
-      return $this->CTR;
+        return $this->CTR;
     }
 
     /**
@@ -188,8 +188,8 @@ class EstimatedPositionAndTraffic
      */
     public function setCTR($CTR)
     {
-      $this->CTR = $CTR;
-      return $this;
+        $this->CTR = $CTR;
+        return $this;
     }
 
     /**
@@ -197,7 +197,7 @@ class EstimatedPositionAndTraffic
      */
     public function getMinTotalCostPerWeek()
     {
-      return $this->MinTotalCostPerWeek;
+        return $this->MinTotalCostPerWeek;
     }
 
     /**
@@ -206,8 +206,8 @@ class EstimatedPositionAndTraffic
      */
     public function setMinTotalCostPerWeek($MinTotalCostPerWeek)
     {
-      $this->MinTotalCostPerWeek = $MinTotalCostPerWeek;
-      return $this;
+        $this->MinTotalCostPerWeek = $MinTotalCostPerWeek;
+        return $this;
     }
 
     /**
@@ -215,7 +215,7 @@ class EstimatedPositionAndTraffic
      */
     public function getMaxTotalCostPerWeek()
     {
-      return $this->MaxTotalCostPerWeek;
+        return $this->MaxTotalCostPerWeek;
     }
 
     /**
@@ -224,8 +224,8 @@ class EstimatedPositionAndTraffic
      */
     public function setMaxTotalCostPerWeek($MaxTotalCostPerWeek)
     {
-      $this->MaxTotalCostPerWeek = $MaxTotalCostPerWeek;
-      return $this;
+        $this->MaxTotalCostPerWeek = $MaxTotalCostPerWeek;
+        return $this;
     }
 
     /**
@@ -233,7 +233,7 @@ class EstimatedPositionAndTraffic
      */
     public function getCurrencyCode()
     {
-      return $this->CurrencyCode;
+        return $this->CurrencyCode;
     }
 
     /**
@@ -242,8 +242,8 @@ class EstimatedPositionAndTraffic
      */
     public function setCurrencyCode($CurrencyCode)
     {
-      $this->CurrencyCode = $CurrencyCode;
-      return $this;
+        $this->CurrencyCode = $CurrencyCode;
+        return $this;
     }
 
     /**
@@ -251,7 +251,7 @@ class EstimatedPositionAndTraffic
      */
     public function getEstimatedAdPosition()
     {
-      return $this->EstimatedAdPosition;
+        return $this->EstimatedAdPosition;
     }
 
     /**
@@ -260,8 +260,8 @@ class EstimatedPositionAndTraffic
      */
     public function setEstimatedAdPosition($EstimatedAdPosition)
     {
-      $this->EstimatedAdPosition = $EstimatedAdPosition;
-      return $this;
+        $this->EstimatedAdPosition = $EstimatedAdPosition;
+        return $this;
     }
 
 }

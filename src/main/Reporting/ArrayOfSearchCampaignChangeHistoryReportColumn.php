@@ -21,7 +21,7 @@ class ArrayOfSearchCampaignChangeHistoryReportColumn implements \ArrayAccess, \I
      */
     public function getSearchCampaignChangeHistoryReportColumn()
     {
-      return $this->SearchCampaignChangeHistoryReportColumn;
+        return $this->SearchCampaignChangeHistoryReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfSearchCampaignChangeHistoryReportColumn implements \ArrayAccess, \I
      */
     public function setSearchCampaignChangeHistoryReportColumn(array $SearchCampaignChangeHistoryReportColumn = null)
     {
-      $this->SearchCampaignChangeHistoryReportColumn = $SearchCampaignChangeHistoryReportColumn;
-      return $this;
+        $this->SearchCampaignChangeHistoryReportColumn = $SearchCampaignChangeHistoryReportColumn;
+        return $this;
     }
 
     /**

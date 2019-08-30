@@ -125,6 +125,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
       'ApplicationFault' => 'PMG\\BingAds\\CustomerManagement\\ApplicationFault',
       'ApiFault' => 'PMG\\BingAds\\CustomerManagement\\ApiFault',
       'AdApiFault' => 'PMG\\BingAds\\CustomerManagement\\AdApiFault',
+      'AdApiFaultDetail' => 'PMG\\BingAds\\CustomerManagement\\AdApiFault',
     );
 
     /**

@@ -21,7 +21,7 @@ class ArrayOfKeywordDemographicResult implements \ArrayAccess, \IteratorAggregat
      */
     public function getKeywordDemographicResult()
     {
-      return $this->KeywordDemographicResult;
+        return $this->KeywordDemographicResult;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordDemographicResult implements \ArrayAccess, \IteratorAggregat
      */
     public function setKeywordDemographicResult(array $KeywordDemographicResult = null)
     {
-      $this->KeywordDemographicResult = $KeywordDemographicResult;
-      return $this;
+        $this->KeywordDemographicResult = $KeywordDemographicResult;
+        return $this;
     }
 
     /**

@@ -33,10 +33,10 @@ class GetAdsByEditorialStatusRequest
      */
     public function __construct($AdGroupId = null, $EditorialStatus = null, $AdTypes = null, $ReturnAdditionalFields = null)
     {
-      $this->AdGroupId = $AdGroupId;
-      $this->EditorialStatus = $EditorialStatus;
-      $this->AdTypes = $AdTypes;
-      $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+    $this->AdGroupId = $AdGroupId;
+    $this->EditorialStatus = $EditorialStatus;
+    $this->AdTypes = $AdTypes;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -44,7 +44,7 @@ class GetAdsByEditorialStatusRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -53,8 +53,8 @@ class GetAdsByEditorialStatusRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -62,7 +62,7 @@ class GetAdsByEditorialStatusRequest
      */
     public function getEditorialStatus()
     {
-      return $this->EditorialStatus;
+        return $this->EditorialStatus;
     }
 
     /**
@@ -71,8 +71,8 @@ class GetAdsByEditorialStatusRequest
      */
     public function setEditorialStatus($EditorialStatus)
     {
-      $this->EditorialStatus = $EditorialStatus;
-      return $this;
+        $this->EditorialStatus = $EditorialStatus;
+        return $this;
     }
 
     /**
@@ -80,7 +80,7 @@ class GetAdsByEditorialStatusRequest
      */
     public function getAdTypes()
     {
-      return $this->AdTypes;
+        return $this->AdTypes;
     }
 
     /**
@@ -89,8 +89,8 @@ class GetAdsByEditorialStatusRequest
      */
     public function setAdTypes($AdTypes)
     {
-      $this->AdTypes = $AdTypes;
-      return $this;
+        $this->AdTypes = $AdTypes;
+        return $this;
     }
 
     /**
@@ -98,7 +98,7 @@ class GetAdsByEditorialStatusRequest
      */
     public function getReturnAdditionalFields()
     {
-      return $this->ReturnAdditionalFields;
+        return $this->ReturnAdditionalFields;
     }
 
     /**
@@ -107,8 +107,8 @@ class GetAdsByEditorialStatusRequest
      */
     public function setReturnAdditionalFields($ReturnAdditionalFields)
     {
-      $this->ReturnAdditionalFields = $ReturnAdditionalFields;
-      return $this;
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

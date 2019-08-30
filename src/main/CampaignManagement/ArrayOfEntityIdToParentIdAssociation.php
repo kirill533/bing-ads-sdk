@@ -21,7 +21,7 @@ class ArrayOfEntityIdToParentIdAssociation implements \ArrayAccess, \IteratorAgg
      */
     public function getEntityIdToParentIdAssociation()
     {
-      return $this->EntityIdToParentIdAssociation;
+        return $this->EntityIdToParentIdAssociation;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfEntityIdToParentIdAssociation implements \ArrayAccess, \IteratorAgg
      */
     public function setEntityIdToParentIdAssociation(array $EntityIdToParentIdAssociation = null)
     {
-      $this->EntityIdToParentIdAssociation = $EntityIdToParentIdAssociation;
-      return $this;
+        $this->EntityIdToParentIdAssociation = $EntityIdToParentIdAssociation;
+        return $this;
     }
 
     /**

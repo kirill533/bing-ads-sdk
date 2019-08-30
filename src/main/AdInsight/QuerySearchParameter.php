@@ -21,7 +21,7 @@ class QuerySearchParameter extends SearchParameter
      */
     public function getQueries()
     {
-      return $this->Queries;
+        return $this->Queries;
     }
 
     /**
@@ -30,8 +30,8 @@ class QuerySearchParameter extends SearchParameter
      */
     public function setQueries($Queries)
     {
-      $this->Queries = $Queries;
-      return $this;
+        $this->Queries = $Queries;
+        return $this;
     }
 
 }

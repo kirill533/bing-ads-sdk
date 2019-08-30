@@ -26,7 +26,7 @@ class TargetSettingDetail
      */
     public function getCriterionTypeGroup()
     {
-      return $this->CriterionTypeGroup;
+        return $this->CriterionTypeGroup;
     }
 
     /**
@@ -35,8 +35,8 @@ class TargetSettingDetail
      */
     public function setCriterionTypeGroup($CriterionTypeGroup)
     {
-      $this->CriterionTypeGroup = $CriterionTypeGroup;
-      return $this;
+        $this->CriterionTypeGroup = $CriterionTypeGroup;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class TargetSettingDetail
      */
     public function getTargetAndBid()
     {
-      return $this->TargetAndBid;
+        return $this->TargetAndBid;
     }
 
     /**
@@ -53,8 +53,8 @@ class TargetSettingDetail
      */
     public function setTargetAndBid($TargetAndBid)
     {
-      $this->TargetAndBid = $TargetAndBid;
-      return $this;
+        $this->TargetAndBid = $TargetAndBid;
+        return $this;
     }
 
 }

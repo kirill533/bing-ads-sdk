@@ -21,7 +21,7 @@ class ArrayOfEntityNegativeKeyword implements \ArrayAccess, \IteratorAggregate, 
      */
     public function getEntityNegativeKeyword()
     {
-      return $this->EntityNegativeKeyword;
+        return $this->EntityNegativeKeyword;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfEntityNegativeKeyword implements \ArrayAccess, \IteratorAggregate, 
      */
     public function setEntityNegativeKeyword(array $EntityNegativeKeyword = null)
     {
-      $this->EntityNegativeKeyword = $EntityNegativeKeyword;
-      return $this;
+        $this->EntityNegativeKeyword = $EntityNegativeKeyword;
+        return $this;
     }
 
     /**

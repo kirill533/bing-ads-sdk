@@ -31,7 +31,7 @@ class DayMonthAndYear
      */
     public function getDay()
     {
-      return $this->Day;
+        return $this->Day;
     }
 
     /**
@@ -40,8 +40,8 @@ class DayMonthAndYear
      */
     public function setDay($Day)
     {
-      $this->Day = $Day;
-      return $this;
+        $this->Day = $Day;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class DayMonthAndYear
      */
     public function getMonth()
     {
-      return $this->Month;
+        return $this->Month;
     }
 
     /**
@@ -58,8 +58,8 @@ class DayMonthAndYear
      */
     public function setMonth($Month)
     {
-      $this->Month = $Month;
-      return $this;
+        $this->Month = $Month;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class DayMonthAndYear
      */
     public function getYear()
     {
-      return $this->Year;
+        return $this->Year;
     }
 
     /**
@@ -76,8 +76,8 @@ class DayMonthAndYear
      */
     public function setYear($Year)
     {
-      $this->Year = $Year;
-      return $this;
+        $this->Year = $Year;
+        return $this;
     }
 
 }

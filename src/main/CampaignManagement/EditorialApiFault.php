@@ -25,7 +25,7 @@ class EditorialApiFault extends ApplicationFault
      */
     public function getBatchErrors()
     {
-      return $this->BatchErrors;
+        return $this->BatchErrors;
     }
 
     /**
@@ -34,8 +34,8 @@ class EditorialApiFault extends ApplicationFault
      */
     public function setBatchErrors($BatchErrors)
     {
-      $this->BatchErrors = $BatchErrors;
-      return $this;
+        $this->BatchErrors = $BatchErrors;
+        return $this;
     }
 
     /**
@@ -43,7 +43,7 @@ class EditorialApiFault extends ApplicationFault
      */
     public function getEditorialErrors()
     {
-      return $this->EditorialErrors;
+        return $this->EditorialErrors;
     }
 
     /**
@@ -52,8 +52,8 @@ class EditorialApiFault extends ApplicationFault
      */
     public function setEditorialErrors($EditorialErrors)
     {
-      $this->EditorialErrors = $EditorialErrors;
-      return $this;
+        $this->EditorialErrors = $EditorialErrors;
+        return $this;
     }
 
     /**
@@ -61,7 +61,7 @@ class EditorialApiFault extends ApplicationFault
      */
     public function getOperationErrors()
     {
-      return $this->OperationErrors;
+        return $this->OperationErrors;
     }
 
     /**
@@ -70,8 +70,8 @@ class EditorialApiFault extends ApplicationFault
      */
     public function setOperationErrors($OperationErrors)
     {
-      $this->OperationErrors = $OperationErrors;
-      return $this;
+        $this->OperationErrors = $OperationErrors;
+        return $this;
     }
 
 }

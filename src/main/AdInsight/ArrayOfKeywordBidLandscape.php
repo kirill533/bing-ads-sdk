@@ -21,7 +21,7 @@ class ArrayOfKeywordBidLandscape implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getKeywordBidLandscape()
     {
-      return $this->KeywordBidLandscape;
+        return $this->KeywordBidLandscape;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordBidLandscape implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function setKeywordBidLandscape(array $KeywordBidLandscape = null)
     {
-      $this->KeywordBidLandscape = $KeywordBidLandscape;
-      return $this;
+        $this->KeywordBidLandscape = $KeywordBidLandscape;
+        return $this;
     }
 
     /**

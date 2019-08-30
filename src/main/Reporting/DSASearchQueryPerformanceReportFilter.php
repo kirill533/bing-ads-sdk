@@ -56,7 +56,7 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function getAccountStatus()
     {
-      return $this->AccountStatus;
+        return $this->AccountStatus;
     }
 
     /**
@@ -65,8 +65,8 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
     {
-      $this->AccountStatus = $AccountStatus;
-      return $this;
+        $this->AccountStatus = $AccountStatus;
+        return $this;
     }
 
     /**
@@ -74,7 +74,7 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function getAdGroupStatus()
     {
-      return $this->AdGroupStatus;
+        return $this->AdGroupStatus;
     }
 
     /**
@@ -83,8 +83,8 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
     {
-      $this->AdGroupStatus = $AdGroupStatus;
-      return $this;
+        $this->AdGroupStatus = $AdGroupStatus;
+        return $this;
     }
 
     /**
@@ -92,7 +92,7 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function getAdStatus()
     {
-      return $this->AdStatus;
+        return $this->AdStatus;
     }
 
     /**
@@ -101,8 +101,8 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function setAdStatus($AdStatus)
     {
-      $this->AdStatus = $AdStatus;
-      return $this;
+        $this->AdStatus = $AdStatus;
+        return $this;
     }
 
     /**
@@ -110,7 +110,7 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function getCampaignStatus()
     {
-      return $this->CampaignStatus;
+        return $this->CampaignStatus;
     }
 
     /**
@@ -119,8 +119,8 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
     {
-      $this->CampaignStatus = $CampaignStatus;
-      return $this;
+        $this->CampaignStatus = $CampaignStatus;
+        return $this;
     }
 
     /**
@@ -128,7 +128,7 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function getExcludeZeroClicks()
     {
-      return $this->ExcludeZeroClicks;
+        return $this->ExcludeZeroClicks;
     }
 
     /**
@@ -137,8 +137,8 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function setExcludeZeroClicks($ExcludeZeroClicks)
     {
-      $this->ExcludeZeroClicks = $ExcludeZeroClicks;
-      return $this;
+        $this->ExcludeZeroClicks = $ExcludeZeroClicks;
+        return $this;
     }
 
     /**
@@ -146,7 +146,7 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function getFeedUrl()
     {
-      return $this->FeedUrl;
+        return $this->FeedUrl;
     }
 
     /**
@@ -155,8 +155,8 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function setFeedUrl($FeedUrl)
     {
-      $this->FeedUrl = $FeedUrl;
-      return $this;
+        $this->FeedUrl = $FeedUrl;
+        return $this;
     }
 
     /**
@@ -164,7 +164,7 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function getLanguageCode()
     {
-      return $this->LanguageCode;
+        return $this->LanguageCode;
     }
 
     /**
@@ -173,8 +173,8 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function setLanguageCode($LanguageCode)
     {
-      $this->LanguageCode = $LanguageCode;
-      return $this;
+        $this->LanguageCode = $LanguageCode;
+        return $this;
     }
 
     /**
@@ -182,7 +182,7 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function getSearchQueries()
     {
-      return $this->SearchQueries;
+        return $this->SearchQueries;
     }
 
     /**
@@ -191,8 +191,8 @@ class DSASearchQueryPerformanceReportFilter
      */
     public function setSearchQueries($SearchQueries)
     {
-      $this->SearchQueries = $SearchQueries;
-      return $this;
+        $this->SearchQueries = $SearchQueries;
+        return $this;
     }
 
 }

@@ -31,7 +31,7 @@ class PerformanceStatsDateRange
      */
     public function getCustomDateRangeEnd()
     {
-      return $this->CustomDateRangeEnd;
+        return $this->CustomDateRangeEnd;
     }
 
     /**
@@ -40,8 +40,8 @@ class PerformanceStatsDateRange
      */
     public function setCustomDateRangeEnd($CustomDateRangeEnd)
     {
-      $this->CustomDateRangeEnd = $CustomDateRangeEnd;
-      return $this;
+        $this->CustomDateRangeEnd = $CustomDateRangeEnd;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class PerformanceStatsDateRange
      */
     public function getCustomDateRangeStart()
     {
-      return $this->CustomDateRangeStart;
+        return $this->CustomDateRangeStart;
     }
 
     /**
@@ -58,8 +58,8 @@ class PerformanceStatsDateRange
      */
     public function setCustomDateRangeStart($CustomDateRangeStart)
     {
-      $this->CustomDateRangeStart = $CustomDateRangeStart;
-      return $this;
+        $this->CustomDateRangeStart = $CustomDateRangeStart;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class PerformanceStatsDateRange
      */
     public function getPredefinedTime()
     {
-      return $this->PredefinedTime;
+        return $this->PredefinedTime;
     }
 
     /**
@@ -76,8 +76,8 @@ class PerformanceStatsDateRange
      */
     public function setPredefinedTime($PredefinedTime)
     {
-      $this->PredefinedTime = $PredefinedTime;
-      return $this;
+        $this->PredefinedTime = $PredefinedTime;
+        return $this;
     }
 
 }

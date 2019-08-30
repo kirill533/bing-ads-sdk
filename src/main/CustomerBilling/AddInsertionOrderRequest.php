@@ -15,7 +15,7 @@ class AddInsertionOrderRequest
      */
     public function __construct($InsertionOrder = null)
     {
-      $this->InsertionOrder = $InsertionOrder;
+    $this->InsertionOrder = $InsertionOrder;
     }
 
     /**
@@ -23,7 +23,7 @@ class AddInsertionOrderRequest
      */
     public function getInsertionOrder()
     {
-      return $this->InsertionOrder;
+        return $this->InsertionOrder;
     }
 
     /**
@@ -32,8 +32,8 @@ class AddInsertionOrderRequest
      */
     public function setInsertionOrder($InsertionOrder)
     {
-      $this->InsertionOrder = $InsertionOrder;
-      return $this;
+        $this->InsertionOrder = $InsertionOrder;
+        return $this;
     }
 
 }

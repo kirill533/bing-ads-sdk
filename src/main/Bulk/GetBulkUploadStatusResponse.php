@@ -39,11 +39,11 @@ class GetBulkUploadStatusResponse
      */
     public function __construct($Errors = null, $ForwardCompatibilityMap = null, $PercentComplete = null, $RequestStatus = null, $ResultFileUrl = null)
     {
-      $this->Errors = $Errors;
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      $this->PercentComplete = $PercentComplete;
-      $this->RequestStatus = $RequestStatus;
-      $this->ResultFileUrl = $ResultFileUrl;
+    $this->Errors = $Errors;
+    $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+    $this->PercentComplete = $PercentComplete;
+    $this->RequestStatus = $RequestStatus;
+    $this->ResultFileUrl = $ResultFileUrl;
     }
 
     /**
@@ -51,7 +51,7 @@ class GetBulkUploadStatusResponse
      */
     public function getErrors()
     {
-      return $this->Errors;
+        return $this->Errors;
     }
 
     /**
@@ -60,8 +60,8 @@ class GetBulkUploadStatusResponse
      */
     public function setErrors($Errors)
     {
-      $this->Errors = $Errors;
-      return $this;
+        $this->Errors = $Errors;
+        return $this;
     }
 
     /**
@@ -69,7 +69,7 @@ class GetBulkUploadStatusResponse
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -78,8 +78,8 @@ class GetBulkUploadStatusResponse
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
     /**
@@ -87,7 +87,7 @@ class GetBulkUploadStatusResponse
      */
     public function getPercentComplete()
     {
-      return $this->PercentComplete;
+        return $this->PercentComplete;
     }
 
     /**
@@ -96,8 +96,8 @@ class GetBulkUploadStatusResponse
      */
     public function setPercentComplete($PercentComplete)
     {
-      $this->PercentComplete = $PercentComplete;
-      return $this;
+        $this->PercentComplete = $PercentComplete;
+        return $this;
     }
 
     /**
@@ -105,7 +105,7 @@ class GetBulkUploadStatusResponse
      */
     public function getRequestStatus()
     {
-      return $this->RequestStatus;
+        return $this->RequestStatus;
     }
 
     /**
@@ -114,8 +114,8 @@ class GetBulkUploadStatusResponse
      */
     public function setRequestStatus($RequestStatus)
     {
-      $this->RequestStatus = $RequestStatus;
-      return $this;
+        $this->RequestStatus = $RequestStatus;
+        return $this;
     }
 
     /**
@@ -123,7 +123,7 @@ class GetBulkUploadStatusResponse
      */
     public function getResultFileUrl()
     {
-      return $this->ResultFileUrl;
+        return $this->ResultFileUrl;
     }
 
     /**
@@ -132,8 +132,8 @@ class GetBulkUploadStatusResponse
      */
     public function setResultFileUrl($ResultFileUrl)
     {
-      $this->ResultFileUrl = $ResultFileUrl;
-      return $this;
+        $this->ResultFileUrl = $ResultFileUrl;
+        return $this;
     }
 
 }

@@ -21,8 +21,8 @@ class AddLabelsResponse
      */
     public function __construct($LabelIds = null, $PartialErrors = null)
     {
-      $this->LabelIds = $LabelIds;
-      $this->PartialErrors = $PartialErrors;
+    $this->LabelIds = $LabelIds;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class AddLabelsResponse
      */
     public function getLabelIds()
     {
-      return $this->LabelIds;
+        return $this->LabelIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class AddLabelsResponse
      */
     public function setLabelIds($LabelIds)
     {
-      $this->LabelIds = $LabelIds;
-      return $this;
+        $this->LabelIds = $LabelIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class AddLabelsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class AddLabelsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

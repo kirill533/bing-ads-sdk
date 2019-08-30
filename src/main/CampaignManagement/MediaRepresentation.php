@@ -31,7 +31,7 @@ class MediaRepresentation
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -40,8 +40,8 @@ class MediaRepresentation
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class MediaRepresentation
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -58,8 +58,8 @@ class MediaRepresentation
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class MediaRepresentation
      */
     public function getUrl()
     {
-      return $this->Url;
+        return $this->Url;
     }
 
     /**
@@ -76,8 +76,8 @@ class MediaRepresentation
      */
     public function setUrl($Url)
     {
-      $this->Url = $Url;
-      return $this;
+        $this->Url = $Url;
+        return $this;
     }
 
 }

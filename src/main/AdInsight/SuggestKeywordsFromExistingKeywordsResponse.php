@@ -15,7 +15,7 @@ class SuggestKeywordsFromExistingKeywordsResponse
      */
     public function __construct($KeywordSuggestions = null)
     {
-      $this->KeywordSuggestions = $KeywordSuggestions;
+    $this->KeywordSuggestions = $KeywordSuggestions;
     }
 
     /**
@@ -23,7 +23,7 @@ class SuggestKeywordsFromExistingKeywordsResponse
      */
     public function getKeywordSuggestions()
     {
-      return $this->KeywordSuggestions;
+        return $this->KeywordSuggestions;
     }
 
     /**
@@ -32,8 +32,8 @@ class SuggestKeywordsFromExistingKeywordsResponse
      */
     public function setKeywordSuggestions($KeywordSuggestions)
     {
-      $this->KeywordSuggestions = $KeywordSuggestions;
-      return $this;
+        $this->KeywordSuggestions = $KeywordSuggestions;
+        return $this;
     }
 
 }

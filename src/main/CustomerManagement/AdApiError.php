@@ -36,7 +36,7 @@ class AdApiError
      */
     public function getCode()
     {
-      return $this->Code;
+        return $this->Code;
     }
 
     /**
@@ -45,8 +45,8 @@ class AdApiError
      */
     public function setCode($Code)
     {
-      $this->Code = $Code;
-      return $this;
+        $this->Code = $Code;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class AdApiError
      */
     public function getDetail()
     {
-      return $this->Detail;
+        return $this->Detail;
     }
 
     /**
@@ -63,8 +63,8 @@ class AdApiError
      */
     public function setDetail($Detail)
     {
-      $this->Detail = $Detail;
-      return $this;
+        $this->Detail = $Detail;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class AdApiError
      */
     public function getErrorCode()
     {
-      return $this->ErrorCode;
+        return $this->ErrorCode;
     }
 
     /**
@@ -81,8 +81,8 @@ class AdApiError
      */
     public function setErrorCode($ErrorCode)
     {
-      $this->ErrorCode = $ErrorCode;
-      return $this;
+        $this->ErrorCode = $ErrorCode;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class AdApiError
      */
     public function getMessage()
     {
-      return $this->Message;
+        return $this->Message;
     }
 
     /**
@@ -99,8 +99,8 @@ class AdApiError
      */
     public function setMessage($Message)
     {
-      $this->Message = $Message;
-      return $this;
+        $this->Message = $Message;
+        return $this;
     }
 
 }

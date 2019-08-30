@@ -27,9 +27,9 @@ class GetGeoLocationsFileUrlResponse
      */
     public function __construct($FileUrl = null, \DateTime $FileUrlExpiryTimeUtc = null, \DateTime $LastModifiedTimeUtc = null)
     {
-      $this->FileUrl = $FileUrl;
-      $this->FileUrlExpiryTimeUtc = $FileUrlExpiryTimeUtc ? $FileUrlExpiryTimeUtc->format(\DateTime::ATOM) : null;
-      $this->LastModifiedTimeUtc = $LastModifiedTimeUtc ? $LastModifiedTimeUtc->format(\DateTime::ATOM) : null;
+    $this->FileUrl = $FileUrl;
+        $this->FileUrlExpiryTimeUtc = null === $FileUrlExpiryTimeUtc ? null : $FileUrlExpiryTimeUtc->format(\DateTime::ATOM);
+        $this->LastModifiedTimeUtc = null === $LastModifiedTimeUtc ? null : $LastModifiedTimeUtc->format(\DateTime::ATOM);
     }
 
     /**
@@ -37,7 +37,7 @@ class GetGeoLocationsFileUrlResponse
      */
     public function getFileUrl()
     {
-      return $this->FileUrl;
+        return $this->FileUrl;
     }
 
     /**
@@ -46,8 +46,8 @@ class GetGeoLocationsFileUrlResponse
      */
     public function setFileUrl($FileUrl)
     {
-      $this->FileUrl = $FileUrl;
-      return $this;
+        $this->FileUrl = $FileUrl;
+        return $this;
     }
 
     /**
@@ -55,15 +55,14 @@ class GetGeoLocationsFileUrlResponse
      */
     public function getFileUrlExpiryTimeUtc()
     {
-      if ($this->FileUrlExpiryTimeUtc == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->FileUrlExpiryTimeUtc);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->FileUrlExpiryTimeUtc) {
+            return $this->FileUrlExpiryTimeUtc;
         }
-      }
+        try {
+            return new \DateTime($this->FileUrlExpiryTimeUtc);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -72,8 +71,8 @@ class GetGeoLocationsFileUrlResponse
      */
     public function setFileUrlExpiryTimeUtc(\DateTime $FileUrlExpiryTimeUtc)
     {
-      $this->FileUrlExpiryTimeUtc = $FileUrlExpiryTimeUtc->format(\DateTime::ATOM);
-      return $this;
+        $this->FileUrlExpiryTimeUtc = $FileUrlExpiryTimeUtc->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -81,15 +80,14 @@ class GetGeoLocationsFileUrlResponse
      */
     public function getLastModifiedTimeUtc()
     {
-      if ($this->LastModifiedTimeUtc == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->LastModifiedTimeUtc);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->LastModifiedTimeUtc) {
+            return $this->LastModifiedTimeUtc;
         }
-      }
+        try {
+            return new \DateTime($this->LastModifiedTimeUtc);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -98,8 +96,8 @@ class GetGeoLocationsFileUrlResponse
      */
     public function setLastModifiedTimeUtc(\DateTime $LastModifiedTimeUtc)
     {
-      $this->LastModifiedTimeUtc = $LastModifiedTimeUtc->format(\DateTime::ATOM);
-      return $this;
+        $this->LastModifiedTimeUtc = $LastModifiedTimeUtc->format(\DateTime::ATOM);
+        return $this;
     }
 
 }

@@ -21,8 +21,8 @@ class FindAccountsOrCustomersInfoRequest
      */
     public function __construct($Filter = null, $TopN = null)
     {
-      $this->Filter = $Filter;
-      $this->TopN = $TopN;
+    $this->Filter = $Filter;
+    $this->TopN = $TopN;
     }
 
     /**
@@ -30,7 +30,7 @@ class FindAccountsOrCustomersInfoRequest
      */
     public function getFilter()
     {
-      return $this->Filter;
+        return $this->Filter;
     }
 
     /**
@@ -39,8 +39,8 @@ class FindAccountsOrCustomersInfoRequest
      */
     public function setFilter($Filter)
     {
-      $this->Filter = $Filter;
-      return $this;
+        $this->Filter = $Filter;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class FindAccountsOrCustomersInfoRequest
      */
     public function getTopN()
     {
-      return $this->TopN;
+        return $this->TopN;
     }
 
     /**
@@ -57,8 +57,8 @@ class FindAccountsOrCustomersInfoRequest
      */
     public function setTopN($TopN)
     {
-      $this->TopN = $TopN;
-      return $this;
+        $this->TopN = $TopN;
+        return $this;
     }
 
 }

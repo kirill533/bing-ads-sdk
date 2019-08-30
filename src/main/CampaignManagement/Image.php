@@ -13,7 +13,7 @@ class Image extends Media
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class Image extends Media
      */
     public function getData()
     {
-      return $this->Data;
+        return $this->Data;
     }
 
     /**
@@ -30,8 +30,8 @@ class Image extends Media
      */
     public function setData($Data)
     {
-      $this->Data = $Data;
-      return $this;
+        $this->Data = $Data;
+        return $this;
     }
 
 }

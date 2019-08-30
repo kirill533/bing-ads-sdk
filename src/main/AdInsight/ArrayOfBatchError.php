@@ -21,7 +21,7 @@ class ArrayOfBatchError implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getBatchError()
     {
-      return $this->BatchError;
+        return $this->BatchError;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfBatchError implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setBatchError(array $BatchError = null)
     {
-      $this->BatchError = $BatchError;
-      return $this;
+        $this->BatchError = $BatchError;
+        return $this;
     }
 
     /**

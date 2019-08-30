@@ -15,7 +15,7 @@ class DeleteAudiencesRequest
      */
     public function __construct($AudienceIds = null)
     {
-      $this->AudienceIds = $AudienceIds;
+    $this->AudienceIds = $AudienceIds;
     }
 
     /**
@@ -23,7 +23,7 @@ class DeleteAudiencesRequest
      */
     public function getAudienceIds()
     {
-      return $this->AudienceIds;
+        return $this->AudienceIds;
     }
 
     /**
@@ -32,8 +32,8 @@ class DeleteAudiencesRequest
      */
     public function setAudienceIds($AudienceIds)
     {
-      $this->AudienceIds = $AudienceIds;
-      return $this;
+        $this->AudienceIds = $AudienceIds;
+        return $this;
     }
 
 }

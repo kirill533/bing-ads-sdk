@@ -21,7 +21,7 @@ class UrlSearchParameter extends SearchParameter
      */
     public function getUrl()
     {
-      return $this->Url;
+        return $this->Url;
     }
 
     /**
@@ -30,8 +30,8 @@ class UrlSearchParameter extends SearchParameter
      */
     public function setUrl($Url)
     {
-      $this->Url = $Url;
-      return $this;
+        $this->Url = $Url;
+        return $this;
     }
 
 }

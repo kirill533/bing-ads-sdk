@@ -21,8 +21,8 @@ class AddAdsResponse
      */
     public function __construct($AdIds = null, $PartialErrors = null)
     {
-      $this->AdIds = $AdIds;
-      $this->PartialErrors = $PartialErrors;
+    $this->AdIds = $AdIds;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class AddAdsResponse
      */
     public function getAdIds()
     {
-      return $this->AdIds;
+        return $this->AdIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class AddAdsResponse
      */
     public function setAdIds($AdIds)
     {
-      $this->AdIds = $AdIds;
-      return $this;
+        $this->AdIds = $AdIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class AddAdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class AddAdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

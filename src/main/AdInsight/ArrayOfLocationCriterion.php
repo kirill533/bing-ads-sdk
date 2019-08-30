@@ -21,7 +21,7 @@ class ArrayOfLocationCriterion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getLocationCriterion()
     {
-      return $this->LocationCriterion;
+        return $this->LocationCriterion;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfLocationCriterion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function setLocationCriterion(array $LocationCriterion = null)
     {
-      $this->LocationCriterion = $LocationCriterion;
-      return $this;
+        $this->LocationCriterion = $LocationCriterion;
+        return $this;
     }
 
     /**

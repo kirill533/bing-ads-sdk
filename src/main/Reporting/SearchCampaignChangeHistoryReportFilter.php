@@ -31,7 +31,7 @@ class SearchCampaignChangeHistoryReportFilter
      */
     public function getAdDistribution()
     {
-      return $this->AdDistribution;
+        return $this->AdDistribution;
     }
 
     /**
@@ -40,8 +40,8 @@ class SearchCampaignChangeHistoryReportFilter
      */
     public function setAdDistribution($AdDistribution)
     {
-      $this->AdDistribution = $AdDistribution;
-      return $this;
+        $this->AdDistribution = $AdDistribution;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class SearchCampaignChangeHistoryReportFilter
      */
     public function getHowChanged()
     {
-      return $this->HowChanged;
+        return $this->HowChanged;
     }
 
     /**
@@ -58,8 +58,8 @@ class SearchCampaignChangeHistoryReportFilter
      */
     public function setHowChanged($HowChanged)
     {
-      $this->HowChanged = $HowChanged;
-      return $this;
+        $this->HowChanged = $HowChanged;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class SearchCampaignChangeHistoryReportFilter
      */
     public function getItemChanged()
     {
-      return $this->ItemChanged;
+        return $this->ItemChanged;
     }
 
     /**
@@ -76,8 +76,8 @@ class SearchCampaignChangeHistoryReportFilter
      */
     public function setItemChanged($ItemChanged)
     {
-      $this->ItemChanged = $ItemChanged;
-      return $this;
+        $this->ItemChanged = $ItemChanged;
+        return $this;
     }
 
 }

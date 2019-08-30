@@ -36,7 +36,7 @@ class AdExtensionEditorialReason
      */
     public function getLocation()
     {
-      return $this->Location;
+        return $this->Location;
     }
 
     /**
@@ -45,8 +45,8 @@ class AdExtensionEditorialReason
      */
     public function setLocation($Location)
     {
-      $this->Location = $Location;
-      return $this;
+        $this->Location = $Location;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class AdExtensionEditorialReason
      */
     public function getPublisherCountries()
     {
-      return $this->PublisherCountries;
+        return $this->PublisherCountries;
     }
 
     /**
@@ -63,8 +63,8 @@ class AdExtensionEditorialReason
      */
     public function setPublisherCountries($PublisherCountries)
     {
-      $this->PublisherCountries = $PublisherCountries;
-      return $this;
+        $this->PublisherCountries = $PublisherCountries;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class AdExtensionEditorialReason
      */
     public function getReasonCode()
     {
-      return $this->ReasonCode;
+        return $this->ReasonCode;
     }
 
     /**
@@ -81,8 +81,8 @@ class AdExtensionEditorialReason
      */
     public function setReasonCode($ReasonCode)
     {
-      $this->ReasonCode = $ReasonCode;
-      return $this;
+        $this->ReasonCode = $ReasonCode;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class AdExtensionEditorialReason
      */
     public function getTerm()
     {
-      return $this->Term;
+        return $this->Term;
     }
 
     /**
@@ -99,8 +99,8 @@ class AdExtensionEditorialReason
      */
     public function setTerm($Term)
     {
-      $this->Term = $Term;
-      return $this;
+        $this->Term = $Term;
+        return $this;
     }
 
 }

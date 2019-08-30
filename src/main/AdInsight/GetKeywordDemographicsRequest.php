@@ -33,10 +33,10 @@ class GetKeywordDemographicsRequest
      */
     public function __construct($Keywords = null, $Language = null, $PublisherCountry = null, $Device = null)
     {
-      $this->Keywords = $Keywords;
-      $this->Language = $Language;
-      $this->PublisherCountry = $PublisherCountry;
-      $this->Device = $Device;
+    $this->Keywords = $Keywords;
+    $this->Language = $Language;
+    $this->PublisherCountry = $PublisherCountry;
+    $this->Device = $Device;
     }
 
     /**
@@ -44,7 +44,7 @@ class GetKeywordDemographicsRequest
      */
     public function getKeywords()
     {
-      return $this->Keywords;
+        return $this->Keywords;
     }
 
     /**
@@ -53,8 +53,8 @@ class GetKeywordDemographicsRequest
      */
     public function setKeywords($Keywords)
     {
-      $this->Keywords = $Keywords;
-      return $this;
+        $this->Keywords = $Keywords;
+        return $this;
     }
 
     /**
@@ -62,7 +62,7 @@ class GetKeywordDemographicsRequest
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -71,8 +71,8 @@ class GetKeywordDemographicsRequest
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
     /**
@@ -80,7 +80,7 @@ class GetKeywordDemographicsRequest
      */
     public function getPublisherCountry()
     {
-      return $this->PublisherCountry;
+        return $this->PublisherCountry;
     }
 
     /**
@@ -89,8 +89,8 @@ class GetKeywordDemographicsRequest
      */
     public function setPublisherCountry($PublisherCountry)
     {
-      $this->PublisherCountry = $PublisherCountry;
-      return $this;
+        $this->PublisherCountry = $PublisherCountry;
+        return $this;
     }
 
     /**
@@ -98,7 +98,7 @@ class GetKeywordDemographicsRequest
      */
     public function getDevice()
     {
-      return $this->Device;
+        return $this->Device;
     }
 
     /**
@@ -107,8 +107,8 @@ class GetKeywordDemographicsRequest
      */
     public function setDevice($Device)
     {
-      $this->Device = $Device;
-      return $this;
+        $this->Device = $Device;
+        return $this;
     }
 
 }

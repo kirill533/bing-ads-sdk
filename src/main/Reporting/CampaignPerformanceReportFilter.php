@@ -41,7 +41,7 @@ class CampaignPerformanceReportFilter
      */
     public function getAccountStatus()
     {
-      return $this->AccountStatus;
+        return $this->AccountStatus;
     }
 
     /**
@@ -50,8 +50,8 @@ class CampaignPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
     {
-      $this->AccountStatus = $AccountStatus;
-      return $this;
+        $this->AccountStatus = $AccountStatus;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class CampaignPerformanceReportFilter
      */
     public function getAdDistribution()
     {
-      return $this->AdDistribution;
+        return $this->AdDistribution;
     }
 
     /**
@@ -68,8 +68,8 @@ class CampaignPerformanceReportFilter
      */
     public function setAdDistribution($AdDistribution)
     {
-      $this->AdDistribution = $AdDistribution;
-      return $this;
+        $this->AdDistribution = $AdDistribution;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class CampaignPerformanceReportFilter
      */
     public function getDeviceOS()
     {
-      return $this->DeviceOS;
+        return $this->DeviceOS;
     }
 
     /**
@@ -86,8 +86,8 @@ class CampaignPerformanceReportFilter
      */
     public function setDeviceOS($DeviceOS)
     {
-      $this->DeviceOS = $DeviceOS;
-      return $this;
+        $this->DeviceOS = $DeviceOS;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class CampaignPerformanceReportFilter
      */
     public function getDeviceType()
     {
-      return $this->DeviceType;
+        return $this->DeviceType;
     }
 
     /**
@@ -104,8 +104,8 @@ class CampaignPerformanceReportFilter
      */
     public function setDeviceType($DeviceType)
     {
-      $this->DeviceType = $DeviceType;
-      return $this;
+        $this->DeviceType = $DeviceType;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class CampaignPerformanceReportFilter
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -122,8 +122,8 @@ class CampaignPerformanceReportFilter
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
 }

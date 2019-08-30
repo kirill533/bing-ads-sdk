@@ -25,8 +25,8 @@ class NegativeKeyword extends SharedListItem
      */
     public function __construct($MatchType = null)
     {
-      parent::__construct();
-      $this->MatchType = $MatchType;
+        parent::__construct();
+    $this->MatchType = $MatchType;
     }
 
     /**
@@ -34,7 +34,7 @@ class NegativeKeyword extends SharedListItem
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -43,8 +43,8 @@ class NegativeKeyword extends SharedListItem
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -52,7 +52,7 @@ class NegativeKeyword extends SharedListItem
      */
     public function getMatchType()
     {
-      return $this->MatchType;
+        return $this->MatchType;
     }
 
     /**
@@ -61,8 +61,8 @@ class NegativeKeyword extends SharedListItem
      */
     public function setMatchType($MatchType)
     {
-      $this->MatchType = $MatchType;
-      return $this;
+        $this->MatchType = $MatchType;
+        return $this;
     }
 
     /**
@@ -70,7 +70,7 @@ class NegativeKeyword extends SharedListItem
      */
     public function getText()
     {
-      return $this->Text;
+        return $this->Text;
     }
 
     /**
@@ -79,8 +79,8 @@ class NegativeKeyword extends SharedListItem
      */
     public function setText($Text)
     {
-      $this->Text = $Text;
-      return $this;
+        $this->Text = $Text;
+        return $this;
     }
 
 }

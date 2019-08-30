@@ -21,7 +21,7 @@ class ArrayOfUserInvitation implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getUserInvitation()
     {
-      return $this->UserInvitation;
+        return $this->UserInvitation;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfUserInvitation implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function setUserInvitation(array $UserInvitation = null)
     {
-      $this->UserInvitation = $UserInvitation;
-      return $this;
+        $this->UserInvitation = $UserInvitation;
+        return $this;
     }
 
     /**

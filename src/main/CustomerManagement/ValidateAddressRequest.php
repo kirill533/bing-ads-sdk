@@ -15,7 +15,7 @@ class ValidateAddressRequest
      */
     public function __construct($Address = null)
     {
-      $this->Address = $Address;
+    $this->Address = $Address;
     }
 
     /**
@@ -23,7 +23,7 @@ class ValidateAddressRequest
      */
     public function getAddress()
     {
-      return $this->Address;
+        return $this->Address;
     }
 
     /**
@@ -32,8 +32,8 @@ class ValidateAddressRequest
      */
     public function setAddress($Address)
     {
-      $this->Address = $Address;
-      return $this;
+        $this->Address = $Address;
+        return $this;
     }
 
 }

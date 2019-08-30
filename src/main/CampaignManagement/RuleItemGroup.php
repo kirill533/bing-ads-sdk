@@ -21,7 +21,7 @@ class RuleItemGroup
      */
     public function getItems()
     {
-      return $this->Items;
+        return $this->Items;
     }
 
     /**
@@ -30,8 +30,8 @@ class RuleItemGroup
      */
     public function setItems($Items)
     {
-      $this->Items = $Items;
-      return $this;
+        $this->Items = $Items;
+        return $this;
     }
 
 }

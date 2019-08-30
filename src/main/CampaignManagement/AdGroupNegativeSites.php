@@ -26,7 +26,7 @@ class AdGroupNegativeSites
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -35,8 +35,8 @@ class AdGroupNegativeSites
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class AdGroupNegativeSites
      */
     public function getNegativeSites()
     {
-      return $this->NegativeSites;
+        return $this->NegativeSites;
     }
 
     /**
@@ -53,8 +53,8 @@ class AdGroupNegativeSites
      */
     public function setNegativeSites($NegativeSites)
     {
-      $this->NegativeSites = $NegativeSites;
-      return $this;
+        $this->NegativeSites = $NegativeSites;
+        return $this;
     }
 
 }

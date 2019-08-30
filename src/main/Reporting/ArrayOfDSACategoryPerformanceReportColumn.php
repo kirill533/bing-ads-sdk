@@ -21,7 +21,7 @@ class ArrayOfDSACategoryPerformanceReportColumn implements \ArrayAccess, \Iterat
      */
     public function getDSACategoryPerformanceReportColumn()
     {
-      return $this->DSACategoryPerformanceReportColumn;
+        return $this->DSACategoryPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfDSACategoryPerformanceReportColumn implements \ArrayAccess, \Iterat
      */
     public function setDSACategoryPerformanceReportColumn(array $DSACategoryPerformanceReportColumn = null)
     {
-      $this->DSACategoryPerformanceReportColumn = $DSACategoryPerformanceReportColumn;
-      return $this;
+        $this->DSACategoryPerformanceReportColumn = $DSACategoryPerformanceReportColumn;
+        return $this;
     }
 
     /**

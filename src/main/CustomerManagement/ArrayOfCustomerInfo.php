@@ -21,7 +21,7 @@ class ArrayOfCustomerInfo implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function getCustomerInfo()
     {
-      return $this->CustomerInfo;
+        return $this->CustomerInfo;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCustomerInfo implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function setCustomerInfo(array $CustomerInfo = null)
     {
-      $this->CustomerInfo = $CustomerInfo;
-      return $this;
+        $this->CustomerInfo = $CustomerInfo;
+        return $this;
     }
 
     /**

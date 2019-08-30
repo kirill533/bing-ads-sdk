@@ -33,10 +33,10 @@ class UpdateAdGroupsRequest
      */
     public function __construct($CampaignId = null, $AdGroups = null, $UpdateAudienceAdsBidAdjustment = null, $ReturnInheritedBidStrategyTypes = null)
     {
-      $this->CampaignId = $CampaignId;
-      $this->AdGroups = $AdGroups;
-      $this->UpdateAudienceAdsBidAdjustment = $UpdateAudienceAdsBidAdjustment;
-      $this->ReturnInheritedBidStrategyTypes = $ReturnInheritedBidStrategyTypes;
+    $this->CampaignId = $CampaignId;
+    $this->AdGroups = $AdGroups;
+    $this->UpdateAudienceAdsBidAdjustment = $UpdateAudienceAdsBidAdjustment;
+    $this->ReturnInheritedBidStrategyTypes = $ReturnInheritedBidStrategyTypes;
     }
 
     /**
@@ -44,7 +44,7 @@ class UpdateAdGroupsRequest
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -53,8 +53,8 @@ class UpdateAdGroupsRequest
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -62,7 +62,7 @@ class UpdateAdGroupsRequest
      */
     public function getAdGroups()
     {
-      return $this->AdGroups;
+        return $this->AdGroups;
     }
 
     /**
@@ -71,8 +71,8 @@ class UpdateAdGroupsRequest
      */
     public function setAdGroups($AdGroups)
     {
-      $this->AdGroups = $AdGroups;
-      return $this;
+        $this->AdGroups = $AdGroups;
+        return $this;
     }
 
     /**
@@ -80,7 +80,7 @@ class UpdateAdGroupsRequest
      */
     public function getUpdateAudienceAdsBidAdjustment()
     {
-      return $this->UpdateAudienceAdsBidAdjustment;
+        return $this->UpdateAudienceAdsBidAdjustment;
     }
 
     /**
@@ -89,8 +89,8 @@ class UpdateAdGroupsRequest
      */
     public function setUpdateAudienceAdsBidAdjustment($UpdateAudienceAdsBidAdjustment)
     {
-      $this->UpdateAudienceAdsBidAdjustment = $UpdateAudienceAdsBidAdjustment;
-      return $this;
+        $this->UpdateAudienceAdsBidAdjustment = $UpdateAudienceAdsBidAdjustment;
+        return $this;
     }
 
     /**
@@ -98,7 +98,7 @@ class UpdateAdGroupsRequest
      */
     public function getReturnInheritedBidStrategyTypes()
     {
-      return $this->ReturnInheritedBidStrategyTypes;
+        return $this->ReturnInheritedBidStrategyTypes;
     }
 
     /**
@@ -107,8 +107,8 @@ class UpdateAdGroupsRequest
      */
     public function setReturnInheritedBidStrategyTypes($ReturnInheritedBidStrategyTypes)
     {
-      $this->ReturnInheritedBidStrategyTypes = $ReturnInheritedBidStrategyTypes;
-      return $this;
+        $this->ReturnInheritedBidStrategyTypes = $ReturnInheritedBidStrategyTypes;
+        return $this;
     }
 
 }

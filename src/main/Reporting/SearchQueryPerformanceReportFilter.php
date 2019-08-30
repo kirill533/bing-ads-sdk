@@ -66,7 +66,7 @@ class SearchQueryPerformanceReportFilter
      */
     public function getAccountStatus()
     {
-      return $this->AccountStatus;
+        return $this->AccountStatus;
     }
 
     /**
@@ -75,8 +75,8 @@ class SearchQueryPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
     {
-      $this->AccountStatus = $AccountStatus;
-      return $this;
+        $this->AccountStatus = $AccountStatus;
+        return $this;
     }
 
     /**
@@ -84,7 +84,7 @@ class SearchQueryPerformanceReportFilter
      */
     public function getAdGroupStatus()
     {
-      return $this->AdGroupStatus;
+        return $this->AdGroupStatus;
     }
 
     /**
@@ -93,8 +93,8 @@ class SearchQueryPerformanceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
     {
-      $this->AdGroupStatus = $AdGroupStatus;
-      return $this;
+        $this->AdGroupStatus = $AdGroupStatus;
+        return $this;
     }
 
     /**
@@ -102,7 +102,7 @@ class SearchQueryPerformanceReportFilter
      */
     public function getAdStatus()
     {
-      return $this->AdStatus;
+        return $this->AdStatus;
     }
 
     /**
@@ -111,8 +111,8 @@ class SearchQueryPerformanceReportFilter
      */
     public function setAdStatus($AdStatus)
     {
-      $this->AdStatus = $AdStatus;
-      return $this;
+        $this->AdStatus = $AdStatus;
+        return $this;
     }
 
     /**
@@ -120,7 +120,7 @@ class SearchQueryPerformanceReportFilter
      */
     public function getAdType()
     {
-      return $this->AdType;
+        return $this->AdType;
     }
 
     /**
@@ -129,8 +129,8 @@ class SearchQueryPerformanceReportFilter
      */
     public function setAdType($AdType)
     {
-      $this->AdType = $AdType;
-      return $this;
+        $this->AdType = $AdType;
+        return $this;
     }
 
     /**
@@ -138,7 +138,7 @@ class SearchQueryPerformanceReportFilter
      */
     public function getCampaignStatus()
     {
-      return $this->CampaignStatus;
+        return $this->CampaignStatus;
     }
 
     /**
@@ -147,8 +147,8 @@ class SearchQueryPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
     {
-      $this->CampaignStatus = $CampaignStatus;
-      return $this;
+        $this->CampaignStatus = $CampaignStatus;
+        return $this;
     }
 
     /**
@@ -156,7 +156,7 @@ class SearchQueryPerformanceReportFilter
      */
     public function getDeliveredMatchType()
     {
-      return $this->DeliveredMatchType;
+        return $this->DeliveredMatchType;
     }
 
     /**
@@ -165,8 +165,8 @@ class SearchQueryPerformanceReportFilter
      */
     public function setDeliveredMatchType($DeliveredMatchType)
     {
-      $this->DeliveredMatchType = $DeliveredMatchType;
-      return $this;
+        $this->DeliveredMatchType = $DeliveredMatchType;
+        return $this;
     }
 
     /**
@@ -174,7 +174,7 @@ class SearchQueryPerformanceReportFilter
      */
     public function getExcludeZeroClicks()
     {
-      return $this->ExcludeZeroClicks;
+        return $this->ExcludeZeroClicks;
     }
 
     /**
@@ -183,8 +183,8 @@ class SearchQueryPerformanceReportFilter
      */
     public function setExcludeZeroClicks($ExcludeZeroClicks)
     {
-      $this->ExcludeZeroClicks = $ExcludeZeroClicks;
-      return $this;
+        $this->ExcludeZeroClicks = $ExcludeZeroClicks;
+        return $this;
     }
 
     /**
@@ -192,7 +192,7 @@ class SearchQueryPerformanceReportFilter
      */
     public function getKeywordStatus()
     {
-      return $this->KeywordStatus;
+        return $this->KeywordStatus;
     }
 
     /**
@@ -201,8 +201,8 @@ class SearchQueryPerformanceReportFilter
      */
     public function setKeywordStatus($KeywordStatus)
     {
-      $this->KeywordStatus = $KeywordStatus;
-      return $this;
+        $this->KeywordStatus = $KeywordStatus;
+        return $this;
     }
 
     /**
@@ -210,7 +210,7 @@ class SearchQueryPerformanceReportFilter
      */
     public function getLanguageCode()
     {
-      return $this->LanguageCode;
+        return $this->LanguageCode;
     }
 
     /**
@@ -219,8 +219,8 @@ class SearchQueryPerformanceReportFilter
      */
     public function setLanguageCode($LanguageCode)
     {
-      $this->LanguageCode = $LanguageCode;
-      return $this;
+        $this->LanguageCode = $LanguageCode;
+        return $this;
     }
 
     /**
@@ -228,7 +228,7 @@ class SearchQueryPerformanceReportFilter
      */
     public function getSearchQueries()
     {
-      return $this->SearchQueries;
+        return $this->SearchQueries;
     }
 
     /**
@@ -237,8 +237,8 @@ class SearchQueryPerformanceReportFilter
      */
     public function setSearchQueries($SearchQueries)
     {
-      $this->SearchQueries = $SearchQueries;
-      return $this;
+        $this->SearchQueries = $SearchQueries;
+        return $this;
     }
 
 }

@@ -25,7 +25,7 @@ class MigrationStatusInfo
      */
     public function __construct($Status = null)
     {
-      $this->Status = $Status;
+    $this->Status = $Status;
     }
 
     /**
@@ -33,7 +33,7 @@ class MigrationStatusInfo
      */
     public function getMigrationType()
     {
-      return $this->MigrationType;
+        return $this->MigrationType;
     }
 
     /**
@@ -42,8 +42,8 @@ class MigrationStatusInfo
      */
     public function setMigrationType($MigrationType)
     {
-      $this->MigrationType = $MigrationType;
-      return $this;
+        $this->MigrationType = $MigrationType;
+        return $this;
     }
 
     /**
@@ -51,15 +51,14 @@ class MigrationStatusInfo
      */
     public function getStartTimeInUtc()
     {
-      if ($this->StartTimeInUtc == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->StartTimeInUtc);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->StartTimeInUtc) {
+            return $this->StartTimeInUtc;
         }
-      }
+        try {
+            return new \DateTime($this->StartTimeInUtc);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -68,12 +67,8 @@ class MigrationStatusInfo
      */
     public function setStartTimeInUtc(\DateTime $StartTimeInUtc = null)
     {
-      if ($StartTimeInUtc == null) {
-       $this->StartTimeInUtc = null;
-      } else {
-        $this->StartTimeInUtc = $StartTimeInUtc->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->StartTimeInUtc = null === $StartTimeInUtc ? null : $StartTimeInUtc->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -81,7 +76,7 @@ class MigrationStatusInfo
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -90,8 +85,8 @@ class MigrationStatusInfo
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
 }

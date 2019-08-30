@@ -31,7 +31,7 @@ class PersonName
      */
     public function getFirstName()
     {
-      return $this->FirstName;
+        return $this->FirstName;
     }
 
     /**
@@ -40,8 +40,8 @@ class PersonName
      */
     public function setFirstName($FirstName)
     {
-      $this->FirstName = $FirstName;
-      return $this;
+        $this->FirstName = $FirstName;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class PersonName
      */
     public function getLastName()
     {
-      return $this->LastName;
+        return $this->LastName;
     }
 
     /**
@@ -58,8 +58,8 @@ class PersonName
      */
     public function setLastName($LastName)
     {
-      $this->LastName = $LastName;
-      return $this;
+        $this->LastName = $LastName;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class PersonName
      */
     public function getMiddleInitial()
     {
-      return $this->MiddleInitial;
+        return $this->MiddleInitial;
     }
 
     /**
@@ -76,8 +76,8 @@ class PersonName
      */
     public function setMiddleInitial($MiddleInitial)
     {
-      $this->MiddleInitial = $MiddleInitial;
-      return $this;
+        $this->MiddleInitial = $MiddleInitial;
+        return $this;
     }
 
 }

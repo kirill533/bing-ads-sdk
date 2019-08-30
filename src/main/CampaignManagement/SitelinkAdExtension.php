@@ -58,7 +58,7 @@ class SitelinkAdExtension extends AdExtension
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -66,7 +66,7 @@ class SitelinkAdExtension extends AdExtension
      */
     public function getDescription1()
     {
-      return $this->Description1;
+        return $this->Description1;
     }
 
     /**
@@ -75,8 +75,8 @@ class SitelinkAdExtension extends AdExtension
      */
     public function setDescription1($Description1)
     {
-      $this->Description1 = $Description1;
-      return $this;
+        $this->Description1 = $Description1;
+        return $this;
     }
 
     /**
@@ -84,7 +84,7 @@ class SitelinkAdExtension extends AdExtension
      */
     public function getDescription2()
     {
-      return $this->Description2;
+        return $this->Description2;
     }
 
     /**
@@ -93,8 +93,8 @@ class SitelinkAdExtension extends AdExtension
      */
     public function setDescription2($Description2)
     {
-      $this->Description2 = $Description2;
-      return $this;
+        $this->Description2 = $Description2;
+        return $this;
     }
 
     /**
@@ -102,7 +102,7 @@ class SitelinkAdExtension extends AdExtension
      */
     public function getDestinationUrl()
     {
-      return $this->DestinationUrl;
+        return $this->DestinationUrl;
     }
 
     /**
@@ -111,8 +111,8 @@ class SitelinkAdExtension extends AdExtension
      */
     public function setDestinationUrl($DestinationUrl)
     {
-      $this->DestinationUrl = $DestinationUrl;
-      return $this;
+        $this->DestinationUrl = $DestinationUrl;
+        return $this;
     }
 
     /**
@@ -120,7 +120,7 @@ class SitelinkAdExtension extends AdExtension
      */
     public function getDisplayText()
     {
-      return $this->DisplayText;
+        return $this->DisplayText;
     }
 
     /**
@@ -129,8 +129,8 @@ class SitelinkAdExtension extends AdExtension
      */
     public function setDisplayText($DisplayText)
     {
-      $this->DisplayText = $DisplayText;
-      return $this;
+        $this->DisplayText = $DisplayText;
+        return $this;
     }
 
     /**
@@ -138,7 +138,7 @@ class SitelinkAdExtension extends AdExtension
      */
     public function getFinalAppUrls()
     {
-      return $this->FinalAppUrls;
+        return $this->FinalAppUrls;
     }
 
     /**
@@ -147,8 +147,8 @@ class SitelinkAdExtension extends AdExtension
      */
     public function setFinalAppUrls($FinalAppUrls)
     {
-      $this->FinalAppUrls = $FinalAppUrls;
-      return $this;
+        $this->FinalAppUrls = $FinalAppUrls;
+        return $this;
     }
 
     /**
@@ -156,7 +156,7 @@ class SitelinkAdExtension extends AdExtension
      */
     public function getFinalMobileUrls()
     {
-      return $this->FinalMobileUrls;
+        return $this->FinalMobileUrls;
     }
 
     /**
@@ -165,8 +165,8 @@ class SitelinkAdExtension extends AdExtension
      */
     public function setFinalMobileUrls($FinalMobileUrls)
     {
-      $this->FinalMobileUrls = $FinalMobileUrls;
-      return $this;
+        $this->FinalMobileUrls = $FinalMobileUrls;
+        return $this;
     }
 
     /**
@@ -174,7 +174,7 @@ class SitelinkAdExtension extends AdExtension
      */
     public function getFinalUrlSuffix()
     {
-      return $this->FinalUrlSuffix;
+        return $this->FinalUrlSuffix;
     }
 
     /**
@@ -183,8 +183,8 @@ class SitelinkAdExtension extends AdExtension
      */
     public function setFinalUrlSuffix($FinalUrlSuffix)
     {
-      $this->FinalUrlSuffix = $FinalUrlSuffix;
-      return $this;
+        $this->FinalUrlSuffix = $FinalUrlSuffix;
+        return $this;
     }
 
     /**
@@ -192,7 +192,7 @@ class SitelinkAdExtension extends AdExtension
      */
     public function getFinalUrls()
     {
-      return $this->FinalUrls;
+        return $this->FinalUrls;
     }
 
     /**
@@ -201,8 +201,8 @@ class SitelinkAdExtension extends AdExtension
      */
     public function setFinalUrls($FinalUrls)
     {
-      $this->FinalUrls = $FinalUrls;
-      return $this;
+        $this->FinalUrls = $FinalUrls;
+        return $this;
     }
 
     /**
@@ -210,7 +210,7 @@ class SitelinkAdExtension extends AdExtension
      */
     public function getTrackingUrlTemplate()
     {
-      return $this->TrackingUrlTemplate;
+        return $this->TrackingUrlTemplate;
     }
 
     /**
@@ -219,8 +219,8 @@ class SitelinkAdExtension extends AdExtension
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
-      $this->TrackingUrlTemplate = $TrackingUrlTemplate;
-      return $this;
+        $this->TrackingUrlTemplate = $TrackingUrlTemplate;
+        return $this;
     }
 
     /**
@@ -228,7 +228,7 @@ class SitelinkAdExtension extends AdExtension
      */
     public function getUrlCustomParameters()
     {
-      return $this->UrlCustomParameters;
+        return $this->UrlCustomParameters;
     }
 
     /**
@@ -237,8 +237,8 @@ class SitelinkAdExtension extends AdExtension
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {
-      $this->UrlCustomParameters = $UrlCustomParameters;
-      return $this;
+        $this->UrlCustomParameters = $UrlCustomParameters;
+        return $this;
     }
 
 }

@@ -15,7 +15,7 @@ class UpgradeCustomerToAgencyRequest
      */
     public function __construct($CustomerId = null)
     {
-      $this->CustomerId = $CustomerId;
+    $this->CustomerId = $CustomerId;
     }
 
     /**
@@ -23,7 +23,7 @@ class UpgradeCustomerToAgencyRequest
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
@@ -32,8 +32,8 @@ class UpgradeCustomerToAgencyRequest
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
     }
 
 }

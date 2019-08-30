@@ -21,7 +21,7 @@ class ArrayOfCampaignNegativeSites implements \ArrayAccess, \IteratorAggregate, 
      */
     public function getCampaignNegativeSites()
     {
-      return $this->CampaignNegativeSites;
+        return $this->CampaignNegativeSites;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCampaignNegativeSites implements \ArrayAccess, \IteratorAggregate, 
      */
     public function setCampaignNegativeSites(array $CampaignNegativeSites = null)
     {
-      $this->CampaignNegativeSites = $CampaignNegativeSites;
-      return $this;
+        $this->CampaignNegativeSites = $CampaignNegativeSites;
+        return $this;
     }
 
     /**

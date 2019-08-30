@@ -46,7 +46,7 @@ class AdExtensionByKeywordReportFilter
      */
     public function getAccountStatus()
     {
-      return $this->AccountStatus;
+        return $this->AccountStatus;
     }
 
     /**
@@ -55,8 +55,8 @@ class AdExtensionByKeywordReportFilter
      */
     public function setAccountStatus($AccountStatus)
     {
-      $this->AccountStatus = $AccountStatus;
-      return $this;
+        $this->AccountStatus = $AccountStatus;
+        return $this;
     }
 
     /**
@@ -64,7 +64,7 @@ class AdExtensionByKeywordReportFilter
      */
     public function getAdGroupStatus()
     {
-      return $this->AdGroupStatus;
+        return $this->AdGroupStatus;
     }
 
     /**
@@ -73,8 +73,8 @@ class AdExtensionByKeywordReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
     {
-      $this->AdGroupStatus = $AdGroupStatus;
-      return $this;
+        $this->AdGroupStatus = $AdGroupStatus;
+        return $this;
     }
 
     /**
@@ -82,7 +82,7 @@ class AdExtensionByKeywordReportFilter
      */
     public function getCampaignStatus()
     {
-      return $this->CampaignStatus;
+        return $this->CampaignStatus;
     }
 
     /**
@@ -91,8 +91,8 @@ class AdExtensionByKeywordReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
     {
-      $this->CampaignStatus = $CampaignStatus;
-      return $this;
+        $this->CampaignStatus = $CampaignStatus;
+        return $this;
     }
 
     /**
@@ -100,7 +100,7 @@ class AdExtensionByKeywordReportFilter
      */
     public function getDeviceOS()
     {
-      return $this->DeviceOS;
+        return $this->DeviceOS;
     }
 
     /**
@@ -109,8 +109,8 @@ class AdExtensionByKeywordReportFilter
      */
     public function setDeviceOS($DeviceOS)
     {
-      $this->DeviceOS = $DeviceOS;
-      return $this;
+        $this->DeviceOS = $DeviceOS;
+        return $this;
     }
 
     /**
@@ -118,7 +118,7 @@ class AdExtensionByKeywordReportFilter
      */
     public function getDeviceType()
     {
-      return $this->DeviceType;
+        return $this->DeviceType;
     }
 
     /**
@@ -127,8 +127,8 @@ class AdExtensionByKeywordReportFilter
      */
     public function setDeviceType($DeviceType)
     {
-      $this->DeviceType = $DeviceType;
-      return $this;
+        $this->DeviceType = $DeviceType;
+        return $this;
     }
 
     /**
@@ -136,7 +136,7 @@ class AdExtensionByKeywordReportFilter
      */
     public function getKeywordStatus()
     {
-      return $this->KeywordStatus;
+        return $this->KeywordStatus;
     }
 
     /**
@@ -145,8 +145,8 @@ class AdExtensionByKeywordReportFilter
      */
     public function setKeywordStatus($KeywordStatus)
     {
-      $this->KeywordStatus = $KeywordStatus;
-      return $this;
+        $this->KeywordStatus = $KeywordStatus;
+        return $this;
     }
 
 }

@@ -15,7 +15,7 @@ class AddClientLinksRequest
      */
     public function __construct($ClientLinks = null)
     {
-      $this->ClientLinks = $ClientLinks;
+    $this->ClientLinks = $ClientLinks;
     }
 
     /**
@@ -23,7 +23,7 @@ class AddClientLinksRequest
      */
     public function getClientLinks()
     {
-      return $this->ClientLinks;
+        return $this->ClientLinks;
     }
 
     /**
@@ -32,8 +32,8 @@ class AddClientLinksRequest
      */
     public function setClientLinks($ClientLinks)
     {
-      $this->ClientLinks = $ClientLinks;
-      return $this;
+        $this->ClientLinks = $ClientLinks;
+        return $this;
     }
 
 }

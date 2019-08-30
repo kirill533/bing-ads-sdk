@@ -21,8 +21,8 @@ class GetKeywordsByAdGroupIdRequest
      */
     public function __construct($AdGroupId = null, $ReturnAdditionalFields = null)
     {
-      $this->AdGroupId = $AdGroupId;
-      $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+    $this->AdGroupId = $AdGroupId;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetKeywordsByAdGroupIdRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetKeywordsByAdGroupIdRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetKeywordsByAdGroupIdRequest
      */
     public function getReturnAdditionalFields()
     {
-      return $this->ReturnAdditionalFields;
+        return $this->ReturnAdditionalFields;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetKeywordsByAdGroupIdRequest
      */
     public function setReturnAdditionalFields($ReturnAdditionalFields)
     {
-      $this->ReturnAdditionalFields = $ReturnAdditionalFields;
-      return $this;
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

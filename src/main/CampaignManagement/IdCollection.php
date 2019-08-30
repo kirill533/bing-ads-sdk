@@ -21,7 +21,7 @@ class IdCollection
      */
     public function getIds()
     {
-      return $this->Ids;
+        return $this->Ids;
     }
 
     /**
@@ -30,8 +30,8 @@ class IdCollection
      */
     public function setIds($Ids)
     {
-      $this->Ids = $Ids;
-      return $this;
+        $this->Ids = $Ids;
+        return $this;
     }
 
 }

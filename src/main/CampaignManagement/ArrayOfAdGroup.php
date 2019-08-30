@@ -21,7 +21,7 @@ class ArrayOfAdGroup implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getAdGroup()
     {
-      return $this->AdGroup;
+        return $this->AdGroup;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdGroup implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setAdGroup(array $AdGroup = null)
     {
-      $this->AdGroup = $AdGroup;
-      return $this;
+        $this->AdGroup = $AdGroup;
+        return $this;
     }
 
     /**

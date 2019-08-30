@@ -51,7 +51,7 @@ class AdGroupPerformanceReportFilter
      */
     public function getAccountStatus()
     {
-      return $this->AccountStatus;
+        return $this->AccountStatus;
     }
 
     /**
@@ -60,8 +60,8 @@ class AdGroupPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
     {
-      $this->AccountStatus = $AccountStatus;
-      return $this;
+        $this->AccountStatus = $AccountStatus;
+        return $this;
     }
 
     /**
@@ -69,7 +69,7 @@ class AdGroupPerformanceReportFilter
      */
     public function getAdDistribution()
     {
-      return $this->AdDistribution;
+        return $this->AdDistribution;
     }
 
     /**
@@ -78,8 +78,8 @@ class AdGroupPerformanceReportFilter
      */
     public function setAdDistribution($AdDistribution)
     {
-      $this->AdDistribution = $AdDistribution;
-      return $this;
+        $this->AdDistribution = $AdDistribution;
+        return $this;
     }
 
     /**
@@ -87,7 +87,7 @@ class AdGroupPerformanceReportFilter
      */
     public function getCampaignStatus()
     {
-      return $this->CampaignStatus;
+        return $this->CampaignStatus;
     }
 
     /**
@@ -96,8 +96,8 @@ class AdGroupPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
     {
-      $this->CampaignStatus = $CampaignStatus;
-      return $this;
+        $this->CampaignStatus = $CampaignStatus;
+        return $this;
     }
 
     /**
@@ -105,7 +105,7 @@ class AdGroupPerformanceReportFilter
      */
     public function getDeviceOS()
     {
-      return $this->DeviceOS;
+        return $this->DeviceOS;
     }
 
     /**
@@ -114,8 +114,8 @@ class AdGroupPerformanceReportFilter
      */
     public function setDeviceOS($DeviceOS)
     {
-      $this->DeviceOS = $DeviceOS;
-      return $this;
+        $this->DeviceOS = $DeviceOS;
+        return $this;
     }
 
     /**
@@ -123,7 +123,7 @@ class AdGroupPerformanceReportFilter
      */
     public function getDeviceType()
     {
-      return $this->DeviceType;
+        return $this->DeviceType;
     }
 
     /**
@@ -132,8 +132,8 @@ class AdGroupPerformanceReportFilter
      */
     public function setDeviceType($DeviceType)
     {
-      $this->DeviceType = $DeviceType;
-      return $this;
+        $this->DeviceType = $DeviceType;
+        return $this;
     }
 
     /**
@@ -141,7 +141,7 @@ class AdGroupPerformanceReportFilter
      */
     public function getLanguageCode()
     {
-      return $this->LanguageCode;
+        return $this->LanguageCode;
     }
 
     /**
@@ -150,8 +150,8 @@ class AdGroupPerformanceReportFilter
      */
     public function setLanguageCode($LanguageCode)
     {
-      $this->LanguageCode = $LanguageCode;
-      return $this;
+        $this->LanguageCode = $LanguageCode;
+        return $this;
     }
 
     /**
@@ -159,7 +159,7 @@ class AdGroupPerformanceReportFilter
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -168,8 +168,8 @@ class AdGroupPerformanceReportFilter
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
 }

@@ -33,7 +33,7 @@ class EditorialError extends BatchError
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -41,7 +41,7 @@ class EditorialError extends BatchError
      */
     public function getAppealable()
     {
-      return $this->Appealable;
+        return $this->Appealable;
     }
 
     /**
@@ -50,8 +50,8 @@ class EditorialError extends BatchError
      */
     public function setAppealable($Appealable)
     {
-      $this->Appealable = $Appealable;
-      return $this;
+        $this->Appealable = $Appealable;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class EditorialError extends BatchError
      */
     public function getDisapprovedText()
     {
-      return $this->DisapprovedText;
+        return $this->DisapprovedText;
     }
 
     /**
@@ -68,8 +68,8 @@ class EditorialError extends BatchError
      */
     public function setDisapprovedText($DisapprovedText)
     {
-      $this->DisapprovedText = $DisapprovedText;
-      return $this;
+        $this->DisapprovedText = $DisapprovedText;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class EditorialError extends BatchError
      */
     public function getLocation()
     {
-      return $this->Location;
+        return $this->Location;
     }
 
     /**
@@ -86,8 +86,8 @@ class EditorialError extends BatchError
      */
     public function setLocation($Location)
     {
-      $this->Location = $Location;
-      return $this;
+        $this->Location = $Location;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class EditorialError extends BatchError
      */
     public function getPublisherCountry()
     {
-      return $this->PublisherCountry;
+        return $this->PublisherCountry;
     }
 
     /**
@@ -104,8 +104,8 @@ class EditorialError extends BatchError
      */
     public function setPublisherCountry($PublisherCountry)
     {
-      $this->PublisherCountry = $PublisherCountry;
-      return $this;
+        $this->PublisherCountry = $PublisherCountry;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class EditorialError extends BatchError
      */
     public function getReasonCode()
     {
-      return $this->ReasonCode;
+        return $this->ReasonCode;
     }
 
     /**
@@ -122,8 +122,8 @@ class EditorialError extends BatchError
      */
     public function setReasonCode($ReasonCode)
     {
-      $this->ReasonCode = $ReasonCode;
-      return $this;
+        $this->ReasonCode = $ReasonCode;
+        return $this;
     }
 
 }

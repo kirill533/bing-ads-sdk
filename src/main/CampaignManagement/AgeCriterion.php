@@ -13,7 +13,7 @@ class AgeCriterion extends Criterion
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class AgeCriterion extends Criterion
      */
     public function getAgeRange()
     {
-      return $this->AgeRange;
+        return $this->AgeRange;
     }
 
     /**
@@ -30,8 +30,8 @@ class AgeCriterion extends Criterion
      */
     public function setAgeRange($AgeRange)
     {
-      $this->AgeRange = $AgeRange;
-      return $this;
+        $this->AgeRange = $AgeRange;
+        return $this;
     }
 
 }

@@ -21,8 +21,8 @@ class GetProfileDataFileUrlRequest
      */
     public function __construct($LanguageLocale = null, $ProfileType = null)
     {
-      $this->LanguageLocale = $LanguageLocale;
-      $this->ProfileType = $ProfileType;
+    $this->LanguageLocale = $LanguageLocale;
+    $this->ProfileType = $ProfileType;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetProfileDataFileUrlRequest
      */
     public function getLanguageLocale()
     {
-      return $this->LanguageLocale;
+        return $this->LanguageLocale;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetProfileDataFileUrlRequest
      */
     public function setLanguageLocale($LanguageLocale)
     {
-      $this->LanguageLocale = $LanguageLocale;
-      return $this;
+        $this->LanguageLocale = $LanguageLocale;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetProfileDataFileUrlRequest
      */
     public function getProfileType()
     {
-      return $this->ProfileType;
+        return $this->ProfileType;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetProfileDataFileUrlRequest
      */
     public function setProfileType($ProfileType)
     {
-      $this->ProfileType = $ProfileType;
-      return $this;
+        $this->ProfileType = $ProfileType;
+        return $this;
     }
 
 }

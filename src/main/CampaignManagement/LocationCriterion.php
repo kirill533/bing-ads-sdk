@@ -28,7 +28,7 @@ class LocationCriterion extends Criterion
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -36,7 +36,7 @@ class LocationCriterion extends Criterion
      */
     public function getDisplayName()
     {
-      return $this->DisplayName;
+        return $this->DisplayName;
     }
 
     /**
@@ -45,8 +45,8 @@ class LocationCriterion extends Criterion
      */
     public function setDisplayName($DisplayName)
     {
-      $this->DisplayName = $DisplayName;
-      return $this;
+        $this->DisplayName = $DisplayName;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class LocationCriterion extends Criterion
      */
     public function getEnclosedLocationIds()
     {
-      return $this->EnclosedLocationIds;
+        return $this->EnclosedLocationIds;
     }
 
     /**
@@ -63,8 +63,8 @@ class LocationCriterion extends Criterion
      */
     public function setEnclosedLocationIds($EnclosedLocationIds)
     {
-      $this->EnclosedLocationIds = $EnclosedLocationIds;
-      return $this;
+        $this->EnclosedLocationIds = $EnclosedLocationIds;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class LocationCriterion extends Criterion
      */
     public function getLocationId()
     {
-      return $this->LocationId;
+        return $this->LocationId;
     }
 
     /**
@@ -81,8 +81,8 @@ class LocationCriterion extends Criterion
      */
     public function setLocationId($LocationId)
     {
-      $this->LocationId = $LocationId;
-      return $this;
+        $this->LocationId = $LocationId;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class LocationCriterion extends Criterion
      */
     public function getLocationType()
     {
-      return $this->LocationType;
+        return $this->LocationType;
     }
 
     /**
@@ -99,8 +99,8 @@ class LocationCriterion extends Criterion
      */
     public function setLocationType($LocationType)
     {
-      $this->LocationType = $LocationType;
-      return $this;
+        $this->LocationType = $LocationType;
+        return $this;
     }
 
 }

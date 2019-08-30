@@ -26,7 +26,7 @@ class DateRange
      */
     public function getMinDate()
     {
-      return $this->MinDate;
+        return $this->MinDate;
     }
 
     /**
@@ -35,8 +35,8 @@ class DateRange
      */
     public function setMinDate($MinDate)
     {
-      $this->MinDate = $MinDate;
-      return $this;
+        $this->MinDate = $MinDate;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class DateRange
      */
     public function getMaxDate()
     {
-      return $this->MaxDate;
+        return $this->MaxDate;
     }
 
     /**
@@ -53,8 +53,8 @@ class DateRange
      */
     public function setMaxDate($MaxDate)
     {
-      $this->MaxDate = $MaxDate;
-      return $this;
+        $this->MaxDate = $MaxDate;
+        return $this;
     }
 
 }

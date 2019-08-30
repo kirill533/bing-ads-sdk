@@ -15,7 +15,7 @@ class GetHistoricalKeywordPerformanceResponse
      */
     public function __construct($KeywordHistoricalPerformances = null)
     {
-      $this->KeywordHistoricalPerformances = $KeywordHistoricalPerformances;
+    $this->KeywordHistoricalPerformances = $KeywordHistoricalPerformances;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetHistoricalKeywordPerformanceResponse
      */
     public function getKeywordHistoricalPerformances()
     {
-      return $this->KeywordHistoricalPerformances;
+        return $this->KeywordHistoricalPerformances;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetHistoricalKeywordPerformanceResponse
      */
     public function setKeywordHistoricalPerformances($KeywordHistoricalPerformances)
     {
-      $this->KeywordHistoricalPerformances = $KeywordHistoricalPerformances;
-      return $this;
+        $this->KeywordHistoricalPerformances = $KeywordHistoricalPerformances;
+        return $this;
     }
 
 }

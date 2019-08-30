@@ -21,7 +21,7 @@ class ArrayOfSetting implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getSetting()
     {
-      return $this->Setting;
+        return $this->Setting;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfSetting implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setSetting(array $Setting = null)
     {
-      $this->Setting = $Setting;
-      return $this;
+        $this->Setting = $Setting;
+        return $this;
     }
 
     /**

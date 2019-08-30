@@ -21,7 +21,7 @@ class ArrayOfProductSearchQueryPerformanceReportColumn implements \ArrayAccess, 
      */
     public function getProductSearchQueryPerformanceReportColumn()
     {
-      return $this->ProductSearchQueryPerformanceReportColumn;
+        return $this->ProductSearchQueryPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfProductSearchQueryPerformanceReportColumn implements \ArrayAccess, 
      */
     public function setProductSearchQueryPerformanceReportColumn(array $ProductSearchQueryPerformanceReportColumn = null)
     {
-      $this->ProductSearchQueryPerformanceReportColumn = $ProductSearchQueryPerformanceReportColumn;
-      return $this;
+        $this->ProductSearchQueryPerformanceReportColumn = $ProductSearchQueryPerformanceReportColumn;
+        return $this;
     }
 
     /**

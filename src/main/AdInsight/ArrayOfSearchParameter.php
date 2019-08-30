@@ -21,7 +21,7 @@ class ArrayOfSearchParameter implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getSearchParameter()
     {
-      return $this->SearchParameter;
+        return $this->SearchParameter;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfSearchParameter implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function setSearchParameter(array $SearchParameter = null)
     {
-      $this->SearchParameter = $SearchParameter;
-      return $this;
+        $this->SearchParameter = $SearchParameter;
+        return $this;
     }
 
     /**

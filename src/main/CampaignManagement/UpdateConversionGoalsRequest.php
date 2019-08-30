@@ -15,7 +15,7 @@ class UpdateConversionGoalsRequest
      */
     public function __construct($ConversionGoals = null)
     {
-      $this->ConversionGoals = $ConversionGoals;
+    $this->ConversionGoals = $ConversionGoals;
     }
 
     /**
@@ -23,7 +23,7 @@ class UpdateConversionGoalsRequest
      */
     public function getConversionGoals()
     {
-      return $this->ConversionGoals;
+        return $this->ConversionGoals;
     }
 
     /**
@@ -32,8 +32,8 @@ class UpdateConversionGoalsRequest
      */
     public function setConversionGoals($ConversionGoals)
     {
-      $this->ConversionGoals = $ConversionGoals;
-      return $this;
+        $this->ConversionGoals = $ConversionGoals;
+        return $this;
     }
 
 }

@@ -15,7 +15,7 @@ class GetAdGroupsByCampaignIdResponse
      */
     public function __construct($AdGroups = null)
     {
-      $this->AdGroups = $AdGroups;
+    $this->AdGroups = $AdGroups;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetAdGroupsByCampaignIdResponse
      */
     public function getAdGroups()
     {
-      return $this->AdGroups;
+        return $this->AdGroups;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetAdGroupsByCampaignIdResponse
      */
     public function setAdGroups($AdGroups)
     {
-      $this->AdGroups = $AdGroups;
-      return $this;
+        $this->AdGroups = $AdGroups;
+        return $this;
     }
 
 }

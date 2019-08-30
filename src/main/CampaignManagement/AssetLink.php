@@ -36,7 +36,7 @@ class AssetLink
      */
     public function getAsset()
     {
-      return $this->Asset;
+        return $this->Asset;
     }
 
     /**
@@ -45,8 +45,8 @@ class AssetLink
      */
     public function setAsset($Asset)
     {
-      $this->Asset = $Asset;
-      return $this;
+        $this->Asset = $Asset;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class AssetLink
      */
     public function getAssetPerformanceLabel()
     {
-      return $this->AssetPerformanceLabel;
+        return $this->AssetPerformanceLabel;
     }
 
     /**
@@ -63,8 +63,8 @@ class AssetLink
      */
     public function setAssetPerformanceLabel($AssetPerformanceLabel)
     {
-      $this->AssetPerformanceLabel = $AssetPerformanceLabel;
-      return $this;
+        $this->AssetPerformanceLabel = $AssetPerformanceLabel;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class AssetLink
      */
     public function getEditorialStatus()
     {
-      return $this->EditorialStatus;
+        return $this->EditorialStatus;
     }
 
     /**
@@ -81,8 +81,8 @@ class AssetLink
      */
     public function setEditorialStatus($EditorialStatus)
     {
-      $this->EditorialStatus = $EditorialStatus;
-      return $this;
+        $this->EditorialStatus = $EditorialStatus;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class AssetLink
      */
     public function getPinnedField()
     {
-      return $this->PinnedField;
+        return $this->PinnedField;
     }
 
     /**
@@ -99,8 +99,8 @@ class AssetLink
      */
     public function setPinnedField($PinnedField)
     {
-      $this->PinnedField = $PinnedField;
-      return $this;
+        $this->PinnedField = $PinnedField;
+        return $this;
     }
 
 }

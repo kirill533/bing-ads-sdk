@@ -31,8 +31,8 @@ class SharedEntityAssociation
      */
     public function __construct($EntityId = null, $SharedEntityId = null)
     {
-      $this->EntityId = $EntityId;
-      $this->SharedEntityId = $SharedEntityId;
+    $this->EntityId = $EntityId;
+    $this->SharedEntityId = $SharedEntityId;
     }
 
     /**
@@ -40,7 +40,7 @@ class SharedEntityAssociation
      */
     public function getEntityId()
     {
-      return $this->EntityId;
+        return $this->EntityId;
     }
 
     /**
@@ -49,8 +49,8 @@ class SharedEntityAssociation
      */
     public function setEntityId($EntityId)
     {
-      $this->EntityId = $EntityId;
-      return $this;
+        $this->EntityId = $EntityId;
+        return $this;
     }
 
     /**
@@ -58,7 +58,7 @@ class SharedEntityAssociation
      */
     public function getEntityType()
     {
-      return $this->EntityType;
+        return $this->EntityType;
     }
 
     /**
@@ -67,8 +67,8 @@ class SharedEntityAssociation
      */
     public function setEntityType($EntityType)
     {
-      $this->EntityType = $EntityType;
-      return $this;
+        $this->EntityType = $EntityType;
+        return $this;
     }
 
     /**
@@ -76,7 +76,7 @@ class SharedEntityAssociation
      */
     public function getSharedEntityId()
     {
-      return $this->SharedEntityId;
+        return $this->SharedEntityId;
     }
 
     /**
@@ -85,8 +85,8 @@ class SharedEntityAssociation
      */
     public function setSharedEntityId($SharedEntityId)
     {
-      $this->SharedEntityId = $SharedEntityId;
-      return $this;
+        $this->SharedEntityId = $SharedEntityId;
+        return $this;
     }
 
     /**
@@ -94,7 +94,7 @@ class SharedEntityAssociation
      */
     public function getSharedEntityType()
     {
-      return $this->SharedEntityType;
+        return $this->SharedEntityType;
     }
 
     /**
@@ -103,8 +103,8 @@ class SharedEntityAssociation
      */
     public function setSharedEntityType($SharedEntityType)
     {
-      $this->SharedEntityType = $SharedEntityType;
-      return $this;
+        $this->SharedEntityType = $SharedEntityType;
+        return $this;
     }
 
 }

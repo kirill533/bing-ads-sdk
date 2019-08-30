@@ -15,7 +15,7 @@ class SearchCompaniesResponse
      */
     public function __construct($Companies = null)
     {
-      $this->Companies = $Companies;
+    $this->Companies = $Companies;
     }
 
     /**
@@ -23,7 +23,7 @@ class SearchCompaniesResponse
      */
     public function getCompanies()
     {
-      return $this->Companies;
+        return $this->Companies;
     }
 
     /**
@@ -32,8 +32,8 @@ class SearchCompaniesResponse
      */
     public function setCompanies($Companies)
     {
-      $this->Companies = $Companies;
-      return $this;
+        $this->Companies = $Companies;
+        return $this;
     }
 
 }

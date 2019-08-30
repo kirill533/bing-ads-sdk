@@ -15,7 +15,7 @@ class UpdateAccountRequest
      */
     public function __construct($Account = null)
     {
-      $this->Account = $Account;
+    $this->Account = $Account;
     }
 
     /**
@@ -23,7 +23,7 @@ class UpdateAccountRequest
      */
     public function getAccount()
     {
-      return $this->Account;
+        return $this->Account;
     }
 
     /**
@@ -32,8 +32,8 @@ class UpdateAccountRequest
      */
     public function setAccount($Account)
     {
-      $this->Account = $Account;
-      return $this;
+        $this->Account = $Account;
+        return $this;
     }
 
 }

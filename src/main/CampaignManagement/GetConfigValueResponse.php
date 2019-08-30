@@ -15,7 +15,7 @@ class GetConfigValueResponse
      */
     public function __construct($ConfigValue = null)
     {
-      $this->ConfigValue = $ConfigValue;
+    $this->ConfigValue = $ConfigValue;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetConfigValueResponse
      */
     public function getConfigValue()
     {
-      return $this->ConfigValue;
+        return $this->ConfigValue;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetConfigValueResponse
      */
     public function setConfigValue($ConfigValue)
     {
-      $this->ConfigValue = $ConfigValue;
-      return $this;
+        $this->ConfigValue = $ConfigValue;
+        return $this;
     }
 
 }

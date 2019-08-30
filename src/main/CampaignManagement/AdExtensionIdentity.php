@@ -26,7 +26,7 @@ class AdExtensionIdentity
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -35,8 +35,8 @@ class AdExtensionIdentity
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class AdExtensionIdentity
      */
     public function getVersion()
     {
-      return $this->Version;
+        return $this->Version;
     }
 
     /**
@@ -53,8 +53,8 @@ class AdExtensionIdentity
      */
     public function setVersion($Version)
     {
-      $this->Version = $Version;
-      return $this;
+        $this->Version = $Version;
+        return $this;
     }
 
 }

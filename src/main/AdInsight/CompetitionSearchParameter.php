@@ -21,7 +21,7 @@ class CompetitionSearchParameter extends SearchParameter
      */
     public function getCompetitionLevels()
     {
-      return $this->CompetitionLevels;
+        return $this->CompetitionLevels;
     }
 
     /**
@@ -30,8 +30,8 @@ class CompetitionSearchParameter extends SearchParameter
      */
     public function setCompetitionLevels($CompetitionLevels)
     {
-      $this->CompetitionLevels = $CompetitionLevels;
-      return $this;
+        $this->CompetitionLevels = $CompetitionLevels;
+        return $this;
     }
 
 }

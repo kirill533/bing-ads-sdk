@@ -21,7 +21,7 @@ class ArrayOfEditorialReasonCollection implements \ArrayAccess, \IteratorAggrega
      */
     public function getEditorialReasonCollection()
     {
-      return $this->EditorialReasonCollection;
+        return $this->EditorialReasonCollection;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfEditorialReasonCollection implements \ArrayAccess, \IteratorAggrega
      */
     public function setEditorialReasonCollection(array $EditorialReasonCollection = null)
     {
-      $this->EditorialReasonCollection = $EditorialReasonCollection;
-      return $this;
+        $this->EditorialReasonCollection = $EditorialReasonCollection;
+        return $this;
     }
 
     /**

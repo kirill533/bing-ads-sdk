@@ -146,7 +146,7 @@ class AdvertiserAccount
      */
     public function getBillToCustomerId()
     {
-      return $this->BillToCustomerId;
+        return $this->BillToCustomerId;
     }
 
     /**
@@ -155,8 +155,8 @@ class AdvertiserAccount
      */
     public function setBillToCustomerId($BillToCustomerId)
     {
-      $this->BillToCustomerId = $BillToCustomerId;
-      return $this;
+        $this->BillToCustomerId = $BillToCustomerId;
+        return $this;
     }
 
     /**
@@ -164,7 +164,7 @@ class AdvertiserAccount
      */
     public function getCurrencyCode()
     {
-      return $this->CurrencyCode;
+        return $this->CurrencyCode;
     }
 
     /**
@@ -173,8 +173,8 @@ class AdvertiserAccount
      */
     public function setCurrencyCode($CurrencyCode)
     {
-      $this->CurrencyCode = $CurrencyCode;
-      return $this;
+        $this->CurrencyCode = $CurrencyCode;
+        return $this;
     }
 
     /**
@@ -182,7 +182,7 @@ class AdvertiserAccount
      */
     public function getAccountFinancialStatus()
     {
-      return $this->AccountFinancialStatus;
+        return $this->AccountFinancialStatus;
     }
 
     /**
@@ -191,8 +191,8 @@ class AdvertiserAccount
      */
     public function setAccountFinancialStatus($AccountFinancialStatus)
     {
-      $this->AccountFinancialStatus = $AccountFinancialStatus;
-      return $this;
+        $this->AccountFinancialStatus = $AccountFinancialStatus;
+        return $this;
     }
 
     /**
@@ -200,7 +200,7 @@ class AdvertiserAccount
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -209,8 +209,8 @@ class AdvertiserAccount
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -218,7 +218,7 @@ class AdvertiserAccount
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -227,8 +227,8 @@ class AdvertiserAccount
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
     /**
@@ -236,7 +236,7 @@ class AdvertiserAccount
      */
     public function getLastModifiedByUserId()
     {
-      return $this->LastModifiedByUserId;
+        return $this->LastModifiedByUserId;
     }
 
     /**
@@ -245,8 +245,8 @@ class AdvertiserAccount
      */
     public function setLastModifiedByUserId($LastModifiedByUserId)
     {
-      $this->LastModifiedByUserId = $LastModifiedByUserId;
-      return $this;
+        $this->LastModifiedByUserId = $LastModifiedByUserId;
+        return $this;
     }
 
     /**
@@ -254,15 +254,14 @@ class AdvertiserAccount
      */
     public function getLastModifiedTime()
     {
-      if ($this->LastModifiedTime == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->LastModifiedTime);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->LastModifiedTime) {
+            return $this->LastModifiedTime;
         }
-      }
+        try {
+            return new \DateTime($this->LastModifiedTime);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -271,12 +270,8 @@ class AdvertiserAccount
      */
     public function setLastModifiedTime(\DateTime $LastModifiedTime = null)
     {
-      if ($LastModifiedTime == null) {
-       $this->LastModifiedTime = null;
-      } else {
-        $this->LastModifiedTime = $LastModifiedTime->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->LastModifiedTime = null === $LastModifiedTime ? null : $LastModifiedTime->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -284,7 +279,7 @@ class AdvertiserAccount
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -293,8 +288,8 @@ class AdvertiserAccount
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -302,7 +297,7 @@ class AdvertiserAccount
      */
     public function getNumber()
     {
-      return $this->Number;
+        return $this->Number;
     }
 
     /**
@@ -311,8 +306,8 @@ class AdvertiserAccount
      */
     public function setNumber($Number)
     {
-      $this->Number = $Number;
-      return $this;
+        $this->Number = $Number;
+        return $this;
     }
 
     /**
@@ -320,7 +315,7 @@ class AdvertiserAccount
      */
     public function getParentCustomerId()
     {
-      return $this->ParentCustomerId;
+        return $this->ParentCustomerId;
     }
 
     /**
@@ -329,8 +324,8 @@ class AdvertiserAccount
      */
     public function setParentCustomerId($ParentCustomerId)
     {
-      $this->ParentCustomerId = $ParentCustomerId;
-      return $this;
+        $this->ParentCustomerId = $ParentCustomerId;
+        return $this;
     }
 
     /**
@@ -338,7 +333,7 @@ class AdvertiserAccount
      */
     public function getPaymentMethodId()
     {
-      return $this->PaymentMethodId;
+        return $this->PaymentMethodId;
     }
 
     /**
@@ -347,8 +342,8 @@ class AdvertiserAccount
      */
     public function setPaymentMethodId($PaymentMethodId)
     {
-      $this->PaymentMethodId = $PaymentMethodId;
-      return $this;
+        $this->PaymentMethodId = $PaymentMethodId;
+        return $this;
     }
 
     /**
@@ -356,7 +351,7 @@ class AdvertiserAccount
      */
     public function getPaymentMethodType()
     {
-      return $this->PaymentMethodType;
+        return $this->PaymentMethodType;
     }
 
     /**
@@ -365,8 +360,8 @@ class AdvertiserAccount
      */
     public function setPaymentMethodType($PaymentMethodType)
     {
-      $this->PaymentMethodType = $PaymentMethodType;
-      return $this;
+        $this->PaymentMethodType = $PaymentMethodType;
+        return $this;
     }
 
     /**
@@ -374,7 +369,7 @@ class AdvertiserAccount
      */
     public function getPrimaryUserId()
     {
-      return $this->PrimaryUserId;
+        return $this->PrimaryUserId;
     }
 
     /**
@@ -383,8 +378,8 @@ class AdvertiserAccount
      */
     public function setPrimaryUserId($PrimaryUserId)
     {
-      $this->PrimaryUserId = $PrimaryUserId;
-      return $this;
+        $this->PrimaryUserId = $PrimaryUserId;
+        return $this;
     }
 
     /**
@@ -392,7 +387,7 @@ class AdvertiserAccount
      */
     public function getAccountLifeCycleStatus()
     {
-      return $this->AccountLifeCycleStatus;
+        return $this->AccountLifeCycleStatus;
     }
 
     /**
@@ -401,8 +396,8 @@ class AdvertiserAccount
      */
     public function setAccountLifeCycleStatus($AccountLifeCycleStatus)
     {
-      $this->AccountLifeCycleStatus = $AccountLifeCycleStatus;
-      return $this;
+        $this->AccountLifeCycleStatus = $AccountLifeCycleStatus;
+        return $this;
     }
 
     /**
@@ -410,7 +405,7 @@ class AdvertiserAccount
      */
     public function getTimeStamp()
     {
-      return $this->TimeStamp;
+        return $this->TimeStamp;
     }
 
     /**
@@ -419,8 +414,8 @@ class AdvertiserAccount
      */
     public function setTimeStamp($TimeStamp)
     {
-      $this->TimeStamp = $TimeStamp;
-      return $this;
+        $this->TimeStamp = $TimeStamp;
+        return $this;
     }
 
     /**
@@ -428,7 +423,7 @@ class AdvertiserAccount
      */
     public function getTimeZone()
     {
-      return $this->TimeZone;
+        return $this->TimeZone;
     }
 
     /**
@@ -437,8 +432,8 @@ class AdvertiserAccount
      */
     public function setTimeZone($TimeZone)
     {
-      $this->TimeZone = $TimeZone;
-      return $this;
+        $this->TimeZone = $TimeZone;
+        return $this;
     }
 
     /**
@@ -446,7 +441,7 @@ class AdvertiserAccount
      */
     public function getPauseReason()
     {
-      return $this->PauseReason;
+        return $this->PauseReason;
     }
 
     /**
@@ -455,8 +450,8 @@ class AdvertiserAccount
      */
     public function setPauseReason($PauseReason)
     {
-      $this->PauseReason = $PauseReason;
-      return $this;
+        $this->PauseReason = $PauseReason;
+        return $this;
     }
 
     /**
@@ -464,7 +459,7 @@ class AdvertiserAccount
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -473,8 +468,8 @@ class AdvertiserAccount
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
     /**
@@ -482,7 +477,7 @@ class AdvertiserAccount
      */
     public function getLinkedAgencies()
     {
-      return $this->LinkedAgencies;
+        return $this->LinkedAgencies;
     }
 
     /**
@@ -491,8 +486,8 @@ class AdvertiserAccount
      */
     public function setLinkedAgencies($LinkedAgencies)
     {
-      $this->LinkedAgencies = $LinkedAgencies;
-      return $this;
+        $this->LinkedAgencies = $LinkedAgencies;
+        return $this;
     }
 
     /**
@@ -500,7 +495,7 @@ class AdvertiserAccount
      */
     public function getSalesHouseCustomerId()
     {
-      return $this->SalesHouseCustomerId;
+        return $this->SalesHouseCustomerId;
     }
 
     /**
@@ -509,8 +504,8 @@ class AdvertiserAccount
      */
     public function setSalesHouseCustomerId($SalesHouseCustomerId)
     {
-      $this->SalesHouseCustomerId = $SalesHouseCustomerId;
-      return $this;
+        $this->SalesHouseCustomerId = $SalesHouseCustomerId;
+        return $this;
     }
 
     /**
@@ -518,7 +513,7 @@ class AdvertiserAccount
      */
     public function getTaxInformation()
     {
-      return $this->TaxInformation;
+        return $this->TaxInformation;
     }
 
     /**
@@ -527,8 +522,8 @@ class AdvertiserAccount
      */
     public function setTaxInformation($TaxInformation)
     {
-      $this->TaxInformation = $TaxInformation;
-      return $this;
+        $this->TaxInformation = $TaxInformation;
+        return $this;
     }
 
     /**
@@ -536,7 +531,7 @@ class AdvertiserAccount
      */
     public function getBackUpPaymentInstrumentId()
     {
-      return $this->BackUpPaymentInstrumentId;
+        return $this->BackUpPaymentInstrumentId;
     }
 
     /**
@@ -545,8 +540,8 @@ class AdvertiserAccount
      */
     public function setBackUpPaymentInstrumentId($BackUpPaymentInstrumentId)
     {
-      $this->BackUpPaymentInstrumentId = $BackUpPaymentInstrumentId;
-      return $this;
+        $this->BackUpPaymentInstrumentId = $BackUpPaymentInstrumentId;
+        return $this;
     }
 
     /**
@@ -554,7 +549,7 @@ class AdvertiserAccount
      */
     public function getBillingThresholdAmount()
     {
-      return $this->BillingThresholdAmount;
+        return $this->BillingThresholdAmount;
     }
 
     /**
@@ -563,8 +558,8 @@ class AdvertiserAccount
      */
     public function setBillingThresholdAmount($BillingThresholdAmount)
     {
-      $this->BillingThresholdAmount = $BillingThresholdAmount;
-      return $this;
+        $this->BillingThresholdAmount = $BillingThresholdAmount;
+        return $this;
     }
 
     /**
@@ -572,7 +567,7 @@ class AdvertiserAccount
      */
     public function getBusinessAddress()
     {
-      return $this->BusinessAddress;
+        return $this->BusinessAddress;
     }
 
     /**
@@ -581,8 +576,8 @@ class AdvertiserAccount
      */
     public function setBusinessAddress($BusinessAddress)
     {
-      $this->BusinessAddress = $BusinessAddress;
-      return $this;
+        $this->BusinessAddress = $BusinessAddress;
+        return $this;
     }
 
     /**
@@ -590,7 +585,7 @@ class AdvertiserAccount
      */
     public function getAutoTagType()
     {
-      return $this->AutoTagType;
+        return $this->AutoTagType;
     }
 
     /**
@@ -599,8 +594,8 @@ class AdvertiserAccount
      */
     public function setAutoTagType($AutoTagType)
     {
-      $this->AutoTagType = $AutoTagType;
-      return $this;
+        $this->AutoTagType = $AutoTagType;
+        return $this;
     }
 
     /**
@@ -608,7 +603,7 @@ class AdvertiserAccount
      */
     public function getSoldToPaymentInstrumentId()
     {
-      return $this->SoldToPaymentInstrumentId;
+        return $this->SoldToPaymentInstrumentId;
     }
 
     /**
@@ -617,8 +612,8 @@ class AdvertiserAccount
      */
     public function setSoldToPaymentInstrumentId($SoldToPaymentInstrumentId)
     {
-      $this->SoldToPaymentInstrumentId = $SoldToPaymentInstrumentId;
-      return $this;
+        $this->SoldToPaymentInstrumentId = $SoldToPaymentInstrumentId;
+        return $this;
     }
 
 }

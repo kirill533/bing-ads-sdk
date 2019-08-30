@@ -33,7 +33,7 @@ class DayTimeCriterion extends Criterion
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -41,7 +41,7 @@ class DayTimeCriterion extends Criterion
      */
     public function getDay()
     {
-      return $this->Day;
+        return $this->Day;
     }
 
     /**
@@ -50,8 +50,8 @@ class DayTimeCriterion extends Criterion
      */
     public function setDay($Day)
     {
-      $this->Day = $Day;
-      return $this;
+        $this->Day = $Day;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class DayTimeCriterion extends Criterion
      */
     public function getFromHour()
     {
-      return $this->FromHour;
+        return $this->FromHour;
     }
 
     /**
@@ -68,8 +68,8 @@ class DayTimeCriterion extends Criterion
      */
     public function setFromHour($FromHour)
     {
-      $this->FromHour = $FromHour;
-      return $this;
+        $this->FromHour = $FromHour;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class DayTimeCriterion extends Criterion
      */
     public function getFromMinute()
     {
-      return $this->FromMinute;
+        return $this->FromMinute;
     }
 
     /**
@@ -86,8 +86,8 @@ class DayTimeCriterion extends Criterion
      */
     public function setFromMinute($FromMinute)
     {
-      $this->FromMinute = $FromMinute;
-      return $this;
+        $this->FromMinute = $FromMinute;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class DayTimeCriterion extends Criterion
      */
     public function getToHour()
     {
-      return $this->ToHour;
+        return $this->ToHour;
     }
 
     /**
@@ -104,8 +104,8 @@ class DayTimeCriterion extends Criterion
      */
     public function setToHour($ToHour)
     {
-      $this->ToHour = $ToHour;
-      return $this;
+        $this->ToHour = $ToHour;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class DayTimeCriterion extends Criterion
      */
     public function getToMinute()
     {
-      return $this->ToMinute;
+        return $this->ToMinute;
     }
 
     /**
@@ -122,8 +122,8 @@ class DayTimeCriterion extends Criterion
      */
     public function setToMinute($ToMinute)
     {
-      $this->ToMinute = $ToMinute;
-      return $this;
+        $this->ToMinute = $ToMinute;
+        return $this;
     }
 
 }

@@ -15,7 +15,7 @@ class UpdateBudgetsRequest
      */
     public function __construct($Budgets = null)
     {
-      $this->Budgets = $Budgets;
+    $this->Budgets = $Budgets;
     }
 
     /**
@@ -23,7 +23,7 @@ class UpdateBudgetsRequest
      */
     public function getBudgets()
     {
-      return $this->Budgets;
+        return $this->Budgets;
     }
 
     /**
@@ -32,8 +32,8 @@ class UpdateBudgetsRequest
      */
     public function setBudgets($Budgets)
     {
-      $this->Budgets = $Budgets;
-      return $this;
+        $this->Budgets = $Budgets;
+        return $this;
     }
 
 }

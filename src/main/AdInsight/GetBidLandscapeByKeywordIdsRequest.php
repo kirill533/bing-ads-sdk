@@ -21,8 +21,8 @@ class GetBidLandscapeByKeywordIdsRequest
      */
     public function __construct($KeywordIds = null, $IncludeCurrentBid = null)
     {
-      $this->KeywordIds = $KeywordIds;
-      $this->IncludeCurrentBid = $IncludeCurrentBid;
+    $this->KeywordIds = $KeywordIds;
+    $this->IncludeCurrentBid = $IncludeCurrentBid;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetBidLandscapeByKeywordIdsRequest
      */
     public function getKeywordIds()
     {
-      return $this->KeywordIds;
+        return $this->KeywordIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetBidLandscapeByKeywordIdsRequest
      */
     public function setKeywordIds($KeywordIds)
     {
-      $this->KeywordIds = $KeywordIds;
-      return $this;
+        $this->KeywordIds = $KeywordIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetBidLandscapeByKeywordIdsRequest
      */
     public function getIncludeCurrentBid()
     {
-      return $this->IncludeCurrentBid;
+        return $this->IncludeCurrentBid;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetBidLandscapeByKeywordIdsRequest
      */
     public function setIncludeCurrentBid($IncludeCurrentBid)
     {
-      $this->IncludeCurrentBid = $IncludeCurrentBid;
-      return $this;
+        $this->IncludeCurrentBid = $IncludeCurrentBid;
+        return $this;
     }
 
 }

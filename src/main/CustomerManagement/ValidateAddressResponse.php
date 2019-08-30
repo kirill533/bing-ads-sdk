@@ -27,9 +27,9 @@ class ValidateAddressResponse
      */
     public function __construct($OriginalAddress = null, $Status = null, $SuggestedAddresses = null)
     {
-      $this->OriginalAddress = $OriginalAddress;
-      $this->Status = $Status;
-      $this->SuggestedAddresses = $SuggestedAddresses;
+    $this->OriginalAddress = $OriginalAddress;
+    $this->Status = $Status;
+    $this->SuggestedAddresses = $SuggestedAddresses;
     }
 
     /**
@@ -37,7 +37,7 @@ class ValidateAddressResponse
      */
     public function getOriginalAddress()
     {
-      return $this->OriginalAddress;
+        return $this->OriginalAddress;
     }
 
     /**
@@ -46,8 +46,8 @@ class ValidateAddressResponse
      */
     public function setOriginalAddress($OriginalAddress)
     {
-      $this->OriginalAddress = $OriginalAddress;
-      return $this;
+        $this->OriginalAddress = $OriginalAddress;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class ValidateAddressResponse
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -64,8 +64,8 @@ class ValidateAddressResponse
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class ValidateAddressResponse
      */
     public function getSuggestedAddresses()
     {
-      return $this->SuggestedAddresses;
+        return $this->SuggestedAddresses;
     }
 
     /**
@@ -82,8 +82,8 @@ class ValidateAddressResponse
      */
     public function setSuggestedAddresses($SuggestedAddresses)
     {
-      $this->SuggestedAddresses = $SuggestedAddresses;
-      return $this;
+        $this->SuggestedAddresses = $SuggestedAddresses;
+        return $this;
     }
 
 }

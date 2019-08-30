@@ -21,7 +21,7 @@ class ArrayOfSharedEntity implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function getSharedEntity()
     {
-      return $this->SharedEntity;
+        return $this->SharedEntity;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfSharedEntity implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function setSharedEntity(array $SharedEntity = null)
     {
-      $this->SharedEntity = $SharedEntity;
-      return $this;
+        $this->SharedEntity = $SharedEntity;
+        return $this;
     }
 
     /**

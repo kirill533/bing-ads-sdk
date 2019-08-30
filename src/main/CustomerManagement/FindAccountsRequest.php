@@ -27,9 +27,9 @@ class FindAccountsRequest
      */
     public function __construct($CustomerId = null, $AccountFilter = null, $TopN = null)
     {
-      $this->CustomerId = $CustomerId;
-      $this->AccountFilter = $AccountFilter;
-      $this->TopN = $TopN;
+    $this->CustomerId = $CustomerId;
+    $this->AccountFilter = $AccountFilter;
+    $this->TopN = $TopN;
     }
 
     /**
@@ -37,7 +37,7 @@ class FindAccountsRequest
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
@@ -46,8 +46,8 @@ class FindAccountsRequest
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class FindAccountsRequest
      */
     public function getAccountFilter()
     {
-      return $this->AccountFilter;
+        return $this->AccountFilter;
     }
 
     /**
@@ -64,8 +64,8 @@ class FindAccountsRequest
      */
     public function setAccountFilter($AccountFilter)
     {
-      $this->AccountFilter = $AccountFilter;
-      return $this;
+        $this->AccountFilter = $AccountFilter;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class FindAccountsRequest
      */
     public function getTopN()
     {
-      return $this->TopN;
+        return $this->TopN;
     }
 
     /**
@@ -82,8 +82,8 @@ class FindAccountsRequest
      */
     public function setTopN($TopN)
     {
-      $this->TopN = $TopN;
-      return $this;
+        $this->TopN = $TopN;
+        return $this;
     }
 
 }

@@ -15,7 +15,7 @@ class GetBillingDocumentsInfoResponse
      */
     public function __construct($BillingDocumentsInfo = null)
     {
-      $this->BillingDocumentsInfo = $BillingDocumentsInfo;
+    $this->BillingDocumentsInfo = $BillingDocumentsInfo;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetBillingDocumentsInfoResponse
      */
     public function getBillingDocumentsInfo()
     {
-      return $this->BillingDocumentsInfo;
+        return $this->BillingDocumentsInfo;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetBillingDocumentsInfoResponse
      */
     public function setBillingDocumentsInfo($BillingDocumentsInfo)
     {
-      $this->BillingDocumentsInfo = $BillingDocumentsInfo;
-      return $this;
+        $this->BillingDocumentsInfo = $BillingDocumentsInfo;
+        return $this;
     }
 
 }

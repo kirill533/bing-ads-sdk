@@ -31,7 +31,7 @@ class AuctionInsightEntry
      */
     public function getDisplayDomain()
     {
-      return $this->DisplayDomain;
+        return $this->DisplayDomain;
     }
 
     /**
@@ -40,8 +40,8 @@ class AuctionInsightEntry
      */
     public function setDisplayDomain($DisplayDomain)
     {
-      $this->DisplayDomain = $DisplayDomain;
-      return $this;
+        $this->DisplayDomain = $DisplayDomain;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class AuctionInsightEntry
      */
     public function getAggregatedKpi()
     {
-      return $this->AggregatedKpi;
+        return $this->AggregatedKpi;
     }
 
     /**
@@ -58,8 +58,8 @@ class AuctionInsightEntry
      */
     public function setAggregatedKpi($AggregatedKpi)
     {
-      $this->AggregatedKpi = $AggregatedKpi;
-      return $this;
+        $this->AggregatedKpi = $AggregatedKpi;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class AuctionInsightEntry
      */
     public function getSegmentedKpis()
     {
-      return $this->SegmentedKpis;
+        return $this->SegmentedKpis;
     }
 
     /**
@@ -76,8 +76,8 @@ class AuctionInsightEntry
      */
     public function setSegmentedKpis($SegmentedKpis)
     {
-      $this->SegmentedKpis = $SegmentedKpis;
-      return $this;
+        $this->SegmentedKpis = $SegmentedKpis;
+        return $this;
     }
 
 }

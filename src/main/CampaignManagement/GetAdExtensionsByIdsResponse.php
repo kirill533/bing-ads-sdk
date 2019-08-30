@@ -21,8 +21,8 @@ class GetAdExtensionsByIdsResponse
      */
     public function __construct($AdExtensions = null, $PartialErrors = null)
     {
-      $this->AdExtensions = $AdExtensions;
-      $this->PartialErrors = $PartialErrors;
+    $this->AdExtensions = $AdExtensions;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetAdExtensionsByIdsResponse
      */
     public function getAdExtensions()
     {
-      return $this->AdExtensions;
+        return $this->AdExtensions;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetAdExtensionsByIdsResponse
      */
     public function setAdExtensions($AdExtensions)
     {
-      $this->AdExtensions = $AdExtensions;
-      return $this;
+        $this->AdExtensions = $AdExtensions;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetAdExtensionsByIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetAdExtensionsByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

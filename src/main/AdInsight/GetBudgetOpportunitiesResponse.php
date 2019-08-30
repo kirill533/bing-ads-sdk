@@ -15,7 +15,7 @@ class GetBudgetOpportunitiesResponse
      */
     public function __construct($Opportunities = null)
     {
-      $this->Opportunities = $Opportunities;
+    $this->Opportunities = $Opportunities;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetBudgetOpportunitiesResponse
      */
     public function getOpportunities()
     {
-      return $this->Opportunities;
+        return $this->Opportunities;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetBudgetOpportunitiesResponse
      */
     public function setOpportunities($Opportunities)
     {
-      $this->Opportunities = $Opportunities;
-      return $this;
+        $this->Opportunities = $Opportunities;
+        return $this;
     }
 
 }

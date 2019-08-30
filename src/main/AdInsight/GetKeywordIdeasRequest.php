@@ -27,9 +27,9 @@ class GetKeywordIdeasRequest
      */
     public function __construct($ExpandIdeas = null, $IdeaAttributes = null, $SearchParameters = null)
     {
-      $this->ExpandIdeas = $ExpandIdeas;
-      $this->IdeaAttributes = $IdeaAttributes;
-      $this->SearchParameters = $SearchParameters;
+    $this->ExpandIdeas = $ExpandIdeas;
+    $this->IdeaAttributes = $IdeaAttributes;
+    $this->SearchParameters = $SearchParameters;
     }
 
     /**
@@ -37,7 +37,7 @@ class GetKeywordIdeasRequest
      */
     public function getExpandIdeas()
     {
-      return $this->ExpandIdeas;
+        return $this->ExpandIdeas;
     }
 
     /**
@@ -46,8 +46,8 @@ class GetKeywordIdeasRequest
      */
     public function setExpandIdeas($ExpandIdeas)
     {
-      $this->ExpandIdeas = $ExpandIdeas;
-      return $this;
+        $this->ExpandIdeas = $ExpandIdeas;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class GetKeywordIdeasRequest
      */
     public function getIdeaAttributes()
     {
-      return $this->IdeaAttributes;
+        return $this->IdeaAttributes;
     }
 
     /**
@@ -64,8 +64,8 @@ class GetKeywordIdeasRequest
      */
     public function setIdeaAttributes($IdeaAttributes)
     {
-      $this->IdeaAttributes = $IdeaAttributes;
-      return $this;
+        $this->IdeaAttributes = $IdeaAttributes;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetKeywordIdeasRequest
      */
     public function getSearchParameters()
     {
-      return $this->SearchParameters;
+        return $this->SearchParameters;
     }
 
     /**
@@ -82,8 +82,8 @@ class GetKeywordIdeasRequest
      */
     public function setSearchParameters($SearchParameters)
     {
-      $this->SearchParameters = $SearchParameters;
-      return $this;
+        $this->SearchParameters = $SearchParameters;
+        return $this;
     }
 
 }

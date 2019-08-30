@@ -33,7 +33,7 @@ class ImageAsset extends Asset
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -41,7 +41,7 @@ class ImageAsset extends Asset
      */
     public function getCropHeight()
     {
-      return $this->CropHeight;
+        return $this->CropHeight;
     }
 
     /**
@@ -50,8 +50,8 @@ class ImageAsset extends Asset
      */
     public function setCropHeight($CropHeight)
     {
-      $this->CropHeight = $CropHeight;
-      return $this;
+        $this->CropHeight = $CropHeight;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class ImageAsset extends Asset
      */
     public function getCropWidth()
     {
-      return $this->CropWidth;
+        return $this->CropWidth;
     }
 
     /**
@@ -68,8 +68,8 @@ class ImageAsset extends Asset
      */
     public function setCropWidth($CropWidth)
     {
-      $this->CropWidth = $CropWidth;
-      return $this;
+        $this->CropWidth = $CropWidth;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class ImageAsset extends Asset
      */
     public function getCropX()
     {
-      return $this->CropX;
+        return $this->CropX;
     }
 
     /**
@@ -86,8 +86,8 @@ class ImageAsset extends Asset
      */
     public function setCropX($CropX)
     {
-      $this->CropX = $CropX;
-      return $this;
+        $this->CropX = $CropX;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class ImageAsset extends Asset
      */
     public function getCropY()
     {
-      return $this->CropY;
+        return $this->CropY;
     }
 
     /**
@@ -104,8 +104,8 @@ class ImageAsset extends Asset
      */
     public function setCropY($CropY)
     {
-      $this->CropY = $CropY;
-      return $this;
+        $this->CropY = $CropY;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class ImageAsset extends Asset
      */
     public function getSubType()
     {
-      return $this->SubType;
+        return $this->SubType;
     }
 
     /**
@@ -122,8 +122,8 @@ class ImageAsset extends Asset
      */
     public function setSubType($SubType)
     {
-      $this->SubType = $SubType;
-      return $this;
+        $this->SubType = $SubType;
+        return $this;
     }
 
 }

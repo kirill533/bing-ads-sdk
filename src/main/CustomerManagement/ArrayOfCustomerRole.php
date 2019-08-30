@@ -21,7 +21,7 @@ class ArrayOfCustomerRole implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function getCustomerRole()
     {
-      return $this->CustomerRole;
+        return $this->CustomerRole;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCustomerRole implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function setCustomerRole(array $CustomerRole = null)
     {
-      $this->CustomerRole = $CustomerRole;
-      return $this;
+        $this->CustomerRole = $CustomerRole;
+        return $this;
     }
 
     /**

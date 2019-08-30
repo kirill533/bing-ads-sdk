@@ -21,7 +21,7 @@ class ArrayOfKeywordEstimate implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getKeywordEstimate()
     {
-      return $this->KeywordEstimate;
+        return $this->KeywordEstimate;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordEstimate implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function setKeywordEstimate(array $KeywordEstimate = null)
     {
-      $this->KeywordEstimate = $KeywordEstimate;
-      return $this;
+        $this->KeywordEstimate = $KeywordEstimate;
+        return $this;
     }
 
     /**

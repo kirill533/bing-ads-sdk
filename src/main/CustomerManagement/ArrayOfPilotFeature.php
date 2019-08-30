@@ -21,7 +21,7 @@ class ArrayOfPilotFeature implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function getPilotFeature()
     {
-      return $this->PilotFeature;
+        return $this->PilotFeature;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfPilotFeature implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function setPilotFeature(array $PilotFeature = null)
     {
-      $this->PilotFeature = $PilotFeature;
-      return $this;
+        $this->PilotFeature = $PilotFeature;
+        return $this;
     }
 
     /**

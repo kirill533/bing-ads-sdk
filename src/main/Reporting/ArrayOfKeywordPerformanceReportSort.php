@@ -21,7 +21,7 @@ class ArrayOfKeywordPerformanceReportSort implements \ArrayAccess, \IteratorAggr
      */
     public function getKeywordPerformanceReportSort()
     {
-      return $this->KeywordPerformanceReportSort;
+        return $this->KeywordPerformanceReportSort;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordPerformanceReportSort implements \ArrayAccess, \IteratorAggr
      */
     public function setKeywordPerformanceReportSort(array $KeywordPerformanceReportSort = null)
     {
-      $this->KeywordPerformanceReportSort = $KeywordPerformanceReportSort;
-      return $this;
+        $this->KeywordPerformanceReportSort = $KeywordPerformanceReportSort;
+        return $this;
     }
 
     /**

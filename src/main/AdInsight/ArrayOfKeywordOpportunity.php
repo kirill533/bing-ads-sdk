@@ -21,7 +21,7 @@ class ArrayOfKeywordOpportunity implements \ArrayAccess, \IteratorAggregate, \Co
      */
     public function getKeywordOpportunity()
     {
-      return $this->KeywordOpportunity;
+        return $this->KeywordOpportunity;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordOpportunity implements \ArrayAccess, \IteratorAggregate, \Co
      */
     public function setKeywordOpportunity(array $KeywordOpportunity = null)
     {
-      $this->KeywordOpportunity = $KeywordOpportunity;
-      return $this;
+        $this->KeywordOpportunity = $KeywordOpportunity;
+        return $this;
     }
 
     /**

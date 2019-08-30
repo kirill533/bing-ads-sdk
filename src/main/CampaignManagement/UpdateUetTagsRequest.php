@@ -15,7 +15,7 @@ class UpdateUetTagsRequest
      */
     public function __construct($UetTags = null)
     {
-      $this->UetTags = $UetTags;
+    $this->UetTags = $UetTags;
     }
 
     /**
@@ -23,7 +23,7 @@ class UpdateUetTagsRequest
      */
     public function getUetTags()
     {
-      return $this->UetTags;
+        return $this->UetTags;
     }
 
     /**
@@ -32,8 +32,8 @@ class UpdateUetTagsRequest
      */
     public function setUetTags($UetTags)
     {
-      $this->UetTags = $UetTags;
-      return $this;
+        $this->UetTags = $UetTags;
+        return $this;
     }
 
 }

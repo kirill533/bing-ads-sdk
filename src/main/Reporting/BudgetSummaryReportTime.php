@@ -36,7 +36,7 @@ class BudgetSummaryReportTime
      */
     public function getCustomDateRangeEnd()
     {
-      return $this->CustomDateRangeEnd;
+        return $this->CustomDateRangeEnd;
     }
 
     /**
@@ -45,8 +45,8 @@ class BudgetSummaryReportTime
      */
     public function setCustomDateRangeEnd($CustomDateRangeEnd)
     {
-      $this->CustomDateRangeEnd = $CustomDateRangeEnd;
-      return $this;
+        $this->CustomDateRangeEnd = $CustomDateRangeEnd;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class BudgetSummaryReportTime
      */
     public function getCustomDateRangeStart()
     {
-      return $this->CustomDateRangeStart;
+        return $this->CustomDateRangeStart;
     }
 
     /**
@@ -63,8 +63,8 @@ class BudgetSummaryReportTime
      */
     public function setCustomDateRangeStart($CustomDateRangeStart)
     {
-      $this->CustomDateRangeStart = $CustomDateRangeStart;
-      return $this;
+        $this->CustomDateRangeStart = $CustomDateRangeStart;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class BudgetSummaryReportTime
      */
     public function getPredefinedTime()
     {
-      return $this->PredefinedTime;
+        return $this->PredefinedTime;
     }
 
     /**
@@ -81,8 +81,8 @@ class BudgetSummaryReportTime
      */
     public function setPredefinedTime($PredefinedTime)
     {
-      $this->PredefinedTime = $PredefinedTime;
-      return $this;
+        $this->PredefinedTime = $PredefinedTime;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class BudgetSummaryReportTime
      */
     public function getReportTimeZone()
     {
-      return $this->ReportTimeZone;
+        return $this->ReportTimeZone;
     }
 
     /**
@@ -99,8 +99,8 @@ class BudgetSummaryReportTime
      */
     public function setReportTimeZone($ReportTimeZone)
     {
-      $this->ReportTimeZone = $ReportTimeZone;
-      return $this;
+        $this->ReportTimeZone = $ReportTimeZone;
+        return $this;
     }
 
 }

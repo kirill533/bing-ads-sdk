@@ -27,9 +27,9 @@ class GetBidOpportunitiesRequest
      */
     public function __construct($AdGroupId = null, $CampaignId = null, $OpportunityType = null)
     {
-      $this->AdGroupId = $AdGroupId;
-      $this->CampaignId = $CampaignId;
-      $this->OpportunityType = $OpportunityType;
+    $this->AdGroupId = $AdGroupId;
+    $this->CampaignId = $CampaignId;
+    $this->OpportunityType = $OpportunityType;
     }
 
     /**
@@ -37,7 +37,7 @@ class GetBidOpportunitiesRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -46,8 +46,8 @@ class GetBidOpportunitiesRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class GetBidOpportunitiesRequest
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -64,8 +64,8 @@ class GetBidOpportunitiesRequest
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetBidOpportunitiesRequest
      */
     public function getOpportunityType()
     {
-      return $this->OpportunityType;
+        return $this->OpportunityType;
     }
 
     /**
@@ -82,8 +82,8 @@ class GetBidOpportunitiesRequest
      */
     public function setOpportunityType($OpportunityType)
     {
-      $this->OpportunityType = $OpportunityType;
-      return $this;
+        $this->OpportunityType = $OpportunityType;
+        return $this;
     }
 
 }

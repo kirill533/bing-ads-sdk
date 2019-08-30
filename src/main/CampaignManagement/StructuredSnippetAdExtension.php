@@ -18,7 +18,7 @@ class StructuredSnippetAdExtension extends AdExtension
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -26,7 +26,7 @@ class StructuredSnippetAdExtension extends AdExtension
      */
     public function getHeader()
     {
-      return $this->Header;
+        return $this->Header;
     }
 
     /**
@@ -35,8 +35,8 @@ class StructuredSnippetAdExtension extends AdExtension
      */
     public function setHeader($Header)
     {
-      $this->Header = $Header;
-      return $this;
+        $this->Header = $Header;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class StructuredSnippetAdExtension extends AdExtension
      */
     public function getValues()
     {
-      return $this->Values;
+        return $this->Values;
     }
 
     /**
@@ -53,8 +53,8 @@ class StructuredSnippetAdExtension extends AdExtension
      */
     public function setValues($Values)
     {
-      $this->Values = $Values;
-      return $this;
+        $this->Values = $Values;
+        return $this;
     }
 
 }

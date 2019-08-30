@@ -27,9 +27,9 @@ class GetAdsByAdGroupIdRequest
      */
     public function __construct($AdGroupId = null, $AdTypes = null, $ReturnAdditionalFields = null)
     {
-      $this->AdGroupId = $AdGroupId;
-      $this->AdTypes = $AdTypes;
-      $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+    $this->AdGroupId = $AdGroupId;
+    $this->AdTypes = $AdTypes;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -37,7 +37,7 @@ class GetAdsByAdGroupIdRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -46,8 +46,8 @@ class GetAdsByAdGroupIdRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class GetAdsByAdGroupIdRequest
      */
     public function getAdTypes()
     {
-      return $this->AdTypes;
+        return $this->AdTypes;
     }
 
     /**
@@ -64,8 +64,8 @@ class GetAdsByAdGroupIdRequest
      */
     public function setAdTypes($AdTypes)
     {
-      $this->AdTypes = $AdTypes;
-      return $this;
+        $this->AdTypes = $AdTypes;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetAdsByAdGroupIdRequest
      */
     public function getReturnAdditionalFields()
     {
-      return $this->ReturnAdditionalFields;
+        return $this->ReturnAdditionalFields;
     }
 
     /**
@@ -82,8 +82,8 @@ class GetAdsByAdGroupIdRequest
      */
     public function setReturnAdditionalFields($ReturnAdditionalFields)
     {
-      $this->ReturnAdditionalFields = $ReturnAdditionalFields;
-      return $this;
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

@@ -27,9 +27,9 @@ class GetCampaignsByAccountIdRequest
      */
     public function __construct($AccountId = null, $CampaignType = null, $ReturnAdditionalFields = null)
     {
-      $this->AccountId = $AccountId;
-      $this->CampaignType = $CampaignType;
-      $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+    $this->AccountId = $AccountId;
+    $this->CampaignType = $CampaignType;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -37,7 +37,7 @@ class GetCampaignsByAccountIdRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -46,8 +46,8 @@ class GetCampaignsByAccountIdRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class GetCampaignsByAccountIdRequest
      */
     public function getCampaignType()
     {
-      return $this->CampaignType;
+        return $this->CampaignType;
     }
 
     /**
@@ -64,8 +64,8 @@ class GetCampaignsByAccountIdRequest
      */
     public function setCampaignType($CampaignType)
     {
-      $this->CampaignType = $CampaignType;
-      return $this;
+        $this->CampaignType = $CampaignType;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetCampaignsByAccountIdRequest
      */
     public function getReturnAdditionalFields()
     {
-      return $this->ReturnAdditionalFields;
+        return $this->ReturnAdditionalFields;
     }
 
     /**
@@ -82,8 +82,8 @@ class GetCampaignsByAccountIdRequest
      */
     public function setReturnAdditionalFields($ReturnAdditionalFields)
     {
-      $this->ReturnAdditionalFields = $ReturnAdditionalFields;
-      return $this;
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

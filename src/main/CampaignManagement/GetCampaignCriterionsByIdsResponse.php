@@ -21,8 +21,8 @@ class GetCampaignCriterionsByIdsResponse
      */
     public function __construct($CampaignCriterions = null, $PartialErrors = null)
     {
-      $this->CampaignCriterions = $CampaignCriterions;
-      $this->PartialErrors = $PartialErrors;
+    $this->CampaignCriterions = $CampaignCriterions;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetCampaignCriterionsByIdsResponse
      */
     public function getCampaignCriterions()
     {
-      return $this->CampaignCriterions;
+        return $this->CampaignCriterions;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetCampaignCriterionsByIdsResponse
      */
     public function setCampaignCriterions($CampaignCriterions)
     {
-      $this->CampaignCriterions = $CampaignCriterions;
-      return $this;
+        $this->CampaignCriterions = $CampaignCriterions;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetCampaignCriterionsByIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetCampaignCriterionsByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

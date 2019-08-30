@@ -15,7 +15,7 @@ class GetUetTagsByIdsRequest
      */
     public function __construct($TagIds = null)
     {
-      $this->TagIds = $TagIds;
+    $this->TagIds = $TagIds;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetUetTagsByIdsRequest
      */
     public function getTagIds()
     {
-      return $this->TagIds;
+        return $this->TagIds;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetUetTagsByIdsRequest
      */
     public function setTagIds($TagIds)
     {
-      $this->TagIds = $TagIds;
-      return $this;
+        $this->TagIds = $TagIds;
+        return $this;
     }
 
 }

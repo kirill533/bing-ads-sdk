@@ -18,7 +18,7 @@ class PageVisitorsWhoVisitedAnotherPageRule extends RemarketingRule
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -26,7 +26,7 @@ class PageVisitorsWhoVisitedAnotherPageRule extends RemarketingRule
      */
     public function getAnotherRuleItemGroups()
     {
-      return $this->AnotherRuleItemGroups;
+        return $this->AnotherRuleItemGroups;
     }
 
     /**
@@ -35,8 +35,8 @@ class PageVisitorsWhoVisitedAnotherPageRule extends RemarketingRule
      */
     public function setAnotherRuleItemGroups($AnotherRuleItemGroups)
     {
-      $this->AnotherRuleItemGroups = $AnotherRuleItemGroups;
-      return $this;
+        $this->AnotherRuleItemGroups = $AnotherRuleItemGroups;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class PageVisitorsWhoVisitedAnotherPageRule extends RemarketingRule
      */
     public function getRuleItemGroups()
     {
-      return $this->RuleItemGroups;
+        return $this->RuleItemGroups;
     }
 
     /**
@@ -53,8 +53,8 @@ class PageVisitorsWhoVisitedAnotherPageRule extends RemarketingRule
      */
     public function setRuleItemGroups($RuleItemGroups)
     {
-      $this->RuleItemGroups = $RuleItemGroups;
-      return $this;
+        $this->RuleItemGroups = $RuleItemGroups;
+        return $this;
     }
 
 }

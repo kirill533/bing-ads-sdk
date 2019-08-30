@@ -13,7 +13,7 @@ class GenderCriterion extends Criterion
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class GenderCriterion extends Criterion
      */
     public function getGenderType()
     {
-      return $this->GenderType;
+        return $this->GenderType;
     }
 
     /**
@@ -30,8 +30,8 @@ class GenderCriterion extends Criterion
      */
     public function setGenderType($GenderType)
     {
-      $this->GenderType = $GenderType;
-      return $this;
+        $this->GenderType = $GenderType;
+        return $this;
     }
 
 }

@@ -18,7 +18,7 @@ class DeviceCriterion extends Criterion
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -26,7 +26,7 @@ class DeviceCriterion extends Criterion
      */
     public function getDeviceName()
     {
-      return $this->DeviceName;
+        return $this->DeviceName;
     }
 
     /**
@@ -35,8 +35,8 @@ class DeviceCriterion extends Criterion
      */
     public function setDeviceName($DeviceName)
     {
-      $this->DeviceName = $DeviceName;
-      return $this;
+        $this->DeviceName = $DeviceName;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class DeviceCriterion extends Criterion
      */
     public function getOSName()
     {
-      return $this->OSName;
+        return $this->OSName;
     }
 
     /**
@@ -53,8 +53,8 @@ class DeviceCriterion extends Criterion
      */
     public function setOSName($OSName)
     {
-      $this->OSName = $OSName;
-      return $this;
+        $this->OSName = $OSName;
+        return $this;
     }
 
 }

@@ -21,8 +21,8 @@ class GetMediaMetaDataByIdsResponse
      */
     public function __construct($MediaMetaData = null, $PartialErrors = null)
     {
-      $this->MediaMetaData = $MediaMetaData;
-      $this->PartialErrors = $PartialErrors;
+    $this->MediaMetaData = $MediaMetaData;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetMediaMetaDataByIdsResponse
      */
     public function getMediaMetaData()
     {
-      return $this->MediaMetaData;
+        return $this->MediaMetaData;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetMediaMetaDataByIdsResponse
      */
     public function setMediaMetaData($MediaMetaData)
     {
-      $this->MediaMetaData = $MediaMetaData;
-      return $this;
+        $this->MediaMetaData = $MediaMetaData;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetMediaMetaDataByIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetMediaMetaDataByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

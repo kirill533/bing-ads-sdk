@@ -21,8 +21,8 @@ class GetLabelAssociationsByEntityIdsRequest
      */
     public function __construct($EntityIds = null, $EntityType = null)
     {
-      $this->EntityIds = $EntityIds;
-      $this->EntityType = $EntityType;
+    $this->EntityIds = $EntityIds;
+    $this->EntityType = $EntityType;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetLabelAssociationsByEntityIdsRequest
      */
     public function getEntityIds()
     {
-      return $this->EntityIds;
+        return $this->EntityIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetLabelAssociationsByEntityIdsRequest
      */
     public function setEntityIds($EntityIds)
     {
-      $this->EntityIds = $EntityIds;
-      return $this;
+        $this->EntityIds = $EntityIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetLabelAssociationsByEntityIdsRequest
      */
     public function getEntityType()
     {
-      return $this->EntityType;
+        return $this->EntityType;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetLabelAssociationsByEntityIdsRequest
      */
     public function setEntityType($EntityType)
     {
-      $this->EntityType = $EntityType;
-      return $this;
+        $this->EntityType = $EntityType;
+        return $this;
     }
 
 }

@@ -27,9 +27,9 @@ class DeleteCampaignCriterionsRequest
      */
     public function __construct($CampaignCriterionIds = null, $CampaignId = null, $CriterionType = null)
     {
-      $this->CampaignCriterionIds = $CampaignCriterionIds;
-      $this->CampaignId = $CampaignId;
-      $this->CriterionType = $CriterionType;
+    $this->CampaignCriterionIds = $CampaignCriterionIds;
+    $this->CampaignId = $CampaignId;
+    $this->CriterionType = $CriterionType;
     }
 
     /**
@@ -37,7 +37,7 @@ class DeleteCampaignCriterionsRequest
      */
     public function getCampaignCriterionIds()
     {
-      return $this->CampaignCriterionIds;
+        return $this->CampaignCriterionIds;
     }
 
     /**
@@ -46,8 +46,8 @@ class DeleteCampaignCriterionsRequest
      */
     public function setCampaignCriterionIds($CampaignCriterionIds)
     {
-      $this->CampaignCriterionIds = $CampaignCriterionIds;
-      return $this;
+        $this->CampaignCriterionIds = $CampaignCriterionIds;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class DeleteCampaignCriterionsRequest
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -64,8 +64,8 @@ class DeleteCampaignCriterionsRequest
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class DeleteCampaignCriterionsRequest
      */
     public function getCriterionType()
     {
-      return $this->CriterionType;
+        return $this->CriterionType;
     }
 
     /**
@@ -82,8 +82,8 @@ class DeleteCampaignCriterionsRequest
      */
     public function setCriterionType($CriterionType)
     {
-      $this->CriterionType = $CriterionType;
-      return $this;
+        $this->CriterionType = $CriterionType;
+        return $this;
     }
 
 }

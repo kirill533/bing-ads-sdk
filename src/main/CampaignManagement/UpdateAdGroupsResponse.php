@@ -21,8 +21,8 @@ class UpdateAdGroupsResponse
      */
     public function __construct($InheritedBidStrategyTypes = null, $PartialErrors = null)
     {
-      $this->InheritedBidStrategyTypes = $InheritedBidStrategyTypes;
-      $this->PartialErrors = $PartialErrors;
+    $this->InheritedBidStrategyTypes = $InheritedBidStrategyTypes;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class UpdateAdGroupsResponse
      */
     public function getInheritedBidStrategyTypes()
     {
-      return $this->InheritedBidStrategyTypes;
+        return $this->InheritedBidStrategyTypes;
     }
 
     /**
@@ -39,8 +39,8 @@ class UpdateAdGroupsResponse
      */
     public function setInheritedBidStrategyTypes($InheritedBidStrategyTypes)
     {
-      $this->InheritedBidStrategyTypes = $InheritedBidStrategyTypes;
-      return $this;
+        $this->InheritedBidStrategyTypes = $InheritedBidStrategyTypes;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class UpdateAdGroupsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class UpdateAdGroupsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

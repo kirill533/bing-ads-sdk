@@ -21,8 +21,8 @@ class GetAccountMonthlySpendRequest
      */
     public function __construct($AccountId = null, \DateTime $MonthYear = null)
     {
-      $this->AccountId = $AccountId;
-      $this->MonthYear = $MonthYear ? $MonthYear->format(\DateTime::ATOM) : null;
+    $this->AccountId = $AccountId;
+        $this->MonthYear = null === $MonthYear ? null : $MonthYear->format(\DateTime::ATOM);
     }
 
     /**
@@ -30,7 +30,7 @@ class GetAccountMonthlySpendRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetAccountMonthlySpendRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -48,15 +48,14 @@ class GetAccountMonthlySpendRequest
      */
     public function getMonthYear()
     {
-      if ($this->MonthYear == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->MonthYear);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->MonthYear) {
+            return $this->MonthYear;
         }
-      }
+        try {
+            return new \DateTime($this->MonthYear);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -65,8 +64,8 @@ class GetAccountMonthlySpendRequest
      */
     public function setMonthYear(\DateTime $MonthYear)
     {
-      $this->MonthYear = $MonthYear->format(\DateTime::ATOM);
-      return $this;
+        $this->MonthYear = $MonthYear->format(\DateTime::ATOM);
+        return $this;
     }
 
 }

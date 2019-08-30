@@ -91,7 +91,7 @@ class User
      */
     public function getContactInfo()
     {
-      return $this->ContactInfo;
+        return $this->ContactInfo;
     }
 
     /**
@@ -100,8 +100,8 @@ class User
      */
     public function setContactInfo($ContactInfo)
     {
-      $this->ContactInfo = $ContactInfo;
-      return $this;
+        $this->ContactInfo = $ContactInfo;
+        return $this;
     }
 
     /**
@@ -109,7 +109,7 @@ class User
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
@@ -118,8 +118,8 @@ class User
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
     }
 
     /**
@@ -127,7 +127,7 @@ class User
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -136,8 +136,8 @@ class User
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -145,7 +145,7 @@ class User
      */
     public function getJobTitle()
     {
-      return $this->JobTitle;
+        return $this->JobTitle;
     }
 
     /**
@@ -154,8 +154,8 @@ class User
      */
     public function setJobTitle($JobTitle)
     {
-      $this->JobTitle = $JobTitle;
-      return $this;
+        $this->JobTitle = $JobTitle;
+        return $this;
     }
 
     /**
@@ -163,7 +163,7 @@ class User
      */
     public function getLastModifiedByUserId()
     {
-      return $this->LastModifiedByUserId;
+        return $this->LastModifiedByUserId;
     }
 
     /**
@@ -172,8 +172,8 @@ class User
      */
     public function setLastModifiedByUserId($LastModifiedByUserId)
     {
-      $this->LastModifiedByUserId = $LastModifiedByUserId;
-      return $this;
+        $this->LastModifiedByUserId = $LastModifiedByUserId;
+        return $this;
     }
 
     /**
@@ -181,15 +181,14 @@ class User
      */
     public function getLastModifiedTime()
     {
-      if ($this->LastModifiedTime == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->LastModifiedTime);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->LastModifiedTime) {
+            return $this->LastModifiedTime;
         }
-      }
+        try {
+            return new \DateTime($this->LastModifiedTime);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -198,12 +197,8 @@ class User
      */
     public function setLastModifiedTime(\DateTime $LastModifiedTime = null)
     {
-      if ($LastModifiedTime == null) {
-       $this->LastModifiedTime = null;
-      } else {
-        $this->LastModifiedTime = $LastModifiedTime->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->LastModifiedTime = null === $LastModifiedTime ? null : $LastModifiedTime->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -211,7 +206,7 @@ class User
      */
     public function getLcid()
     {
-      return $this->Lcid;
+        return $this->Lcid;
     }
 
     /**
@@ -220,8 +215,8 @@ class User
      */
     public function setLcid($Lcid)
     {
-      $this->Lcid = $Lcid;
-      return $this;
+        $this->Lcid = $Lcid;
+        return $this;
     }
 
     /**
@@ -229,7 +224,7 @@ class User
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -238,8 +233,8 @@ class User
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -247,7 +242,7 @@ class User
      */
     public function getPassword()
     {
-      return $this->Password;
+        return $this->Password;
     }
 
     /**
@@ -256,8 +251,8 @@ class User
      */
     public function setPassword($Password)
     {
-      $this->Password = $Password;
-      return $this;
+        $this->Password = $Password;
+        return $this;
     }
 
     /**
@@ -265,7 +260,7 @@ class User
      */
     public function getSecretAnswer()
     {
-      return $this->SecretAnswer;
+        return $this->SecretAnswer;
     }
 
     /**
@@ -274,8 +269,8 @@ class User
      */
     public function setSecretAnswer($SecretAnswer)
     {
-      $this->SecretAnswer = $SecretAnswer;
-      return $this;
+        $this->SecretAnswer = $SecretAnswer;
+        return $this;
     }
 
     /**
@@ -283,7 +278,7 @@ class User
      */
     public function getSecretQuestion()
     {
-      return $this->SecretQuestion;
+        return $this->SecretQuestion;
     }
 
     /**
@@ -292,8 +287,8 @@ class User
      */
     public function setSecretQuestion($SecretQuestion)
     {
-      $this->SecretQuestion = $SecretQuestion;
-      return $this;
+        $this->SecretQuestion = $SecretQuestion;
+        return $this;
     }
 
     /**
@@ -301,7 +296,7 @@ class User
      */
     public function getUserLifeCycleStatus()
     {
-      return $this->UserLifeCycleStatus;
+        return $this->UserLifeCycleStatus;
     }
 
     /**
@@ -310,8 +305,8 @@ class User
      */
     public function setUserLifeCycleStatus($UserLifeCycleStatus)
     {
-      $this->UserLifeCycleStatus = $UserLifeCycleStatus;
-      return $this;
+        $this->UserLifeCycleStatus = $UserLifeCycleStatus;
+        return $this;
     }
 
     /**
@@ -319,7 +314,7 @@ class User
      */
     public function getTimeStamp()
     {
-      return $this->TimeStamp;
+        return $this->TimeStamp;
     }
 
     /**
@@ -328,8 +323,8 @@ class User
      */
     public function setTimeStamp($TimeStamp)
     {
-      $this->TimeStamp = $TimeStamp;
-      return $this;
+        $this->TimeStamp = $TimeStamp;
+        return $this;
     }
 
     /**
@@ -337,7 +332,7 @@ class User
      */
     public function getUserName()
     {
-      return $this->UserName;
+        return $this->UserName;
     }
 
     /**
@@ -346,8 +341,8 @@ class User
      */
     public function setUserName($UserName)
     {
-      $this->UserName = $UserName;
-      return $this;
+        $this->UserName = $UserName;
+        return $this;
     }
 
     /**
@@ -355,7 +350,7 @@ class User
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -364,8 +359,8 @@ class User
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
 }

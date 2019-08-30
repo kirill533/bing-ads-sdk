@@ -13,7 +13,7 @@ class SharedList extends SharedEntity
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class SharedList extends SharedEntity
      */
     public function getItemCount()
     {
-      return $this->ItemCount;
+        return $this->ItemCount;
     }
 
     /**
@@ -30,8 +30,8 @@ class SharedList extends SharedEntity
      */
     public function setItemCount($ItemCount)
     {
-      $this->ItemCount = $ItemCount;
-      return $this;
+        $this->ItemCount = $ItemCount;
+        return $this;
     }
 
 }

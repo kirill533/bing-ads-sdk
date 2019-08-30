@@ -26,7 +26,7 @@ class AdGroupBidLandscapeInput
      */
     public function getAdGroupBidLandscapeType()
     {
-      return $this->AdGroupBidLandscapeType;
+        return $this->AdGroupBidLandscapeType;
     }
 
     /**
@@ -35,8 +35,8 @@ class AdGroupBidLandscapeInput
      */
     public function setAdGroupBidLandscapeType($AdGroupBidLandscapeType)
     {
-      $this->AdGroupBidLandscapeType = $AdGroupBidLandscapeType;
-      return $this;
+        $this->AdGroupBidLandscapeType = $AdGroupBidLandscapeType;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class AdGroupBidLandscapeInput
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -53,8 +53,8 @@ class AdGroupBidLandscapeInput
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
 }

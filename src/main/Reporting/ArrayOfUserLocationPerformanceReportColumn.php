@@ -21,7 +21,7 @@ class ArrayOfUserLocationPerformanceReportColumn implements \ArrayAccess, \Itera
      */
     public function getUserLocationPerformanceReportColumn()
     {
-      return $this->UserLocationPerformanceReportColumn;
+        return $this->UserLocationPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfUserLocationPerformanceReportColumn implements \ArrayAccess, \Itera
      */
     public function setUserLocationPerformanceReportColumn(array $UserLocationPerformanceReportColumn = null)
     {
-      $this->UserLocationPerformanceReportColumn = $UserLocationPerformanceReportColumn;
-      return $this;
+        $this->UserLocationPerformanceReportColumn = $UserLocationPerformanceReportColumn;
+        return $this;
     }
 
     /**

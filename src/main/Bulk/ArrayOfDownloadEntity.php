@@ -21,7 +21,7 @@ class ArrayOfDownloadEntity implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getDownloadEntity()
     {
-      return $this->DownloadEntity;
+        return $this->DownloadEntity;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfDownloadEntity implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function setDownloadEntity(array $DownloadEntity = null)
     {
-      $this->DownloadEntity = $DownloadEntity;
-      return $this;
+        $this->DownloadEntity = $DownloadEntity;
+        return $this;
     }
 
     /**

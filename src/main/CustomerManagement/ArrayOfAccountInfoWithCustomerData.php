@@ -21,7 +21,7 @@ class ArrayOfAccountInfoWithCustomerData implements \ArrayAccess, \IteratorAggre
      */
     public function getAccountInfoWithCustomerData()
     {
-      return $this->AccountInfoWithCustomerData;
+        return $this->AccountInfoWithCustomerData;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAccountInfoWithCustomerData implements \ArrayAccess, \IteratorAggre
      */
     public function setAccountInfoWithCustomerData(array $AccountInfoWithCustomerData = null)
     {
-      $this->AccountInfoWithCustomerData = $AccountInfoWithCustomerData;
-      return $this;
+        $this->AccountInfoWithCustomerData = $AccountInfoWithCustomerData;
+        return $this;
     }
 
     /**

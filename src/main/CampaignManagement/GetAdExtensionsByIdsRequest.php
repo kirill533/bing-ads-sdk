@@ -33,10 +33,10 @@ class GetAdExtensionsByIdsRequest
      */
     public function __construct($AccountId = null, $AdExtensionIds = null, $AdExtensionType = null, $ReturnAdditionalFields = null)
     {
-      $this->AccountId = $AccountId;
-      $this->AdExtensionIds = $AdExtensionIds;
-      $this->AdExtensionType = $AdExtensionType;
-      $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+    $this->AccountId = $AccountId;
+    $this->AdExtensionIds = $AdExtensionIds;
+    $this->AdExtensionType = $AdExtensionType;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -44,7 +44,7 @@ class GetAdExtensionsByIdsRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -53,8 +53,8 @@ class GetAdExtensionsByIdsRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -62,7 +62,7 @@ class GetAdExtensionsByIdsRequest
      */
     public function getAdExtensionIds()
     {
-      return $this->AdExtensionIds;
+        return $this->AdExtensionIds;
     }
 
     /**
@@ -71,8 +71,8 @@ class GetAdExtensionsByIdsRequest
      */
     public function setAdExtensionIds($AdExtensionIds)
     {
-      $this->AdExtensionIds = $AdExtensionIds;
-      return $this;
+        $this->AdExtensionIds = $AdExtensionIds;
+        return $this;
     }
 
     /**
@@ -80,7 +80,7 @@ class GetAdExtensionsByIdsRequest
      */
     public function getAdExtensionType()
     {
-      return $this->AdExtensionType;
+        return $this->AdExtensionType;
     }
 
     /**
@@ -89,8 +89,8 @@ class GetAdExtensionsByIdsRequest
      */
     public function setAdExtensionType($AdExtensionType)
     {
-      $this->AdExtensionType = $AdExtensionType;
-      return $this;
+        $this->AdExtensionType = $AdExtensionType;
+        return $this;
     }
 
     /**
@@ -98,7 +98,7 @@ class GetAdExtensionsByIdsRequest
      */
     public function getReturnAdditionalFields()
     {
-      return $this->ReturnAdditionalFields;
+        return $this->ReturnAdditionalFields;
     }
 
     /**
@@ -107,8 +107,8 @@ class GetAdExtensionsByIdsRequest
      */
     public function setReturnAdditionalFields($ReturnAdditionalFields)
     {
-      $this->ReturnAdditionalFields = $ReturnAdditionalFields;
-      return $this;
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

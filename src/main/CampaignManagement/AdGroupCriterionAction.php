@@ -20,7 +20,7 @@ class AdGroupCriterionAction
      */
     public function __construct($Action = null)
     {
-      $this->Action = $Action;
+    $this->Action = $Action;
     }
 
     /**
@@ -28,7 +28,7 @@ class AdGroupCriterionAction
      */
     public function getAction()
     {
-      return $this->Action;
+        return $this->Action;
     }
 
     /**
@@ -37,8 +37,8 @@ class AdGroupCriterionAction
      */
     public function setAction($Action)
     {
-      $this->Action = $Action;
-      return $this;
+        $this->Action = $Action;
+        return $this;
     }
 
     /**
@@ -46,7 +46,7 @@ class AdGroupCriterionAction
      */
     public function getAdGroupCriterion()
     {
-      return $this->AdGroupCriterion;
+        return $this->AdGroupCriterion;
     }
 
     /**
@@ -55,8 +55,8 @@ class AdGroupCriterionAction
      */
     public function setAdGroupCriterion($AdGroupCriterion)
     {
-      $this->AdGroupCriterion = $AdGroupCriterion;
-      return $this;
+        $this->AdGroupCriterion = $AdGroupCriterion;
+        return $this;
     }
 
 }

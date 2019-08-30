@@ -27,9 +27,9 @@ class GetAuctionInsightDataRequest
      */
     public function __construct($EntityType = null, $EntityIds = null, $SearchParameters = null)
     {
-      $this->EntityType = $EntityType;
-      $this->EntityIds = $EntityIds;
-      $this->SearchParameters = $SearchParameters;
+    $this->EntityType = $EntityType;
+    $this->EntityIds = $EntityIds;
+    $this->SearchParameters = $SearchParameters;
     }
 
     /**
@@ -37,7 +37,7 @@ class GetAuctionInsightDataRequest
      */
     public function getEntityType()
     {
-      return $this->EntityType;
+        return $this->EntityType;
     }
 
     /**
@@ -46,8 +46,8 @@ class GetAuctionInsightDataRequest
      */
     public function setEntityType($EntityType)
     {
-      $this->EntityType = $EntityType;
-      return $this;
+        $this->EntityType = $EntityType;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class GetAuctionInsightDataRequest
      */
     public function getEntityIds()
     {
-      return $this->EntityIds;
+        return $this->EntityIds;
     }
 
     /**
@@ -64,8 +64,8 @@ class GetAuctionInsightDataRequest
      */
     public function setEntityIds($EntityIds)
     {
-      $this->EntityIds = $EntityIds;
-      return $this;
+        $this->EntityIds = $EntityIds;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetAuctionInsightDataRequest
      */
     public function getSearchParameters()
     {
-      return $this->SearchParameters;
+        return $this->SearchParameters;
     }
 
     /**
@@ -82,8 +82,8 @@ class GetAuctionInsightDataRequest
      */
     public function setSearchParameters($SearchParameters)
     {
-      $this->SearchParameters = $SearchParameters;
-      return $this;
+        $this->SearchParameters = $SearchParameters;
+        return $this;
     }
 
 }

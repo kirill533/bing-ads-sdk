@@ -21,7 +21,7 @@ class ArrayOfAdExtensionAssociation implements \ArrayAccess, \IteratorAggregate,
      */
     public function getAdExtensionAssociation()
     {
-      return $this->AdExtensionAssociation;
+        return $this->AdExtensionAssociation;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdExtensionAssociation implements \ArrayAccess, \IteratorAggregate,
      */
     public function setAdExtensionAssociation(array $AdExtensionAssociation = null)
     {
-      $this->AdExtensionAssociation = $AdExtensionAssociation;
-      return $this;
+        $this->AdExtensionAssociation = $AdExtensionAssociation;
+        return $this;
     }
 
     /**

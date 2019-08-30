@@ -21,7 +21,7 @@ class ArrayOfBudgetSummaryReportColumn implements \ArrayAccess, \IteratorAggrega
      */
     public function getBudgetSummaryReportColumn()
     {
-      return $this->BudgetSummaryReportColumn;
+        return $this->BudgetSummaryReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfBudgetSummaryReportColumn implements \ArrayAccess, \IteratorAggrega
      */
     public function setBudgetSummaryReportColumn(array $BudgetSummaryReportColumn = null)
     {
-      $this->BudgetSummaryReportColumn = $BudgetSummaryReportColumn;
-      return $this;
+        $this->BudgetSummaryReportColumn = $BudgetSummaryReportColumn;
+        return $this;
     }
 
     /**

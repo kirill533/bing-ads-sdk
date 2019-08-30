@@ -21,8 +21,8 @@ class ApplyProductPartitionActionsResponse
      */
     public function __construct($AdGroupCriterionIds = null, $PartialErrors = null)
     {
-      $this->AdGroupCriterionIds = $AdGroupCriterionIds;
-      $this->PartialErrors = $PartialErrors;
+    $this->AdGroupCriterionIds = $AdGroupCriterionIds;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class ApplyProductPartitionActionsResponse
      */
     public function getAdGroupCriterionIds()
     {
-      return $this->AdGroupCriterionIds;
+        return $this->AdGroupCriterionIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class ApplyProductPartitionActionsResponse
      */
     public function setAdGroupCriterionIds($AdGroupCriterionIds)
     {
-      $this->AdGroupCriterionIds = $AdGroupCriterionIds;
-      return $this;
+        $this->AdGroupCriterionIds = $AdGroupCriterionIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class ApplyProductPartitionActionsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class ApplyProductPartitionActionsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

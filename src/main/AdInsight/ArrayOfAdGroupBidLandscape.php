@@ -21,7 +21,7 @@ class ArrayOfAdGroupBidLandscape implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getAdGroupBidLandscape()
     {
-      return $this->AdGroupBidLandscape;
+        return $this->AdGroupBidLandscape;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdGroupBidLandscape implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function setAdGroupBidLandscape(array $AdGroupBidLandscape = null)
     {
-      $this->AdGroupBidLandscape = $AdGroupBidLandscape;
-      return $this;
+        $this->AdGroupBidLandscape = $AdGroupBidLandscape;
+        return $this;
     }
 
     /**

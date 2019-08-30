@@ -21,7 +21,7 @@ class ArrayOfAdGroupNegativeSites implements \ArrayAccess, \IteratorAggregate, \
      */
     public function getAdGroupNegativeSites()
     {
-      return $this->AdGroupNegativeSites;
+        return $this->AdGroupNegativeSites;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdGroupNegativeSites implements \ArrayAccess, \IteratorAggregate, \
      */
     public function setAdGroupNegativeSites(array $AdGroupNegativeSites = null)
     {
-      $this->AdGroupNegativeSites = $AdGroupNegativeSites;
-      return $this;
+        $this->AdGroupNegativeSites = $AdGroupNegativeSites;
+        return $this;
     }
 
     /**

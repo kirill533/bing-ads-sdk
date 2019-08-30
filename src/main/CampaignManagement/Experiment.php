@@ -61,7 +61,7 @@ class Experiment
      */
     public function getBaseCampaignId()
     {
-      return $this->BaseCampaignId;
+        return $this->BaseCampaignId;
     }
 
     /**
@@ -70,8 +70,8 @@ class Experiment
      */
     public function setBaseCampaignId($BaseCampaignId)
     {
-      $this->BaseCampaignId = $BaseCampaignId;
-      return $this;
+        $this->BaseCampaignId = $BaseCampaignId;
+        return $this;
     }
 
     /**
@@ -79,7 +79,7 @@ class Experiment
      */
     public function getEndDate()
     {
-      return $this->EndDate;
+        return $this->EndDate;
     }
 
     /**
@@ -88,8 +88,8 @@ class Experiment
      */
     public function setEndDate($EndDate)
     {
-      $this->EndDate = $EndDate;
-      return $this;
+        $this->EndDate = $EndDate;
+        return $this;
     }
 
     /**
@@ -97,7 +97,7 @@ class Experiment
      */
     public function getExperimentCampaignId()
     {
-      return $this->ExperimentCampaignId;
+        return $this->ExperimentCampaignId;
     }
 
     /**
@@ -106,8 +106,8 @@ class Experiment
      */
     public function setExperimentCampaignId($ExperimentCampaignId)
     {
-      $this->ExperimentCampaignId = $ExperimentCampaignId;
-      return $this;
+        $this->ExperimentCampaignId = $ExperimentCampaignId;
+        return $this;
     }
 
     /**
@@ -115,7 +115,7 @@ class Experiment
      */
     public function getExperimentStatus()
     {
-      return $this->ExperimentStatus;
+        return $this->ExperimentStatus;
     }
 
     /**
@@ -124,8 +124,8 @@ class Experiment
      */
     public function setExperimentStatus($ExperimentStatus)
     {
-      $this->ExperimentStatus = $ExperimentStatus;
-      return $this;
+        $this->ExperimentStatus = $ExperimentStatus;
+        return $this;
     }
 
     /**
@@ -133,7 +133,7 @@ class Experiment
      */
     public function getExperimentType()
     {
-      return $this->ExperimentType;
+        return $this->ExperimentType;
     }
 
     /**
@@ -142,8 +142,8 @@ class Experiment
      */
     public function setExperimentType($ExperimentType)
     {
-      $this->ExperimentType = $ExperimentType;
-      return $this;
+        $this->ExperimentType = $ExperimentType;
+        return $this;
     }
 
     /**
@@ -151,7 +151,7 @@ class Experiment
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -160,8 +160,8 @@ class Experiment
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -169,7 +169,7 @@ class Experiment
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -178,8 +178,8 @@ class Experiment
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -187,7 +187,7 @@ class Experiment
      */
     public function getStartDate()
     {
-      return $this->StartDate;
+        return $this->StartDate;
     }
 
     /**
@@ -196,8 +196,8 @@ class Experiment
      */
     public function setStartDate($StartDate)
     {
-      $this->StartDate = $StartDate;
-      return $this;
+        $this->StartDate = $StartDate;
+        return $this;
     }
 
     /**
@@ -205,7 +205,7 @@ class Experiment
      */
     public function getTrafficSplitPercent()
     {
-      return $this->TrafficSplitPercent;
+        return $this->TrafficSplitPercent;
     }
 
     /**
@@ -214,8 +214,8 @@ class Experiment
      */
     public function setTrafficSplitPercent($TrafficSplitPercent)
     {
-      $this->TrafficSplitPercent = $TrafficSplitPercent;
-      return $this;
+        $this->TrafficSplitPercent = $TrafficSplitPercent;
+        return $this;
     }
 
 }

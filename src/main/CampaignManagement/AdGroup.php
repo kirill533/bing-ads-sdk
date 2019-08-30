@@ -101,7 +101,7 @@ class AdGroup
      */
     public function getAdRotation()
     {
-      return $this->AdRotation;
+        return $this->AdRotation;
     }
 
     /**
@@ -110,8 +110,8 @@ class AdGroup
      */
     public function setAdRotation($AdRotation)
     {
-      $this->AdRotation = $AdRotation;
-      return $this;
+        $this->AdRotation = $AdRotation;
+        return $this;
     }
 
     /**
@@ -119,7 +119,7 @@ class AdGroup
      */
     public function getAudienceAdsBidAdjustment()
     {
-      return $this->AudienceAdsBidAdjustment;
+        return $this->AudienceAdsBidAdjustment;
     }
 
     /**
@@ -128,8 +128,8 @@ class AdGroup
      */
     public function setAudienceAdsBidAdjustment($AudienceAdsBidAdjustment)
     {
-      $this->AudienceAdsBidAdjustment = $AudienceAdsBidAdjustment;
-      return $this;
+        $this->AudienceAdsBidAdjustment = $AudienceAdsBidAdjustment;
+        return $this;
     }
 
     /**
@@ -137,7 +137,7 @@ class AdGroup
      */
     public function getBiddingScheme()
     {
-      return $this->BiddingScheme;
+        return $this->BiddingScheme;
     }
 
     /**
@@ -146,8 +146,8 @@ class AdGroup
      */
     public function setBiddingScheme($BiddingScheme)
     {
-      $this->BiddingScheme = $BiddingScheme;
-      return $this;
+        $this->BiddingScheme = $BiddingScheme;
+        return $this;
     }
 
     /**
@@ -155,7 +155,7 @@ class AdGroup
      */
     public function getCpcBid()
     {
-      return $this->CpcBid;
+        return $this->CpcBid;
     }
 
     /**
@@ -164,8 +164,8 @@ class AdGroup
      */
     public function setCpcBid($CpcBid)
     {
-      $this->CpcBid = $CpcBid;
-      return $this;
+        $this->CpcBid = $CpcBid;
+        return $this;
     }
 
     /**
@@ -173,7 +173,7 @@ class AdGroup
      */
     public function getEndDate()
     {
-      return $this->EndDate;
+        return $this->EndDate;
     }
 
     /**
@@ -182,8 +182,8 @@ class AdGroup
      */
     public function setEndDate($EndDate)
     {
-      $this->EndDate = $EndDate;
-      return $this;
+        $this->EndDate = $EndDate;
+        return $this;
     }
 
     /**
@@ -191,7 +191,7 @@ class AdGroup
      */
     public function getFinalUrlSuffix()
     {
-      return $this->FinalUrlSuffix;
+        return $this->FinalUrlSuffix;
     }
 
     /**
@@ -200,8 +200,8 @@ class AdGroup
      */
     public function setFinalUrlSuffix($FinalUrlSuffix)
     {
-      $this->FinalUrlSuffix = $FinalUrlSuffix;
-      return $this;
+        $this->FinalUrlSuffix = $FinalUrlSuffix;
+        return $this;
     }
 
     /**
@@ -209,7 +209,7 @@ class AdGroup
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -218,8 +218,8 @@ class AdGroup
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
     /**
@@ -227,7 +227,7 @@ class AdGroup
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -236,8 +236,8 @@ class AdGroup
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -245,7 +245,7 @@ class AdGroup
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -254,8 +254,8 @@ class AdGroup
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
     /**
@@ -263,7 +263,7 @@ class AdGroup
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -272,8 +272,8 @@ class AdGroup
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -281,7 +281,7 @@ class AdGroup
      */
     public function getNetwork()
     {
-      return $this->Network;
+        return $this->Network;
     }
 
     /**
@@ -290,8 +290,8 @@ class AdGroup
      */
     public function setNetwork($Network)
     {
-      $this->Network = $Network;
-      return $this;
+        $this->Network = $Network;
+        return $this;
     }
 
     /**
@@ -299,7 +299,7 @@ class AdGroup
      */
     public function getPrivacyStatus()
     {
-      return $this->PrivacyStatus;
+        return $this->PrivacyStatus;
     }
 
     /**
@@ -308,8 +308,8 @@ class AdGroup
      */
     public function setPrivacyStatus($PrivacyStatus)
     {
-      $this->PrivacyStatus = $PrivacyStatus;
-      return $this;
+        $this->PrivacyStatus = $PrivacyStatus;
+        return $this;
     }
 
     /**
@@ -317,7 +317,7 @@ class AdGroup
      */
     public function getSettings()
     {
-      return $this->Settings;
+        return $this->Settings;
     }
 
     /**
@@ -326,8 +326,8 @@ class AdGroup
      */
     public function setSettings($Settings)
     {
-      $this->Settings = $Settings;
-      return $this;
+        $this->Settings = $Settings;
+        return $this;
     }
 
     /**
@@ -335,7 +335,7 @@ class AdGroup
      */
     public function getStartDate()
     {
-      return $this->StartDate;
+        return $this->StartDate;
     }
 
     /**
@@ -344,8 +344,8 @@ class AdGroup
      */
     public function setStartDate($StartDate)
     {
-      $this->StartDate = $StartDate;
-      return $this;
+        $this->StartDate = $StartDate;
+        return $this;
     }
 
     /**
@@ -353,7 +353,7 @@ class AdGroup
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -362,8 +362,8 @@ class AdGroup
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
     /**
@@ -371,7 +371,7 @@ class AdGroup
      */
     public function getTrackingUrlTemplate()
     {
-      return $this->TrackingUrlTemplate;
+        return $this->TrackingUrlTemplate;
     }
 
     /**
@@ -380,8 +380,8 @@ class AdGroup
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
-      $this->TrackingUrlTemplate = $TrackingUrlTemplate;
-      return $this;
+        $this->TrackingUrlTemplate = $TrackingUrlTemplate;
+        return $this;
     }
 
     /**
@@ -389,7 +389,7 @@ class AdGroup
      */
     public function getUrlCustomParameters()
     {
-      return $this->UrlCustomParameters;
+        return $this->UrlCustomParameters;
     }
 
     /**
@@ -398,8 +398,8 @@ class AdGroup
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {
-      $this->UrlCustomParameters = $UrlCustomParameters;
-      return $this;
+        $this->UrlCustomParameters = $UrlCustomParameters;
+        return $this;
     }
 
 }

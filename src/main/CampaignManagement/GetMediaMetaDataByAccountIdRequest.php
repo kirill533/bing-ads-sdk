@@ -21,8 +21,8 @@ class GetMediaMetaDataByAccountIdRequest
      */
     public function __construct($MediaEnabledEntities = null, $PageInfo = null)
     {
-      $this->MediaEnabledEntities = $MediaEnabledEntities;
-      $this->PageInfo = $PageInfo;
+    $this->MediaEnabledEntities = $MediaEnabledEntities;
+    $this->PageInfo = $PageInfo;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetMediaMetaDataByAccountIdRequest
      */
     public function getMediaEnabledEntities()
     {
-      return $this->MediaEnabledEntities;
+        return $this->MediaEnabledEntities;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetMediaMetaDataByAccountIdRequest
      */
     public function setMediaEnabledEntities($MediaEnabledEntities)
     {
-      $this->MediaEnabledEntities = $MediaEnabledEntities;
-      return $this;
+        $this->MediaEnabledEntities = $MediaEnabledEntities;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetMediaMetaDataByAccountIdRequest
      */
     public function getPageInfo()
     {
-      return $this->PageInfo;
+        return $this->PageInfo;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetMediaMetaDataByAccountIdRequest
      */
     public function setPageInfo($PageInfo)
     {
-      $this->PageInfo = $PageInfo;
-      return $this;
+        $this->PageInfo = $PageInfo;
+        return $this;
     }
 
 }

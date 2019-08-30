@@ -21,8 +21,8 @@ class GetLabelsByIdsRequest
      */
     public function __construct($LabelIds = null, $PageInfo = null)
     {
-      $this->LabelIds = $LabelIds;
-      $this->PageInfo = $PageInfo;
+    $this->LabelIds = $LabelIds;
+    $this->PageInfo = $PageInfo;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetLabelsByIdsRequest
      */
     public function getLabelIds()
     {
-      return $this->LabelIds;
+        return $this->LabelIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetLabelsByIdsRequest
      */
     public function setLabelIds($LabelIds)
     {
-      $this->LabelIds = $LabelIds;
-      return $this;
+        $this->LabelIds = $LabelIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetLabelsByIdsRequest
      */
     public function getPageInfo()
     {
-      return $this->PageInfo;
+        return $this->PageInfo;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetLabelsByIdsRequest
      */
     public function setPageInfo($PageInfo)
     {
-      $this->PageInfo = $PageInfo;
-      return $this;
+        $this->PageInfo = $PageInfo;
+        return $this;
     }
 
 }

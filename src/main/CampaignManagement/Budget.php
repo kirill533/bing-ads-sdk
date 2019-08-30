@@ -41,7 +41,7 @@ class Budget
      */
     public function getAmount()
     {
-      return $this->Amount;
+        return $this->Amount;
     }
 
     /**
@@ -50,8 +50,8 @@ class Budget
      */
     public function setAmount($Amount)
     {
-      $this->Amount = $Amount;
-      return $this;
+        $this->Amount = $Amount;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class Budget
      */
     public function getAssociationCount()
     {
-      return $this->AssociationCount;
+        return $this->AssociationCount;
     }
 
     /**
@@ -68,8 +68,8 @@ class Budget
      */
     public function setAssociationCount($AssociationCount)
     {
-      $this->AssociationCount = $AssociationCount;
-      return $this;
+        $this->AssociationCount = $AssociationCount;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class Budget
      */
     public function getBudgetType()
     {
-      return $this->BudgetType;
+        return $this->BudgetType;
     }
 
     /**
@@ -86,8 +86,8 @@ class Budget
      */
     public function setBudgetType($BudgetType)
     {
-      $this->BudgetType = $BudgetType;
-      return $this;
+        $this->BudgetType = $BudgetType;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class Budget
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -104,8 +104,8 @@ class Budget
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class Budget
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -122,8 +122,8 @@ class Budget
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
 }

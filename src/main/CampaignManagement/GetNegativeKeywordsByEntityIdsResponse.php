@@ -21,8 +21,8 @@ class GetNegativeKeywordsByEntityIdsResponse
      */
     public function __construct($EntityNegativeKeywords = null, $PartialErrors = null)
     {
-      $this->EntityNegativeKeywords = $EntityNegativeKeywords;
-      $this->PartialErrors = $PartialErrors;
+    $this->EntityNegativeKeywords = $EntityNegativeKeywords;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetNegativeKeywordsByEntityIdsResponse
      */
     public function getEntityNegativeKeywords()
     {
-      return $this->EntityNegativeKeywords;
+        return $this->EntityNegativeKeywords;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetNegativeKeywordsByEntityIdsResponse
      */
     public function setEntityNegativeKeywords($EntityNegativeKeywords)
     {
-      $this->EntityNegativeKeywords = $EntityNegativeKeywords;
-      return $this;
+        $this->EntityNegativeKeywords = $EntityNegativeKeywords;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetNegativeKeywordsByEntityIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetNegativeKeywordsByEntityIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

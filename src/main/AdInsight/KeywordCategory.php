@@ -26,7 +26,7 @@ class KeywordCategory
      */
     public function getCategory()
     {
-      return $this->Category;
+        return $this->Category;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeywordCategory
      */
     public function setCategory($Category)
     {
-      $this->Category = $Category;
-      return $this;
+        $this->Category = $Category;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeywordCategory
      */
     public function getConfidenceScore()
     {
-      return $this->ConfidenceScore;
+        return $this->ConfidenceScore;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeywordCategory
      */
     public function setConfidenceScore($ConfidenceScore)
     {
-      $this->ConfidenceScore = $ConfidenceScore;
-      return $this;
+        $this->ConfidenceScore = $ConfidenceScore;
+        return $this;
     }
 
 }

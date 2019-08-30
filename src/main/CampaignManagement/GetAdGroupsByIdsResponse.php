@@ -21,8 +21,8 @@ class GetAdGroupsByIdsResponse
      */
     public function __construct($AdGroups = null, $PartialErrors = null)
     {
-      $this->AdGroups = $AdGroups;
-      $this->PartialErrors = $PartialErrors;
+    $this->AdGroups = $AdGroups;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetAdGroupsByIdsResponse
      */
     public function getAdGroups()
     {
-      return $this->AdGroups;
+        return $this->AdGroups;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetAdGroupsByIdsResponse
      */
     public function setAdGroups($AdGroups)
     {
-      $this->AdGroups = $AdGroups;
-      return $this;
+        $this->AdGroups = $AdGroups;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetAdGroupsByIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetAdGroupsByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

@@ -21,7 +21,7 @@ class ArrayOfAdExtension implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getAdExtension()
     {
-      return $this->AdExtension;
+        return $this->AdExtension;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdExtension implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setAdExtension(array $AdExtension = null)
     {
-      $this->AdExtension = $AdExtension;
-      return $this;
+        $this->AdExtension = $AdExtension;
+        return $this;
     }
 
     /**

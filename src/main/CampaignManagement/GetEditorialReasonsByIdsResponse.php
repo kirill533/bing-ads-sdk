@@ -21,8 +21,8 @@ class GetEditorialReasonsByIdsResponse
      */
     public function __construct($EditorialReasons = null, $PartialErrors = null)
     {
-      $this->EditorialReasons = $EditorialReasons;
-      $this->PartialErrors = $PartialErrors;
+    $this->EditorialReasons = $EditorialReasons;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetEditorialReasonsByIdsResponse
      */
     public function getEditorialReasons()
     {
-      return $this->EditorialReasons;
+        return $this->EditorialReasons;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetEditorialReasonsByIdsResponse
      */
     public function setEditorialReasons($EditorialReasons)
     {
-      $this->EditorialReasons = $EditorialReasons;
-      return $this;
+        $this->EditorialReasons = $EditorialReasons;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetEditorialReasonsByIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetEditorialReasonsByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

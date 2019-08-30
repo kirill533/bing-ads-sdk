@@ -21,7 +21,7 @@ class ArrayOfClientLink implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getClientLink()
     {
-      return $this->ClientLink;
+        return $this->ClientLink;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfClientLink implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setClientLink(array $ClientLink = null)
     {
-      $this->ClientLink = $ClientLink;
-      return $this;
+        $this->ClientLink = $ClientLink;
+        return $this;
     }
 
     /**

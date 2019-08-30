@@ -36,7 +36,7 @@ class CustomerRole
      */
     public function getRoleId()
     {
-      return $this->RoleId;
+        return $this->RoleId;
     }
 
     /**
@@ -45,8 +45,8 @@ class CustomerRole
      */
     public function setRoleId($RoleId)
     {
-      $this->RoleId = $RoleId;
-      return $this;
+        $this->RoleId = $RoleId;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class CustomerRole
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
@@ -63,8 +63,8 @@ class CustomerRole
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class CustomerRole
      */
     public function getAccountIds()
     {
-      return $this->AccountIds;
+        return $this->AccountIds;
     }
 
     /**
@@ -81,8 +81,8 @@ class CustomerRole
      */
     public function setAccountIds($AccountIds)
     {
-      $this->AccountIds = $AccountIds;
-      return $this;
+        $this->AccountIds = $AccountIds;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class CustomerRole
      */
     public function getLinkedAccountIds()
     {
-      return $this->LinkedAccountIds;
+        return $this->LinkedAccountIds;
     }
 
     /**
@@ -99,8 +99,8 @@ class CustomerRole
      */
     public function setLinkedAccountIds($LinkedAccountIds)
     {
-      $this->LinkedAccountIds = $LinkedAccountIds;
-      return $this;
+        $this->LinkedAccountIds = $LinkedAccountIds;
+        return $this;
     }
 
 }

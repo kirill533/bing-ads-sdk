@@ -27,9 +27,9 @@ class GetEditorialReasonsByIdsRequest
      */
     public function __construct($AccountId = null, $EntityIdToParentIdAssociations = null, $EntityType = null)
     {
-      $this->AccountId = $AccountId;
-      $this->EntityIdToParentIdAssociations = $EntityIdToParentIdAssociations;
-      $this->EntityType = $EntityType;
+    $this->AccountId = $AccountId;
+    $this->EntityIdToParentIdAssociations = $EntityIdToParentIdAssociations;
+    $this->EntityType = $EntityType;
     }
 
     /**
@@ -37,7 +37,7 @@ class GetEditorialReasonsByIdsRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -46,8 +46,8 @@ class GetEditorialReasonsByIdsRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class GetEditorialReasonsByIdsRequest
      */
     public function getEntityIdToParentIdAssociations()
     {
-      return $this->EntityIdToParentIdAssociations;
+        return $this->EntityIdToParentIdAssociations;
     }
 
     /**
@@ -64,8 +64,8 @@ class GetEditorialReasonsByIdsRequest
      */
     public function setEntityIdToParentIdAssociations($EntityIdToParentIdAssociations)
     {
-      $this->EntityIdToParentIdAssociations = $EntityIdToParentIdAssociations;
-      return $this;
+        $this->EntityIdToParentIdAssociations = $EntityIdToParentIdAssociations;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetEditorialReasonsByIdsRequest
      */
     public function getEntityType()
     {
-      return $this->EntityType;
+        return $this->EntityType;
     }
 
     /**
@@ -82,8 +82,8 @@ class GetEditorialReasonsByIdsRequest
      */
     public function setEntityType($EntityType)
     {
-      $this->EntityType = $EntityType;
-      return $this;
+        $this->EntityType = $EntityType;
+        return $this;
     }
 
 }

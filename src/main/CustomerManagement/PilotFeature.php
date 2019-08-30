@@ -26,7 +26,7 @@ class PilotFeature
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -35,8 +35,8 @@ class PilotFeature
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class PilotFeature
      */
     public function getCountries()
     {
-      return $this->Countries;
+        return $this->Countries;
     }
 
     /**
@@ -53,8 +53,8 @@ class PilotFeature
      */
     public function setCountries($Countries)
     {
-      $this->Countries = $Countries;
-      return $this;
+        $this->Countries = $Countries;
+        return $this;
     }
 
 }

@@ -15,7 +15,7 @@ class GetBulkUploadStatusRequest
      */
     public function __construct($RequestId = null)
     {
-      $this->RequestId = $RequestId;
+    $this->RequestId = $RequestId;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetBulkUploadStatusRequest
      */
     public function getRequestId()
     {
-      return $this->RequestId;
+        return $this->RequestId;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetBulkUploadStatusRequest
      */
     public function setRequestId($RequestId)
     {
-      $this->RequestId = $RequestId;
-      return $this;
+        $this->RequestId = $RequestId;
+        return $this;
     }
 
 }

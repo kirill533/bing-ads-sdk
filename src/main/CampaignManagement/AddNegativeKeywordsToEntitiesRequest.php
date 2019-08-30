@@ -15,7 +15,7 @@ class AddNegativeKeywordsToEntitiesRequest
      */
     public function __construct($EntityNegativeKeywords = null)
     {
-      $this->EntityNegativeKeywords = $EntityNegativeKeywords;
+    $this->EntityNegativeKeywords = $EntityNegativeKeywords;
     }
 
     /**
@@ -23,7 +23,7 @@ class AddNegativeKeywordsToEntitiesRequest
      */
     public function getEntityNegativeKeywords()
     {
-      return $this->EntityNegativeKeywords;
+        return $this->EntityNegativeKeywords;
     }
 
     /**
@@ -32,8 +32,8 @@ class AddNegativeKeywordsToEntitiesRequest
      */
     public function setEntityNegativeKeywords($EntityNegativeKeywords)
     {
-      $this->EntityNegativeKeywords = $EntityNegativeKeywords;
-      return $this;
+        $this->EntityNegativeKeywords = $EntityNegativeKeywords;
+        return $this;
     }
 
 }

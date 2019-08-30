@@ -15,7 +15,7 @@ class AddAudiencesRequest
      */
     public function __construct($Audiences = null)
     {
-      $this->Audiences = $Audiences;
+    $this->Audiences = $Audiences;
     }
 
     /**
@@ -23,7 +23,7 @@ class AddAudiencesRequest
      */
     public function getAudiences()
     {
-      return $this->Audiences;
+        return $this->Audiences;
     }
 
     /**
@@ -32,8 +32,8 @@ class AddAudiencesRequest
      */
     public function setAudiences($Audiences)
     {
-      $this->Audiences = $Audiences;
-      return $this;
+        $this->Audiences = $Audiences;
+        return $this;
     }
 
 }

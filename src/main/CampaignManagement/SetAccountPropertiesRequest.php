@@ -15,7 +15,7 @@ class SetAccountPropertiesRequest
      */
     public function __construct($AccountProperties = null)
     {
-      $this->AccountProperties = $AccountProperties;
+    $this->AccountProperties = $AccountProperties;
     }
 
     /**
@@ -23,7 +23,7 @@ class SetAccountPropertiesRequest
      */
     public function getAccountProperties()
     {
-      return $this->AccountProperties;
+        return $this->AccountProperties;
     }
 
     /**
@@ -32,8 +32,8 @@ class SetAccountPropertiesRequest
      */
     public function setAccountProperties($AccountProperties)
     {
-      $this->AccountProperties = $AccountProperties;
-      return $this;
+        $this->AccountProperties = $AccountProperties;
+        return $this;
     }
 
 }

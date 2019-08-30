@@ -21,7 +21,7 @@ class ArrayOfCompany implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getCompany()
     {
-      return $this->Company;
+        return $this->Company;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCompany implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setCompany(array $Company = null)
     {
-      $this->Company = $Company;
-      return $this;
+        $this->Company = $Company;
+        return $this;
     }
 
     /**

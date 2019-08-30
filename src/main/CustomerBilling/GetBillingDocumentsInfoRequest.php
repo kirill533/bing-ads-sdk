@@ -27,9 +27,9 @@ class GetBillingDocumentsInfoRequest
      */
     public function __construct($AccountIds = null, \DateTime $StartDate = null, \DateTime $EndDate = null)
     {
-      $this->AccountIds = $AccountIds;
-      $this->StartDate = $StartDate ? $StartDate->format(\DateTime::ATOM) : null;
-      $this->EndDate = $EndDate ? $EndDate->format(\DateTime::ATOM) : null;
+    $this->AccountIds = $AccountIds;
+        $this->StartDate = null === $StartDate ? null : $StartDate->format(\DateTime::ATOM);
+        $this->EndDate = null === $EndDate ? null : $EndDate->format(\DateTime::ATOM);
     }
 
     /**
@@ -37,7 +37,7 @@ class GetBillingDocumentsInfoRequest
      */
     public function getAccountIds()
     {
-      return $this->AccountIds;
+        return $this->AccountIds;
     }
 
     /**
@@ -46,8 +46,8 @@ class GetBillingDocumentsInfoRequest
      */
     public function setAccountIds($AccountIds)
     {
-      $this->AccountIds = $AccountIds;
-      return $this;
+        $this->AccountIds = $AccountIds;
+        return $this;
     }
 
     /**
@@ -55,15 +55,14 @@ class GetBillingDocumentsInfoRequest
      */
     public function getStartDate()
     {
-      if ($this->StartDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->StartDate);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->StartDate) {
+            return $this->StartDate;
         }
-      }
+        try {
+            return new \DateTime($this->StartDate);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -72,8 +71,8 @@ class GetBillingDocumentsInfoRequest
      */
     public function setStartDate(\DateTime $StartDate)
     {
-      $this->StartDate = $StartDate->format(\DateTime::ATOM);
-      return $this;
+        $this->StartDate = $StartDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -81,15 +80,14 @@ class GetBillingDocumentsInfoRequest
      */
     public function getEndDate()
     {
-      if ($this->EndDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->EndDate);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->EndDate) {
+            return $this->EndDate;
         }
-      }
+        try {
+            return new \DateTime($this->EndDate);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -98,8 +96,8 @@ class GetBillingDocumentsInfoRequest
      */
     public function setEndDate(\DateTime $EndDate)
     {
-      $this->EndDate = $EndDate->format(\DateTime::ATOM);
-      return $this;
+        $this->EndDate = $EndDate->format(\DateTime::ATOM);
+        return $this;
     }
 
 }

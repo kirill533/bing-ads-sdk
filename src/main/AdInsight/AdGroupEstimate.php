@@ -26,7 +26,7 @@ class AdGroupEstimate
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -35,8 +35,8 @@ class AdGroupEstimate
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class AdGroupEstimate
      */
     public function getKeywordEstimates()
     {
-      return $this->KeywordEstimates;
+        return $this->KeywordEstimates;
     }
 
     /**
@@ -53,8 +53,8 @@ class AdGroupEstimate
      */
     public function setKeywordEstimates($KeywordEstimates)
     {
-      $this->KeywordEstimates = $KeywordEstimates;
-      return $this;
+        $this->KeywordEstimates = $KeywordEstimates;
+        return $this;
     }
 
 }

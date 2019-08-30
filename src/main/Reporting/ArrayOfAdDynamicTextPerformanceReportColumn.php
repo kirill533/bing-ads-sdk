@@ -21,7 +21,7 @@ class ArrayOfAdDynamicTextPerformanceReportColumn implements \ArrayAccess, \Iter
      */
     public function getAdDynamicTextPerformanceReportColumn()
     {
-      return $this->AdDynamicTextPerformanceReportColumn;
+        return $this->AdDynamicTextPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdDynamicTextPerformanceReportColumn implements \ArrayAccess, \Iter
      */
     public function setAdDynamicTextPerformanceReportColumn(array $AdDynamicTextPerformanceReportColumn = null)
     {
-      $this->AdDynamicTextPerformanceReportColumn = $AdDynamicTextPerformanceReportColumn;
-      return $this;
+        $this->AdDynamicTextPerformanceReportColumn = $AdDynamicTextPerformanceReportColumn;
+        return $this;
     }
 
     /**

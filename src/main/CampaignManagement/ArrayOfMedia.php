@@ -21,7 +21,7 @@ class ArrayOfMedia implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getMedia()
     {
-      return $this->Media;
+        return $this->Media;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfMedia implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setMedia(array $Media = null)
     {
-      $this->Media = $Media;
-      return $this;
+        $this->Media = $Media;
+        return $this;
     }
 
     /**

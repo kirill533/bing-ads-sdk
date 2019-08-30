@@ -15,7 +15,7 @@ class UpdatePrepayAccountResponse
      */
     public function __construct(\DateTime $LastModifiedTime = null)
     {
-      $this->LastModifiedTime = $LastModifiedTime ? $LastModifiedTime->format(\DateTime::ATOM) : null;
+        $this->LastModifiedTime = null === $LastModifiedTime ? null : $LastModifiedTime->format(\DateTime::ATOM);
     }
 
     /**
@@ -23,15 +23,14 @@ class UpdatePrepayAccountResponse
      */
     public function getLastModifiedTime()
     {
-      if ($this->LastModifiedTime == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->LastModifiedTime);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->LastModifiedTime) {
+            return $this->LastModifiedTime;
         }
-      }
+        try {
+            return new \DateTime($this->LastModifiedTime);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -40,8 +39,8 @@ class UpdatePrepayAccountResponse
      */
     public function setLastModifiedTime(\DateTime $LastModifiedTime)
     {
-      $this->LastModifiedTime = $LastModifiedTime->format(\DateTime::ATOM);
-      return $this;
+        $this->LastModifiedTime = $LastModifiedTime->format(\DateTime::ATOM);
+        return $this;
     }
 
 }

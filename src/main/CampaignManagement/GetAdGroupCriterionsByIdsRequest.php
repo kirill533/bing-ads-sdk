@@ -33,10 +33,10 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function __construct($AdGroupCriterionIds = null, $AdGroupId = null, $CriterionType = null, $ReturnAdditionalFields = null)
     {
-      $this->AdGroupCriterionIds = $AdGroupCriterionIds;
-      $this->AdGroupId = $AdGroupId;
-      $this->CriterionType = $CriterionType;
-      $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+    $this->AdGroupCriterionIds = $AdGroupCriterionIds;
+    $this->AdGroupId = $AdGroupId;
+    $this->CriterionType = $CriterionType;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -44,7 +44,7 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function getAdGroupCriterionIds()
     {
-      return $this->AdGroupCriterionIds;
+        return $this->AdGroupCriterionIds;
     }
 
     /**
@@ -53,8 +53,8 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function setAdGroupCriterionIds($AdGroupCriterionIds)
     {
-      $this->AdGroupCriterionIds = $AdGroupCriterionIds;
-      return $this;
+        $this->AdGroupCriterionIds = $AdGroupCriterionIds;
+        return $this;
     }
 
     /**
@@ -62,7 +62,7 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -71,8 +71,8 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -80,7 +80,7 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function getCriterionType()
     {
-      return $this->CriterionType;
+        return $this->CriterionType;
     }
 
     /**
@@ -89,8 +89,8 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function setCriterionType($CriterionType)
     {
-      $this->CriterionType = $CriterionType;
-      return $this;
+        $this->CriterionType = $CriterionType;
+        return $this;
     }
 
     /**
@@ -98,7 +98,7 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function getReturnAdditionalFields()
     {
-      return $this->ReturnAdditionalFields;
+        return $this->ReturnAdditionalFields;
     }
 
     /**
@@ -107,8 +107,8 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function setReturnAdditionalFields($ReturnAdditionalFields)
     {
-      $this->ReturnAdditionalFields = $ReturnAdditionalFields;
-      return $this;
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

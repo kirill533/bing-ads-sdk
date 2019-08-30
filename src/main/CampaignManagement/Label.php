@@ -36,7 +36,7 @@ class Label
      */
     public function getColorCode()
     {
-      return $this->ColorCode;
+        return $this->ColorCode;
     }
 
     /**
@@ -45,8 +45,8 @@ class Label
      */
     public function setColorCode($ColorCode)
     {
-      $this->ColorCode = $ColorCode;
-      return $this;
+        $this->ColorCode = $ColorCode;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class Label
      */
     public function getDescription()
     {
-      return $this->Description;
+        return $this->Description;
     }
 
     /**
@@ -63,8 +63,8 @@ class Label
      */
     public function setDescription($Description)
     {
-      $this->Description = $Description;
-      return $this;
+        $this->Description = $Description;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class Label
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -81,8 +81,8 @@ class Label
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class Label
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -99,8 +99,8 @@ class Label
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
 }

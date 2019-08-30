@@ -48,7 +48,7 @@ class CustomEventsRule extends RemarketingRule
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -56,7 +56,7 @@ class CustomEventsRule extends RemarketingRule
      */
     public function getAction()
     {
-      return $this->Action;
+        return $this->Action;
     }
 
     /**
@@ -65,8 +65,8 @@ class CustomEventsRule extends RemarketingRule
      */
     public function setAction($Action)
     {
-      $this->Action = $Action;
-      return $this;
+        $this->Action = $Action;
+        return $this;
     }
 
     /**
@@ -74,7 +74,7 @@ class CustomEventsRule extends RemarketingRule
      */
     public function getActionOperator()
     {
-      return $this->ActionOperator;
+        return $this->ActionOperator;
     }
 
     /**
@@ -83,8 +83,8 @@ class CustomEventsRule extends RemarketingRule
      */
     public function setActionOperator($ActionOperator)
     {
-      $this->ActionOperator = $ActionOperator;
-      return $this;
+        $this->ActionOperator = $ActionOperator;
+        return $this;
     }
 
     /**
@@ -92,7 +92,7 @@ class CustomEventsRule extends RemarketingRule
      */
     public function getCategory()
     {
-      return $this->Category;
+        return $this->Category;
     }
 
     /**
@@ -101,8 +101,8 @@ class CustomEventsRule extends RemarketingRule
      */
     public function setCategory($Category)
     {
-      $this->Category = $Category;
-      return $this;
+        $this->Category = $Category;
+        return $this;
     }
 
     /**
@@ -110,7 +110,7 @@ class CustomEventsRule extends RemarketingRule
      */
     public function getCategoryOperator()
     {
-      return $this->CategoryOperator;
+        return $this->CategoryOperator;
     }
 
     /**
@@ -119,8 +119,8 @@ class CustomEventsRule extends RemarketingRule
      */
     public function setCategoryOperator($CategoryOperator)
     {
-      $this->CategoryOperator = $CategoryOperator;
-      return $this;
+        $this->CategoryOperator = $CategoryOperator;
+        return $this;
     }
 
     /**
@@ -128,7 +128,7 @@ class CustomEventsRule extends RemarketingRule
      */
     public function getLabel()
     {
-      return $this->Label;
+        return $this->Label;
     }
 
     /**
@@ -137,8 +137,8 @@ class CustomEventsRule extends RemarketingRule
      */
     public function setLabel($Label)
     {
-      $this->Label = $Label;
-      return $this;
+        $this->Label = $Label;
+        return $this;
     }
 
     /**
@@ -146,7 +146,7 @@ class CustomEventsRule extends RemarketingRule
      */
     public function getLabelOperator()
     {
-      return $this->LabelOperator;
+        return $this->LabelOperator;
     }
 
     /**
@@ -155,8 +155,8 @@ class CustomEventsRule extends RemarketingRule
      */
     public function setLabelOperator($LabelOperator)
     {
-      $this->LabelOperator = $LabelOperator;
-      return $this;
+        $this->LabelOperator = $LabelOperator;
+        return $this;
     }
 
     /**
@@ -164,7 +164,7 @@ class CustomEventsRule extends RemarketingRule
      */
     public function getValue()
     {
-      return $this->Value;
+        return $this->Value;
     }
 
     /**
@@ -173,8 +173,8 @@ class CustomEventsRule extends RemarketingRule
      */
     public function setValue($Value)
     {
-      $this->Value = $Value;
-      return $this;
+        $this->Value = $Value;
+        return $this;
     }
 
     /**
@@ -182,7 +182,7 @@ class CustomEventsRule extends RemarketingRule
      */
     public function getValueOperator()
     {
-      return $this->ValueOperator;
+        return $this->ValueOperator;
     }
 
     /**
@@ -191,8 +191,8 @@ class CustomEventsRule extends RemarketingRule
      */
     public function setValueOperator($ValueOperator)
     {
-      $this->ValueOperator = $ValueOperator;
-      return $this;
+        $this->ValueOperator = $ValueOperator;
+        return $this;
     }
 
 }

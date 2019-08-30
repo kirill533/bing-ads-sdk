@@ -21,8 +21,8 @@ class GetKeywordsByIdsResponse
      */
     public function __construct($Keywords = null, $PartialErrors = null)
     {
-      $this->Keywords = $Keywords;
-      $this->PartialErrors = $PartialErrors;
+    $this->Keywords = $Keywords;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetKeywordsByIdsResponse
      */
     public function getKeywords()
     {
-      return $this->Keywords;
+        return $this->Keywords;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetKeywordsByIdsResponse
      */
     public function setKeywords($Keywords)
     {
-      $this->Keywords = $Keywords;
-      return $this;
+        $this->Keywords = $Keywords;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetKeywordsByIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetKeywordsByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

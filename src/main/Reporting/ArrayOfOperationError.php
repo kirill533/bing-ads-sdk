@@ -21,7 +21,7 @@ class ArrayOfOperationError implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getOperationError()
     {
-      return $this->OperationError;
+        return $this->OperationError;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfOperationError implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function setOperationError(array $OperationError = null)
     {
-      $this->OperationError = $OperationError;
-      return $this;
+        $this->OperationError = $OperationError;
+        return $this;
     }
 
     /**

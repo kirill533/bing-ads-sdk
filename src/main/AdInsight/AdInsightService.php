@@ -187,7 +187,9 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
       'ArrayOfCriterion' => 'PMG\\BingAds\\AdInsight\\ArrayOfCriterion',
       'ApplicationFault' => 'PMG\\BingAds\\AdInsight\\ApplicationFault',
       'ApiFault' => 'PMG\\BingAds\\AdInsight\\ApiFault',
+      'ApiFaultDetail' => 'PMG\\BingAds\\AdInsight\\ApiFault',
       'AdApiFault' => 'PMG\\BingAds\\AdInsight\\AdApiFault',
+      'AdApiFaultDetail' => 'PMG\\BingAds\\AdInsight\\AdApiFault',
     );
 
     /**

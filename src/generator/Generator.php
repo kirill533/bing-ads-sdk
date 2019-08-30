@@ -3,9 +3,11 @@
 namespace PMG\BingAds\Generator;
 
 use Psr\Log\LoggerInterface;
+use Wsdl2PhpGenerator\ComplexType;
 use Wsdl2PhpGenerator\Generator as WsdlGenerator;
 use Wsdl2PhpGenerator\Operation;
 use Wsdl2PhpGenerator\Xml\ServiceNode;
+use Wsdl2PhpGenerator\Xml\TypeNode;
 
 class Generator extends WsdlGenerator
 {
@@ -50,5 +52,14 @@ class Generator extends WsdlGenerator
             $this->types,
             $definition->getDocumentation()
         );
+    }
+
+    protected function createComplexType(TypeNode $typeNode) : ComplexType
+    {
+        if ('OfflineConversion' === $typeNode->getName()) {
+            return new OfflineConversionComplexType($this->config, $typeNode->getName(), $this->types);
+        }
+
+        return parent::createComplexType($typeNode);
     }
 }

@@ -92,6 +92,26 @@ class DownloadEntity
     const ProductAudiences = 'ProductAudiences';
     const AdGroupProductAudienceAssociations = 'AdGroupProductAudienceAssociations';
     const AdGroupNegativeProductAudienceAssociations = 'AdGroupNegativeProductAudienceAssociations';
+    const SimilarRemarketingLists = 'SimilarRemarketingLists';
+    const AdGroupSimilarRemarketingListAssociations = 'AdGroupSimilarRemarketingListAssociations';
+    const AdGroupNegativeSimilarRemarketingListAssociations = 'AdGroupNegativeSimilarRemarketingListAssociations';
+    const Experiments = 'Experiments';
+    const ResponsiveSearchAds = 'ResponsiveSearchAds';
+    const ResponsiveSearchAdLabels = 'ResponsiveSearchAdLabels';
+    const CampaignAudienceAssociations = 'CampaignAudienceAssociations';
+    const CampaignNegativeAudienceAssociations = 'CampaignNegativeAudienceAssociations';
+    const CampaignCustomAudienceAssociations = 'CampaignCustomAudienceAssociations';
+    const CampaignNegativeCustomAudienceAssociations = 'CampaignNegativeCustomAudienceAssociations';
+    const CampaignInMarketAudienceAssociations = 'CampaignInMarketAudienceAssociations';
+    const CampaignNegativeInMarketAudienceAssociations = 'CampaignNegativeInMarketAudienceAssociations';
+    const CampaignProductAudienceAssociations = 'CampaignProductAudienceAssociations';
+    const CampaignNegativeProductAudienceAssociations = 'CampaignNegativeProductAudienceAssociations';
+    const CampaignRemarketingListAssociations = 'CampaignRemarketingListAssociations';
+    const CampaignNegativeRemarketingListAssociations = 'CampaignNegativeRemarketingListAssociations';
+    const CampaignSimilarRemarketingListAssociations = 'CampaignSimilarRemarketingListAssociations';
+    const CampaignNegativeSimilarRemarketingListAssociations = 'CampaignNegativeSimilarRemarketingListAssociations';
+    const Feeds = 'Feeds';
+    const FeedItems = 'FeedItems';
 
 
 }

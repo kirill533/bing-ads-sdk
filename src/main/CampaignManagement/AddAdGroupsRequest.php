@@ -27,9 +27,9 @@ class AddAdGroupsRequest
      */
     public function __construct($CampaignId = null, $AdGroups = null, $ReturnInheritedBidStrategyTypes = null)
     {
-      $this->CampaignId = $CampaignId;
-      $this->AdGroups = $AdGroups;
-      $this->ReturnInheritedBidStrategyTypes = $ReturnInheritedBidStrategyTypes;
+    $this->CampaignId = $CampaignId;
+    $this->AdGroups = $AdGroups;
+    $this->ReturnInheritedBidStrategyTypes = $ReturnInheritedBidStrategyTypes;
     }
 
     /**
@@ -37,7 +37,7 @@ class AddAdGroupsRequest
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -46,8 +46,8 @@ class AddAdGroupsRequest
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class AddAdGroupsRequest
      */
     public function getAdGroups()
     {
-      return $this->AdGroups;
+        return $this->AdGroups;
     }
 
     /**
@@ -64,8 +64,8 @@ class AddAdGroupsRequest
      */
     public function setAdGroups($AdGroups)
     {
-      $this->AdGroups = $AdGroups;
-      return $this;
+        $this->AdGroups = $AdGroups;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class AddAdGroupsRequest
      */
     public function getReturnInheritedBidStrategyTypes()
     {
-      return $this->ReturnInheritedBidStrategyTypes;
+        return $this->ReturnInheritedBidStrategyTypes;
     }
 
     /**
@@ -82,8 +82,8 @@ class AddAdGroupsRequest
      */
     public function setReturnInheritedBidStrategyTypes($ReturnInheritedBidStrategyTypes)
     {
-      $this->ReturnInheritedBidStrategyTypes = $ReturnInheritedBidStrategyTypes;
-      return $this;
+        $this->ReturnInheritedBidStrategyTypes = $ReturnInheritedBidStrategyTypes;
+        return $this;
     }
 
 }

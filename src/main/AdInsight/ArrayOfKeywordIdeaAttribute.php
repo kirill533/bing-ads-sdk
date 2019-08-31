@@ -21,7 +21,7 @@ class ArrayOfKeywordIdeaAttribute implements \ArrayAccess, \IteratorAggregate, \
      */
     public function getKeywordIdeaAttribute()
     {
-      return $this->KeywordIdeaAttribute;
+        return $this->KeywordIdeaAttribute;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordIdeaAttribute implements \ArrayAccess, \IteratorAggregate, \
      */
     public function setKeywordIdeaAttribute(array $KeywordIdeaAttribute = null)
     {
-      $this->KeywordIdeaAttribute = $KeywordIdeaAttribute;
-      return $this;
+        $this->KeywordIdeaAttribute = $KeywordIdeaAttribute;
+        return $this;
     }
 
     /**

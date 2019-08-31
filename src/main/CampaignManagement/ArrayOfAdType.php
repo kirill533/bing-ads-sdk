@@ -21,7 +21,7 @@ class ArrayOfAdType implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getAdType()
     {
-      return $this->AdType;
+        return $this->AdType;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdType implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setAdType(array $AdType = null)
     {
-      $this->AdType = $AdType;
-      return $this;
+        $this->AdType = $AdType;
+        return $this;
     }
 
     /**

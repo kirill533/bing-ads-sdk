@@ -16,13 +16,20 @@ class GetAdGroupsByIdsRequest
     protected $AdGroupIds = null;
 
     /**
+     * @var AdGroupAdditionalField $ReturnAdditionalFields
+     */
+    protected $ReturnAdditionalFields = null;
+
+    /**
      * @param int $CampaignId
      * @param ArrayOflong $AdGroupIds
+     * @param AdGroupAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($CampaignId = null, $AdGroupIds = null)
+    public function __construct($CampaignId = null, $AdGroupIds = null, $ReturnAdditionalFields = null)
     {
-      $this->CampaignId = $CampaignId;
-      $this->AdGroupIds = $AdGroupIds;
+    $this->CampaignId = $CampaignId;
+    $this->AdGroupIds = $AdGroupIds;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -30,7 +37,7 @@ class GetAdGroupsByIdsRequest
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -39,8 +46,8 @@ class GetAdGroupsByIdsRequest
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -48,7 +55,7 @@ class GetAdGroupsByIdsRequest
      */
     public function getAdGroupIds()
     {
-      return $this->AdGroupIds;
+        return $this->AdGroupIds;
     }
 
     /**
@@ -57,8 +64,26 @@ class GetAdGroupsByIdsRequest
      */
     public function setAdGroupIds($AdGroupIds)
     {
-      $this->AdGroupIds = $AdGroupIds;
-      return $this;
+        $this->AdGroupIds = $AdGroupIds;
+        return $this;
+    }
+
+    /**
+     * @return AdGroupAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param AdGroupAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\CampaignManagement\GetAdGroupsByIdsRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

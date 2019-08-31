@@ -13,7 +13,7 @@ class BidMultiplier extends CriterionBid
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class BidMultiplier extends CriterionBid
      */
     public function getMultiplier()
     {
-      return $this->Multiplier;
+        return $this->Multiplier;
     }
 
     /**
@@ -30,8 +30,8 @@ class BidMultiplier extends CriterionBid
      */
     public function setMultiplier($Multiplier)
     {
-      $this->Multiplier = $Multiplier;
-      return $this;
+        $this->Multiplier = $Multiplier;
+        return $this;
     }
 
 }

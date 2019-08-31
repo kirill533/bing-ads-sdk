@@ -57,14 +57,14 @@ class UpdateUserRolesRequest
      */
     public function __construct($CustomerId = null, $UserId = null, $NewRoleId = null, $NewAccountIds = null, $NewCustomerIds = null, $DeleteRoleId = null, $DeleteAccountIds = null, $DeleteCustomerIds = null)
     {
-      $this->CustomerId = $CustomerId;
-      $this->UserId = $UserId;
-      $this->NewRoleId = $NewRoleId;
-      $this->NewAccountIds = $NewAccountIds;
-      $this->NewCustomerIds = $NewCustomerIds;
-      $this->DeleteRoleId = $DeleteRoleId;
-      $this->DeleteAccountIds = $DeleteAccountIds;
-      $this->DeleteCustomerIds = $DeleteCustomerIds;
+    $this->CustomerId = $CustomerId;
+    $this->UserId = $UserId;
+    $this->NewRoleId = $NewRoleId;
+    $this->NewAccountIds = $NewAccountIds;
+    $this->NewCustomerIds = $NewCustomerIds;
+    $this->DeleteRoleId = $DeleteRoleId;
+    $this->DeleteAccountIds = $DeleteAccountIds;
+    $this->DeleteCustomerIds = $DeleteCustomerIds;
     }
 
     /**
@@ -72,7 +72,7 @@ class UpdateUserRolesRequest
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
@@ -81,8 +81,8 @@ class UpdateUserRolesRequest
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class UpdateUserRolesRequest
      */
     public function getUserId()
     {
-      return $this->UserId;
+        return $this->UserId;
     }
 
     /**
@@ -99,8 +99,8 @@ class UpdateUserRolesRequest
      */
     public function setUserId($UserId)
     {
-      $this->UserId = $UserId;
-      return $this;
+        $this->UserId = $UserId;
+        return $this;
     }
 
     /**
@@ -108,7 +108,7 @@ class UpdateUserRolesRequest
      */
     public function getNewRoleId()
     {
-      return $this->NewRoleId;
+        return $this->NewRoleId;
     }
 
     /**
@@ -117,8 +117,8 @@ class UpdateUserRolesRequest
      */
     public function setNewRoleId($NewRoleId)
     {
-      $this->NewRoleId = $NewRoleId;
-      return $this;
+        $this->NewRoleId = $NewRoleId;
+        return $this;
     }
 
     /**
@@ -126,7 +126,7 @@ class UpdateUserRolesRequest
      */
     public function getNewAccountIds()
     {
-      return $this->NewAccountIds;
+        return $this->NewAccountIds;
     }
 
     /**
@@ -135,8 +135,8 @@ class UpdateUserRolesRequest
      */
     public function setNewAccountIds($NewAccountIds)
     {
-      $this->NewAccountIds = $NewAccountIds;
-      return $this;
+        $this->NewAccountIds = $NewAccountIds;
+        return $this;
     }
 
     /**
@@ -144,7 +144,7 @@ class UpdateUserRolesRequest
      */
     public function getNewCustomerIds()
     {
-      return $this->NewCustomerIds;
+        return $this->NewCustomerIds;
     }
 
     /**
@@ -153,8 +153,8 @@ class UpdateUserRolesRequest
      */
     public function setNewCustomerIds($NewCustomerIds)
     {
-      $this->NewCustomerIds = $NewCustomerIds;
-      return $this;
+        $this->NewCustomerIds = $NewCustomerIds;
+        return $this;
     }
 
     /**
@@ -162,7 +162,7 @@ class UpdateUserRolesRequest
      */
     public function getDeleteRoleId()
     {
-      return $this->DeleteRoleId;
+        return $this->DeleteRoleId;
     }
 
     /**
@@ -171,8 +171,8 @@ class UpdateUserRolesRequest
      */
     public function setDeleteRoleId($DeleteRoleId)
     {
-      $this->DeleteRoleId = $DeleteRoleId;
-      return $this;
+        $this->DeleteRoleId = $DeleteRoleId;
+        return $this;
     }
 
     /**
@@ -180,7 +180,7 @@ class UpdateUserRolesRequest
      */
     public function getDeleteAccountIds()
     {
-      return $this->DeleteAccountIds;
+        return $this->DeleteAccountIds;
     }
 
     /**
@@ -189,8 +189,8 @@ class UpdateUserRolesRequest
      */
     public function setDeleteAccountIds($DeleteAccountIds)
     {
-      $this->DeleteAccountIds = $DeleteAccountIds;
-      return $this;
+        $this->DeleteAccountIds = $DeleteAccountIds;
+        return $this;
     }
 
     /**
@@ -198,7 +198,7 @@ class UpdateUserRolesRequest
      */
     public function getDeleteCustomerIds()
     {
-      return $this->DeleteCustomerIds;
+        return $this->DeleteCustomerIds;
     }
 
     /**
@@ -207,8 +207,8 @@ class UpdateUserRolesRequest
      */
     public function setDeleteCustomerIds($DeleteCustomerIds)
     {
-      $this->DeleteCustomerIds = $DeleteCustomerIds;
-      return $this;
+        $this->DeleteCustomerIds = $DeleteCustomerIds;
+        return $this;
     }
 
 }

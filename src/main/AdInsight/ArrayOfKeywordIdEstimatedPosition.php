@@ -21,7 +21,7 @@ class ArrayOfKeywordIdEstimatedPosition implements \ArrayAccess, \IteratorAggreg
      */
     public function getKeywordIdEstimatedPosition()
     {
-      return $this->KeywordIdEstimatedPosition;
+        return $this->KeywordIdEstimatedPosition;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordIdEstimatedPosition implements \ArrayAccess, \IteratorAggreg
      */
     public function setKeywordIdEstimatedPosition(array $KeywordIdEstimatedPosition = null)
     {
-      $this->KeywordIdEstimatedPosition = $KeywordIdEstimatedPosition;
-      return $this;
+        $this->KeywordIdEstimatedPosition = $KeywordIdEstimatedPosition;
+        return $this;
     }
 
     /**

@@ -21,8 +21,8 @@ class GetEstimatedBidByKeywordIdsRequest
      */
     public function __construct($KeywordIds = null, $TargetPositionForAds = null)
     {
-      $this->KeywordIds = $KeywordIds;
-      $this->TargetPositionForAds = $TargetPositionForAds;
+    $this->KeywordIds = $KeywordIds;
+    $this->TargetPositionForAds = $TargetPositionForAds;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetEstimatedBidByKeywordIdsRequest
      */
     public function getKeywordIds()
     {
-      return $this->KeywordIds;
+        return $this->KeywordIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetEstimatedBidByKeywordIdsRequest
      */
     public function setKeywordIds($KeywordIds)
     {
-      $this->KeywordIds = $KeywordIds;
-      return $this;
+        $this->KeywordIds = $KeywordIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetEstimatedBidByKeywordIdsRequest
      */
     public function getTargetPositionForAds()
     {
-      return $this->TargetPositionForAds;
+        return $this->TargetPositionForAds;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetEstimatedBidByKeywordIdsRequest
      */
     public function setTargetPositionForAds($TargetPositionForAds)
     {
-      $this->TargetPositionForAds = $TargetPositionForAds;
-      return $this;
+        $this->TargetPositionForAds = $TargetPositionForAds;
+        return $this;
     }
 
 }

@@ -21,7 +21,7 @@ class ArrayOfKeywordIdea implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getKeywordIdea()
     {
-      return $this->KeywordIdea;
+        return $this->KeywordIdea;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordIdea implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setKeywordIdea(array $KeywordIdea = null)
     {
-      $this->KeywordIdea = $KeywordIdea;
-      return $this;
+        $this->KeywordIdea = $KeywordIdea;
+        return $this;
     }
 
     /**

@@ -21,7 +21,7 @@ class ArrayOfAdExtensionByKeywordReportColumn implements \ArrayAccess, \Iterator
      */
     public function getAdExtensionByKeywordReportColumn()
     {
-      return $this->AdExtensionByKeywordReportColumn;
+        return $this->AdExtensionByKeywordReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdExtensionByKeywordReportColumn implements \ArrayAccess, \Iterator
      */
     public function setAdExtensionByKeywordReportColumn(array $AdExtensionByKeywordReportColumn = null)
     {
-      $this->AdExtensionByKeywordReportColumn = $AdExtensionByKeywordReportColumn;
-      return $this;
+        $this->AdExtensionByKeywordReportColumn = $AdExtensionByKeywordReportColumn;
+        return $this;
     }
 
     /**

@@ -71,7 +71,7 @@ class Address
      */
     public function getCity()
     {
-      return $this->City;
+        return $this->City;
     }
 
     /**
@@ -80,8 +80,8 @@ class Address
      */
     public function setCity($City)
     {
-      $this->City = $City;
-      return $this;
+        $this->City = $City;
+        return $this;
     }
 
     /**
@@ -89,7 +89,7 @@ class Address
      */
     public function getCountryCode()
     {
-      return $this->CountryCode;
+        return $this->CountryCode;
     }
 
     /**
@@ -98,8 +98,8 @@ class Address
      */
     public function setCountryCode($CountryCode)
     {
-      $this->CountryCode = $CountryCode;
-      return $this;
+        $this->CountryCode = $CountryCode;
+        return $this;
     }
 
     /**
@@ -107,7 +107,7 @@ class Address
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -116,8 +116,8 @@ class Address
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -125,7 +125,7 @@ class Address
      */
     public function getLine1()
     {
-      return $this->Line1;
+        return $this->Line1;
     }
 
     /**
@@ -134,8 +134,8 @@ class Address
      */
     public function setLine1($Line1)
     {
-      $this->Line1 = $Line1;
-      return $this;
+        $this->Line1 = $Line1;
+        return $this;
     }
 
     /**
@@ -143,7 +143,7 @@ class Address
      */
     public function getLine2()
     {
-      return $this->Line2;
+        return $this->Line2;
     }
 
     /**
@@ -152,8 +152,8 @@ class Address
      */
     public function setLine2($Line2)
     {
-      $this->Line2 = $Line2;
-      return $this;
+        $this->Line2 = $Line2;
+        return $this;
     }
 
     /**
@@ -161,7 +161,7 @@ class Address
      */
     public function getLine3()
     {
-      return $this->Line3;
+        return $this->Line3;
     }
 
     /**
@@ -170,8 +170,8 @@ class Address
      */
     public function setLine3($Line3)
     {
-      $this->Line3 = $Line3;
-      return $this;
+        $this->Line3 = $Line3;
+        return $this;
     }
 
     /**
@@ -179,7 +179,7 @@ class Address
      */
     public function getLine4()
     {
-      return $this->Line4;
+        return $this->Line4;
     }
 
     /**
@@ -188,8 +188,8 @@ class Address
      */
     public function setLine4($Line4)
     {
-      $this->Line4 = $Line4;
-      return $this;
+        $this->Line4 = $Line4;
+        return $this;
     }
 
     /**
@@ -197,7 +197,7 @@ class Address
      */
     public function getPostalCode()
     {
-      return $this->PostalCode;
+        return $this->PostalCode;
     }
 
     /**
@@ -206,8 +206,8 @@ class Address
      */
     public function setPostalCode($PostalCode)
     {
-      $this->PostalCode = $PostalCode;
-      return $this;
+        $this->PostalCode = $PostalCode;
+        return $this;
     }
 
     /**
@@ -215,7 +215,7 @@ class Address
      */
     public function getStateOrProvince()
     {
-      return $this->StateOrProvince;
+        return $this->StateOrProvince;
     }
 
     /**
@@ -224,8 +224,8 @@ class Address
      */
     public function setStateOrProvince($StateOrProvince)
     {
-      $this->StateOrProvince = $StateOrProvince;
-      return $this;
+        $this->StateOrProvince = $StateOrProvince;
+        return $this;
     }
 
     /**
@@ -233,7 +233,7 @@ class Address
      */
     public function getTimeStamp()
     {
-      return $this->TimeStamp;
+        return $this->TimeStamp;
     }
 
     /**
@@ -242,8 +242,8 @@ class Address
      */
     public function setTimeStamp($TimeStamp)
     {
-      $this->TimeStamp = $TimeStamp;
-      return $this;
+        $this->TimeStamp = $TimeStamp;
+        return $this;
     }
 
     /**
@@ -251,7 +251,7 @@ class Address
      */
     public function getBusinessName()
     {
-      return $this->BusinessName;
+        return $this->BusinessName;
     }
 
     /**
@@ -260,8 +260,8 @@ class Address
      */
     public function setBusinessName($BusinessName)
     {
-      $this->BusinessName = $BusinessName;
-      return $this;
+        $this->BusinessName = $BusinessName;
+        return $this;
     }
 
 }

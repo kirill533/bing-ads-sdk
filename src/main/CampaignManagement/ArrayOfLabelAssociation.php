@@ -21,7 +21,7 @@ class ArrayOfLabelAssociation implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function getLabelAssociation()
     {
-      return $this->LabelAssociation;
+        return $this->LabelAssociation;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfLabelAssociation implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function setLabelAssociation(array $LabelAssociation = null)
     {
-      $this->LabelAssociation = $LabelAssociation;
-      return $this;
+        $this->LabelAssociation = $LabelAssociation;
+        return $this;
     }
 
     /**

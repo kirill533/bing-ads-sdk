@@ -15,7 +15,7 @@ class SendUserInvitationResponse
      */
     public function __construct($UserInvitationId = null)
     {
-      $this->UserInvitationId = $UserInvitationId;
+    $this->UserInvitationId = $UserInvitationId;
     }
 
     /**
@@ -23,7 +23,7 @@ class SendUserInvitationResponse
      */
     public function getUserInvitationId()
     {
-      return $this->UserInvitationId;
+        return $this->UserInvitationId;
     }
 
     /**
@@ -32,8 +32,8 @@ class SendUserInvitationResponse
      */
     public function setUserInvitationId($UserInvitationId)
     {
-      $this->UserInvitationId = $UserInvitationId;
-      return $this;
+        $this->UserInvitationId = $UserInvitationId;
+        return $this;
     }
 
 }

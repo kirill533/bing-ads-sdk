@@ -27,9 +27,9 @@ class GetAdExtensionIdsByAccountIdRequest
      */
     public function __construct($AccountId = null, $AdExtensionType = null, $AssociationType = null)
     {
-      $this->AccountId = $AccountId;
-      $this->AdExtensionType = $AdExtensionType;
-      $this->AssociationType = $AssociationType;
+    $this->AccountId = $AccountId;
+    $this->AdExtensionType = $AdExtensionType;
+    $this->AssociationType = $AssociationType;
     }
 
     /**
@@ -37,7 +37,7 @@ class GetAdExtensionIdsByAccountIdRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -46,8 +46,8 @@ class GetAdExtensionIdsByAccountIdRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class GetAdExtensionIdsByAccountIdRequest
      */
     public function getAdExtensionType()
     {
-      return $this->AdExtensionType;
+        return $this->AdExtensionType;
     }
 
     /**
@@ -64,8 +64,8 @@ class GetAdExtensionIdsByAccountIdRequest
      */
     public function setAdExtensionType($AdExtensionType)
     {
-      $this->AdExtensionType = $AdExtensionType;
-      return $this;
+        $this->AdExtensionType = $AdExtensionType;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetAdExtensionIdsByAccountIdRequest
      */
     public function getAssociationType()
     {
-      return $this->AssociationType;
+        return $this->AssociationType;
     }
 
     /**
@@ -82,8 +82,8 @@ class GetAdExtensionIdsByAccountIdRequest
      */
     public function setAssociationType($AssociationType)
     {
-      $this->AssociationType = $AssociationType;
-      return $this;
+        $this->AssociationType = $AssociationType;
+        return $this;
     }
 
 }

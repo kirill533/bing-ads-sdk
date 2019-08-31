@@ -26,7 +26,7 @@ class KeywordLocationResult
      */
     public function getKeyword()
     {
-      return $this->Keyword;
+        return $this->Keyword;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeywordLocationResult
      */
     public function setKeyword($Keyword)
     {
-      $this->Keyword = $Keyword;
-      return $this;
+        $this->Keyword = $Keyword;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeywordLocationResult
      */
     public function getKeywordLocations()
     {
-      return $this->KeywordLocations;
+        return $this->KeywordLocations;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeywordLocationResult
      */
     public function setKeywordLocations($KeywordLocations)
     {
-      $this->KeywordLocations = $KeywordLocations;
-      return $this;
+        $this->KeywordLocations = $KeywordLocations;
+        return $this;
     }
 
 }

@@ -48,6 +48,9 @@ class DestinationUrlPerformanceReportColumn
     const CampaignStatus = 'CampaignStatus';
     const AdGroupStatus = 'AdGroupStatus';
     const AdStatus = 'AdStatus';
+    const CustomerId = 'CustomerId';
+    const CustomerName = 'CustomerName';
+    const FinalUrlSuffix = 'FinalUrlSuffix';
 
 
 }

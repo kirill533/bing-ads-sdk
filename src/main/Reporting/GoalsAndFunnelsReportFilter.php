@@ -56,7 +56,7 @@ class GoalsAndFunnelsReportFilter
      */
     public function getAccountStatus()
     {
-      return $this->AccountStatus;
+        return $this->AccountStatus;
     }
 
     /**
@@ -65,8 +65,8 @@ class GoalsAndFunnelsReportFilter
      */
     public function setAccountStatus($AccountStatus)
     {
-      $this->AccountStatus = $AccountStatus;
-      return $this;
+        $this->AccountStatus = $AccountStatus;
+        return $this;
     }
 
     /**
@@ -74,7 +74,7 @@ class GoalsAndFunnelsReportFilter
      */
     public function getAdDistribution()
     {
-      return $this->AdDistribution;
+        return $this->AdDistribution;
     }
 
     /**
@@ -83,8 +83,8 @@ class GoalsAndFunnelsReportFilter
      */
     public function setAdDistribution($AdDistribution)
     {
-      $this->AdDistribution = $AdDistribution;
-      return $this;
+        $this->AdDistribution = $AdDistribution;
+        return $this;
     }
 
     /**
@@ -92,7 +92,7 @@ class GoalsAndFunnelsReportFilter
      */
     public function getAdGroupStatus()
     {
-      return $this->AdGroupStatus;
+        return $this->AdGroupStatus;
     }
 
     /**
@@ -101,8 +101,8 @@ class GoalsAndFunnelsReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
     {
-      $this->AdGroupStatus = $AdGroupStatus;
-      return $this;
+        $this->AdGroupStatus = $AdGroupStatus;
+        return $this;
     }
 
     /**
@@ -110,7 +110,7 @@ class GoalsAndFunnelsReportFilter
      */
     public function getCampaignStatus()
     {
-      return $this->CampaignStatus;
+        return $this->CampaignStatus;
     }
 
     /**
@@ -119,8 +119,8 @@ class GoalsAndFunnelsReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
     {
-      $this->CampaignStatus = $CampaignStatus;
-      return $this;
+        $this->CampaignStatus = $CampaignStatus;
+        return $this;
     }
 
     /**
@@ -128,7 +128,7 @@ class GoalsAndFunnelsReportFilter
      */
     public function getDeviceOS()
     {
-      return $this->DeviceOS;
+        return $this->DeviceOS;
     }
 
     /**
@@ -137,8 +137,8 @@ class GoalsAndFunnelsReportFilter
      */
     public function setDeviceOS($DeviceOS)
     {
-      $this->DeviceOS = $DeviceOS;
-      return $this;
+        $this->DeviceOS = $DeviceOS;
+        return $this;
     }
 
     /**
@@ -146,7 +146,7 @@ class GoalsAndFunnelsReportFilter
      */
     public function getDeviceType()
     {
-      return $this->DeviceType;
+        return $this->DeviceType;
     }
 
     /**
@@ -155,8 +155,8 @@ class GoalsAndFunnelsReportFilter
      */
     public function setDeviceType($DeviceType)
     {
-      $this->DeviceType = $DeviceType;
-      return $this;
+        $this->DeviceType = $DeviceType;
+        return $this;
     }
 
     /**
@@ -164,7 +164,7 @@ class GoalsAndFunnelsReportFilter
      */
     public function getGoalIds()
     {
-      return $this->GoalIds;
+        return $this->GoalIds;
     }
 
     /**
@@ -173,8 +173,8 @@ class GoalsAndFunnelsReportFilter
      */
     public function setGoalIds($GoalIds)
     {
-      $this->GoalIds = $GoalIds;
-      return $this;
+        $this->GoalIds = $GoalIds;
+        return $this;
     }
 
     /**
@@ -182,7 +182,7 @@ class GoalsAndFunnelsReportFilter
      */
     public function getKeywordStatus()
     {
-      return $this->KeywordStatus;
+        return $this->KeywordStatus;
     }
 
     /**
@@ -191,8 +191,8 @@ class GoalsAndFunnelsReportFilter
      */
     public function setKeywordStatus($KeywordStatus)
     {
-      $this->KeywordStatus = $KeywordStatus;
-      return $this;
+        $this->KeywordStatus = $KeywordStatus;
+        return $this;
     }
 
 }

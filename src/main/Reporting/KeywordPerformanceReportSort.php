@@ -21,8 +21,8 @@ class KeywordPerformanceReportSort
      */
     public function __construct($SortColumn = null, $SortOrder = null)
     {
-      $this->SortColumn = $SortColumn;
-      $this->SortOrder = $SortOrder;
+    $this->SortColumn = $SortColumn;
+    $this->SortOrder = $SortOrder;
     }
 
     /**
@@ -30,7 +30,7 @@ class KeywordPerformanceReportSort
      */
     public function getSortColumn()
     {
-      return $this->SortColumn;
+        return $this->SortColumn;
     }
 
     /**
@@ -39,8 +39,8 @@ class KeywordPerformanceReportSort
      */
     public function setSortColumn($SortColumn)
     {
-      $this->SortColumn = $SortColumn;
-      return $this;
+        $this->SortColumn = $SortColumn;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class KeywordPerformanceReportSort
      */
     public function getSortOrder()
     {
-      return $this->SortOrder;
+        return $this->SortOrder;
     }
 
     /**
@@ -57,8 +57,8 @@ class KeywordPerformanceReportSort
      */
     public function setSortOrder($SortOrder)
     {
-      $this->SortOrder = $SortOrder;
-      return $this;
+        $this->SortOrder = $SortOrder;
+        return $this;
     }
 
 }

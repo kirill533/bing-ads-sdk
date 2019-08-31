@@ -6,6 +6,11 @@ class PriceAdExtension extends AdExtension
 {
 
     /**
+     * @var string $FinalUrlSuffix
+     */
+    protected $FinalUrlSuffix = null;
+
+    /**
      * @var string $Language
      */
     protected $Language = null;
@@ -35,8 +40,26 @@ class PriceAdExtension extends AdExtension
      */
     public function __construct($PriceExtensionType = null)
     {
-      parent::__construct();
-      $this->PriceExtensionType = $PriceExtensionType;
+        parent::__construct();
+    $this->PriceExtensionType = $PriceExtensionType;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFinalUrlSuffix()
+    {
+        return $this->FinalUrlSuffix;
+    }
+
+    /**
+     * @param string $FinalUrlSuffix
+     * @return \PMG\BingAds\CampaignManagement\PriceAdExtension
+     */
+    public function setFinalUrlSuffix($FinalUrlSuffix)
+    {
+        $this->FinalUrlSuffix = $FinalUrlSuffix;
+        return $this;
     }
 
     /**
@@ -44,7 +67,7 @@ class PriceAdExtension extends AdExtension
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -53,8 +76,8 @@ class PriceAdExtension extends AdExtension
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
     /**
@@ -62,7 +85,7 @@ class PriceAdExtension extends AdExtension
      */
     public function getPriceExtensionType()
     {
-      return $this->PriceExtensionType;
+        return $this->PriceExtensionType;
     }
 
     /**
@@ -71,8 +94,8 @@ class PriceAdExtension extends AdExtension
      */
     public function setPriceExtensionType($PriceExtensionType)
     {
-      $this->PriceExtensionType = $PriceExtensionType;
-      return $this;
+        $this->PriceExtensionType = $PriceExtensionType;
+        return $this;
     }
 
     /**
@@ -80,7 +103,7 @@ class PriceAdExtension extends AdExtension
      */
     public function getTableRows()
     {
-      return $this->TableRows;
+        return $this->TableRows;
     }
 
     /**
@@ -89,8 +112,8 @@ class PriceAdExtension extends AdExtension
      */
     public function setTableRows($TableRows)
     {
-      $this->TableRows = $TableRows;
-      return $this;
+        $this->TableRows = $TableRows;
+        return $this;
     }
 
     /**
@@ -98,7 +121,7 @@ class PriceAdExtension extends AdExtension
      */
     public function getTrackingUrlTemplate()
     {
-      return $this->TrackingUrlTemplate;
+        return $this->TrackingUrlTemplate;
     }
 
     /**
@@ -107,8 +130,8 @@ class PriceAdExtension extends AdExtension
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
-      $this->TrackingUrlTemplate = $TrackingUrlTemplate;
-      return $this;
+        $this->TrackingUrlTemplate = $TrackingUrlTemplate;
+        return $this;
     }
 
     /**
@@ -116,7 +139,7 @@ class PriceAdExtension extends AdExtension
      */
     public function getUrlCustomParameters()
     {
-      return $this->UrlCustomParameters;
+        return $this->UrlCustomParameters;
     }
 
     /**
@@ -125,8 +148,8 @@ class PriceAdExtension extends AdExtension
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {
-      $this->UrlCustomParameters = $UrlCustomParameters;
-      return $this;
+        $this->UrlCustomParameters = $UrlCustomParameters;
+        return $this;
     }
 
 }

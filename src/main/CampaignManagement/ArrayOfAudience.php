@@ -21,7 +21,7 @@ class ArrayOfAudience implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getAudience()
     {
-      return $this->Audience;
+        return $this->Audience;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAudience implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setAudience(array $Audience = null)
     {
-      $this->Audience = $Audience;
-      return $this;
+        $this->Audience = $Audience;
+        return $this;
     }
 
     /**

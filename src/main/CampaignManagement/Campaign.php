@@ -31,6 +31,16 @@ class Campaign
     protected $Description = null;
 
     /**
+     * @var int $ExperimentId
+     */
+    protected $ExperimentId = null;
+
+    /**
+     * @var string $FinalUrlSuffix
+     */
+    protected $FinalUrlSuffix = null;
+
+    /**
      * @var ArrayOfKeyValuePairOfstringstring $ForwardCompatibilityMap
      */
     protected $ForwardCompatibilityMap = null;
@@ -101,7 +111,7 @@ class Campaign
      */
     public function getAudienceAdsBidAdjustment()
     {
-      return $this->AudienceAdsBidAdjustment;
+        return $this->AudienceAdsBidAdjustment;
     }
 
     /**
@@ -110,8 +120,8 @@ class Campaign
      */
     public function setAudienceAdsBidAdjustment($AudienceAdsBidAdjustment)
     {
-      $this->AudienceAdsBidAdjustment = $AudienceAdsBidAdjustment;
-      return $this;
+        $this->AudienceAdsBidAdjustment = $AudienceAdsBidAdjustment;
+        return $this;
     }
 
     /**
@@ -119,7 +129,7 @@ class Campaign
      */
     public function getBiddingScheme()
     {
-      return $this->BiddingScheme;
+        return $this->BiddingScheme;
     }
 
     /**
@@ -128,8 +138,8 @@ class Campaign
      */
     public function setBiddingScheme($BiddingScheme)
     {
-      $this->BiddingScheme = $BiddingScheme;
-      return $this;
+        $this->BiddingScheme = $BiddingScheme;
+        return $this;
     }
 
     /**
@@ -137,7 +147,7 @@ class Campaign
      */
     public function getBudgetType()
     {
-      return $this->BudgetType;
+        return $this->BudgetType;
     }
 
     /**
@@ -146,8 +156,8 @@ class Campaign
      */
     public function setBudgetType($BudgetType)
     {
-      $this->BudgetType = $BudgetType;
-      return $this;
+        $this->BudgetType = $BudgetType;
+        return $this;
     }
 
     /**
@@ -155,7 +165,7 @@ class Campaign
      */
     public function getDailyBudget()
     {
-      return $this->DailyBudget;
+        return $this->DailyBudget;
     }
 
     /**
@@ -164,8 +174,8 @@ class Campaign
      */
     public function setDailyBudget($DailyBudget)
     {
-      $this->DailyBudget = $DailyBudget;
-      return $this;
+        $this->DailyBudget = $DailyBudget;
+        return $this;
     }
 
     /**
@@ -173,7 +183,7 @@ class Campaign
      */
     public function getDescription()
     {
-      return $this->Description;
+        return $this->Description;
     }
 
     /**
@@ -182,8 +192,44 @@ class Campaign
      */
     public function setDescription($Description)
     {
-      $this->Description = $Description;
-      return $this;
+        $this->Description = $Description;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getExperimentId()
+    {
+        return $this->ExperimentId;
+    }
+
+    /**
+     * @param int $ExperimentId
+     * @return \PMG\BingAds\CampaignManagement\Campaign
+     */
+    public function setExperimentId($ExperimentId)
+    {
+        $this->ExperimentId = $ExperimentId;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFinalUrlSuffix()
+    {
+        return $this->FinalUrlSuffix;
+    }
+
+    /**
+     * @param string $FinalUrlSuffix
+     * @return \PMG\BingAds\CampaignManagement\Campaign
+     */
+    public function setFinalUrlSuffix($FinalUrlSuffix)
+    {
+        $this->FinalUrlSuffix = $FinalUrlSuffix;
+        return $this;
     }
 
     /**
@@ -191,7 +237,7 @@ class Campaign
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -200,8 +246,8 @@ class Campaign
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
     /**
@@ -209,7 +255,7 @@ class Campaign
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -218,8 +264,8 @@ class Campaign
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -227,7 +273,7 @@ class Campaign
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -236,8 +282,8 @@ class Campaign
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -245,7 +291,7 @@ class Campaign
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -254,8 +300,8 @@ class Campaign
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
     /**
@@ -263,7 +309,7 @@ class Campaign
      */
     public function getSubType()
     {
-      return $this->SubType;
+        return $this->SubType;
     }
 
     /**
@@ -272,8 +318,8 @@ class Campaign
      */
     public function setSubType($SubType)
     {
-      $this->SubType = $SubType;
-      return $this;
+        $this->SubType = $SubType;
+        return $this;
     }
 
     /**
@@ -281,7 +327,7 @@ class Campaign
      */
     public function getTimeZone()
     {
-      return $this->TimeZone;
+        return $this->TimeZone;
     }
 
     /**
@@ -290,8 +336,8 @@ class Campaign
      */
     public function setTimeZone($TimeZone)
     {
-      $this->TimeZone = $TimeZone;
-      return $this;
+        $this->TimeZone = $TimeZone;
+        return $this;
     }
 
     /**
@@ -299,7 +345,7 @@ class Campaign
      */
     public function getTrackingUrlTemplate()
     {
-      return $this->TrackingUrlTemplate;
+        return $this->TrackingUrlTemplate;
     }
 
     /**
@@ -308,8 +354,8 @@ class Campaign
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
-      $this->TrackingUrlTemplate = $TrackingUrlTemplate;
-      return $this;
+        $this->TrackingUrlTemplate = $TrackingUrlTemplate;
+        return $this;
     }
 
     /**
@@ -317,7 +363,7 @@ class Campaign
      */
     public function getUrlCustomParameters()
     {
-      return $this->UrlCustomParameters;
+        return $this->UrlCustomParameters;
     }
 
     /**
@@ -326,8 +372,8 @@ class Campaign
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {
-      $this->UrlCustomParameters = $UrlCustomParameters;
-      return $this;
+        $this->UrlCustomParameters = $UrlCustomParameters;
+        return $this;
     }
 
     /**
@@ -335,7 +381,7 @@ class Campaign
      */
     public function getCampaignType()
     {
-      return $this->CampaignType;
+        return $this->CampaignType;
     }
 
     /**
@@ -344,8 +390,8 @@ class Campaign
      */
     public function setCampaignType($CampaignType)
     {
-      $this->CampaignType = $CampaignType;
-      return $this;
+        $this->CampaignType = $CampaignType;
+        return $this;
     }
 
     /**
@@ -353,7 +399,7 @@ class Campaign
      */
     public function getSettings()
     {
-      return $this->Settings;
+        return $this->Settings;
     }
 
     /**
@@ -362,8 +408,8 @@ class Campaign
      */
     public function setSettings($Settings)
     {
-      $this->Settings = $Settings;
-      return $this;
+        $this->Settings = $Settings;
+        return $this;
     }
 
     /**
@@ -371,7 +417,7 @@ class Campaign
      */
     public function getBudgetId()
     {
-      return $this->BudgetId;
+        return $this->BudgetId;
     }
 
     /**
@@ -380,8 +426,8 @@ class Campaign
      */
     public function setBudgetId($BudgetId)
     {
-      $this->BudgetId = $BudgetId;
-      return $this;
+        $this->BudgetId = $BudgetId;
+        return $this;
     }
 
     /**
@@ -389,7 +435,7 @@ class Campaign
      */
     public function getLanguages()
     {
-      return $this->Languages;
+        return $this->Languages;
     }
 
     /**
@@ -398,8 +444,8 @@ class Campaign
      */
     public function setLanguages($Languages)
     {
-      $this->Languages = $Languages;
-      return $this;
+        $this->Languages = $Languages;
+        return $this;
     }
 
 }

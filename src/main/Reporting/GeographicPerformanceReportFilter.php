@@ -46,7 +46,7 @@ class GeographicPerformanceReportFilter
      */
     public function getAccountStatus()
     {
-      return $this->AccountStatus;
+        return $this->AccountStatus;
     }
 
     /**
@@ -55,8 +55,8 @@ class GeographicPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
     {
-      $this->AccountStatus = $AccountStatus;
-      return $this;
+        $this->AccountStatus = $AccountStatus;
+        return $this;
     }
 
     /**
@@ -64,7 +64,7 @@ class GeographicPerformanceReportFilter
      */
     public function getAdDistribution()
     {
-      return $this->AdDistribution;
+        return $this->AdDistribution;
     }
 
     /**
@@ -73,8 +73,8 @@ class GeographicPerformanceReportFilter
      */
     public function setAdDistribution($AdDistribution)
     {
-      $this->AdDistribution = $AdDistribution;
-      return $this;
+        $this->AdDistribution = $AdDistribution;
+        return $this;
     }
 
     /**
@@ -82,7 +82,7 @@ class GeographicPerformanceReportFilter
      */
     public function getAdGroupStatus()
     {
-      return $this->AdGroupStatus;
+        return $this->AdGroupStatus;
     }
 
     /**
@@ -91,8 +91,8 @@ class GeographicPerformanceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
     {
-      $this->AdGroupStatus = $AdGroupStatus;
-      return $this;
+        $this->AdGroupStatus = $AdGroupStatus;
+        return $this;
     }
 
     /**
@@ -100,7 +100,7 @@ class GeographicPerformanceReportFilter
      */
     public function getCampaignStatus()
     {
-      return $this->CampaignStatus;
+        return $this->CampaignStatus;
     }
 
     /**
@@ -109,8 +109,8 @@ class GeographicPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
     {
-      $this->CampaignStatus = $CampaignStatus;
-      return $this;
+        $this->CampaignStatus = $CampaignStatus;
+        return $this;
     }
 
     /**
@@ -118,7 +118,7 @@ class GeographicPerformanceReportFilter
      */
     public function getCountryCode()
     {
-      return $this->CountryCode;
+        return $this->CountryCode;
     }
 
     /**
@@ -127,8 +127,8 @@ class GeographicPerformanceReportFilter
      */
     public function setCountryCode($CountryCode)
     {
-      $this->CountryCode = $CountryCode;
-      return $this;
+        $this->CountryCode = $CountryCode;
+        return $this;
     }
 
     /**
@@ -136,7 +136,7 @@ class GeographicPerformanceReportFilter
      */
     public function getLanguageCode()
     {
-      return $this->LanguageCode;
+        return $this->LanguageCode;
     }
 
     /**
@@ -145,8 +145,8 @@ class GeographicPerformanceReportFilter
      */
     public function setLanguageCode($LanguageCode)
     {
-      $this->LanguageCode = $LanguageCode;
-      return $this;
+        $this->LanguageCode = $LanguageCode;
+        return $this;
     }
 
 }

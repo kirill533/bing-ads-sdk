@@ -31,6 +31,11 @@ class ImageAdExtension extends AdExtension
     protected $FinalMobileUrls = null;
 
     /**
+     * @var string $FinalUrlSuffix
+     */
+    protected $FinalUrlSuffix = null;
+
+    /**
      * @var ArrayOfstring $FinalUrls
      */
     protected $FinalUrls = null;
@@ -53,7 +58,7 @@ class ImageAdExtension extends AdExtension
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -61,7 +66,7 @@ class ImageAdExtension extends AdExtension
      */
     public function getAlternativeText()
     {
-      return $this->AlternativeText;
+        return $this->AlternativeText;
     }
 
     /**
@@ -70,8 +75,8 @@ class ImageAdExtension extends AdExtension
      */
     public function setAlternativeText($AlternativeText)
     {
-      $this->AlternativeText = $AlternativeText;
-      return $this;
+        $this->AlternativeText = $AlternativeText;
+        return $this;
     }
 
     /**
@@ -79,7 +84,7 @@ class ImageAdExtension extends AdExtension
      */
     public function getDescription()
     {
-      return $this->Description;
+        return $this->Description;
     }
 
     /**
@@ -88,8 +93,8 @@ class ImageAdExtension extends AdExtension
      */
     public function setDescription($Description)
     {
-      $this->Description = $Description;
-      return $this;
+        $this->Description = $Description;
+        return $this;
     }
 
     /**
@@ -97,7 +102,7 @@ class ImageAdExtension extends AdExtension
      */
     public function getDestinationUrl()
     {
-      return $this->DestinationUrl;
+        return $this->DestinationUrl;
     }
 
     /**
@@ -106,8 +111,8 @@ class ImageAdExtension extends AdExtension
      */
     public function setDestinationUrl($DestinationUrl)
     {
-      $this->DestinationUrl = $DestinationUrl;
-      return $this;
+        $this->DestinationUrl = $DestinationUrl;
+        return $this;
     }
 
     /**
@@ -115,7 +120,7 @@ class ImageAdExtension extends AdExtension
      */
     public function getFinalAppUrls()
     {
-      return $this->FinalAppUrls;
+        return $this->FinalAppUrls;
     }
 
     /**
@@ -124,8 +129,8 @@ class ImageAdExtension extends AdExtension
      */
     public function setFinalAppUrls($FinalAppUrls)
     {
-      $this->FinalAppUrls = $FinalAppUrls;
-      return $this;
+        $this->FinalAppUrls = $FinalAppUrls;
+        return $this;
     }
 
     /**
@@ -133,7 +138,7 @@ class ImageAdExtension extends AdExtension
      */
     public function getFinalMobileUrls()
     {
-      return $this->FinalMobileUrls;
+        return $this->FinalMobileUrls;
     }
 
     /**
@@ -142,8 +147,26 @@ class ImageAdExtension extends AdExtension
      */
     public function setFinalMobileUrls($FinalMobileUrls)
     {
-      $this->FinalMobileUrls = $FinalMobileUrls;
-      return $this;
+        $this->FinalMobileUrls = $FinalMobileUrls;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFinalUrlSuffix()
+    {
+        return $this->FinalUrlSuffix;
+    }
+
+    /**
+     * @param string $FinalUrlSuffix
+     * @return \PMG\BingAds\CampaignManagement\ImageAdExtension
+     */
+    public function setFinalUrlSuffix($FinalUrlSuffix)
+    {
+        $this->FinalUrlSuffix = $FinalUrlSuffix;
+        return $this;
     }
 
     /**
@@ -151,7 +174,7 @@ class ImageAdExtension extends AdExtension
      */
     public function getFinalUrls()
     {
-      return $this->FinalUrls;
+        return $this->FinalUrls;
     }
 
     /**
@@ -160,8 +183,8 @@ class ImageAdExtension extends AdExtension
      */
     public function setFinalUrls($FinalUrls)
     {
-      $this->FinalUrls = $FinalUrls;
-      return $this;
+        $this->FinalUrls = $FinalUrls;
+        return $this;
     }
 
     /**
@@ -169,7 +192,7 @@ class ImageAdExtension extends AdExtension
      */
     public function getImageMediaIds()
     {
-      return $this->ImageMediaIds;
+        return $this->ImageMediaIds;
     }
 
     /**
@@ -178,8 +201,8 @@ class ImageAdExtension extends AdExtension
      */
     public function setImageMediaIds($ImageMediaIds)
     {
-      $this->ImageMediaIds = $ImageMediaIds;
-      return $this;
+        $this->ImageMediaIds = $ImageMediaIds;
+        return $this;
     }
 
     /**
@@ -187,7 +210,7 @@ class ImageAdExtension extends AdExtension
      */
     public function getTrackingUrlTemplate()
     {
-      return $this->TrackingUrlTemplate;
+        return $this->TrackingUrlTemplate;
     }
 
     /**
@@ -196,8 +219,8 @@ class ImageAdExtension extends AdExtension
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
-      $this->TrackingUrlTemplate = $TrackingUrlTemplate;
-      return $this;
+        $this->TrackingUrlTemplate = $TrackingUrlTemplate;
+        return $this;
     }
 
     /**
@@ -205,7 +228,7 @@ class ImageAdExtension extends AdExtension
      */
     public function getUrlCustomParameters()
     {
-      return $this->UrlCustomParameters;
+        return $this->UrlCustomParameters;
     }
 
     /**
@@ -214,8 +237,8 @@ class ImageAdExtension extends AdExtension
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {
-      $this->UrlCustomParameters = $UrlCustomParameters;
-      return $this;
+        $this->UrlCustomParameters = $UrlCustomParameters;
+        return $this;
     }
 
 }

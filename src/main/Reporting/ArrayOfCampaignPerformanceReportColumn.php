@@ -21,7 +21,7 @@ class ArrayOfCampaignPerformanceReportColumn implements \ArrayAccess, \IteratorA
      */
     public function getCampaignPerformanceReportColumn()
     {
-      return $this->CampaignPerformanceReportColumn;
+        return $this->CampaignPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCampaignPerformanceReportColumn implements \ArrayAccess, \IteratorA
      */
     public function setCampaignPerformanceReportColumn(array $CampaignPerformanceReportColumn = null)
     {
-      $this->CampaignPerformanceReportColumn = $CampaignPerformanceReportColumn;
-      return $this;
+        $this->CampaignPerformanceReportColumn = $CampaignPerformanceReportColumn;
+        return $this;
     }
 
     /**

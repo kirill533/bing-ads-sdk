@@ -23,6 +23,7 @@ class AdGroupCriterionType
     const JobFunction = 'JobFunction';
     const Industry = 'Industry';
     const ProductAudience = 'ProductAudience';
+    const SimilarRemarketingList = 'SimilarRemarketingList';
 
 
 }

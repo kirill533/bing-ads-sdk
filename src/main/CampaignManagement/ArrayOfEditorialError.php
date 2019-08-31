@@ -21,7 +21,7 @@ class ArrayOfEditorialError implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getEditorialError()
     {
-      return $this->EditorialError;
+        return $this->EditorialError;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfEditorialError implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function setEditorialError(array $EditorialError = null)
     {
-      $this->EditorialError = $EditorialError;
-      return $this;
+        $this->EditorialError = $EditorialError;
+        return $this;
     }
 
     /**

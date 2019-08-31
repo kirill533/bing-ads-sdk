@@ -41,7 +41,7 @@ class AdGroupCriterion
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -50,8 +50,8 @@ class AdGroupCriterion
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class AdGroupCriterion
      */
     public function getCriterion()
     {
-      return $this->Criterion;
+        return $this->Criterion;
     }
 
     /**
@@ -68,8 +68,8 @@ class AdGroupCriterion
      */
     public function setCriterion($Criterion)
     {
-      $this->Criterion = $Criterion;
-      return $this;
+        $this->Criterion = $Criterion;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class AdGroupCriterion
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -86,8 +86,8 @@ class AdGroupCriterion
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class AdGroupCriterion
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -104,8 +104,8 @@ class AdGroupCriterion
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class AdGroupCriterion
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -122,8 +122,8 @@ class AdGroupCriterion
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
 }

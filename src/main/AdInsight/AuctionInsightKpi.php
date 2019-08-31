@@ -51,7 +51,7 @@ class AuctionInsightKpi
      */
     public function getSegments()
     {
-      return $this->Segments;
+        return $this->Segments;
     }
 
     /**
@@ -60,8 +60,8 @@ class AuctionInsightKpi
      */
     public function setSegments($Segments)
     {
-      $this->Segments = $Segments;
-      return $this;
+        $this->Segments = $Segments;
+        return $this;
     }
 
     /**
@@ -69,7 +69,7 @@ class AuctionInsightKpi
      */
     public function getImpressionShare()
     {
-      return $this->ImpressionShare;
+        return $this->ImpressionShare;
     }
 
     /**
@@ -78,8 +78,8 @@ class AuctionInsightKpi
      */
     public function setImpressionShare($ImpressionShare)
     {
-      $this->ImpressionShare = $ImpressionShare;
-      return $this;
+        $this->ImpressionShare = $ImpressionShare;
+        return $this;
     }
 
     /**
@@ -87,7 +87,7 @@ class AuctionInsightKpi
      */
     public function getOverlapRate()
     {
-      return $this->OverlapRate;
+        return $this->OverlapRate;
     }
 
     /**
@@ -96,8 +96,8 @@ class AuctionInsightKpi
      */
     public function setOverlapRate($OverlapRate)
     {
-      $this->OverlapRate = $OverlapRate;
-      return $this;
+        $this->OverlapRate = $OverlapRate;
+        return $this;
     }
 
     /**
@@ -105,7 +105,7 @@ class AuctionInsightKpi
      */
     public function getAveragePosition()
     {
-      return $this->AveragePosition;
+        return $this->AveragePosition;
     }
 
     /**
@@ -114,8 +114,8 @@ class AuctionInsightKpi
      */
     public function setAveragePosition($AveragePosition)
     {
-      $this->AveragePosition = $AveragePosition;
-      return $this;
+        $this->AveragePosition = $AveragePosition;
+        return $this;
     }
 
     /**
@@ -123,7 +123,7 @@ class AuctionInsightKpi
      */
     public function getAboveRate()
     {
-      return $this->AboveRate;
+        return $this->AboveRate;
     }
 
     /**
@@ -132,8 +132,8 @@ class AuctionInsightKpi
      */
     public function setAboveRate($AboveRate)
     {
-      $this->AboveRate = $AboveRate;
-      return $this;
+        $this->AboveRate = $AboveRate;
+        return $this;
     }
 
     /**
@@ -141,7 +141,7 @@ class AuctionInsightKpi
      */
     public function getTopOfPageRate()
     {
-      return $this->TopOfPageRate;
+        return $this->TopOfPageRate;
     }
 
     /**
@@ -150,8 +150,8 @@ class AuctionInsightKpi
      */
     public function setTopOfPageRate($TopOfPageRate)
     {
-      $this->TopOfPageRate = $TopOfPageRate;
-      return $this;
+        $this->TopOfPageRate = $TopOfPageRate;
+        return $this;
     }
 
     /**
@@ -159,7 +159,7 @@ class AuctionInsightKpi
      */
     public function getOutrankingShare()
     {
-      return $this->OutrankingShare;
+        return $this->OutrankingShare;
     }
 
     /**
@@ -168,8 +168,8 @@ class AuctionInsightKpi
      */
     public function setOutrankingShare($OutrankingShare)
     {
-      $this->OutrankingShare = $OutrankingShare;
-      return $this;
+        $this->OutrankingShare = $OutrankingShare;
+        return $this;
     }
 
 }

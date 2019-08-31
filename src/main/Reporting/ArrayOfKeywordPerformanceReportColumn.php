@@ -21,7 +21,7 @@ class ArrayOfKeywordPerformanceReportColumn implements \ArrayAccess, \IteratorAg
      */
     public function getKeywordPerformanceReportColumn()
     {
-      return $this->KeywordPerformanceReportColumn;
+        return $this->KeywordPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordPerformanceReportColumn implements \ArrayAccess, \IteratorAg
      */
     public function setKeywordPerformanceReportColumn(array $KeywordPerformanceReportColumn = null)
     {
-      $this->KeywordPerformanceReportColumn = $KeywordPerformanceReportColumn;
-      return $this;
+        $this->KeywordPerformanceReportColumn = $KeywordPerformanceReportColumn;
+        return $this;
     }
 
     /**

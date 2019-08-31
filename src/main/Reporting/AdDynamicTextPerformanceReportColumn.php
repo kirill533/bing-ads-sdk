@@ -38,12 +38,14 @@ class AdDynamicTextPerformanceReportColumn
     const KeywordStatus = 'KeywordStatus';
     const TitlePart1 = 'TitlePart1';
     const TitlePart2 = 'TitlePart2';
+    const TitlePart3 = 'TitlePart3';
     const Path1 = 'Path1';
     const Path2 = 'Path2';
     const FinalUrl = 'FinalUrl';
     const FinalMobileUrl = 'FinalMobileUrl';
     const FinalAppUrl = 'FinalAppUrl';
     const AdDescription = 'AdDescription';
+    const AdDescription2 = 'AdDescription2';
     const AdLabels = 'AdLabels';
 
 

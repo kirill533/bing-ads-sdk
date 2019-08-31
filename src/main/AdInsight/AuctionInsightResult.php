@@ -36,7 +36,7 @@ class AuctionInsightResult
      */
     public function getSegments()
     {
-      return $this->Segments;
+        return $this->Segments;
     }
 
     /**
@@ -45,8 +45,8 @@ class AuctionInsightResult
      */
     public function setSegments($Segments)
     {
-      $this->Segments = $Segments;
-      return $this;
+        $this->Segments = $Segments;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class AuctionInsightResult
      */
     public function getEntries()
     {
-      return $this->Entries;
+        return $this->Entries;
     }
 
     /**
@@ -63,8 +63,8 @@ class AuctionInsightResult
      */
     public function setEntries($Entries)
     {
-      $this->Entries = $Entries;
-      return $this;
+        $this->Entries = $Entries;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class AuctionInsightResult
      */
     public function getUsedImpressions()
     {
-      return $this->UsedImpressions;
+        return $this->UsedImpressions;
     }
 
     /**
@@ -81,8 +81,8 @@ class AuctionInsightResult
      */
     public function setUsedImpressions($UsedImpressions)
     {
-      $this->UsedImpressions = $UsedImpressions;
-      return $this;
+        $this->UsedImpressions = $UsedImpressions;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class AuctionInsightResult
      */
     public function getUsedKeywords()
     {
-      return $this->UsedKeywords;
+        return $this->UsedKeywords;
     }
 
     /**
@@ -99,8 +99,8 @@ class AuctionInsightResult
      */
     public function setUsedKeywords($UsedKeywords)
     {
-      $this->UsedKeywords = $UsedKeywords;
-      return $this;
+        $this->UsedKeywords = $UsedKeywords;
+        return $this;
     }
 
 }

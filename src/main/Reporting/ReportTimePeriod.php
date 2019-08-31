@@ -19,6 +19,9 @@ class ReportTimePeriod
     const LastSixMonths = 'LastSixMonths';
     const ThisYear = 'ThisYear';
     const LastYear = 'LastYear';
+    const ThisWeekStartingMonday = 'ThisWeekStartingMonday';
+    const LastWeekStartingMonday = 'LastWeekStartingMonday';
+    const LastFourWeeksStartingMonday = 'LastFourWeeksStartingMonday';
 
 
 }

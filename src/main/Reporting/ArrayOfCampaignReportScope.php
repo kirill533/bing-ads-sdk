@@ -21,7 +21,7 @@ class ArrayOfCampaignReportScope implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getCampaignReportScope()
     {
-      return $this->CampaignReportScope;
+        return $this->CampaignReportScope;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCampaignReportScope implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function setCampaignReportScope(array $CampaignReportScope = null)
     {
-      $this->CampaignReportScope = $CampaignReportScope;
-      return $this;
+        $this->CampaignReportScope = $CampaignReportScope;
+        return $this;
     }
 
     /**

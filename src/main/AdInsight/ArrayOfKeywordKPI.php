@@ -21,7 +21,7 @@ class ArrayOfKeywordKPI implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getKeywordKPI()
     {
-      return $this->KeywordKPI;
+        return $this->KeywordKPI;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordKPI implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setKeywordKPI(array $KeywordKPI = null)
     {
-      $this->KeywordKPI = $KeywordKPI;
-      return $this;
+        $this->KeywordKPI = $KeywordKPI;
+        return $this;
     }
 
     /**

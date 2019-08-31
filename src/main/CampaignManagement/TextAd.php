@@ -28,7 +28,7 @@ class TextAd extends Ad
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -36,7 +36,7 @@ class TextAd extends Ad
      */
     public function getDestinationUrl()
     {
-      return $this->DestinationUrl;
+        return $this->DestinationUrl;
     }
 
     /**
@@ -45,8 +45,8 @@ class TextAd extends Ad
      */
     public function setDestinationUrl($DestinationUrl)
     {
-      $this->DestinationUrl = $DestinationUrl;
-      return $this;
+        $this->DestinationUrl = $DestinationUrl;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class TextAd extends Ad
      */
     public function getDisplayUrl()
     {
-      return $this->DisplayUrl;
+        return $this->DisplayUrl;
     }
 
     /**
@@ -63,8 +63,8 @@ class TextAd extends Ad
      */
     public function setDisplayUrl($DisplayUrl)
     {
-      $this->DisplayUrl = $DisplayUrl;
-      return $this;
+        $this->DisplayUrl = $DisplayUrl;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class TextAd extends Ad
      */
     public function getText()
     {
-      return $this->Text;
+        return $this->Text;
     }
 
     /**
@@ -81,8 +81,8 @@ class TextAd extends Ad
      */
     public function setText($Text)
     {
-      $this->Text = $Text;
-      return $this;
+        $this->Text = $Text;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class TextAd extends Ad
      */
     public function getTitle()
     {
-      return $this->Title;
+        return $this->Title;
     }
 
     /**
@@ -99,8 +99,8 @@ class TextAd extends Ad
      */
     public function setTitle($Title)
     {
-      $this->Title = $Title;
-      return $this;
+        $this->Title = $Title;
+        return $this;
     }
 
 }

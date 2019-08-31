@@ -15,7 +15,7 @@ class GetMediaMetaDataByIdsRequest
      */
     public function __construct($MediaIds = null)
     {
-      $this->MediaIds = $MediaIds;
+    $this->MediaIds = $MediaIds;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetMediaMetaDataByIdsRequest
      */
     public function getMediaIds()
     {
-      return $this->MediaIds;
+        return $this->MediaIds;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetMediaMetaDataByIdsRequest
      */
     public function setMediaIds($MediaIds)
     {
-      $this->MediaIds = $MediaIds;
-      return $this;
+        $this->MediaIds = $MediaIds;
+        return $this;
     }
 
 }

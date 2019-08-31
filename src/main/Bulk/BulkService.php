@@ -41,7 +41,9 @@ class BulkService extends \PMG\BingAds\BingSoapClient
       'ArrayOfKeyValuePairOfstringstring' => 'PMG\\BingAds\\Bulk\\ArrayOfKeyValuePairOfstringstring',
       'KeyValuePairOfstringstring' => 'PMG\\BingAds\\Bulk\\KeyValuePairOfstringstring',
       'ApplicationFault' => 'PMG\\BingAds\\Bulk\\ApplicationFault',
+      'ApiFault' => 'PMG\\BingAds\\Bulk\\ApiFault',
       'ApiFaultDetail' => 'PMG\\BingAds\\Bulk\\ApiFault',
+      'AdApiFault' => 'PMG\\BingAds\\Bulk\\AdApiFault',
       'AdApiFaultDetail' => 'PMG\\BingAds\\Bulk\\AdApiFault',
     );
 
@@ -63,7 +65,7 @@ class BulkService extends \PMG\BingAds\BingSoapClient
      */
     public function downloadCampaignsByAccountIds(DownloadCampaignsByAccountIdsRequest $parameters)
     {
-      return $this->__soapCall("DownloadCampaignsByAccountIds", array($parameters));
+        return $this->__soapCall("DownloadCampaignsByAccountIds", [$parameters]);
     }
 
     /**
@@ -72,7 +74,7 @@ class BulkService extends \PMG\BingAds\BingSoapClient
      */
     public function downloadCampaignsByCampaignIds(DownloadCampaignsByCampaignIdsRequest $parameters)
     {
-      return $this->__soapCall("DownloadCampaignsByCampaignIds", array($parameters));
+        return $this->__soapCall("DownloadCampaignsByCampaignIds", [$parameters]);
     }
 
     /**
@@ -81,7 +83,7 @@ class BulkService extends \PMG\BingAds\BingSoapClient
      */
     public function getBulkDownloadStatus(GetBulkDownloadStatusRequest $parameters)
     {
-      return $this->__soapCall("GetBulkDownloadStatus", array($parameters));
+        return $this->__soapCall("GetBulkDownloadStatus", [$parameters]);
     }
 
     /**
@@ -90,7 +92,7 @@ class BulkService extends \PMG\BingAds\BingSoapClient
      */
     public function getBulkUploadUrl(GetBulkUploadUrlRequest $parameters)
     {
-      return $this->__soapCall("GetBulkUploadUrl", array($parameters));
+        return $this->__soapCall("GetBulkUploadUrl", [$parameters]);
     }
 
     /**
@@ -99,7 +101,7 @@ class BulkService extends \PMG\BingAds\BingSoapClient
      */
     public function getBulkUploadStatus(GetBulkUploadStatusRequest $parameters)
     {
-      return $this->__soapCall("GetBulkUploadStatus", array($parameters));
+        return $this->__soapCall("GetBulkUploadStatus", [$parameters]);
     }
 
 }

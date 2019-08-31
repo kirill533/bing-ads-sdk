@@ -15,7 +15,7 @@ class DeleteLabelsRequest
      */
     public function __construct($LabelIds = null)
     {
-      $this->LabelIds = $LabelIds;
+    $this->LabelIds = $LabelIds;
     }
 
     /**
@@ -23,7 +23,7 @@ class DeleteLabelsRequest
      */
     public function getLabelIds()
     {
-      return $this->LabelIds;
+        return $this->LabelIds;
     }
 
     /**
@@ -32,8 +32,8 @@ class DeleteLabelsRequest
      */
     public function setLabelIds($LabelIds)
     {
-      $this->LabelIds = $LabelIds;
-      return $this;
+        $this->LabelIds = $LabelIds;
+        return $this;
     }
 
 }

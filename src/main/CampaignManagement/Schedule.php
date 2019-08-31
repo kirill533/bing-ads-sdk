@@ -36,7 +36,7 @@ class Schedule
      */
     public function getDayTimeRanges()
     {
-      return $this->DayTimeRanges;
+        return $this->DayTimeRanges;
     }
 
     /**
@@ -45,8 +45,8 @@ class Schedule
      */
     public function setDayTimeRanges($DayTimeRanges)
     {
-      $this->DayTimeRanges = $DayTimeRanges;
-      return $this;
+        $this->DayTimeRanges = $DayTimeRanges;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class Schedule
      */
     public function getEndDate()
     {
-      return $this->EndDate;
+        return $this->EndDate;
     }
 
     /**
@@ -63,8 +63,8 @@ class Schedule
      */
     public function setEndDate($EndDate)
     {
-      $this->EndDate = $EndDate;
-      return $this;
+        $this->EndDate = $EndDate;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class Schedule
      */
     public function getStartDate()
     {
-      return $this->StartDate;
+        return $this->StartDate;
     }
 
     /**
@@ -81,8 +81,8 @@ class Schedule
      */
     public function setStartDate($StartDate)
     {
-      $this->StartDate = $StartDate;
-      return $this;
+        $this->StartDate = $StartDate;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class Schedule
      */
     public function getUseSearcherTimeZone()
     {
-      return $this->UseSearcherTimeZone;
+        return $this->UseSearcherTimeZone;
     }
 
     /**
@@ -99,8 +99,8 @@ class Schedule
      */
     public function setUseSearcherTimeZone($UseSearcherTimeZone)
     {
-      $this->UseSearcherTimeZone = $UseSearcherTimeZone;
-      return $this;
+        $this->UseSearcherTimeZone = $UseSearcherTimeZone;
+        return $this;
     }
 
 }

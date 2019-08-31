@@ -15,7 +15,7 @@ class GetEstimatedBidByKeywordIdsResponse
      */
     public function __construct($KeywordEstimatedBids = null)
     {
-      $this->KeywordEstimatedBids = $KeywordEstimatedBids;
+    $this->KeywordEstimatedBids = $KeywordEstimatedBids;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetEstimatedBidByKeywordIdsResponse
      */
     public function getKeywordEstimatedBids()
     {
-      return $this->KeywordEstimatedBids;
+        return $this->KeywordEstimatedBids;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetEstimatedBidByKeywordIdsResponse
      */
     public function setKeywordEstimatedBids($KeywordEstimatedBids)
     {
-      $this->KeywordEstimatedBids = $KeywordEstimatedBids;
-      return $this;
+        $this->KeywordEstimatedBids = $KeywordEstimatedBids;
+        return $this;
     }
 
 }

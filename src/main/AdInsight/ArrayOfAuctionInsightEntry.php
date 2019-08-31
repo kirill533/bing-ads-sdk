@@ -21,7 +21,7 @@ class ArrayOfAuctionInsightEntry implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getAuctionInsightEntry()
     {
-      return $this->AuctionInsightEntry;
+        return $this->AuctionInsightEntry;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAuctionInsightEntry implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function setAuctionInsightEntry(array $AuctionInsightEntry = null)
     {
-      $this->AuctionInsightEntry = $AuctionInsightEntry;
-      return $this;
+        $this->AuctionInsightEntry = $AuctionInsightEntry;
+        return $this;
     }
 
     /**

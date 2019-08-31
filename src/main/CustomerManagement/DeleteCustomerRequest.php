@@ -21,8 +21,8 @@ class DeleteCustomerRequest
      */
     public function __construct($CustomerId = null, $TimeStamp = null)
     {
-      $this->CustomerId = $CustomerId;
-      $this->TimeStamp = $TimeStamp;
+    $this->CustomerId = $CustomerId;
+    $this->TimeStamp = $TimeStamp;
     }
 
     /**
@@ -30,7 +30,7 @@ class DeleteCustomerRequest
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
@@ -39,8 +39,8 @@ class DeleteCustomerRequest
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class DeleteCustomerRequest
      */
     public function getTimeStamp()
     {
-      return $this->TimeStamp;
+        return $this->TimeStamp;
     }
 
     /**
@@ -57,8 +57,8 @@ class DeleteCustomerRequest
      */
     public function setTimeStamp($TimeStamp)
     {
-      $this->TimeStamp = $TimeStamp;
-      return $this;
+        $this->TimeStamp = $TimeStamp;
+        return $this;
     }
 
 }

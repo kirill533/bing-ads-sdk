@@ -21,7 +21,7 @@ class ArrayOfKeywordEstimatedBid implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getKeywordEstimatedBid()
     {
-      return $this->KeywordEstimatedBid;
+        return $this->KeywordEstimatedBid;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordEstimatedBid implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function setKeywordEstimatedBid(array $KeywordEstimatedBid = null)
     {
-      $this->KeywordEstimatedBid = $KeywordEstimatedBid;
-      return $this;
+        $this->KeywordEstimatedBid = $KeywordEstimatedBid;
+        return $this;
     }
 
     /**

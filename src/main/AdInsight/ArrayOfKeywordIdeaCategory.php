@@ -21,7 +21,7 @@ class ArrayOfKeywordIdeaCategory implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getKeywordIdeaCategory()
     {
-      return $this->KeywordIdeaCategory;
+        return $this->KeywordIdeaCategory;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordIdeaCategory implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function setKeywordIdeaCategory(array $KeywordIdeaCategory = null)
     {
-      $this->KeywordIdeaCategory = $KeywordIdeaCategory;
-      return $this;
+        $this->KeywordIdeaCategory = $KeywordIdeaCategory;
+        return $this;
     }
 
     /**

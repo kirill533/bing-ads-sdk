@@ -21,7 +21,7 @@ class ArrayOfBudget implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getBudget()
     {
-      return $this->Budget;
+        return $this->Budget;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfBudget implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setBudget(array $Budget = null)
     {
-      $this->Budget = $Budget;
-      return $this;
+        $this->Budget = $Budget;
+        return $this;
     }
 
     /**

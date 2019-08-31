@@ -13,7 +13,7 @@ class PagesViewedPerVisitGoal extends ConversionGoal
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class PagesViewedPerVisitGoal extends ConversionGoal
      */
     public function getMinimumPagesViewed()
     {
-      return $this->MinimumPagesViewed;
+        return $this->MinimumPagesViewed;
     }
 
     /**
@@ -30,8 +30,8 @@ class PagesViewedPerVisitGoal extends ConversionGoal
      */
     public function setMinimumPagesViewed($MinimumPagesViewed)
     {
-      $this->MinimumPagesViewed = $MinimumPagesViewed;
-      return $this;
+        $this->MinimumPagesViewed = $MinimumPagesViewed;
+        return $this;
     }
 
 }

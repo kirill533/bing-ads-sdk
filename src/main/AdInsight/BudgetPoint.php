@@ -41,7 +41,7 @@ class BudgetPoint
      */
     public function getBudgetAmount()
     {
-      return $this->BudgetAmount;
+        return $this->BudgetAmount;
     }
 
     /**
@@ -50,8 +50,8 @@ class BudgetPoint
      */
     public function setBudgetAmount($BudgetAmount)
     {
-      $this->BudgetAmount = $BudgetAmount;
-      return $this;
+        $this->BudgetAmount = $BudgetAmount;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class BudgetPoint
      */
     public function getBudgetPointType()
     {
-      return $this->BudgetPointType;
+        return $this->BudgetPointType;
     }
 
     /**
@@ -68,8 +68,8 @@ class BudgetPoint
      */
     public function setBudgetPointType($BudgetPointType)
     {
-      $this->BudgetPointType = $BudgetPointType;
-      return $this;
+        $this->BudgetPointType = $BudgetPointType;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class BudgetPoint
      */
     public function getEstimatedWeeklyClicks()
     {
-      return $this->EstimatedWeeklyClicks;
+        return $this->EstimatedWeeklyClicks;
     }
 
     /**
@@ -86,8 +86,8 @@ class BudgetPoint
      */
     public function setEstimatedWeeklyClicks($EstimatedWeeklyClicks)
     {
-      $this->EstimatedWeeklyClicks = $EstimatedWeeklyClicks;
-      return $this;
+        $this->EstimatedWeeklyClicks = $EstimatedWeeklyClicks;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class BudgetPoint
      */
     public function getEstimatedWeeklyCost()
     {
-      return $this->EstimatedWeeklyCost;
+        return $this->EstimatedWeeklyCost;
     }
 
     /**
@@ -104,8 +104,8 @@ class BudgetPoint
      */
     public function setEstimatedWeeklyCost($EstimatedWeeklyCost)
     {
-      $this->EstimatedWeeklyCost = $EstimatedWeeklyCost;
-      return $this;
+        $this->EstimatedWeeklyCost = $EstimatedWeeklyCost;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class BudgetPoint
      */
     public function getEstimatedWeeklyImpressions()
     {
-      return $this->EstimatedWeeklyImpressions;
+        return $this->EstimatedWeeklyImpressions;
     }
 
     /**
@@ -122,8 +122,8 @@ class BudgetPoint
      */
     public function setEstimatedWeeklyImpressions($EstimatedWeeklyImpressions)
     {
-      $this->EstimatedWeeklyImpressions = $EstimatedWeeklyImpressions;
-      return $this;
+        $this->EstimatedWeeklyImpressions = $EstimatedWeeklyImpressions;
+        return $this;
     }
 
 }

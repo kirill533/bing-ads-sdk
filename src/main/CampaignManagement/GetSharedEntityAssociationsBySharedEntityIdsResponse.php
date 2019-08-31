@@ -21,8 +21,8 @@ class GetSharedEntityAssociationsBySharedEntityIdsResponse
      */
     public function __construct($Associations = null, $PartialErrors = null)
     {
-      $this->Associations = $Associations;
-      $this->PartialErrors = $PartialErrors;
+    $this->Associations = $Associations;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetSharedEntityAssociationsBySharedEntityIdsResponse
      */
     public function getAssociations()
     {
-      return $this->Associations;
+        return $this->Associations;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetSharedEntityAssociationsBySharedEntityIdsResponse
      */
     public function setAssociations($Associations)
     {
-      $this->Associations = $Associations;
-      return $this;
+        $this->Associations = $Associations;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetSharedEntityAssociationsBySharedEntityIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetSharedEntityAssociationsBySharedEntityIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

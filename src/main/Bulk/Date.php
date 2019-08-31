@@ -27,9 +27,9 @@ class Date
      */
     public function __construct($Day = null, $Month = null, $Year = null)
     {
-      $this->Day = $Day;
-      $this->Month = $Month;
-      $this->Year = $Year;
+    $this->Day = $Day;
+    $this->Month = $Month;
+    $this->Year = $Year;
     }
 
     /**
@@ -37,7 +37,7 @@ class Date
      */
     public function getDay()
     {
-      return $this->Day;
+        return $this->Day;
     }
 
     /**
@@ -46,8 +46,8 @@ class Date
      */
     public function setDay($Day)
     {
-      $this->Day = $Day;
-      return $this;
+        $this->Day = $Day;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class Date
      */
     public function getMonth()
     {
-      return $this->Month;
+        return $this->Month;
     }
 
     /**
@@ -64,8 +64,8 @@ class Date
      */
     public function setMonth($Month)
     {
-      $this->Month = $Month;
-      return $this;
+        $this->Month = $Month;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class Date
      */
     public function getYear()
     {
-      return $this->Year;
+        return $this->Year;
     }
 
     /**
@@ -82,8 +82,8 @@ class Date
      */
     public function setYear($Year)
     {
-      $this->Year = $Year;
-      return $this;
+        $this->Year = $Year;
+        return $this;
     }
 
 }

@@ -3,8 +3,11 @@
 namespace PMG\BingAds\Generator;
 
 use Psr\Log\LoggerInterface;
+use Wsdl2PhpGenerator\ComplexType;
 use Wsdl2PhpGenerator\Generator as WsdlGenerator;
 use Wsdl2PhpGenerator\Operation;
+use Wsdl2PhpGenerator\Xml\ServiceNode;
+use Wsdl2PhpGenerator\Xml\TypeNode;
 
 class Generator extends WsdlGenerator
 {
@@ -41,22 +44,22 @@ class Generator extends WsdlGenerator
         }
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    protected function loadService()
+    protected function createServiceFor(ServiceNode $definition) : BingService
     {
-        $service = $this->wsdl->getService();
-        $this->log('Starting to load service ' . $service->getName());
+        return new BingService(
+            $this->config,
+            $definition->getName(),
+            $this->types,
+            $definition->getDocumentation()
+        );
+    }
 
-        $this->service = new BingService($this->config, $service->getName(), $this->types, $service->getDocumentation());
-
-        foreach ($this->wsdl->getOperations() as $function) {
-            $this->log('Loading function ' . $function->getName());
-
-            $this->service->addOperation(new Operation($function->getName(), $function->getParams(), $function->getDocumentation(), $function->getReturns()));
+    protected function createComplexType(TypeNode $typeNode) : ComplexType
+    {
+        if ('OfflineConversion' === $typeNode->getName()) {
+            return new OfflineConversionComplexType($this->config, $typeNode->getName(), $this->types);
         }
 
-        $this->log('Done loading service ' . $service->getName());
+        return parent::createComplexType($typeNode);
     }
 }

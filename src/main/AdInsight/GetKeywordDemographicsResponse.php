@@ -15,7 +15,7 @@ class GetKeywordDemographicsResponse
      */
     public function __construct($KeywordDemographicResult = null)
     {
-      $this->KeywordDemographicResult = $KeywordDemographicResult;
+    $this->KeywordDemographicResult = $KeywordDemographicResult;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetKeywordDemographicsResponse
      */
     public function getKeywordDemographicResult()
     {
-      return $this->KeywordDemographicResult;
+        return $this->KeywordDemographicResult;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetKeywordDemographicsResponse
      */
     public function setKeywordDemographicResult($KeywordDemographicResult)
     {
-      $this->KeywordDemographicResult = $KeywordDemographicResult;
-      return $this;
+        $this->KeywordDemographicResult = $KeywordDemographicResult;
+        return $this;
     }
 
 }

@@ -21,7 +21,7 @@ class ArrayOfAccountPerformanceReportColumn implements \ArrayAccess, \IteratorAg
      */
     public function getAccountPerformanceReportColumn()
     {
-      return $this->AccountPerformanceReportColumn;
+        return $this->AccountPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAccountPerformanceReportColumn implements \ArrayAccess, \IteratorAg
      */
     public function setAccountPerformanceReportColumn(array $AccountPerformanceReportColumn = null)
     {
-      $this->AccountPerformanceReportColumn = $AccountPerformanceReportColumn;
-      return $this;
+        $this->AccountPerformanceReportColumn = $AccountPerformanceReportColumn;
+        return $this;
     }
 
     /**

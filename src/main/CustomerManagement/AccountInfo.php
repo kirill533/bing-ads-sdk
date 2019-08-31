@@ -41,7 +41,7 @@ class AccountInfo
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -50,8 +50,8 @@ class AccountInfo
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class AccountInfo
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -68,8 +68,8 @@ class AccountInfo
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class AccountInfo
      */
     public function getNumber()
     {
-      return $this->Number;
+        return $this->Number;
     }
 
     /**
@@ -86,8 +86,8 @@ class AccountInfo
      */
     public function setNumber($Number)
     {
-      $this->Number = $Number;
-      return $this;
+        $this->Number = $Number;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class AccountInfo
      */
     public function getAccountLifeCycleStatus()
     {
-      return $this->AccountLifeCycleStatus;
+        return $this->AccountLifeCycleStatus;
     }
 
     /**
@@ -104,8 +104,8 @@ class AccountInfo
      */
     public function setAccountLifeCycleStatus($AccountLifeCycleStatus)
     {
-      $this->AccountLifeCycleStatus = $AccountLifeCycleStatus;
-      return $this;
+        $this->AccountLifeCycleStatus = $AccountLifeCycleStatus;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class AccountInfo
      */
     public function getPauseReason()
     {
-      return $this->PauseReason;
+        return $this->PauseReason;
     }
 
     /**
@@ -122,8 +122,8 @@ class AccountInfo
      */
     public function setPauseReason($PauseReason)
     {
-      $this->PauseReason = $PauseReason;
-      return $this;
+        $this->PauseReason = $PauseReason;
+        return $this;
     }
 
 }

@@ -21,8 +21,8 @@ class SetLabelAssociationsRequest
      */
     public function __construct($EntityType = null, $LabelAssociations = null)
     {
-      $this->EntityType = $EntityType;
-      $this->LabelAssociations = $LabelAssociations;
+    $this->EntityType = $EntityType;
+    $this->LabelAssociations = $LabelAssociations;
     }
 
     /**
@@ -30,7 +30,7 @@ class SetLabelAssociationsRequest
      */
     public function getEntityType()
     {
-      return $this->EntityType;
+        return $this->EntityType;
     }
 
     /**
@@ -39,8 +39,8 @@ class SetLabelAssociationsRequest
      */
     public function setEntityType($EntityType)
     {
-      $this->EntityType = $EntityType;
-      return $this;
+        $this->EntityType = $EntityType;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class SetLabelAssociationsRequest
      */
     public function getLabelAssociations()
     {
-      return $this->LabelAssociations;
+        return $this->LabelAssociations;
     }
 
     /**
@@ -57,8 +57,8 @@ class SetLabelAssociationsRequest
      */
     public function setLabelAssociations($LabelAssociations)
     {
-      $this->LabelAssociations = $LabelAssociations;
-      return $this;
+        $this->LabelAssociations = $LabelAssociations;
+        return $this;
     }
 
 }

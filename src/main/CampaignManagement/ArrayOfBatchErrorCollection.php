@@ -21,7 +21,7 @@ class ArrayOfBatchErrorCollection implements \ArrayAccess, \IteratorAggregate, \
      */
     public function getBatchErrorCollection()
     {
-      return $this->BatchErrorCollection;
+        return $this->BatchErrorCollection;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfBatchErrorCollection implements \ArrayAccess, \IteratorAggregate, \
      */
     public function setBatchErrorCollection(array $BatchErrorCollection = null)
     {
-      $this->BatchErrorCollection = $BatchErrorCollection;
-      return $this;
+        $this->BatchErrorCollection = $BatchErrorCollection;
+        return $this;
     }
 
     /**

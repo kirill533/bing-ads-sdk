@@ -31,7 +31,7 @@ class OperationError
      */
     public function getCode()
     {
-      return $this->Code;
+        return $this->Code;
     }
 
     /**
@@ -40,8 +40,8 @@ class OperationError
      */
     public function setCode($Code)
     {
-      $this->Code = $Code;
-      return $this;
+        $this->Code = $Code;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class OperationError
      */
     public function getDetails()
     {
-      return $this->Details;
+        return $this->Details;
     }
 
     /**
@@ -58,8 +58,8 @@ class OperationError
      */
     public function setDetails($Details)
     {
-      $this->Details = $Details;
-      return $this;
+        $this->Details = $Details;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class OperationError
      */
     public function getMessage()
     {
-      return $this->Message;
+        return $this->Message;
     }
 
     /**
@@ -76,8 +76,8 @@ class OperationError
      */
     public function setMessage($Message)
     {
-      $this->Message = $Message;
-      return $this;
+        $this->Message = $Message;
+        return $this;
     }
 
 }

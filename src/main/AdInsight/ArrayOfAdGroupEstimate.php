@@ -21,7 +21,7 @@ class ArrayOfAdGroupEstimate implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getAdGroupEstimate()
     {
-      return $this->AdGroupEstimate;
+        return $this->AdGroupEstimate;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdGroupEstimate implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function setAdGroupEstimate(array $AdGroupEstimate = null)
     {
-      $this->AdGroupEstimate = $AdGroupEstimate;
-      return $this;
+        $this->AdGroupEstimate = $AdGroupEstimate;
+        return $this;
     }
 
     /**

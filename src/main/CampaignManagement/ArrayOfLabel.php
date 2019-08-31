@@ -21,7 +21,7 @@ class ArrayOfLabel implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getLabel()
     {
-      return $this->Label;
+        return $this->Label;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfLabel implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setLabel(array $Label = null)
     {
-      $this->Label = $Label;
-      return $this;
+        $this->Label = $Label;
+        return $this;
     }
 
     /**

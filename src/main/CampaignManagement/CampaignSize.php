@@ -20,7 +20,7 @@ class CampaignSize
      */
     public function __construct($CampaignId = null)
     {
-      $this->CampaignId = $CampaignId;
+    $this->CampaignId = $CampaignId;
     }
 
     /**
@@ -28,7 +28,7 @@ class CampaignSize
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -37,8 +37,8 @@ class CampaignSize
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -46,7 +46,7 @@ class CampaignSize
      */
     public function getSize()
     {
-      return $this->Size;
+        return $this->Size;
     }
 
     /**
@@ -55,8 +55,8 @@ class CampaignSize
      */
     public function setSize($Size)
     {
-      $this->Size = $Size;
-      return $this;
+        $this->Size = $Size;
+        return $this;
     }
 
 }

@@ -21,7 +21,7 @@ class ArrayOfAdGroupBidLandscapeInput implements \ArrayAccess, \IteratorAggregat
      */
     public function getAdGroupBidLandscapeInput()
     {
-      return $this->AdGroupBidLandscapeInput;
+        return $this->AdGroupBidLandscapeInput;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdGroupBidLandscapeInput implements \ArrayAccess, \IteratorAggregat
      */
     public function setAdGroupBidLandscapeInput(array $AdGroupBidLandscapeInput = null)
     {
-      $this->AdGroupBidLandscapeInput = $AdGroupBidLandscapeInput;
-      return $this;
+        $this->AdGroupBidLandscapeInput = $AdGroupBidLandscapeInput;
+        return $this;
     }
 
     /**

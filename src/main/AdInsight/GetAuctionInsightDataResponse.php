@@ -15,7 +15,7 @@ class GetAuctionInsightDataResponse
      */
     public function __construct($Result = null)
     {
-      $this->Result = $Result;
+    $this->Result = $Result;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetAuctionInsightDataResponse
      */
     public function getResult()
     {
-      return $this->Result;
+        return $this->Result;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetAuctionInsightDataResponse
      */
     public function setResult($Result)
     {
-      $this->Result = $Result;
-      return $this;
+        $this->Result = $Result;
+        return $this;
     }
 
 }

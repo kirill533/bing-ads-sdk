@@ -21,7 +21,7 @@ class ArrayOfSharedListItem implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getSharedListItem()
     {
-      return $this->SharedListItem;
+        return $this->SharedListItem;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfSharedListItem implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function setSharedListItem(array $SharedListItem = null)
     {
-      $this->SharedListItem = $SharedListItem;
-      return $this;
+        $this->SharedListItem = $SharedListItem;
+        return $this;
     }
 
     /**

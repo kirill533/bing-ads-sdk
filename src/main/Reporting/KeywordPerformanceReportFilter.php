@@ -96,7 +96,7 @@ class KeywordPerformanceReportFilter
      */
     public function getAccountStatus()
     {
-      return $this->AccountStatus;
+        return $this->AccountStatus;
     }
 
     /**
@@ -105,8 +105,8 @@ class KeywordPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
     {
-      $this->AccountStatus = $AccountStatus;
-      return $this;
+        $this->AccountStatus = $AccountStatus;
+        return $this;
     }
 
     /**
@@ -114,7 +114,7 @@ class KeywordPerformanceReportFilter
      */
     public function getAdDistribution()
     {
-      return $this->AdDistribution;
+        return $this->AdDistribution;
     }
 
     /**
@@ -123,8 +123,8 @@ class KeywordPerformanceReportFilter
      */
     public function setAdDistribution($AdDistribution)
     {
-      $this->AdDistribution = $AdDistribution;
-      return $this;
+        $this->AdDistribution = $AdDistribution;
+        return $this;
     }
 
     /**
@@ -132,7 +132,7 @@ class KeywordPerformanceReportFilter
      */
     public function getAdGroupStatus()
     {
-      return $this->AdGroupStatus;
+        return $this->AdGroupStatus;
     }
 
     /**
@@ -141,8 +141,8 @@ class KeywordPerformanceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
     {
-      $this->AdGroupStatus = $AdGroupStatus;
-      return $this;
+        $this->AdGroupStatus = $AdGroupStatus;
+        return $this;
     }
 
     /**
@@ -150,7 +150,7 @@ class KeywordPerformanceReportFilter
      */
     public function getAdRelevance()
     {
-      return $this->AdRelevance;
+        return $this->AdRelevance;
     }
 
     /**
@@ -159,8 +159,8 @@ class KeywordPerformanceReportFilter
      */
     public function setAdRelevance($AdRelevance)
     {
-      $this->AdRelevance = $AdRelevance;
-      return $this;
+        $this->AdRelevance = $AdRelevance;
+        return $this;
     }
 
     /**
@@ -168,7 +168,7 @@ class KeywordPerformanceReportFilter
      */
     public function getAdType()
     {
-      return $this->AdType;
+        return $this->AdType;
     }
 
     /**
@@ -177,8 +177,8 @@ class KeywordPerformanceReportFilter
      */
     public function setAdType($AdType)
     {
-      $this->AdType = $AdType;
-      return $this;
+        $this->AdType = $AdType;
+        return $this;
     }
 
     /**
@@ -186,7 +186,7 @@ class KeywordPerformanceReportFilter
      */
     public function getBidMatchType()
     {
-      return $this->BidMatchType;
+        return $this->BidMatchType;
     }
 
     /**
@@ -195,8 +195,8 @@ class KeywordPerformanceReportFilter
      */
     public function setBidMatchType($BidMatchType)
     {
-      $this->BidMatchType = $BidMatchType;
-      return $this;
+        $this->BidMatchType = $BidMatchType;
+        return $this;
     }
 
     /**
@@ -204,7 +204,7 @@ class KeywordPerformanceReportFilter
      */
     public function getBidStrategyType()
     {
-      return $this->BidStrategyType;
+        return $this->BidStrategyType;
     }
 
     /**
@@ -213,8 +213,8 @@ class KeywordPerformanceReportFilter
      */
     public function setBidStrategyType($BidStrategyType)
     {
-      $this->BidStrategyType = $BidStrategyType;
-      return $this;
+        $this->BidStrategyType = $BidStrategyType;
+        return $this;
     }
 
     /**
@@ -222,7 +222,7 @@ class KeywordPerformanceReportFilter
      */
     public function getCampaignStatus()
     {
-      return $this->CampaignStatus;
+        return $this->CampaignStatus;
     }
 
     /**
@@ -231,8 +231,8 @@ class KeywordPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
     {
-      $this->CampaignStatus = $CampaignStatus;
-      return $this;
+        $this->CampaignStatus = $CampaignStatus;
+        return $this;
     }
 
     /**
@@ -240,7 +240,7 @@ class KeywordPerformanceReportFilter
      */
     public function getDeliveredMatchType()
     {
-      return $this->DeliveredMatchType;
+        return $this->DeliveredMatchType;
     }
 
     /**
@@ -249,8 +249,8 @@ class KeywordPerformanceReportFilter
      */
     public function setDeliveredMatchType($DeliveredMatchType)
     {
-      $this->DeliveredMatchType = $DeliveredMatchType;
-      return $this;
+        $this->DeliveredMatchType = $DeliveredMatchType;
+        return $this;
     }
 
     /**
@@ -258,7 +258,7 @@ class KeywordPerformanceReportFilter
      */
     public function getDeviceType()
     {
-      return $this->DeviceType;
+        return $this->DeviceType;
     }
 
     /**
@@ -267,8 +267,8 @@ class KeywordPerformanceReportFilter
      */
     public function setDeviceType($DeviceType)
     {
-      $this->DeviceType = $DeviceType;
-      return $this;
+        $this->DeviceType = $DeviceType;
+        return $this;
     }
 
     /**
@@ -276,7 +276,7 @@ class KeywordPerformanceReportFilter
      */
     public function getExpectedCtr()
     {
-      return $this->ExpectedCtr;
+        return $this->ExpectedCtr;
     }
 
     /**
@@ -285,8 +285,8 @@ class KeywordPerformanceReportFilter
      */
     public function setExpectedCtr($ExpectedCtr)
     {
-      $this->ExpectedCtr = $ExpectedCtr;
-      return $this;
+        $this->ExpectedCtr = $ExpectedCtr;
+        return $this;
     }
 
     /**
@@ -294,7 +294,7 @@ class KeywordPerformanceReportFilter
      */
     public function getKeywordStatus()
     {
-      return $this->KeywordStatus;
+        return $this->KeywordStatus;
     }
 
     /**
@@ -303,8 +303,8 @@ class KeywordPerformanceReportFilter
      */
     public function setKeywordStatus($KeywordStatus)
     {
-      $this->KeywordStatus = $KeywordStatus;
-      return $this;
+        $this->KeywordStatus = $KeywordStatus;
+        return $this;
     }
 
     /**
@@ -312,7 +312,7 @@ class KeywordPerformanceReportFilter
      */
     public function getKeywords()
     {
-      return $this->Keywords;
+        return $this->Keywords;
     }
 
     /**
@@ -321,8 +321,8 @@ class KeywordPerformanceReportFilter
      */
     public function setKeywords($Keywords)
     {
-      $this->Keywords = $Keywords;
-      return $this;
+        $this->Keywords = $Keywords;
+        return $this;
     }
 
     /**
@@ -330,7 +330,7 @@ class KeywordPerformanceReportFilter
      */
     public function getLandingPageExperience()
     {
-      return $this->LandingPageExperience;
+        return $this->LandingPageExperience;
     }
 
     /**
@@ -339,8 +339,8 @@ class KeywordPerformanceReportFilter
      */
     public function setLandingPageExperience($LandingPageExperience)
     {
-      $this->LandingPageExperience = $LandingPageExperience;
-      return $this;
+        $this->LandingPageExperience = $LandingPageExperience;
+        return $this;
     }
 
     /**
@@ -348,7 +348,7 @@ class KeywordPerformanceReportFilter
      */
     public function getLanguageCode()
     {
-      return $this->LanguageCode;
+        return $this->LanguageCode;
     }
 
     /**
@@ -357,8 +357,8 @@ class KeywordPerformanceReportFilter
      */
     public function setLanguageCode($LanguageCode)
     {
-      $this->LanguageCode = $LanguageCode;
-      return $this;
+        $this->LanguageCode = $LanguageCode;
+        return $this;
     }
 
     /**
@@ -366,7 +366,7 @@ class KeywordPerformanceReportFilter
      */
     public function getQualityScore()
     {
-      return $this->QualityScore;
+        return $this->QualityScore;
     }
 
     /**
@@ -375,8 +375,8 @@ class KeywordPerformanceReportFilter
      */
     public function setQualityScore($QualityScore)
     {
-      $this->QualityScore = $QualityScore;
-      return $this;
+        $this->QualityScore = $QualityScore;
+        return $this;
     }
 
 }

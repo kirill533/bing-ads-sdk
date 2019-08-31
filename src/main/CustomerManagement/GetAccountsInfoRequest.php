@@ -21,8 +21,8 @@ class GetAccountsInfoRequest
      */
     public function __construct($CustomerId = null, $OnlyParentAccounts = null)
     {
-      $this->CustomerId = $CustomerId;
-      $this->OnlyParentAccounts = $OnlyParentAccounts;
+    $this->CustomerId = $CustomerId;
+    $this->OnlyParentAccounts = $OnlyParentAccounts;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetAccountsInfoRequest
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetAccountsInfoRequest
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetAccountsInfoRequest
      */
     public function getOnlyParentAccounts()
     {
-      return $this->OnlyParentAccounts;
+        return $this->OnlyParentAccounts;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetAccountsInfoRequest
      */
     public function setOnlyParentAccounts($OnlyParentAccounts)
     {
-      $this->OnlyParentAccounts = $OnlyParentAccounts;
-      return $this;
+        $this->OnlyParentAccounts = $OnlyParentAccounts;
+        return $this;
     }
 
 }

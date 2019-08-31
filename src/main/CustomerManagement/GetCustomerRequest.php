@@ -11,11 +11,18 @@ class GetCustomerRequest
     protected $CustomerId = null;
 
     /**
-     * @param int $CustomerId
+     * @var boolean $IncludeCustomerAddress
      */
-    public function __construct($CustomerId = null)
+    protected $IncludeCustomerAddress = null;
+
+    /**
+     * @param int $CustomerId
+     * @param boolean $IncludeCustomerAddress
+     */
+    public function __construct($CustomerId = null, $IncludeCustomerAddress = null)
     {
-      $this->CustomerId = $CustomerId;
+    $this->CustomerId = $CustomerId;
+    $this->IncludeCustomerAddress = $IncludeCustomerAddress;
     }
 
     /**
@@ -23,7 +30,7 @@ class GetCustomerRequest
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
@@ -32,8 +39,26 @@ class GetCustomerRequest
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getIncludeCustomerAddress()
+    {
+        return $this->IncludeCustomerAddress;
+    }
+
+    /**
+     * @param boolean $IncludeCustomerAddress
+     * @return \PMG\BingAds\CustomerManagement\GetCustomerRequest
+     */
+    public function setIncludeCustomerAddress($IncludeCustomerAddress)
+    {
+        $this->IncludeCustomerAddress = $IncludeCustomerAddress;
+        return $this;
     }
 
 }

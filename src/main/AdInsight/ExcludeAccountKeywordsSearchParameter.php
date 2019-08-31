@@ -21,7 +21,7 @@ class ExcludeAccountKeywordsSearchParameter extends SearchParameter
      */
     public function getExcludeAccountKeywords()
     {
-      return $this->ExcludeAccountKeywords;
+        return $this->ExcludeAccountKeywords;
     }
 
     /**
@@ -30,8 +30,8 @@ class ExcludeAccountKeywordsSearchParameter extends SearchParameter
      */
     public function setExcludeAccountKeywords($ExcludeAccountKeywords)
     {
-      $this->ExcludeAccountKeywords = $ExcludeAccountKeywords;
-      return $this;
+        $this->ExcludeAccountKeywords = $ExcludeAccountKeywords;
+        return $this;
     }
 
 }

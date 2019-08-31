@@ -21,7 +21,7 @@ class ArrayOfAdExtensionByAdReportColumn implements \ArrayAccess, \IteratorAggre
      */
     public function getAdExtensionByAdReportColumn()
     {
-      return $this->AdExtensionByAdReportColumn;
+        return $this->AdExtensionByAdReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdExtensionByAdReportColumn implements \ArrayAccess, \IteratorAggre
      */
     public function setAdExtensionByAdReportColumn(array $AdExtensionByAdReportColumn = null)
     {
-      $this->AdExtensionByAdReportColumn = $AdExtensionByAdReportColumn;
-      return $this;
+        $this->AdExtensionByAdReportColumn = $AdExtensionByAdReportColumn;
+        return $this;
     }
 
     /**

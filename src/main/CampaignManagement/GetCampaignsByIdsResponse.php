@@ -21,8 +21,8 @@ class GetCampaignsByIdsResponse
      */
     public function __construct($Campaigns = null, $PartialErrors = null)
     {
-      $this->Campaigns = $Campaigns;
-      $this->PartialErrors = $PartialErrors;
+    $this->Campaigns = $Campaigns;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetCampaignsByIdsResponse
      */
     public function getCampaigns()
     {
-      return $this->Campaigns;
+        return $this->Campaigns;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetCampaignsByIdsResponse
      */
     public function setCampaigns($Campaigns)
     {
-      $this->Campaigns = $Campaigns;
-      return $this;
+        $this->Campaigns = $Campaigns;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetCampaignsByIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetCampaignsByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

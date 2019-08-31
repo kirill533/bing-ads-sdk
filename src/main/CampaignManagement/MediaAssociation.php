@@ -31,7 +31,7 @@ class MediaAssociation
      */
     public function getEntityId()
     {
-      return $this->EntityId;
+        return $this->EntityId;
     }
 
     /**
@@ -40,8 +40,8 @@ class MediaAssociation
      */
     public function setEntityId($EntityId)
     {
-      $this->EntityId = $EntityId;
-      return $this;
+        $this->EntityId = $EntityId;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class MediaAssociation
      */
     public function getMediaEnabledEntity()
     {
-      return $this->MediaEnabledEntity;
+        return $this->MediaEnabledEntity;
     }
 
     /**
@@ -58,8 +58,8 @@ class MediaAssociation
      */
     public function setMediaEnabledEntity($MediaEnabledEntity)
     {
-      $this->MediaEnabledEntity = $MediaEnabledEntity;
-      return $this;
+        $this->MediaEnabledEntity = $MediaEnabledEntity;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class MediaAssociation
      */
     public function getMediaId()
     {
-      return $this->MediaId;
+        return $this->MediaId;
     }
 
     /**
@@ -76,8 +76,8 @@ class MediaAssociation
      */
     public function setMediaId($MediaId)
     {
-      $this->MediaId = $MediaId;
-      return $this;
+        $this->MediaId = $MediaId;
+        return $this;
     }
 
 }

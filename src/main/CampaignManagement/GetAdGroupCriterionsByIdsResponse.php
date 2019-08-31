@@ -15,7 +15,7 @@ class GetAdGroupCriterionsByIdsResponse
      */
     public function __construct($AdGroupCriterions = null)
     {
-      $this->AdGroupCriterions = $AdGroupCriterions;
+    $this->AdGroupCriterions = $AdGroupCriterions;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetAdGroupCriterionsByIdsResponse
      */
     public function getAdGroupCriterions()
     {
-      return $this->AdGroupCriterions;
+        return $this->AdGroupCriterions;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetAdGroupCriterionsByIdsResponse
      */
     public function setAdGroupCriterions($AdGroupCriterions)
     {
-      $this->AdGroupCriterions = $AdGroupCriterions;
-      return $this;
+        $this->AdGroupCriterions = $AdGroupCriterions;
+        return $this;
     }
 
 }

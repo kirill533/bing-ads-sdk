@@ -41,6 +41,10 @@ class ProductSearchQueryPerformanceReportColumn
     const CostPerConversion = 'CostPerConversion';
     const RevenuePerConversion = 'RevenuePerConversion';
     const RevenuePerAssist = 'RevenuePerAssist';
+    const CustomerId = 'CustomerId';
+    const CustomerName = 'CustomerName';
+    const AssistedImpressions = 'AssistedImpressions';
+    const AssistedClicks = 'AssistedClicks';
 
 
 }

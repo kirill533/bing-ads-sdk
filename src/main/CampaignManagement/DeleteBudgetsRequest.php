@@ -15,7 +15,7 @@ class DeleteBudgetsRequest
      */
     public function __construct($BudgetIds = null)
     {
-      $this->BudgetIds = $BudgetIds;
+    $this->BudgetIds = $BudgetIds;
     }
 
     /**
@@ -23,7 +23,7 @@ class DeleteBudgetsRequest
      */
     public function getBudgetIds()
     {
-      return $this->BudgetIds;
+        return $this->BudgetIds;
     }
 
     /**
@@ -32,8 +32,8 @@ class DeleteBudgetsRequest
      */
     public function setBudgetIds($BudgetIds)
     {
-      $this->BudgetIds = $BudgetIds;
-      return $this;
+        $this->BudgetIds = $BudgetIds;
+        return $this;
     }
 
 }

@@ -15,7 +15,7 @@ class GetListItemsBySharedListRequest
      */
     public function __construct($SharedList = null)
     {
-      $this->SharedList = $SharedList;
+    $this->SharedList = $SharedList;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetListItemsBySharedListRequest
      */
     public function getSharedList()
     {
-      return $this->SharedList;
+        return $this->SharedList;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetListItemsBySharedListRequest
      */
     public function setSharedList($SharedList)
     {
-      $this->SharedList = $SharedList;
-      return $this;
+        $this->SharedList = $SharedList;
+        return $this;
     }
 
 }

@@ -23,6 +23,9 @@ class SearchCampaignChangeHistoryReportColumn
     const HowChanged = 'HowChanged';
     const OldValue = 'OldValue';
     const NewValue = 'NewValue';
+    const EntityName = 'EntityName';
+    const EntityId = 'EntityId';
+    const Tool = 'Tool';
 
 
 }

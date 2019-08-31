@@ -15,7 +15,7 @@ class GetAccountRequest
      */
     public function __construct($AccountId = null)
     {
-      $this->AccountId = $AccountId;
+    $this->AccountId = $AccountId;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetAccountRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetAccountRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
 }

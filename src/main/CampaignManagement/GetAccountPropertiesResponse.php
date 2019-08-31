@@ -21,8 +21,8 @@ class GetAccountPropertiesResponse
      */
     public function __construct($AccountProperties = null, $PartialErrors = null)
     {
-      $this->AccountProperties = $AccountProperties;
-      $this->PartialErrors = $PartialErrors;
+    $this->AccountProperties = $AccountProperties;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetAccountPropertiesResponse
      */
     public function getAccountProperties()
     {
-      return $this->AccountProperties;
+        return $this->AccountProperties;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetAccountPropertiesResponse
      */
     public function setAccountProperties($AccountProperties)
     {
-      $this->AccountProperties = $AccountProperties;
-      return $this;
+        $this->AccountProperties = $AccountProperties;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetAccountPropertiesResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetAccountPropertiesResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

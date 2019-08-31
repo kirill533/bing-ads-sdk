@@ -21,7 +21,7 @@ class ArrayOfKeywordCategoryResult implements \ArrayAccess, \IteratorAggregate, 
      */
     public function getKeywordCategoryResult()
     {
-      return $this->KeywordCategoryResult;
+        return $this->KeywordCategoryResult;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordCategoryResult implements \ArrayAccess, \IteratorAggregate, 
      */
     public function setKeywordCategoryResult(array $KeywordCategoryResult = null)
     {
-      $this->KeywordCategoryResult = $KeywordCategoryResult;
-      return $this;
+        $this->KeywordCategoryResult = $KeywordCategoryResult;
+        return $this;
     }
 
     /**

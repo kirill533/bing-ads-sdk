@@ -13,7 +13,7 @@ class LocationIntentCriterion extends Criterion
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class LocationIntentCriterion extends Criterion
      */
     public function getIntentOption()
     {
-      return $this->IntentOption;
+        return $this->IntentOption;
     }
 
     /**
@@ -30,8 +30,8 @@ class LocationIntentCriterion extends Criterion
      */
     public function setIntentOption($IntentOption)
     {
-      $this->IntentOption = $IntentOption;
-      return $this;
+        $this->IntentOption = $IntentOption;
+        return $this;
     }
 
 }

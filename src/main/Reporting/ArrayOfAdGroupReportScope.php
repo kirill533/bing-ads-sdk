@@ -21,7 +21,7 @@ class ArrayOfAdGroupReportScope implements \ArrayAccess, \IteratorAggregate, \Co
      */
     public function getAdGroupReportScope()
     {
-      return $this->AdGroupReportScope;
+        return $this->AdGroupReportScope;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdGroupReportScope implements \ArrayAccess, \IteratorAggregate, \Co
      */
     public function setAdGroupReportScope(array $AdGroupReportScope = null)
     {
-      $this->AdGroupReportScope = $AdGroupReportScope;
-      return $this;
+        $this->AdGroupReportScope = $AdGroupReportScope;
+        return $this;
     }
 
     /**

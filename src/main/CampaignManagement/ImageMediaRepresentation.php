@@ -18,7 +18,7 @@ class ImageMediaRepresentation extends MediaRepresentation
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -26,7 +26,7 @@ class ImageMediaRepresentation extends MediaRepresentation
      */
     public function getHeight()
     {
-      return $this->Height;
+        return $this->Height;
     }
 
     /**
@@ -35,8 +35,8 @@ class ImageMediaRepresentation extends MediaRepresentation
      */
     public function setHeight($Height)
     {
-      $this->Height = $Height;
-      return $this;
+        $this->Height = $Height;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class ImageMediaRepresentation extends MediaRepresentation
      */
     public function getWidth()
     {
-      return $this->Width;
+        return $this->Width;
     }
 
     /**
@@ -53,8 +53,8 @@ class ImageMediaRepresentation extends MediaRepresentation
      */
     public function setWidth($Width)
     {
-      $this->Width = $Width;
-      return $this;
+        $this->Width = $Width;
+        return $this;
     }
 
 }

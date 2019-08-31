@@ -53,7 +53,7 @@ class BidOpportunity extends Opportunity
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -61,7 +61,7 @@ class BidOpportunity extends Opportunity
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -70,8 +70,8 @@ class BidOpportunity extends Opportunity
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -79,7 +79,7 @@ class BidOpportunity extends Opportunity
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -88,8 +88,8 @@ class BidOpportunity extends Opportunity
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -97,7 +97,7 @@ class BidOpportunity extends Opportunity
      */
     public function getCurrentBid()
     {
-      return $this->CurrentBid;
+        return $this->CurrentBid;
     }
 
     /**
@@ -106,8 +106,8 @@ class BidOpportunity extends Opportunity
      */
     public function setCurrentBid($CurrentBid)
     {
-      $this->CurrentBid = $CurrentBid;
-      return $this;
+        $this->CurrentBid = $CurrentBid;
+        return $this;
     }
 
     /**
@@ -115,7 +115,7 @@ class BidOpportunity extends Opportunity
      */
     public function getEstimatedIncreaseInClicks()
     {
-      return $this->EstimatedIncreaseInClicks;
+        return $this->EstimatedIncreaseInClicks;
     }
 
     /**
@@ -124,8 +124,8 @@ class BidOpportunity extends Opportunity
      */
     public function setEstimatedIncreaseInClicks($EstimatedIncreaseInClicks)
     {
-      $this->EstimatedIncreaseInClicks = $EstimatedIncreaseInClicks;
-      return $this;
+        $this->EstimatedIncreaseInClicks = $EstimatedIncreaseInClicks;
+        return $this;
     }
 
     /**
@@ -133,7 +133,7 @@ class BidOpportunity extends Opportunity
      */
     public function getEstimatedIncreaseInCost()
     {
-      return $this->EstimatedIncreaseInCost;
+        return $this->EstimatedIncreaseInCost;
     }
 
     /**
@@ -142,8 +142,8 @@ class BidOpportunity extends Opportunity
      */
     public function setEstimatedIncreaseInCost($EstimatedIncreaseInCost)
     {
-      $this->EstimatedIncreaseInCost = $EstimatedIncreaseInCost;
-      return $this;
+        $this->EstimatedIncreaseInCost = $EstimatedIncreaseInCost;
+        return $this;
     }
 
     /**
@@ -151,7 +151,7 @@ class BidOpportunity extends Opportunity
      */
     public function getEstimatedIncreaseInImpressions()
     {
-      return $this->EstimatedIncreaseInImpressions;
+        return $this->EstimatedIncreaseInImpressions;
     }
 
     /**
@@ -160,8 +160,8 @@ class BidOpportunity extends Opportunity
      */
     public function setEstimatedIncreaseInImpressions($EstimatedIncreaseInImpressions)
     {
-      $this->EstimatedIncreaseInImpressions = $EstimatedIncreaseInImpressions;
-      return $this;
+        $this->EstimatedIncreaseInImpressions = $EstimatedIncreaseInImpressions;
+        return $this;
     }
 
     /**
@@ -169,7 +169,7 @@ class BidOpportunity extends Opportunity
      */
     public function getKeywordId()
     {
-      return $this->KeywordId;
+        return $this->KeywordId;
     }
 
     /**
@@ -178,8 +178,8 @@ class BidOpportunity extends Opportunity
      */
     public function setKeywordId($KeywordId)
     {
-      $this->KeywordId = $KeywordId;
-      return $this;
+        $this->KeywordId = $KeywordId;
+        return $this;
     }
 
     /**
@@ -187,7 +187,7 @@ class BidOpportunity extends Opportunity
      */
     public function getMatchType()
     {
-      return $this->MatchType;
+        return $this->MatchType;
     }
 
     /**
@@ -196,8 +196,8 @@ class BidOpportunity extends Opportunity
      */
     public function setMatchType($MatchType)
     {
-      $this->MatchType = $MatchType;
-      return $this;
+        $this->MatchType = $MatchType;
+        return $this;
     }
 
     /**
@@ -205,7 +205,7 @@ class BidOpportunity extends Opportunity
      */
     public function getSuggestedBid()
     {
-      return $this->SuggestedBid;
+        return $this->SuggestedBid;
     }
 
     /**
@@ -214,8 +214,8 @@ class BidOpportunity extends Opportunity
      */
     public function setSuggestedBid($SuggestedBid)
     {
-      $this->SuggestedBid = $SuggestedBid;
-      return $this;
+        $this->SuggestedBid = $SuggestedBid;
+        return $this;
     }
 
 }

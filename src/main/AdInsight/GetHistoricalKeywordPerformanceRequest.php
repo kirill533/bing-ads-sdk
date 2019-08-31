@@ -51,13 +51,13 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function __construct($Keywords = null, $TimeInterval = null, $TargetAdPosition = null, $MatchTypes = null, $Language = null, $PublisherCountries = null, $Devices = null)
     {
-      $this->Keywords = $Keywords;
-      $this->TimeInterval = $TimeInterval;
-      $this->TargetAdPosition = $TargetAdPosition;
-      $this->MatchTypes = $MatchTypes;
-      $this->Language = $Language;
-      $this->PublisherCountries = $PublisherCountries;
-      $this->Devices = $Devices;
+    $this->Keywords = $Keywords;
+    $this->TimeInterval = $TimeInterval;
+    $this->TargetAdPosition = $TargetAdPosition;
+    $this->MatchTypes = $MatchTypes;
+    $this->Language = $Language;
+    $this->PublisherCountries = $PublisherCountries;
+    $this->Devices = $Devices;
     }
 
     /**
@@ -65,7 +65,7 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function getKeywords()
     {
-      return $this->Keywords;
+        return $this->Keywords;
     }
 
     /**
@@ -74,8 +74,8 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function setKeywords($Keywords)
     {
-      $this->Keywords = $Keywords;
-      return $this;
+        $this->Keywords = $Keywords;
+        return $this;
     }
 
     /**
@@ -83,7 +83,7 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function getTimeInterval()
     {
-      return $this->TimeInterval;
+        return $this->TimeInterval;
     }
 
     /**
@@ -92,8 +92,8 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function setTimeInterval($TimeInterval)
     {
-      $this->TimeInterval = $TimeInterval;
-      return $this;
+        $this->TimeInterval = $TimeInterval;
+        return $this;
     }
 
     /**
@@ -101,7 +101,7 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function getTargetAdPosition()
     {
-      return $this->TargetAdPosition;
+        return $this->TargetAdPosition;
     }
 
     /**
@@ -110,8 +110,8 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function setTargetAdPosition($TargetAdPosition)
     {
-      $this->TargetAdPosition = $TargetAdPosition;
-      return $this;
+        $this->TargetAdPosition = $TargetAdPosition;
+        return $this;
     }
 
     /**
@@ -119,7 +119,7 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function getMatchTypes()
     {
-      return $this->MatchTypes;
+        return $this->MatchTypes;
     }
 
     /**
@@ -128,8 +128,8 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function setMatchTypes($MatchTypes)
     {
-      $this->MatchTypes = $MatchTypes;
-      return $this;
+        $this->MatchTypes = $MatchTypes;
+        return $this;
     }
 
     /**
@@ -137,7 +137,7 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -146,8 +146,8 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
     /**
@@ -155,7 +155,7 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function getPublisherCountries()
     {
-      return $this->PublisherCountries;
+        return $this->PublisherCountries;
     }
 
     /**
@@ -164,8 +164,8 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function setPublisherCountries($PublisherCountries)
     {
-      $this->PublisherCountries = $PublisherCountries;
-      return $this;
+        $this->PublisherCountries = $PublisherCountries;
+        return $this;
     }
 
     /**
@@ -173,7 +173,7 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function getDevices()
     {
-      return $this->Devices;
+        return $this->Devices;
     }
 
     /**
@@ -182,8 +182,8 @@ class GetHistoricalKeywordPerformanceRequest
      */
     public function setDevices($Devices)
     {
-      $this->Devices = $Devices;
-      return $this;
+        $this->Devices = $Devices;
+        return $this;
     }
 
 }

@@ -15,7 +15,7 @@ class GetKeywordIdeaCategoriesResponse
      */
     public function __construct($KeywordIdeaCategories = null)
     {
-      $this->KeywordIdeaCategories = $KeywordIdeaCategories;
+    $this->KeywordIdeaCategories = $KeywordIdeaCategories;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetKeywordIdeaCategoriesResponse
      */
     public function getKeywordIdeaCategories()
     {
-      return $this->KeywordIdeaCategories;
+        return $this->KeywordIdeaCategories;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetKeywordIdeaCategoriesResponse
      */
     public function setKeywordIdeaCategories($KeywordIdeaCategories)
     {
-      $this->KeywordIdeaCategories = $KeywordIdeaCategories;
-      return $this;
+        $this->KeywordIdeaCategories = $KeywordIdeaCategories;
+        return $this;
     }
 
 }

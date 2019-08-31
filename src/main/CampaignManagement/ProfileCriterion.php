@@ -18,7 +18,7 @@ class ProfileCriterion extends Criterion
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -26,7 +26,7 @@ class ProfileCriterion extends Criterion
      */
     public function getProfileId()
     {
-      return $this->ProfileId;
+        return $this->ProfileId;
     }
 
     /**
@@ -35,8 +35,8 @@ class ProfileCriterion extends Criterion
      */
     public function setProfileId($ProfileId)
     {
-      $this->ProfileId = $ProfileId;
-      return $this;
+        $this->ProfileId = $ProfileId;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class ProfileCriterion extends Criterion
      */
     public function getProfileType()
     {
-      return $this->ProfileType;
+        return $this->ProfileType;
     }
 
     /**
@@ -53,8 +53,8 @@ class ProfileCriterion extends Criterion
      */
     public function setProfileType($ProfileType)
     {
-      $this->ProfileType = $ProfileType;
-      return $this;
+        $this->ProfileType = $ProfileType;
+        return $this;
     }
 
 }

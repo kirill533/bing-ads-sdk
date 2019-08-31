@@ -33,7 +33,7 @@ class CallAdExtension extends AdExtension
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -41,7 +41,7 @@ class CallAdExtension extends AdExtension
      */
     public function getCountryCode()
     {
-      return $this->CountryCode;
+        return $this->CountryCode;
     }
 
     /**
@@ -50,8 +50,8 @@ class CallAdExtension extends AdExtension
      */
     public function setCountryCode($CountryCode)
     {
-      $this->CountryCode = $CountryCode;
-      return $this;
+        $this->CountryCode = $CountryCode;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class CallAdExtension extends AdExtension
      */
     public function getIsCallOnly()
     {
-      return $this->IsCallOnly;
+        return $this->IsCallOnly;
     }
 
     /**
@@ -68,8 +68,8 @@ class CallAdExtension extends AdExtension
      */
     public function setIsCallOnly($IsCallOnly)
     {
-      $this->IsCallOnly = $IsCallOnly;
-      return $this;
+        $this->IsCallOnly = $IsCallOnly;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class CallAdExtension extends AdExtension
      */
     public function getIsCallTrackingEnabled()
     {
-      return $this->IsCallTrackingEnabled;
+        return $this->IsCallTrackingEnabled;
     }
 
     /**
@@ -86,8 +86,8 @@ class CallAdExtension extends AdExtension
      */
     public function setIsCallTrackingEnabled($IsCallTrackingEnabled)
     {
-      $this->IsCallTrackingEnabled = $IsCallTrackingEnabled;
-      return $this;
+        $this->IsCallTrackingEnabled = $IsCallTrackingEnabled;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class CallAdExtension extends AdExtension
      */
     public function getPhoneNumber()
     {
-      return $this->PhoneNumber;
+        return $this->PhoneNumber;
     }
 
     /**
@@ -104,8 +104,8 @@ class CallAdExtension extends AdExtension
      */
     public function setPhoneNumber($PhoneNumber)
     {
-      $this->PhoneNumber = $PhoneNumber;
-      return $this;
+        $this->PhoneNumber = $PhoneNumber;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class CallAdExtension extends AdExtension
      */
     public function getRequireTollFreeTrackingNumber()
     {
-      return $this->RequireTollFreeTrackingNumber;
+        return $this->RequireTollFreeTrackingNumber;
     }
 
     /**
@@ -122,8 +122,8 @@ class CallAdExtension extends AdExtension
      */
     public function setRequireTollFreeTrackingNumber($RequireTollFreeTrackingNumber)
     {
-      $this->RequireTollFreeTrackingNumber = $RequireTollFreeTrackingNumber;
-      return $this;
+        $this->RequireTollFreeTrackingNumber = $RequireTollFreeTrackingNumber;
+        return $this;
     }
 
 }

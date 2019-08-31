@@ -15,7 +15,7 @@ class DownloadCampaignsByCampaignIdsResponse
      */
     public function __construct($DownloadRequestId = null)
     {
-      $this->DownloadRequestId = $DownloadRequestId;
+    $this->DownloadRequestId = $DownloadRequestId;
     }
 
     /**
@@ -23,7 +23,7 @@ class DownloadCampaignsByCampaignIdsResponse
      */
     public function getDownloadRequestId()
     {
-      return $this->DownloadRequestId;
+        return $this->DownloadRequestId;
     }
 
     /**
@@ -32,8 +32,8 @@ class DownloadCampaignsByCampaignIdsResponse
      */
     public function setDownloadRequestId($DownloadRequestId)
     {
-      $this->DownloadRequestId = $DownloadRequestId;
-      return $this;
+        $this->DownloadRequestId = $DownloadRequestId;
+        return $this;
     }
 
 }

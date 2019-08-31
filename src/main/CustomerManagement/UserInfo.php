@@ -26,7 +26,7 @@ class UserInfo
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -35,8 +35,8 @@ class UserInfo
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class UserInfo
      */
     public function getUserName()
     {
-      return $this->UserName;
+        return $this->UserName;
     }
 
     /**
@@ -53,8 +53,8 @@ class UserInfo
      */
     public function setUserName($UserName)
     {
-      $this->UserName = $UserName;
-      return $this;
+        $this->UserName = $UserName;
+        return $this;
     }
 
 }

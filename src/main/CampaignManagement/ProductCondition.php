@@ -26,7 +26,7 @@ class ProductCondition
      */
     public function getAttribute()
     {
-      return $this->Attribute;
+        return $this->Attribute;
     }
 
     /**
@@ -35,8 +35,8 @@ class ProductCondition
      */
     public function setAttribute($Attribute)
     {
-      $this->Attribute = $Attribute;
-      return $this;
+        $this->Attribute = $Attribute;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class ProductCondition
      */
     public function getOperand()
     {
-      return $this->Operand;
+        return $this->Operand;
     }
 
     /**
@@ -53,8 +53,8 @@ class ProductCondition
      */
     public function setOperand($Operand)
     {
-      $this->Operand = $Operand;
-      return $this;
+        $this->Operand = $Operand;
+        return $this;
     }
 
 }

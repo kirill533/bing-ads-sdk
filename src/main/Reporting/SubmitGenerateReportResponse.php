@@ -15,7 +15,7 @@ class SubmitGenerateReportResponse
      */
     public function __construct($ReportRequestId = null)
     {
-      $this->ReportRequestId = $ReportRequestId;
+    $this->ReportRequestId = $ReportRequestId;
     }
 
     /**
@@ -23,7 +23,7 @@ class SubmitGenerateReportResponse
      */
     public function getReportRequestId()
     {
-      return $this->ReportRequestId;
+        return $this->ReportRequestId;
     }
 
     /**
@@ -32,8 +32,8 @@ class SubmitGenerateReportResponse
      */
     public function setReportRequestId($ReportRequestId)
     {
-      $this->ReportRequestId = $ReportRequestId;
-      return $this;
+        $this->ReportRequestId = $ReportRequestId;
+        return $this;
     }
 
 }

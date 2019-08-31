@@ -15,7 +15,7 @@ class FindAccountsResponse
      */
     public function __construct($AccountsInfo = null)
     {
-      $this->AccountsInfo = $AccountsInfo;
+    $this->AccountsInfo = $AccountsInfo;
     }
 
     /**
@@ -23,7 +23,7 @@ class FindAccountsResponse
      */
     public function getAccountsInfo()
     {
-      return $this->AccountsInfo;
+        return $this->AccountsInfo;
     }
 
     /**
@@ -32,8 +32,8 @@ class FindAccountsResponse
      */
     public function setAccountsInfo($AccountsInfo)
     {
-      $this->AccountsInfo = $AccountsInfo;
-      return $this;
+        $this->AccountsInfo = $AccountsInfo;
+        return $this;
     }
 
 }

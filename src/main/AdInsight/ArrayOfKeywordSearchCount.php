@@ -21,7 +21,7 @@ class ArrayOfKeywordSearchCount implements \ArrayAccess, \IteratorAggregate, \Co
      */
     public function getKeywordSearchCount()
     {
-      return $this->KeywordSearchCount;
+        return $this->KeywordSearchCount;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordSearchCount implements \ArrayAccess, \IteratorAggregate, \Co
      */
     public function setKeywordSearchCount(array $KeywordSearchCount = null)
     {
-      $this->KeywordSearchCount = $KeywordSearchCount;
-      return $this;
+        $this->KeywordSearchCount = $KeywordSearchCount;
+        return $this;
     }
 
     /**

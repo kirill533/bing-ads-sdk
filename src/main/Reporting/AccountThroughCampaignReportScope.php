@@ -26,7 +26,7 @@ class AccountThroughCampaignReportScope
      */
     public function getAccountIds()
     {
-      return $this->AccountIds;
+        return $this->AccountIds;
     }
 
     /**
@@ -35,8 +35,8 @@ class AccountThroughCampaignReportScope
      */
     public function setAccountIds($AccountIds)
     {
-      $this->AccountIds = $AccountIds;
-      return $this;
+        $this->AccountIds = $AccountIds;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class AccountThroughCampaignReportScope
      */
     public function getCampaigns()
     {
-      return $this->Campaigns;
+        return $this->Campaigns;
     }
 
     /**
@@ -53,8 +53,8 @@ class AccountThroughCampaignReportScope
      */
     public function setCampaigns($Campaigns)
     {
-      $this->Campaigns = $Campaigns;
-      return $this;
+        $this->Campaigns = $Campaigns;
+        return $this;
     }
 
 }

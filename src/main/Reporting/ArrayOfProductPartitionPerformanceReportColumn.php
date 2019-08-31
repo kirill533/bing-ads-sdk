@@ -21,7 +21,7 @@ class ArrayOfProductPartitionPerformanceReportColumn implements \ArrayAccess, \I
      */
     public function getProductPartitionPerformanceReportColumn()
     {
-      return $this->ProductPartitionPerformanceReportColumn;
+        return $this->ProductPartitionPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfProductPartitionPerformanceReportColumn implements \ArrayAccess, \I
      */
     public function setProductPartitionPerformanceReportColumn(array $ProductPartitionPerformanceReportColumn = null)
     {
-      $this->ProductPartitionPerformanceReportColumn = $ProductPartitionPerformanceReportColumn;
-      return $this;
+        $this->ProductPartitionPerformanceReportColumn = $ProductPartitionPerformanceReportColumn;
+        return $this;
     }
 
     /**

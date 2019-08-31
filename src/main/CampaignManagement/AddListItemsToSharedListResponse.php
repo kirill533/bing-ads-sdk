@@ -21,8 +21,8 @@ class AddListItemsToSharedListResponse
      */
     public function __construct($ListItemIds = null, $PartialErrors = null)
     {
-      $this->ListItemIds = $ListItemIds;
-      $this->PartialErrors = $PartialErrors;
+    $this->ListItemIds = $ListItemIds;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class AddListItemsToSharedListResponse
      */
     public function getListItemIds()
     {
-      return $this->ListItemIds;
+        return $this->ListItemIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class AddListItemsToSharedListResponse
      */
     public function setListItemIds($ListItemIds)
     {
-      $this->ListItemIds = $ListItemIds;
-      return $this;
+        $this->ListItemIds = $ListItemIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class AddListItemsToSharedListResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class AddListItemsToSharedListResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

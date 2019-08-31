@@ -21,8 +21,8 @@ class CampaignReportScope
      */
     public function __construct($AccountId = null, $CampaignId = null)
     {
-      $this->AccountId = $AccountId;
-      $this->CampaignId = $CampaignId;
+    $this->AccountId = $AccountId;
+    $this->CampaignId = $CampaignId;
     }
 
     /**
@@ -30,7 +30,7 @@ class CampaignReportScope
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -39,8 +39,8 @@ class CampaignReportScope
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class CampaignReportScope
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -57,8 +57,8 @@ class CampaignReportScope
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
 }

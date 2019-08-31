@@ -21,8 +21,8 @@ class GetAccessibleCustomerResponse
      */
     public function __construct($AccessibleCustomer = null, $ValidFields = null)
     {
-      $this->AccessibleCustomer = $AccessibleCustomer;
-      $this->ValidFields = $ValidFields;
+    $this->AccessibleCustomer = $AccessibleCustomer;
+    $this->ValidFields = $ValidFields;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetAccessibleCustomerResponse
      */
     public function getAccessibleCustomer()
     {
-      return $this->AccessibleCustomer;
+        return $this->AccessibleCustomer;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetAccessibleCustomerResponse
      */
     public function setAccessibleCustomer($AccessibleCustomer)
     {
-      $this->AccessibleCustomer = $AccessibleCustomer;
-      return $this;
+        $this->AccessibleCustomer = $AccessibleCustomer;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetAccessibleCustomerResponse
      */
     public function getValidFields()
     {
-      return $this->ValidFields;
+        return $this->ValidFields;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetAccessibleCustomerResponse
      */
     public function setValidFields($ValidFields)
     {
-      $this->ValidFields = $ValidFields;
-      return $this;
+        $this->ValidFields = $ValidFields;
+        return $this;
     }
 
 }

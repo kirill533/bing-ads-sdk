@@ -21,8 +21,8 @@ class GetLabelAssociationsByEntityIdsResponse
      */
     public function __construct($LabelAssociations = null, $PartialErrors = null)
     {
-      $this->LabelAssociations = $LabelAssociations;
-      $this->PartialErrors = $PartialErrors;
+    $this->LabelAssociations = $LabelAssociations;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetLabelAssociationsByEntityIdsResponse
      */
     public function getLabelAssociations()
     {
-      return $this->LabelAssociations;
+        return $this->LabelAssociations;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetLabelAssociationsByEntityIdsResponse
      */
     public function setLabelAssociations($LabelAssociations)
     {
-      $this->LabelAssociations = $LabelAssociations;
-      return $this;
+        $this->LabelAssociations = $LabelAssociations;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetLabelAssociationsByEntityIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetLabelAssociationsByEntityIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

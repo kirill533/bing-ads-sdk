@@ -21,8 +21,8 @@ class DeleteListItemsFromSharedListRequest
      */
     public function __construct($ListItemIds = null, $SharedList = null)
     {
-      $this->ListItemIds = $ListItemIds;
-      $this->SharedList = $SharedList;
+    $this->ListItemIds = $ListItemIds;
+    $this->SharedList = $SharedList;
     }
 
     /**
@@ -30,7 +30,7 @@ class DeleteListItemsFromSharedListRequest
      */
     public function getListItemIds()
     {
-      return $this->ListItemIds;
+        return $this->ListItemIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class DeleteListItemsFromSharedListRequest
      */
     public function setListItemIds($ListItemIds)
     {
-      $this->ListItemIds = $ListItemIds;
-      return $this;
+        $this->ListItemIds = $ListItemIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class DeleteListItemsFromSharedListRequest
      */
     public function getSharedList()
     {
-      return $this->SharedList;
+        return $this->SharedList;
     }
 
     /**
@@ -57,8 +57,8 @@ class DeleteListItemsFromSharedListRequest
      */
     public function setSharedList($SharedList)
     {
-      $this->SharedList = $SharedList;
-      return $this;
+        $this->SharedList = $SharedList;
+        return $this;
     }
 
 }

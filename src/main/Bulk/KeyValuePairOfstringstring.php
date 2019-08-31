@@ -26,7 +26,7 @@ class KeyValuePairOfstringstring
      */
     public function getKey()
     {
-      return $this->key;
+        return $this->key;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeyValuePairOfstringstring
      */
     public function setKey($key)
     {
-      $this->key = $key;
-      return $this;
+        $this->key = $key;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeyValuePairOfstringstring
      */
     public function getValue()
     {
-      return $this->value;
+        return $this->value;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeyValuePairOfstringstring
      */
     public function setValue($value)
     {
-      $this->value = $value;
-      return $this;
+        $this->value = $value;
+        return $this;
     }
 
 }

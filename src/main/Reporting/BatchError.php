@@ -41,7 +41,7 @@ class BatchError
      */
     public function getCode()
     {
-      return $this->Code;
+        return $this->Code;
     }
 
     /**
@@ -50,8 +50,8 @@ class BatchError
      */
     public function setCode($Code)
     {
-      $this->Code = $Code;
-      return $this;
+        $this->Code = $Code;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class BatchError
      */
     public function getDetails()
     {
-      return $this->Details;
+        return $this->Details;
     }
 
     /**
@@ -68,8 +68,8 @@ class BatchError
      */
     public function setDetails($Details)
     {
-      $this->Details = $Details;
-      return $this;
+        $this->Details = $Details;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class BatchError
      */
     public function getErrorCode()
     {
-      return $this->ErrorCode;
+        return $this->ErrorCode;
     }
 
     /**
@@ -86,8 +86,8 @@ class BatchError
      */
     public function setErrorCode($ErrorCode)
     {
-      $this->ErrorCode = $ErrorCode;
-      return $this;
+        $this->ErrorCode = $ErrorCode;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class BatchError
      */
     public function getIndex()
     {
-      return $this->Index;
+        return $this->Index;
     }
 
     /**
@@ -104,8 +104,8 @@ class BatchError
      */
     public function setIndex($Index)
     {
-      $this->Index = $Index;
-      return $this;
+        $this->Index = $Index;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class BatchError
      */
     public function getMessage()
     {
-      return $this->Message;
+        return $this->Message;
     }
 
     /**
@@ -122,8 +122,8 @@ class BatchError
      */
     public function setMessage($Message)
     {
-      $this->Message = $Message;
-      return $this;
+        $this->Message = $Message;
+        return $this;
     }
 
 }

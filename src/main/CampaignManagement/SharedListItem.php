@@ -26,7 +26,7 @@ class SharedListItem
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -35,8 +35,8 @@ class SharedListItem
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class SharedListItem
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -53,8 +53,8 @@ class SharedListItem
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
 }

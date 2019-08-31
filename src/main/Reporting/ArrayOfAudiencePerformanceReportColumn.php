@@ -21,7 +21,7 @@ class ArrayOfAudiencePerformanceReportColumn implements \ArrayAccess, \IteratorA
      */
     public function getAudiencePerformanceReportColumn()
     {
-      return $this->AudiencePerformanceReportColumn;
+        return $this->AudiencePerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAudiencePerformanceReportColumn implements \ArrayAccess, \IteratorA
      */
     public function setAudiencePerformanceReportColumn(array $AudiencePerformanceReportColumn = null)
     {
-      $this->AudiencePerformanceReportColumn = $AudiencePerformanceReportColumn;
-      return $this;
+        $this->AudiencePerformanceReportColumn = $AudiencePerformanceReportColumn;
+        return $this;
     }
 
     /**

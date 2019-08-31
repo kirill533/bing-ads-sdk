@@ -13,7 +13,7 @@ class PageVisitorsRule extends RemarketingRule
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class PageVisitorsRule extends RemarketingRule
      */
     public function getRuleItemGroups()
     {
-      return $this->RuleItemGroups;
+        return $this->RuleItemGroups;
     }
 
     /**
@@ -30,8 +30,8 @@ class PageVisitorsRule extends RemarketingRule
      */
     public function setRuleItemGroups($RuleItemGroups)
     {
-      $this->RuleItemGroups = $RuleItemGroups;
-      return $this;
+        $this->RuleItemGroups = $RuleItemGroups;
+        return $this;
     }
 
 }

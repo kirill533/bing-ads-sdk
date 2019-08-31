@@ -21,8 +21,8 @@ class AddAdGroupCriterionsRequest
      */
     public function __construct($AdGroupCriterions = null, $CriterionType = null)
     {
-      $this->AdGroupCriterions = $AdGroupCriterions;
-      $this->CriterionType = $CriterionType;
+    $this->AdGroupCriterions = $AdGroupCriterions;
+    $this->CriterionType = $CriterionType;
     }
 
     /**
@@ -30,7 +30,7 @@ class AddAdGroupCriterionsRequest
      */
     public function getAdGroupCriterions()
     {
-      return $this->AdGroupCriterions;
+        return $this->AdGroupCriterions;
     }
 
     /**
@@ -39,8 +39,8 @@ class AddAdGroupCriterionsRequest
      */
     public function setAdGroupCriterions($AdGroupCriterions)
     {
-      $this->AdGroupCriterions = $AdGroupCriterions;
-      return $this;
+        $this->AdGroupCriterions = $AdGroupCriterions;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class AddAdGroupCriterionsRequest
      */
     public function getCriterionType()
     {
-      return $this->CriterionType;
+        return $this->CriterionType;
     }
 
     /**
@@ -57,8 +57,8 @@ class AddAdGroupCriterionsRequest
      */
     public function setCriterionType($CriterionType)
     {
-      $this->CriterionType = $CriterionType;
-      return $this;
+        $this->CriterionType = $CriterionType;
+        return $this;
     }
 
 }

@@ -21,7 +21,7 @@ class ArrayOfDestinationUrlPerformanceReportColumn implements \ArrayAccess, \Ite
      */
     public function getDestinationUrlPerformanceReportColumn()
     {
-      return $this->DestinationUrlPerformanceReportColumn;
+        return $this->DestinationUrlPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfDestinationUrlPerformanceReportColumn implements \ArrayAccess, \Ite
      */
     public function setDestinationUrlPerformanceReportColumn(array $DestinationUrlPerformanceReportColumn = null)
     {
-      $this->DestinationUrlPerformanceReportColumn = $DestinationUrlPerformanceReportColumn;
-      return $this;
+        $this->DestinationUrlPerformanceReportColumn = $DestinationUrlPerformanceReportColumn;
+        return $this;
     }
 
     /**

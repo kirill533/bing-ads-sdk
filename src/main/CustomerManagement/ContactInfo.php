@@ -71,7 +71,7 @@ class ContactInfo
      */
     public function getAddress()
     {
-      return $this->Address;
+        return $this->Address;
     }
 
     /**
@@ -80,8 +80,8 @@ class ContactInfo
      */
     public function setAddress($Address)
     {
-      $this->Address = $Address;
-      return $this;
+        $this->Address = $Address;
+        return $this;
     }
 
     /**
@@ -89,7 +89,7 @@ class ContactInfo
      */
     public function getContactByPhone()
     {
-      return $this->ContactByPhone;
+        return $this->ContactByPhone;
     }
 
     /**
@@ -98,8 +98,8 @@ class ContactInfo
      */
     public function setContactByPhone($ContactByPhone)
     {
-      $this->ContactByPhone = $ContactByPhone;
-      return $this;
+        $this->ContactByPhone = $ContactByPhone;
+        return $this;
     }
 
     /**
@@ -107,7 +107,7 @@ class ContactInfo
      */
     public function getContactByPostalMail()
     {
-      return $this->ContactByPostalMail;
+        return $this->ContactByPostalMail;
     }
 
     /**
@@ -116,8 +116,8 @@ class ContactInfo
      */
     public function setContactByPostalMail($ContactByPostalMail)
     {
-      $this->ContactByPostalMail = $ContactByPostalMail;
-      return $this;
+        $this->ContactByPostalMail = $ContactByPostalMail;
+        return $this;
     }
 
     /**
@@ -125,7 +125,7 @@ class ContactInfo
      */
     public function getEmail()
     {
-      return $this->Email;
+        return $this->Email;
     }
 
     /**
@@ -134,8 +134,8 @@ class ContactInfo
      */
     public function setEmail($Email)
     {
-      $this->Email = $Email;
-      return $this;
+        $this->Email = $Email;
+        return $this;
     }
 
     /**
@@ -143,7 +143,7 @@ class ContactInfo
      */
     public function getEmailFormat()
     {
-      return $this->EmailFormat;
+        return $this->EmailFormat;
     }
 
     /**
@@ -152,8 +152,8 @@ class ContactInfo
      */
     public function setEmailFormat($EmailFormat)
     {
-      $this->EmailFormat = $EmailFormat;
-      return $this;
+        $this->EmailFormat = $EmailFormat;
+        return $this;
     }
 
     /**
@@ -161,7 +161,7 @@ class ContactInfo
      */
     public function getFax()
     {
-      return $this->Fax;
+        return $this->Fax;
     }
 
     /**
@@ -170,8 +170,8 @@ class ContactInfo
      */
     public function setFax($Fax)
     {
-      $this->Fax = $Fax;
-      return $this;
+        $this->Fax = $Fax;
+        return $this;
     }
 
     /**
@@ -179,7 +179,7 @@ class ContactInfo
      */
     public function getHomePhone()
     {
-      return $this->HomePhone;
+        return $this->HomePhone;
     }
 
     /**
@@ -188,8 +188,8 @@ class ContactInfo
      */
     public function setHomePhone($HomePhone)
     {
-      $this->HomePhone = $HomePhone;
-      return $this;
+        $this->HomePhone = $HomePhone;
+        return $this;
     }
 
     /**
@@ -197,7 +197,7 @@ class ContactInfo
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -206,8 +206,8 @@ class ContactInfo
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -215,7 +215,7 @@ class ContactInfo
      */
     public function getMobile()
     {
-      return $this->Mobile;
+        return $this->Mobile;
     }
 
     /**
@@ -224,8 +224,8 @@ class ContactInfo
      */
     public function setMobile($Mobile)
     {
-      $this->Mobile = $Mobile;
-      return $this;
+        $this->Mobile = $Mobile;
+        return $this;
     }
 
     /**
@@ -233,7 +233,7 @@ class ContactInfo
      */
     public function getPhone1()
     {
-      return $this->Phone1;
+        return $this->Phone1;
     }
 
     /**
@@ -242,8 +242,8 @@ class ContactInfo
      */
     public function setPhone1($Phone1)
     {
-      $this->Phone1 = $Phone1;
-      return $this;
+        $this->Phone1 = $Phone1;
+        return $this;
     }
 
     /**
@@ -251,7 +251,7 @@ class ContactInfo
      */
     public function getPhone2()
     {
-      return $this->Phone2;
+        return $this->Phone2;
     }
 
     /**
@@ -260,8 +260,8 @@ class ContactInfo
      */
     public function setPhone2($Phone2)
     {
-      $this->Phone2 = $Phone2;
-      return $this;
+        $this->Phone2 = $Phone2;
+        return $this;
     }
 
 }

@@ -62,9 +62,9 @@ class PriceTableRow
      */
     public function __construct($Price = null, $PriceQualifier = null, $PriceUnit = null)
     {
-      $this->Price = $Price;
-      $this->PriceQualifier = $PriceQualifier;
-      $this->PriceUnit = $PriceUnit;
+    $this->Price = $Price;
+    $this->PriceQualifier = $PriceQualifier;
+    $this->PriceUnit = $PriceUnit;
     }
 
     /**
@@ -72,7 +72,7 @@ class PriceTableRow
      */
     public function getCurrencyCode()
     {
-      return $this->CurrencyCode;
+        return $this->CurrencyCode;
     }
 
     /**
@@ -81,8 +81,8 @@ class PriceTableRow
      */
     public function setCurrencyCode($CurrencyCode)
     {
-      $this->CurrencyCode = $CurrencyCode;
-      return $this;
+        $this->CurrencyCode = $CurrencyCode;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class PriceTableRow
      */
     public function getDescription()
     {
-      return $this->Description;
+        return $this->Description;
     }
 
     /**
@@ -99,8 +99,8 @@ class PriceTableRow
      */
     public function setDescription($Description)
     {
-      $this->Description = $Description;
-      return $this;
+        $this->Description = $Description;
+        return $this;
     }
 
     /**
@@ -108,7 +108,7 @@ class PriceTableRow
      */
     public function getFinalMobileUrls()
     {
-      return $this->FinalMobileUrls;
+        return $this->FinalMobileUrls;
     }
 
     /**
@@ -117,8 +117,8 @@ class PriceTableRow
      */
     public function setFinalMobileUrls($FinalMobileUrls)
     {
-      $this->FinalMobileUrls = $FinalMobileUrls;
-      return $this;
+        $this->FinalMobileUrls = $FinalMobileUrls;
+        return $this;
     }
 
     /**
@@ -126,7 +126,7 @@ class PriceTableRow
      */
     public function getFinalUrls()
     {
-      return $this->FinalUrls;
+        return $this->FinalUrls;
     }
 
     /**
@@ -135,8 +135,8 @@ class PriceTableRow
      */
     public function setFinalUrls($FinalUrls)
     {
-      $this->FinalUrls = $FinalUrls;
-      return $this;
+        $this->FinalUrls = $FinalUrls;
+        return $this;
     }
 
     /**
@@ -144,7 +144,7 @@ class PriceTableRow
      */
     public function getHeader()
     {
-      return $this->Header;
+        return $this->Header;
     }
 
     /**
@@ -153,8 +153,8 @@ class PriceTableRow
      */
     public function setHeader($Header)
     {
-      $this->Header = $Header;
-      return $this;
+        $this->Header = $Header;
+        return $this;
     }
 
     /**
@@ -162,7 +162,7 @@ class PriceTableRow
      */
     public function getPrice()
     {
-      return $this->Price;
+        return $this->Price;
     }
 
     /**
@@ -171,8 +171,8 @@ class PriceTableRow
      */
     public function setPrice($Price)
     {
-      $this->Price = $Price;
-      return $this;
+        $this->Price = $Price;
+        return $this;
     }
 
     /**
@@ -180,7 +180,7 @@ class PriceTableRow
      */
     public function getPriceQualifier()
     {
-      return $this->PriceQualifier;
+        return $this->PriceQualifier;
     }
 
     /**
@@ -189,8 +189,8 @@ class PriceTableRow
      */
     public function setPriceQualifier($PriceQualifier)
     {
-      $this->PriceQualifier = $PriceQualifier;
-      return $this;
+        $this->PriceQualifier = $PriceQualifier;
+        return $this;
     }
 
     /**
@@ -198,7 +198,7 @@ class PriceTableRow
      */
     public function getPriceUnit()
     {
-      return $this->PriceUnit;
+        return $this->PriceUnit;
     }
 
     /**
@@ -207,8 +207,8 @@ class PriceTableRow
      */
     public function setPriceUnit($PriceUnit)
     {
-      $this->PriceUnit = $PriceUnit;
-      return $this;
+        $this->PriceUnit = $PriceUnit;
+        return $this;
     }
 
     /**
@@ -216,7 +216,7 @@ class PriceTableRow
      */
     public function getTermsAndConditions()
     {
-      return $this->TermsAndConditions;
+        return $this->TermsAndConditions;
     }
 
     /**
@@ -225,8 +225,8 @@ class PriceTableRow
      */
     public function setTermsAndConditions($TermsAndConditions)
     {
-      $this->TermsAndConditions = $TermsAndConditions;
-      return $this;
+        $this->TermsAndConditions = $TermsAndConditions;
+        return $this;
     }
 
     /**
@@ -234,7 +234,7 @@ class PriceTableRow
      */
     public function getTermsAndConditionsUrl()
     {
-      return $this->TermsAndConditionsUrl;
+        return $this->TermsAndConditionsUrl;
     }
 
     /**
@@ -243,8 +243,8 @@ class PriceTableRow
      */
     public function setTermsAndConditionsUrl($TermsAndConditionsUrl)
     {
-      $this->TermsAndConditionsUrl = $TermsAndConditionsUrl;
-      return $this;
+        $this->TermsAndConditionsUrl = $TermsAndConditionsUrl;
+        return $this;
     }
 
 }

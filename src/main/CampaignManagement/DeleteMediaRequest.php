@@ -21,8 +21,8 @@ class DeleteMediaRequest
      */
     public function __construct($AccountId = null, $MediaIds = null)
     {
-      $this->AccountId = $AccountId;
-      $this->MediaIds = $MediaIds;
+    $this->AccountId = $AccountId;
+    $this->MediaIds = $MediaIds;
     }
 
     /**
@@ -30,7 +30,7 @@ class DeleteMediaRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -39,8 +39,8 @@ class DeleteMediaRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class DeleteMediaRequest
      */
     public function getMediaIds()
     {
-      return $this->MediaIds;
+        return $this->MediaIds;
     }
 
     /**
@@ -57,8 +57,8 @@ class DeleteMediaRequest
      */
     public function setMediaIds($MediaIds)
     {
-      $this->MediaIds = $MediaIds;
-      return $this;
+        $this->MediaIds = $MediaIds;
+        return $this;
     }
 
 }

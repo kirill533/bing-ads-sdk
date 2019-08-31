@@ -21,15 +21,22 @@ class GetAdExtensionsByIdsRequest
     protected $AdExtensionType = null;
 
     /**
+     * @var AdExtensionAdditionalField $ReturnAdditionalFields
+     */
+    protected $ReturnAdditionalFields = null;
+
+    /**
      * @param int $AccountId
      * @param ArrayOflong $AdExtensionIds
      * @param AdExtensionsTypeFilter $AdExtensionType
+     * @param AdExtensionAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($AccountId = null, $AdExtensionIds = null, $AdExtensionType = null)
+    public function __construct($AccountId = null, $AdExtensionIds = null, $AdExtensionType = null, $ReturnAdditionalFields = null)
     {
-      $this->AccountId = $AccountId;
-      $this->AdExtensionIds = $AdExtensionIds;
-      $this->AdExtensionType = $AdExtensionType;
+    $this->AccountId = $AccountId;
+    $this->AdExtensionIds = $AdExtensionIds;
+    $this->AdExtensionType = $AdExtensionType;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -37,7 +44,7 @@ class GetAdExtensionsByIdsRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -46,8 +53,8 @@ class GetAdExtensionsByIdsRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -55,7 +62,7 @@ class GetAdExtensionsByIdsRequest
      */
     public function getAdExtensionIds()
     {
-      return $this->AdExtensionIds;
+        return $this->AdExtensionIds;
     }
 
     /**
@@ -64,8 +71,8 @@ class GetAdExtensionsByIdsRequest
      */
     public function setAdExtensionIds($AdExtensionIds)
     {
-      $this->AdExtensionIds = $AdExtensionIds;
-      return $this;
+        $this->AdExtensionIds = $AdExtensionIds;
+        return $this;
     }
 
     /**
@@ -73,7 +80,7 @@ class GetAdExtensionsByIdsRequest
      */
     public function getAdExtensionType()
     {
-      return $this->AdExtensionType;
+        return $this->AdExtensionType;
     }
 
     /**
@@ -82,8 +89,26 @@ class GetAdExtensionsByIdsRequest
      */
     public function setAdExtensionType($AdExtensionType)
     {
-      $this->AdExtensionType = $AdExtensionType;
-      return $this;
+        $this->AdExtensionType = $AdExtensionType;
+        return $this;
+    }
+
+    /**
+     * @return AdExtensionAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param AdExtensionAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\CampaignManagement\GetAdExtensionsByIdsRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

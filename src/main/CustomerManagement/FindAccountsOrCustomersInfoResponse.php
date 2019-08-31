@@ -15,7 +15,7 @@ class FindAccountsOrCustomersInfoResponse
      */
     public function __construct($AccountInfoWithCustomerData = null)
     {
-      $this->AccountInfoWithCustomerData = $AccountInfoWithCustomerData;
+    $this->AccountInfoWithCustomerData = $AccountInfoWithCustomerData;
     }
 
     /**
@@ -23,7 +23,7 @@ class FindAccountsOrCustomersInfoResponse
      */
     public function getAccountInfoWithCustomerData()
     {
-      return $this->AccountInfoWithCustomerData;
+        return $this->AccountInfoWithCustomerData;
     }
 
     /**
@@ -32,8 +32,8 @@ class FindAccountsOrCustomersInfoResponse
      */
     public function setAccountInfoWithCustomerData($AccountInfoWithCustomerData)
     {
-      $this->AccountInfoWithCustomerData = $AccountInfoWithCustomerData;
-      return $this;
+        $this->AccountInfoWithCustomerData = $AccountInfoWithCustomerData;
+        return $this;
     }
 
 }

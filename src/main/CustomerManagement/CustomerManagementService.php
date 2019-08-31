@@ -79,6 +79,8 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
       'SendUserInvitationResponse' => 'PMG\\BingAds\\CustomerManagement\\SendUserInvitationResponse',
       'SearchUserInvitationsRequest' => 'PMG\\BingAds\\CustomerManagement\\SearchUserInvitationsRequest',
       'SearchUserInvitationsResponse' => 'PMG\\BingAds\\CustomerManagement\\SearchUserInvitationsResponse',
+      'ValidateAddressRequest' => 'PMG\\BingAds\\CustomerManagement\\ValidateAddressRequest',
+      'ValidateAddressResponse' => 'PMG\\BingAds\\CustomerManagement\\ValidateAddressResponse',
       'ArrayOfAccountInfo' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfAccountInfo',
       'AccountInfo' => 'PMG\\BingAds\\CustomerManagement\\AccountInfo',
       'AdvertiserAccount' => 'PMG\\BingAds\\CustomerManagement\\AdvertiserAccount',
@@ -109,6 +111,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
       'ArrayOfAdvertiserAccount' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfAdvertiserAccount',
       'UserInvitation' => 'PMG\\BingAds\\CustomerManagement\\UserInvitation',
       'ArrayOfUserInvitation' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfUserInvitation',
+      'ArrayOfAddress' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfAddress',
       'ArrayOfAdApiError' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfAdApiError',
       'AdApiError' => 'PMG\\BingAds\\CustomerManagement\\AdApiError',
       'ArrayOfOperationError' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfOperationError',
@@ -121,6 +124,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
       'ArrayOfstring' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfstring',
       'ApplicationFault' => 'PMG\\BingAds\\CustomerManagement\\ApplicationFault',
       'ApiFault' => 'PMG\\BingAds\\CustomerManagement\\ApiFault',
+      'AdApiFault' => 'PMG\\BingAds\\CustomerManagement\\AdApiFault',
       'AdApiFaultDetail' => 'PMG\\BingAds\\CustomerManagement\\AdApiFault',
     );
 
@@ -142,7 +146,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function getAccountsInfo(GetAccountsInfoRequest $parameters)
     {
-      return $this->__soapCall("GetAccountsInfo", array($parameters));
+        return $this->__soapCall("GetAccountsInfo", [$parameters]);
     }
 
     /**
@@ -151,7 +155,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function findAccounts(FindAccountsRequest $parameters)
     {
-      return $this->__soapCall("FindAccounts", array($parameters));
+        return $this->__soapCall("FindAccounts", [$parameters]);
     }
 
     /**
@@ -160,7 +164,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function addAccount(AddAccountRequest $parameters)
     {
-      return $this->__soapCall("AddAccount", array($parameters));
+        return $this->__soapCall("AddAccount", [$parameters]);
     }
 
     /**
@@ -169,7 +173,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function updateAccount(UpdateAccountRequest $parameters)
     {
-      return $this->__soapCall("UpdateAccount", array($parameters));
+        return $this->__soapCall("UpdateAccount", [$parameters]);
     }
 
     /**
@@ -178,7 +182,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function getCustomer(GetCustomerRequest $parameters)
     {
-      return $this->__soapCall("GetCustomer", array($parameters));
+        return $this->__soapCall("GetCustomer", [$parameters]);
     }
 
     /**
@@ -187,7 +191,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function updateCustomer(UpdateCustomerRequest $parameters)
     {
-      return $this->__soapCall("UpdateCustomer", array($parameters));
+        return $this->__soapCall("UpdateCustomer", [$parameters]);
     }
 
     /**
@@ -196,7 +200,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function signupCustomer(SignupCustomerRequest $parameters)
     {
-      return $this->__soapCall("SignupCustomer", array($parameters));
+        return $this->__soapCall("SignupCustomer", [$parameters]);
     }
 
     /**
@@ -205,7 +209,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function getAccount(GetAccountRequest $parameters)
     {
-      return $this->__soapCall("GetAccount", array($parameters));
+        return $this->__soapCall("GetAccount", [$parameters]);
     }
 
     /**
@@ -214,7 +218,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function getCustomersInfo(GetCustomersInfoRequest $parameters)
     {
-      return $this->__soapCall("GetCustomersInfo", array($parameters));
+        return $this->__soapCall("GetCustomersInfo", [$parameters]);
     }
 
     /**
@@ -223,7 +227,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function deleteAccount(DeleteAccountRequest $parameters)
     {
-      return $this->__soapCall("DeleteAccount", array($parameters));
+        return $this->__soapCall("DeleteAccount", [$parameters]);
     }
 
     /**
@@ -232,7 +236,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function deleteCustomer(DeleteCustomerRequest $parameters)
     {
-      return $this->__soapCall("DeleteCustomer", array($parameters));
+        return $this->__soapCall("DeleteCustomer", [$parameters]);
     }
 
     /**
@@ -241,7 +245,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function updateUser(UpdateUserRequest $parameters)
     {
-      return $this->__soapCall("UpdateUser", array($parameters));
+        return $this->__soapCall("UpdateUser", [$parameters]);
     }
 
     /**
@@ -250,7 +254,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function updateUserRoles(UpdateUserRolesRequest $parameters)
     {
-      return $this->__soapCall("UpdateUserRoles", array($parameters));
+        return $this->__soapCall("UpdateUserRoles", [$parameters]);
     }
 
     /**
@@ -259,7 +263,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function getUser(GetUserRequest $parameters)
     {
-      return $this->__soapCall("GetUser", array($parameters));
+        return $this->__soapCall("GetUser", [$parameters]);
     }
 
     /**
@@ -268,7 +272,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function getCurrentUser(GetCurrentUserRequest $parameters)
     {
-      return $this->__soapCall("GetCurrentUser", array($parameters));
+        return $this->__soapCall("GetCurrentUser", [$parameters]);
     }
 
     /**
@@ -277,7 +281,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function deleteUser(DeleteUserRequest $parameters)
     {
-      return $this->__soapCall("DeleteUser", array($parameters));
+        return $this->__soapCall("DeleteUser", [$parameters]);
     }
 
     /**
@@ -286,7 +290,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function getUsersInfo(GetUsersInfoRequest $parameters)
     {
-      return $this->__soapCall("GetUsersInfo", array($parameters));
+        return $this->__soapCall("GetUsersInfo", [$parameters]);
     }
 
     /**
@@ -295,7 +299,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function getCustomerPilotFeatures(GetCustomerPilotFeaturesRequest $parameters)
     {
-      return $this->__soapCall("GetCustomerPilotFeatures", array($parameters));
+        return $this->__soapCall("GetCustomerPilotFeatures", [$parameters]);
     }
 
     /**
@@ -304,7 +308,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function getPilotFeaturesCountries(GetPilotFeaturesCountriesRequest $parameters)
     {
-      return $this->__soapCall("GetPilotFeaturesCountries", array($parameters));
+        return $this->__soapCall("GetPilotFeaturesCountries", [$parameters]);
     }
 
     /**
@@ -313,7 +317,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function getAccessibleCustomer(GetAccessibleCustomerRequest $parameters)
     {
-      return $this->__soapCall("GetAccessibleCustomer", array($parameters));
+        return $this->__soapCall("GetAccessibleCustomer", [$parameters]);
     }
 
     /**
@@ -322,7 +326,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function findAccountsOrCustomersInfo(FindAccountsOrCustomersInfoRequest $parameters)
     {
-      return $this->__soapCall("FindAccountsOrCustomersInfo", array($parameters));
+        return $this->__soapCall("FindAccountsOrCustomersInfo", [$parameters]);
     }
 
     /**
@@ -331,7 +335,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function upgradeCustomerToAgency(UpgradeCustomerToAgencyRequest $parameters)
     {
-      return $this->__soapCall("UpgradeCustomerToAgency", array($parameters));
+        return $this->__soapCall("UpgradeCustomerToAgency", [$parameters]);
     }
 
     /**
@@ -340,7 +344,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function addPrepayAccount(AddPrepayAccountRequest $parameters)
     {
-      return $this->__soapCall("AddPrepayAccount", array($parameters));
+        return $this->__soapCall("AddPrepayAccount", [$parameters]);
     }
 
     /**
@@ -349,7 +353,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function updatePrepayAccount(UpdatePrepayAccountRequest $parameters)
     {
-      return $this->__soapCall("UpdatePrepayAccount", array($parameters));
+        return $this->__soapCall("UpdatePrepayAccount", [$parameters]);
     }
 
     /**
@@ -358,7 +362,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function mapCustomerIdToExternalCustomerId(MapCustomerIdToExternalCustomerIdRequest $parameters)
     {
-      return $this->__soapCall("MapCustomerIdToExternalCustomerId", array($parameters));
+        return $this->__soapCall("MapCustomerIdToExternalCustomerId", [$parameters]);
     }
 
     /**
@@ -367,7 +371,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function mapAccountIdToExternalAccountIds(MapAccountIdToExternalAccountIdsRequest $parameters)
     {
-      return $this->__soapCall("MapAccountIdToExternalAccountIds", array($parameters));
+        return $this->__soapCall("MapAccountIdToExternalAccountIds", [$parameters]);
     }
 
     /**
@@ -376,7 +380,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function searchCustomers(SearchCustomersRequest $parameters)
     {
-      return $this->__soapCall("SearchCustomers", array($parameters));
+        return $this->__soapCall("SearchCustomers", [$parameters]);
     }
 
     /**
@@ -385,7 +389,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function addClientLinks(AddClientLinksRequest $parameters)
     {
-      return $this->__soapCall("AddClientLinks", array($parameters));
+        return $this->__soapCall("AddClientLinks", [$parameters]);
     }
 
     /**
@@ -394,7 +398,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function updateClientLinks(UpdateClientLinksRequest $parameters)
     {
-      return $this->__soapCall("UpdateClientLinks", array($parameters));
+        return $this->__soapCall("UpdateClientLinks", [$parameters]);
     }
 
     /**
@@ -403,7 +407,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function searchClientLinks(SearchClientLinksRequest $parameters)
     {
-      return $this->__soapCall("SearchClientLinks", array($parameters));
+        return $this->__soapCall("SearchClientLinks", [$parameters]);
     }
 
     /**
@@ -412,7 +416,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function searchAccounts(SearchAccountsRequest $parameters)
     {
-      return $this->__soapCall("SearchAccounts", array($parameters));
+        return $this->__soapCall("SearchAccounts", [$parameters]);
     }
 
     /**
@@ -421,7 +425,7 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function sendUserInvitation(SendUserInvitationRequest $parameters)
     {
-      return $this->__soapCall("SendUserInvitation", array($parameters));
+        return $this->__soapCall("SendUserInvitation", [$parameters]);
     }
 
     /**
@@ -430,7 +434,16 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
      */
     public function searchUserInvitations(SearchUserInvitationsRequest $parameters)
     {
-      return $this->__soapCall("SearchUserInvitations", array($parameters));
+        return $this->__soapCall("SearchUserInvitations", [$parameters]);
+    }
+
+    /**
+     * @param ValidateAddressRequest $parameters
+     * @return ValidateAddressResponse
+     */
+    public function validateAddress(ValidateAddressRequest $parameters)
+    {
+        return $this->__soapCall("ValidateAddress", [$parameters]);
     }
 
 }

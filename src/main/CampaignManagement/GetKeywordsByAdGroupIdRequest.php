@@ -11,11 +11,18 @@ class GetKeywordsByAdGroupIdRequest
     protected $AdGroupId = null;
 
     /**
-     * @param int $AdGroupId
+     * @var KeywordAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($AdGroupId = null)
+    protected $ReturnAdditionalFields = null;
+
+    /**
+     * @param int $AdGroupId
+     * @param KeywordAdditionalField $ReturnAdditionalFields
+     */
+    public function __construct($AdGroupId = null, $ReturnAdditionalFields = null)
     {
-      $this->AdGroupId = $AdGroupId;
+    $this->AdGroupId = $AdGroupId;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -23,7 +30,7 @@ class GetKeywordsByAdGroupIdRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -32,8 +39,26 @@ class GetKeywordsByAdGroupIdRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
+    }
+
+    /**
+     * @return KeywordAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param KeywordAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\CampaignManagement\GetKeywordsByAdGroupIdRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

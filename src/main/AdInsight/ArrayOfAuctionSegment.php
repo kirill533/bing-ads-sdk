@@ -21,7 +21,7 @@ class ArrayOfAuctionSegment implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getAuctionSegment()
     {
-      return $this->AuctionSegment;
+        return $this->AuctionSegment;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAuctionSegment implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function setAuctionSegment(array $AuctionSegment = null)
     {
-      $this->AuctionSegment = $AuctionSegment;
-      return $this;
+        $this->AuctionSegment = $AuctionSegment;
+        return $this;
     }
 
     /**

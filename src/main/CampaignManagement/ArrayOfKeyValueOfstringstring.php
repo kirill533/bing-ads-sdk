@@ -21,7 +21,7 @@ class ArrayOfKeyValueOfstringstring implements \ArrayAccess, \IteratorAggregate,
      */
     public function getKeyValueOfstringstring()
     {
-      return $this->KeyValueOfstringstring;
+        return $this->KeyValueOfstringstring;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeyValueOfstringstring implements \ArrayAccess, \IteratorAggregate,
      */
     public function setKeyValueOfstringstring(array $KeyValueOfstringstring = null)
     {
-      $this->KeyValueOfstringstring = $KeyValueOfstringstring;
-      return $this;
+        $this->KeyValueOfstringstring = $KeyValueOfstringstring;
+        return $this;
     }
 
     /**

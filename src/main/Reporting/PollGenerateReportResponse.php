@@ -15,7 +15,7 @@ class PollGenerateReportResponse
      */
     public function __construct($ReportRequestStatus = null)
     {
-      $this->ReportRequestStatus = $ReportRequestStatus;
+    $this->ReportRequestStatus = $ReportRequestStatus;
     }
 
     /**
@@ -23,7 +23,7 @@ class PollGenerateReportResponse
      */
     public function getReportRequestStatus()
     {
-      return $this->ReportRequestStatus;
+        return $this->ReportRequestStatus;
     }
 
     /**
@@ -32,8 +32,8 @@ class PollGenerateReportResponse
      */
     public function setReportRequestStatus($ReportRequestStatus)
     {
-      $this->ReportRequestStatus = $ReportRequestStatus;
-      return $this;
+        $this->ReportRequestStatus = $ReportRequestStatus;
+        return $this;
     }
 
 }

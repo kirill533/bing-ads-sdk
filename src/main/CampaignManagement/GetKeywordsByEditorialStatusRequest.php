@@ -16,13 +16,20 @@ class GetKeywordsByEditorialStatusRequest
     protected $EditorialStatus = null;
 
     /**
+     * @var KeywordAdditionalField $ReturnAdditionalFields
+     */
+    protected $ReturnAdditionalFields = null;
+
+    /**
      * @param int $AdGroupId
      * @param KeywordEditorialStatus $EditorialStatus
+     * @param KeywordAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($AdGroupId = null, $EditorialStatus = null)
+    public function __construct($AdGroupId = null, $EditorialStatus = null, $ReturnAdditionalFields = null)
     {
-      $this->AdGroupId = $AdGroupId;
-      $this->EditorialStatus = $EditorialStatus;
+    $this->AdGroupId = $AdGroupId;
+    $this->EditorialStatus = $EditorialStatus;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -30,7 +37,7 @@ class GetKeywordsByEditorialStatusRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -39,8 +46,8 @@ class GetKeywordsByEditorialStatusRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -48,7 +55,7 @@ class GetKeywordsByEditorialStatusRequest
      */
     public function getEditorialStatus()
     {
-      return $this->EditorialStatus;
+        return $this->EditorialStatus;
     }
 
     /**
@@ -57,8 +64,26 @@ class GetKeywordsByEditorialStatusRequest
      */
     public function setEditorialStatus($EditorialStatus)
     {
-      $this->EditorialStatus = $EditorialStatus;
-      return $this;
+        $this->EditorialStatus = $EditorialStatus;
+        return $this;
+    }
+
+    /**
+     * @return KeywordAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param KeywordAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\CampaignManagement\GetKeywordsByEditorialStatusRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

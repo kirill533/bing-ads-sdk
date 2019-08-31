@@ -27,9 +27,9 @@ class GetLabelAssociationsByLabelIdsRequest
      */
     public function __construct($EntityType = null, $LabelIds = null, $PageInfo = null)
     {
-      $this->EntityType = $EntityType;
-      $this->LabelIds = $LabelIds;
-      $this->PageInfo = $PageInfo;
+    $this->EntityType = $EntityType;
+    $this->LabelIds = $LabelIds;
+    $this->PageInfo = $PageInfo;
     }
 
     /**
@@ -37,7 +37,7 @@ class GetLabelAssociationsByLabelIdsRequest
      */
     public function getEntityType()
     {
-      return $this->EntityType;
+        return $this->EntityType;
     }
 
     /**
@@ -46,8 +46,8 @@ class GetLabelAssociationsByLabelIdsRequest
      */
     public function setEntityType($EntityType)
     {
-      $this->EntityType = $EntityType;
-      return $this;
+        $this->EntityType = $EntityType;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class GetLabelAssociationsByLabelIdsRequest
      */
     public function getLabelIds()
     {
-      return $this->LabelIds;
+        return $this->LabelIds;
     }
 
     /**
@@ -64,8 +64,8 @@ class GetLabelAssociationsByLabelIdsRequest
      */
     public function setLabelIds($LabelIds)
     {
-      $this->LabelIds = $LabelIds;
-      return $this;
+        $this->LabelIds = $LabelIds;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class GetLabelAssociationsByLabelIdsRequest
      */
     public function getPageInfo()
     {
-      return $this->PageInfo;
+        return $this->PageInfo;
     }
 
     /**
@@ -82,8 +82,8 @@ class GetLabelAssociationsByLabelIdsRequest
      */
     public function setPageInfo($PageInfo)
     {
-      $this->PageInfo = $PageInfo;
-      return $this;
+        $this->PageInfo = $PageInfo;
+        return $this;
     }
 
 }

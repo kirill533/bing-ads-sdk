@@ -21,7 +21,7 @@ class ArrayOfRuleItemGroup implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function getRuleItemGroup()
     {
-      return $this->RuleItemGroup;
+        return $this->RuleItemGroup;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfRuleItemGroup implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function setRuleItemGroup(array $RuleItemGroup = null)
     {
-      $this->RuleItemGroup = $RuleItemGroup;
-      return $this;
+        $this->RuleItemGroup = $RuleItemGroup;
+        return $this;
     }
 
     /**

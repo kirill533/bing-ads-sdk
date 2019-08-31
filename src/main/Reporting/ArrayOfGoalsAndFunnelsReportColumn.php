@@ -21,7 +21,7 @@ class ArrayOfGoalsAndFunnelsReportColumn implements \ArrayAccess, \IteratorAggre
      */
     public function getGoalsAndFunnelsReportColumn()
     {
-      return $this->GoalsAndFunnelsReportColumn;
+        return $this->GoalsAndFunnelsReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfGoalsAndFunnelsReportColumn implements \ArrayAccess, \IteratorAggre
      */
     public function setGoalsAndFunnelsReportColumn(array $GoalsAndFunnelsReportColumn = null)
     {
-      $this->GoalsAndFunnelsReportColumn = $GoalsAndFunnelsReportColumn;
-      return $this;
+        $this->GoalsAndFunnelsReportColumn = $GoalsAndFunnelsReportColumn;
+        return $this;
     }
 
     /**

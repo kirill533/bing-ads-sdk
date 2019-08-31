@@ -26,7 +26,7 @@ class SearchVolumeSearchParameter extends SearchParameter
      */
     public function getMaximum()
     {
-      return $this->Maximum;
+        return $this->Maximum;
     }
 
     /**
@@ -35,8 +35,8 @@ class SearchVolumeSearchParameter extends SearchParameter
      */
     public function setMaximum($Maximum)
     {
-      $this->Maximum = $Maximum;
-      return $this;
+        $this->Maximum = $Maximum;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class SearchVolumeSearchParameter extends SearchParameter
      */
     public function getMinimum()
     {
-      return $this->Minimum;
+        return $this->Minimum;
     }
 
     /**
@@ -53,8 +53,8 @@ class SearchVolumeSearchParameter extends SearchParameter
      */
     public function setMinimum($Minimum)
     {
-      $this->Minimum = $Minimum;
-      return $this;
+        $this->Minimum = $Minimum;
+        return $this;
     }
 
 }

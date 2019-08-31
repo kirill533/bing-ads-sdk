@@ -21,8 +21,8 @@ class GetEstimatedPositionByKeywordIdsRequest
      */
     public function __construct($KeywordIds = null, $MaxBid = null)
     {
-      $this->KeywordIds = $KeywordIds;
-      $this->MaxBid = $MaxBid;
+    $this->KeywordIds = $KeywordIds;
+    $this->MaxBid = $MaxBid;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetEstimatedPositionByKeywordIdsRequest
      */
     public function getKeywordIds()
     {
-      return $this->KeywordIds;
+        return $this->KeywordIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetEstimatedPositionByKeywordIdsRequest
      */
     public function setKeywordIds($KeywordIds)
     {
-      $this->KeywordIds = $KeywordIds;
-      return $this;
+        $this->KeywordIds = $KeywordIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetEstimatedPositionByKeywordIdsRequest
      */
     public function getMaxBid()
     {
-      return $this->MaxBid;
+        return $this->MaxBid;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetEstimatedPositionByKeywordIdsRequest
      */
     public function setMaxBid($MaxBid)
     {
-      $this->MaxBid = $MaxBid;
-      return $this;
+        $this->MaxBid = $MaxBid;
+        return $this;
     }
 
 }

@@ -46,6 +46,9 @@ class DSASearchQueryPerformanceReportColumn
     const CostPerAssist = 'CostPerAssist';
     const RevenuePerConversion = 'RevenuePerConversion';
     const RevenuePerAssist = 'RevenuePerAssist';
+    const CustomerId = 'CustomerId';
+    const CustomerName = 'CustomerName';
+    const FeedUrl = 'FeedUrl';
 
 
 }

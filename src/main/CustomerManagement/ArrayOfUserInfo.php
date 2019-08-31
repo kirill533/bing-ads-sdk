@@ -21,7 +21,7 @@ class ArrayOfUserInfo implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getUserInfo()
     {
-      return $this->UserInfo;
+        return $this->UserInfo;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfUserInfo implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setUserInfo(array $UserInfo = null)
     {
-      $this->UserInfo = $UserInfo;
-      return $this;
+        $this->UserInfo = $UserInfo;
+        return $this;
     }
 
     /**

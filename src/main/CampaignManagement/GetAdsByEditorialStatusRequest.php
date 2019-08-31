@@ -21,15 +21,22 @@ class GetAdsByEditorialStatusRequest
     protected $AdTypes = null;
 
     /**
+     * @var AdAdditionalField $ReturnAdditionalFields
+     */
+    protected $ReturnAdditionalFields = null;
+
+    /**
      * @param int $AdGroupId
      * @param AdEditorialStatus $EditorialStatus
      * @param ArrayOfAdType $AdTypes
+     * @param AdAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($AdGroupId = null, $EditorialStatus = null, $AdTypes = null)
+    public function __construct($AdGroupId = null, $EditorialStatus = null, $AdTypes = null, $ReturnAdditionalFields = null)
     {
-      $this->AdGroupId = $AdGroupId;
-      $this->EditorialStatus = $EditorialStatus;
-      $this->AdTypes = $AdTypes;
+    $this->AdGroupId = $AdGroupId;
+    $this->EditorialStatus = $EditorialStatus;
+    $this->AdTypes = $AdTypes;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -37,7 +44,7 @@ class GetAdsByEditorialStatusRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -46,8 +53,8 @@ class GetAdsByEditorialStatusRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -55,7 +62,7 @@ class GetAdsByEditorialStatusRequest
      */
     public function getEditorialStatus()
     {
-      return $this->EditorialStatus;
+        return $this->EditorialStatus;
     }
 
     /**
@@ -64,8 +71,8 @@ class GetAdsByEditorialStatusRequest
      */
     public function setEditorialStatus($EditorialStatus)
     {
-      $this->EditorialStatus = $EditorialStatus;
-      return $this;
+        $this->EditorialStatus = $EditorialStatus;
+        return $this;
     }
 
     /**
@@ -73,7 +80,7 @@ class GetAdsByEditorialStatusRequest
      */
     public function getAdTypes()
     {
-      return $this->AdTypes;
+        return $this->AdTypes;
     }
 
     /**
@@ -82,8 +89,26 @@ class GetAdsByEditorialStatusRequest
      */
     public function setAdTypes($AdTypes)
     {
-      $this->AdTypes = $AdTypes;
-      return $this;
+        $this->AdTypes = $AdTypes;
+        return $this;
+    }
+
+    /**
+     * @return AdAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param AdAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\CampaignManagement\GetAdsByEditorialStatusRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

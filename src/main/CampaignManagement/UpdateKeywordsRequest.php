@@ -27,9 +27,9 @@ class UpdateKeywordsRequest
      */
     public function __construct($AdGroupId = null, $Keywords = null, $ReturnInheritedBidStrategyTypes = null)
     {
-      $this->AdGroupId = $AdGroupId;
-      $this->Keywords = $Keywords;
-      $this->ReturnInheritedBidStrategyTypes = $ReturnInheritedBidStrategyTypes;
+    $this->AdGroupId = $AdGroupId;
+    $this->Keywords = $Keywords;
+    $this->ReturnInheritedBidStrategyTypes = $ReturnInheritedBidStrategyTypes;
     }
 
     /**
@@ -37,7 +37,7 @@ class UpdateKeywordsRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -46,8 +46,8 @@ class UpdateKeywordsRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class UpdateKeywordsRequest
      */
     public function getKeywords()
     {
-      return $this->Keywords;
+        return $this->Keywords;
     }
 
     /**
@@ -64,8 +64,8 @@ class UpdateKeywordsRequest
      */
     public function setKeywords($Keywords)
     {
-      $this->Keywords = $Keywords;
-      return $this;
+        $this->Keywords = $Keywords;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class UpdateKeywordsRequest
      */
     public function getReturnInheritedBidStrategyTypes()
     {
-      return $this->ReturnInheritedBidStrategyTypes;
+        return $this->ReturnInheritedBidStrategyTypes;
     }
 
     /**
@@ -82,8 +82,8 @@ class UpdateKeywordsRequest
      */
     public function setReturnInheritedBidStrategyTypes($ReturnInheritedBidStrategyTypes)
     {
-      $this->ReturnInheritedBidStrategyTypes = $ReturnInheritedBidStrategyTypes;
-      return $this;
+        $this->ReturnInheritedBidStrategyTypes = $ReturnInheritedBidStrategyTypes;
+        return $this;
     }
 
 }

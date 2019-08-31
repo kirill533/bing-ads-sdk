@@ -21,15 +21,22 @@ class GetAdsByIdsRequest
     protected $AdTypes = null;
 
     /**
+     * @var AdAdditionalField $ReturnAdditionalFields
+     */
+    protected $ReturnAdditionalFields = null;
+
+    /**
      * @param int $AdGroupId
      * @param ArrayOflong $AdIds
      * @param ArrayOfAdType $AdTypes
+     * @param AdAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($AdGroupId = null, $AdIds = null, $AdTypes = null)
+    public function __construct($AdGroupId = null, $AdIds = null, $AdTypes = null, $ReturnAdditionalFields = null)
     {
-      $this->AdGroupId = $AdGroupId;
-      $this->AdIds = $AdIds;
-      $this->AdTypes = $AdTypes;
+    $this->AdGroupId = $AdGroupId;
+    $this->AdIds = $AdIds;
+    $this->AdTypes = $AdTypes;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -37,7 +44,7 @@ class GetAdsByIdsRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -46,8 +53,8 @@ class GetAdsByIdsRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -55,7 +62,7 @@ class GetAdsByIdsRequest
      */
     public function getAdIds()
     {
-      return $this->AdIds;
+        return $this->AdIds;
     }
 
     /**
@@ -64,8 +71,8 @@ class GetAdsByIdsRequest
      */
     public function setAdIds($AdIds)
     {
-      $this->AdIds = $AdIds;
-      return $this;
+        $this->AdIds = $AdIds;
+        return $this;
     }
 
     /**
@@ -73,7 +80,7 @@ class GetAdsByIdsRequest
      */
     public function getAdTypes()
     {
-      return $this->AdTypes;
+        return $this->AdTypes;
     }
 
     /**
@@ -82,8 +89,26 @@ class GetAdsByIdsRequest
      */
     public function setAdTypes($AdTypes)
     {
-      $this->AdTypes = $AdTypes;
-      return $this;
+        $this->AdTypes = $AdTypes;
+        return $this;
+    }
+
+    /**
+     * @return AdAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param AdAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\CampaignManagement\GetAdsByIdsRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

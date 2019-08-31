@@ -15,7 +15,7 @@ class GetPilotFeaturesCountriesResponse
      */
     public function __construct($PilotFeatures = null)
     {
-      $this->PilotFeatures = $PilotFeatures;
+    $this->PilotFeatures = $PilotFeatures;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetPilotFeaturesCountriesResponse
      */
     public function getPilotFeatures()
     {
-      return $this->PilotFeatures;
+        return $this->PilotFeatures;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetPilotFeaturesCountriesResponse
      */
     public function setPilotFeatures($PilotFeatures)
     {
-      $this->PilotFeatures = $PilotFeatures;
-      return $this;
+        $this->PilotFeatures = $PilotFeatures;
+        return $this;
     }
 
 }

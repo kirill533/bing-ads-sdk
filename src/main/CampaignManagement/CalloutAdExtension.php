@@ -13,7 +13,7 @@ class CalloutAdExtension extends AdExtension
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class CalloutAdExtension extends AdExtension
      */
     public function getText()
     {
-      return $this->Text;
+        return $this->Text;
     }
 
     /**
@@ -30,8 +30,8 @@ class CalloutAdExtension extends AdExtension
      */
     public function setText($Text)
     {
-      $this->Text = $Text;
-      return $this;
+        $this->Text = $Text;
+        return $this;
     }
 
 }

@@ -21,8 +21,8 @@ class GetCustomersInfoRequest
      */
     public function __construct($CustomerNameFilter = null, $TopN = null)
     {
-      $this->CustomerNameFilter = $CustomerNameFilter;
-      $this->TopN = $TopN;
+    $this->CustomerNameFilter = $CustomerNameFilter;
+    $this->TopN = $TopN;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetCustomersInfoRequest
      */
     public function getCustomerNameFilter()
     {
-      return $this->CustomerNameFilter;
+        return $this->CustomerNameFilter;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetCustomersInfoRequest
      */
     public function setCustomerNameFilter($CustomerNameFilter)
     {
-      $this->CustomerNameFilter = $CustomerNameFilter;
-      return $this;
+        $this->CustomerNameFilter = $CustomerNameFilter;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetCustomersInfoRequest
      */
     public function getTopN()
     {
-      return $this->TopN;
+        return $this->TopN;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetCustomersInfoRequest
      */
     public function setTopN($TopN)
     {
-      $this->TopN = $TopN;
-      return $this;
+        $this->TopN = $TopN;
+        return $this;
     }
 
 }

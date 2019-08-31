@@ -11,11 +11,18 @@ class GetMediaMetaDataByAccountIdRequest
     protected $MediaEnabledEntities = null;
 
     /**
-     * @param MediaEnabledEntityFilter $MediaEnabledEntities
+     * @var Paging $PageInfo
      */
-    public function __construct($MediaEnabledEntities = null)
+    protected $PageInfo = null;
+
+    /**
+     * @param MediaEnabledEntityFilter $MediaEnabledEntities
+     * @param Paging $PageInfo
+     */
+    public function __construct($MediaEnabledEntities = null, $PageInfo = null)
     {
-      $this->MediaEnabledEntities = $MediaEnabledEntities;
+    $this->MediaEnabledEntities = $MediaEnabledEntities;
+    $this->PageInfo = $PageInfo;
     }
 
     /**
@@ -23,7 +30,7 @@ class GetMediaMetaDataByAccountIdRequest
      */
     public function getMediaEnabledEntities()
     {
-      return $this->MediaEnabledEntities;
+        return $this->MediaEnabledEntities;
     }
 
     /**
@@ -32,8 +39,26 @@ class GetMediaMetaDataByAccountIdRequest
      */
     public function setMediaEnabledEntities($MediaEnabledEntities)
     {
-      $this->MediaEnabledEntities = $MediaEnabledEntities;
-      return $this;
+        $this->MediaEnabledEntities = $MediaEnabledEntities;
+        return $this;
+    }
+
+    /**
+     * @return Paging
+     */
+    public function getPageInfo()
+    {
+        return $this->PageInfo;
+    }
+
+    /**
+     * @param Paging $PageInfo
+     * @return \PMG\BingAds\CampaignManagement\GetMediaMetaDataByAccountIdRequest
+     */
+    public function setPageInfo($PageInfo)
+    {
+        $this->PageInfo = $PageInfo;
+        return $this;
     }
 
 }

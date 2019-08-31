@@ -21,7 +21,7 @@ class ArrayOfAgeGenderAudienceReportColumn implements \ArrayAccess, \IteratorAgg
      */
     public function getAgeGenderAudienceReportColumn()
     {
-      return $this->AgeGenderAudienceReportColumn;
+        return $this->AgeGenderAudienceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAgeGenderAudienceReportColumn implements \ArrayAccess, \IteratorAgg
      */
     public function setAgeGenderAudienceReportColumn(array $AgeGenderAudienceReportColumn = null)
     {
-      $this->AgeGenderAudienceReportColumn = $AgeGenderAudienceReportColumn;
-      return $this;
+        $this->AgeGenderAudienceReportColumn = $AgeGenderAudienceReportColumn;
+        return $this;
     }
 
     /**

@@ -21,7 +21,7 @@ class ArrayOfAdExtensionEditorialReasonCollection implements \ArrayAccess, \Iter
      */
     public function getAdExtensionEditorialReasonCollection()
     {
-      return $this->AdExtensionEditorialReasonCollection;
+        return $this->AdExtensionEditorialReasonCollection;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdExtensionEditorialReasonCollection implements \ArrayAccess, \Iter
      */
     public function setAdExtensionEditorialReasonCollection(array $AdExtensionEditorialReasonCollection = null)
     {
-      $this->AdExtensionEditorialReasonCollection = $AdExtensionEditorialReasonCollection;
-      return $this;
+        $this->AdExtensionEditorialReasonCollection = $AdExtensionEditorialReasonCollection;
+        return $this;
     }
 
     /**

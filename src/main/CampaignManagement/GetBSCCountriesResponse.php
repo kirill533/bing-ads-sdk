@@ -15,7 +15,7 @@ class GetBSCCountriesResponse
      */
     public function __construct($CountryCodes = null)
     {
-      $this->CountryCodes = $CountryCodes;
+    $this->CountryCodes = $CountryCodes;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetBSCCountriesResponse
      */
     public function getCountryCodes()
     {
-      return $this->CountryCodes;
+        return $this->CountryCodes;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetBSCCountriesResponse
      */
     public function setCountryCodes($CountryCodes)
     {
-      $this->CountryCodes = $CountryCodes;
-      return $this;
+        $this->CountryCodes = $CountryCodes;
+        return $this;
     }
 
 }

@@ -15,7 +15,7 @@ class SendUserInvitationRequest
      */
     public function __construct($UserInvitation = null)
     {
-      $this->UserInvitation = $UserInvitation;
+    $this->UserInvitation = $UserInvitation;
     }
 
     /**
@@ -23,7 +23,7 @@ class SendUserInvitationRequest
      */
     public function getUserInvitation()
     {
-      return $this->UserInvitation;
+        return $this->UserInvitation;
     }
 
     /**
@@ -32,8 +32,8 @@ class SendUserInvitationRequest
      */
     public function setUserInvitation($UserInvitation)
     {
-      $this->UserInvitation = $UserInvitation;
-      return $this;
+        $this->UserInvitation = $UserInvitation;
+        return $this;
     }
 
 }

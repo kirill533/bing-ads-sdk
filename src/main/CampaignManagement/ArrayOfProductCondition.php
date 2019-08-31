@@ -21,7 +21,7 @@ class ArrayOfProductCondition implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function getProductCondition()
     {
-      return $this->ProductCondition;
+        return $this->ProductCondition;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfProductCondition implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function setProductCondition(array $ProductCondition = null)
     {
-      $this->ProductCondition = $ProductCondition;
-      return $this;
+        $this->ProductCondition = $ProductCondition;
+        return $this;
     }
 
     /**

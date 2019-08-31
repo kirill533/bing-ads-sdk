@@ -21,7 +21,7 @@ class ArrayOfBillingDocument implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getBillingDocument()
     {
-      return $this->BillingDocument;
+        return $this->BillingDocument;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfBillingDocument implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function setBillingDocument(array $BillingDocument = null)
     {
-      $this->BillingDocument = $BillingDocument;
-      return $this;
+        $this->BillingDocument = $BillingDocument;
+        return $this;
     }
 
     /**

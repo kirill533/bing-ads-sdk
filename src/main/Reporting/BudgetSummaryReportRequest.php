@@ -23,7 +23,7 @@ class BudgetSummaryReportRequest extends ReportRequest
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -31,7 +31,7 @@ class BudgetSummaryReportRequest extends ReportRequest
      */
     public function getColumns()
     {
-      return $this->Columns;
+        return $this->Columns;
     }
 
     /**
@@ -40,8 +40,8 @@ class BudgetSummaryReportRequest extends ReportRequest
      */
     public function setColumns($Columns)
     {
-      $this->Columns = $Columns;
-      return $this;
+        $this->Columns = $Columns;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class BudgetSummaryReportRequest extends ReportRequest
      */
     public function getScope()
     {
-      return $this->Scope;
+        return $this->Scope;
     }
 
     /**
@@ -58,8 +58,8 @@ class BudgetSummaryReportRequest extends ReportRequest
      */
     public function setScope($Scope)
     {
-      $this->Scope = $Scope;
-      return $this;
+        $this->Scope = $Scope;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class BudgetSummaryReportRequest extends ReportRequest
      */
     public function getTime()
     {
-      return $this->Time;
+        return $this->Time;
     }
 
     /**
@@ -76,8 +76,8 @@ class BudgetSummaryReportRequest extends ReportRequest
      */
     public function setTime($Time)
     {
-      $this->Time = $Time;
-      return $this;
+        $this->Time = $Time;
+        return $this;
     }
 
 }

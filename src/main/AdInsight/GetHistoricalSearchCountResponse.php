@@ -15,7 +15,7 @@ class GetHistoricalSearchCountResponse
      */
     public function __construct($KeywordSearchCounts = null)
     {
-      $this->KeywordSearchCounts = $KeywordSearchCounts;
+    $this->KeywordSearchCounts = $KeywordSearchCounts;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetHistoricalSearchCountResponse
      */
     public function getKeywordSearchCounts()
     {
-      return $this->KeywordSearchCounts;
+        return $this->KeywordSearchCounts;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetHistoricalSearchCountResponse
      */
     public function setKeywordSearchCounts($KeywordSearchCounts)
     {
-      $this->KeywordSearchCounts = $KeywordSearchCounts;
-      return $this;
+        $this->KeywordSearchCounts = $KeywordSearchCounts;
+        return $this;
     }
 
 }

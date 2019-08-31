@@ -21,7 +21,7 @@ class LocationSearchParameter extends SearchParameter
      */
     public function getLocations()
     {
-      return $this->Locations;
+        return $this->Locations;
     }
 
     /**
@@ -30,8 +30,8 @@ class LocationSearchParameter extends SearchParameter
      */
     public function setLocations($Locations)
     {
-      $this->Locations = $Locations;
-      return $this;
+        $this->Locations = $Locations;
+        return $this;
     }
 
 }

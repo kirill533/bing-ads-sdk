@@ -26,7 +26,7 @@ class KeywordEstimatedPosition
      */
     public function getKeyword()
     {
-      return $this->Keyword;
+        return $this->Keyword;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeywordEstimatedPosition
      */
     public function setKeyword($Keyword)
     {
-      $this->Keyword = $Keyword;
-      return $this;
+        $this->Keyword = $Keyword;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeywordEstimatedPosition
      */
     public function getEstimatedPositions()
     {
-      return $this->EstimatedPositions;
+        return $this->EstimatedPositions;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeywordEstimatedPosition
      */
     public function setEstimatedPositions($EstimatedPositions)
     {
-      $this->EstimatedPositions = $EstimatedPositions;
-      return $this;
+        $this->EstimatedPositions = $EstimatedPositions;
+        return $this;
     }
 
 }

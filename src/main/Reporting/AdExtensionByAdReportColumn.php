@@ -46,6 +46,7 @@ class AdExtensionByAdReportColumn
     const AdStatus = 'AdStatus';
     const TitlePart1 = 'TitlePart1';
     const TitlePart2 = 'TitlePart2';
+    const TitlePart3 = 'TitlePart3';
 
 
 }

@@ -186,7 +186,9 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
       'ArrayOfLanguageCriterion' => 'PMG\\BingAds\\AdInsight\\ArrayOfLanguageCriterion',
       'ArrayOfCriterion' => 'PMG\\BingAds\\AdInsight\\ArrayOfCriterion',
       'ApplicationFault' => 'PMG\\BingAds\\AdInsight\\ApplicationFault',
+      'ApiFault' => 'PMG\\BingAds\\AdInsight\\ApiFault',
       'ApiFaultDetail' => 'PMG\\BingAds\\AdInsight\\ApiFault',
+      'AdApiFault' => 'PMG\\BingAds\\AdInsight\\AdApiFault',
       'AdApiFaultDetail' => 'PMG\\BingAds\\AdInsight\\AdApiFault',
     );
 
@@ -208,7 +210,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getBidOpportunities(GetBidOpportunitiesRequest $parameters)
     {
-      return $this->__soapCall("GetBidOpportunities", array($parameters));
+        return $this->__soapCall("GetBidOpportunities", [$parameters]);
     }
 
     /**
@@ -217,7 +219,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getBudgetOpportunities(GetBudgetOpportunitiesRequest $parameters)
     {
-      return $this->__soapCall("GetBudgetOpportunities", array($parameters));
+        return $this->__soapCall("GetBudgetOpportunities", [$parameters]);
     }
 
     /**
@@ -226,7 +228,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getKeywordOpportunities(GetKeywordOpportunitiesRequest $parameters)
     {
-      return $this->__soapCall("GetKeywordOpportunities", array($parameters));
+        return $this->__soapCall("GetKeywordOpportunities", [$parameters]);
     }
 
     /**
@@ -235,7 +237,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getEstimatedBidByKeywordIds(GetEstimatedBidByKeywordIdsRequest $parameters)
     {
-      return $this->__soapCall("GetEstimatedBidByKeywordIds", array($parameters));
+        return $this->__soapCall("GetEstimatedBidByKeywordIds", [$parameters]);
     }
 
     /**
@@ -244,7 +246,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getEstimatedPositionByKeywordIds(GetEstimatedPositionByKeywordIdsRequest $parameters)
     {
-      return $this->__soapCall("GetEstimatedPositionByKeywordIds", array($parameters));
+        return $this->__soapCall("GetEstimatedPositionByKeywordIds", [$parameters]);
     }
 
     /**
@@ -253,7 +255,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getEstimatedBidByKeywords(GetEstimatedBidByKeywordsRequest $parameters)
     {
-      return $this->__soapCall("GetEstimatedBidByKeywords", array($parameters));
+        return $this->__soapCall("GetEstimatedBidByKeywords", [$parameters]);
     }
 
     /**
@@ -262,7 +264,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getEstimatedPositionByKeywords(GetEstimatedPositionByKeywordsRequest $parameters)
     {
-      return $this->__soapCall("GetEstimatedPositionByKeywords", array($parameters));
+        return $this->__soapCall("GetEstimatedPositionByKeywords", [$parameters]);
     }
 
     /**
@@ -271,7 +273,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getBidLandscapeByAdGroupIds(GetBidLandscapeByAdGroupIdsRequest $parameters)
     {
-      return $this->__soapCall("GetBidLandscapeByAdGroupIds", array($parameters));
+        return $this->__soapCall("GetBidLandscapeByAdGroupIds", [$parameters]);
     }
 
     /**
@@ -280,7 +282,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getBidLandscapeByKeywordIds(GetBidLandscapeByKeywordIdsRequest $parameters)
     {
-      return $this->__soapCall("GetBidLandscapeByKeywordIds", array($parameters));
+        return $this->__soapCall("GetBidLandscapeByKeywordIds", [$parameters]);
     }
 
     /**
@@ -289,7 +291,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getHistoricalKeywordPerformance(GetHistoricalKeywordPerformanceRequest $parameters)
     {
-      return $this->__soapCall("GetHistoricalKeywordPerformance", array($parameters));
+        return $this->__soapCall("GetHistoricalKeywordPerformance", [$parameters]);
     }
 
     /**
@@ -298,7 +300,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getHistoricalSearchCount(GetHistoricalSearchCountRequest $parameters)
     {
-      return $this->__soapCall("GetHistoricalSearchCount", array($parameters));
+        return $this->__soapCall("GetHistoricalSearchCount", [$parameters]);
     }
 
     /**
@@ -307,7 +309,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getKeywordCategories(GetKeywordCategoriesRequest $parameters)
     {
-      return $this->__soapCall("GetKeywordCategories", array($parameters));
+        return $this->__soapCall("GetKeywordCategories", [$parameters]);
     }
 
     /**
@@ -316,7 +318,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getKeywordDemographics(GetKeywordDemographicsRequest $parameters)
     {
-      return $this->__soapCall("GetKeywordDemographics", array($parameters));
+        return $this->__soapCall("GetKeywordDemographics", [$parameters]);
     }
 
     /**
@@ -325,7 +327,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getKeywordLocations(GetKeywordLocationsRequest $parameters)
     {
-      return $this->__soapCall("GetKeywordLocations", array($parameters));
+        return $this->__soapCall("GetKeywordLocations", [$parameters]);
     }
 
     /**
@@ -334,7 +336,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function suggestKeywordsForUrl(SuggestKeywordsForUrlRequest $parameters)
     {
-      return $this->__soapCall("SuggestKeywordsForUrl", array($parameters));
+        return $this->__soapCall("SuggestKeywordsForUrl", [$parameters]);
     }
 
     /**
@@ -343,7 +345,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function suggestKeywordsFromExistingKeywords(SuggestKeywordsFromExistingKeywordsRequest $parameters)
     {
-      return $this->__soapCall("SuggestKeywordsFromExistingKeywords", array($parameters));
+        return $this->__soapCall("SuggestKeywordsFromExistingKeywords", [$parameters]);
     }
 
     /**
@@ -352,7 +354,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getAuctionInsightData(GetAuctionInsightDataRequest $parameters)
     {
-      return $this->__soapCall("GetAuctionInsightData", array($parameters));
+        return $this->__soapCall("GetAuctionInsightData", [$parameters]);
     }
 
     /**
@@ -361,7 +363,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getDomainCategories(GetDomainCategoriesRequest $parameters)
     {
-      return $this->__soapCall("GetDomainCategories", array($parameters));
+        return $this->__soapCall("GetDomainCategories", [$parameters]);
     }
 
     /**
@@ -370,7 +372,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function putMetricData(PutMetricDataRequest $parameters)
     {
-      return $this->__soapCall("PutMetricData", array($parameters));
+        return $this->__soapCall("PutMetricData", [$parameters]);
     }
 
     /**
@@ -379,7 +381,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getKeywordIdeaCategories(GetKeywordIdeaCategoriesRequest $parameters)
     {
-      return $this->__soapCall("GetKeywordIdeaCategories", array($parameters));
+        return $this->__soapCall("GetKeywordIdeaCategories", [$parameters]);
     }
 
     /**
@@ -388,7 +390,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getKeywordIdeas(GetKeywordIdeasRequest $parameters)
     {
-      return $this->__soapCall("GetKeywordIdeas", array($parameters));
+        return $this->__soapCall("GetKeywordIdeas", [$parameters]);
     }
 
     /**
@@ -397,7 +399,7 @@ class AdInsightService extends \PMG\BingAds\BingSoapClient
      */
     public function getKeywordTrafficEstimates(GetKeywordTrafficEstimatesRequest $parameters)
     {
-      return $this->__soapCall("GetKeywordTrafficEstimates", array($parameters));
+        return $this->__soapCall("GetKeywordTrafficEstimates", [$parameters]);
     }
 
 }

@@ -51,7 +51,7 @@ class AccountInfoWithCustomerData
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
@@ -60,8 +60,8 @@ class AccountInfoWithCustomerData
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
     }
 
     /**
@@ -69,7 +69,7 @@ class AccountInfoWithCustomerData
      */
     public function getCustomerName()
     {
-      return $this->CustomerName;
+        return $this->CustomerName;
     }
 
     /**
@@ -78,8 +78,8 @@ class AccountInfoWithCustomerData
      */
     public function setCustomerName($CustomerName)
     {
-      $this->CustomerName = $CustomerName;
-      return $this;
+        $this->CustomerName = $CustomerName;
+        return $this;
     }
 
     /**
@@ -87,7 +87,7 @@ class AccountInfoWithCustomerData
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -96,8 +96,8 @@ class AccountInfoWithCustomerData
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -105,7 +105,7 @@ class AccountInfoWithCustomerData
      */
     public function getAccountName()
     {
-      return $this->AccountName;
+        return $this->AccountName;
     }
 
     /**
@@ -114,8 +114,8 @@ class AccountInfoWithCustomerData
      */
     public function setAccountName($AccountName)
     {
-      $this->AccountName = $AccountName;
-      return $this;
+        $this->AccountName = $AccountName;
+        return $this;
     }
 
     /**
@@ -123,7 +123,7 @@ class AccountInfoWithCustomerData
      */
     public function getAccountNumber()
     {
-      return $this->AccountNumber;
+        return $this->AccountNumber;
     }
 
     /**
@@ -132,8 +132,8 @@ class AccountInfoWithCustomerData
      */
     public function setAccountNumber($AccountNumber)
     {
-      $this->AccountNumber = $AccountNumber;
-      return $this;
+        $this->AccountNumber = $AccountNumber;
+        return $this;
     }
 
     /**
@@ -141,7 +141,7 @@ class AccountInfoWithCustomerData
      */
     public function getAccountLifeCycleStatus()
     {
-      return $this->AccountLifeCycleStatus;
+        return $this->AccountLifeCycleStatus;
     }
 
     /**
@@ -150,8 +150,8 @@ class AccountInfoWithCustomerData
      */
     public function setAccountLifeCycleStatus($AccountLifeCycleStatus)
     {
-      $this->AccountLifeCycleStatus = $AccountLifeCycleStatus;
-      return $this;
+        $this->AccountLifeCycleStatus = $AccountLifeCycleStatus;
+        return $this;
     }
 
     /**
@@ -159,7 +159,7 @@ class AccountInfoWithCustomerData
      */
     public function getPauseReason()
     {
-      return $this->PauseReason;
+        return $this->PauseReason;
     }
 
     /**
@@ -168,8 +168,8 @@ class AccountInfoWithCustomerData
      */
     public function setPauseReason($PauseReason)
     {
-      $this->PauseReason = $PauseReason;
-      return $this;
+        $this->PauseReason = $PauseReason;
+        return $this;
     }
 
 }

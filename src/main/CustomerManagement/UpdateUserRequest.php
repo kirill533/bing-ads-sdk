@@ -15,7 +15,7 @@ class UpdateUserRequest
      */
     public function __construct($User = null)
     {
-      $this->User = $User;
+    $this->User = $User;
     }
 
     /**
@@ -23,7 +23,7 @@ class UpdateUserRequest
      */
     public function getUser()
     {
-      return $this->User;
+        return $this->User;
     }
 
     /**
@@ -32,8 +32,8 @@ class UpdateUserRequest
      */
     public function setUser($User)
     {
-      $this->User = $User;
-      return $this;
+        $this->User = $User;
+        return $this;
     }
 
 }

@@ -21,8 +21,8 @@ class GetUetTagsByIdsResponse
      */
     public function __construct($UetTags = null, $PartialErrors = null)
     {
-      $this->UetTags = $UetTags;
-      $this->PartialErrors = $PartialErrors;
+    $this->UetTags = $UetTags;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetUetTagsByIdsResponse
      */
     public function getUetTags()
     {
-      return $this->UetTags;
+        return $this->UetTags;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetUetTagsByIdsResponse
      */
     public function setUetTags($UetTags)
     {
-      $this->UetTags = $UetTags;
-      return $this;
+        $this->UetTags = $UetTags;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetUetTagsByIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetUetTagsByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

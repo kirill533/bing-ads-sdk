@@ -28,7 +28,7 @@ class ShoppingSetting extends Setting
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -36,7 +36,7 @@ class ShoppingSetting extends Setting
      */
     public function getLocalInventoryAdsEnabled()
     {
-      return $this->LocalInventoryAdsEnabled;
+        return $this->LocalInventoryAdsEnabled;
     }
 
     /**
@@ -45,8 +45,8 @@ class ShoppingSetting extends Setting
      */
     public function setLocalInventoryAdsEnabled($LocalInventoryAdsEnabled)
     {
-      $this->LocalInventoryAdsEnabled = $LocalInventoryAdsEnabled;
-      return $this;
+        $this->LocalInventoryAdsEnabled = $LocalInventoryAdsEnabled;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class ShoppingSetting extends Setting
      */
     public function getPriority()
     {
-      return $this->Priority;
+        return $this->Priority;
     }
 
     /**
@@ -63,8 +63,8 @@ class ShoppingSetting extends Setting
      */
     public function setPriority($Priority)
     {
-      $this->Priority = $Priority;
-      return $this;
+        $this->Priority = $Priority;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class ShoppingSetting extends Setting
      */
     public function getSalesCountryCode()
     {
-      return $this->SalesCountryCode;
+        return $this->SalesCountryCode;
     }
 
     /**
@@ -81,8 +81,8 @@ class ShoppingSetting extends Setting
      */
     public function setSalesCountryCode($SalesCountryCode)
     {
-      $this->SalesCountryCode = $SalesCountryCode;
-      return $this;
+        $this->SalesCountryCode = $SalesCountryCode;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class ShoppingSetting extends Setting
      */
     public function getStoreId()
     {
-      return $this->StoreId;
+        return $this->StoreId;
     }
 
     /**
@@ -99,8 +99,8 @@ class ShoppingSetting extends Setting
      */
     public function setStoreId($StoreId)
     {
-      $this->StoreId = $StoreId;
-      return $this;
+        $this->StoreId = $StoreId;
+        return $this;
     }
 
 }

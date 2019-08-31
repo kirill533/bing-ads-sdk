@@ -15,7 +15,7 @@ class GetBidLandscapeByAdGroupIdsResponse
      */
     public function __construct($BidLandscape = null)
     {
-      $this->BidLandscape = $BidLandscape;
+    $this->BidLandscape = $BidLandscape;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetBidLandscapeByAdGroupIdsResponse
      */
     public function getBidLandscape()
     {
-      return $this->BidLandscape;
+        return $this->BidLandscape;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetBidLandscapeByAdGroupIdsResponse
      */
     public function setBidLandscape($BidLandscape)
     {
-      $this->BidLandscape = $BidLandscape;
-      return $this;
+        $this->BidLandscape = $BidLandscape;
+        return $this;
     }
 
 }

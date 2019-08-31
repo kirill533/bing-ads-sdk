@@ -21,7 +21,7 @@ class ArrayOfDayTime implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getDayTime()
     {
-      return $this->DayTime;
+        return $this->DayTime;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfDayTime implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setDayTime(array $DayTime = null)
     {
-      $this->DayTime = $DayTime;
-      return $this;
+        $this->DayTime = $DayTime;
+        return $this;
     }
 
     /**

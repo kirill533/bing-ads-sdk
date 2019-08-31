@@ -21,7 +21,7 @@ class ArrayOfUetTag implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getUetTag()
     {
-      return $this->UetTag;
+        return $this->UetTag;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfUetTag implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setUetTag(array $UetTag = null)
     {
-      $this->UetTag = $UetTag;
-      return $this;
+        $this->UetTag = $UetTag;
+        return $this;
     }
 
     /**

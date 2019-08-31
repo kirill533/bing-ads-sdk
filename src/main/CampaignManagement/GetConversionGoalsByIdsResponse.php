@@ -21,8 +21,8 @@ class GetConversionGoalsByIdsResponse
      */
     public function __construct($ConversionGoals = null, $PartialErrors = null)
     {
-      $this->ConversionGoals = $ConversionGoals;
-      $this->PartialErrors = $PartialErrors;
+    $this->ConversionGoals = $ConversionGoals;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetConversionGoalsByIdsResponse
      */
     public function getConversionGoals()
     {
-      return $this->ConversionGoals;
+        return $this->ConversionGoals;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetConversionGoalsByIdsResponse
      */
     public function setConversionGoals($ConversionGoals)
     {
-      $this->ConversionGoals = $ConversionGoals;
-      return $this;
+        $this->ConversionGoals = $ConversionGoals;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetConversionGoalsByIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetConversionGoalsByIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

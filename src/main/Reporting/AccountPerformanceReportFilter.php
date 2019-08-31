@@ -36,7 +36,7 @@ class AccountPerformanceReportFilter
      */
     public function getAccountStatus()
     {
-      return $this->AccountStatus;
+        return $this->AccountStatus;
     }
 
     /**
@@ -45,8 +45,8 @@ class AccountPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
     {
-      $this->AccountStatus = $AccountStatus;
-      return $this;
+        $this->AccountStatus = $AccountStatus;
+        return $this;
     }
 
     /**
@@ -54,7 +54,7 @@ class AccountPerformanceReportFilter
      */
     public function getAdDistribution()
     {
-      return $this->AdDistribution;
+        return $this->AdDistribution;
     }
 
     /**
@@ -63,8 +63,8 @@ class AccountPerformanceReportFilter
      */
     public function setAdDistribution($AdDistribution)
     {
-      $this->AdDistribution = $AdDistribution;
-      return $this;
+        $this->AdDistribution = $AdDistribution;
+        return $this;
     }
 
     /**
@@ -72,7 +72,7 @@ class AccountPerformanceReportFilter
      */
     public function getDeviceOS()
     {
-      return $this->DeviceOS;
+        return $this->DeviceOS;
     }
 
     /**
@@ -81,8 +81,8 @@ class AccountPerformanceReportFilter
      */
     public function setDeviceOS($DeviceOS)
     {
-      $this->DeviceOS = $DeviceOS;
-      return $this;
+        $this->DeviceOS = $DeviceOS;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class AccountPerformanceReportFilter
      */
     public function getDeviceType()
     {
-      return $this->DeviceType;
+        return $this->DeviceType;
     }
 
     /**
@@ -99,8 +99,8 @@ class AccountPerformanceReportFilter
      */
     public function setDeviceType($DeviceType)
     {
-      $this->DeviceType = $DeviceType;
-      return $this;
+        $this->DeviceType = $DeviceType;
+        return $this;
     }
 
 }

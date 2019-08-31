@@ -21,7 +21,7 @@ class ArrayOfNegativeKeywordConflictReportColumn implements \ArrayAccess, \Itera
      */
     public function getNegativeKeywordConflictReportColumn()
     {
-      return $this->NegativeKeywordConflictReportColumn;
+        return $this->NegativeKeywordConflictReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfNegativeKeywordConflictReportColumn implements \ArrayAccess, \Itera
      */
     public function setNegativeKeywordConflictReportColumn(array $NegativeKeywordConflictReportColumn = null)
     {
-      $this->NegativeKeywordConflictReportColumn = $NegativeKeywordConflictReportColumn;
-      return $this;
+        $this->NegativeKeywordConflictReportColumn = $NegativeKeywordConflictReportColumn;
+        return $this;
     }
 
     /**

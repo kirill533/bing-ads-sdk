@@ -21,7 +21,7 @@ class ArrayOfBMCStore implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getBMCStore()
     {
-      return $this->BMCStore;
+        return $this->BMCStore;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfBMCStore implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setBMCStore(array $BMCStore = null)
     {
-      $this->BMCStore = $BMCStore;
-      return $this;
+        $this->BMCStore = $BMCStore;
+        return $this;
     }
 
     /**

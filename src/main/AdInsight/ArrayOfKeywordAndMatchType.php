@@ -21,7 +21,7 @@ class ArrayOfKeywordAndMatchType implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getKeywordAndMatchType()
     {
-      return $this->KeywordAndMatchType;
+        return $this->KeywordAndMatchType;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordAndMatchType implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function setKeywordAndMatchType(array $KeywordAndMatchType = null)
     {
-      $this->KeywordAndMatchType = $KeywordAndMatchType;
-      return $this;
+        $this->KeywordAndMatchType = $KeywordAndMatchType;
+        return $this;
     }
 
     /**

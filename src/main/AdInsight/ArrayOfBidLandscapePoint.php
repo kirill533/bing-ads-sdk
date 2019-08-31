@@ -21,7 +21,7 @@ class ArrayOfBidLandscapePoint implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getBidLandscapePoint()
     {
-      return $this->BidLandscapePoint;
+        return $this->BidLandscapePoint;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfBidLandscapePoint implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function setBidLandscapePoint(array $BidLandscapePoint = null)
     {
-      $this->BidLandscapePoint = $BidLandscapePoint;
-      return $this;
+        $this->BidLandscapePoint = $BidLandscapePoint;
+        return $this;
     }
 
     /**

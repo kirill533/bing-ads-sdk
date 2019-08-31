@@ -21,8 +21,8 @@ class DeleteAdsRequest
      */
     public function __construct($AdGroupId = null, $AdIds = null)
     {
-      $this->AdGroupId = $AdGroupId;
-      $this->AdIds = $AdIds;
+    $this->AdGroupId = $AdGroupId;
+    $this->AdIds = $AdIds;
     }
 
     /**
@@ -30,7 +30,7 @@ class DeleteAdsRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -39,8 +39,8 @@ class DeleteAdsRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class DeleteAdsRequest
      */
     public function getAdIds()
     {
-      return $this->AdIds;
+        return $this->AdIds;
     }
 
     /**
@@ -57,8 +57,8 @@ class DeleteAdsRequest
      */
     public function setAdIds($AdIds)
     {
-      $this->AdIds = $AdIds;
-      return $this;
+        $this->AdIds = $AdIds;
+        return $this;
     }
 
 }

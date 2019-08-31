@@ -61,7 +61,7 @@ class UserInvitation
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -70,8 +70,8 @@ class UserInvitation
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -79,7 +79,7 @@ class UserInvitation
      */
     public function getFirstName()
     {
-      return $this->FirstName;
+        return $this->FirstName;
     }
 
     /**
@@ -88,8 +88,8 @@ class UserInvitation
      */
     public function setFirstName($FirstName)
     {
-      $this->FirstName = $FirstName;
-      return $this;
+        $this->FirstName = $FirstName;
+        return $this;
     }
 
     /**
@@ -97,7 +97,7 @@ class UserInvitation
      */
     public function getLastName()
     {
-      return $this->LastName;
+        return $this->LastName;
     }
 
     /**
@@ -106,8 +106,8 @@ class UserInvitation
      */
     public function setLastName($LastName)
     {
-      $this->LastName = $LastName;
-      return $this;
+        $this->LastName = $LastName;
+        return $this;
     }
 
     /**
@@ -115,7 +115,7 @@ class UserInvitation
      */
     public function getEmail()
     {
-      return $this->Email;
+        return $this->Email;
     }
 
     /**
@@ -124,8 +124,8 @@ class UserInvitation
      */
     public function setEmail($Email)
     {
-      $this->Email = $Email;
-      return $this;
+        $this->Email = $Email;
+        return $this;
     }
 
     /**
@@ -133,7 +133,7 @@ class UserInvitation
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
@@ -142,8 +142,8 @@ class UserInvitation
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
     }
 
     /**
@@ -151,7 +151,7 @@ class UserInvitation
      */
     public function getRoleId()
     {
-      return $this->RoleId;
+        return $this->RoleId;
     }
 
     /**
@@ -160,8 +160,8 @@ class UserInvitation
      */
     public function setRoleId($RoleId)
     {
-      $this->RoleId = $RoleId;
-      return $this;
+        $this->RoleId = $RoleId;
+        return $this;
     }
 
     /**
@@ -169,7 +169,7 @@ class UserInvitation
      */
     public function getAccountIds()
     {
-      return $this->AccountIds;
+        return $this->AccountIds;
     }
 
     /**
@@ -178,8 +178,8 @@ class UserInvitation
      */
     public function setAccountIds($AccountIds)
     {
-      $this->AccountIds = $AccountIds;
-      return $this;
+        $this->AccountIds = $AccountIds;
+        return $this;
     }
 
     /**
@@ -187,15 +187,14 @@ class UserInvitation
      */
     public function getExpirationDate()
     {
-      if ($this->ExpirationDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->ExpirationDate);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->ExpirationDate) {
+            return $this->ExpirationDate;
         }
-      }
+        try {
+            return new \DateTime($this->ExpirationDate);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -204,12 +203,8 @@ class UserInvitation
      */
     public function setExpirationDate(\DateTime $ExpirationDate = null)
     {
-      if ($ExpirationDate == null) {
-       $this->ExpirationDate = null;
-      } else {
-        $this->ExpirationDate = $ExpirationDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->ExpirationDate = null === $ExpirationDate ? null : $ExpirationDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -217,7 +212,7 @@ class UserInvitation
      */
     public function getLcid()
     {
-      return $this->Lcid;
+        return $this->Lcid;
     }
 
     /**
@@ -226,8 +221,8 @@ class UserInvitation
      */
     public function setLcid($Lcid)
     {
-      $this->Lcid = $Lcid;
-      return $this;
+        $this->Lcid = $Lcid;
+        return $this;
     }
 
 }

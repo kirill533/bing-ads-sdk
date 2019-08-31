@@ -21,7 +21,7 @@ class ArrayOfDSAAutoTargetPerformanceReportColumn implements \ArrayAccess, \Iter
      */
     public function getDSAAutoTargetPerformanceReportColumn()
     {
-      return $this->DSAAutoTargetPerformanceReportColumn;
+        return $this->DSAAutoTargetPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfDSAAutoTargetPerformanceReportColumn implements \ArrayAccess, \Iter
      */
     public function setDSAAutoTargetPerformanceReportColumn(array $DSAAutoTargetPerformanceReportColumn = null)
     {
-      $this->DSAAutoTargetPerformanceReportColumn = $DSAAutoTargetPerformanceReportColumn;
-      return $this;
+        $this->DSAAutoTargetPerformanceReportColumn = $DSAAutoTargetPerformanceReportColumn;
+        return $this;
     }
 
     /**

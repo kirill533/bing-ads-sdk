@@ -21,7 +21,7 @@ class ArrayOfInsertionOrder implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getInsertionOrder()
     {
-      return $this->InsertionOrder;
+        return $this->InsertionOrder;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfInsertionOrder implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function setInsertionOrder(array $InsertionOrder = null)
     {
-      $this->InsertionOrder = $InsertionOrder;
-      return $this;
+        $this->InsertionOrder = $InsertionOrder;
+        return $this;
     }
 
     /**

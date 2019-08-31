@@ -51,7 +51,7 @@ class ConversionPerformanceReportFilter
      */
     public function getAccountStatus()
     {
-      return $this->AccountStatus;
+        return $this->AccountStatus;
     }
 
     /**
@@ -60,8 +60,8 @@ class ConversionPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
     {
-      $this->AccountStatus = $AccountStatus;
-      return $this;
+        $this->AccountStatus = $AccountStatus;
+        return $this;
     }
 
     /**
@@ -69,7 +69,7 @@ class ConversionPerformanceReportFilter
      */
     public function getAdDistribution()
     {
-      return $this->AdDistribution;
+        return $this->AdDistribution;
     }
 
     /**
@@ -78,8 +78,8 @@ class ConversionPerformanceReportFilter
      */
     public function setAdDistribution($AdDistribution)
     {
-      $this->AdDistribution = $AdDistribution;
-      return $this;
+        $this->AdDistribution = $AdDistribution;
+        return $this;
     }
 
     /**
@@ -87,7 +87,7 @@ class ConversionPerformanceReportFilter
      */
     public function getAdGroupStatus()
     {
-      return $this->AdGroupStatus;
+        return $this->AdGroupStatus;
     }
 
     /**
@@ -96,8 +96,8 @@ class ConversionPerformanceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
     {
-      $this->AdGroupStatus = $AdGroupStatus;
-      return $this;
+        $this->AdGroupStatus = $AdGroupStatus;
+        return $this;
     }
 
     /**
@@ -105,7 +105,7 @@ class ConversionPerformanceReportFilter
      */
     public function getCampaignStatus()
     {
-      return $this->CampaignStatus;
+        return $this->CampaignStatus;
     }
 
     /**
@@ -114,8 +114,8 @@ class ConversionPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
     {
-      $this->CampaignStatus = $CampaignStatus;
-      return $this;
+        $this->CampaignStatus = $CampaignStatus;
+        return $this;
     }
 
     /**
@@ -123,7 +123,7 @@ class ConversionPerformanceReportFilter
      */
     public function getDeviceType()
     {
-      return $this->DeviceType;
+        return $this->DeviceType;
     }
 
     /**
@@ -132,8 +132,8 @@ class ConversionPerformanceReportFilter
      */
     public function setDeviceType($DeviceType)
     {
-      $this->DeviceType = $DeviceType;
-      return $this;
+        $this->DeviceType = $DeviceType;
+        return $this;
     }
 
     /**
@@ -141,7 +141,7 @@ class ConversionPerformanceReportFilter
      */
     public function getKeywordStatus()
     {
-      return $this->KeywordStatus;
+        return $this->KeywordStatus;
     }
 
     /**
@@ -150,8 +150,8 @@ class ConversionPerformanceReportFilter
      */
     public function setKeywordStatus($KeywordStatus)
     {
-      $this->KeywordStatus = $KeywordStatus;
-      return $this;
+        $this->KeywordStatus = $KeywordStatus;
+        return $this;
     }
 
     /**
@@ -159,7 +159,7 @@ class ConversionPerformanceReportFilter
      */
     public function getKeywords()
     {
-      return $this->Keywords;
+        return $this->Keywords;
     }
 
     /**
@@ -168,8 +168,8 @@ class ConversionPerformanceReportFilter
      */
     public function setKeywords($Keywords)
     {
-      $this->Keywords = $Keywords;
-      return $this;
+        $this->Keywords = $Keywords;
+        return $this;
     }
 
 }

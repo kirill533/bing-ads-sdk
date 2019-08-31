@@ -21,7 +21,7 @@ class ArrayOfAccountPropertyName implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getAccountPropertyName()
     {
-      return $this->AccountPropertyName;
+        return $this->AccountPropertyName;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAccountPropertyName implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function setAccountPropertyName(array $AccountPropertyName = null)
     {
-      $this->AccountPropertyName = $AccountPropertyName;
-      return $this;
+        $this->AccountPropertyName = $AccountPropertyName;
+        return $this;
     }
 
     /**

@@ -21,8 +21,8 @@ class GetBillingDocumentsRequest
      */
     public function __construct($BillingDocumentsInfo = null, $Type = null)
     {
-      $this->BillingDocumentsInfo = $BillingDocumentsInfo;
-      $this->Type = $Type;
+    $this->BillingDocumentsInfo = $BillingDocumentsInfo;
+    $this->Type = $Type;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetBillingDocumentsRequest
      */
     public function getBillingDocumentsInfo()
     {
-      return $this->BillingDocumentsInfo;
+        return $this->BillingDocumentsInfo;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetBillingDocumentsRequest
      */
     public function setBillingDocumentsInfo($BillingDocumentsInfo)
     {
-      $this->BillingDocumentsInfo = $BillingDocumentsInfo;
-      return $this;
+        $this->BillingDocumentsInfo = $BillingDocumentsInfo;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetBillingDocumentsRequest
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetBillingDocumentsRequest
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
 }

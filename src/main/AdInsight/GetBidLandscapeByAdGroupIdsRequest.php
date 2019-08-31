@@ -15,7 +15,7 @@ class GetBidLandscapeByAdGroupIdsRequest
      */
     public function __construct($AdGroupBidLandscapeInputs = null)
     {
-      $this->AdGroupBidLandscapeInputs = $AdGroupBidLandscapeInputs;
+    $this->AdGroupBidLandscapeInputs = $AdGroupBidLandscapeInputs;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetBidLandscapeByAdGroupIdsRequest
      */
     public function getAdGroupBidLandscapeInputs()
     {
-      return $this->AdGroupBidLandscapeInputs;
+        return $this->AdGroupBidLandscapeInputs;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetBidLandscapeByAdGroupIdsRequest
      */
     public function setAdGroupBidLandscapeInputs($AdGroupBidLandscapeInputs)
     {
-      $this->AdGroupBidLandscapeInputs = $AdGroupBidLandscapeInputs;
-      return $this;
+        $this->AdGroupBidLandscapeInputs = $AdGroupBidLandscapeInputs;
+        return $this;
     }
 
 }

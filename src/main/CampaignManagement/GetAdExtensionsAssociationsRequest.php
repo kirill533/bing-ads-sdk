@@ -26,17 +26,24 @@ class GetAdExtensionsAssociationsRequest
     protected $EntityIds = null;
 
     /**
+     * @var AdExtensionAdditionalField $ReturnAdditionalFields
+     */
+    protected $ReturnAdditionalFields = null;
+
+    /**
      * @param int $AccountId
      * @param AdExtensionsTypeFilter $AdExtensionType
      * @param AssociationType $AssociationType
      * @param ArrayOflong $EntityIds
+     * @param AdExtensionAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($AccountId = null, $AdExtensionType = null, $AssociationType = null, $EntityIds = null)
+    public function __construct($AccountId = null, $AdExtensionType = null, $AssociationType = null, $EntityIds = null, $ReturnAdditionalFields = null)
     {
-      $this->AccountId = $AccountId;
-      $this->AdExtensionType = $AdExtensionType;
-      $this->AssociationType = $AssociationType;
-      $this->EntityIds = $EntityIds;
+    $this->AccountId = $AccountId;
+    $this->AdExtensionType = $AdExtensionType;
+    $this->AssociationType = $AssociationType;
+    $this->EntityIds = $EntityIds;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -44,7 +51,7 @@ class GetAdExtensionsAssociationsRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -53,8 +60,8 @@ class GetAdExtensionsAssociationsRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -62,7 +69,7 @@ class GetAdExtensionsAssociationsRequest
      */
     public function getAdExtensionType()
     {
-      return $this->AdExtensionType;
+        return $this->AdExtensionType;
     }
 
     /**
@@ -71,8 +78,8 @@ class GetAdExtensionsAssociationsRequest
      */
     public function setAdExtensionType($AdExtensionType)
     {
-      $this->AdExtensionType = $AdExtensionType;
-      return $this;
+        $this->AdExtensionType = $AdExtensionType;
+        return $this;
     }
 
     /**
@@ -80,7 +87,7 @@ class GetAdExtensionsAssociationsRequest
      */
     public function getAssociationType()
     {
-      return $this->AssociationType;
+        return $this->AssociationType;
     }
 
     /**
@@ -89,8 +96,8 @@ class GetAdExtensionsAssociationsRequest
      */
     public function setAssociationType($AssociationType)
     {
-      $this->AssociationType = $AssociationType;
-      return $this;
+        $this->AssociationType = $AssociationType;
+        return $this;
     }
 
     /**
@@ -98,7 +105,7 @@ class GetAdExtensionsAssociationsRequest
      */
     public function getEntityIds()
     {
-      return $this->EntityIds;
+        return $this->EntityIds;
     }
 
     /**
@@ -107,8 +114,26 @@ class GetAdExtensionsAssociationsRequest
      */
     public function setEntityIds($EntityIds)
     {
-      $this->EntityIds = $EntityIds;
-      return $this;
+        $this->EntityIds = $EntityIds;
+        return $this;
+    }
+
+    /**
+     * @return AdExtensionAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param AdExtensionAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\CampaignManagement\GetAdExtensionsAssociationsRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

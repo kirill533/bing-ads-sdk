@@ -26,7 +26,7 @@ class HistoricalSearchCountPeriodic
      */
     public function getSearchCount()
     {
-      return $this->SearchCount;
+        return $this->SearchCount;
     }
 
     /**
@@ -35,8 +35,8 @@ class HistoricalSearchCountPeriodic
      */
     public function setSearchCount($SearchCount)
     {
-      $this->SearchCount = $SearchCount;
-      return $this;
+        $this->SearchCount = $SearchCount;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class HistoricalSearchCountPeriodic
      */
     public function getDayMonthAndYear()
     {
-      return $this->DayMonthAndYear;
+        return $this->DayMonthAndYear;
     }
 
     /**
@@ -53,8 +53,8 @@ class HistoricalSearchCountPeriodic
      */
     public function setDayMonthAndYear($DayMonthAndYear)
     {
-      $this->DayMonthAndYear = $DayMonthAndYear;
-      return $this;
+        $this->DayMonthAndYear = $DayMonthAndYear;
+        return $this;
     }
 
 }

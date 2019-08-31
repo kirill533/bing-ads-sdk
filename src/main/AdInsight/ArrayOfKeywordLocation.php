@@ -21,7 +21,7 @@ class ArrayOfKeywordLocation implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getKeywordLocation()
     {
-      return $this->KeywordLocation;
+        return $this->KeywordLocation;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordLocation implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function setKeywordLocation(array $KeywordLocation = null)
     {
-      $this->KeywordLocation = $KeywordLocation;
-      return $this;
+        $this->KeywordLocation = $KeywordLocation;
+        return $this;
     }
 
     /**

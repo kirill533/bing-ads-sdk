@@ -21,7 +21,7 @@ class ArrayOfCampaignCriterion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getCampaignCriterion()
     {
-      return $this->CampaignCriterion;
+        return $this->CampaignCriterion;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCampaignCriterion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function setCampaignCriterion(array $CampaignCriterion = null)
     {
-      $this->CampaignCriterion = $CampaignCriterion;
-      return $this;
+        $this->CampaignCriterion = $CampaignCriterion;
+        return $this;
     }
 
     /**

@@ -15,7 +15,7 @@ class GetDomainCategoriesResponse
      */
     public function __construct($Categories = null)
     {
-      $this->Categories = $Categories;
+    $this->Categories = $Categories;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetDomainCategoriesResponse
      */
     public function getCategories()
     {
-      return $this->Categories;
+        return $this->Categories;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetDomainCategoriesResponse
      */
     public function setCategories($Categories)
     {
-      $this->Categories = $Categories;
-      return $this;
+        $this->Categories = $Categories;
+        return $this;
     }
 
 }

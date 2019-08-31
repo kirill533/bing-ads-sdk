@@ -21,7 +21,7 @@ class ArrayOfSharedEntityAssociation implements \ArrayAccess, \IteratorAggregate
      */
     public function getSharedEntityAssociation()
     {
-      return $this->SharedEntityAssociation;
+        return $this->SharedEntityAssociation;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfSharedEntityAssociation implements \ArrayAccess, \IteratorAggregate
      */
     public function setSharedEntityAssociation(array $SharedEntityAssociation = null)
     {
-      $this->SharedEntityAssociation = $SharedEntityAssociation;
-      return $this;
+        $this->SharedEntityAssociation = $SharedEntityAssociation;
+        return $this;
     }
 
     /**

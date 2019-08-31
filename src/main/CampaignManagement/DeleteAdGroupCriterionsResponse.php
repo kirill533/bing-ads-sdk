@@ -21,8 +21,8 @@ class DeleteAdGroupCriterionsResponse
      */
     public function __construct($IsMigrated = null, $PartialErrors = null)
     {
-      $this->IsMigrated = $IsMigrated;
-      $this->PartialErrors = $PartialErrors;
+    $this->IsMigrated = $IsMigrated;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class DeleteAdGroupCriterionsResponse
      */
     public function getIsMigrated()
     {
-      return $this->IsMigrated;
+        return $this->IsMigrated;
     }
 
     /**
@@ -39,8 +39,8 @@ class DeleteAdGroupCriterionsResponse
      */
     public function setIsMigrated($IsMigrated)
     {
-      $this->IsMigrated = $IsMigrated;
-      return $this;
+        $this->IsMigrated = $IsMigrated;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class DeleteAdGroupCriterionsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class DeleteAdGroupCriterionsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

@@ -21,7 +21,7 @@ class ArrayOfBidOpportunity implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getBidOpportunity()
     {
-      return $this->BidOpportunity;
+        return $this->BidOpportunity;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfBidOpportunity implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function setBidOpportunity(array $BidOpportunity = null)
     {
-      $this->BidOpportunity = $BidOpportunity;
-      return $this;
+        $this->BidOpportunity = $BidOpportunity;
+        return $this;
     }
 
     /**

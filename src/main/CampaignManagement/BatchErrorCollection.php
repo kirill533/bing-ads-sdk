@@ -61,7 +61,7 @@ class BatchErrorCollection
      */
     public function getBatchErrors()
     {
-      return $this->BatchErrors;
+        return $this->BatchErrors;
     }
 
     /**
@@ -70,8 +70,8 @@ class BatchErrorCollection
      */
     public function setBatchErrors($BatchErrors)
     {
-      $this->BatchErrors = $BatchErrors;
-      return $this;
+        $this->BatchErrors = $BatchErrors;
+        return $this;
     }
 
     /**
@@ -79,7 +79,7 @@ class BatchErrorCollection
      */
     public function getCode()
     {
-      return $this->Code;
+        return $this->Code;
     }
 
     /**
@@ -88,8 +88,8 @@ class BatchErrorCollection
      */
     public function setCode($Code)
     {
-      $this->Code = $Code;
-      return $this;
+        $this->Code = $Code;
+        return $this;
     }
 
     /**
@@ -97,7 +97,7 @@ class BatchErrorCollection
      */
     public function getDetails()
     {
-      return $this->Details;
+        return $this->Details;
     }
 
     /**
@@ -106,8 +106,8 @@ class BatchErrorCollection
      */
     public function setDetails($Details)
     {
-      $this->Details = $Details;
-      return $this;
+        $this->Details = $Details;
+        return $this;
     }
 
     /**
@@ -115,7 +115,7 @@ class BatchErrorCollection
      */
     public function getErrorCode()
     {
-      return $this->ErrorCode;
+        return $this->ErrorCode;
     }
 
     /**
@@ -124,8 +124,8 @@ class BatchErrorCollection
      */
     public function setErrorCode($ErrorCode)
     {
-      $this->ErrorCode = $ErrorCode;
-      return $this;
+        $this->ErrorCode = $ErrorCode;
+        return $this;
     }
 
     /**
@@ -133,7 +133,7 @@ class BatchErrorCollection
      */
     public function getFieldPath()
     {
-      return $this->FieldPath;
+        return $this->FieldPath;
     }
 
     /**
@@ -142,8 +142,8 @@ class BatchErrorCollection
      */
     public function setFieldPath($FieldPath)
     {
-      $this->FieldPath = $FieldPath;
-      return $this;
+        $this->FieldPath = $FieldPath;
+        return $this;
     }
 
     /**
@@ -151,7 +151,7 @@ class BatchErrorCollection
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -160,8 +160,8 @@ class BatchErrorCollection
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
     /**
@@ -169,7 +169,7 @@ class BatchErrorCollection
      */
     public function getIndex()
     {
-      return $this->Index;
+        return $this->Index;
     }
 
     /**
@@ -178,8 +178,8 @@ class BatchErrorCollection
      */
     public function setIndex($Index)
     {
-      $this->Index = $Index;
-      return $this;
+        $this->Index = $Index;
+        return $this;
     }
 
     /**
@@ -187,7 +187,7 @@ class BatchErrorCollection
      */
     public function getMessage()
     {
-      return $this->Message;
+        return $this->Message;
     }
 
     /**
@@ -196,8 +196,8 @@ class BatchErrorCollection
      */
     public function setMessage($Message)
     {
-      $this->Message = $Message;
-      return $this;
+        $this->Message = $Message;
+        return $this;
     }
 
     /**
@@ -205,7 +205,7 @@ class BatchErrorCollection
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -214,8 +214,8 @@ class BatchErrorCollection
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
 }

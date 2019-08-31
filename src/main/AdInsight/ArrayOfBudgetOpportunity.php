@@ -21,7 +21,7 @@ class ArrayOfBudgetOpportunity implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getBudgetOpportunity()
     {
-      return $this->BudgetOpportunity;
+        return $this->BudgetOpportunity;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfBudgetOpportunity implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function setBudgetOpportunity(array $BudgetOpportunity = null)
     {
-      $this->BudgetOpportunity = $BudgetOpportunity;
-      return $this;
+        $this->BudgetOpportunity = $BudgetOpportunity;
+        return $this;
     }
 
     /**

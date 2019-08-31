@@ -15,7 +15,7 @@ class GetAdsByEditorialStatusResponse
      */
     public function __construct($Ads = null)
     {
-      $this->Ads = $Ads;
+    $this->Ads = $Ads;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetAdsByEditorialStatusResponse
      */
     public function getAds()
     {
-      return $this->Ads;
+        return $this->Ads;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetAdsByEditorialStatusResponse
      */
     public function setAds($Ads)
     {
-      $this->Ads = $Ads;
-      return $this;
+        $this->Ads = $Ads;
+        return $this;
     }
 
 }

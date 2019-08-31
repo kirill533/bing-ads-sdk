@@ -61,7 +61,7 @@ class KeywordKPI
      */
     public function getDevice()
     {
-      return $this->Device;
+        return $this->Device;
     }
 
     /**
@@ -70,8 +70,8 @@ class KeywordKPI
      */
     public function setDevice($Device)
     {
-      $this->Device = $Device;
-      return $this;
+        $this->Device = $Device;
+        return $this;
     }
 
     /**
@@ -79,7 +79,7 @@ class KeywordKPI
      */
     public function getMatchType()
     {
-      return $this->MatchType;
+        return $this->MatchType;
     }
 
     /**
@@ -88,8 +88,8 @@ class KeywordKPI
      */
     public function setMatchType($MatchType)
     {
-      $this->MatchType = $MatchType;
-      return $this;
+        $this->MatchType = $MatchType;
+        return $this;
     }
 
     /**
@@ -97,7 +97,7 @@ class KeywordKPI
      */
     public function getAdPosition()
     {
-      return $this->AdPosition;
+        return $this->AdPosition;
     }
 
     /**
@@ -106,8 +106,8 @@ class KeywordKPI
      */
     public function setAdPosition($AdPosition)
     {
-      $this->AdPosition = $AdPosition;
-      return $this;
+        $this->AdPosition = $AdPosition;
+        return $this;
     }
 
     /**
@@ -115,7 +115,7 @@ class KeywordKPI
      */
     public function getClicks()
     {
-      return $this->Clicks;
+        return $this->Clicks;
     }
 
     /**
@@ -124,8 +124,8 @@ class KeywordKPI
      */
     public function setClicks($Clicks)
     {
-      $this->Clicks = $Clicks;
-      return $this;
+        $this->Clicks = $Clicks;
+        return $this;
     }
 
     /**
@@ -133,7 +133,7 @@ class KeywordKPI
      */
     public function getImpressions()
     {
-      return $this->Impressions;
+        return $this->Impressions;
     }
 
     /**
@@ -142,8 +142,8 @@ class KeywordKPI
      */
     public function setImpressions($Impressions)
     {
-      $this->Impressions = $Impressions;
-      return $this;
+        $this->Impressions = $Impressions;
+        return $this;
     }
 
     /**
@@ -151,7 +151,7 @@ class KeywordKPI
      */
     public function getAverageCPC()
     {
-      return $this->AverageCPC;
+        return $this->AverageCPC;
     }
 
     /**
@@ -160,8 +160,8 @@ class KeywordKPI
      */
     public function setAverageCPC($AverageCPC)
     {
-      $this->AverageCPC = $AverageCPC;
-      return $this;
+        $this->AverageCPC = $AverageCPC;
+        return $this;
     }
 
     /**
@@ -169,7 +169,7 @@ class KeywordKPI
      */
     public function getCTR()
     {
-      return $this->CTR;
+        return $this->CTR;
     }
 
     /**
@@ -178,8 +178,8 @@ class KeywordKPI
      */
     public function setCTR($CTR)
     {
-      $this->CTR = $CTR;
-      return $this;
+        $this->CTR = $CTR;
+        return $this;
     }
 
     /**
@@ -187,7 +187,7 @@ class KeywordKPI
      */
     public function getTotalCost()
     {
-      return $this->TotalCost;
+        return $this->TotalCost;
     }
 
     /**
@@ -196,8 +196,8 @@ class KeywordKPI
      */
     public function setTotalCost($TotalCost)
     {
-      $this->TotalCost = $TotalCost;
-      return $this;
+        $this->TotalCost = $TotalCost;
+        return $this;
     }
 
     /**
@@ -205,7 +205,7 @@ class KeywordKPI
      */
     public function getAverageBid()
     {
-      return $this->AverageBid;
+        return $this->AverageBid;
     }
 
     /**
@@ -214,8 +214,8 @@ class KeywordKPI
      */
     public function setAverageBid($AverageBid)
     {
-      $this->AverageBid = $AverageBid;
-      return $this;
+        $this->AverageBid = $AverageBid;
+        return $this;
     }
 
 }

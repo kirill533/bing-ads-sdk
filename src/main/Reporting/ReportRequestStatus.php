@@ -26,7 +26,7 @@ class ReportRequestStatus
      */
     public function getReportDownloadUrl()
     {
-      return $this->ReportDownloadUrl;
+        return $this->ReportDownloadUrl;
     }
 
     /**
@@ -35,8 +35,8 @@ class ReportRequestStatus
      */
     public function setReportDownloadUrl($ReportDownloadUrl)
     {
-      $this->ReportDownloadUrl = $ReportDownloadUrl;
-      return $this;
+        $this->ReportDownloadUrl = $ReportDownloadUrl;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class ReportRequestStatus
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -53,8 +53,8 @@ class ReportRequestStatus
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
 }

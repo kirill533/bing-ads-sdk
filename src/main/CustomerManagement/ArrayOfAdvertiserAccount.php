@@ -21,7 +21,7 @@ class ArrayOfAdvertiserAccount implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getAdvertiserAccount()
     {
-      return $this->AdvertiserAccount;
+        return $this->AdvertiserAccount;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdvertiserAccount implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function setAdvertiserAccount(array $AdvertiserAccount = null)
     {
-      $this->AdvertiserAccount = $AdvertiserAccount;
-      return $this;
+        $this->AdvertiserAccount = $AdvertiserAccount;
+        return $this;
     }
 
     /**

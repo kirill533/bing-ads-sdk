@@ -21,8 +21,8 @@ class GetBulkUploadUrlResponse
      */
     public function __construct($RequestId = null, $UploadUrl = null)
     {
-      $this->RequestId = $RequestId;
-      $this->UploadUrl = $UploadUrl;
+    $this->RequestId = $RequestId;
+    $this->UploadUrl = $UploadUrl;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetBulkUploadUrlResponse
      */
     public function getRequestId()
     {
-      return $this->RequestId;
+        return $this->RequestId;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetBulkUploadUrlResponse
      */
     public function setRequestId($RequestId)
     {
-      $this->RequestId = $RequestId;
-      return $this;
+        $this->RequestId = $RequestId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetBulkUploadUrlResponse
      */
     public function getUploadUrl()
     {
-      return $this->UploadUrl;
+        return $this->UploadUrl;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetBulkUploadUrlResponse
      */
     public function setUploadUrl($UploadUrl)
     {
-      $this->UploadUrl = $UploadUrl;
-      return $this;
+        $this->UploadUrl = $UploadUrl;
+        return $this;
     }
 
 }

@@ -70,6 +70,11 @@ class Customer
      */
     protected $Number = null;
 
+    /**
+     * @var Address $CustomerAddress
+     */
+    protected $CustomerAddress = null;
+
     
     public function __construct()
     {
@@ -81,7 +86,7 @@ class Customer
      */
     public function getCustomerFinancialStatus()
     {
-      return $this->CustomerFinancialStatus;
+        return $this->CustomerFinancialStatus;
     }
 
     /**
@@ -90,8 +95,8 @@ class Customer
      */
     public function setCustomerFinancialStatus($CustomerFinancialStatus)
     {
-      $this->CustomerFinancialStatus = $CustomerFinancialStatus;
-      return $this;
+        $this->CustomerFinancialStatus = $CustomerFinancialStatus;
+        return $this;
     }
 
     /**
@@ -99,7 +104,7 @@ class Customer
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -108,8 +113,8 @@ class Customer
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -117,7 +122,7 @@ class Customer
      */
     public function getIndustry()
     {
-      return $this->Industry;
+        return $this->Industry;
     }
 
     /**
@@ -126,8 +131,8 @@ class Customer
      */
     public function setIndustry($Industry)
     {
-      $this->Industry = $Industry;
-      return $this;
+        $this->Industry = $Industry;
+        return $this;
     }
 
     /**
@@ -135,7 +140,7 @@ class Customer
      */
     public function getLastModifiedByUserId()
     {
-      return $this->LastModifiedByUserId;
+        return $this->LastModifiedByUserId;
     }
 
     /**
@@ -144,8 +149,8 @@ class Customer
      */
     public function setLastModifiedByUserId($LastModifiedByUserId)
     {
-      $this->LastModifiedByUserId = $LastModifiedByUserId;
-      return $this;
+        $this->LastModifiedByUserId = $LastModifiedByUserId;
+        return $this;
     }
 
     /**
@@ -153,15 +158,14 @@ class Customer
      */
     public function getLastModifiedTime()
     {
-      if ($this->LastModifiedTime == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->LastModifiedTime);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->LastModifiedTime) {
+            return $this->LastModifiedTime;
         }
-      }
+        try {
+            return new \DateTime($this->LastModifiedTime);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -170,12 +174,8 @@ class Customer
      */
     public function setLastModifiedTime(\DateTime $LastModifiedTime = null)
     {
-      if ($LastModifiedTime == null) {
-       $this->LastModifiedTime = null;
-      } else {
-        $this->LastModifiedTime = $LastModifiedTime->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->LastModifiedTime = null === $LastModifiedTime ? null : $LastModifiedTime->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -183,7 +183,7 @@ class Customer
      */
     public function getMarketCountry()
     {
-      return $this->MarketCountry;
+        return $this->MarketCountry;
     }
 
     /**
@@ -192,8 +192,8 @@ class Customer
      */
     public function setMarketCountry($MarketCountry)
     {
-      $this->MarketCountry = $MarketCountry;
-      return $this;
+        $this->MarketCountry = $MarketCountry;
+        return $this;
     }
 
     /**
@@ -201,7 +201,7 @@ class Customer
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -210,8 +210,8 @@ class Customer
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
     /**
@@ -219,7 +219,7 @@ class Customer
      */
     public function getMarketLanguage()
     {
-      return $this->MarketLanguage;
+        return $this->MarketLanguage;
     }
 
     /**
@@ -228,8 +228,8 @@ class Customer
      */
     public function setMarketLanguage($MarketLanguage)
     {
-      $this->MarketLanguage = $MarketLanguage;
-      return $this;
+        $this->MarketLanguage = $MarketLanguage;
+        return $this;
     }
 
     /**
@@ -237,7 +237,7 @@ class Customer
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -246,8 +246,8 @@ class Customer
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -255,7 +255,7 @@ class Customer
      */
     public function getServiceLevel()
     {
-      return $this->ServiceLevel;
+        return $this->ServiceLevel;
     }
 
     /**
@@ -264,8 +264,8 @@ class Customer
      */
     public function setServiceLevel($ServiceLevel)
     {
-      $this->ServiceLevel = $ServiceLevel;
-      return $this;
+        $this->ServiceLevel = $ServiceLevel;
+        return $this;
     }
 
     /**
@@ -273,7 +273,7 @@ class Customer
      */
     public function getCustomerLifeCycleStatus()
     {
-      return $this->CustomerLifeCycleStatus;
+        return $this->CustomerLifeCycleStatus;
     }
 
     /**
@@ -282,8 +282,8 @@ class Customer
      */
     public function setCustomerLifeCycleStatus($CustomerLifeCycleStatus)
     {
-      $this->CustomerLifeCycleStatus = $CustomerLifeCycleStatus;
-      return $this;
+        $this->CustomerLifeCycleStatus = $CustomerLifeCycleStatus;
+        return $this;
     }
 
     /**
@@ -291,7 +291,7 @@ class Customer
      */
     public function getTimeStamp()
     {
-      return $this->TimeStamp;
+        return $this->TimeStamp;
     }
 
     /**
@@ -300,8 +300,8 @@ class Customer
      */
     public function setTimeStamp($TimeStamp)
     {
-      $this->TimeStamp = $TimeStamp;
-      return $this;
+        $this->TimeStamp = $TimeStamp;
+        return $this;
     }
 
     /**
@@ -309,7 +309,7 @@ class Customer
      */
     public function getNumber()
     {
-      return $this->Number;
+        return $this->Number;
     }
 
     /**
@@ -318,8 +318,26 @@ class Customer
      */
     public function setNumber($Number)
     {
-      $this->Number = $Number;
-      return $this;
+        $this->Number = $Number;
+        return $this;
+    }
+
+    /**
+     * @return Address
+     */
+    public function getCustomerAddress()
+    {
+        return $this->CustomerAddress;
+    }
+
+    /**
+     * @param Address $CustomerAddress
+     * @return \PMG\BingAds\CustomerManagement\Customer
+     */
+    public function setCustomerAddress($CustomerAddress)
+    {
+        $this->CustomerAddress = $CustomerAddress;
+        return $this;
     }
 
 }

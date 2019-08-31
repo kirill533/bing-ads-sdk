@@ -2,14 +2,7 @@
 
 namespace PMG\BingAds\Generator;
 
-
-use Wsdl2PhpGenerator\ConfigInterface;
-use Wsdl2PhpGenerator\ComplexType;
-use Wsdl2PhpGenerator\ClassGenerator;
-use Wsdl2PhpGenerator\Operation;
 use Wsdl2PhpGenerator\Service;
-use Wsdl2PhpGenerator\TypeRegistry;
-use Wsdl2PhpGenerator\Validator;
 use Wsdl2PhpGenerator\PhpSource\PhpClass;
 use Wsdl2PhpGenerator\PhpSource\PhpDocComment;
 use Wsdl2PhpGenerator\PhpSource\PhpDocElementFactory;
@@ -21,204 +14,39 @@ use PMG\BingAds\ServiceDescriptor;
 
 class BingService extends Service
 {
-    /**
-     * @var ConfigInterface
-     */
-    private $config;
-
-    /**
-     * @var PhpClass The class used to create the service.
-     */
-    private $class;
-
-    /**
-     * @var string The name of the service
-     */
-    private $identifier;
-
-    /**
-     * @var Operation[] An array containing the operations of the service
-     */
-    private $operations;
-
-    /**
-     * @var string The description of the service used as description in the phpdoc of the class
-     */
-    private $description;
-
-    /**
-     * @var TypeRegistry An array of Types
-     */
-    private $types;
-
-    /**
-     * @param ConfigInterface $config Configuration
-     * @param string $identifier The name of the service
-     * @param array $types The types the service knows about
-     * @param string $description The description of the service
-     */
-    public function __construct(ConfigInterface $config, $identifier, TypeRegistry $types, $description)
+    protected function createPhpClass() : PhpClass
     {
-        $this->config = $config;
-        $this->identifier = $identifier;
-        $this->description = $description;
-        $this->operations = array();
-        $this->types = $types;
+        $class = parent::createPhpClass();
+
+        $class->addConstant($this->getConfigValue('wsdlNamespace'), 'WSDL_NAMESPACE');
+        $class->addConstant($this->getConfigValue('inputFile'), 'WSDL_PROD');
+        $class->addConstant($this->getConfigValue('sandboxWsdl'), 'WSDL_SANDBOX');
+
+        return $class;
     }
 
-    /**
-     * @return PhpClass Returns the class, generates it if not done
-     */
-    public function getClass()
+    protected function getServiceParentClass() : string
     {
-        if ($this->class == null) {
-            $this->generateClass();
-        }
-
-        return $this->class;
+        return '\\'.BingSoapClient::class;
     }
 
-    /**
-     * Returns an operation provided by the service based on its name.
-     *
-     * @param string $operationName The name of the operation.
-     *
-     * @return Operation|null The operation or null if it does not exist.
-     */
-    public function getOperation($operationName)
+    protected function createConstructor() : PhpFunction
     {
-        return isset($this->operations[$operationName])? $this->operations[$operationName]: null;
-    }
+        $comment = new PhpDocComment();
+        $comment->addParam(PhpDocElementFactory::getParam(BingSession::class, 'session', 'A session object with credentials, etc'));
+        $comment->addParam(PhpDocElementFactory::getParam('array', 'options', 'A array of config values'));
+        $comment->addParam(PhpDocElementFactory::getParam('string', 'wsdl', 'The wsdl file to use'));
+        $comment->addParam(PhpDocElementFactory::getParam(ServiceDescriptor::class, 'sd', 'The services descriptor for the service'));
 
-    /**
-     * Returns the description of the service.
-     *
-     * @return string The service description.
-     */
-    public function getDescription()
-    {
-        return $this->description;
-    }
+        $source = [
+            '$options["classmap"] = array_replace(self::$classmap, $options["classmap"] ?? []);',
+            'parent::__construct($session, $wsdl, $options, $sd);'
+        ];
 
-    /**
-     * Returns the identifier for the service ie. the name.
-     *
-     * @return string The service name.
-     */
-    public function getIdentifier()
-    {
-        return $this->identifier;
-    }
-
-    /**
-     * Returns a type used by the service based on its name.
-     *
-     * @param string $identifier The identifier for the type.
-     *
-     * @return Type|null The type or null if the type does not exist.
-     */
-    public function getType(string $identifier)
-    {
-        return $this->types->get($identifier);
-    }
-    /**
-     * Returns all types defined by the service.
-     *
-     * @return TypeRegistry An array of types.
-     */
-    public function getTypes()
-    {
-        return $this->types;
-    }
-
-    /**
-     * Add an operation to the service.
-     *
-     * @param Operation $operation The operation to be added.
-     */
-    public function addOperation(Operation $operation)
-    {
-        $this->operations[$operation->getName()] = $operation;
-    }
-
-   /**
-    * Generates the class if not already generated
-    */
-   public function generateClass()
-   {
-       $name = $this->identifier;
-
-        // Generate a valid classname
-       $name = Validator::validateClass($name, $this->config->get('namespaceName'));
-
-        // uppercase the name
-       $name = ucfirst($name);
-
-        // Create the class object
-       $comment = new PhpDocComment($this->description);
-       $this->class = new PhpClass($name, false, '\\'.BingSoapClient::class, $comment);
-
-       $this->class->addConstant($this->config->get('wsdlNamespace'), 'WSDL_NAMESPACE');
-       $this->class->addConstant($this->config->get('inputFile'), 'WSDL_PROD');
-       $this->class->addConstant($this->config->get('sandboxWsdl'), 'WSDL_SANDBOX');
-
-       // Create the constructor
-       $comment = new PhpDocComment();
-       $comment->addParam(PhpDocElementFactory::getParam(BingSession::class, 'session', 'A session object with credentials, etc'));
-       $comment->addParam(PhpDocElementFactory::getParam('array', 'options', 'A array of config values'));
-       $comment->addParam(PhpDocElementFactory::getParam('string', 'wsdl', 'The wsdl file to use'));
-       $comment->addParam(PhpDocElementFactory::getParam(ServiceDescriptor::class, 'sd', 'The services descriptor for the service'));
-
-       $source = [
-           '$options["classmap"] = array_replace(self::$classmap, $options["classmap"] ?? []);',
-           'parent::__construct($session, $wsdl, $options, $sd);'
-       ];
-
-       $function = new PhpFunction('public', '__construct', sprintf(
-           '\\%s $session, string $wsdl, array $options=array(), \\%s $sd=null',
-           BingSession::class,
-           ServiceDescriptor::class
-       ), implode(PHP_EOL, $source), $comment);
-
-       // Add the constructor
-       $this->class->addFunction($function);
-
-       // Generate the classmap
-       $name = 'classmap';
-       $comment = new PhpDocComment();
-       $comment->setVar(PhpDocElementFactory::getVar('array', $name, 'The defined classes'));
-
-       $init = array();
-       foreach ($this->types as $typename => $type) {
-           if ($type instanceof ComplexType) {
-               $init[$typename] = $this->config->get('namespaceName') . "\\" . $type->getPhpIdentifier();
-           }
-       }
-       $var = new PhpVariable('private static', $name, var_export($init, true), $comment);
-       $this->class->addVariable($var);
-
-        foreach ($this->operations as $operation) {
-            $name = Validator::validateOperation($operation->getName());
-
-            $comment = new PhpDocComment($operation->getDescription());
-            $comment->setReturn(PhpDocElementFactory::getReturn($operation->getReturns(), ''));
-
-            foreach ($operation->getParams() as $param => $hint) {
-                $arr = $operation->getPhpDocParams($param, $this->types);
-                $comment->addParam(PhpDocElementFactory::getParam($arr['type'], $arr['name'], $arr['desc']));
-            }
-            $source = sprintf(
-                '  return $this->__soapCall("%s", array(%s));%s',
-                $operation->getName(),
-                $operation->getParamStringNoTypeHints(),
-                PHP_EOL
-            );
-            $paramStr = $operation->getParamString($this->types);
-
-            $function = new PhpFunction('public', lcfirst($name), $paramStr, $source, $comment);
-            if ($this->class->functionExists($function->getIdentifier()) == false) {
-                $this->class->addFunction($function);
-            }
-        }
+        return new PhpFunction('public', '__construct', sprintf(
+            '\\%s $session, string $wsdl, array $options=array(), \\%s $sd=null',
+            BingSession::class,
+            ServiceDescriptor::class
+        ), implode(PHP_EOL, $source), $comment);
     }
 }

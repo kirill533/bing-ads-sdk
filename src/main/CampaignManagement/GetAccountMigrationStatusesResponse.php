@@ -15,7 +15,7 @@ class GetAccountMigrationStatusesResponse
      */
     public function __construct($MigrationStatuses = null)
     {
-      $this->MigrationStatuses = $MigrationStatuses;
+    $this->MigrationStatuses = $MigrationStatuses;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetAccountMigrationStatusesResponse
      */
     public function getMigrationStatuses()
     {
-      return $this->MigrationStatuses;
+        return $this->MigrationStatuses;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetAccountMigrationStatusesResponse
      */
     public function setMigrationStatuses($MigrationStatuses)
     {
-      $this->MigrationStatuses = $MigrationStatuses;
-      return $this;
+        $this->MigrationStatuses = $MigrationStatuses;
+        return $this;
     }
 
 }

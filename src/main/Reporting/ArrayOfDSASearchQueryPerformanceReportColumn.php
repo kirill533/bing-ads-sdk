@@ -21,7 +21,7 @@ class ArrayOfDSASearchQueryPerformanceReportColumn implements \ArrayAccess, \Ite
      */
     public function getDSASearchQueryPerformanceReportColumn()
     {
-      return $this->DSASearchQueryPerformanceReportColumn;
+        return $this->DSASearchQueryPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfDSASearchQueryPerformanceReportColumn implements \ArrayAccess, \Ite
      */
     public function setDSASearchQueryPerformanceReportColumn(array $DSASearchQueryPerformanceReportColumn = null)
     {
-      $this->DSASearchQueryPerformanceReportColumn = $DSASearchQueryPerformanceReportColumn;
-      return $this;
+        $this->DSASearchQueryPerformanceReportColumn = $DSASearchQueryPerformanceReportColumn;
+        return $this;
     }
 
     /**

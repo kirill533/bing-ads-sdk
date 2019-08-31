@@ -46,7 +46,7 @@ class BMCStore
      */
     public function getHasCatalog()
     {
-      return $this->HasCatalog;
+        return $this->HasCatalog;
     }
 
     /**
@@ -55,8 +55,8 @@ class BMCStore
      */
     public function setHasCatalog($HasCatalog)
     {
-      $this->HasCatalog = $HasCatalog;
-      return $this;
+        $this->HasCatalog = $HasCatalog;
+        return $this;
     }
 
     /**
@@ -64,7 +64,7 @@ class BMCStore
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -73,8 +73,8 @@ class BMCStore
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -82,7 +82,7 @@ class BMCStore
      */
     public function getIsActive()
     {
-      return $this->IsActive;
+        return $this->IsActive;
     }
 
     /**
@@ -91,8 +91,8 @@ class BMCStore
      */
     public function setIsActive($IsActive)
     {
-      $this->IsActive = $IsActive;
-      return $this;
+        $this->IsActive = $IsActive;
+        return $this;
     }
 
     /**
@@ -100,7 +100,7 @@ class BMCStore
      */
     public function getIsProductAdsEnabled()
     {
-      return $this->IsProductAdsEnabled;
+        return $this->IsProductAdsEnabled;
     }
 
     /**
@@ -109,8 +109,8 @@ class BMCStore
      */
     public function setIsProductAdsEnabled($IsProductAdsEnabled)
     {
-      $this->IsProductAdsEnabled = $IsProductAdsEnabled;
-      return $this;
+        $this->IsProductAdsEnabled = $IsProductAdsEnabled;
+        return $this;
     }
 
     /**
@@ -118,7 +118,7 @@ class BMCStore
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -127,8 +127,8 @@ class BMCStore
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -136,7 +136,7 @@ class BMCStore
      */
     public function getSubType()
     {
-      return $this->SubType;
+        return $this->SubType;
     }
 
     /**
@@ -145,8 +145,8 @@ class BMCStore
      */
     public function setSubType($SubType)
     {
-      $this->SubType = $SubType;
-      return $this;
+        $this->SubType = $SubType;
+        return $this;
     }
 
 }

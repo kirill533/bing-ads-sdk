@@ -31,7 +31,7 @@ class DomainCategory
      */
     public function getBid()
     {
-      return $this->Bid;
+        return $this->Bid;
     }
 
     /**
@@ -40,8 +40,8 @@ class DomainCategory
      */
     public function setBid($Bid)
     {
-      $this->Bid = $Bid;
-      return $this;
+        $this->Bid = $Bid;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class DomainCategory
      */
     public function getCategoryName()
     {
-      return $this->CategoryName;
+        return $this->CategoryName;
     }
 
     /**
@@ -58,8 +58,8 @@ class DomainCategory
      */
     public function setCategoryName($CategoryName)
     {
-      $this->CategoryName = $CategoryName;
-      return $this;
+        $this->CategoryName = $CategoryName;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class DomainCategory
      */
     public function getCoverage()
     {
-      return $this->Coverage;
+        return $this->Coverage;
     }
 
     /**
@@ -76,8 +76,8 @@ class DomainCategory
      */
     public function setCoverage($Coverage)
     {
-      $this->Coverage = $Coverage;
-      return $this;
+        $this->Coverage = $Coverage;
+        return $this;
     }
 
 }

@@ -21,8 +21,8 @@ class GetEstimatedBidByKeywordsResponse
      */
     public function __construct($KeywordEstimatedBids = null, $AdGroupEstimatedBid = null)
     {
-      $this->KeywordEstimatedBids = $KeywordEstimatedBids;
-      $this->AdGroupEstimatedBid = $AdGroupEstimatedBid;
+    $this->KeywordEstimatedBids = $KeywordEstimatedBids;
+    $this->AdGroupEstimatedBid = $AdGroupEstimatedBid;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetEstimatedBidByKeywordsResponse
      */
     public function getKeywordEstimatedBids()
     {
-      return $this->KeywordEstimatedBids;
+        return $this->KeywordEstimatedBids;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetEstimatedBidByKeywordsResponse
      */
     public function setKeywordEstimatedBids($KeywordEstimatedBids)
     {
-      $this->KeywordEstimatedBids = $KeywordEstimatedBids;
-      return $this;
+        $this->KeywordEstimatedBids = $KeywordEstimatedBids;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetEstimatedBidByKeywordsResponse
      */
     public function getAdGroupEstimatedBid()
     {
-      return $this->AdGroupEstimatedBid;
+        return $this->AdGroupEstimatedBid;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetEstimatedBidByKeywordsResponse
      */
     public function setAdGroupEstimatedBid($AdGroupEstimatedBid)
     {
-      $this->AdGroupEstimatedBid = $AdGroupEstimatedBid;
-      return $this;
+        $this->AdGroupEstimatedBid = $AdGroupEstimatedBid;
+        return $this;
     }
 
 }

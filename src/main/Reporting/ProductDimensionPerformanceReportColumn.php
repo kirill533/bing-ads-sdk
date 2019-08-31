@@ -67,6 +67,10 @@ class ProductDimensionPerformanceReportColumn
     const BidStrategyType = 'BidStrategyType';
     const LocalStoreCode = 'LocalStoreCode';
     const StoreId = 'StoreId';
+    const AssistedImpressions = 'AssistedImpressions';
+    const AssistedClicks = 'AssistedClicks';
+    const ClickSharePercent = 'ClickSharePercent';
+    const AbsoluteTopImpressionSharePercent = 'AbsoluteTopImpressionSharePercent';
 
 
 }

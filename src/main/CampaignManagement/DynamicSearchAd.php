@@ -20,10 +20,15 @@ class DynamicSearchAd extends Ad
      */
     protected $Text = null;
 
+    /**
+     * @var string $TextPart2
+     */
+    protected $TextPart2 = null;
+
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -31,7 +36,7 @@ class DynamicSearchAd extends Ad
      */
     public function getPath1()
     {
-      return $this->Path1;
+        return $this->Path1;
     }
 
     /**
@@ -40,8 +45,8 @@ class DynamicSearchAd extends Ad
      */
     public function setPath1($Path1)
     {
-      $this->Path1 = $Path1;
-      return $this;
+        $this->Path1 = $Path1;
+        return $this;
     }
 
     /**
@@ -49,7 +54,7 @@ class DynamicSearchAd extends Ad
      */
     public function getPath2()
     {
-      return $this->Path2;
+        return $this->Path2;
     }
 
     /**
@@ -58,8 +63,8 @@ class DynamicSearchAd extends Ad
      */
     public function setPath2($Path2)
     {
-      $this->Path2 = $Path2;
-      return $this;
+        $this->Path2 = $Path2;
+        return $this;
     }
 
     /**
@@ -67,7 +72,7 @@ class DynamicSearchAd extends Ad
      */
     public function getText()
     {
-      return $this->Text;
+        return $this->Text;
     }
 
     /**
@@ -76,8 +81,26 @@ class DynamicSearchAd extends Ad
      */
     public function setText($Text)
     {
-      $this->Text = $Text;
-      return $this;
+        $this->Text = $Text;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTextPart2()
+    {
+        return $this->TextPart2;
+    }
+
+    /**
+     * @param string $TextPart2
+     * @return \PMG\BingAds\CampaignManagement\DynamicSearchAd
+     */
+    public function setTextPart2($TextPart2)
+    {
+        $this->TextPart2 = $TextPart2;
+        return $this;
     }
 
 }

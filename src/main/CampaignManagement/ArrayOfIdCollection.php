@@ -21,7 +21,7 @@ class ArrayOfIdCollection implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function getIdCollection()
     {
-      return $this->IdCollection;
+        return $this->IdCollection;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfIdCollection implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function setIdCollection(array $IdCollection = null)
     {
-      $this->IdCollection = $IdCollection;
-      return $this;
+        $this->IdCollection = $IdCollection;
+        return $this;
     }
 
     /**

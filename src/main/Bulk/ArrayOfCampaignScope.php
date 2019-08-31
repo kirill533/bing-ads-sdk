@@ -21,7 +21,7 @@ class ArrayOfCampaignScope implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function getCampaignScope()
     {
-      return $this->CampaignScope;
+        return $this->CampaignScope;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCampaignScope implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function setCampaignScope(array $CampaignScope = null)
     {
-      $this->CampaignScope = $CampaignScope;
-      return $this;
+        $this->CampaignScope = $CampaignScope;
+        return $this;
     }
 
     /**

@@ -21,7 +21,7 @@ class ArrayOfMediaRepresentation implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getMediaRepresentation()
     {
-      return $this->MediaRepresentation;
+        return $this->MediaRepresentation;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfMediaRepresentation implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function setMediaRepresentation(array $MediaRepresentation = null)
     {
-      $this->MediaRepresentation = $MediaRepresentation;
-      return $this;
+        $this->MediaRepresentation = $MediaRepresentation;
+        return $this;
     }
 
     /**

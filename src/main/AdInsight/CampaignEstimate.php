@@ -26,7 +26,7 @@ class CampaignEstimate
      */
     public function getAdGroupEstimates()
     {
-      return $this->AdGroupEstimates;
+        return $this->AdGroupEstimates;
     }
 
     /**
@@ -35,8 +35,8 @@ class CampaignEstimate
      */
     public function setAdGroupEstimates($AdGroupEstimates)
     {
-      $this->AdGroupEstimates = $AdGroupEstimates;
-      return $this;
+        $this->AdGroupEstimates = $AdGroupEstimates;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class CampaignEstimate
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -53,8 +53,8 @@ class CampaignEstimate
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
 }

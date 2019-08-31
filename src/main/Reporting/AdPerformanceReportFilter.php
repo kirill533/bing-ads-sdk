@@ -56,7 +56,7 @@ class AdPerformanceReportFilter
      */
     public function getAccountStatus()
     {
-      return $this->AccountStatus;
+        return $this->AccountStatus;
     }
 
     /**
@@ -65,8 +65,8 @@ class AdPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
     {
-      $this->AccountStatus = $AccountStatus;
-      return $this;
+        $this->AccountStatus = $AccountStatus;
+        return $this;
     }
 
     /**
@@ -74,7 +74,7 @@ class AdPerformanceReportFilter
      */
     public function getAdDistribution()
     {
-      return $this->AdDistribution;
+        return $this->AdDistribution;
     }
 
     /**
@@ -83,8 +83,8 @@ class AdPerformanceReportFilter
      */
     public function setAdDistribution($AdDistribution)
     {
-      $this->AdDistribution = $AdDistribution;
-      return $this;
+        $this->AdDistribution = $AdDistribution;
+        return $this;
     }
 
     /**
@@ -92,7 +92,7 @@ class AdPerformanceReportFilter
      */
     public function getAdGroupStatus()
     {
-      return $this->AdGroupStatus;
+        return $this->AdGroupStatus;
     }
 
     /**
@@ -101,8 +101,8 @@ class AdPerformanceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
     {
-      $this->AdGroupStatus = $AdGroupStatus;
-      return $this;
+        $this->AdGroupStatus = $AdGroupStatus;
+        return $this;
     }
 
     /**
@@ -110,7 +110,7 @@ class AdPerformanceReportFilter
      */
     public function getAdStatus()
     {
-      return $this->AdStatus;
+        return $this->AdStatus;
     }
 
     /**
@@ -119,8 +119,8 @@ class AdPerformanceReportFilter
      */
     public function setAdStatus($AdStatus)
     {
-      $this->AdStatus = $AdStatus;
-      return $this;
+        $this->AdStatus = $AdStatus;
+        return $this;
     }
 
     /**
@@ -128,7 +128,7 @@ class AdPerformanceReportFilter
      */
     public function getAdType()
     {
-      return $this->AdType;
+        return $this->AdType;
     }
 
     /**
@@ -137,8 +137,8 @@ class AdPerformanceReportFilter
      */
     public function setAdType($AdType)
     {
-      $this->AdType = $AdType;
-      return $this;
+        $this->AdType = $AdType;
+        return $this;
     }
 
     /**
@@ -146,7 +146,7 @@ class AdPerformanceReportFilter
      */
     public function getCampaignStatus()
     {
-      return $this->CampaignStatus;
+        return $this->CampaignStatus;
     }
 
     /**
@@ -155,8 +155,8 @@ class AdPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
     {
-      $this->CampaignStatus = $CampaignStatus;
-      return $this;
+        $this->CampaignStatus = $CampaignStatus;
+        return $this;
     }
 
     /**
@@ -164,7 +164,7 @@ class AdPerformanceReportFilter
      */
     public function getDeviceType()
     {
-      return $this->DeviceType;
+        return $this->DeviceType;
     }
 
     /**
@@ -173,8 +173,8 @@ class AdPerformanceReportFilter
      */
     public function setDeviceType($DeviceType)
     {
-      $this->DeviceType = $DeviceType;
-      return $this;
+        $this->DeviceType = $DeviceType;
+        return $this;
     }
 
     /**
@@ -182,7 +182,7 @@ class AdPerformanceReportFilter
      */
     public function getLanguageCode()
     {
-      return $this->LanguageCode;
+        return $this->LanguageCode;
     }
 
     /**
@@ -191,8 +191,8 @@ class AdPerformanceReportFilter
      */
     public function setLanguageCode($LanguageCode)
     {
-      $this->LanguageCode = $LanguageCode;
-      return $this;
+        $this->LanguageCode = $LanguageCode;
+        return $this;
     }
 
 }

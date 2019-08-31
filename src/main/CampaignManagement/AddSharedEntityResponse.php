@@ -27,9 +27,9 @@ class AddSharedEntityResponse
      */
     public function __construct($ListItemIds = null, $PartialErrors = null, $SharedEntityId = null)
     {
-      $this->ListItemIds = $ListItemIds;
-      $this->PartialErrors = $PartialErrors;
-      $this->SharedEntityId = $SharedEntityId;
+    $this->ListItemIds = $ListItemIds;
+    $this->PartialErrors = $PartialErrors;
+    $this->SharedEntityId = $SharedEntityId;
     }
 
     /**
@@ -37,7 +37,7 @@ class AddSharedEntityResponse
      */
     public function getListItemIds()
     {
-      return $this->ListItemIds;
+        return $this->ListItemIds;
     }
 
     /**
@@ -46,8 +46,8 @@ class AddSharedEntityResponse
      */
     public function setListItemIds($ListItemIds)
     {
-      $this->ListItemIds = $ListItemIds;
-      return $this;
+        $this->ListItemIds = $ListItemIds;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class AddSharedEntityResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -64,8 +64,8 @@ class AddSharedEntityResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class AddSharedEntityResponse
      */
     public function getSharedEntityId()
     {
-      return $this->SharedEntityId;
+        return $this->SharedEntityId;
     }
 
     /**
@@ -82,8 +82,8 @@ class AddSharedEntityResponse
      */
     public function setSharedEntityId($SharedEntityId)
     {
-      $this->SharedEntityId = $SharedEntityId;
-      return $this;
+        $this->SharedEntityId = $SharedEntityId;
+        return $this;
     }
 
 }

@@ -21,8 +21,8 @@ class AddNegativeKeywordsToEntitiesResponse
      */
     public function __construct($NegativeKeywordIds = null, $NestedPartialErrors = null)
     {
-      $this->NegativeKeywordIds = $NegativeKeywordIds;
-      $this->NestedPartialErrors = $NestedPartialErrors;
+    $this->NegativeKeywordIds = $NegativeKeywordIds;
+    $this->NestedPartialErrors = $NestedPartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class AddNegativeKeywordsToEntitiesResponse
      */
     public function getNegativeKeywordIds()
     {
-      return $this->NegativeKeywordIds;
+        return $this->NegativeKeywordIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class AddNegativeKeywordsToEntitiesResponse
      */
     public function setNegativeKeywordIds($NegativeKeywordIds)
     {
-      $this->NegativeKeywordIds = $NegativeKeywordIds;
-      return $this;
+        $this->NegativeKeywordIds = $NegativeKeywordIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class AddNegativeKeywordsToEntitiesResponse
      */
     public function getNestedPartialErrors()
     {
-      return $this->NestedPartialErrors;
+        return $this->NestedPartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class AddNegativeKeywordsToEntitiesResponse
      */
     public function setNestedPartialErrors($NestedPartialErrors)
     {
-      $this->NestedPartialErrors = $NestedPartialErrors;
-      return $this;
+        $this->NestedPartialErrors = $NestedPartialErrors;
+        return $this;
     }
 
 }

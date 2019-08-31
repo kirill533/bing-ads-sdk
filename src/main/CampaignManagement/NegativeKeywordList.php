@@ -8,7 +8,7 @@ class NegativeKeywordList extends SharedList
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
 }

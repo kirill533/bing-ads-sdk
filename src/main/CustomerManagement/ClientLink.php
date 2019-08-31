@@ -101,7 +101,7 @@ class ClientLink
      */
     public function getClientAccountId()
     {
-      return $this->ClientAccountId;
+        return $this->ClientAccountId;
     }
 
     /**
@@ -110,8 +110,8 @@ class ClientLink
      */
     public function setClientAccountId($ClientAccountId)
     {
-      $this->ClientAccountId = $ClientAccountId;
-      return $this;
+        $this->ClientAccountId = $ClientAccountId;
+        return $this;
     }
 
     /**
@@ -119,7 +119,7 @@ class ClientLink
      */
     public function getClientAccountNumber()
     {
-      return $this->ClientAccountNumber;
+        return $this->ClientAccountNumber;
     }
 
     /**
@@ -128,8 +128,8 @@ class ClientLink
      */
     public function setClientAccountNumber($ClientAccountNumber)
     {
-      $this->ClientAccountNumber = $ClientAccountNumber;
-      return $this;
+        $this->ClientAccountNumber = $ClientAccountNumber;
+        return $this;
     }
 
     /**
@@ -137,7 +137,7 @@ class ClientLink
      */
     public function getManagingCustomerId()
     {
-      return $this->ManagingCustomerId;
+        return $this->ManagingCustomerId;
     }
 
     /**
@@ -146,8 +146,8 @@ class ClientLink
      */
     public function setManagingCustomerId($ManagingCustomerId)
     {
-      $this->ManagingCustomerId = $ManagingCustomerId;
-      return $this;
+        $this->ManagingCustomerId = $ManagingCustomerId;
+        return $this;
     }
 
     /**
@@ -155,7 +155,7 @@ class ClientLink
      */
     public function getManagingCustomerNumber()
     {
-      return $this->ManagingCustomerNumber;
+        return $this->ManagingCustomerNumber;
     }
 
     /**
@@ -164,8 +164,8 @@ class ClientLink
      */
     public function setManagingCustomerNumber($ManagingCustomerNumber)
     {
-      $this->ManagingCustomerNumber = $ManagingCustomerNumber;
-      return $this;
+        $this->ManagingCustomerNumber = $ManagingCustomerNumber;
+        return $this;
     }
 
     /**
@@ -173,7 +173,7 @@ class ClientLink
      */
     public function getNote()
     {
-      return $this->Note;
+        return $this->Note;
     }
 
     /**
@@ -182,8 +182,8 @@ class ClientLink
      */
     public function setNote($Note)
     {
-      $this->Note = $Note;
-      return $this;
+        $this->Note = $Note;
+        return $this;
     }
 
     /**
@@ -191,7 +191,7 @@ class ClientLink
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -200,8 +200,8 @@ class ClientLink
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -209,7 +209,7 @@ class ClientLink
      */
     public function getInviterEmail()
     {
-      return $this->InviterEmail;
+        return $this->InviterEmail;
     }
 
     /**
@@ -218,8 +218,8 @@ class ClientLink
      */
     public function setInviterEmail($InviterEmail)
     {
-      $this->InviterEmail = $InviterEmail;
-      return $this;
+        $this->InviterEmail = $InviterEmail;
+        return $this;
     }
 
     /**
@@ -227,7 +227,7 @@ class ClientLink
      */
     public function getInviterName()
     {
-      return $this->InviterName;
+        return $this->InviterName;
     }
 
     /**
@@ -236,8 +236,8 @@ class ClientLink
      */
     public function setInviterName($InviterName)
     {
-      $this->InviterName = $InviterName;
-      return $this;
+        $this->InviterName = $InviterName;
+        return $this;
     }
 
     /**
@@ -245,7 +245,7 @@ class ClientLink
      */
     public function getInviterPhone()
     {
-      return $this->InviterPhone;
+        return $this->InviterPhone;
     }
 
     /**
@@ -254,8 +254,8 @@ class ClientLink
      */
     public function setInviterPhone($InviterPhone)
     {
-      $this->InviterPhone = $InviterPhone;
-      return $this;
+        $this->InviterPhone = $InviterPhone;
+        return $this;
     }
 
     /**
@@ -263,7 +263,7 @@ class ClientLink
      */
     public function getIsBillToClient()
     {
-      return $this->IsBillToClient;
+        return $this->IsBillToClient;
     }
 
     /**
@@ -272,8 +272,8 @@ class ClientLink
      */
     public function setIsBillToClient($IsBillToClient)
     {
-      $this->IsBillToClient = $IsBillToClient;
-      return $this;
+        $this->IsBillToClient = $IsBillToClient;
+        return $this;
     }
 
     /**
@@ -281,15 +281,14 @@ class ClientLink
      */
     public function getStartDate()
     {
-      if ($this->StartDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->StartDate);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->StartDate) {
+            return $this->StartDate;
         }
-      }
+        try {
+            return new \DateTime($this->StartDate);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -298,12 +297,8 @@ class ClientLink
      */
     public function setStartDate(\DateTime $StartDate = null)
     {
-      if ($StartDate == null) {
-       $this->StartDate = null;
-      } else {
-        $this->StartDate = $StartDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->StartDate = null === $StartDate ? null : $StartDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -311,7 +306,7 @@ class ClientLink
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -320,8 +315,8 @@ class ClientLink
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
     /**
@@ -329,7 +324,7 @@ class ClientLink
      */
     public function getSuppressNotification()
     {
-      return $this->SuppressNotification;
+        return $this->SuppressNotification;
     }
 
     /**
@@ -338,8 +333,8 @@ class ClientLink
      */
     public function setSuppressNotification($SuppressNotification)
     {
-      $this->SuppressNotification = $SuppressNotification;
-      return $this;
+        $this->SuppressNotification = $SuppressNotification;
+        return $this;
     }
 
     /**
@@ -347,15 +342,14 @@ class ClientLink
      */
     public function getLastModifiedDateTime()
     {
-      if ($this->LastModifiedDateTime == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->LastModifiedDateTime);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->LastModifiedDateTime) {
+            return $this->LastModifiedDateTime;
         }
-      }
+        try {
+            return new \DateTime($this->LastModifiedDateTime);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -364,12 +358,8 @@ class ClientLink
      */
     public function setLastModifiedDateTime(\DateTime $LastModifiedDateTime = null)
     {
-      if ($LastModifiedDateTime == null) {
-       $this->LastModifiedDateTime = null;
-      } else {
-        $this->LastModifiedDateTime = $LastModifiedDateTime->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->LastModifiedDateTime = null === $LastModifiedDateTime ? null : $LastModifiedDateTime->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -377,7 +367,7 @@ class ClientLink
      */
     public function getLastModifiedByUserId()
     {
-      return $this->LastModifiedByUserId;
+        return $this->LastModifiedByUserId;
     }
 
     /**
@@ -386,8 +376,8 @@ class ClientLink
      */
     public function setLastModifiedByUserId($LastModifiedByUserId)
     {
-      $this->LastModifiedByUserId = $LastModifiedByUserId;
-      return $this;
+        $this->LastModifiedByUserId = $LastModifiedByUserId;
+        return $this;
     }
 
     /**
@@ -395,7 +385,7 @@ class ClientLink
      */
     public function getTimestamp()
     {
-      return $this->Timestamp;
+        return $this->Timestamp;
     }
 
     /**
@@ -404,8 +394,8 @@ class ClientLink
      */
     public function setTimestamp($Timestamp)
     {
-      $this->Timestamp = $Timestamp;
-      return $this;
+        $this->Timestamp = $Timestamp;
+        return $this;
     }
 
     /**
@@ -413,7 +403,7 @@ class ClientLink
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -422,8 +412,8 @@ class ClientLink
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
 }

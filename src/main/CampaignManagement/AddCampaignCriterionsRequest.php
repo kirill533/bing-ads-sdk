@@ -21,8 +21,8 @@ class AddCampaignCriterionsRequest
      */
     public function __construct($CampaignCriterions = null, $CriterionType = null)
     {
-      $this->CampaignCriterions = $CampaignCriterions;
-      $this->CriterionType = $CriterionType;
+    $this->CampaignCriterions = $CampaignCriterions;
+    $this->CriterionType = $CriterionType;
     }
 
     /**
@@ -30,7 +30,7 @@ class AddCampaignCriterionsRequest
      */
     public function getCampaignCriterions()
     {
-      return $this->CampaignCriterions;
+        return $this->CampaignCriterions;
     }
 
     /**
@@ -39,8 +39,8 @@ class AddCampaignCriterionsRequest
      */
     public function setCampaignCriterions($CampaignCriterions)
     {
-      $this->CampaignCriterions = $CampaignCriterions;
-      return $this;
+        $this->CampaignCriterions = $CampaignCriterions;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class AddCampaignCriterionsRequest
      */
     public function getCriterionType()
     {
-      return $this->CriterionType;
+        return $this->CriterionType;
     }
 
     /**
@@ -57,8 +57,8 @@ class AddCampaignCriterionsRequest
      */
     public function setCriterionType($CriterionType)
     {
-      $this->CriterionType = $CriterionType;
-      return $this;
+        $this->CriterionType = $CriterionType;
+        return $this;
     }
 
 }

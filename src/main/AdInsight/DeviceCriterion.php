@@ -21,7 +21,7 @@ class DeviceCriterion extends Criterion
      */
     public function getDeviceName()
     {
-      return $this->DeviceName;
+        return $this->DeviceName;
     }
 
     /**
@@ -30,8 +30,8 @@ class DeviceCriterion extends Criterion
      */
     public function setDeviceName($DeviceName)
     {
-      $this->DeviceName = $DeviceName;
-      return $this;
+        $this->DeviceName = $DeviceName;
+        return $this;
     }
 
 }

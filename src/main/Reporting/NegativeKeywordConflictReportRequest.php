@@ -23,7 +23,7 @@ class NegativeKeywordConflictReportRequest extends ReportRequest
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -31,7 +31,7 @@ class NegativeKeywordConflictReportRequest extends ReportRequest
      */
     public function getColumns()
     {
-      return $this->Columns;
+        return $this->Columns;
     }
 
     /**
@@ -40,8 +40,8 @@ class NegativeKeywordConflictReportRequest extends ReportRequest
      */
     public function setColumns($Columns)
     {
-      $this->Columns = $Columns;
-      return $this;
+        $this->Columns = $Columns;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class NegativeKeywordConflictReportRequest extends ReportRequest
      */
     public function getFilter()
     {
-      return $this->Filter;
+        return $this->Filter;
     }
 
     /**
@@ -58,8 +58,8 @@ class NegativeKeywordConflictReportRequest extends ReportRequest
      */
     public function setFilter($Filter)
     {
-      $this->Filter = $Filter;
-      return $this;
+        $this->Filter = $Filter;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class NegativeKeywordConflictReportRequest extends ReportRequest
      */
     public function getScope()
     {
-      return $this->Scope;
+        return $this->Scope;
     }
 
     /**
@@ -76,8 +76,8 @@ class NegativeKeywordConflictReportRequest extends ReportRequest
      */
     public function setScope($Scope)
     {
-      $this->Scope = $Scope;
-      return $this;
+        $this->Scope = $Scope;
+        return $this;
     }
 
 }

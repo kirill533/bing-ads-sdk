@@ -15,7 +15,7 @@ class GetKeywordLocationsResponse
      */
     public function __construct($KeywordLocationResult = null)
     {
-      $this->KeywordLocationResult = $KeywordLocationResult;
+    $this->KeywordLocationResult = $KeywordLocationResult;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetKeywordLocationsResponse
      */
     public function getKeywordLocationResult()
     {
-      return $this->KeywordLocationResult;
+        return $this->KeywordLocationResult;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetKeywordLocationsResponse
      */
     public function setKeywordLocationResult($KeywordLocationResult)
     {
-      $this->KeywordLocationResult = $KeywordLocationResult;
-      return $this;
+        $this->KeywordLocationResult = $KeywordLocationResult;
+        return $this;
     }
 
 }

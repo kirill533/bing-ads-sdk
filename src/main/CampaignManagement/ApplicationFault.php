@@ -15,7 +15,7 @@ class ApplicationFault extends \PMG\BingAds\Exception\ApiException
      */
     public function getTrackingId()
     {
-      return $this->TrackingId;
+        return $this->TrackingId;
     }
 
     /**
@@ -24,8 +24,8 @@ class ApplicationFault extends \PMG\BingAds\Exception\ApiException
      */
     public function setTrackingId($TrackingId)
     {
-      $this->TrackingId = $TrackingId;
-      return $this;
+        $this->TrackingId = $TrackingId;
+        return $this;
     }
 
 }

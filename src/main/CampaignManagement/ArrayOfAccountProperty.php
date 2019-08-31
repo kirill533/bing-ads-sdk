@@ -21,7 +21,7 @@ class ArrayOfAccountProperty implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getAccountProperty()
     {
-      return $this->AccountProperty;
+        return $this->AccountProperty;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAccountProperty implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function setAccountProperty(array $AccountProperty = null)
     {
-      $this->AccountProperty = $AccountProperty;
-      return $this;
+        $this->AccountProperty = $AccountProperty;
+        return $this;
     }
 
     /**

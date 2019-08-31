@@ -21,7 +21,7 @@ class ArrayOfMediaAssociation implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function getMediaAssociation()
     {
-      return $this->MediaAssociation;
+        return $this->MediaAssociation;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfMediaAssociation implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function setMediaAssociation(array $MediaAssociation = null)
     {
-      $this->MediaAssociation = $MediaAssociation;
-      return $this;
+        $this->MediaAssociation = $MediaAssociation;
+        return $this;
     }
 
     /**

@@ -21,8 +21,8 @@ class MapAccountIdToExternalAccountIdsRequest
      */
     public function __construct($AccountId = null, $ExternalAccountIds = null)
     {
-      $this->AccountId = $AccountId;
-      $this->ExternalAccountIds = $ExternalAccountIds;
+    $this->AccountId = $AccountId;
+    $this->ExternalAccountIds = $ExternalAccountIds;
     }
 
     /**
@@ -30,7 +30,7 @@ class MapAccountIdToExternalAccountIdsRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -39,8 +39,8 @@ class MapAccountIdToExternalAccountIdsRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class MapAccountIdToExternalAccountIdsRequest
      */
     public function getExternalAccountIds()
     {
-      return $this->ExternalAccountIds;
+        return $this->ExternalAccountIds;
     }
 
     /**
@@ -57,8 +57,8 @@ class MapAccountIdToExternalAccountIdsRequest
      */
     public function setExternalAccountIds($ExternalAccountIds)
     {
-      $this->ExternalAccountIds = $ExternalAccountIds;
-      return $this;
+        $this->ExternalAccountIds = $ExternalAccountIds;
+        return $this;
     }
 
 }

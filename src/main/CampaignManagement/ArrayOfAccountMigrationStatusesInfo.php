@@ -21,7 +21,7 @@ class ArrayOfAccountMigrationStatusesInfo implements \ArrayAccess, \IteratorAggr
      */
     public function getAccountMigrationStatusesInfo()
     {
-      return $this->AccountMigrationStatusesInfo;
+        return $this->AccountMigrationStatusesInfo;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAccountMigrationStatusesInfo implements \ArrayAccess, \IteratorAggr
      */
     public function setAccountMigrationStatusesInfo(array $AccountMigrationStatusesInfo = null)
     {
-      $this->AccountMigrationStatusesInfo = $AccountMigrationStatusesInfo;
-      return $this;
+        $this->AccountMigrationStatusesInfo = $AccountMigrationStatusesInfo;
+        return $this;
     }
 
     /**

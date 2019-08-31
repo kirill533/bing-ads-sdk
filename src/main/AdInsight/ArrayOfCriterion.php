@@ -21,7 +21,7 @@ class ArrayOfCriterion implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getCriterion()
     {
-      return $this->Criterion;
+        return $this->Criterion;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCriterion implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setCriterion(array $Criterion = null)
     {
-      $this->Criterion = $Criterion;
-      return $this;
+        $this->Criterion = $Criterion;
+        return $this;
     }
 
     /**

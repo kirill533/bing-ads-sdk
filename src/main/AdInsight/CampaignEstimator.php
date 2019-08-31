@@ -41,7 +41,7 @@ class CampaignEstimator
      */
     public function getAdGroupEstimators()
     {
-      return $this->AdGroupEstimators;
+        return $this->AdGroupEstimators;
     }
 
     /**
@@ -50,8 +50,8 @@ class CampaignEstimator
      */
     public function setAdGroupEstimators($AdGroupEstimators)
     {
-      $this->AdGroupEstimators = $AdGroupEstimators;
-      return $this;
+        $this->AdGroupEstimators = $AdGroupEstimators;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class CampaignEstimator
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -68,8 +68,8 @@ class CampaignEstimator
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class CampaignEstimator
      */
     public function getCriteria()
     {
-      return $this->Criteria;
+        return $this->Criteria;
     }
 
     /**
@@ -86,8 +86,8 @@ class CampaignEstimator
      */
     public function setCriteria($Criteria)
     {
-      $this->Criteria = $Criteria;
-      return $this;
+        $this->Criteria = $Criteria;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class CampaignEstimator
      */
     public function getDailyBudget()
     {
-      return $this->DailyBudget;
+        return $this->DailyBudget;
     }
 
     /**
@@ -104,8 +104,8 @@ class CampaignEstimator
      */
     public function setDailyBudget($DailyBudget)
     {
-      $this->DailyBudget = $DailyBudget;
-      return $this;
+        $this->DailyBudget = $DailyBudget;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class CampaignEstimator
      */
     public function getNegativeKeywords()
     {
-      return $this->NegativeKeywords;
+        return $this->NegativeKeywords;
     }
 
     /**
@@ -122,8 +122,8 @@ class CampaignEstimator
      */
     public function setNegativeKeywords($NegativeKeywords)
     {
-      $this->NegativeKeywords = $NegativeKeywords;
-      return $this;
+        $this->NegativeKeywords = $NegativeKeywords;
+        return $this;
     }
 
 }

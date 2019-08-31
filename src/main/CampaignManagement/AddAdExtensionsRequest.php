@@ -21,8 +21,8 @@ class AddAdExtensionsRequest
      */
     public function __construct($AccountId = null, $AdExtensions = null)
     {
-      $this->AccountId = $AccountId;
-      $this->AdExtensions = $AdExtensions;
+    $this->AccountId = $AccountId;
+    $this->AdExtensions = $AdExtensions;
     }
 
     /**
@@ -30,7 +30,7 @@ class AddAdExtensionsRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -39,8 +39,8 @@ class AddAdExtensionsRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class AddAdExtensionsRequest
      */
     public function getAdExtensions()
     {
-      return $this->AdExtensions;
+        return $this->AdExtensions;
     }
 
     /**
@@ -57,8 +57,8 @@ class AddAdExtensionsRequest
      */
     public function setAdExtensions($AdExtensions)
     {
-      $this->AdExtensions = $AdExtensions;
-      return $this;
+        $this->AdExtensions = $AdExtensions;
+        return $this;
     }
 
 }

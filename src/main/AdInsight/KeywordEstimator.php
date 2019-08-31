@@ -26,7 +26,7 @@ class KeywordEstimator
      */
     public function getKeyword()
     {
-      return $this->Keyword;
+        return $this->Keyword;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeywordEstimator
      */
     public function setKeyword($Keyword)
     {
-      $this->Keyword = $Keyword;
-      return $this;
+        $this->Keyword = $Keyword;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeywordEstimator
      */
     public function getMaxCpc()
     {
-      return $this->MaxCpc;
+        return $this->MaxCpc;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeywordEstimator
      */
     public function setMaxCpc($MaxCpc)
     {
-      $this->MaxCpc = $MaxCpc;
-      return $this;
+        $this->MaxCpc = $MaxCpc;
+        return $this;
     }
 
 }

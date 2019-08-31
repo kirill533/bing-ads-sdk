@@ -21,7 +21,7 @@ class ArrayOfMatchType implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getMatchType()
     {
-      return $this->MatchType;
+        return $this->MatchType;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfMatchType implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setMatchType(array $MatchType = null)
     {
-      $this->MatchType = $MatchType;
-      return $this;
+        $this->MatchType = $MatchType;
+        return $this;
     }
 
     /**

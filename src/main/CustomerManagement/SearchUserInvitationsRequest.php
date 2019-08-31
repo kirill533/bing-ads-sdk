@@ -15,7 +15,7 @@ class SearchUserInvitationsRequest
      */
     public function __construct($Predicates = null)
     {
-      $this->Predicates = $Predicates;
+    $this->Predicates = $Predicates;
     }
 
     /**
@@ -23,7 +23,7 @@ class SearchUserInvitationsRequest
      */
     public function getPredicates()
     {
-      return $this->Predicates;
+        return $this->Predicates;
     }
 
     /**
@@ -32,8 +32,8 @@ class SearchUserInvitationsRequest
      */
     public function setPredicates($Predicates)
     {
-      $this->Predicates = $Predicates;
-      return $this;
+        $this->Predicates = $Predicates;
+        return $this;
     }
 
 }

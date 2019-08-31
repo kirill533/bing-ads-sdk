@@ -21,7 +21,7 @@ class ArrayOfBillingDocumentInfo implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getBillingDocumentInfo()
     {
-      return $this->BillingDocumentInfo;
+        return $this->BillingDocumentInfo;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfBillingDocumentInfo implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function setBillingDocumentInfo(array $BillingDocumentInfo = null)
     {
-      $this->BillingDocumentInfo = $BillingDocumentInfo;
-      return $this;
+        $this->BillingDocumentInfo = $BillingDocumentInfo;
+        return $this;
     }
 
     /**

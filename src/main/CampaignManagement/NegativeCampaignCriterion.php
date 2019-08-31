@@ -10,7 +10,7 @@ class NegativeCampaignCriterion extends CampaignCriterion
      */
     public function __construct($CampaignId = null)
     {
-      parent::__construct($CampaignId);
+        parent::__construct($CampaignId);
     }
 
 }

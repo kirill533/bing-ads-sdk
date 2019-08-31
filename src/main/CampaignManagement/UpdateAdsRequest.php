@@ -21,8 +21,8 @@ class UpdateAdsRequest
      */
     public function __construct($AdGroupId = null, $Ads = null)
     {
-      $this->AdGroupId = $AdGroupId;
-      $this->Ads = $Ads;
+    $this->AdGroupId = $AdGroupId;
+    $this->Ads = $Ads;
     }
 
     /**
@@ -30,7 +30,7 @@ class UpdateAdsRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -39,8 +39,8 @@ class UpdateAdsRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class UpdateAdsRequest
      */
     public function getAds()
     {
-      return $this->Ads;
+        return $this->Ads;
     }
 
     /**
@@ -57,8 +57,8 @@ class UpdateAdsRequest
      */
     public function setAds($Ads)
     {
-      $this->Ads = $Ads;
-      return $this;
+        $this->Ads = $Ads;
+        return $this;
     }
 
 }

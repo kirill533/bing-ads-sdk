@@ -21,7 +21,7 @@ class ArrayOfMetricData implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getMetricData()
     {
-      return $this->MetricData;
+        return $this->MetricData;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfMetricData implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setMetricData(array $MetricData = null)
     {
-      $this->MetricData = $MetricData;
-      return $this;
+        $this->MetricData = $MetricData;
+        return $this;
     }
 
     /**

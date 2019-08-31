@@ -21,8 +21,8 @@ class AddInsertionOrderResponse
      */
     public function __construct($InsertionOrderId = null, \DateTime $CreateTime = null)
     {
-      $this->InsertionOrderId = $InsertionOrderId;
-      $this->CreateTime = $CreateTime ? $CreateTime->format(\DateTime::ATOM) : null;
+    $this->InsertionOrderId = $InsertionOrderId;
+        $this->CreateTime = null === $CreateTime ? null : $CreateTime->format(\DateTime::ATOM);
     }
 
     /**
@@ -30,7 +30,7 @@ class AddInsertionOrderResponse
      */
     public function getInsertionOrderId()
     {
-      return $this->InsertionOrderId;
+        return $this->InsertionOrderId;
     }
 
     /**
@@ -39,8 +39,8 @@ class AddInsertionOrderResponse
      */
     public function setInsertionOrderId($InsertionOrderId)
     {
-      $this->InsertionOrderId = $InsertionOrderId;
-      return $this;
+        $this->InsertionOrderId = $InsertionOrderId;
+        return $this;
     }
 
     /**
@@ -48,15 +48,14 @@ class AddInsertionOrderResponse
      */
     public function getCreateTime()
     {
-      if ($this->CreateTime == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->CreateTime);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->CreateTime) {
+            return $this->CreateTime;
         }
-      }
+        try {
+            return new \DateTime($this->CreateTime);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -65,8 +64,8 @@ class AddInsertionOrderResponse
      */
     public function setCreateTime(\DateTime $CreateTime)
     {
-      $this->CreateTime = $CreateTime->format(\DateTime::ATOM);
-      return $this;
+        $this->CreateTime = $CreateTime->format(\DateTime::ATOM);
+        return $this;
     }
 
 }

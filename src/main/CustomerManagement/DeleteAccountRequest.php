@@ -21,8 +21,8 @@ class DeleteAccountRequest
      */
     public function __construct($AccountId = null, $TimeStamp = null)
     {
-      $this->AccountId = $AccountId;
-      $this->TimeStamp = $TimeStamp;
+    $this->AccountId = $AccountId;
+    $this->TimeStamp = $TimeStamp;
     }
 
     /**
@@ -30,7 +30,7 @@ class DeleteAccountRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -39,8 +39,8 @@ class DeleteAccountRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class DeleteAccountRequest
      */
     public function getTimeStamp()
     {
-      return $this->TimeStamp;
+        return $this->TimeStamp;
     }
 
     /**
@@ -57,8 +57,8 @@ class DeleteAccountRequest
      */
     public function setTimeStamp($TimeStamp)
     {
-      $this->TimeStamp = $TimeStamp;
-      return $this;
+        $this->TimeStamp = $TimeStamp;
+        return $this;
     }
 
 }

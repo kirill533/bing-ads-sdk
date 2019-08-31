@@ -31,7 +31,7 @@ class KeywordLocation
      */
     public function getDevice()
     {
-      return $this->Device;
+        return $this->Device;
     }
 
     /**
@@ -40,8 +40,8 @@ class KeywordLocation
      */
     public function setDevice($Device)
     {
-      $this->Device = $Device;
-      return $this;
+        $this->Device = $Device;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class KeywordLocation
      */
     public function getLocation()
     {
-      return $this->Location;
+        return $this->Location;
     }
 
     /**
@@ -58,8 +58,8 @@ class KeywordLocation
      */
     public function setLocation($Location)
     {
-      $this->Location = $Location;
-      return $this;
+        $this->Location = $Location;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class KeywordLocation
      */
     public function getPercentage()
     {
-      return $this->Percentage;
+        return $this->Percentage;
     }
 
     /**
@@ -76,8 +76,8 @@ class KeywordLocation
      */
     public function setPercentage($Percentage)
     {
-      $this->Percentage = $Percentage;
-      return $this;
+        $this->Percentage = $Percentage;
+        return $this;
     }
 
 }

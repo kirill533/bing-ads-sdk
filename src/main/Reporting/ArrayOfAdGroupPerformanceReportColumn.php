@@ -21,7 +21,7 @@ class ArrayOfAdGroupPerformanceReportColumn implements \ArrayAccess, \IteratorAg
      */
     public function getAdGroupPerformanceReportColumn()
     {
-      return $this->AdGroupPerformanceReportColumn;
+        return $this->AdGroupPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdGroupPerformanceReportColumn implements \ArrayAccess, \IteratorAg
      */
     public function setAdGroupPerformanceReportColumn(array $AdGroupPerformanceReportColumn = null)
     {
-      $this->AdGroupPerformanceReportColumn = $AdGroupPerformanceReportColumn;
-      return $this;
+        $this->AdGroupPerformanceReportColumn = $AdGroupPerformanceReportColumn;
+        return $this;
     }
 
     /**

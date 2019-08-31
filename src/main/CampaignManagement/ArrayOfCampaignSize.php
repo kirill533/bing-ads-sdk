@@ -21,7 +21,7 @@ class ArrayOfCampaignSize implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function getCampaignSize()
     {
-      return $this->CampaignSize;
+        return $this->CampaignSize;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCampaignSize implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function setCampaignSize(array $CampaignSize = null)
     {
-      $this->CampaignSize = $CampaignSize;
-      return $this;
+        $this->CampaignSize = $CampaignSize;
+        return $this;
     }
 
     /**

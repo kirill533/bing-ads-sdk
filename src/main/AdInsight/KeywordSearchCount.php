@@ -26,7 +26,7 @@ class KeywordSearchCount
      */
     public function getKeyword()
     {
-      return $this->Keyword;
+        return $this->Keyword;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeywordSearchCount
      */
     public function setKeyword($Keyword)
     {
-      $this->Keyword = $Keyword;
-      return $this;
+        $this->Keyword = $Keyword;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeywordSearchCount
      */
     public function getSearchCountsByAttributes()
     {
-      return $this->SearchCountsByAttributes;
+        return $this->SearchCountsByAttributes;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeywordSearchCount
      */
     public function setSearchCountsByAttributes($SearchCountsByAttributes)
     {
-      $this->SearchCountsByAttributes = $SearchCountsByAttributes;
-      return $this;
+        $this->SearchCountsByAttributes = $SearchCountsByAttributes;
+        return $this;
     }
 
 }

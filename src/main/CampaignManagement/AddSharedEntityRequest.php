@@ -21,8 +21,8 @@ class AddSharedEntityRequest
      */
     public function __construct($SharedEntity = null, $ListItems = null)
     {
-      $this->SharedEntity = $SharedEntity;
-      $this->ListItems = $ListItems;
+    $this->SharedEntity = $SharedEntity;
+    $this->ListItems = $ListItems;
     }
 
     /**
@@ -30,7 +30,7 @@ class AddSharedEntityRequest
      */
     public function getSharedEntity()
     {
-      return $this->SharedEntity;
+        return $this->SharedEntity;
     }
 
     /**
@@ -39,8 +39,8 @@ class AddSharedEntityRequest
      */
     public function setSharedEntity($SharedEntity)
     {
-      $this->SharedEntity = $SharedEntity;
-      return $this;
+        $this->SharedEntity = $SharedEntity;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class AddSharedEntityRequest
      */
     public function getListItems()
     {
-      return $this->ListItems;
+        return $this->ListItems;
     }
 
     /**
@@ -57,8 +57,8 @@ class AddSharedEntityRequest
      */
     public function setListItems($ListItems)
     {
-      $this->ListItems = $ListItems;
-      return $this;
+        $this->ListItems = $ListItems;
+        return $this;
     }
 
 }

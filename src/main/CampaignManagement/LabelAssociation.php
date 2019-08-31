@@ -21,8 +21,8 @@ class LabelAssociation
      */
     public function __construct($EntityId = null, $LabelId = null)
     {
-      $this->EntityId = $EntityId;
-      $this->LabelId = $LabelId;
+    $this->EntityId = $EntityId;
+    $this->LabelId = $LabelId;
     }
 
     /**
@@ -30,7 +30,7 @@ class LabelAssociation
      */
     public function getEntityId()
     {
-      return $this->EntityId;
+        return $this->EntityId;
     }
 
     /**
@@ -39,8 +39,8 @@ class LabelAssociation
      */
     public function setEntityId($EntityId)
     {
-      $this->EntityId = $EntityId;
-      return $this;
+        $this->EntityId = $EntityId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class LabelAssociation
      */
     public function getLabelId()
     {
-      return $this->LabelId;
+        return $this->LabelId;
     }
 
     /**
@@ -57,8 +57,8 @@ class LabelAssociation
      */
     public function setLabelId($LabelId)
     {
-      $this->LabelId = $LabelId;
-      return $this;
+        $this->LabelId = $LabelId;
+        return $this;
     }
 
 }

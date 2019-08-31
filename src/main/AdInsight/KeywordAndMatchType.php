@@ -26,7 +26,7 @@ class KeywordAndMatchType
      */
     public function getKeywordText()
     {
-      return $this->KeywordText;
+        return $this->KeywordText;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeywordAndMatchType
      */
     public function setKeywordText($KeywordText)
     {
-      $this->KeywordText = $KeywordText;
-      return $this;
+        $this->KeywordText = $KeywordText;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeywordAndMatchType
      */
     public function getMatchTypes()
     {
-      return $this->MatchTypes;
+        return $this->MatchTypes;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeywordAndMatchType
      */
     public function setMatchTypes($MatchTypes)
     {
-      $this->MatchTypes = $MatchTypes;
-      return $this;
+        $this->MatchTypes = $MatchTypes;
+        return $this;
     }
 
 }

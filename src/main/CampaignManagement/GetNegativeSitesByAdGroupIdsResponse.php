@@ -21,8 +21,8 @@ class GetNegativeSitesByAdGroupIdsResponse
      */
     public function __construct($AdGroupNegativeSites = null, $PartialErrors = null)
     {
-      $this->AdGroupNegativeSites = $AdGroupNegativeSites;
-      $this->PartialErrors = $PartialErrors;
+    $this->AdGroupNegativeSites = $AdGroupNegativeSites;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetNegativeSitesByAdGroupIdsResponse
      */
     public function getAdGroupNegativeSites()
     {
-      return $this->AdGroupNegativeSites;
+        return $this->AdGroupNegativeSites;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetNegativeSitesByAdGroupIdsResponse
      */
     public function setAdGroupNegativeSites($AdGroupNegativeSites)
     {
-      $this->AdGroupNegativeSites = $AdGroupNegativeSites;
-      return $this;
+        $this->AdGroupNegativeSites = $AdGroupNegativeSites;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetNegativeSitesByAdGroupIdsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetNegativeSitesByAdGroupIdsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

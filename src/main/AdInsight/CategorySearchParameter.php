@@ -21,7 +21,7 @@ class CategorySearchParameter extends SearchParameter
      */
     public function getCategoryId()
     {
-      return $this->CategoryId;
+        return $this->CategoryId;
     }
 
     /**
@@ -30,8 +30,8 @@ class CategorySearchParameter extends SearchParameter
      */
     public function setCategoryId($CategoryId)
     {
-      $this->CategoryId = $CategoryId;
-      return $this;
+        $this->CategoryId = $CategoryId;
+        return $this;
     }
 
 }

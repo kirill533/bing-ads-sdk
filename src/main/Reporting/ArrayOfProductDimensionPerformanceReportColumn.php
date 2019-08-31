@@ -21,7 +21,7 @@ class ArrayOfProductDimensionPerformanceReportColumn implements \ArrayAccess, \I
      */
     public function getProductDimensionPerformanceReportColumn()
     {
-      return $this->ProductDimensionPerformanceReportColumn;
+        return $this->ProductDimensionPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfProductDimensionPerformanceReportColumn implements \ArrayAccess, \I
      */
     public function setProductDimensionPerformanceReportColumn(array $ProductDimensionPerformanceReportColumn = null)
     {
-      $this->ProductDimensionPerformanceReportColumn = $ProductDimensionPerformanceReportColumn;
-      return $this;
+        $this->ProductDimensionPerformanceReportColumn = $ProductDimensionPerformanceReportColumn;
+        return $this;
     }
 
     /**

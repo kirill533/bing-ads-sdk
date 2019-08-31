@@ -23,7 +23,7 @@ class StringRuleItem extends RuleItem
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -31,7 +31,7 @@ class StringRuleItem extends RuleItem
      */
     public function getOperand()
     {
-      return $this->Operand;
+        return $this->Operand;
     }
 
     /**
@@ -40,8 +40,8 @@ class StringRuleItem extends RuleItem
      */
     public function setOperand($Operand)
     {
-      $this->Operand = $Operand;
-      return $this;
+        $this->Operand = $Operand;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class StringRuleItem extends RuleItem
      */
     public function getOperator()
     {
-      return $this->Operator;
+        return $this->Operator;
     }
 
     /**
@@ -58,8 +58,8 @@ class StringRuleItem extends RuleItem
      */
     public function setOperator($Operator)
     {
-      $this->Operator = $Operator;
-      return $this;
+        $this->Operator = $Operator;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class StringRuleItem extends RuleItem
      */
     public function getValue()
     {
-      return $this->Value;
+        return $this->Value;
     }
 
     /**
@@ -76,8 +76,8 @@ class StringRuleItem extends RuleItem
      */
     public function setValue($Value)
     {
-      $this->Value = $Value;
-      return $this;
+        $this->Value = $Value;
+        return $this;
     }
 
 }

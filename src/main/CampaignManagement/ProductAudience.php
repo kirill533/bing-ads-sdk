@@ -18,7 +18,7 @@ class ProductAudience extends Audience
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -26,7 +26,7 @@ class ProductAudience extends Audience
      */
     public function getProductAudienceType()
     {
-      return $this->ProductAudienceType;
+        return $this->ProductAudienceType;
     }
 
     /**
@@ -35,8 +35,8 @@ class ProductAudience extends Audience
      */
     public function setProductAudienceType($ProductAudienceType)
     {
-      $this->ProductAudienceType = $ProductAudienceType;
-      return $this;
+        $this->ProductAudienceType = $ProductAudienceType;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class ProductAudience extends Audience
      */
     public function getTagId()
     {
-      return $this->TagId;
+        return $this->TagId;
     }
 
     /**
@@ -53,8 +53,8 @@ class ProductAudience extends Audience
      */
     public function setTagId($TagId)
     {
-      $this->TagId = $TagId;
-      return $this;
+        $this->TagId = $TagId;
+        return $this;
     }
 
 }

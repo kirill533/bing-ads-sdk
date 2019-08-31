@@ -11,11 +11,18 @@ class GetAdGroupsByCampaignIdRequest
     protected $CampaignId = null;
 
     /**
-     * @param int $CampaignId
+     * @var AdGroupAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($CampaignId = null)
+    protected $ReturnAdditionalFields = null;
+
+    /**
+     * @param int $CampaignId
+     * @param AdGroupAdditionalField $ReturnAdditionalFields
+     */
+    public function __construct($CampaignId = null, $ReturnAdditionalFields = null)
     {
-      $this->CampaignId = $CampaignId;
+    $this->CampaignId = $CampaignId;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -23,7 +30,7 @@ class GetAdGroupsByCampaignIdRequest
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -32,8 +39,26 @@ class GetAdGroupsByCampaignIdRequest
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
+    }
+
+    /**
+     * @return AdGroupAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param AdGroupAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\CampaignManagement\GetAdGroupsByCampaignIdRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

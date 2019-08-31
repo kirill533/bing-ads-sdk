@@ -21,8 +21,8 @@ class MapCustomerIdToExternalCustomerIdRequest
      */
     public function __construct($CustomerId = null, $ExternalCustomerId = null)
     {
-      $this->CustomerId = $CustomerId;
-      $this->ExternalCustomerId = $ExternalCustomerId;
+    $this->CustomerId = $CustomerId;
+    $this->ExternalCustomerId = $ExternalCustomerId;
     }
 
     /**
@@ -30,7 +30,7 @@ class MapCustomerIdToExternalCustomerIdRequest
      */
     public function getCustomerId()
     {
-      return $this->CustomerId;
+        return $this->CustomerId;
     }
 
     /**
@@ -39,8 +39,8 @@ class MapCustomerIdToExternalCustomerIdRequest
      */
     public function setCustomerId($CustomerId)
     {
-      $this->CustomerId = $CustomerId;
-      return $this;
+        $this->CustomerId = $CustomerId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class MapCustomerIdToExternalCustomerIdRequest
      */
     public function getExternalCustomerId()
     {
-      return $this->ExternalCustomerId;
+        return $this->ExternalCustomerId;
     }
 
     /**
@@ -57,8 +57,8 @@ class MapCustomerIdToExternalCustomerIdRequest
      */
     public function setExternalCustomerId($ExternalCustomerId)
     {
-      $this->ExternalCustomerId = $ExternalCustomerId;
-      return $this;
+        $this->ExternalCustomerId = $ExternalCustomerId;
+        return $this;
     }
 
 }

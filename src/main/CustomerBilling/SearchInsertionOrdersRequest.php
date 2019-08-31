@@ -27,9 +27,9 @@ class SearchInsertionOrdersRequest
      */
     public function __construct($Predicates = null, $Ordering = null, $PageInfo = null)
     {
-      $this->Predicates = $Predicates;
-      $this->Ordering = $Ordering;
-      $this->PageInfo = $PageInfo;
+    $this->Predicates = $Predicates;
+    $this->Ordering = $Ordering;
+    $this->PageInfo = $PageInfo;
     }
 
     /**
@@ -37,7 +37,7 @@ class SearchInsertionOrdersRequest
      */
     public function getPredicates()
     {
-      return $this->Predicates;
+        return $this->Predicates;
     }
 
     /**
@@ -46,8 +46,8 @@ class SearchInsertionOrdersRequest
      */
     public function setPredicates($Predicates)
     {
-      $this->Predicates = $Predicates;
-      return $this;
+        $this->Predicates = $Predicates;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class SearchInsertionOrdersRequest
      */
     public function getOrdering()
     {
-      return $this->Ordering;
+        return $this->Ordering;
     }
 
     /**
@@ -64,8 +64,8 @@ class SearchInsertionOrdersRequest
      */
     public function setOrdering($Ordering)
     {
-      $this->Ordering = $Ordering;
-      return $this;
+        $this->Ordering = $Ordering;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class SearchInsertionOrdersRequest
      */
     public function getPageInfo()
     {
-      return $this->PageInfo;
+        return $this->PageInfo;
     }
 
     /**
@@ -82,8 +82,8 @@ class SearchInsertionOrdersRequest
      */
     public function setPageInfo($PageInfo)
     {
-      $this->PageInfo = $PageInfo;
-      return $this;
+        $this->PageInfo = $PageInfo;
+        return $this;
     }
 
 }

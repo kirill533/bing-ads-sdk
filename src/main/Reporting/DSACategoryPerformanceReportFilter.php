@@ -41,7 +41,7 @@ class DSACategoryPerformanceReportFilter
      */
     public function getAccountStatus()
     {
-      return $this->AccountStatus;
+        return $this->AccountStatus;
     }
 
     /**
@@ -50,8 +50,8 @@ class DSACategoryPerformanceReportFilter
      */
     public function setAccountStatus($AccountStatus)
     {
-      $this->AccountStatus = $AccountStatus;
-      return $this;
+        $this->AccountStatus = $AccountStatus;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class DSACategoryPerformanceReportFilter
      */
     public function getAdGroupStatus()
     {
-      return $this->AdGroupStatus;
+        return $this->AdGroupStatus;
     }
 
     /**
@@ -68,8 +68,8 @@ class DSACategoryPerformanceReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
     {
-      $this->AdGroupStatus = $AdGroupStatus;
-      return $this;
+        $this->AdGroupStatus = $AdGroupStatus;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class DSACategoryPerformanceReportFilter
      */
     public function getAdStatus()
     {
-      return $this->AdStatus;
+        return $this->AdStatus;
     }
 
     /**
@@ -86,8 +86,8 @@ class DSACategoryPerformanceReportFilter
      */
     public function setAdStatus($AdStatus)
     {
-      $this->AdStatus = $AdStatus;
-      return $this;
+        $this->AdStatus = $AdStatus;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class DSACategoryPerformanceReportFilter
      */
     public function getCampaignStatus()
     {
-      return $this->CampaignStatus;
+        return $this->CampaignStatus;
     }
 
     /**
@@ -104,8 +104,8 @@ class DSACategoryPerformanceReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
     {
-      $this->CampaignStatus = $CampaignStatus;
-      return $this;
+        $this->CampaignStatus = $CampaignStatus;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class DSACategoryPerformanceReportFilter
      */
     public function getLanguageCode()
     {
-      return $this->LanguageCode;
+        return $this->LanguageCode;
     }
 
     /**
@@ -122,8 +122,8 @@ class DSACategoryPerformanceReportFilter
      */
     public function setLanguageCode($LanguageCode)
     {
-      $this->LanguageCode = $LanguageCode;
-      return $this;
+        $this->LanguageCode = $LanguageCode;
+        return $this;
     }
 
 }

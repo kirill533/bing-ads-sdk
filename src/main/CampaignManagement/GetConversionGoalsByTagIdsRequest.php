@@ -21,8 +21,8 @@ class GetConversionGoalsByTagIdsRequest
      */
     public function __construct($TagIds = null, $ConversionGoalTypes = null)
     {
-      $this->TagIds = $TagIds;
-      $this->ConversionGoalTypes = $ConversionGoalTypes;
+    $this->TagIds = $TagIds;
+    $this->ConversionGoalTypes = $ConversionGoalTypes;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetConversionGoalsByTagIdsRequest
      */
     public function getTagIds()
     {
-      return $this->TagIds;
+        return $this->TagIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetConversionGoalsByTagIdsRequest
      */
     public function setTagIds($TagIds)
     {
-      $this->TagIds = $TagIds;
-      return $this;
+        $this->TagIds = $TagIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetConversionGoalsByTagIdsRequest
      */
     public function getConversionGoalTypes()
     {
-      return $this->ConversionGoalTypes;
+        return $this->ConversionGoalTypes;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetConversionGoalsByTagIdsRequest
      */
     public function setConversionGoalTypes($ConversionGoalTypes)
     {
-      $this->ConversionGoalTypes = $ConversionGoalTypes;
-      return $this;
+        $this->ConversionGoalTypes = $ConversionGoalTypes;
+        return $this;
     }
 
 }

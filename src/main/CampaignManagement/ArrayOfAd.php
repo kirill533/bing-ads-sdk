@@ -21,7 +21,7 @@ class ArrayOfAd implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getAd()
     {
-      return $this->Ad;
+        return $this->Ad;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAd implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setAd(array $Ad = null)
     {
-      $this->Ad = $Ad;
-      return $this;
+        $this->Ad = $Ad;
+        return $this;
     }
 
     /**

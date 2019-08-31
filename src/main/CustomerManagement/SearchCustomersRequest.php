@@ -26,17 +26,24 @@ class SearchCustomersRequest
     protected $PageInfo = null;
 
     /**
+     * @var boolean $IncludeCustomerAddress
+     */
+    protected $IncludeCustomerAddress = null;
+
+    /**
      * @param ArrayOfPredicate $Predicates
      * @param DateRange $DateRange
      * @param ArrayOfOrderBy $Ordering
      * @param Paging $PageInfo
+     * @param boolean $IncludeCustomerAddress
      */
-    public function __construct($Predicates = null, $DateRange = null, $Ordering = null, $PageInfo = null)
+    public function __construct($Predicates = null, $DateRange = null, $Ordering = null, $PageInfo = null, $IncludeCustomerAddress = null)
     {
-      $this->Predicates = $Predicates;
-      $this->DateRange = $DateRange;
-      $this->Ordering = $Ordering;
-      $this->PageInfo = $PageInfo;
+    $this->Predicates = $Predicates;
+    $this->DateRange = $DateRange;
+    $this->Ordering = $Ordering;
+    $this->PageInfo = $PageInfo;
+    $this->IncludeCustomerAddress = $IncludeCustomerAddress;
     }
 
     /**
@@ -44,7 +51,7 @@ class SearchCustomersRequest
      */
     public function getPredicates()
     {
-      return $this->Predicates;
+        return $this->Predicates;
     }
 
     /**
@@ -53,8 +60,8 @@ class SearchCustomersRequest
      */
     public function setPredicates($Predicates)
     {
-      $this->Predicates = $Predicates;
-      return $this;
+        $this->Predicates = $Predicates;
+        return $this;
     }
 
     /**
@@ -62,7 +69,7 @@ class SearchCustomersRequest
      */
     public function getDateRange()
     {
-      return $this->DateRange;
+        return $this->DateRange;
     }
 
     /**
@@ -71,8 +78,8 @@ class SearchCustomersRequest
      */
     public function setDateRange($DateRange)
     {
-      $this->DateRange = $DateRange;
-      return $this;
+        $this->DateRange = $DateRange;
+        return $this;
     }
 
     /**
@@ -80,7 +87,7 @@ class SearchCustomersRequest
      */
     public function getOrdering()
     {
-      return $this->Ordering;
+        return $this->Ordering;
     }
 
     /**
@@ -89,8 +96,8 @@ class SearchCustomersRequest
      */
     public function setOrdering($Ordering)
     {
-      $this->Ordering = $Ordering;
-      return $this;
+        $this->Ordering = $Ordering;
+        return $this;
     }
 
     /**
@@ -98,7 +105,7 @@ class SearchCustomersRequest
      */
     public function getPageInfo()
     {
-      return $this->PageInfo;
+        return $this->PageInfo;
     }
 
     /**
@@ -107,8 +114,26 @@ class SearchCustomersRequest
      */
     public function setPageInfo($PageInfo)
     {
-      $this->PageInfo = $PageInfo;
-      return $this;
+        $this->PageInfo = $PageInfo;
+        return $this;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getIncludeCustomerAddress()
+    {
+        return $this->IncludeCustomerAddress;
+    }
+
+    /**
+     * @param boolean $IncludeCustomerAddress
+     * @return \PMG\BingAds\CustomerManagement\SearchCustomersRequest
+     */
+    public function setIncludeCustomerAddress($IncludeCustomerAddress)
+    {
+        $this->IncludeCustomerAddress = $IncludeCustomerAddress;
+        return $this;
     }
 
 }

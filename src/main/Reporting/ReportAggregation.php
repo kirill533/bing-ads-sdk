@@ -13,6 +13,7 @@ class ReportAggregation
     const Yearly = 'Yearly';
     const HourOfDay = 'HourOfDay';
     const DayOfWeek = 'DayOfWeek';
+    const WeeklyStartingMonday = 'WeeklyStartingMonday';
 
 
 }

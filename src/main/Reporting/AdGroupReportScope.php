@@ -27,9 +27,9 @@ class AdGroupReportScope
      */
     public function __construct($AccountId = null, $CampaignId = null, $AdGroupId = null)
     {
-      $this->AccountId = $AccountId;
-      $this->CampaignId = $CampaignId;
-      $this->AdGroupId = $AdGroupId;
+    $this->AccountId = $AccountId;
+    $this->CampaignId = $CampaignId;
+    $this->AdGroupId = $AdGroupId;
     }
 
     /**
@@ -37,7 +37,7 @@ class AdGroupReportScope
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -46,8 +46,8 @@ class AdGroupReportScope
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class AdGroupReportScope
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -64,8 +64,8 @@ class AdGroupReportScope
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class AdGroupReportScope
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -82,8 +82,8 @@ class AdGroupReportScope
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
 }

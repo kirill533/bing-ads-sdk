@@ -21,7 +21,7 @@ class ArrayOfProductMatchCountReportColumn implements \ArrayAccess, \IteratorAgg
      */
     public function getProductMatchCountReportColumn()
     {
-      return $this->ProductMatchCountReportColumn;
+        return $this->ProductMatchCountReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfProductMatchCountReportColumn implements \ArrayAccess, \IteratorAgg
      */
     public function setProductMatchCountReportColumn(array $ProductMatchCountReportColumn = null)
     {
-      $this->ProductMatchCountReportColumn = $ProductMatchCountReportColumn;
-      return $this;
+        $this->ProductMatchCountReportColumn = $ProductMatchCountReportColumn;
+        return $this;
     }
 
     /**

@@ -25,8 +25,8 @@ class ProductPartition extends Criterion
      */
     public function __construct($PartitionType = null)
     {
-      parent::__construct();
-      $this->PartitionType = $PartitionType;
+        parent::__construct();
+    $this->PartitionType = $PartitionType;
     }
 
     /**
@@ -34,7 +34,7 @@ class ProductPartition extends Criterion
      */
     public function getCondition()
     {
-      return $this->Condition;
+        return $this->Condition;
     }
 
     /**
@@ -43,8 +43,8 @@ class ProductPartition extends Criterion
      */
     public function setCondition($Condition)
     {
-      $this->Condition = $Condition;
-      return $this;
+        $this->Condition = $Condition;
+        return $this;
     }
 
     /**
@@ -52,7 +52,7 @@ class ProductPartition extends Criterion
      */
     public function getParentCriterionId()
     {
-      return $this->ParentCriterionId;
+        return $this->ParentCriterionId;
     }
 
     /**
@@ -61,8 +61,8 @@ class ProductPartition extends Criterion
      */
     public function setParentCriterionId($ParentCriterionId)
     {
-      $this->ParentCriterionId = $ParentCriterionId;
-      return $this;
+        $this->ParentCriterionId = $ParentCriterionId;
+        return $this;
     }
 
     /**
@@ -70,7 +70,7 @@ class ProductPartition extends Criterion
      */
     public function getPartitionType()
     {
-      return $this->PartitionType;
+        return $this->PartitionType;
     }
 
     /**
@@ -79,8 +79,8 @@ class ProductPartition extends Criterion
      */
     public function setPartitionType($PartitionType)
     {
-      $this->PartitionType = $PartitionType;
-      return $this;
+        $this->PartitionType = $PartitionType;
+        return $this;
     }
 
 }

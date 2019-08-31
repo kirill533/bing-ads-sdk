@@ -21,7 +21,7 @@ class ArrayOfAdApiError implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getAdApiError()
     {
-      return $this->AdApiError;
+        return $this->AdApiError;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAdApiError implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setAdApiError(array $AdApiError = null)
     {
-      $this->AdApiError = $AdApiError;
-      return $this;
+        $this->AdApiError = $AdApiError;
+        return $this;
     }
 
     /**

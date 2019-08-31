@@ -21,8 +21,8 @@ class GetConversionGoalsByIdsRequest
      */
     public function __construct($ConversionGoalIds = null, $ConversionGoalTypes = null)
     {
-      $this->ConversionGoalIds = $ConversionGoalIds;
-      $this->ConversionGoalTypes = $ConversionGoalTypes;
+    $this->ConversionGoalIds = $ConversionGoalIds;
+    $this->ConversionGoalTypes = $ConversionGoalTypes;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetConversionGoalsByIdsRequest
      */
     public function getConversionGoalIds()
     {
-      return $this->ConversionGoalIds;
+        return $this->ConversionGoalIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetConversionGoalsByIdsRequest
      */
     public function setConversionGoalIds($ConversionGoalIds)
     {
-      $this->ConversionGoalIds = $ConversionGoalIds;
-      return $this;
+        $this->ConversionGoalIds = $ConversionGoalIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetConversionGoalsByIdsRequest
      */
     public function getConversionGoalTypes()
     {
-      return $this->ConversionGoalTypes;
+        return $this->ConversionGoalTypes;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetConversionGoalsByIdsRequest
      */
     public function setConversionGoalTypes($ConversionGoalTypes)
     {
-      $this->ConversionGoalTypes = $ConversionGoalTypes;
-      return $this;
+        $this->ConversionGoalTypes = $ConversionGoalTypes;
+        return $this;
     }
 
 }

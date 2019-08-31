@@ -21,7 +21,7 @@ class ArrayOfCampaign implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getCampaign()
     {
-      return $this->Campaign;
+        return $this->Campaign;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCampaign implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setCampaign(array $Campaign = null)
     {
-      $this->Campaign = $Campaign;
-      return $this;
+        $this->Campaign = $Campaign;
+        return $this;
     }
 
     /**

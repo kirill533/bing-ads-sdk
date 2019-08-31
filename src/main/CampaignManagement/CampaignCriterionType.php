@@ -15,6 +15,15 @@ class CampaignCriterionType
     const Radius = 'Radius';
     const Device = 'Device';
     const LocationIntent = 'LocationIntent';
+    const Audience = 'Audience';
+    const CustomAudience = 'CustomAudience';
+    const InMarketAudience = 'InMarketAudience';
+    const RemarketingList = 'RemarketingList';
+    const CompanyName = 'CompanyName';
+    const JobFunction = 'JobFunction';
+    const Industry = 'Industry';
+    const ProductAudience = 'ProductAudience';
+    const SimilarRemarketingList = 'SimilarRemarketingList';
 
 
 }

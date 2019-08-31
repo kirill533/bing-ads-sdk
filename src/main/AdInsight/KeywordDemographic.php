@@ -66,7 +66,7 @@ class KeywordDemographic
      */
     public function getDevice()
     {
-      return $this->Device;
+        return $this->Device;
     }
 
     /**
@@ -75,8 +75,8 @@ class KeywordDemographic
      */
     public function setDevice($Device)
     {
-      $this->Device = $Device;
-      return $this;
+        $this->Device = $Device;
+        return $this;
     }
 
     /**
@@ -84,7 +84,7 @@ class KeywordDemographic
      */
     public function getEighteenToTwentyFour()
     {
-      return $this->EighteenToTwentyFour;
+        return $this->EighteenToTwentyFour;
     }
 
     /**
@@ -93,8 +93,8 @@ class KeywordDemographic
      */
     public function setEighteenToTwentyFour($EighteenToTwentyFour)
     {
-      $this->EighteenToTwentyFour = $EighteenToTwentyFour;
-      return $this;
+        $this->EighteenToTwentyFour = $EighteenToTwentyFour;
+        return $this;
     }
 
     /**
@@ -102,7 +102,7 @@ class KeywordDemographic
      */
     public function getTwentyFiveToThirtyFour()
     {
-      return $this->TwentyFiveToThirtyFour;
+        return $this->TwentyFiveToThirtyFour;
     }
 
     /**
@@ -111,8 +111,8 @@ class KeywordDemographic
      */
     public function setTwentyFiveToThirtyFour($TwentyFiveToThirtyFour)
     {
-      $this->TwentyFiveToThirtyFour = $TwentyFiveToThirtyFour;
-      return $this;
+        $this->TwentyFiveToThirtyFour = $TwentyFiveToThirtyFour;
+        return $this;
     }
 
     /**
@@ -120,7 +120,7 @@ class KeywordDemographic
      */
     public function getThirtyFiveToFourtyNine()
     {
-      return $this->ThirtyFiveToFourtyNine;
+        return $this->ThirtyFiveToFourtyNine;
     }
 
     /**
@@ -129,8 +129,8 @@ class KeywordDemographic
      */
     public function setThirtyFiveToFourtyNine($ThirtyFiveToFourtyNine)
     {
-      $this->ThirtyFiveToFourtyNine = $ThirtyFiveToFourtyNine;
-      return $this;
+        $this->ThirtyFiveToFourtyNine = $ThirtyFiveToFourtyNine;
+        return $this;
     }
 
     /**
@@ -138,7 +138,7 @@ class KeywordDemographic
      */
     public function getFiftyToSixtyFour()
     {
-      return $this->FiftyToSixtyFour;
+        return $this->FiftyToSixtyFour;
     }
 
     /**
@@ -147,8 +147,8 @@ class KeywordDemographic
      */
     public function setFiftyToSixtyFour($FiftyToSixtyFour)
     {
-      $this->FiftyToSixtyFour = $FiftyToSixtyFour;
-      return $this;
+        $this->FiftyToSixtyFour = $FiftyToSixtyFour;
+        return $this;
     }
 
     /**
@@ -156,7 +156,7 @@ class KeywordDemographic
      */
     public function getSixtyFiveAndAbove()
     {
-      return $this->SixtyFiveAndAbove;
+        return $this->SixtyFiveAndAbove;
     }
 
     /**
@@ -165,8 +165,8 @@ class KeywordDemographic
      */
     public function setSixtyFiveAndAbove($SixtyFiveAndAbove)
     {
-      $this->SixtyFiveAndAbove = $SixtyFiveAndAbove;
-      return $this;
+        $this->SixtyFiveAndAbove = $SixtyFiveAndAbove;
+        return $this;
     }
 
     /**
@@ -174,7 +174,7 @@ class KeywordDemographic
      */
     public function getAgeUnknown()
     {
-      return $this->AgeUnknown;
+        return $this->AgeUnknown;
     }
 
     /**
@@ -183,8 +183,8 @@ class KeywordDemographic
      */
     public function setAgeUnknown($AgeUnknown)
     {
-      $this->AgeUnknown = $AgeUnknown;
-      return $this;
+        $this->AgeUnknown = $AgeUnknown;
+        return $this;
     }
 
     /**
@@ -192,7 +192,7 @@ class KeywordDemographic
      */
     public function getFemale()
     {
-      return $this->Female;
+        return $this->Female;
     }
 
     /**
@@ -201,8 +201,8 @@ class KeywordDemographic
      */
     public function setFemale($Female)
     {
-      $this->Female = $Female;
-      return $this;
+        $this->Female = $Female;
+        return $this;
     }
 
     /**
@@ -210,7 +210,7 @@ class KeywordDemographic
      */
     public function getMale()
     {
-      return $this->Male;
+        return $this->Male;
     }
 
     /**
@@ -219,8 +219,8 @@ class KeywordDemographic
      */
     public function setMale($Male)
     {
-      $this->Male = $Male;
-      return $this;
+        $this->Male = $Male;
+        return $this;
     }
 
     /**
@@ -228,7 +228,7 @@ class KeywordDemographic
      */
     public function getGenderUnknown()
     {
-      return $this->GenderUnknown;
+        return $this->GenderUnknown;
     }
 
     /**
@@ -237,8 +237,8 @@ class KeywordDemographic
      */
     public function setGenderUnknown($GenderUnknown)
     {
-      $this->GenderUnknown = $GenderUnknown;
-      return $this;
+        $this->GenderUnknown = $GenderUnknown;
+        return $this;
     }
 
 }

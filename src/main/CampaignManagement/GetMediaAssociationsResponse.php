@@ -21,8 +21,8 @@ class GetMediaAssociationsResponse
      */
     public function __construct($MediaAssociations = null, $PartialErrors = null)
     {
-      $this->MediaAssociations = $MediaAssociations;
-      $this->PartialErrors = $PartialErrors;
+    $this->MediaAssociations = $MediaAssociations;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetMediaAssociationsResponse
      */
     public function getMediaAssociations()
     {
-      return $this->MediaAssociations;
+        return $this->MediaAssociations;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetMediaAssociationsResponse
      */
     public function setMediaAssociations($MediaAssociations)
     {
-      $this->MediaAssociations = $MediaAssociations;
-      return $this;
+        $this->MediaAssociations = $MediaAssociations;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetMediaAssociationsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetMediaAssociationsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

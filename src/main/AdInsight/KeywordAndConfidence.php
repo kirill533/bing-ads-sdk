@@ -26,7 +26,7 @@ class KeywordAndConfidence
      */
     public function getSuggestedKeyword()
     {
-      return $this->SuggestedKeyword;
+        return $this->SuggestedKeyword;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeywordAndConfidence
      */
     public function setSuggestedKeyword($SuggestedKeyword)
     {
-      $this->SuggestedKeyword = $SuggestedKeyword;
-      return $this;
+        $this->SuggestedKeyword = $SuggestedKeyword;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeywordAndConfidence
      */
     public function getConfidenceScore()
     {
-      return $this->ConfidenceScore;
+        return $this->ConfidenceScore;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeywordAndConfidence
      */
     public function setConfidenceScore($ConfidenceScore)
     {
-      $this->ConfidenceScore = $ConfidenceScore;
-      return $this;
+        $this->ConfidenceScore = $ConfidenceScore;
+        return $this;
     }
 
 }

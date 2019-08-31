@@ -26,7 +26,7 @@ class DateRangeSearchParameter extends SearchParameter
      */
     public function getEndDate()
     {
-      return $this->EndDate;
+        return $this->EndDate;
     }
 
     /**
@@ -35,8 +35,8 @@ class DateRangeSearchParameter extends SearchParameter
      */
     public function setEndDate($EndDate)
     {
-      $this->EndDate = $EndDate;
-      return $this;
+        $this->EndDate = $EndDate;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class DateRangeSearchParameter extends SearchParameter
      */
     public function getStartDate()
     {
-      return $this->StartDate;
+        return $this->StartDate;
     }
 
     /**
@@ -53,8 +53,8 @@ class DateRangeSearchParameter extends SearchParameter
      */
     public function setStartDate($StartDate)
     {
-      $this->StartDate = $StartDate;
-      return $this;
+        $this->StartDate = $StartDate;
+        return $this;
     }
 
 }

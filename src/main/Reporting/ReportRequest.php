@@ -51,7 +51,7 @@ class ReportRequest
      */
     public function getExcludeColumnHeaders()
     {
-      return $this->ExcludeColumnHeaders;
+        return $this->ExcludeColumnHeaders;
     }
 
     /**
@@ -60,8 +60,8 @@ class ReportRequest
      */
     public function setExcludeColumnHeaders($ExcludeColumnHeaders)
     {
-      $this->ExcludeColumnHeaders = $ExcludeColumnHeaders;
-      return $this;
+        $this->ExcludeColumnHeaders = $ExcludeColumnHeaders;
+        return $this;
     }
 
     /**
@@ -69,7 +69,7 @@ class ReportRequest
      */
     public function getExcludeReportFooter()
     {
-      return $this->ExcludeReportFooter;
+        return $this->ExcludeReportFooter;
     }
 
     /**
@@ -78,8 +78,8 @@ class ReportRequest
      */
     public function setExcludeReportFooter($ExcludeReportFooter)
     {
-      $this->ExcludeReportFooter = $ExcludeReportFooter;
-      return $this;
+        $this->ExcludeReportFooter = $ExcludeReportFooter;
+        return $this;
     }
 
     /**
@@ -87,7 +87,7 @@ class ReportRequest
      */
     public function getExcludeReportHeader()
     {
-      return $this->ExcludeReportHeader;
+        return $this->ExcludeReportHeader;
     }
 
     /**
@@ -96,8 +96,8 @@ class ReportRequest
      */
     public function setExcludeReportHeader($ExcludeReportHeader)
     {
-      $this->ExcludeReportHeader = $ExcludeReportHeader;
-      return $this;
+        $this->ExcludeReportHeader = $ExcludeReportHeader;
+        return $this;
     }
 
     /**
@@ -105,7 +105,7 @@ class ReportRequest
      */
     public function getFormat()
     {
-      return $this->Format;
+        return $this->Format;
     }
 
     /**
@@ -114,8 +114,8 @@ class ReportRequest
      */
     public function setFormat($Format)
     {
-      $this->Format = $Format;
-      return $this;
+        $this->Format = $Format;
+        return $this;
     }
 
     /**
@@ -123,7 +123,7 @@ class ReportRequest
      */
     public function getLanguage()
     {
-      return $this->Language;
+        return $this->Language;
     }
 
     /**
@@ -132,8 +132,8 @@ class ReportRequest
      */
     public function setLanguage($Language)
     {
-      $this->Language = $Language;
-      return $this;
+        $this->Language = $Language;
+        return $this;
     }
 
     /**
@@ -141,7 +141,7 @@ class ReportRequest
      */
     public function getReportName()
     {
-      return $this->ReportName;
+        return $this->ReportName;
     }
 
     /**
@@ -150,8 +150,8 @@ class ReportRequest
      */
     public function setReportName($ReportName)
     {
-      $this->ReportName = $ReportName;
-      return $this;
+        $this->ReportName = $ReportName;
+        return $this;
     }
 
     /**
@@ -159,7 +159,7 @@ class ReportRequest
      */
     public function getReturnOnlyCompleteData()
     {
-      return $this->ReturnOnlyCompleteData;
+        return $this->ReturnOnlyCompleteData;
     }
 
     /**
@@ -168,8 +168,8 @@ class ReportRequest
      */
     public function setReturnOnlyCompleteData($ReturnOnlyCompleteData)
     {
-      $this->ReturnOnlyCompleteData = $ReturnOnlyCompleteData;
-      return $this;
+        $this->ReturnOnlyCompleteData = $ReturnOnlyCompleteData;
+        return $this;
     }
 
 }

@@ -18,7 +18,7 @@ class AudienceCriterion extends Criterion
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -26,7 +26,7 @@ class AudienceCriterion extends Criterion
      */
     public function getAudienceId()
     {
-      return $this->AudienceId;
+        return $this->AudienceId;
     }
 
     /**
@@ -35,8 +35,8 @@ class AudienceCriterion extends Criterion
      */
     public function setAudienceId($AudienceId)
     {
-      $this->AudienceId = $AudienceId;
-      return $this;
+        $this->AudienceId = $AudienceId;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class AudienceCriterion extends Criterion
      */
     public function getAudienceType()
     {
-      return $this->AudienceType;
+        return $this->AudienceType;
     }
 
     /**
@@ -53,8 +53,8 @@ class AudienceCriterion extends Criterion
      */
     public function setAudienceType($AudienceType)
     {
-      $this->AudienceType = $AudienceType;
-      return $this;
+        $this->AudienceType = $AudienceType;
+        return $this;
     }
 
 }

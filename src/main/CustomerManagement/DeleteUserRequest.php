@@ -21,8 +21,8 @@ class DeleteUserRequest
      */
     public function __construct($UserId = null, $TimeStamp = null)
     {
-      $this->UserId = $UserId;
-      $this->TimeStamp = $TimeStamp;
+    $this->UserId = $UserId;
+    $this->TimeStamp = $TimeStamp;
     }
 
     /**
@@ -30,7 +30,7 @@ class DeleteUserRequest
      */
     public function getUserId()
     {
-      return $this->UserId;
+        return $this->UserId;
     }
 
     /**
@@ -39,8 +39,8 @@ class DeleteUserRequest
      */
     public function setUserId($UserId)
     {
-      $this->UserId = $UserId;
-      return $this;
+        $this->UserId = $UserId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class DeleteUserRequest
      */
     public function getTimeStamp()
     {
-      return $this->TimeStamp;
+        return $this->TimeStamp;
     }
 
     /**
@@ -57,8 +57,8 @@ class DeleteUserRequest
      */
     public function setTimeStamp($TimeStamp)
     {
-      $this->TimeStamp = $TimeStamp;
-      return $this;
+        $this->TimeStamp = $TimeStamp;
+        return $this;
     }
 
 }

@@ -15,7 +15,7 @@ class GetKeywordTrafficEstimatesResponse
      */
     public function __construct($CampaignEstimates = null)
     {
-      $this->CampaignEstimates = $CampaignEstimates;
+    $this->CampaignEstimates = $CampaignEstimates;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetKeywordTrafficEstimatesResponse
      */
     public function getCampaignEstimates()
     {
-      return $this->CampaignEstimates;
+        return $this->CampaignEstimates;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetKeywordTrafficEstimatesResponse
      */
     public function setCampaignEstimates($CampaignEstimates)
     {
-      $this->CampaignEstimates = $CampaignEstimates;
-      return $this;
+        $this->CampaignEstimates = $CampaignEstimates;
+        return $this;
     }
 
 }

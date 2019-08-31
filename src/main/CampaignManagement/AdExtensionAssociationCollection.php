@@ -21,7 +21,7 @@ class AdExtensionAssociationCollection
      */
     public function getAdExtensionAssociations()
     {
-      return $this->AdExtensionAssociations;
+        return $this->AdExtensionAssociations;
     }
 
     /**
@@ -30,8 +30,8 @@ class AdExtensionAssociationCollection
      */
     public function setAdExtensionAssociations($AdExtensionAssociations)
     {
-      $this->AdExtensionAssociations = $AdExtensionAssociations;
-      return $this;
+        $this->AdExtensionAssociations = $AdExtensionAssociations;
+        return $this;
     }
 
 }

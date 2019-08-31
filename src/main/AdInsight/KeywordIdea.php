@@ -61,7 +61,7 @@ class KeywordIdea
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -70,8 +70,8 @@ class KeywordIdea
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -79,7 +79,7 @@ class KeywordIdea
      */
     public function getAdGroupName()
     {
-      return $this->AdGroupName;
+        return $this->AdGroupName;
     }
 
     /**
@@ -88,8 +88,8 @@ class KeywordIdea
      */
     public function setAdGroupName($AdGroupName)
     {
-      $this->AdGroupName = $AdGroupName;
-      return $this;
+        $this->AdGroupName = $AdGroupName;
+        return $this;
     }
 
     /**
@@ -97,7 +97,7 @@ class KeywordIdea
      */
     public function getAdImpressionShare()
     {
-      return $this->AdImpressionShare;
+        return $this->AdImpressionShare;
     }
 
     /**
@@ -106,8 +106,8 @@ class KeywordIdea
      */
     public function setAdImpressionShare($AdImpressionShare)
     {
-      $this->AdImpressionShare = $AdImpressionShare;
-      return $this;
+        $this->AdImpressionShare = $AdImpressionShare;
+        return $this;
     }
 
     /**
@@ -115,7 +115,7 @@ class KeywordIdea
      */
     public function getCompetition()
     {
-      return $this->Competition;
+        return $this->Competition;
     }
 
     /**
@@ -124,8 +124,8 @@ class KeywordIdea
      */
     public function setCompetition($Competition)
     {
-      $this->Competition = $Competition;
-      return $this;
+        $this->Competition = $Competition;
+        return $this;
     }
 
     /**
@@ -133,7 +133,7 @@ class KeywordIdea
      */
     public function getKeyword()
     {
-      return $this->Keyword;
+        return $this->Keyword;
     }
 
     /**
@@ -142,8 +142,8 @@ class KeywordIdea
      */
     public function setKeyword($Keyword)
     {
-      $this->Keyword = $Keyword;
-      return $this;
+        $this->Keyword = $Keyword;
+        return $this;
     }
 
     /**
@@ -151,7 +151,7 @@ class KeywordIdea
      */
     public function getMonthlySearchCounts()
     {
-      return $this->MonthlySearchCounts;
+        return $this->MonthlySearchCounts;
     }
 
     /**
@@ -160,8 +160,8 @@ class KeywordIdea
      */
     public function setMonthlySearchCounts($MonthlySearchCounts)
     {
-      $this->MonthlySearchCounts = $MonthlySearchCounts;
-      return $this;
+        $this->MonthlySearchCounts = $MonthlySearchCounts;
+        return $this;
     }
 
     /**
@@ -169,7 +169,7 @@ class KeywordIdea
      */
     public function getRelevance()
     {
-      return $this->Relevance;
+        return $this->Relevance;
     }
 
     /**
@@ -178,8 +178,8 @@ class KeywordIdea
      */
     public function setRelevance($Relevance)
     {
-      $this->Relevance = $Relevance;
-      return $this;
+        $this->Relevance = $Relevance;
+        return $this;
     }
 
     /**
@@ -187,7 +187,7 @@ class KeywordIdea
      */
     public function getSource()
     {
-      return $this->Source;
+        return $this->Source;
     }
 
     /**
@@ -196,8 +196,8 @@ class KeywordIdea
      */
     public function setSource($Source)
     {
-      $this->Source = $Source;
-      return $this;
+        $this->Source = $Source;
+        return $this;
     }
 
     /**
@@ -205,7 +205,7 @@ class KeywordIdea
      */
     public function getSuggestedBid()
     {
-      return $this->SuggestedBid;
+        return $this->SuggestedBid;
     }
 
     /**
@@ -214,8 +214,8 @@ class KeywordIdea
      */
     public function setSuggestedBid($SuggestedBid)
     {
-      $this->SuggestedBid = $SuggestedBid;
-      return $this;
+        $this->SuggestedBid = $SuggestedBid;
+        return $this;
     }
 
 }

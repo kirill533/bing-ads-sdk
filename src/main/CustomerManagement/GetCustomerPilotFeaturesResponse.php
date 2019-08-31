@@ -15,7 +15,7 @@ class GetCustomerPilotFeaturesResponse
      */
     public function __construct($FeaturePilotFlags = null)
     {
-      $this->FeaturePilotFlags = $FeaturePilotFlags;
+    $this->FeaturePilotFlags = $FeaturePilotFlags;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetCustomerPilotFeaturesResponse
      */
     public function getFeaturePilotFlags()
     {
-      return $this->FeaturePilotFlags;
+        return $this->FeaturePilotFlags;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetCustomerPilotFeaturesResponse
      */
     public function setFeaturePilotFlags($FeaturePilotFlags)
     {
-      $this->FeaturePilotFlags = $FeaturePilotFlags;
-      return $this;
+        $this->FeaturePilotFlags = $FeaturePilotFlags;
+        return $this;
     }
 
 }

@@ -21,8 +21,8 @@ class GetAccountMigrationStatusesRequest
      */
     public function __construct($AccountIds = null, $MigrationType = null)
     {
-      $this->AccountIds = $AccountIds;
-      $this->MigrationType = $MigrationType;
+    $this->AccountIds = $AccountIds;
+    $this->MigrationType = $MigrationType;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetAccountMigrationStatusesRequest
      */
     public function getAccountIds()
     {
-      return $this->AccountIds;
+        return $this->AccountIds;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetAccountMigrationStatusesRequest
      */
     public function setAccountIds($AccountIds)
     {
-      $this->AccountIds = $AccountIds;
-      return $this;
+        $this->AccountIds = $AccountIds;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetAccountMigrationStatusesRequest
      */
     public function getMigrationType()
     {
-      return $this->MigrationType;
+        return $this->MigrationType;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetAccountMigrationStatusesRequest
      */
     public function setMigrationType($MigrationType)
     {
-      $this->MigrationType = $MigrationType;
-      return $this;
+        $this->MigrationType = $MigrationType;
+        return $this;
     }
 
 }

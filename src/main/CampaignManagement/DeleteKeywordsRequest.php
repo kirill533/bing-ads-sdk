@@ -21,8 +21,8 @@ class DeleteKeywordsRequest
      */
     public function __construct($AdGroupId = null, $KeywordIds = null)
     {
-      $this->AdGroupId = $AdGroupId;
-      $this->KeywordIds = $KeywordIds;
+    $this->AdGroupId = $AdGroupId;
+    $this->KeywordIds = $KeywordIds;
     }
 
     /**
@@ -30,7 +30,7 @@ class DeleteKeywordsRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -39,8 +39,8 @@ class DeleteKeywordsRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class DeleteKeywordsRequest
      */
     public function getKeywordIds()
     {
-      return $this->KeywordIds;
+        return $this->KeywordIds;
     }
 
     /**
@@ -57,8 +57,8 @@ class DeleteKeywordsRequest
      */
     public function setKeywordIds($KeywordIds)
     {
-      $this->KeywordIds = $KeywordIds;
-      return $this;
+        $this->KeywordIds = $KeywordIds;
+        return $this;
     }
 
 }

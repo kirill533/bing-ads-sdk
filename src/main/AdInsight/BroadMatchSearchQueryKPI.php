@@ -41,7 +41,7 @@ class BroadMatchSearchQueryKPI
      */
     public function getAverageCTR()
     {
-      return $this->AverageCTR;
+        return $this->AverageCTR;
     }
 
     /**
@@ -50,8 +50,8 @@ class BroadMatchSearchQueryKPI
      */
     public function setAverageCTR($AverageCTR)
     {
-      $this->AverageCTR = $AverageCTR;
-      return $this;
+        $this->AverageCTR = $AverageCTR;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class BroadMatchSearchQueryKPI
      */
     public function getClicks()
     {
-      return $this->Clicks;
+        return $this->Clicks;
     }
 
     /**
@@ -68,8 +68,8 @@ class BroadMatchSearchQueryKPI
      */
     public function setClicks($Clicks)
     {
-      $this->Clicks = $Clicks;
-      return $this;
+        $this->Clicks = $Clicks;
+        return $this;
     }
 
     /**
@@ -77,7 +77,7 @@ class BroadMatchSearchQueryKPI
      */
     public function getImpressions()
     {
-      return $this->Impressions;
+        return $this->Impressions;
     }
 
     /**
@@ -86,8 +86,8 @@ class BroadMatchSearchQueryKPI
      */
     public function setImpressions($Impressions)
     {
-      $this->Impressions = $Impressions;
-      return $this;
+        $this->Impressions = $Impressions;
+        return $this;
     }
 
     /**
@@ -95,7 +95,7 @@ class BroadMatchSearchQueryKPI
      */
     public function getSRPV()
     {
-      return $this->SRPV;
+        return $this->SRPV;
     }
 
     /**
@@ -104,8 +104,8 @@ class BroadMatchSearchQueryKPI
      */
     public function setSRPV($SRPV)
     {
-      $this->SRPV = $SRPV;
-      return $this;
+        $this->SRPV = $SRPV;
+        return $this;
     }
 
     /**
@@ -113,7 +113,7 @@ class BroadMatchSearchQueryKPI
      */
     public function getSearchQuery()
     {
-      return $this->SearchQuery;
+        return $this->SearchQuery;
     }
 
     /**
@@ -122,8 +122,8 @@ class BroadMatchSearchQueryKPI
      */
     public function setSearchQuery($SearchQuery)
     {
-      $this->SearchQuery = $SearchQuery;
-      return $this;
+        $this->SearchQuery = $SearchQuery;
+        return $this;
     }
 
 }

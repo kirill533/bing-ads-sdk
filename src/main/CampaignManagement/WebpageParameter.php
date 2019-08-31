@@ -26,7 +26,7 @@ class WebpageParameter
      */
     public function getConditions()
     {
-      return $this->Conditions;
+        return $this->Conditions;
     }
 
     /**
@@ -35,8 +35,8 @@ class WebpageParameter
      */
     public function setConditions($Conditions)
     {
-      $this->Conditions = $Conditions;
-      return $this;
+        $this->Conditions = $Conditions;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class WebpageParameter
      */
     public function getCriterionName()
     {
-      return $this->CriterionName;
+        return $this->CriterionName;
     }
 
     /**
@@ -53,8 +53,8 @@ class WebpageParameter
      */
     public function setCriterionName($CriterionName)
     {
-      $this->CriterionName = $CriterionName;
-      return $this;
+        $this->CriterionName = $CriterionName;
+        return $this;
     }
 
 }

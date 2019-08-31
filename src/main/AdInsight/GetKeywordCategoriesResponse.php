@@ -15,7 +15,7 @@ class GetKeywordCategoriesResponse
      */
     public function __construct($Result = null)
     {
-      $this->Result = $Result;
+    $this->Result = $Result;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetKeywordCategoriesResponse
      */
     public function getResult()
     {
-      return $this->Result;
+        return $this->Result;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetKeywordCategoriesResponse
      */
     public function setResult($Result)
     {
-      $this->Result = $Result;
-      return $this;
+        $this->Result = $Result;
+        return $this;
     }
 
 }

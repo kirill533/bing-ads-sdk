@@ -15,7 +15,7 @@ class GetAdExtensionIdsByAccountIdResponse
      */
     public function __construct($AdExtensionIds = null)
     {
-      $this->AdExtensionIds = $AdExtensionIds;
+    $this->AdExtensionIds = $AdExtensionIds;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetAdExtensionIdsByAccountIdResponse
      */
     public function getAdExtensionIds()
     {
-      return $this->AdExtensionIds;
+        return $this->AdExtensionIds;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetAdExtensionIdsByAccountIdResponse
      */
     public function setAdExtensionIds($AdExtensionIds)
     {
-      $this->AdExtensionIds = $AdExtensionIds;
-      return $this;
+        $this->AdExtensionIds = $AdExtensionIds;
+        return $this;
     }
 
 }

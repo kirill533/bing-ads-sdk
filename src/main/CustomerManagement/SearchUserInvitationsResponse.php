@@ -15,7 +15,7 @@ class SearchUserInvitationsResponse
      */
     public function __construct($UserInvitations = null)
     {
-      $this->UserInvitations = $UserInvitations;
+    $this->UserInvitations = $UserInvitations;
     }
 
     /**
@@ -23,7 +23,7 @@ class SearchUserInvitationsResponse
      */
     public function getUserInvitations()
     {
-      return $this->UserInvitations;
+        return $this->UserInvitations;
     }
 
     /**
@@ -32,8 +32,8 @@ class SearchUserInvitationsResponse
      */
     public function setUserInvitations($UserInvitations)
     {
-      $this->UserInvitations = $UserInvitations;
-      return $this;
+        $this->UserInvitations = $UserInvitations;
+        return $this;
     }
 
 }

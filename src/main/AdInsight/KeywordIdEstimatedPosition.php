@@ -26,7 +26,7 @@ class KeywordIdEstimatedPosition
      */
     public function getKeywordId()
     {
-      return $this->KeywordId;
+        return $this->KeywordId;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeywordIdEstimatedPosition
      */
     public function setKeywordId($KeywordId)
     {
-      $this->KeywordId = $KeywordId;
-      return $this;
+        $this->KeywordId = $KeywordId;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeywordIdEstimatedPosition
      */
     public function getKeywordEstimatedPosition()
     {
-      return $this->KeywordEstimatedPosition;
+        return $this->KeywordEstimatedPosition;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeywordIdEstimatedPosition
      */
     public function setKeywordEstimatedPosition($KeywordEstimatedPosition)
     {
-      $this->KeywordEstimatedPosition = $KeywordEstimatedPosition;
-      return $this;
+        $this->KeywordEstimatedPosition = $KeywordEstimatedPosition;
+        return $this;
     }
 
 }

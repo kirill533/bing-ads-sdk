@@ -27,6 +27,7 @@ class ProfessionalDemographicsAudienceReportColumn
     const AccountStatus = 'AccountStatus';
     const CampaignStatus = 'CampaignStatus';
     const AdGroupStatus = 'AdGroupStatus';
+    const AveragePosition = 'AveragePosition';
 
 
 }

@@ -18,7 +18,7 @@ class RemarketingList extends Audience
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -26,7 +26,7 @@ class RemarketingList extends Audience
      */
     public function getRule()
     {
-      return $this->Rule;
+        return $this->Rule;
     }
 
     /**
@@ -35,8 +35,8 @@ class RemarketingList extends Audience
      */
     public function setRule($Rule)
     {
-      $this->Rule = $Rule;
-      return $this;
+        $this->Rule = $Rule;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class RemarketingList extends Audience
      */
     public function getTagId()
     {
-      return $this->TagId;
+        return $this->TagId;
     }
 
     /**
@@ -53,8 +53,8 @@ class RemarketingList extends Audience
      */
     public function setTagId($TagId)
     {
-      $this->TagId = $TagId;
-      return $this;
+        $this->TagId = $TagId;
+        return $this;
     }
 
 }

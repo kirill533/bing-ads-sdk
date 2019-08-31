@@ -21,7 +21,7 @@ class ArrayOfTargetSettingDetail implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getTargetSettingDetail()
     {
-      return $this->TargetSettingDetail;
+        return $this->TargetSettingDetail;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfTargetSettingDetail implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function setTargetSettingDetail(array $TargetSettingDetail = null)
     {
-      $this->TargetSettingDetail = $TargetSettingDetail;
-      return $this;
+        $this->TargetSettingDetail = $TargetSettingDetail;
+        return $this;
     }
 
     /**

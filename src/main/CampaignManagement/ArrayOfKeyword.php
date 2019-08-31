@@ -21,7 +21,7 @@ class ArrayOfKeyword implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getKeyword()
     {
-      return $this->Keyword;
+        return $this->Keyword;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeyword implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setKeyword(array $Keyword = null)
     {
-      $this->Keyword = $Keyword;
-      return $this;
+        $this->Keyword = $Keyword;
+        return $this;
     }
 
     /**

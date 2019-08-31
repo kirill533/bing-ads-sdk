@@ -26,7 +26,7 @@ class KeywordEstimatedBid
      */
     public function getKeyword()
     {
-      return $this->Keyword;
+        return $this->Keyword;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeywordEstimatedBid
      */
     public function setKeyword($Keyword)
     {
-      $this->Keyword = $Keyword;
-      return $this;
+        $this->Keyword = $Keyword;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeywordEstimatedBid
      */
     public function getEstimatedBids()
     {
-      return $this->EstimatedBids;
+        return $this->EstimatedBids;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeywordEstimatedBid
      */
     public function setEstimatedBids($EstimatedBids)
     {
-      $this->EstimatedBids = $EstimatedBids;
-      return $this;
+        $this->EstimatedBids = $EstimatedBids;
+        return $this;
     }
 
 }

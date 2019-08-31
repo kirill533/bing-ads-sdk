@@ -21,7 +21,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getAccountInfo()
     {
-      return $this->AccountInfo;
+        return $this->AccountInfo;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfAccountInfo implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setAccountInfo(array $AccountInfo = null)
     {
-      $this->AccountInfo = $AccountInfo;
-      return $this;
+        $this->AccountInfo = $AccountInfo;
+        return $this;
     }
 
     /**

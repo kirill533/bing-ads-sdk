@@ -8,7 +8,7 @@ class ManualCpcBiddingScheme extends BiddingScheme
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
 }

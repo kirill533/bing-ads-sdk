@@ -31,7 +31,7 @@ class KeywordEstimate
      */
     public function getKeyword()
     {
-      return $this->Keyword;
+        return $this->Keyword;
     }
 
     /**
@@ -40,8 +40,8 @@ class KeywordEstimate
      */
     public function setKeyword($Keyword)
     {
-      $this->Keyword = $Keyword;
-      return $this;
+        $this->Keyword = $Keyword;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class KeywordEstimate
      */
     public function getMaximum()
     {
-      return $this->Maximum;
+        return $this->Maximum;
     }
 
     /**
@@ -58,8 +58,8 @@ class KeywordEstimate
      */
     public function setMaximum($Maximum)
     {
-      $this->Maximum = $Maximum;
-      return $this;
+        $this->Maximum = $Maximum;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class KeywordEstimate
      */
     public function getMinimum()
     {
-      return $this->Minimum;
+        return $this->Minimum;
     }
 
     /**
@@ -76,8 +76,8 @@ class KeywordEstimate
      */
     public function setMinimum($Minimum)
     {
-      $this->Minimum = $Minimum;
-      return $this;
+        $this->Minimum = $Minimum;
+        return $this;
     }
 
 }

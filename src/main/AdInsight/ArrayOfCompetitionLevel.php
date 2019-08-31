@@ -21,7 +21,7 @@ class ArrayOfCompetitionLevel implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function getCompetitionLevel()
     {
-      return $this->CompetitionLevel;
+        return $this->CompetitionLevel;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCompetitionLevel implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function setCompetitionLevel(array $CompetitionLevel = null)
     {
-      $this->CompetitionLevel = $CompetitionLevel;
-      return $this;
+        $this->CompetitionLevel = $CompetitionLevel;
+        return $this;
     }
 
     /**

@@ -57,14 +57,14 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function __construct($Campaigns = null, $CompressionType = null, $DataScope = null, $DownloadEntities = null, $DownloadFileType = null, $FormatVersion = null, \DateTime $LastSyncTimeInUTC = null, $PerformanceStatsDateRange = null)
     {
-      $this->Campaigns = $Campaigns;
-      $this->CompressionType = $CompressionType;
-      $this->DataScope = $DataScope;
-      $this->DownloadEntities = $DownloadEntities;
-      $this->DownloadFileType = $DownloadFileType;
-      $this->FormatVersion = $FormatVersion;
-      $this->LastSyncTimeInUTC = $LastSyncTimeInUTC ? $LastSyncTimeInUTC->format(\DateTime::ATOM) : null;
-      $this->PerformanceStatsDateRange = $PerformanceStatsDateRange;
+    $this->Campaigns = $Campaigns;
+    $this->CompressionType = $CompressionType;
+    $this->DataScope = $DataScope;
+    $this->DownloadEntities = $DownloadEntities;
+    $this->DownloadFileType = $DownloadFileType;
+    $this->FormatVersion = $FormatVersion;
+        $this->LastSyncTimeInUTC = null === $LastSyncTimeInUTC ? null : $LastSyncTimeInUTC->format(\DateTime::ATOM);
+    $this->PerformanceStatsDateRange = $PerformanceStatsDateRange;
     }
 
     /**
@@ -72,7 +72,7 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function getCampaigns()
     {
-      return $this->Campaigns;
+        return $this->Campaigns;
     }
 
     /**
@@ -81,8 +81,8 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function setCampaigns($Campaigns)
     {
-      $this->Campaigns = $Campaigns;
-      return $this;
+        $this->Campaigns = $Campaigns;
+        return $this;
     }
 
     /**
@@ -90,7 +90,7 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function getCompressionType()
     {
-      return $this->CompressionType;
+        return $this->CompressionType;
     }
 
     /**
@@ -99,8 +99,8 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function setCompressionType($CompressionType)
     {
-      $this->CompressionType = $CompressionType;
-      return $this;
+        $this->CompressionType = $CompressionType;
+        return $this;
     }
 
     /**
@@ -108,7 +108,7 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function getDataScope()
     {
-      return $this->DataScope;
+        return $this->DataScope;
     }
 
     /**
@@ -117,8 +117,8 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function setDataScope($DataScope)
     {
-      $this->DataScope = $DataScope;
-      return $this;
+        $this->DataScope = $DataScope;
+        return $this;
     }
 
     /**
@@ -126,7 +126,7 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function getDownloadEntities()
     {
-      return $this->DownloadEntities;
+        return $this->DownloadEntities;
     }
 
     /**
@@ -135,8 +135,8 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function setDownloadEntities($DownloadEntities)
     {
-      $this->DownloadEntities = $DownloadEntities;
-      return $this;
+        $this->DownloadEntities = $DownloadEntities;
+        return $this;
     }
 
     /**
@@ -144,7 +144,7 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function getDownloadFileType()
     {
-      return $this->DownloadFileType;
+        return $this->DownloadFileType;
     }
 
     /**
@@ -153,8 +153,8 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function setDownloadFileType($DownloadFileType)
     {
-      $this->DownloadFileType = $DownloadFileType;
-      return $this;
+        $this->DownloadFileType = $DownloadFileType;
+        return $this;
     }
 
     /**
@@ -162,7 +162,7 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function getFormatVersion()
     {
-      return $this->FormatVersion;
+        return $this->FormatVersion;
     }
 
     /**
@@ -171,8 +171,8 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function setFormatVersion($FormatVersion)
     {
-      $this->FormatVersion = $FormatVersion;
-      return $this;
+        $this->FormatVersion = $FormatVersion;
+        return $this;
     }
 
     /**
@@ -180,15 +180,14 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function getLastSyncTimeInUTC()
     {
-      if ($this->LastSyncTimeInUTC == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->LastSyncTimeInUTC);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->LastSyncTimeInUTC) {
+            return $this->LastSyncTimeInUTC;
         }
-      }
+        try {
+            return new \DateTime($this->LastSyncTimeInUTC);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -197,8 +196,8 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function setLastSyncTimeInUTC(\DateTime $LastSyncTimeInUTC)
     {
-      $this->LastSyncTimeInUTC = $LastSyncTimeInUTC->format(\DateTime::ATOM);
-      return $this;
+        $this->LastSyncTimeInUTC = $LastSyncTimeInUTC->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -206,7 +205,7 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function getPerformanceStatsDateRange()
     {
-      return $this->PerformanceStatsDateRange;
+        return $this->PerformanceStatsDateRange;
     }
 
     /**
@@ -215,8 +214,8 @@ class DownloadCampaignsByCampaignIdsRequest
      */
     public function setPerformanceStatsDateRange($PerformanceStatsDateRange)
     {
-      $this->PerformanceStatsDateRange = $PerformanceStatsDateRange;
-      return $this;
+        $this->PerformanceStatsDateRange = $PerformanceStatsDateRange;
+        return $this;
     }
 
 }

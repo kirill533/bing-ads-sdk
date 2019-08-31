@@ -71,7 +71,7 @@ class InsertionOrderPendingChanges
      */
     public function getComment()
     {
-      return $this->Comment;
+        return $this->Comment;
     }
 
     /**
@@ -80,8 +80,8 @@ class InsertionOrderPendingChanges
      */
     public function setComment($Comment)
     {
-      $this->Comment = $Comment;
-      return $this;
+        $this->Comment = $Comment;
+        return $this;
     }
 
     /**
@@ -89,15 +89,14 @@ class InsertionOrderPendingChanges
      */
     public function getEndDate()
     {
-      if ($this->EndDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->EndDate);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->EndDate) {
+            return $this->EndDate;
         }
-      }
+        try {
+            return new \DateTime($this->EndDate);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -106,12 +105,8 @@ class InsertionOrderPendingChanges
      */
     public function setEndDate(\DateTime $EndDate = null)
     {
-      if ($EndDate == null) {
-       $this->EndDate = null;
-      } else {
-        $this->EndDate = $EndDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->EndDate = null === $EndDate ? null : $EndDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -119,7 +114,7 @@ class InsertionOrderPendingChanges
      */
     public function getRequestedByUserId()
     {
-      return $this->RequestedByUserId;
+        return $this->RequestedByUserId;
     }
 
     /**
@@ -128,8 +123,8 @@ class InsertionOrderPendingChanges
      */
     public function setRequestedByUserId($RequestedByUserId)
     {
-      $this->RequestedByUserId = $RequestedByUserId;
-      return $this;
+        $this->RequestedByUserId = $RequestedByUserId;
+        return $this;
     }
 
     /**
@@ -137,15 +132,14 @@ class InsertionOrderPendingChanges
      */
     public function getModifiedDateTime()
     {
-      if ($this->ModifiedDateTime == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->ModifiedDateTime);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->ModifiedDateTime) {
+            return $this->ModifiedDateTime;
         }
-      }
+        try {
+            return new \DateTime($this->ModifiedDateTime);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -154,12 +148,8 @@ class InsertionOrderPendingChanges
      */
     public function setModifiedDateTime(\DateTime $ModifiedDateTime = null)
     {
-      if ($ModifiedDateTime == null) {
-       $this->ModifiedDateTime = null;
-      } else {
-        $this->ModifiedDateTime = $ModifiedDateTime->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->ModifiedDateTime = null === $ModifiedDateTime ? null : $ModifiedDateTime->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -167,7 +157,7 @@ class InsertionOrderPendingChanges
      */
     public function getNotificationThreshold()
     {
-      return $this->NotificationThreshold;
+        return $this->NotificationThreshold;
     }
 
     /**
@@ -176,8 +166,8 @@ class InsertionOrderPendingChanges
      */
     public function setNotificationThreshold($NotificationThreshold)
     {
-      $this->NotificationThreshold = $NotificationThreshold;
-      return $this;
+        $this->NotificationThreshold = $NotificationThreshold;
+        return $this;
     }
 
     /**
@@ -185,7 +175,7 @@ class InsertionOrderPendingChanges
      */
     public function getReferenceId()
     {
-      return $this->ReferenceId;
+        return $this->ReferenceId;
     }
 
     /**
@@ -194,8 +184,8 @@ class InsertionOrderPendingChanges
      */
     public function setReferenceId($ReferenceId)
     {
-      $this->ReferenceId = $ReferenceId;
-      return $this;
+        $this->ReferenceId = $ReferenceId;
+        return $this;
     }
 
     /**
@@ -203,7 +193,7 @@ class InsertionOrderPendingChanges
      */
     public function getSpendCapAmount()
     {
-      return $this->SpendCapAmount;
+        return $this->SpendCapAmount;
     }
 
     /**
@@ -212,8 +202,8 @@ class InsertionOrderPendingChanges
      */
     public function setSpendCapAmount($SpendCapAmount)
     {
-      $this->SpendCapAmount = $SpendCapAmount;
-      return $this;
+        $this->SpendCapAmount = $SpendCapAmount;
+        return $this;
     }
 
     /**
@@ -221,15 +211,14 @@ class InsertionOrderPendingChanges
      */
     public function getStartDate()
     {
-      if ($this->StartDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->StartDate);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->StartDate) {
+            return $this->StartDate;
         }
-      }
+        try {
+            return new \DateTime($this->StartDate);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -238,12 +227,8 @@ class InsertionOrderPendingChanges
      */
     public function setStartDate(\DateTime $StartDate = null)
     {
-      if ($StartDate == null) {
-       $this->StartDate = null;
-      } else {
-        $this->StartDate = $StartDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->StartDate = null === $StartDate ? null : $StartDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -251,7 +236,7 @@ class InsertionOrderPendingChanges
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -260,8 +245,8 @@ class InsertionOrderPendingChanges
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -269,7 +254,7 @@ class InsertionOrderPendingChanges
      */
     public function getPurchaseOrder()
     {
-      return $this->PurchaseOrder;
+        return $this->PurchaseOrder;
     }
 
     /**
@@ -278,8 +263,8 @@ class InsertionOrderPendingChanges
      */
     public function setPurchaseOrder($PurchaseOrder)
     {
-      $this->PurchaseOrder = $PurchaseOrder;
-      return $this;
+        $this->PurchaseOrder = $PurchaseOrder;
+        return $this;
     }
 
     /**
@@ -287,7 +272,7 @@ class InsertionOrderPendingChanges
      */
     public function getChangeStatus()
     {
-      return $this->ChangeStatus;
+        return $this->ChangeStatus;
     }
 
     /**
@@ -296,8 +281,8 @@ class InsertionOrderPendingChanges
      */
     public function setChangeStatus($ChangeStatus)
     {
-      $this->ChangeStatus = $ChangeStatus;
-      return $this;
+        $this->ChangeStatus = $ChangeStatus;
+        return $this;
     }
 
 }

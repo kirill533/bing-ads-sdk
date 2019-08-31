@@ -15,7 +15,7 @@ class PutMetricDataRequest
      */
     public function __construct($Metrics = null)
     {
-      $this->Metrics = $Metrics;
+    $this->Metrics = $Metrics;
     }
 
     /**
@@ -23,7 +23,7 @@ class PutMetricDataRequest
      */
     public function getMetrics()
     {
-      return $this->Metrics;
+        return $this->Metrics;
     }
 
     /**
@@ -32,8 +32,8 @@ class PutMetricDataRequest
      */
     public function setMetrics($Metrics)
     {
-      $this->Metrics = $Metrics;
-      return $this;
+        $this->Metrics = $Metrics;
+        return $this;
     }
 
 }

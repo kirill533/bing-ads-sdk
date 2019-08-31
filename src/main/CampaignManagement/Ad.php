@@ -31,6 +31,11 @@ class Ad
     protected $FinalMobileUrls = null;
 
     /**
+     * @var string $FinalUrlSuffix
+     */
+    protected $FinalUrlSuffix = null;
+
+    /**
      * @var ArrayOfstring $FinalUrls
      */
     protected $FinalUrls = null;
@@ -76,7 +81,7 @@ class Ad
      */
     public function getAdFormatPreference()
     {
-      return $this->AdFormatPreference;
+        return $this->AdFormatPreference;
     }
 
     /**
@@ -85,8 +90,8 @@ class Ad
      */
     public function setAdFormatPreference($AdFormatPreference)
     {
-      $this->AdFormatPreference = $AdFormatPreference;
-      return $this;
+        $this->AdFormatPreference = $AdFormatPreference;
+        return $this;
     }
 
     /**
@@ -94,7 +99,7 @@ class Ad
      */
     public function getDevicePreference()
     {
-      return $this->DevicePreference;
+        return $this->DevicePreference;
     }
 
     /**
@@ -103,8 +108,8 @@ class Ad
      */
     public function setDevicePreference($DevicePreference)
     {
-      $this->DevicePreference = $DevicePreference;
-      return $this;
+        $this->DevicePreference = $DevicePreference;
+        return $this;
     }
 
     /**
@@ -112,7 +117,7 @@ class Ad
      */
     public function getEditorialStatus()
     {
-      return $this->EditorialStatus;
+        return $this->EditorialStatus;
     }
 
     /**
@@ -121,8 +126,8 @@ class Ad
      */
     public function setEditorialStatus($EditorialStatus)
     {
-      $this->EditorialStatus = $EditorialStatus;
-      return $this;
+        $this->EditorialStatus = $EditorialStatus;
+        return $this;
     }
 
     /**
@@ -130,7 +135,7 @@ class Ad
      */
     public function getFinalAppUrls()
     {
-      return $this->FinalAppUrls;
+        return $this->FinalAppUrls;
     }
 
     /**
@@ -139,8 +144,8 @@ class Ad
      */
     public function setFinalAppUrls($FinalAppUrls)
     {
-      $this->FinalAppUrls = $FinalAppUrls;
-      return $this;
+        $this->FinalAppUrls = $FinalAppUrls;
+        return $this;
     }
 
     /**
@@ -148,7 +153,7 @@ class Ad
      */
     public function getFinalMobileUrls()
     {
-      return $this->FinalMobileUrls;
+        return $this->FinalMobileUrls;
     }
 
     /**
@@ -157,8 +162,26 @@ class Ad
      */
     public function setFinalMobileUrls($FinalMobileUrls)
     {
-      $this->FinalMobileUrls = $FinalMobileUrls;
-      return $this;
+        $this->FinalMobileUrls = $FinalMobileUrls;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFinalUrlSuffix()
+    {
+        return $this->FinalUrlSuffix;
+    }
+
+    /**
+     * @param string $FinalUrlSuffix
+     * @return \PMG\BingAds\CampaignManagement\Ad
+     */
+    public function setFinalUrlSuffix($FinalUrlSuffix)
+    {
+        $this->FinalUrlSuffix = $FinalUrlSuffix;
+        return $this;
     }
 
     /**
@@ -166,7 +189,7 @@ class Ad
      */
     public function getFinalUrls()
     {
-      return $this->FinalUrls;
+        return $this->FinalUrls;
     }
 
     /**
@@ -175,8 +198,8 @@ class Ad
      */
     public function setFinalUrls($FinalUrls)
     {
-      $this->FinalUrls = $FinalUrls;
-      return $this;
+        $this->FinalUrls = $FinalUrls;
+        return $this;
     }
 
     /**
@@ -184,7 +207,7 @@ class Ad
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -193,8 +216,8 @@ class Ad
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
     /**
@@ -202,7 +225,7 @@ class Ad
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -211,8 +234,8 @@ class Ad
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -220,7 +243,7 @@ class Ad
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -229,8 +252,8 @@ class Ad
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
     /**
@@ -238,7 +261,7 @@ class Ad
      */
     public function getTrackingUrlTemplate()
     {
-      return $this->TrackingUrlTemplate;
+        return $this->TrackingUrlTemplate;
     }
 
     /**
@@ -247,8 +270,8 @@ class Ad
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
-      $this->TrackingUrlTemplate = $TrackingUrlTemplate;
-      return $this;
+        $this->TrackingUrlTemplate = $TrackingUrlTemplate;
+        return $this;
     }
 
     /**
@@ -256,7 +279,7 @@ class Ad
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -265,8 +288,8 @@ class Ad
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
     /**
@@ -274,7 +297,7 @@ class Ad
      */
     public function getUrlCustomParameters()
     {
-      return $this->UrlCustomParameters;
+        return $this->UrlCustomParameters;
     }
 
     /**
@@ -283,8 +306,8 @@ class Ad
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {
-      $this->UrlCustomParameters = $UrlCustomParameters;
-      return $this;
+        $this->UrlCustomParameters = $UrlCustomParameters;
+        return $this;
     }
 
 }

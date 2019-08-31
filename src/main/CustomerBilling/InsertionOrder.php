@@ -96,7 +96,7 @@ class InsertionOrder
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -105,8 +105,8 @@ class InsertionOrder
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -114,7 +114,7 @@ class InsertionOrder
      */
     public function getBalanceAmount()
     {
-      return $this->BalanceAmount;
+        return $this->BalanceAmount;
     }
 
     /**
@@ -123,8 +123,8 @@ class InsertionOrder
      */
     public function setBalanceAmount($BalanceAmount)
     {
-      $this->BalanceAmount = $BalanceAmount;
-      return $this;
+        $this->BalanceAmount = $BalanceAmount;
+        return $this;
     }
 
     /**
@@ -132,7 +132,7 @@ class InsertionOrder
      */
     public function getBookingCountryCode()
     {
-      return $this->BookingCountryCode;
+        return $this->BookingCountryCode;
     }
 
     /**
@@ -141,8 +141,8 @@ class InsertionOrder
      */
     public function setBookingCountryCode($BookingCountryCode)
     {
-      $this->BookingCountryCode = $BookingCountryCode;
-      return $this;
+        $this->BookingCountryCode = $BookingCountryCode;
+        return $this;
     }
 
     /**
@@ -150,7 +150,7 @@ class InsertionOrder
      */
     public function getComment()
     {
-      return $this->Comment;
+        return $this->Comment;
     }
 
     /**
@@ -159,8 +159,8 @@ class InsertionOrder
      */
     public function setComment($Comment)
     {
-      $this->Comment = $Comment;
-      return $this;
+        $this->Comment = $Comment;
+        return $this;
     }
 
     /**
@@ -168,15 +168,14 @@ class InsertionOrder
      */
     public function getEndDate()
     {
-      if ($this->EndDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->EndDate);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->EndDate) {
+            return $this->EndDate;
         }
-      }
+        try {
+            return new \DateTime($this->EndDate);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -185,12 +184,8 @@ class InsertionOrder
      */
     public function setEndDate(\DateTime $EndDate = null)
     {
-      if ($EndDate == null) {
-       $this->EndDate = null;
-      } else {
-        $this->EndDate = $EndDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->EndDate = null === $EndDate ? null : $EndDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -198,7 +193,7 @@ class InsertionOrder
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -207,8 +202,8 @@ class InsertionOrder
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -216,7 +211,7 @@ class InsertionOrder
      */
     public function getLastModifiedByUserId()
     {
-      return $this->LastModifiedByUserId;
+        return $this->LastModifiedByUserId;
     }
 
     /**
@@ -225,8 +220,8 @@ class InsertionOrder
      */
     public function setLastModifiedByUserId($LastModifiedByUserId)
     {
-      $this->LastModifiedByUserId = $LastModifiedByUserId;
-      return $this;
+        $this->LastModifiedByUserId = $LastModifiedByUserId;
+        return $this;
     }
 
     /**
@@ -234,15 +229,14 @@ class InsertionOrder
      */
     public function getLastModifiedTime()
     {
-      if ($this->LastModifiedTime == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->LastModifiedTime);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->LastModifiedTime) {
+            return $this->LastModifiedTime;
         }
-      }
+        try {
+            return new \DateTime($this->LastModifiedTime);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -251,12 +245,8 @@ class InsertionOrder
      */
     public function setLastModifiedTime(\DateTime $LastModifiedTime = null)
     {
-      if ($LastModifiedTime == null) {
-       $this->LastModifiedTime = null;
-      } else {
-        $this->LastModifiedTime = $LastModifiedTime->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->LastModifiedTime = null === $LastModifiedTime ? null : $LastModifiedTime->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -264,7 +254,7 @@ class InsertionOrder
      */
     public function getNotificationThreshold()
     {
-      return $this->NotificationThreshold;
+        return $this->NotificationThreshold;
     }
 
     /**
@@ -273,8 +263,8 @@ class InsertionOrder
      */
     public function setNotificationThreshold($NotificationThreshold)
     {
-      $this->NotificationThreshold = $NotificationThreshold;
-      return $this;
+        $this->NotificationThreshold = $NotificationThreshold;
+        return $this;
     }
 
     /**
@@ -282,7 +272,7 @@ class InsertionOrder
      */
     public function getReferenceId()
     {
-      return $this->ReferenceId;
+        return $this->ReferenceId;
     }
 
     /**
@@ -291,8 +281,8 @@ class InsertionOrder
      */
     public function setReferenceId($ReferenceId)
     {
-      $this->ReferenceId = $ReferenceId;
-      return $this;
+        $this->ReferenceId = $ReferenceId;
+        return $this;
     }
 
     /**
@@ -300,7 +290,7 @@ class InsertionOrder
      */
     public function getSpendCapAmount()
     {
-      return $this->SpendCapAmount;
+        return $this->SpendCapAmount;
     }
 
     /**
@@ -309,8 +299,8 @@ class InsertionOrder
      */
     public function setSpendCapAmount($SpendCapAmount)
     {
-      $this->SpendCapAmount = $SpendCapAmount;
-      return $this;
+        $this->SpendCapAmount = $SpendCapAmount;
+        return $this;
     }
 
     /**
@@ -318,15 +308,14 @@ class InsertionOrder
      */
     public function getStartDate()
     {
-      if ($this->StartDate == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->StartDate);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->StartDate) {
+            return $this->StartDate;
         }
-      }
+        try {
+            return new \DateTime($this->StartDate);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -335,12 +324,8 @@ class InsertionOrder
      */
     public function setStartDate(\DateTime $StartDate = null)
     {
-      if ($StartDate == null) {
-       $this->StartDate = null;
-      } else {
-        $this->StartDate = $StartDate->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->StartDate = null === $StartDate ? null : $StartDate->format(\DateTime::ATOM);
+        return $this;
     }
 
     /**
@@ -348,7 +333,7 @@ class InsertionOrder
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -357,8 +342,8 @@ class InsertionOrder
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -366,7 +351,7 @@ class InsertionOrder
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -375,8 +360,8 @@ class InsertionOrder
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
     /**
@@ -384,7 +369,7 @@ class InsertionOrder
      */
     public function getPurchaseOrder()
     {
-      return $this->PurchaseOrder;
+        return $this->PurchaseOrder;
     }
 
     /**
@@ -393,8 +378,8 @@ class InsertionOrder
      */
     public function setPurchaseOrder($PurchaseOrder)
     {
-      $this->PurchaseOrder = $PurchaseOrder;
-      return $this;
+        $this->PurchaseOrder = $PurchaseOrder;
+        return $this;
     }
 
     /**
@@ -402,7 +387,7 @@ class InsertionOrder
      */
     public function getPendingChanges()
     {
-      return $this->PendingChanges;
+        return $this->PendingChanges;
     }
 
     /**
@@ -411,8 +396,8 @@ class InsertionOrder
      */
     public function setPendingChanges($PendingChanges)
     {
-      $this->PendingChanges = $PendingChanges;
-      return $this;
+        $this->PendingChanges = $PendingChanges;
+        return $this;
     }
 
 }

@@ -21,7 +21,7 @@ class ArrayOfCampaignEstimate implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function getCampaignEstimate()
     {
-      return $this->CampaignEstimate;
+        return $this->CampaignEstimate;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfCampaignEstimate implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function setCampaignEstimate(array $CampaignEstimate = null)
     {
-      $this->CampaignEstimate = $CampaignEstimate;
-      return $this;
+        $this->CampaignEstimate = $CampaignEstimate;
+        return $this;
     }
 
     /**

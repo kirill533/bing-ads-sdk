@@ -15,7 +15,7 @@ class GetEstimatedPositionByKeywordIdsResponse
      */
     public function __construct($KeywordEstimatedPositions = null)
     {
-      $this->KeywordEstimatedPositions = $KeywordEstimatedPositions;
+    $this->KeywordEstimatedPositions = $KeywordEstimatedPositions;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetEstimatedPositionByKeywordIdsResponse
      */
     public function getKeywordEstimatedPositions()
     {
-      return $this->KeywordEstimatedPositions;
+        return $this->KeywordEstimatedPositions;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetEstimatedPositionByKeywordIdsResponse
      */
     public function setKeywordEstimatedPositions($KeywordEstimatedPositions)
     {
-      $this->KeywordEstimatedPositions = $KeywordEstimatedPositions;
-      return $this;
+        $this->KeywordEstimatedPositions = $KeywordEstimatedPositions;
+        return $this;
     }
 
 }

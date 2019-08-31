@@ -41,7 +41,7 @@ class OfflineConversion
      */
     public function getConversionCurrencyCode()
     {
-      return $this->ConversionCurrencyCode;
+        return $this->ConversionCurrencyCode;
     }
 
     /**
@@ -50,8 +50,8 @@ class OfflineConversion
      */
     public function setConversionCurrencyCode($ConversionCurrencyCode)
     {
-      $this->ConversionCurrencyCode = $ConversionCurrencyCode;
-      return $this;
+        $this->ConversionCurrencyCode = $ConversionCurrencyCode;
+        return $this;
     }
 
     /**
@@ -59,7 +59,7 @@ class OfflineConversion
      */
     public function getConversionName()
     {
-      return $this->ConversionName;
+        return $this->ConversionName;
     }
 
     /**
@@ -68,8 +68,8 @@ class OfflineConversion
      */
     public function setConversionName($ConversionName)
     {
-      $this->ConversionName = $ConversionName;
-      return $this;
+        $this->ConversionName = $ConversionName;
+        return $this;
     }
 
     /**
@@ -77,15 +77,14 @@ class OfflineConversion
      */
     public function getConversionTime()
     {
-      if ($this->ConversionTime == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->ConversionTime);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->ConversionTime) {
+            return $this->ConversionTime;
         }
-      }
+        try {
+            return new \DateTime($this->ConversionTime);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -94,12 +93,8 @@ class OfflineConversion
      */
     public function setConversionTime(\DateTime $ConversionTime = null)
     {
-      if ($ConversionTime == null) {
-       $this->ConversionTime = null;
-      } else {
-        $this->ConversionTime = $ConversionTime->format(\DateTime::ATOM);
-      }
-      return $this;
+        $this->ConversionTime = null === $ConversionTime ? null : $ConversionTime->setTimezone(new \DateTimeZone("UTC"))->format("Y-m-d\TH:i:s.u\Z");
+        return $this;
     }
 
     /**
@@ -107,7 +102,7 @@ class OfflineConversion
      */
     public function getConversionValue()
     {
-      return $this->ConversionValue;
+        return $this->ConversionValue;
     }
 
     /**
@@ -116,8 +111,8 @@ class OfflineConversion
      */
     public function setConversionValue($ConversionValue)
     {
-      $this->ConversionValue = $ConversionValue;
-      return $this;
+        $this->ConversionValue = $ConversionValue;
+        return $this;
     }
 
     /**
@@ -125,7 +120,7 @@ class OfflineConversion
      */
     public function getMicrosoftClickId()
     {
-      return $this->MicrosoftClickId;
+        return $this->MicrosoftClickId;
     }
 
     /**
@@ -134,8 +129,8 @@ class OfflineConversion
      */
     public function setMicrosoftClickId($MicrosoftClickId)
     {
-      $this->MicrosoftClickId = $MicrosoftClickId;
-      return $this;
+        $this->MicrosoftClickId = $MicrosoftClickId;
+        return $this;
     }
 
 }

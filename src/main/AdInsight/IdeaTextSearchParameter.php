@@ -26,7 +26,7 @@ class IdeaTextSearchParameter extends SearchParameter
      */
     public function getExcluded()
     {
-      return $this->Excluded;
+        return $this->Excluded;
     }
 
     /**
@@ -35,8 +35,8 @@ class IdeaTextSearchParameter extends SearchParameter
      */
     public function setExcluded($Excluded)
     {
-      $this->Excluded = $Excluded;
-      return $this;
+        $this->Excluded = $Excluded;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class IdeaTextSearchParameter extends SearchParameter
      */
     public function getIncluded()
     {
-      return $this->Included;
+        return $this->Included;
     }
 
     /**
@@ -53,8 +53,8 @@ class IdeaTextSearchParameter extends SearchParameter
      */
     public function setIncluded($Included)
     {
-      $this->Included = $Included;
-      return $this;
+        $this->Included = $Included;
+        return $this;
     }
 
 }

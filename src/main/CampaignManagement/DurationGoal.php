@@ -13,7 +13,7 @@ class DurationGoal extends ConversionGoal
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class DurationGoal extends ConversionGoal
      */
     public function getMinimumDurationInSeconds()
     {
-      return $this->MinimumDurationInSeconds;
+        return $this->MinimumDurationInSeconds;
     }
 
     /**
@@ -30,8 +30,8 @@ class DurationGoal extends ConversionGoal
      */
     public function setMinimumDurationInSeconds($MinimumDurationInSeconds)
     {
-      $this->MinimumDurationInSeconds = $MinimumDurationInSeconds;
-      return $this;
+        $this->MinimumDurationInSeconds = $MinimumDurationInSeconds;
+        return $this;
     }
 
 }

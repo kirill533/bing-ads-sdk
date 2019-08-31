@@ -21,7 +21,7 @@ class ArrayOfSearchQueryPerformanceReportColumn implements \ArrayAccess, \Iterat
      */
     public function getSearchQueryPerformanceReportColumn()
     {
-      return $this->SearchQueryPerformanceReportColumn;
+        return $this->SearchQueryPerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfSearchQueryPerformanceReportColumn implements \ArrayAccess, \Iterat
      */
     public function setSearchQueryPerformanceReportColumn(array $SearchQueryPerformanceReportColumn = null)
     {
-      $this->SearchQueryPerformanceReportColumn = $SearchQueryPerformanceReportColumn;
-      return $this;
+        $this->SearchQueryPerformanceReportColumn = $SearchQueryPerformanceReportColumn;
+        return $this;
     }
 
     /**

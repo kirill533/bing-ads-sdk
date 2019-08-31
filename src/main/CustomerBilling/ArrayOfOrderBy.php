@@ -21,7 +21,7 @@ class ArrayOfOrderBy implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getOrderBy()
     {
-      return $this->OrderBy;
+        return $this->OrderBy;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfOrderBy implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function setOrderBy(array $OrderBy = null)
     {
-      $this->OrderBy = $OrderBy;
-      return $this;
+        $this->OrderBy = $OrderBy;
+        return $this;
     }
 
     /**

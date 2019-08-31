@@ -26,7 +26,7 @@ class AdExtensionEditorialReasonCollection
      */
     public function getAdExtensionId()
     {
-      return $this->AdExtensionId;
+        return $this->AdExtensionId;
     }
 
     /**
@@ -35,8 +35,8 @@ class AdExtensionEditorialReasonCollection
      */
     public function setAdExtensionId($AdExtensionId)
     {
-      $this->AdExtensionId = $AdExtensionId;
-      return $this;
+        $this->AdExtensionId = $AdExtensionId;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class AdExtensionEditorialReasonCollection
      */
     public function getReasons()
     {
-      return $this->Reasons;
+        return $this->Reasons;
     }
 
     /**
@@ -53,8 +53,8 @@ class AdExtensionEditorialReasonCollection
      */
     public function setReasons($Reasons)
     {
-      $this->Reasons = $Reasons;
-      return $this;
+        $this->Reasons = $Reasons;
+        return $this;
     }
 
 }

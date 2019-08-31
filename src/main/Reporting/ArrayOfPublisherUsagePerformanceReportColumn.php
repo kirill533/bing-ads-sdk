@@ -21,7 +21,7 @@ class ArrayOfPublisherUsagePerformanceReportColumn implements \ArrayAccess, \Ite
      */
     public function getPublisherUsagePerformanceReportColumn()
     {
-      return $this->PublisherUsagePerformanceReportColumn;
+        return $this->PublisherUsagePerformanceReportColumn;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfPublisherUsagePerformanceReportColumn implements \ArrayAccess, \Ite
      */
     public function setPublisherUsagePerformanceReportColumn(array $PublisherUsagePerformanceReportColumn = null)
     {
-      $this->PublisherUsagePerformanceReportColumn = $PublisherUsagePerformanceReportColumn;
-      return $this;
+        $this->PublisherUsagePerformanceReportColumn = $PublisherUsagePerformanceReportColumn;
+        return $this;
     }
 
     /**

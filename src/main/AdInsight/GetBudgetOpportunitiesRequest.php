@@ -15,7 +15,7 @@ class GetBudgetOpportunitiesRequest
      */
     public function __construct($CampaignId = null)
     {
-      $this->CampaignId = $CampaignId;
+    $this->CampaignId = $CampaignId;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetBudgetOpportunitiesRequest
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetBudgetOpportunitiesRequest
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
 }

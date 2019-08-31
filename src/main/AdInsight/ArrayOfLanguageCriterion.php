@@ -21,7 +21,7 @@ class ArrayOfLanguageCriterion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getLanguageCriterion()
     {
-      return $this->LanguageCriterion;
+        return $this->LanguageCriterion;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfLanguageCriterion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function setLanguageCriterion(array $LanguageCriterion = null)
     {
-      $this->LanguageCriterion = $LanguageCriterion;
-      return $this;
+        $this->LanguageCriterion = $LanguageCriterion;
+        return $this;
     }
 
     /**

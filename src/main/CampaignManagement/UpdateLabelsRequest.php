@@ -15,7 +15,7 @@ class UpdateLabelsRequest
      */
     public function __construct($Labels = null)
     {
-      $this->Labels = $Labels;
+    $this->Labels = $Labels;
     }
 
     /**
@@ -23,7 +23,7 @@ class UpdateLabelsRequest
      */
     public function getLabels()
     {
-      return $this->Labels;
+        return $this->Labels;
     }
 
     /**
@@ -32,8 +32,8 @@ class UpdateLabelsRequest
      */
     public function setLabels($Labels)
     {
-      $this->Labels = $Labels;
-      return $this;
+        $this->Labels = $Labels;
+        return $this;
     }
 
 }

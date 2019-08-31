@@ -21,7 +21,7 @@ class ArrayOfKeywordDemographic implements \ArrayAccess, \IteratorAggregate, \Co
      */
     public function getKeywordDemographic()
     {
-      return $this->KeywordDemographic;
+        return $this->KeywordDemographic;
     }
 
     /**
@@ -30,8 +30,8 @@ class ArrayOfKeywordDemographic implements \ArrayAccess, \IteratorAggregate, \Co
      */
     public function setKeywordDemographic(array $KeywordDemographic = null)
     {
-      $this->KeywordDemographic = $KeywordDemographic;
-      return $this;
+        $this->KeywordDemographic = $KeywordDemographic;
+        return $this;
     }
 
     /**

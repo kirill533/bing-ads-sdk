@@ -26,6 +26,11 @@ class ExpandedTextAd extends Ad
     protected $Text = null;
 
     /**
+     * @var string $TextPart2
+     */
+    protected $TextPart2 = null;
+
+    /**
      * @var string $TitlePart1
      */
     protected $TitlePart1 = null;
@@ -35,10 +40,15 @@ class ExpandedTextAd extends Ad
      */
     protected $TitlePart2 = null;
 
+    /**
+     * @var string $TitlePart3
+     */
+    protected $TitlePart3 = null;
+
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -46,7 +56,7 @@ class ExpandedTextAd extends Ad
      */
     public function getDomain()
     {
-      return $this->Domain;
+        return $this->Domain;
     }
 
     /**
@@ -55,8 +65,8 @@ class ExpandedTextAd extends Ad
      */
     public function setDomain($Domain)
     {
-      $this->Domain = $Domain;
-      return $this;
+        $this->Domain = $Domain;
+        return $this;
     }
 
     /**
@@ -64,7 +74,7 @@ class ExpandedTextAd extends Ad
      */
     public function getPath1()
     {
-      return $this->Path1;
+        return $this->Path1;
     }
 
     /**
@@ -73,8 +83,8 @@ class ExpandedTextAd extends Ad
      */
     public function setPath1($Path1)
     {
-      $this->Path1 = $Path1;
-      return $this;
+        $this->Path1 = $Path1;
+        return $this;
     }
 
     /**
@@ -82,7 +92,7 @@ class ExpandedTextAd extends Ad
      */
     public function getPath2()
     {
-      return $this->Path2;
+        return $this->Path2;
     }
 
     /**
@@ -91,8 +101,8 @@ class ExpandedTextAd extends Ad
      */
     public function setPath2($Path2)
     {
-      $this->Path2 = $Path2;
-      return $this;
+        $this->Path2 = $Path2;
+        return $this;
     }
 
     /**
@@ -100,7 +110,7 @@ class ExpandedTextAd extends Ad
      */
     public function getText()
     {
-      return $this->Text;
+        return $this->Text;
     }
 
     /**
@@ -109,8 +119,26 @@ class ExpandedTextAd extends Ad
      */
     public function setText($Text)
     {
-      $this->Text = $Text;
-      return $this;
+        $this->Text = $Text;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTextPart2()
+    {
+        return $this->TextPart2;
+    }
+
+    /**
+     * @param string $TextPart2
+     * @return \PMG\BingAds\CampaignManagement\ExpandedTextAd
+     */
+    public function setTextPart2($TextPart2)
+    {
+        $this->TextPart2 = $TextPart2;
+        return $this;
     }
 
     /**
@@ -118,7 +146,7 @@ class ExpandedTextAd extends Ad
      */
     public function getTitlePart1()
     {
-      return $this->TitlePart1;
+        return $this->TitlePart1;
     }
 
     /**
@@ -127,8 +155,8 @@ class ExpandedTextAd extends Ad
      */
     public function setTitlePart1($TitlePart1)
     {
-      $this->TitlePart1 = $TitlePart1;
-      return $this;
+        $this->TitlePart1 = $TitlePart1;
+        return $this;
     }
 
     /**
@@ -136,7 +164,7 @@ class ExpandedTextAd extends Ad
      */
     public function getTitlePart2()
     {
-      return $this->TitlePart2;
+        return $this->TitlePart2;
     }
 
     /**
@@ -145,8 +173,26 @@ class ExpandedTextAd extends Ad
      */
     public function setTitlePart2($TitlePart2)
     {
-      $this->TitlePart2 = $TitlePart2;
-      return $this;
+        $this->TitlePart2 = $TitlePart2;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getTitlePart3()
+    {
+        return $this->TitlePart3;
+    }
+
+    /**
+     * @param string $TitlePart3
+     * @return \PMG\BingAds\CampaignManagement\ExpandedTextAd
+     */
+    public function setTitlePart3($TitlePart3)
+    {
+        $this->TitlePart3 = $TitlePart3;
+        return $this;
     }
 
 }

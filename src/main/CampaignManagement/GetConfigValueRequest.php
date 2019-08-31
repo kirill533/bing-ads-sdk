@@ -15,7 +15,7 @@ class GetConfigValueRequest
      */
     public function __construct($ConfigKey = null)
     {
-      $this->ConfigKey = $ConfigKey;
+    $this->ConfigKey = $ConfigKey;
     }
 
     /**
@@ -23,7 +23,7 @@ class GetConfigValueRequest
      */
     public function getConfigKey()
     {
-      return $this->ConfigKey;
+        return $this->ConfigKey;
     }
 
     /**
@@ -32,8 +32,8 @@ class GetConfigValueRequest
      */
     public function setConfigKey($ConfigKey)
     {
-      $this->ConfigKey = $ConfigKey;
-      return $this;
+        $this->ConfigKey = $ConfigKey;
+        return $this;
     }
 
 }

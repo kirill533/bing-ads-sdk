@@ -15,7 +15,7 @@ class UpdateUetTagsResponse
      */
     public function __construct($PartialErrors = null)
     {
-      $this->PartialErrors = $PartialErrors;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -23,7 +23,7 @@ class UpdateUetTagsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -32,8 +32,8 @@ class UpdateUetTagsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

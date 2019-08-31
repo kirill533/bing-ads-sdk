@@ -26,7 +26,7 @@ class AppUrl
      */
     public function getOsType()
     {
-      return $this->OsType;
+        return $this->OsType;
     }
 
     /**
@@ -35,8 +35,8 @@ class AppUrl
      */
     public function setOsType($OsType)
     {
-      $this->OsType = $OsType;
-      return $this;
+        $this->OsType = $OsType;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class AppUrl
      */
     public function getUrl()
     {
-      return $this->Url;
+        return $this->Url;
     }
 
     /**
@@ -53,8 +53,8 @@ class AppUrl
      */
     public function setUrl($Url)
     {
-      $this->Url = $Url;
-      return $this;
+        $this->Url = $Url;
+        return $this;
     }
 
 }

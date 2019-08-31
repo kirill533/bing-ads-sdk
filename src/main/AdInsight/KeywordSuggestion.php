@@ -26,7 +26,7 @@ class KeywordSuggestion
      */
     public function getKeyword()
     {
-      return $this->Keyword;
+        return $this->Keyword;
     }
 
     /**
@@ -35,8 +35,8 @@ class KeywordSuggestion
      */
     public function setKeyword($Keyword)
     {
-      $this->Keyword = $Keyword;
-      return $this;
+        $this->Keyword = $Keyword;
+        return $this;
     }
 
     /**
@@ -44,7 +44,7 @@ class KeywordSuggestion
      */
     public function getSuggestionsAndConfidence()
     {
-      return $this->SuggestionsAndConfidence;
+        return $this->SuggestionsAndConfidence;
     }
 
     /**
@@ -53,8 +53,8 @@ class KeywordSuggestion
      */
     public function setSuggestionsAndConfidence($SuggestionsAndConfidence)
     {
-      $this->SuggestionsAndConfidence = $SuggestionsAndConfidence;
-      return $this;
+        $this->SuggestionsAndConfidence = $SuggestionsAndConfidence;
+        return $this;
     }
 
 }

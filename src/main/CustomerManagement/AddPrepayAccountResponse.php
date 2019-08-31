@@ -27,9 +27,9 @@ class AddPrepayAccountResponse
      */
     public function __construct($AccountId = null, $AccountNumber = null, \DateTime $CreateTime = null)
     {
-      $this->AccountId = $AccountId;
-      $this->AccountNumber = $AccountNumber;
-      $this->CreateTime = $CreateTime ? $CreateTime->format(\DateTime::ATOM) : null;
+    $this->AccountId = $AccountId;
+    $this->AccountNumber = $AccountNumber;
+        $this->CreateTime = null === $CreateTime ? null : $CreateTime->format(\DateTime::ATOM);
     }
 
     /**
@@ -37,7 +37,7 @@ class AddPrepayAccountResponse
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -46,8 +46,8 @@ class AddPrepayAccountResponse
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class AddPrepayAccountResponse
      */
     public function getAccountNumber()
     {
-      return $this->AccountNumber;
+        return $this->AccountNumber;
     }
 
     /**
@@ -64,8 +64,8 @@ class AddPrepayAccountResponse
      */
     public function setAccountNumber($AccountNumber)
     {
-      $this->AccountNumber = $AccountNumber;
-      return $this;
+        $this->AccountNumber = $AccountNumber;
+        return $this;
     }
 
     /**
@@ -73,15 +73,14 @@ class AddPrepayAccountResponse
      */
     public function getCreateTime()
     {
-      if ($this->CreateTime == null) {
-        return null;
-      } else {
-        try {
-          return new \DateTime($this->CreateTime);
-        } catch (\Exception $e) {
-          return false;
+        if (null === $this->CreateTime) {
+            return $this->CreateTime;
         }
-      }
+        try {
+            return new \DateTime($this->CreateTime);
+        } catch(\Exception $e) {
+            return null;
+        }
     }
 
     /**
@@ -90,8 +89,8 @@ class AddPrepayAccountResponse
      */
     public function setCreateTime(\DateTime $CreateTime)
     {
-      $this->CreateTime = $CreateTime->format(\DateTime::ATOM);
-      return $this;
+        $this->CreateTime = $CreateTime->format(\DateTime::ATOM);
+        return $this;
     }
 
 }

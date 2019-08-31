@@ -21,15 +21,22 @@ class GetAdGroupCriterionsByIdsRequest
     protected $CriterionType = null;
 
     /**
+     * @var AdGroupCriterionAdditionalField $ReturnAdditionalFields
+     */
+    protected $ReturnAdditionalFields = null;
+
+    /**
      * @param ArrayOflong $AdGroupCriterionIds
      * @param int $AdGroupId
      * @param AdGroupCriterionType $CriterionType
+     * @param AdGroupCriterionAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($AdGroupCriterionIds = null, $AdGroupId = null, $CriterionType = null)
+    public function __construct($AdGroupCriterionIds = null, $AdGroupId = null, $CriterionType = null, $ReturnAdditionalFields = null)
     {
-      $this->AdGroupCriterionIds = $AdGroupCriterionIds;
-      $this->AdGroupId = $AdGroupId;
-      $this->CriterionType = $CriterionType;
+    $this->AdGroupCriterionIds = $AdGroupCriterionIds;
+    $this->AdGroupId = $AdGroupId;
+    $this->CriterionType = $CriterionType;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -37,7 +44,7 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function getAdGroupCriterionIds()
     {
-      return $this->AdGroupCriterionIds;
+        return $this->AdGroupCriterionIds;
     }
 
     /**
@@ -46,8 +53,8 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function setAdGroupCriterionIds($AdGroupCriterionIds)
     {
-      $this->AdGroupCriterionIds = $AdGroupCriterionIds;
-      return $this;
+        $this->AdGroupCriterionIds = $AdGroupCriterionIds;
+        return $this;
     }
 
     /**
@@ -55,7 +62,7 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function getAdGroupId()
     {
-      return $this->AdGroupId;
+        return $this->AdGroupId;
     }
 
     /**
@@ -64,8 +71,8 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function setAdGroupId($AdGroupId)
     {
-      $this->AdGroupId = $AdGroupId;
-      return $this;
+        $this->AdGroupId = $AdGroupId;
+        return $this;
     }
 
     /**
@@ -73,7 +80,7 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function getCriterionType()
     {
-      return $this->CriterionType;
+        return $this->CriterionType;
     }
 
     /**
@@ -82,8 +89,26 @@ class GetAdGroupCriterionsByIdsRequest
      */
     public function setCriterionType($CriterionType)
     {
-      $this->CriterionType = $CriterionType;
-      return $this;
+        $this->CriterionType = $CriterionType;
+        return $this;
+    }
+
+    /**
+     * @return AdGroupCriterionAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param AdGroupCriterionAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\CampaignManagement\GetAdGroupCriterionsByIdsRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
+        return $this;
     }
 
 }

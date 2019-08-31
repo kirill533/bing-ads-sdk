@@ -51,7 +51,7 @@ class BidLandscapePoint
      */
     public function getBid()
     {
-      return $this->Bid;
+        return $this->Bid;
     }
 
     /**
@@ -60,8 +60,8 @@ class BidLandscapePoint
      */
     public function setBid($Bid)
     {
-      $this->Bid = $Bid;
-      return $this;
+        $this->Bid = $Bid;
+        return $this;
     }
 
     /**
@@ -69,7 +69,7 @@ class BidLandscapePoint
      */
     public function getClicks()
     {
-      return $this->Clicks;
+        return $this->Clicks;
     }
 
     /**
@@ -78,8 +78,8 @@ class BidLandscapePoint
      */
     public function setClicks($Clicks)
     {
-      $this->Clicks = $Clicks;
-      return $this;
+        $this->Clicks = $Clicks;
+        return $this;
     }
 
     /**
@@ -87,7 +87,7 @@ class BidLandscapePoint
      */
     public function getImpressions()
     {
-      return $this->Impressions;
+        return $this->Impressions;
     }
 
     /**
@@ -96,8 +96,8 @@ class BidLandscapePoint
      */
     public function setImpressions($Impressions)
     {
-      $this->Impressions = $Impressions;
-      return $this;
+        $this->Impressions = $Impressions;
+        return $this;
     }
 
     /**
@@ -105,7 +105,7 @@ class BidLandscapePoint
      */
     public function getTopImpressions()
     {
-      return $this->TopImpressions;
+        return $this->TopImpressions;
     }
 
     /**
@@ -114,8 +114,8 @@ class BidLandscapePoint
      */
     public function setTopImpressions($TopImpressions)
     {
-      $this->TopImpressions = $TopImpressions;
-      return $this;
+        $this->TopImpressions = $TopImpressions;
+        return $this;
     }
 
     /**
@@ -123,7 +123,7 @@ class BidLandscapePoint
      */
     public function getCurrencyCode()
     {
-      return $this->CurrencyCode;
+        return $this->CurrencyCode;
     }
 
     /**
@@ -132,8 +132,8 @@ class BidLandscapePoint
      */
     public function setCurrencyCode($CurrencyCode)
     {
-      $this->CurrencyCode = $CurrencyCode;
-      return $this;
+        $this->CurrencyCode = $CurrencyCode;
+        return $this;
     }
 
     /**
@@ -141,7 +141,7 @@ class BidLandscapePoint
      */
     public function getCost()
     {
-      return $this->Cost;
+        return $this->Cost;
     }
 
     /**
@@ -150,8 +150,8 @@ class BidLandscapePoint
      */
     public function setCost($Cost)
     {
-      $this->Cost = $Cost;
-      return $this;
+        $this->Cost = $Cost;
+        return $this;
     }
 
     /**
@@ -159,7 +159,7 @@ class BidLandscapePoint
      */
     public function getMarginalCPC()
     {
-      return $this->MarginalCPC;
+        return $this->MarginalCPC;
     }
 
     /**
@@ -168,8 +168,8 @@ class BidLandscapePoint
      */
     public function setMarginalCPC($MarginalCPC)
     {
-      $this->MarginalCPC = $MarginalCPC;
-      return $this;
+        $this->MarginalCPC = $MarginalCPC;
+        return $this;
     }
 
 }

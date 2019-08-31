@@ -66,7 +66,7 @@ class ConversionGoal
      */
     public function getConversionWindowInMinutes()
     {
-      return $this->ConversionWindowInMinutes;
+        return $this->ConversionWindowInMinutes;
     }
 
     /**
@@ -75,8 +75,8 @@ class ConversionGoal
      */
     public function setConversionWindowInMinutes($ConversionWindowInMinutes)
     {
-      $this->ConversionWindowInMinutes = $ConversionWindowInMinutes;
-      return $this;
+        $this->ConversionWindowInMinutes = $ConversionWindowInMinutes;
+        return $this;
     }
 
     /**
@@ -84,7 +84,7 @@ class ConversionGoal
      */
     public function getCountType()
     {
-      return $this->CountType;
+        return $this->CountType;
     }
 
     /**
@@ -93,8 +93,8 @@ class ConversionGoal
      */
     public function setCountType($CountType)
     {
-      $this->CountType = $CountType;
-      return $this;
+        $this->CountType = $CountType;
+        return $this;
     }
 
     /**
@@ -102,7 +102,7 @@ class ConversionGoal
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -111,8 +111,8 @@ class ConversionGoal
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -120,7 +120,7 @@ class ConversionGoal
      */
     public function getName()
     {
-      return $this->Name;
+        return $this->Name;
     }
 
     /**
@@ -129,8 +129,8 @@ class ConversionGoal
      */
     public function setName($Name)
     {
-      $this->Name = $Name;
-      return $this;
+        $this->Name = $Name;
+        return $this;
     }
 
     /**
@@ -138,7 +138,7 @@ class ConversionGoal
      */
     public function getRevenue()
     {
-      return $this->Revenue;
+        return $this->Revenue;
     }
 
     /**
@@ -147,8 +147,8 @@ class ConversionGoal
      */
     public function setRevenue($Revenue)
     {
-      $this->Revenue = $Revenue;
-      return $this;
+        $this->Revenue = $Revenue;
+        return $this;
     }
 
     /**
@@ -156,7 +156,7 @@ class ConversionGoal
      */
     public function getScope()
     {
-      return $this->Scope;
+        return $this->Scope;
     }
 
     /**
@@ -165,8 +165,8 @@ class ConversionGoal
      */
     public function setScope($Scope)
     {
-      $this->Scope = $Scope;
-      return $this;
+        $this->Scope = $Scope;
+        return $this;
     }
 
     /**
@@ -174,7 +174,7 @@ class ConversionGoal
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -183,8 +183,8 @@ class ConversionGoal
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
     /**
@@ -192,7 +192,7 @@ class ConversionGoal
      */
     public function getTagId()
     {
-      return $this->TagId;
+        return $this->TagId;
     }
 
     /**
@@ -201,8 +201,8 @@ class ConversionGoal
      */
     public function setTagId($TagId)
     {
-      $this->TagId = $TagId;
-      return $this;
+        $this->TagId = $TagId;
+        return $this;
     }
 
     /**
@@ -210,7 +210,7 @@ class ConversionGoal
      */
     public function getTrackingStatus()
     {
-      return $this->TrackingStatus;
+        return $this->TrackingStatus;
     }
 
     /**
@@ -219,8 +219,8 @@ class ConversionGoal
      */
     public function setTrackingStatus($TrackingStatus)
     {
-      $this->TrackingStatus = $TrackingStatus;
-      return $this;
+        $this->TrackingStatus = $TrackingStatus;
+        return $this;
     }
 
     /**
@@ -228,7 +228,7 @@ class ConversionGoal
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -237,8 +237,8 @@ class ConversionGoal
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
 }

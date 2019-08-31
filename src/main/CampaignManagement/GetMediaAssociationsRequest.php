@@ -21,8 +21,8 @@ class GetMediaAssociationsRequest
      */
     public function __construct($MediaEnabledEntities = null, $MediaIds = null)
     {
-      $this->MediaEnabledEntities = $MediaEnabledEntities;
-      $this->MediaIds = $MediaIds;
+    $this->MediaEnabledEntities = $MediaEnabledEntities;
+    $this->MediaIds = $MediaIds;
     }
 
     /**
@@ -30,7 +30,7 @@ class GetMediaAssociationsRequest
      */
     public function getMediaEnabledEntities()
     {
-      return $this->MediaEnabledEntities;
+        return $this->MediaEnabledEntities;
     }
 
     /**
@@ -39,8 +39,8 @@ class GetMediaAssociationsRequest
      */
     public function setMediaEnabledEntities($MediaEnabledEntities)
     {
-      $this->MediaEnabledEntities = $MediaEnabledEntities;
-      return $this;
+        $this->MediaEnabledEntities = $MediaEnabledEntities;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class GetMediaAssociationsRequest
      */
     public function getMediaIds()
     {
-      return $this->MediaIds;
+        return $this->MediaIds;
     }
 
     /**
@@ -57,8 +57,8 @@ class GetMediaAssociationsRequest
      */
     public function setMediaIds($MediaIds)
     {
-      $this->MediaIds = $MediaIds;
-      return $this;
+        $this->MediaIds = $MediaIds;
+        return $this;
     }
 
 }

@@ -36,6 +36,11 @@ class Keyword
     protected $FinalMobileUrls = null;
 
     /**
+     * @var string $FinalUrlSuffix
+     */
+    protected $FinalUrlSuffix = null;
+
+    /**
      * @var ArrayOfstring $FinalUrls
      */
     protected $FinalUrls = null;
@@ -101,7 +106,7 @@ class Keyword
      */
     public function getBid()
     {
-      return $this->Bid;
+        return $this->Bid;
     }
 
     /**
@@ -110,8 +115,8 @@ class Keyword
      */
     public function setBid($Bid)
     {
-      $this->Bid = $Bid;
-      return $this;
+        $this->Bid = $Bid;
+        return $this;
     }
 
     /**
@@ -119,7 +124,7 @@ class Keyword
      */
     public function getBiddingScheme()
     {
-      return $this->BiddingScheme;
+        return $this->BiddingScheme;
     }
 
     /**
@@ -128,8 +133,8 @@ class Keyword
      */
     public function setBiddingScheme($BiddingScheme)
     {
-      $this->BiddingScheme = $BiddingScheme;
-      return $this;
+        $this->BiddingScheme = $BiddingScheme;
+        return $this;
     }
 
     /**
@@ -137,7 +142,7 @@ class Keyword
      */
     public function getDestinationUrl()
     {
-      return $this->DestinationUrl;
+        return $this->DestinationUrl;
     }
 
     /**
@@ -146,8 +151,8 @@ class Keyword
      */
     public function setDestinationUrl($DestinationUrl)
     {
-      $this->DestinationUrl = $DestinationUrl;
-      return $this;
+        $this->DestinationUrl = $DestinationUrl;
+        return $this;
     }
 
     /**
@@ -155,7 +160,7 @@ class Keyword
      */
     public function getEditorialStatus()
     {
-      return $this->EditorialStatus;
+        return $this->EditorialStatus;
     }
 
     /**
@@ -164,8 +169,8 @@ class Keyword
      */
     public function setEditorialStatus($EditorialStatus)
     {
-      $this->EditorialStatus = $EditorialStatus;
-      return $this;
+        $this->EditorialStatus = $EditorialStatus;
+        return $this;
     }
 
     /**
@@ -173,7 +178,7 @@ class Keyword
      */
     public function getFinalAppUrls()
     {
-      return $this->FinalAppUrls;
+        return $this->FinalAppUrls;
     }
 
     /**
@@ -182,8 +187,8 @@ class Keyword
      */
     public function setFinalAppUrls($FinalAppUrls)
     {
-      $this->FinalAppUrls = $FinalAppUrls;
-      return $this;
+        $this->FinalAppUrls = $FinalAppUrls;
+        return $this;
     }
 
     /**
@@ -191,7 +196,7 @@ class Keyword
      */
     public function getFinalMobileUrls()
     {
-      return $this->FinalMobileUrls;
+        return $this->FinalMobileUrls;
     }
 
     /**
@@ -200,8 +205,26 @@ class Keyword
      */
     public function setFinalMobileUrls($FinalMobileUrls)
     {
-      $this->FinalMobileUrls = $FinalMobileUrls;
-      return $this;
+        $this->FinalMobileUrls = $FinalMobileUrls;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFinalUrlSuffix()
+    {
+        return $this->FinalUrlSuffix;
+    }
+
+    /**
+     * @param string $FinalUrlSuffix
+     * @return \PMG\BingAds\CampaignManagement\Keyword
+     */
+    public function setFinalUrlSuffix($FinalUrlSuffix)
+    {
+        $this->FinalUrlSuffix = $FinalUrlSuffix;
+        return $this;
     }
 
     /**
@@ -209,7 +232,7 @@ class Keyword
      */
     public function getFinalUrls()
     {
-      return $this->FinalUrls;
+        return $this->FinalUrls;
     }
 
     /**
@@ -218,8 +241,8 @@ class Keyword
      */
     public function setFinalUrls($FinalUrls)
     {
-      $this->FinalUrls = $FinalUrls;
-      return $this;
+        $this->FinalUrls = $FinalUrls;
+        return $this;
     }
 
     /**
@@ -227,7 +250,7 @@ class Keyword
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -236,8 +259,8 @@ class Keyword
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
     /**
@@ -245,7 +268,7 @@ class Keyword
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -254,8 +277,8 @@ class Keyword
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -263,7 +286,7 @@ class Keyword
      */
     public function getMatchType()
     {
-      return $this->MatchType;
+        return $this->MatchType;
     }
 
     /**
@@ -272,8 +295,8 @@ class Keyword
      */
     public function setMatchType($MatchType)
     {
-      $this->MatchType = $MatchType;
-      return $this;
+        $this->MatchType = $MatchType;
+        return $this;
     }
 
     /**
@@ -281,7 +304,7 @@ class Keyword
      */
     public function getParam1()
     {
-      return $this->Param1;
+        return $this->Param1;
     }
 
     /**
@@ -290,8 +313,8 @@ class Keyword
      */
     public function setParam1($Param1)
     {
-      $this->Param1 = $Param1;
-      return $this;
+        $this->Param1 = $Param1;
+        return $this;
     }
 
     /**
@@ -299,7 +322,7 @@ class Keyword
      */
     public function getParam2()
     {
-      return $this->Param2;
+        return $this->Param2;
     }
 
     /**
@@ -308,8 +331,8 @@ class Keyword
      */
     public function setParam2($Param2)
     {
-      $this->Param2 = $Param2;
-      return $this;
+        $this->Param2 = $Param2;
+        return $this;
     }
 
     /**
@@ -317,7 +340,7 @@ class Keyword
      */
     public function getParam3()
     {
-      return $this->Param3;
+        return $this->Param3;
     }
 
     /**
@@ -326,8 +349,8 @@ class Keyword
      */
     public function setParam3($Param3)
     {
-      $this->Param3 = $Param3;
-      return $this;
+        $this->Param3 = $Param3;
+        return $this;
     }
 
     /**
@@ -335,7 +358,7 @@ class Keyword
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -344,8 +367,8 @@ class Keyword
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
     /**
@@ -353,7 +376,7 @@ class Keyword
      */
     public function getText()
     {
-      return $this->Text;
+        return $this->Text;
     }
 
     /**
@@ -362,8 +385,8 @@ class Keyword
      */
     public function setText($Text)
     {
-      $this->Text = $Text;
-      return $this;
+        $this->Text = $Text;
+        return $this;
     }
 
     /**
@@ -371,7 +394,7 @@ class Keyword
      */
     public function getTrackingUrlTemplate()
     {
-      return $this->TrackingUrlTemplate;
+        return $this->TrackingUrlTemplate;
     }
 
     /**
@@ -380,8 +403,8 @@ class Keyword
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
-      $this->TrackingUrlTemplate = $TrackingUrlTemplate;
-      return $this;
+        $this->TrackingUrlTemplate = $TrackingUrlTemplate;
+        return $this;
     }
 
     /**
@@ -389,7 +412,7 @@ class Keyword
      */
     public function getUrlCustomParameters()
     {
-      return $this->UrlCustomParameters;
+        return $this->UrlCustomParameters;
     }
 
     /**
@@ -398,8 +421,8 @@ class Keyword
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {
-      $this->UrlCustomParameters = $UrlCustomParameters;
-      return $this;
+        $this->UrlCustomParameters = $UrlCustomParameters;
+        return $this;
     }
 
 }

@@ -40,7 +40,7 @@ class CampaignCriterion
      */
     public function __construct($CampaignId = null)
     {
-      $this->CampaignId = $CampaignId;
+    $this->CampaignId = $CampaignId;
     }
 
     /**
@@ -48,7 +48,7 @@ class CampaignCriterion
      */
     public function getCampaignId()
     {
-      return $this->CampaignId;
+        return $this->CampaignId;
     }
 
     /**
@@ -57,8 +57,8 @@ class CampaignCriterion
      */
     public function setCampaignId($CampaignId)
     {
-      $this->CampaignId = $CampaignId;
-      return $this;
+        $this->CampaignId = $CampaignId;
+        return $this;
     }
 
     /**
@@ -66,7 +66,7 @@ class CampaignCriterion
      */
     public function getCriterion()
     {
-      return $this->Criterion;
+        return $this->Criterion;
     }
 
     /**
@@ -75,8 +75,8 @@ class CampaignCriterion
      */
     public function setCriterion($Criterion)
     {
-      $this->Criterion = $Criterion;
-      return $this;
+        $this->Criterion = $Criterion;
+        return $this;
     }
 
     /**
@@ -84,7 +84,7 @@ class CampaignCriterion
      */
     public function getForwardCompatibilityMap()
     {
-      return $this->ForwardCompatibilityMap;
+        return $this->ForwardCompatibilityMap;
     }
 
     /**
@@ -93,8 +93,8 @@ class CampaignCriterion
      */
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
-      $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
-      return $this;
+        $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
     }
 
     /**
@@ -102,7 +102,7 @@ class CampaignCriterion
      */
     public function getId()
     {
-      return $this->Id;
+        return $this->Id;
     }
 
     /**
@@ -111,8 +111,8 @@ class CampaignCriterion
      */
     public function setId($Id)
     {
-      $this->Id = $Id;
-      return $this;
+        $this->Id = $Id;
+        return $this;
     }
 
     /**
@@ -120,7 +120,7 @@ class CampaignCriterion
      */
     public function getStatus()
     {
-      return $this->Status;
+        return $this->Status;
     }
 
     /**
@@ -129,8 +129,8 @@ class CampaignCriterion
      */
     public function setStatus($Status)
     {
-      $this->Status = $Status;
-      return $this;
+        $this->Status = $Status;
+        return $this;
     }
 
     /**
@@ -138,7 +138,7 @@ class CampaignCriterion
      */
     public function getType()
     {
-      return $this->Type;
+        return $this->Type;
     }
 
     /**
@@ -147,8 +147,8 @@ class CampaignCriterion
      */
     public function setType($Type)
     {
-      $this->Type = $Type;
-      return $this;
+        $this->Type = $Type;
+        return $this;
     }
 
 }

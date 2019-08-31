@@ -31,6 +31,11 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
     protected $FinalMobileUrls = null;
 
     /**
+     * @var string $FinalUrlSuffix
+     */
+    protected $FinalUrlSuffix = null;
+
+    /**
      * @var ArrayOfstring $FinalUrls
      */
     protected $FinalUrls = null;
@@ -48,7 +53,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -56,7 +61,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function getCriterionBid()
     {
-      return $this->CriterionBid;
+        return $this->CriterionBid;
     }
 
     /**
@@ -65,8 +70,8 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function setCriterionBid($CriterionBid)
     {
-      $this->CriterionBid = $CriterionBid;
-      return $this;
+        $this->CriterionBid = $CriterionBid;
+        return $this;
     }
 
     /**
@@ -74,7 +79,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function getDestinationUrl()
     {
-      return $this->DestinationUrl;
+        return $this->DestinationUrl;
     }
 
     /**
@@ -83,8 +88,8 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function setDestinationUrl($DestinationUrl)
     {
-      $this->DestinationUrl = $DestinationUrl;
-      return $this;
+        $this->DestinationUrl = $DestinationUrl;
+        return $this;
     }
 
     /**
@@ -92,7 +97,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function getEditorialStatus()
     {
-      return $this->EditorialStatus;
+        return $this->EditorialStatus;
     }
 
     /**
@@ -101,8 +106,8 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function setEditorialStatus($EditorialStatus)
     {
-      $this->EditorialStatus = $EditorialStatus;
-      return $this;
+        $this->EditorialStatus = $EditorialStatus;
+        return $this;
     }
 
     /**
@@ -110,7 +115,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function getFinalAppUrls()
     {
-      return $this->FinalAppUrls;
+        return $this->FinalAppUrls;
     }
 
     /**
@@ -119,8 +124,8 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function setFinalAppUrls($FinalAppUrls)
     {
-      $this->FinalAppUrls = $FinalAppUrls;
-      return $this;
+        $this->FinalAppUrls = $FinalAppUrls;
+        return $this;
     }
 
     /**
@@ -128,7 +133,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function getFinalMobileUrls()
     {
-      return $this->FinalMobileUrls;
+        return $this->FinalMobileUrls;
     }
 
     /**
@@ -137,8 +142,26 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function setFinalMobileUrls($FinalMobileUrls)
     {
-      $this->FinalMobileUrls = $FinalMobileUrls;
-      return $this;
+        $this->FinalMobileUrls = $FinalMobileUrls;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFinalUrlSuffix()
+    {
+        return $this->FinalUrlSuffix;
+    }
+
+    /**
+     * @param string $FinalUrlSuffix
+     * @return \PMG\BingAds\CampaignManagement\BiddableAdGroupCriterion
+     */
+    public function setFinalUrlSuffix($FinalUrlSuffix)
+    {
+        $this->FinalUrlSuffix = $FinalUrlSuffix;
+        return $this;
     }
 
     /**
@@ -146,7 +169,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function getFinalUrls()
     {
-      return $this->FinalUrls;
+        return $this->FinalUrls;
     }
 
     /**
@@ -155,8 +178,8 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function setFinalUrls($FinalUrls)
     {
-      $this->FinalUrls = $FinalUrls;
-      return $this;
+        $this->FinalUrls = $FinalUrls;
+        return $this;
     }
 
     /**
@@ -164,7 +187,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function getTrackingUrlTemplate()
     {
-      return $this->TrackingUrlTemplate;
+        return $this->TrackingUrlTemplate;
     }
 
     /**
@@ -173,8 +196,8 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function setTrackingUrlTemplate($TrackingUrlTemplate)
     {
-      $this->TrackingUrlTemplate = $TrackingUrlTemplate;
-      return $this;
+        $this->TrackingUrlTemplate = $TrackingUrlTemplate;
+        return $this;
     }
 
     /**
@@ -182,7 +205,7 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function getUrlCustomParameters()
     {
-      return $this->UrlCustomParameters;
+        return $this->UrlCustomParameters;
     }
 
     /**
@@ -191,8 +214,8 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     public function setUrlCustomParameters($UrlCustomParameters)
     {
-      $this->UrlCustomParameters = $UrlCustomParameters;
-      return $this;
+        $this->UrlCustomParameters = $UrlCustomParameters;
+        return $this;
     }
 
 }

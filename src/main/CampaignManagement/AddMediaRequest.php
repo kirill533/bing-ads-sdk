@@ -21,8 +21,8 @@ class AddMediaRequest
      */
     public function __construct($AccountId = null, $Media = null)
     {
-      $this->AccountId = $AccountId;
-      $this->Media = $Media;
+    $this->AccountId = $AccountId;
+    $this->Media = $Media;
     }
 
     /**
@@ -30,7 +30,7 @@ class AddMediaRequest
      */
     public function getAccountId()
     {
-      return $this->AccountId;
+        return $this->AccountId;
     }
 
     /**
@@ -39,8 +39,8 @@ class AddMediaRequest
      */
     public function setAccountId($AccountId)
     {
-      $this->AccountId = $AccountId;
-      return $this;
+        $this->AccountId = $AccountId;
+        return $this;
     }
 
     /**
@@ -48,7 +48,7 @@ class AddMediaRequest
      */
     public function getMedia()
     {
-      return $this->Media;
+        return $this->Media;
     }
 
     /**
@@ -57,8 +57,8 @@ class AddMediaRequest
      */
     public function setMedia($Media)
     {
-      $this->Media = $Media;
-      return $this;
+        $this->Media = $Media;
+        return $this;
     }
 
 }

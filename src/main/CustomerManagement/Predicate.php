@@ -31,7 +31,7 @@ class Predicate
      */
     public function getField()
     {
-      return $this->Field;
+        return $this->Field;
     }
 
     /**
@@ -40,8 +40,8 @@ class Predicate
      */
     public function setField($Field)
     {
-      $this->Field = $Field;
-      return $this;
+        $this->Field = $Field;
+        return $this;
     }
 
     /**
@@ -49,7 +49,7 @@ class Predicate
      */
     public function getOperator()
     {
-      return $this->Operator;
+        return $this->Operator;
     }
 
     /**
@@ -58,8 +58,8 @@ class Predicate
      */
     public function setOperator($Operator)
     {
-      $this->Operator = $Operator;
-      return $this;
+        $this->Operator = $Operator;
+        return $this;
     }
 
     /**
@@ -67,7 +67,7 @@ class Predicate
      */
     public function getValue()
     {
-      return $this->Value;
+        return $this->Value;
     }
 
     /**
@@ -76,8 +76,8 @@ class Predicate
      */
     public function setValue($Value)
     {
-      $this->Value = $Value;
-      return $this;
+        $this->Value = $Value;
+        return $this;
     }
 
 }

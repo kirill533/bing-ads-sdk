@@ -13,7 +13,7 @@ class InheritFromParentBiddingScheme extends BiddingScheme
     
     public function __construct()
     {
-      parent::__construct();
+        parent::__construct();
     }
 
     /**
@@ -21,7 +21,7 @@ class InheritFromParentBiddingScheme extends BiddingScheme
      */
     public function getInheritedBidStrategyType()
     {
-      return $this->InheritedBidStrategyType;
+        return $this->InheritedBidStrategyType;
     }
 
     /**
@@ -30,8 +30,8 @@ class InheritFromParentBiddingScheme extends BiddingScheme
      */
     public function setInheritedBidStrategyType($InheritedBidStrategyType)
     {
-      $this->InheritedBidStrategyType = $InheritedBidStrategyType;
-      return $this;
+        $this->InheritedBidStrategyType = $InheritedBidStrategyType;
+        return $this;
     }
 
 }

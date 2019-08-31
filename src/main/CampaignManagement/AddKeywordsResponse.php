@@ -27,9 +27,9 @@ class AddKeywordsResponse
      */
     public function __construct($InheritedBidStrategyTypes = null, $KeywordIds = null, $PartialErrors = null)
     {
-      $this->InheritedBidStrategyTypes = $InheritedBidStrategyTypes;
-      $this->KeywordIds = $KeywordIds;
-      $this->PartialErrors = $PartialErrors;
+    $this->InheritedBidStrategyTypes = $InheritedBidStrategyTypes;
+    $this->KeywordIds = $KeywordIds;
+    $this->PartialErrors = $PartialErrors;
     }
 
     /**
@@ -37,7 +37,7 @@ class AddKeywordsResponse
      */
     public function getInheritedBidStrategyTypes()
     {
-      return $this->InheritedBidStrategyTypes;
+        return $this->InheritedBidStrategyTypes;
     }
 
     /**
@@ -46,8 +46,8 @@ class AddKeywordsResponse
      */
     public function setInheritedBidStrategyTypes($InheritedBidStrategyTypes)
     {
-      $this->InheritedBidStrategyTypes = $InheritedBidStrategyTypes;
-      return $this;
+        $this->InheritedBidStrategyTypes = $InheritedBidStrategyTypes;
+        return $this;
     }
 
     /**
@@ -55,7 +55,7 @@ class AddKeywordsResponse
      */
     public function getKeywordIds()
     {
-      return $this->KeywordIds;
+        return $this->KeywordIds;
     }
 
     /**
@@ -64,8 +64,8 @@ class AddKeywordsResponse
      */
     public function setKeywordIds($KeywordIds)
     {
-      $this->KeywordIds = $KeywordIds;
-      return $this;
+        $this->KeywordIds = $KeywordIds;
+        return $this;
     }
 
     /**
@@ -73,7 +73,7 @@ class AddKeywordsResponse
      */
     public function getPartialErrors()
     {
-      return $this->PartialErrors;
+        return $this->PartialErrors;
     }
 
     /**
@@ -82,8 +82,8 @@ class AddKeywordsResponse
      */
     public function setPartialErrors($PartialErrors)
     {
-      $this->PartialErrors = $PartialErrors;
-      return $this;
+        $this->PartialErrors = $PartialErrors;
+        return $this;
     }
 
 }

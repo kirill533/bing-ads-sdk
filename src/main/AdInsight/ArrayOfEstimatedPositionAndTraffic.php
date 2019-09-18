@@ -90,7 +90,7 @@ class ArrayOfEstimatedPositionAndTraffic implements \ArrayAccess, \IteratorAggre
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->EstimatedPositionAndTraffic);
+        return new \ArrayIterator($this->EstimatedPositionAndTraffic ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfEstimatedPositionAndTraffic implements \ArrayAccess, \IteratorAggre
      */
     public function count()
     {
-      return count($this->EstimatedPositionAndTraffic);
+        return is_array($this->EstimatedPositionAndTraffic) ? count($this->EstimatedPositionAndTraffic) : 0;
     }
 
     /**

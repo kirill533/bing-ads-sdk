@@ -90,7 +90,7 @@ class ArrayOfExperiment implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->Experiment);
+        return new \ArrayIterator($this->Experiment ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfExperiment implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->Experiment);
+        return is_array($this->Experiment) ? count($this->Experiment) : 0;
     }
 
     /**

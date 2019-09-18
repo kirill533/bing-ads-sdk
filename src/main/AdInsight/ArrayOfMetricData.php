@@ -90,7 +90,7 @@ class ArrayOfMetricData implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->MetricData);
+        return new \ArrayIterator($this->MetricData ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfMetricData implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->MetricData);
+        return is_array($this->MetricData) ? count($this->MetricData) : 0;
     }
 
     /**

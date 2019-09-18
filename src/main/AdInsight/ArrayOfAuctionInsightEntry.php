@@ -90,7 +90,7 @@ class ArrayOfAuctionInsightEntry implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AuctionInsightEntry);
+        return new \ArrayIterator($this->AuctionInsightEntry ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAuctionInsightEntry implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function count()
     {
-      return count($this->AuctionInsightEntry);
+        return is_array($this->AuctionInsightEntry) ? count($this->AuctionInsightEntry) : 0;
     }
 
     /**

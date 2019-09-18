@@ -90,7 +90,7 @@ class ArrayOfPublisherUsagePerformanceReportColumn implements \ArrayAccess, \Ite
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->PublisherUsagePerformanceReportColumn);
+        return new \ArrayIterator($this->PublisherUsagePerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfPublisherUsagePerformanceReportColumn implements \ArrayAccess, \Ite
      */
     public function count()
     {
-      return count($this->PublisherUsagePerformanceReportColumn);
+        return is_array($this->PublisherUsagePerformanceReportColumn) ? count($this->PublisherUsagePerformanceReportColumn) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfAdGroupEstimate implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdGroupEstimate);
+        return new \ArrayIterator($this->AdGroupEstimate ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdGroupEstimate implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function count()
     {
-      return count($this->AdGroupEstimate);
+        return is_array($this->AdGroupEstimate) ? count($this->AdGroupEstimate) : 0;
     }
 
     /**

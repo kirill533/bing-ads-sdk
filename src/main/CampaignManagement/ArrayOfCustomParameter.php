@@ -90,7 +90,7 @@ class ArrayOfCustomParameter implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->CustomParameter);
+        return new \ArrayIterator($this->CustomParameter ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCustomParameter implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function count()
     {
-      return count($this->CustomParameter);
+        return is_array($this->CustomParameter) ? count($this->CustomParameter) : 0;
     }
 
     /**

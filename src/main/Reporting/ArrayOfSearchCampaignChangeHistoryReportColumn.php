@@ -90,7 +90,7 @@ class ArrayOfSearchCampaignChangeHistoryReportColumn implements \ArrayAccess, \I
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->SearchCampaignChangeHistoryReportColumn);
+        return new \ArrayIterator($this->SearchCampaignChangeHistoryReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfSearchCampaignChangeHistoryReportColumn implements \ArrayAccess, \I
      */
     public function count()
     {
-      return count($this->SearchCampaignChangeHistoryReportColumn);
+        return is_array($this->SearchCampaignChangeHistoryReportColumn) ? count($this->SearchCampaignChangeHistoryReportColumn) : 0;
     }
 
     /**

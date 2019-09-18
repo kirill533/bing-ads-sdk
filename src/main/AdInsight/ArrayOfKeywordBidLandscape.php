@@ -90,7 +90,7 @@ class ArrayOfKeywordBidLandscape implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordBidLandscape);
+        return new \ArrayIterator($this->KeywordBidLandscape ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordBidLandscape implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function count()
     {
-      return count($this->KeywordBidLandscape);
+        return is_array($this->KeywordBidLandscape) ? count($this->KeywordBidLandscape) : 0;
     }
 
     /**

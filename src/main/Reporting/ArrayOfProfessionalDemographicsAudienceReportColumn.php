@@ -90,7 +90,7 @@ class ArrayOfProfessionalDemographicsAudienceReportColumn implements \ArrayAcces
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->ProfessionalDemographicsAudienceReportColumn);
+        return new \ArrayIterator($this->ProfessionalDemographicsAudienceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfProfessionalDemographicsAudienceReportColumn implements \ArrayAcces
      */
     public function count()
     {
-      return count($this->ProfessionalDemographicsAudienceReportColumn);
+        return is_array($this->ProfessionalDemographicsAudienceReportColumn) ? count($this->ProfessionalDemographicsAudienceReportColumn) : 0;
     }
 
     /**

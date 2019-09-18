@@ -90,7 +90,7 @@ class ArrayOfAdGroupReportScope implements \ArrayAccess, \IteratorAggregate, \Co
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdGroupReportScope);
+        return new \ArrayIterator($this->AdGroupReportScope ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdGroupReportScope implements \ArrayAccess, \IteratorAggregate, \Co
      */
     public function count()
     {
-      return count($this->AdGroupReportScope);
+        return is_array($this->AdGroupReportScope) ? count($this->AdGroupReportScope) : 0;
     }
 
     /**

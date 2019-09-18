@@ -90,7 +90,7 @@ class ArrayOfSearchQueryPerformanceReportColumn implements \ArrayAccess, \Iterat
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->SearchQueryPerformanceReportColumn);
+        return new \ArrayIterator($this->SearchQueryPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfSearchQueryPerformanceReportColumn implements \ArrayAccess, \Iterat
      */
     public function count()
     {
-      return count($this->SearchQueryPerformanceReportColumn);
+        return is_array($this->SearchQueryPerformanceReportColumn) ? count($this->SearchQueryPerformanceReportColumn) : 0;
     }
 
     /**

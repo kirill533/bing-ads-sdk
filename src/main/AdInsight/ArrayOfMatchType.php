@@ -90,7 +90,7 @@ class ArrayOfMatchType implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->MatchType);
+        return new \ArrayIterator($this->MatchType ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfMatchType implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->MatchType);
+        return is_array($this->MatchType) ? count($this->MatchType) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfProductCondition implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->ProductCondition);
+        return new \ArrayIterator($this->ProductCondition ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfProductCondition implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function count()
     {
-      return count($this->ProductCondition);
+        return is_array($this->ProductCondition) ? count($this->ProductCondition) : 0;
     }
 
     /**

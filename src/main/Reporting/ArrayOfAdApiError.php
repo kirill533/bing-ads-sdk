@@ -90,7 +90,7 @@ class ArrayOfAdApiError implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdApiError);
+        return new \ArrayIterator($this->AdApiError ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdApiError implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->AdApiError);
+        return is_array($this->AdApiError) ? count($this->AdApiError) : 0;
     }
 
     /**

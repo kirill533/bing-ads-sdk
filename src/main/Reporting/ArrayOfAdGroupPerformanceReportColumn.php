@@ -90,7 +90,7 @@ class ArrayOfAdGroupPerformanceReportColumn implements \ArrayAccess, \IteratorAg
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdGroupPerformanceReportColumn);
+        return new \ArrayIterator($this->AdGroupPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdGroupPerformanceReportColumn implements \ArrayAccess, \IteratorAg
      */
     public function count()
     {
-      return count($this->AdGroupPerformanceReportColumn);
+        return is_array($this->AdGroupPerformanceReportColumn) ? count($this->AdGroupPerformanceReportColumn) : 0;
     }
 
     /**

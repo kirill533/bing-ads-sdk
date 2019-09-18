@@ -90,7 +90,7 @@ class ArrayOflong implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->long);
+        return new \ArrayIterator($this->long ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOflong implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->long);
+        return is_array($this->long) ? count($this->long) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfGoalsAndFunnelsReportColumn implements \ArrayAccess, \IteratorAggre
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->GoalsAndFunnelsReportColumn);
+        return new \ArrayIterator($this->GoalsAndFunnelsReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfGoalsAndFunnelsReportColumn implements \ArrayAccess, \IteratorAggre
      */
     public function count()
     {
-      return count($this->GoalsAndFunnelsReportColumn);
+        return is_array($this->GoalsAndFunnelsReportColumn) ? count($this->GoalsAndFunnelsReportColumn) : 0;
     }
 
     /**

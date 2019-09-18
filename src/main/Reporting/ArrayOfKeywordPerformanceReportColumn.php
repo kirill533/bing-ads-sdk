@@ -90,7 +90,7 @@ class ArrayOfKeywordPerformanceReportColumn implements \ArrayAccess, \IteratorAg
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordPerformanceReportColumn);
+        return new \ArrayIterator($this->KeywordPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordPerformanceReportColumn implements \ArrayAccess, \IteratorAg
      */
     public function count()
     {
-      return count($this->KeywordPerformanceReportColumn);
+        return is_array($this->KeywordPerformanceReportColumn) ? count($this->KeywordPerformanceReportColumn) : 0;
     }
 
     /**

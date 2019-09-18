@@ -90,7 +90,7 @@ class ArrayOfEntityNegativeKeyword implements \ArrayAccess, \IteratorAggregate, 
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->EntityNegativeKeyword);
+        return new \ArrayIterator($this->EntityNegativeKeyword ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfEntityNegativeKeyword implements \ArrayAccess, \IteratorAggregate, 
      */
     public function count()
     {
-      return count($this->EntityNegativeKeyword);
+        return is_array($this->EntityNegativeKeyword) ? count($this->EntityNegativeKeyword) : 0;
     }
 
     /**

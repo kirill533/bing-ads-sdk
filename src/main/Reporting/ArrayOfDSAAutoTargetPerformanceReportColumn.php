@@ -90,7 +90,7 @@ class ArrayOfDSAAutoTargetPerformanceReportColumn implements \ArrayAccess, \Iter
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->DSAAutoTargetPerformanceReportColumn);
+        return new \ArrayIterator($this->DSAAutoTargetPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfDSAAutoTargetPerformanceReportColumn implements \ArrayAccess, \Iter
      */
     public function count()
     {
-      return count($this->DSAAutoTargetPerformanceReportColumn);
+        return is_array($this->DSAAutoTargetPerformanceReportColumn) ? count($this->DSAAutoTargetPerformanceReportColumn) : 0;
     }
 
     /**

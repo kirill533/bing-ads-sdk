@@ -90,7 +90,7 @@ class ArrayOfPilotFeature implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->PilotFeature);
+        return new \ArrayIterator($this->PilotFeature ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfPilotFeature implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function count()
     {
-      return count($this->PilotFeature);
+        return is_array($this->PilotFeature) ? count($this->PilotFeature) : 0;
     }
 
     /**

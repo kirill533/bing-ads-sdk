@@ -90,7 +90,7 @@ class ArrayOfLanguageCriterion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->LanguageCriterion);
+        return new \ArrayIterator($this->LanguageCriterion ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfLanguageCriterion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function count()
     {
-      return count($this->LanguageCriterion);
+        return is_array($this->LanguageCriterion) ? count($this->LanguageCriterion) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfAssetLink implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AssetLink);
+        return new \ArrayIterator($this->AssetLink ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAssetLink implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->AssetLink);
+        return is_array($this->AssetLink) ? count($this->AssetLink) : 0;
     }
 
     /**

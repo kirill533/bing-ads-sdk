@@ -90,7 +90,7 @@ class ArrayOfEntityIdToParentIdAssociation implements \ArrayAccess, \IteratorAgg
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->EntityIdToParentIdAssociation);
+        return new \ArrayIterator($this->EntityIdToParentIdAssociation ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfEntityIdToParentIdAssociation implements \ArrayAccess, \IteratorAgg
      */
     public function count()
     {
-      return count($this->EntityIdToParentIdAssociation);
+        return is_array($this->EntityIdToParentIdAssociation) ? count($this->EntityIdToParentIdAssociation) : 0;
     }
 
     /**

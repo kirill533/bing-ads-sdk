@@ -90,7 +90,7 @@ class ArrayOfAdExtensionEditorialReasonCollection implements \ArrayAccess, \Iter
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdExtensionEditorialReasonCollection);
+        return new \ArrayIterator($this->AdExtensionEditorialReasonCollection ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdExtensionEditorialReasonCollection implements \ArrayAccess, \Iter
      */
     public function count()
     {
-      return count($this->AdExtensionEditorialReasonCollection);
+        return is_array($this->AdExtensionEditorialReasonCollection) ? count($this->AdExtensionEditorialReasonCollection) : 0;
     }
 
     /**

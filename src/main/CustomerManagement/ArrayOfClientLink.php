@@ -90,7 +90,7 @@ class ArrayOfClientLink implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->ClientLink);
+        return new \ArrayIterator($this->ClientLink ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfClientLink implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->ClientLink);
+        return is_array($this->ClientLink) ? count($this->ClientLink) : 0;
     }
 
     /**

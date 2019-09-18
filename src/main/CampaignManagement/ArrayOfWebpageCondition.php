@@ -90,7 +90,7 @@ class ArrayOfWebpageCondition implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->WebpageCondition);
+        return new \ArrayIterator($this->WebpageCondition ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfWebpageCondition implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function count()
     {
-      return count($this->WebpageCondition);
+        return is_array($this->WebpageCondition) ? count($this->WebpageCondition) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfAdvertiserAccount implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdvertiserAccount);
+        return new \ArrayIterator($this->AdvertiserAccount ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdvertiserAccount implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function count()
     {
-      return count($this->AdvertiserAccount);
+        return is_array($this->AdvertiserAccount) ? count($this->AdvertiserAccount) : 0;
     }
 
     /**

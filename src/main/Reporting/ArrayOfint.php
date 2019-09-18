@@ -90,7 +90,7 @@ class ArrayOfint implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->int);
+        return new \ArrayIterator($this->int ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfint implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->int);
+        return is_array($this->int) ? count($this->int) : 0;
     }
 
     /**

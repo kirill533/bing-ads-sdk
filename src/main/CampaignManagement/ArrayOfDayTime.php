@@ -90,7 +90,7 @@ class ArrayOfDayTime implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->DayTime);
+        return new \ArrayIterator($this->DayTime ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfDayTime implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->DayTime);
+        return is_array($this->DayTime) ? count($this->DayTime) : 0;
     }
 
     /**

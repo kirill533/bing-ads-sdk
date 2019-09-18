@@ -90,7 +90,7 @@ class ArrayOfRuleItem implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->RuleItem);
+        return new \ArrayIterator($this->RuleItem ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfRuleItem implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->RuleItem);
+        return is_array($this->RuleItem) ? count($this->RuleItem) : 0;
     }
 
     /**

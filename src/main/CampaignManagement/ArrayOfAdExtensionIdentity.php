@@ -90,7 +90,7 @@ class ArrayOfAdExtensionIdentity implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdExtensionIdentity);
+        return new \ArrayIterator($this->AdExtensionIdentity ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdExtensionIdentity implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function count()
     {
-      return count($this->AdExtensionIdentity);
+        return is_array($this->AdExtensionIdentity) ? count($this->AdExtensionIdentity) : 0;
     }
 
     /**

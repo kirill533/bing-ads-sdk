@@ -90,7 +90,7 @@ class ArrayOfCampaignEstimator implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->CampaignEstimator);
+        return new \ArrayIterator($this->CampaignEstimator ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCampaignEstimator implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function count()
     {
-      return count($this->CampaignEstimator);
+        return is_array($this->CampaignEstimator) ? count($this->CampaignEstimator) : 0;
     }
 
     /**

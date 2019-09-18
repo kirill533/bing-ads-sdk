@@ -90,7 +90,7 @@ class ArrayOfCallDetailReportColumn implements \ArrayAccess, \IteratorAggregate,
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->CallDetailReportColumn);
+        return new \ArrayIterator($this->CallDetailReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCallDetailReportColumn implements \ArrayAccess, \IteratorAggregate,
      */
     public function count()
     {
-      return count($this->CallDetailReportColumn);
+        return is_array($this->CallDetailReportColumn) ? count($this->CallDetailReportColumn) : 0;
     }
 
     /**

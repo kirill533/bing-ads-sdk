@@ -90,7 +90,7 @@ class ArrayOfKeywordSearchCount implements \ArrayAccess, \IteratorAggregate, \Co
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordSearchCount);
+        return new \ArrayIterator($this->KeywordSearchCount ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordSearchCount implements \ArrayAccess, \IteratorAggregate, \Co
      */
     public function count()
     {
-      return count($this->KeywordSearchCount);
+        return is_array($this->KeywordSearchCount) ? count($this->KeywordSearchCount) : 0;
     }
 
     /**

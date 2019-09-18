@@ -90,7 +90,7 @@ class ArrayOfAd implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->Ad);
+        return new \ArrayIterator($this->Ad ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAd implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->Ad);
+        return is_array($this->Ad) ? count($this->Ad) : 0;
     }
 
     /**

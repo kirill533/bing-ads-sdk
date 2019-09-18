@@ -90,7 +90,7 @@ class ArrayOfKeyValuePairOfstringstring implements \ArrayAccess, \IteratorAggreg
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeyValuePairOfstringstring);
+        return new \ArrayIterator($this->KeyValuePairOfstringstring ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeyValuePairOfstringstring implements \ArrayAccess, \IteratorAggreg
      */
     public function count()
     {
-      return count($this->KeyValuePairOfstringstring);
+        return is_array($this->KeyValuePairOfstringstring) ? count($this->KeyValuePairOfstringstring) : 0;
     }
 
     /**

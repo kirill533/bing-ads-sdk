@@ -90,7 +90,7 @@ class ArrayOfTargetSettingDetail implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->TargetSettingDetail);
+        return new \ArrayIterator($this->TargetSettingDetail ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfTargetSettingDetail implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function count()
     {
-      return count($this->TargetSettingDetail);
+        return is_array($this->TargetSettingDetail) ? count($this->TargetSettingDetail) : 0;
     }
 
     /**

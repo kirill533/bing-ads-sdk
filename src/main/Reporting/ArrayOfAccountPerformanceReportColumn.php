@@ -90,7 +90,7 @@ class ArrayOfAccountPerformanceReportColumn implements \ArrayAccess, \IteratorAg
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AccountPerformanceReportColumn);
+        return new \ArrayIterator($this->AccountPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAccountPerformanceReportColumn implements \ArrayAccess, \IteratorAg
      */
     public function count()
     {
-      return count($this->AccountPerformanceReportColumn);
+        return is_array($this->AccountPerformanceReportColumn) ? count($this->AccountPerformanceReportColumn) : 0;
     }
 
     /**

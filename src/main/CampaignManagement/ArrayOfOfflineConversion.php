@@ -90,7 +90,7 @@ class ArrayOfOfflineConversion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->OfflineConversion);
+        return new \ArrayIterator($this->OfflineConversion ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfOfflineConversion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function count()
     {
-      return count($this->OfflineConversion);
+        return is_array($this->OfflineConversion) ? count($this->OfflineConversion) : 0;
     }
 
     /**

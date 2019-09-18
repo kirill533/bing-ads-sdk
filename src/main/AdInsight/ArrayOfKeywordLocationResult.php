@@ -90,7 +90,7 @@ class ArrayOfKeywordLocationResult implements \ArrayAccess, \IteratorAggregate, 
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordLocationResult);
+        return new \ArrayIterator($this->KeywordLocationResult ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordLocationResult implements \ArrayAccess, \IteratorAggregate, 
      */
     public function count()
     {
-      return count($this->KeywordLocationResult);
+        return is_array($this->KeywordLocationResult) ? count($this->KeywordLocationResult) : 0;
     }
 
     /**

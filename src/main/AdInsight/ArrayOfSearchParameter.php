@@ -90,7 +90,7 @@ class ArrayOfSearchParameter implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->SearchParameter);
+        return new \ArrayIterator($this->SearchParameter ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfSearchParameter implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function count()
     {
-      return count($this->SearchParameter);
+        return is_array($this->SearchParameter) ? count($this->SearchParameter) : 0;
     }
 
     /**

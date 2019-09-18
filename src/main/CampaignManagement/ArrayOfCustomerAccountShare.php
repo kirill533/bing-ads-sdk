@@ -90,7 +90,7 @@ class ArrayOfCustomerAccountShare implements \ArrayAccess, \IteratorAggregate, \
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->CustomerAccountShare);
+        return new \ArrayIterator($this->CustomerAccountShare ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCustomerAccountShare implements \ArrayAccess, \IteratorAggregate, \
      */
     public function count()
     {
-      return count($this->CustomerAccountShare);
+        return is_array($this->CustomerAccountShare) ? count($this->CustomerAccountShare) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfAdGroupCriterionAction implements \ArrayAccess, \IteratorAggregate,
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdGroupCriterionAction);
+        return new \ArrayIterator($this->AdGroupCriterionAction ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdGroupCriterionAction implements \ArrayAccess, \IteratorAggregate,
      */
     public function count()
     {
-      return count($this->AdGroupCriterionAction);
+        return is_array($this->AdGroupCriterionAction) ? count($this->AdGroupCriterionAction) : 0;
     }
 
     /**

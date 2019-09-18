@@ -90,7 +90,7 @@ class ArrayOfPredicate implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->Predicate);
+        return new \ArrayIterator($this->Predicate ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfPredicate implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->Predicate);
+        return is_array($this->Predicate) ? count($this->Predicate) : 0;
     }
 
     /**

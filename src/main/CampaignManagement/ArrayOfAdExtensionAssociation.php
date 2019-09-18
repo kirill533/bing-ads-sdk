@@ -90,7 +90,7 @@ class ArrayOfAdExtensionAssociation implements \ArrayAccess, \IteratorAggregate,
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdExtensionAssociation);
+        return new \ArrayIterator($this->AdExtensionAssociation ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdExtensionAssociation implements \ArrayAccess, \IteratorAggregate,
      */
     public function count()
     {
-      return count($this->AdExtensionAssociation);
+        return is_array($this->AdExtensionAssociation) ? count($this->AdExtensionAssociation) : 0;
     }
 
     /**

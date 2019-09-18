@@ -90,7 +90,7 @@ class ArrayOfBudgetOpportunity implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->BudgetOpportunity);
+        return new \ArrayIterator($this->BudgetOpportunity ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfBudgetOpportunity implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function count()
     {
-      return count($this->BudgetOpportunity);
+        return is_array($this->BudgetOpportunity) ? count($this->BudgetOpportunity) : 0;
     }
 
     /**

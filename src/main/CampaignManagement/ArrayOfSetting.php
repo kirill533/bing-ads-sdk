@@ -90,7 +90,7 @@ class ArrayOfSetting implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->Setting);
+        return new \ArrayIterator($this->Setting ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfSetting implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->Setting);
+        return is_array($this->Setting) ? count($this->Setting) : 0;
     }
 
     /**

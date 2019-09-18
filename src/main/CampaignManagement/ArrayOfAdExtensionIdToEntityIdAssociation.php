@@ -90,7 +90,7 @@ class ArrayOfAdExtensionIdToEntityIdAssociation implements \ArrayAccess, \Iterat
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdExtensionIdToEntityIdAssociation);
+        return new \ArrayIterator($this->AdExtensionIdToEntityIdAssociation ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdExtensionIdToEntityIdAssociation implements \ArrayAccess, \Iterat
      */
     public function count()
     {
-      return count($this->AdExtensionIdToEntityIdAssociation);
+        return is_array($this->AdExtensionIdToEntityIdAssociation) ? count($this->AdExtensionIdToEntityIdAssociation) : 0;
     }
 
     /**

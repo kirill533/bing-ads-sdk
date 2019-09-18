@@ -90,7 +90,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AccountInfo);
+        return new \ArrayIterator($this->AccountInfo ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAccountInfo implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->AccountInfo);
+        return is_array($this->AccountInfo) ? count($this->AccountInfo) : 0;
     }
 
     /**

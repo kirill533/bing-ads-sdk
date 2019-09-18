@@ -90,7 +90,7 @@ class ArrayOfAuctionSegment implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AuctionSegment);
+        return new \ArrayIterator($this->AuctionSegment ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAuctionSegment implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function count()
     {
-      return count($this->AuctionSegment);
+        return is_array($this->AuctionSegment) ? count($this->AuctionSegment) : 0;
     }
 
     /**

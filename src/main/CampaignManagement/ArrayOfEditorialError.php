@@ -90,7 +90,7 @@ class ArrayOfEditorialError implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->EditorialError);
+        return new \ArrayIterator($this->EditorialError ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfEditorialError implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function count()
     {
-      return count($this->EditorialError);
+        return is_array($this->EditorialError) ? count($this->EditorialError) : 0;
     }
 
     /**

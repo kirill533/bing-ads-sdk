@@ -90,7 +90,7 @@ class ArrayOfAdPerformanceReportColumn implements \ArrayAccess, \IteratorAggrega
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdPerformanceReportColumn);
+        return new \ArrayIterator($this->AdPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdPerformanceReportColumn implements \ArrayAccess, \IteratorAggrega
      */
     public function count()
     {
-      return count($this->AdPerformanceReportColumn);
+        return is_array($this->AdPerformanceReportColumn) ? count($this->AdPerformanceReportColumn) : 0;
     }
 
     /**

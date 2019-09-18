@@ -90,7 +90,7 @@ class ArrayOfKeywordAndConfidence implements \ArrayAccess, \IteratorAggregate, \
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordAndConfidence);
+        return new \ArrayIterator($this->KeywordAndConfidence ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordAndConfidence implements \ArrayAccess, \IteratorAggregate, \
      */
     public function count()
     {
-      return count($this->KeywordAndConfidence);
+        return is_array($this->KeywordAndConfidence) ? count($this->KeywordAndConfidence) : 0;
     }
 
     /**

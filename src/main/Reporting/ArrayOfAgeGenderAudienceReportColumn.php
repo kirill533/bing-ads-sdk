@@ -90,7 +90,7 @@ class ArrayOfAgeGenderAudienceReportColumn implements \ArrayAccess, \IteratorAgg
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AgeGenderAudienceReportColumn);
+        return new \ArrayIterator($this->AgeGenderAudienceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAgeGenderAudienceReportColumn implements \ArrayAccess, \IteratorAgg
      */
     public function count()
     {
-      return count($this->AgeGenderAudienceReportColumn);
+        return is_array($this->AgeGenderAudienceReportColumn) ? count($this->AgeGenderAudienceReportColumn) : 0;
     }
 
     /**

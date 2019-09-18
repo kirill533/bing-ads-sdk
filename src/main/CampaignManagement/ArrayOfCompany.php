@@ -90,7 +90,7 @@ class ArrayOfCompany implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->Company);
+        return new \ArrayIterator($this->Company ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCompany implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->Company);
+        return is_array($this->Company) ? count($this->Company) : 0;
     }
 
     /**

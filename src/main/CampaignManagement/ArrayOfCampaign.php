@@ -90,7 +90,7 @@ class ArrayOfCampaign implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->Campaign);
+        return new \ArrayIterator($this->Campaign ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCampaign implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->Campaign);
+        return is_array($this->Campaign) ? count($this->Campaign) : 0;
     }
 
     /**

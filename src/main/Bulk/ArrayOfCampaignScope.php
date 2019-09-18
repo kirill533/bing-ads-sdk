@@ -90,7 +90,7 @@ class ArrayOfCampaignScope implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->CampaignScope);
+        return new \ArrayIterator($this->CampaignScope ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCampaignScope implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function count()
     {
-      return count($this->CampaignScope);
+        return is_array($this->CampaignScope) ? count($this->CampaignScope) : 0;
     }
 
     /**

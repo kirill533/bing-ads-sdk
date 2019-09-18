@@ -90,7 +90,7 @@ class ArrayOfKeywordCategory implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordCategory);
+        return new \ArrayIterator($this->KeywordCategory ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordCategory implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function count()
     {
-      return count($this->KeywordCategory);
+        return is_array($this->KeywordCategory) ? count($this->KeywordCategory) : 0;
     }
 
     /**

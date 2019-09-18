@@ -90,7 +90,7 @@ class ArrayOfKeywordHistoricalPerformance implements \ArrayAccess, \IteratorAggr
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordHistoricalPerformance);
+        return new \ArrayIterator($this->KeywordHistoricalPerformance ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordHistoricalPerformance implements \ArrayAccess, \IteratorAggr
      */
     public function count()
     {
-      return count($this->KeywordHistoricalPerformance);
+        return is_array($this->KeywordHistoricalPerformance) ? count($this->KeywordHistoricalPerformance) : 0;
     }
 
     /**

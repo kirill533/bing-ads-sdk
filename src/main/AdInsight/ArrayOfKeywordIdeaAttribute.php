@@ -90,7 +90,7 @@ class ArrayOfKeywordIdeaAttribute implements \ArrayAccess, \IteratorAggregate, \
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordIdeaAttribute);
+        return new \ArrayIterator($this->KeywordIdeaAttribute ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordIdeaAttribute implements \ArrayAccess, \IteratorAggregate, \
      */
     public function count()
     {
-      return count($this->KeywordIdeaAttribute);
+        return is_array($this->KeywordIdeaAttribute) ? count($this->KeywordIdeaAttribute) : 0;
     }
 
     /**

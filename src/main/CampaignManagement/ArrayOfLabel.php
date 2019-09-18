@@ -90,7 +90,7 @@ class ArrayOfLabel implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->Label);
+        return new \ArrayIterator($this->Label ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfLabel implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->Label);
+        return is_array($this->Label) ? count($this->Label) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfIdCollection implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->IdCollection);
+        return new \ArrayIterator($this->IdCollection ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfIdCollection implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function count()
     {
-      return count($this->IdCollection);
+        return is_array($this->IdCollection) ? count($this->IdCollection) : 0;
     }
 
     /**

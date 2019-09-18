@@ -90,7 +90,7 @@ class ArrayOfArrayOfOperationError implements \ArrayAccess, \IteratorAggregate, 
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->ArrayOfOperationError);
+        return new \ArrayIterator($this->ArrayOfOperationError ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfArrayOfOperationError implements \ArrayAccess, \IteratorAggregate, 
      */
     public function count()
     {
-      return count($this->ArrayOfOperationError);
+        return is_array($this->ArrayOfOperationError) ? count($this->ArrayOfOperationError) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfConversionPerformanceReportColumn implements \ArrayAccess, \Iterato
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->ConversionPerformanceReportColumn);
+        return new \ArrayIterator($this->ConversionPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfConversionPerformanceReportColumn implements \ArrayAccess, \Iterato
      */
     public function count()
     {
-      return count($this->ConversionPerformanceReportColumn);
+        return is_array($this->ConversionPerformanceReportColumn) ? count($this->ConversionPerformanceReportColumn) : 0;
     }
 
     /**

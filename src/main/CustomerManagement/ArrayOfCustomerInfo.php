@@ -90,7 +90,7 @@ class ArrayOfCustomerInfo implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->CustomerInfo);
+        return new \ArrayIterator($this->CustomerInfo ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCustomerInfo implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function count()
     {
-      return count($this->CustomerInfo);
+        return is_array($this->CustomerInfo) ? count($this->CustomerInfo) : 0;
     }
 
     /**

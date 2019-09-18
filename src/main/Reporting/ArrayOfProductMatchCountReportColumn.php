@@ -90,7 +90,7 @@ class ArrayOfProductMatchCountReportColumn implements \ArrayAccess, \IteratorAgg
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->ProductMatchCountReportColumn);
+        return new \ArrayIterator($this->ProductMatchCountReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfProductMatchCountReportColumn implements \ArrayAccess, \IteratorAgg
      */
     public function count()
     {
-      return count($this->ProductMatchCountReportColumn);
+        return is_array($this->ProductMatchCountReportColumn) ? count($this->ProductMatchCountReportColumn) : 0;
     }
 
     /**

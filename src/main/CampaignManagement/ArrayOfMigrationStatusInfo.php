@@ -90,7 +90,7 @@ class ArrayOfMigrationStatusInfo implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->MigrationStatusInfo);
+        return new \ArrayIterator($this->MigrationStatusInfo ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfMigrationStatusInfo implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function count()
     {
-      return count($this->MigrationStatusInfo);
+        return is_array($this->MigrationStatusInfo) ? count($this->MigrationStatusInfo) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfBudgetSummaryReportColumn implements \ArrayAccess, \IteratorAggrega
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->BudgetSummaryReportColumn);
+        return new \ArrayIterator($this->BudgetSummaryReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfBudgetSummaryReportColumn implements \ArrayAccess, \IteratorAggrega
      */
     public function count()
     {
-      return count($this->BudgetSummaryReportColumn);
+        return is_array($this->BudgetSummaryReportColumn) ? count($this->BudgetSummaryReportColumn) : 0;
     }
 
     /**

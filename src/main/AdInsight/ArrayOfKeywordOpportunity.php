@@ -90,7 +90,7 @@ class ArrayOfKeywordOpportunity implements \ArrayAccess, \IteratorAggregate, \Co
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordOpportunity);
+        return new \ArrayIterator($this->KeywordOpportunity ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordOpportunity implements \ArrayAccess, \IteratorAggregate, \Co
      */
     public function count()
     {
-      return count($this->KeywordOpportunity);
+        return is_array($this->KeywordOpportunity) ? count($this->KeywordOpportunity) : 0;
     }
 
     /**

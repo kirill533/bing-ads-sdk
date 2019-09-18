@@ -90,7 +90,7 @@ class ArrayOfBidLandscapePoint implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->BidLandscapePoint);
+        return new \ArrayIterator($this->BidLandscapePoint ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfBidLandscapePoint implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function count()
     {
-      return count($this->BidLandscapePoint);
+        return is_array($this->BidLandscapePoint) ? count($this->BidLandscapePoint) : 0;
     }
 
     /**

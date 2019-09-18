@@ -90,7 +90,7 @@ class ArrayOfProductSearchQueryPerformanceReportColumn implements \ArrayAccess, 
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->ProductSearchQueryPerformanceReportColumn);
+        return new \ArrayIterator($this->ProductSearchQueryPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfProductSearchQueryPerformanceReportColumn implements \ArrayAccess, 
      */
     public function count()
     {
-      return count($this->ProductSearchQueryPerformanceReportColumn);
+        return is_array($this->ProductSearchQueryPerformanceReportColumn) ? count($this->ProductSearchQueryPerformanceReportColumn) : 0;
     }
 
     /**

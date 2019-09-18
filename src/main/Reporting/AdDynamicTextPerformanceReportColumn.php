@@ -47,6 +47,9 @@ class AdDynamicTextPerformanceReportColumn
     const AdDescription = 'AdDescription';
     const AdDescription2 = 'AdDescription2';
     const AdLabels = 'AdLabels';
+    const AllConversions = 'AllConversions';
+    const AllConversionRate = 'AllConversionRate';
+    const AllCostPerConversion = 'AllCostPerConversion';
 
 
 }

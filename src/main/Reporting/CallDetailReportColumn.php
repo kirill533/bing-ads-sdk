@@ -11,8 +11,6 @@ class CallDetailReportColumn
     const StartTime = 'StartTime';
     const EndTime = 'EndTime';
     const Duration = 'Duration';
-    const CallStatus = 'CallStatus';
-    const CallTypeName = 'CallTypeName';
     const AreaCode = 'AreaCode';
     const City = 'City';
     const State = 'State';

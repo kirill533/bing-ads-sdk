@@ -31,9 +31,9 @@ class ProductDimensionPerformanceReportFilter
     protected $DeviceType = null;
 
     /**
-     * @var ArrayOfstring $LanguageCode
+     * @var LanguageReportFilter $Language
      */
-    protected $LanguageCode = null;
+    protected $Language = null;
 
     
     public function __construct()
@@ -132,20 +132,20 @@ class ProductDimensionPerformanceReportFilter
     }
 
     /**
-     * @return ArrayOfstring
+     * @return LanguageReportFilter
      */
-    public function getLanguageCode()
+    public function getLanguage()
     {
-        return $this->LanguageCode;
+        return $this->Language;
     }
 
     /**
-     * @param ArrayOfstring $LanguageCode
+     * @param LanguageReportFilter $Language
      * @return \PMG\BingAds\Reporting\ProductDimensionPerformanceReportFilter
      */
-    public function setLanguageCode($LanguageCode)
+    public function setLanguage($Language)
     {
-        $this->LanguageCode = $LanguageCode;
+        $this->Language = $Language;
         return $this;
     }
 

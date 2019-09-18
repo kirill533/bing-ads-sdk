@@ -43,6 +43,12 @@ class AdExtensionDetailReportColumn
     const CampaignStatus = 'CampaignStatus';
     const AdGroupStatus = 'AdGroupStatus';
     const AdStatus = 'AdStatus';
+    const AllConversions = 'AllConversions';
+    const AllRevenue = 'AllRevenue';
+    const AllConversionRate = 'AllConversionRate';
+    const AllCostPerConversion = 'AllCostPerConversion';
+    const AllReturnOnAdSpend = 'AllReturnOnAdSpend';
+    const AllRevenuePerConversion = 'AllRevenuePerConversion';
 
 
 }

@@ -67,6 +67,13 @@ class KeywordPerformanceReportColumn
     const MainlineBid = 'MainlineBid';
     const FirstPageBid = 'FirstPageBid';
     const FinalUrlSuffix = 'FinalUrlSuffix';
+    const BaseCampaignId = 'BaseCampaignId';
+    const AllConversions = 'AllConversions';
+    const AllRevenue = 'AllRevenue';
+    const AllConversionRate = 'AllConversionRate';
+    const AllCostPerConversion = 'AllCostPerConversion';
+    const AllReturnOnAdSpend = 'AllReturnOnAdSpend';
+    const AllRevenuePerConversion = 'AllRevenuePerConversion';
 
 
 }

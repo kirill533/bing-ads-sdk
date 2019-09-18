@@ -47,6 +47,12 @@ class AdExtensionByAdReportColumn
     const TitlePart1 = 'TitlePart1';
     const TitlePart2 = 'TitlePart2';
     const TitlePart3 = 'TitlePart3';
+    const AllConversions = 'AllConversions';
+    const AllRevenue = 'AllRevenue';
+    const AllConversionRate = 'AllConversionRate';
+    const AllCostPerConversion = 'AllCostPerConversion';
+    const AllReturnOnAdSpend = 'AllReturnOnAdSpend';
+    const AllRevenuePerConversion = 'AllRevenuePerConversion';
 
 
 }

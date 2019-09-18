@@ -33,7 +33,7 @@ class CampaignPerformanceReportColumn
     const DeviceOS = 'DeviceOS';
     const ImpressionSharePercent = 'ImpressionSharePercent';
     const ImpressionLostToBudgetPercent = 'ImpressionLostToBudgetPercent';
-    const ImpressionLostToRankPercent = 'ImpressionLostToRankPercent';
+    const ImpressionLostToRankAggPercent = 'ImpressionLostToRankAggPercent';
     const QualityScore = 'QualityScore';
     const ExpectedCtr = 'ExpectedCtr';
     const AdRelevance = 'AdRelevance';
@@ -42,15 +42,9 @@ class CampaignPerformanceReportColumn
     const HistoricalExpectedCtr = 'HistoricalExpectedCtr';
     const HistoricalAdRelevance = 'HistoricalAdRelevance';
     const HistoricalLandingPageExperience = 'HistoricalLandingPageExperience';
-    const ImpressionLostToBidPercent = 'ImpressionLostToBidPercent';
-    const ImpressionLostToAdRelevancePercent = 'ImpressionLostToAdRelevancePercent';
-    const ImpressionLostToExpectedCtrPercent = 'ImpressionLostToExpectedCtrPercent';
     const PhoneImpressions = 'PhoneImpressions';
     const PhoneCalls = 'PhoneCalls';
-    const ManualCalls = 'ManualCalls';
-    const ClickCalls = 'ClickCalls';
     const Ptr = 'Ptr';
-    const AverageCpp = 'AverageCpp';
     const Network = 'Network';
     const TopVsOther = 'TopVsOther';
     const BidMatchType = 'BidMatchType';
@@ -77,6 +71,20 @@ class CampaignPerformanceReportColumn
     const AbsoluteTopImpressionSharePercent = 'AbsoluteTopImpressionSharePercent';
     const FinalUrlSuffix = 'FinalUrlSuffix';
     const CampaignType = 'CampaignType';
+    const TopImpressionShareLostToRankPercent = 'TopImpressionShareLostToRankPercent';
+    const TopImpressionShareLostToBudgetPercent = 'TopImpressionShareLostToBudgetPercent';
+    const AbsoluteTopImpressionShareLostToRankPercent = 'AbsoluteTopImpressionShareLostToRankPercent';
+    const AbsoluteTopImpressionShareLostToBudgetPercent = 'AbsoluteTopImpressionShareLostToBudgetPercent';
+    const TopImpressionSharePercent = 'TopImpressionSharePercent';
+    const AbsoluteTopImpressionRatePercent = 'AbsoluteTopImpressionRatePercent';
+    const TopImpressionRatePercent = 'TopImpressionRatePercent';
+    const BaseCampaignId = 'BaseCampaignId';
+    const AllConversions = 'AllConversions';
+    const AllRevenue = 'AllRevenue';
+    const AllConversionRate = 'AllConversionRate';
+    const AllCostPerConversion = 'AllCostPerConversion';
+    const AllReturnOnAdSpend = 'AllReturnOnAdSpend';
+    const AllRevenuePerConversion = 'AllRevenuePerConversion';
 
 
 }

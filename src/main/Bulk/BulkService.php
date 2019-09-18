@@ -4,9 +4,9 @@ namespace PMG\BingAds\Bulk;
 
 class BulkService extends \PMG\BingAds\BingSoapClient
 {
-    const WSDL_NAMESPACE = 'https://bingads.microsoft.com/CampaignManagement/v12';
-    const WSDL_PROD = 'https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/BulkService.svc?singleWsdl';
-    const WSDL_SANDBOX = 'https://bulk.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/BulkService.svc?singleWsdl';
+    const WSDL_NAMESPACE = 'https://bingads.microsoft.com/CampaignManagement/v13';
+    const WSDL_PROD = 'https://bulk.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/BulkService.svc?singleWsdl';
+    const WSDL_SANDBOX = 'https://bulk.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/BulkService.svc?singleWsdl';
 
 
     /**
@@ -15,8 +15,6 @@ class BulkService extends \PMG\BingAds\BingSoapClient
     private static $classmap = array (
       'DownloadCampaignsByAccountIdsRequest' => 'PMG\\BingAds\\Bulk\\DownloadCampaignsByAccountIdsRequest',
       'ArrayOfDownloadEntity' => 'PMG\\BingAds\\Bulk\\ArrayOfDownloadEntity',
-      'PerformanceStatsDateRange' => 'PMG\\BingAds\\Bulk\\PerformanceStatsDateRange',
-      'Date' => 'PMG\\BingAds\\Bulk\\Date',
       'DownloadCampaignsByAccountIdsResponse' => 'PMG\\BingAds\\Bulk\\DownloadCampaignsByAccountIdsResponse',
       'ArrayOfBatchError' => 'PMG\\BingAds\\Bulk\\ArrayOfBatchError',
       'BatchError' => 'PMG\\BingAds\\Bulk\\BatchError',

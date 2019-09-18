@@ -16,9 +16,19 @@ class ResponsiveAd extends Ad
     protected $CallToAction = null;
 
     /**
+     * @var ArrayOfAssetLink $Descriptions
+     */
+    protected $Descriptions = null;
+
+    /**
      * @var string $Headline
      */
     protected $Headline = null;
+
+    /**
+     * @var ArrayOfAssetLink $Headlines
+     */
+    protected $Headlines = null;
 
     /**
      * @var ArrayOfAssetLink $Images
@@ -26,29 +36,14 @@ class ResponsiveAd extends Ad
     protected $Images = null;
 
     /**
-     * @var int $LandscapeImageMediaId
-     */
-    protected $LandscapeImageMediaId = null;
-
-    /**
-     * @var int $LandscapeLogoMediaId
-     */
-    protected $LandscapeLogoMediaId = null;
-
-    /**
-     * @var string $LongHeadline
+     * @var AssetLink $LongHeadline
      */
     protected $LongHeadline = null;
 
     /**
-     * @var int $SquareImageMediaId
+     * @var string $LongHeadlineString
      */
-    protected $SquareImageMediaId = null;
-
-    /**
-     * @var int $SquareLogoMediaId
-     */
-    protected $SquareLogoMediaId = null;
+    protected $LongHeadlineString = null;
 
     /**
      * @var string $Text
@@ -98,6 +93,24 @@ class ResponsiveAd extends Ad
     }
 
     /**
+     * @return ArrayOfAssetLink
+     */
+    public function getDescriptions()
+    {
+        return $this->Descriptions;
+    }
+
+    /**
+     * @param ArrayOfAssetLink $Descriptions
+     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
+     */
+    public function setDescriptions($Descriptions)
+    {
+        $this->Descriptions = $Descriptions;
+        return $this;
+    }
+
+    /**
      * @return string
      */
     public function getHeadline()
@@ -112,6 +125,24 @@ class ResponsiveAd extends Ad
     public function setHeadline($Headline)
     {
         $this->Headline = $Headline;
+        return $this;
+    }
+
+    /**
+     * @return ArrayOfAssetLink
+     */
+    public function getHeadlines()
+    {
+        return $this->Headlines;
+    }
+
+    /**
+     * @param ArrayOfAssetLink $Headlines
+     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
+     */
+    public function setHeadlines($Headlines)
+    {
+        $this->Headlines = $Headlines;
         return $this;
     }
 
@@ -134,43 +165,7 @@ class ResponsiveAd extends Ad
     }
 
     /**
-     * @return int
-     */
-    public function getLandscapeImageMediaId()
-    {
-        return $this->LandscapeImageMediaId;
-    }
-
-    /**
-     * @param int $LandscapeImageMediaId
-     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
-     */
-    public function setLandscapeImageMediaId($LandscapeImageMediaId)
-    {
-        $this->LandscapeImageMediaId = $LandscapeImageMediaId;
-        return $this;
-    }
-
-    /**
-     * @return int
-     */
-    public function getLandscapeLogoMediaId()
-    {
-        return $this->LandscapeLogoMediaId;
-    }
-
-    /**
-     * @param int $LandscapeLogoMediaId
-     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
-     */
-    public function setLandscapeLogoMediaId($LandscapeLogoMediaId)
-    {
-        $this->LandscapeLogoMediaId = $LandscapeLogoMediaId;
-        return $this;
-    }
-
-    /**
-     * @return string
+     * @return AssetLink
      */
     public function getLongHeadline()
     {
@@ -178,7 +173,7 @@ class ResponsiveAd extends Ad
     }
 
     /**
-     * @param string $LongHeadline
+     * @param AssetLink $LongHeadline
      * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
      */
     public function setLongHeadline($LongHeadline)
@@ -188,38 +183,20 @@ class ResponsiveAd extends Ad
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getSquareImageMediaId()
+    public function getLongHeadlineString()
     {
-        return $this->SquareImageMediaId;
+        return $this->LongHeadlineString;
     }
 
     /**
-     * @param int $SquareImageMediaId
+     * @param string $LongHeadlineString
      * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
      */
-    public function setSquareImageMediaId($SquareImageMediaId)
+    public function setLongHeadlineString($LongHeadlineString)
     {
-        $this->SquareImageMediaId = $SquareImageMediaId;
-        return $this;
-    }
-
-    /**
-     * @return int
-     */
-    public function getSquareLogoMediaId()
-    {
-        return $this->SquareLogoMediaId;
-    }
-
-    /**
-     * @param int $SquareLogoMediaId
-     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
-     */
-    public function setSquareLogoMediaId($SquareLogoMediaId)
-    {
-        $this->SquareLogoMediaId = $SquareLogoMediaId;
+        $this->LongHeadlineString = $LongHeadlineString;
         return $this;
     }
 

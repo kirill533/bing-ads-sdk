@@ -25,6 +25,11 @@ class CustomerRole
      */
     protected $LinkedAccountIds = null;
 
+    /**
+     * @var string $CustomerLinkPermission
+     */
+    protected $CustomerLinkPermission = null;
+
     
     public function __construct()
     {
@@ -100,6 +105,24 @@ class CustomerRole
     public function setLinkedAccountIds($LinkedAccountIds)
     {
         $this->LinkedAccountIds = $LinkedAccountIds;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCustomerLinkPermission()
+    {
+        return $this->CustomerLinkPermission;
+    }
+
+    /**
+     * @param string $CustomerLinkPermission
+     * @return \PMG\BingAds\CustomerManagement\CustomerRole
+     */
+    public function setCustomerLinkPermission($CustomerLinkPermission)
+    {
+        $this->CustomerLinkPermission = $CustomerLinkPermission;
         return $this;
     }
 

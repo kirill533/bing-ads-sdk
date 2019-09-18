@@ -16,6 +16,11 @@ class ConversionGoal
     protected $CountType = null;
 
     /**
+     * @var boolean $ExcludeFromBidding
+     */
+    protected $ExcludeFromBidding = null;
+
+    /**
      * @var int $Id
      */
     protected $Id = null;
@@ -94,6 +99,24 @@ class ConversionGoal
     public function setCountType($CountType)
     {
         $this->CountType = $CountType;
+        return $this;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getExcludeFromBidding()
+    {
+        return $this->ExcludeFromBidding;
+    }
+
+    /**
+     * @param boolean $ExcludeFromBidding
+     * @return \PMG\BingAds\CampaignManagement\ConversionGoal
+     */
+    public function setExcludeFromBidding($ExcludeFromBidding)
+    {
+        $this->ExcludeFromBidding = $ExcludeFromBidding;
         return $this;
     }
 

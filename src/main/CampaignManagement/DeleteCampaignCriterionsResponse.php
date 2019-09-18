@@ -6,41 +6,16 @@ class DeleteCampaignCriterionsResponse
 {
 
     /**
-     * @var boolean $IsMigrated
-     */
-    protected $IsMigrated = null;
-
-    /**
      * @var ArrayOfBatchError $PartialErrors
      */
     protected $PartialErrors = null;
 
     /**
-     * @param boolean $IsMigrated
      * @param ArrayOfBatchError $PartialErrors
      */
-    public function __construct($IsMigrated = null, $PartialErrors = null)
+    public function __construct($PartialErrors = null)
     {
-    $this->IsMigrated = $IsMigrated;
     $this->PartialErrors = $PartialErrors;
-    }
-
-    /**
-     * @return boolean
-     */
-    public function getIsMigrated()
-    {
-        return $this->IsMigrated;
-    }
-
-    /**
-     * @param boolean $IsMigrated
-     * @return \PMG\BingAds\CampaignManagement\DeleteCampaignCriterionsResponse
-     */
-    public function setIsMigrated($IsMigrated)
-    {
-        $this->IsMigrated = $IsMigrated;
-        return $this;
     }
 
     /**

@@ -41,6 +41,12 @@ class PublisherUsagePerformanceReportColumn
     const AccountStatus = 'AccountStatus';
     const CampaignStatus = 'CampaignStatus';
     const AdGroupStatus = 'AdGroupStatus';
+    const AllConversions = 'AllConversions';
+    const AllRevenue = 'AllRevenue';
+    const AllConversionRate = 'AllConversionRate';
+    const AllCostPerConversion = 'AllCostPerConversion';
+    const AllReturnOnAdSpend = 'AllReturnOnAdSpend';
+    const AllRevenuePerConversion = 'AllRevenuePerConversion';
 
 
 }

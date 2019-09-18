@@ -12,6 +12,7 @@ class InsertionOrderStatus
     const Canceled = 'Canceled';
     const NotStarted = 'NotStarted';
     const Exhausted = 'Exhausted';
+    const Queued = 'Queued';
 
 
 }

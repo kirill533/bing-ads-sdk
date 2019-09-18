@@ -41,11 +41,6 @@ class DownloadCampaignsByAccountIdsRequest
     protected $LastSyncTimeInUTC = null;
 
     /**
-     * @var PerformanceStatsDateRange $PerformanceStatsDateRange
-     */
-    protected $PerformanceStatsDateRange = null;
-
-    /**
      * @param ArrayOflong $AccountIds
      * @param CompressionType $CompressionType
      * @param DataScope $DataScope
@@ -53,9 +48,8 @@ class DownloadCampaignsByAccountIdsRequest
      * @param DownloadFileType $DownloadFileType
      * @param string $FormatVersion
      * @param \DateTime $LastSyncTimeInUTC
-     * @param PerformanceStatsDateRange $PerformanceStatsDateRange
      */
-    public function __construct($AccountIds = null, $CompressionType = null, $DataScope = null, $DownloadEntities = null, $DownloadFileType = null, $FormatVersion = null, \DateTime $LastSyncTimeInUTC = null, $PerformanceStatsDateRange = null)
+    public function __construct($AccountIds = null, $CompressionType = null, $DataScope = null, $DownloadEntities = null, $DownloadFileType = null, $FormatVersion = null, \DateTime $LastSyncTimeInUTC = null)
     {
     $this->AccountIds = $AccountIds;
     $this->CompressionType = $CompressionType;
@@ -64,7 +58,6 @@ class DownloadCampaignsByAccountIdsRequest
     $this->DownloadFileType = $DownloadFileType;
     $this->FormatVersion = $FormatVersion;
         $this->LastSyncTimeInUTC = null === $LastSyncTimeInUTC ? null : $LastSyncTimeInUTC->format(\DateTime::ATOM);
-    $this->PerformanceStatsDateRange = $PerformanceStatsDateRange;
     }
 
     /**
@@ -197,24 +190,6 @@ class DownloadCampaignsByAccountIdsRequest
     public function setLastSyncTimeInUTC(\DateTime $LastSyncTimeInUTC)
     {
         $this->LastSyncTimeInUTC = $LastSyncTimeInUTC->format(\DateTime::ATOM);
-        return $this;
-    }
-
-    /**
-     * @return PerformanceStatsDateRange
-     */
-    public function getPerformanceStatsDateRange()
-    {
-        return $this->PerformanceStatsDateRange;
-    }
-
-    /**
-     * @param PerformanceStatsDateRange $PerformanceStatsDateRange
-     * @return \PMG\BingAds\Bulk\DownloadCampaignsByAccountIdsRequest
-     */
-    public function setPerformanceStatsDateRange($PerformanceStatsDateRange)
-    {
-        $this->PerformanceStatsDateRange = $PerformanceStatsDateRange;
         return $this;
     }
 

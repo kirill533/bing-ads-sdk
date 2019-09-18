@@ -26,11 +26,7 @@ class ShareOfVoiceReportColumn
     const AveragePosition = 'AveragePosition';
     const ImpressionSharePercent = 'ImpressionSharePercent';
     const ImpressionLostToBudgetPercent = 'ImpressionLostToBudgetPercent';
-    const ImpressionLostToRankPercent = 'ImpressionLostToRankPercent';
-    const ImpressionLostToAdRelevancePercent = 'ImpressionLostToAdRelevancePercent';
-    const ImpressionLostToExpectedCtrPercent = 'ImpressionLostToExpectedCtrPercent';
-    const ImpressionLostToRelevancePercent = 'ImpressionLostToRelevancePercent';
-    const ImpressionLostToBidPercent = 'ImpressionLostToBidPercent';
+    const ImpressionLostToRankAggPercent = 'ImpressionLostToRankAggPercent';
     const CurrentMaxCpc = 'CurrentMaxCpc';
     const QualityScore = 'QualityScore';
     const ExpectedCtr = 'ExpectedCtr';
@@ -50,6 +46,18 @@ class ShareOfVoiceReportColumn
     const BidStrategyType = 'BidStrategyType';
     const KeywordLabels = 'KeywordLabels';
     const ExactMatchImpressionSharePercent = 'ExactMatchImpressionSharePercent';
+    const TopImpressionShareLostToRankPercent = 'TopImpressionShareLostToRankPercent';
+    const TopImpressionShareLostToBudgetPercent = 'TopImpressionShareLostToBudgetPercent';
+    const AbsoluteTopImpressionShareLostToRankPercent = 'AbsoluteTopImpressionShareLostToRankPercent';
+    const AbsoluteTopImpressionShareLostToBudgetPercent = 'AbsoluteTopImpressionShareLostToBudgetPercent';
+    const AbsoluteTopImpressionSharePercent = 'AbsoluteTopImpressionSharePercent';
+    const TopImpressionSharePercent = 'TopImpressionSharePercent';
+    const AbsoluteTopImpressionRatePercent = 'AbsoluteTopImpressionRatePercent';
+    const TopImpressionRatePercent = 'TopImpressionRatePercent';
+    const BaseCampaignId = 'BaseCampaignId';
+    const AllConversions = 'AllConversions';
+    const AllConversionRate = 'AllConversionRate';
+    const AllCostPerConversion = 'AllCostPerConversion';
 
 
 }

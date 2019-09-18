@@ -16,7 +16,7 @@ class BudgetSummaryReportRequest extends ReportRequest
     protected $Scope = null;
 
     /**
-     * @var BudgetSummaryReportTime $Time
+     * @var ReportTime $Time
      */
     protected $Time = null;
 
@@ -63,7 +63,7 @@ class BudgetSummaryReportRequest extends ReportRequest
     }
 
     /**
-     * @return BudgetSummaryReportTime
+     * @return ReportTime
      */
     public function getTime()
     {
@@ -71,7 +71,7 @@ class BudgetSummaryReportRequest extends ReportRequest
     }
 
     /**
-     * @param BudgetSummaryReportTime $Time
+     * @param ReportTime $Time
      * @return \PMG\BingAds\Reporting\BudgetSummaryReportRequest
      */
     public function setTime($Time)

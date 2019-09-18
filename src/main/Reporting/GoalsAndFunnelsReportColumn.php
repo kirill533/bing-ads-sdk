@@ -16,9 +16,9 @@ class GoalsAndFunnelsReportColumn
     const Keyword = 'Keyword';
     const KeywordId = 'KeywordId';
     const Goal = 'Goal';
-    const Conversions = 'Conversions';
+    const AllConversions = 'AllConversions';
     const Assists = 'Assists';
-    const Revenue = 'Revenue';
+    const AllRevenue = 'AllRevenue';
     const GoalId = 'GoalId';
     const DeviceType = 'DeviceType';
     const DeviceOS = 'DeviceOS';

@@ -6,14 +6,24 @@ class ClientLink
 {
 
     /**
-     * @var int $ClientAccountId
+     * @var string $Type
      */
-    protected $ClientAccountId = null;
+    protected $Type = null;
 
     /**
-     * @var string $ClientAccountNumber
+     * @var int $ClientEntityId
      */
-    protected $ClientAccountNumber = null;
+    protected $ClientEntityId = null;
+
+    /**
+     * @var string $ClientEntityNumber
+     */
+    protected $ClientEntityNumber = null;
+
+    /**
+     * @var string $ClientEntityName
+     */
+    protected $ClientEntityName = null;
 
     /**
      * @var int $ManagingCustomerId
@@ -24,6 +34,11 @@ class ClientLink
      * @var string $ManagingCustomerNumber
      */
     protected $ManagingCustomerNumber = null;
+
+    /**
+     * @var string $ManagingCustomerName
+     */
+    protected $ManagingCustomerName = null;
 
     /**
      * @var string $Note
@@ -90,6 +105,11 @@ class ClientLink
      */
     protected $ForwardCompatibilityMap = null;
 
+    /**
+     * @var string $CustomerLinkPermission
+     */
+    protected $CustomerLinkPermission = null;
+
     
     public function __construct()
     {
@@ -97,38 +117,74 @@ class ClientLink
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function getClientAccountId()
+    public function getType()
     {
-        return $this->ClientAccountId;
+        return $this->Type;
     }
 
     /**
-     * @param int $ClientAccountId
+     * @param string $Type
      * @return \PMG\BingAds\CustomerManagement\ClientLink
      */
-    public function setClientAccountId($ClientAccountId)
+    public function setType($Type)
     {
-        $this->ClientAccountId = $ClientAccountId;
+        $this->Type = $Type;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getClientEntityId()
+    {
+        return $this->ClientEntityId;
+    }
+
+    /**
+     * @param int $ClientEntityId
+     * @return \PMG\BingAds\CustomerManagement\ClientLink
+     */
+    public function setClientEntityId($ClientEntityId)
+    {
+        $this->ClientEntityId = $ClientEntityId;
         return $this;
     }
 
     /**
      * @return string
      */
-    public function getClientAccountNumber()
+    public function getClientEntityNumber()
     {
-        return $this->ClientAccountNumber;
+        return $this->ClientEntityNumber;
     }
 
     /**
-     * @param string $ClientAccountNumber
+     * @param string $ClientEntityNumber
      * @return \PMG\BingAds\CustomerManagement\ClientLink
      */
-    public function setClientAccountNumber($ClientAccountNumber)
+    public function setClientEntityNumber($ClientEntityNumber)
     {
-        $this->ClientAccountNumber = $ClientAccountNumber;
+        $this->ClientEntityNumber = $ClientEntityNumber;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getClientEntityName()
+    {
+        return $this->ClientEntityName;
+    }
+
+    /**
+     * @param string $ClientEntityName
+     * @return \PMG\BingAds\CustomerManagement\ClientLink
+     */
+    public function setClientEntityName($ClientEntityName)
+    {
+        $this->ClientEntityName = $ClientEntityName;
         return $this;
     }
 
@@ -165,6 +221,24 @@ class ClientLink
     public function setManagingCustomerNumber($ManagingCustomerNumber)
     {
         $this->ManagingCustomerNumber = $ManagingCustomerNumber;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getManagingCustomerName()
+    {
+        return $this->ManagingCustomerName;
+    }
+
+    /**
+     * @param string $ManagingCustomerName
+     * @return \PMG\BingAds\CustomerManagement\ClientLink
+     */
+    public function setManagingCustomerName($ManagingCustomerName)
+    {
+        $this->ManagingCustomerName = $ManagingCustomerName;
         return $this;
     }
 
@@ -413,6 +487,24 @@ class ClientLink
     public function setForwardCompatibilityMap($ForwardCompatibilityMap)
     {
         $this->ForwardCompatibilityMap = $ForwardCompatibilityMap;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCustomerLinkPermission()
+    {
+        return $this->CustomerLinkPermission;
+    }
+
+    /**
+     * @param string $CustomerLinkPermission
+     * @return \PMG\BingAds\CustomerManagement\ClientLink
+     */
+    public function setCustomerLinkPermission($CustomerLinkPermission)
+    {
+        $this->CustomerLinkPermission = $CustomerLinkPermission;
         return $this;
     }
 

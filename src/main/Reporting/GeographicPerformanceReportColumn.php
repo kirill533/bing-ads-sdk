@@ -51,6 +51,13 @@ class GeographicPerformanceReportColumn
     const County = 'County';
     const PostalCode = 'PostalCode';
     const LocationId = 'LocationId';
+    const BaseCampaignId = 'BaseCampaignId';
+    const AllConversions = 'AllConversions';
+    const AllRevenue = 'AllRevenue';
+    const AllConversionRate = 'AllConversionRate';
+    const AllCostPerConversion = 'AllCostPerConversion';
+    const AllReturnOnAdSpend = 'AllReturnOnAdSpend';
+    const AllRevenuePerConversion = 'AllRevenuePerConversion';
 
 
 }

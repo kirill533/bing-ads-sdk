@@ -28,6 +28,8 @@ class ProfessionalDemographicsAudienceReportColumn
     const CampaignStatus = 'CampaignStatus';
     const AdGroupStatus = 'AdGroupStatus';
     const AveragePosition = 'AveragePosition';
+    const AllConversions = 'AllConversions';
+    const AllRevenue = 'AllRevenue';
 
 
 }

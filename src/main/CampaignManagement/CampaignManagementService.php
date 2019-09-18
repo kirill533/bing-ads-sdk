@@ -4,9 +4,9 @@ namespace PMG\BingAds\CampaignManagement;
 
 class CampaignManagementService extends \PMG\BingAds\BingSoapClient
 {
-    const WSDL_NAMESPACE = 'https://bingads.microsoft.com/CampaignManagement/v12';
-    const WSDL_PROD = 'https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc?singleWsdl';
-    const WSDL_SANDBOX = 'https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v12/CampaignManagementService.svc?singleWsdl';
+    const WSDL_NAMESPACE = 'https://bingads.microsoft.com/CampaignManagement/v13';
+    const WSDL_PROD = 'https://campaign.api.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc?singleWsdl';
+    const WSDL_SANDBOX = 'https://campaign.api.sandbox.bingads.microsoft.com/Api/Advertiser/CampaignManagement/v13/CampaignManagementService.svc?singleWsdl';
 
 
     /**
@@ -42,6 +42,8 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'ManualCpcBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\ManualCpcBiddingScheme',
       'EnhancedCpcBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\EnhancedCpcBiddingScheme',
       'InheritFromParentBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\InheritFromParentBiddingScheme',
+      'TargetRoasBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\TargetRoasBiddingScheme',
+      'MaxRoasBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\MaxRoasBiddingScheme',
       'ArrayOfSetting' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfSetting',
       'Setting' => 'PMG\\BingAds\\CampaignManagement\\Setting',
       'ShoppingSetting' => 'PMG\\BingAds\\CampaignManagement\\ShoppingSetting',
@@ -335,6 +337,11 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'AddAudiencesRequest' => 'PMG\\BingAds\\CampaignManagement\\AddAudiencesRequest',
       'ArrayOfAudience' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfAudience',
       'Audience' => 'PMG\\BingAds\\CampaignManagement\\Audience',
+      'CustomerShare' => 'PMG\\BingAds\\CampaignManagement\\CustomerShare',
+      'ArrayOfCustomerAccountShare' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfCustomerAccountShare',
+      'CustomerAccountShare' => 'PMG\\BingAds\\CampaignManagement\\CustomerAccountShare',
+      'ArrayOfCustomerAccountShareAssociation' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfCustomerAccountShareAssociation',
+      'CustomerAccountShareAssociation' => 'PMG\\BingAds\\CampaignManagement\\CustomerAccountShareAssociation',
       'RemarketingList' => 'PMG\\BingAds\\CampaignManagement\\RemarketingList',
       'RemarketingRule' => 'PMG\\BingAds\\CampaignManagement\\RemarketingRule',
       'PageVisitorsRule' => 'PMG\\BingAds\\CampaignManagement\\PageVisitorsRule',

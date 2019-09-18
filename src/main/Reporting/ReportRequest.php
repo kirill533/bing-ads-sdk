@@ -26,11 +26,6 @@ class ReportRequest
     protected $Format = null;
 
     /**
-     * @var ReportLanguage $Language
-     */
-    protected $Language = null;
-
-    /**
      * @var string $ReportName
      */
     protected $ReportName = null;
@@ -115,24 +110,6 @@ class ReportRequest
     public function setFormat($Format)
     {
         $this->Format = $Format;
-        return $this;
-    }
-
-    /**
-     * @return ReportLanguage
-     */
-    public function getLanguage()
-    {
-        return $this->Language;
-    }
-
-    /**
-     * @param ReportLanguage $Language
-     * @return \PMG\BingAds\Reporting\ReportRequest
-     */
-    public function setLanguage($Language)
-    {
-        $this->Language = $Language;
         return $this;
     }
 

@@ -11,6 +11,11 @@ class Audience
     protected $AudienceNetworkSize = null;
 
     /**
+     * @var CustomerShare $CustomerShare
+     */
+    protected $CustomerShare = null;
+
+    /**
      * @var string $Description
      */
     protected $Description = null;
@@ -81,6 +86,24 @@ class Audience
     public function setAudienceNetworkSize($AudienceNetworkSize)
     {
         $this->AudienceNetworkSize = $AudienceNetworkSize;
+        return $this;
+    }
+
+    /**
+     * @return CustomerShare
+     */
+    public function getCustomerShare()
+    {
+        return $this->CustomerShare;
+    }
+
+    /**
+     * @param CustomerShare $CustomerShare
+     * @return \PMG\BingAds\CampaignManagement\Audience
+     */
+    public function setCustomerShare($CustomerShare)
+    {
+        $this->CustomerShare = $CustomerShare;
         return $this;
     }
 

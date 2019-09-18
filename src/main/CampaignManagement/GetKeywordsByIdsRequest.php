@@ -16,20 +16,13 @@ class GetKeywordsByIdsRequest
     protected $KeywordIds = null;
 
     /**
-     * @var KeywordAdditionalField $ReturnAdditionalFields
-     */
-    protected $ReturnAdditionalFields = null;
-
-    /**
      * @param int $AdGroupId
      * @param ArrayOflong $KeywordIds
-     * @param KeywordAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($AdGroupId = null, $KeywordIds = null, $ReturnAdditionalFields = null)
+    public function __construct($AdGroupId = null, $KeywordIds = null)
     {
     $this->AdGroupId = $AdGroupId;
     $this->KeywordIds = $KeywordIds;
-    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -65,24 +58,6 @@ class GetKeywordsByIdsRequest
     public function setKeywordIds($KeywordIds)
     {
         $this->KeywordIds = $KeywordIds;
-        return $this;
-    }
-
-    /**
-     * @return KeywordAdditionalField
-     */
-    public function getReturnAdditionalFields()
-    {
-        return $this->ReturnAdditionalFields;
-    }
-
-    /**
-     * @param KeywordAdditionalField $ReturnAdditionalFields
-     * @return \PMG\BingAds\CampaignManagement\GetKeywordsByIdsRequest
-     */
-    public function setReturnAdditionalFields($ReturnAdditionalFields)
-    {
-        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
         return $this;
     }
 

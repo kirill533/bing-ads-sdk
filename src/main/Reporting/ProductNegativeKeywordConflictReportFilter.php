@@ -2,18 +2,13 @@
 
 namespace PMG\BingAds\Reporting;
 
-class AgeGenderDemographicReportFilter
+class ProductNegativeKeywordConflictReportFilter
 {
 
     /**
      * @var AccountStatusReportFilter $AccountStatus
      */
     protected $AccountStatus = null;
-
-    /**
-     * @var AdDistributionReportFilter $AdDistribution
-     */
-    protected $AdDistribution = null;
 
     /**
      * @var AdGroupStatusReportFilter $AdGroupStatus
@@ -24,11 +19,6 @@ class AgeGenderDemographicReportFilter
      * @var CampaignStatusReportFilter $CampaignStatus
      */
     protected $CampaignStatus = null;
-
-    /**
-     * @var ArrayOfstring $LanguageCode
-     */
-    protected $LanguageCode = null;
 
     
     public function __construct()
@@ -46,29 +36,11 @@ class AgeGenderDemographicReportFilter
 
     /**
      * @param AccountStatusReportFilter $AccountStatus
-     * @return \PMG\BingAds\Reporting\AgeGenderDemographicReportFilter
+     * @return \PMG\BingAds\Reporting\ProductNegativeKeywordConflictReportFilter
      */
     public function setAccountStatus($AccountStatus)
     {
         $this->AccountStatus = $AccountStatus;
-        return $this;
-    }
-
-    /**
-     * @return AdDistributionReportFilter
-     */
-    public function getAdDistribution()
-    {
-        return $this->AdDistribution;
-    }
-
-    /**
-     * @param AdDistributionReportFilter $AdDistribution
-     * @return \PMG\BingAds\Reporting\AgeGenderDemographicReportFilter
-     */
-    public function setAdDistribution($AdDistribution)
-    {
-        $this->AdDistribution = $AdDistribution;
         return $this;
     }
 
@@ -82,7 +54,7 @@ class AgeGenderDemographicReportFilter
 
     /**
      * @param AdGroupStatusReportFilter $AdGroupStatus
-     * @return \PMG\BingAds\Reporting\AgeGenderDemographicReportFilter
+     * @return \PMG\BingAds\Reporting\ProductNegativeKeywordConflictReportFilter
      */
     public function setAdGroupStatus($AdGroupStatus)
     {
@@ -100,29 +72,11 @@ class AgeGenderDemographicReportFilter
 
     /**
      * @param CampaignStatusReportFilter $CampaignStatus
-     * @return \PMG\BingAds\Reporting\AgeGenderDemographicReportFilter
+     * @return \PMG\BingAds\Reporting\ProductNegativeKeywordConflictReportFilter
      */
     public function setCampaignStatus($CampaignStatus)
     {
         $this->CampaignStatus = $CampaignStatus;
-        return $this;
-    }
-
-    /**
-     * @return ArrayOfstring
-     */
-    public function getLanguageCode()
-    {
-        return $this->LanguageCode;
-    }
-
-    /**
-     * @param ArrayOfstring $LanguageCode
-     * @return \PMG\BingAds\Reporting\AgeGenderDemographicReportFilter
-     */
-    public function setLanguageCode($LanguageCode)
-    {
-        $this->LanguageCode = $LanguageCode;
         return $this;
     }
 

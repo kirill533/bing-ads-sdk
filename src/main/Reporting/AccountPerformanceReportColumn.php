@@ -30,16 +30,10 @@ class AccountPerformanceReportColumn
     const DeviceOS = 'DeviceOS';
     const ImpressionSharePercent = 'ImpressionSharePercent';
     const ImpressionLostToBudgetPercent = 'ImpressionLostToBudgetPercent';
-    const ImpressionLostToRankPercent = 'ImpressionLostToRankPercent';
-    const ImpressionLostToBidPercent = 'ImpressionLostToBidPercent';
-    const ImpressionLostToAdRelevancePercent = 'ImpressionLostToAdRelevancePercent';
-    const ImpressionLostToExpectedCtrPercent = 'ImpressionLostToExpectedCtrPercent';
+    const ImpressionLostToRankAggPercent = 'ImpressionLostToRankAggPercent';
     const PhoneImpressions = 'PhoneImpressions';
     const PhoneCalls = 'PhoneCalls';
-    const ManualCalls = 'ManualCalls';
-    const ClickCalls = 'ClickCalls';
     const Ptr = 'Ptr';
-    const AverageCpp = 'AverageCpp';
     const Network = 'Network';
     const TopVsOther = 'TopVsOther';
     const BidMatchType = 'BidMatchType';
@@ -58,6 +52,19 @@ class AccountPerformanceReportColumn
     const CustomerName = 'CustomerName';
     const ClickSharePercent = 'ClickSharePercent';
     const AbsoluteTopImpressionSharePercent = 'AbsoluteTopImpressionSharePercent';
+    const TopImpressionShareLostToRankPercent = 'TopImpressionShareLostToRankPercent';
+    const TopImpressionShareLostToBudgetPercent = 'TopImpressionShareLostToBudgetPercent';
+    const AbsoluteTopImpressionShareLostToRankPercent = 'AbsoluteTopImpressionShareLostToRankPercent';
+    const AbsoluteTopImpressionShareLostToBudgetPercent = 'AbsoluteTopImpressionShareLostToBudgetPercent';
+    const TopImpressionSharePercent = 'TopImpressionSharePercent';
+    const AbsoluteTopImpressionRatePercent = 'AbsoluteTopImpressionRatePercent';
+    const TopImpressionRatePercent = 'TopImpressionRatePercent';
+    const AllConversions = 'AllConversions';
+    const AllRevenue = 'AllRevenue';
+    const AllConversionRate = 'AllConversionRate';
+    const AllCostPerConversion = 'AllCostPerConversion';
+    const AllReturnOnAdSpend = 'AllReturnOnAdSpend';
+    const AllRevenuePerConversion = 'AllRevenuePerConversion';
 
 
 }

@@ -4,9 +4,9 @@ namespace PMG\BingAds\Reporting;
 
 class ReportingService extends \PMG\BingAds\BingSoapClient
 {
-    const WSDL_NAMESPACE = 'https://bingads.microsoft.com/Reporting/v12';
-    const WSDL_PROD = 'https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc?singleWsdl';
-    const WSDL_SANDBOX = 'https://reporting.api.sandbox.bingads.microsoft.com/Api/Advertiser/Reporting/v12/ReportingService.svc?singleWsdl';
+    const WSDL_NAMESPACE = 'https://bingads.microsoft.com/Reporting/v13';
+    const WSDL_PROD = 'https://reporting.api.bingads.microsoft.com/Api/Advertiser/Reporting/v13/ReportingService.svc?singleWsdl';
+    const WSDL_SANDBOX = 'https://reporting.api.sandbox.bingads.microsoft.com/Api/Advertiser/Reporting/v13/ReportingService.svc?singleWsdl';
 
 
     /**
@@ -49,10 +49,6 @@ class ReportingService extends \PMG\BingAds\BingSoapClient
       'DestinationUrlPerformanceReportFilter' => 'PMG\\BingAds\\Reporting\\DestinationUrlPerformanceReportFilter',
       'BudgetSummaryReportRequest' => 'PMG\\BingAds\\Reporting\\BudgetSummaryReportRequest',
       'ArrayOfBudgetSummaryReportColumn' => 'PMG\\BingAds\\Reporting\\ArrayOfBudgetSummaryReportColumn',
-      'BudgetSummaryReportTime' => 'PMG\\BingAds\\Reporting\\BudgetSummaryReportTime',
-      'AgeGenderDemographicReportRequest' => 'PMG\\BingAds\\Reporting\\AgeGenderDemographicReportRequest',
-      'ArrayOfAgeGenderDemographicReportColumn' => 'PMG\\BingAds\\Reporting\\ArrayOfAgeGenderDemographicReportColumn',
-      'AgeGenderDemographicReportFilter' => 'PMG\\BingAds\\Reporting\\AgeGenderDemographicReportFilter',
       'AgeGenderAudienceReportRequest' => 'PMG\\BingAds\\Reporting\\AgeGenderAudienceReportRequest',
       'ArrayOfAgeGenderAudienceReportColumn' => 'PMG\\BingAds\\Reporting\\ArrayOfAgeGenderAudienceReportColumn',
       'AgeGenderAudienceReportFilter' => 'PMG\\BingAds\\Reporting\\AgeGenderAudienceReportFilter',
@@ -109,6 +105,9 @@ class ReportingService extends \PMG\BingAds\BingSoapClient
       'ProductSearchQueryPerformanceReportFilter' => 'PMG\\BingAds\\Reporting\\ProductSearchQueryPerformanceReportFilter',
       'ProductMatchCountReportRequest' => 'PMG\\BingAds\\Reporting\\ProductMatchCountReportRequest',
       'ArrayOfProductMatchCountReportColumn' => 'PMG\\BingAds\\Reporting\\ArrayOfProductMatchCountReportColumn',
+      'ProductNegativeKeywordConflictReportRequest' => 'PMG\\BingAds\\Reporting\\ProductNegativeKeywordConflictReportRequest',
+      'ArrayOfProductNegativeKeywordConflictReportColumn' => 'PMG\\BingAds\\Reporting\\ArrayOfProductNegativeKeywordConflictReportColumn',
+      'ProductNegativeKeywordConflictReportFilter' => 'PMG\\BingAds\\Reporting\\ProductNegativeKeywordConflictReportFilter',
       'CallDetailReportRequest' => 'PMG\\BingAds\\Reporting\\CallDetailReportRequest',
       'ArrayOfCallDetailReportColumn' => 'PMG\\BingAds\\Reporting\\ArrayOfCallDetailReportColumn',
       'CallDetailReportFilter' => 'PMG\\BingAds\\Reporting\\CallDetailReportFilter',
@@ -133,8 +132,8 @@ class ReportingService extends \PMG\BingAds\BingSoapClient
       'PollGenerateReportResponse' => 'PMG\\BingAds\\Reporting\\PollGenerateReportResponse',
       'ReportRequestStatus' => 'PMG\\BingAds\\Reporting\\ReportRequestStatus',
       'ArrayOflong' => 'PMG\\BingAds\\Reporting\\ArrayOflong',
-      'ArrayOfstring' => 'PMG\\BingAds\\Reporting\\ArrayOfstring',
       'ArrayOfint' => 'PMG\\BingAds\\Reporting\\ArrayOfint',
+      'ArrayOfstring' => 'PMG\\BingAds\\Reporting\\ArrayOfstring',
       'ArrayOfAdApiError' => 'PMG\\BingAds\\Reporting\\ArrayOfAdApiError',
       'AdApiError' => 'PMG\\BingAds\\Reporting\\AdApiError',
       'ApplicationFault' => 'PMG\\BingAds\\Reporting\\ApplicationFault',

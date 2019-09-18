@@ -27,6 +27,9 @@ class AgeGenderAudienceReportColumn
     const AccountStatus = 'AccountStatus';
     const CampaignStatus = 'CampaignStatus';
     const AdGroupStatus = 'AdGroupStatus';
+    const BaseCampaignId = 'BaseCampaignId';
+    const AllConversions = 'AllConversions';
+    const AllRevenue = 'AllRevenue';
 
 
 }

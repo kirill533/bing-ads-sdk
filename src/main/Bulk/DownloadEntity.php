@@ -41,9 +41,6 @@ class DownloadEntity
     const SitelinkAdExtensions = 'SitelinkAdExtensions';
     const CampaignSitelinkAdExtensions = 'CampaignSitelinkAdExtensions';
     const AdGroupSitelinkAdExtensions = 'AdGroupSitelinkAdExtensions';
-    const ActionLinkAdExtensions = 'ActionLinkAdExtensions';
-    const CampaignActionLinkAdExtensions = 'CampaignActionLinkAdExtensions';
-    const AdGroupActionLinkAdExtensions = 'AdGroupActionLinkAdExtensions';
     const StructuredSnippetAdExtensions = 'StructuredSnippetAdExtensions';
     const CampaignStructuredSnippetAdExtensions = 'CampaignStructuredSnippetAdExtensions';
     const AdGroupStructuredSnippetAdExtensions = 'AdGroupStructuredSnippetAdExtensions';
@@ -85,7 +82,6 @@ class DownloadEntity
     const AccountReviewAdExtensions = 'AccountReviewAdExtensions';
     const AccountCalloutAdExtensions = 'AccountCalloutAdExtensions';
     const AccountSitelinkAdExtensions = 'AccountSitelinkAdExtensions';
-    const AccountActionLinkAdExtensions = 'AccountActionLinkAdExtensions';
     const AccountStructuredSnippetAdExtensions = 'AccountStructuredSnippetAdExtensions';
     const ResponsiveAds = 'ResponsiveAds';
     const ResponsiveAdLabels = 'ResponsiveAdLabels';

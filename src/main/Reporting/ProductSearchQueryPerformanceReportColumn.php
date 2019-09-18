@@ -45,6 +45,12 @@ class ProductSearchQueryPerformanceReportColumn
     const CustomerName = 'CustomerName';
     const AssistedImpressions = 'AssistedImpressions';
     const AssistedClicks = 'AssistedClicks';
+    const AssistedConversions = 'AssistedConversions';
+    const AllConversions = 'AllConversions';
+    const AllRevenue = 'AllRevenue';
+    const AllConversionRate = 'AllConversionRate';
+    const AllCostPerConversion = 'AllCostPerConversion';
+    const AllRevenuePerConversion = 'AllRevenuePerConversion';
 
 
 }

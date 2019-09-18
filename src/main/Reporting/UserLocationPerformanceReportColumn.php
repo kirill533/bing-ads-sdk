@@ -53,6 +53,12 @@ class UserLocationPerformanceReportColumn
     const QueryIntentPostalCode = 'QueryIntentPostalCode';
     const LocationId = 'LocationId';
     const QueryIntentLocationId = 'QueryIntentLocationId';
+    const AllConversions = 'AllConversions';
+    const AllRevenue = 'AllRevenue';
+    const AllConversionRate = 'AllConversionRate';
+    const AllCostPerConversion = 'AllCostPerConversion';
+    const AllReturnOnAdSpend = 'AllReturnOnAdSpend';
+    const AllRevenuePerConversion = 'AllRevenuePerConversion';
 
 
 }

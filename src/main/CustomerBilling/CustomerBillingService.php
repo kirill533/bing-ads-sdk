@@ -4,9 +4,9 @@ namespace PMG\BingAds\CustomerBilling;
 
 class CustomerBillingService extends \PMG\BingAds\BingSoapClient
 {
-    const WSDL_NAMESPACE = 'https://bingads.microsoft.com/Billing/v12';
-    const WSDL_PROD = 'https://clientcenter.api.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc?singleWsdl';
-    const WSDL_SANDBOX = 'https://clientcenter.api.sandbox.bingads.microsoft.com/Api/Billing/v12/CustomerBillingService.svc?singleWsdl';
+    const WSDL_NAMESPACE = 'https://bingads.microsoft.com/Billing/v13';
+    const WSDL_PROD = 'https://clientcenter.api.bingads.microsoft.com/Api/Billing/v13/CustomerBillingService.svc?singleWsdl';
+    const WSDL_SANDBOX = 'https://clientcenter.api.sandbox.bingads.microsoft.com/Api/Billing/v13/CustomerBillingService.svc?singleWsdl';
 
 
     /**
@@ -21,8 +21,6 @@ class CustomerBillingService extends \PMG\BingAds\BingSoapClient
       'AddInsertionOrderResponse' => 'PMG\\BingAds\\CustomerBilling\\AddInsertionOrderResponse',
       'UpdateInsertionOrderRequest' => 'PMG\\BingAds\\CustomerBilling\\UpdateInsertionOrderRequest',
       'UpdateInsertionOrderResponse' => 'PMG\\BingAds\\CustomerBilling\\UpdateInsertionOrderResponse',
-      'GetInsertionOrdersByAccountRequest' => 'PMG\\BingAds\\CustomerBilling\\GetInsertionOrdersByAccountRequest',
-      'GetInsertionOrdersByAccountResponse' => 'PMG\\BingAds\\CustomerBilling\\GetInsertionOrdersByAccountResponse',
       'SearchInsertionOrdersRequest' => 'PMG\\BingAds\\CustomerBilling\\SearchInsertionOrdersRequest',
       'SearchInsertionOrdersResponse' => 'PMG\\BingAds\\CustomerBilling\\SearchInsertionOrdersResponse',
       'GetAccountMonthlySpendRequest' => 'PMG\\BingAds\\CustomerBilling\\GetAccountMonthlySpendRequest',
@@ -34,12 +32,12 @@ class CustomerBillingService extends \PMG\BingAds\BingSoapClient
       'BillingDocument' => 'PMG\\BingAds\\CustomerBilling\\BillingDocument',
       'InsertionOrder' => 'PMG\\BingAds\\CustomerBilling\\InsertionOrder',
       'InsertionOrderPendingChanges' => 'PMG\\BingAds\\CustomerBilling\\InsertionOrderPendingChanges',
-      'ArrayOfInsertionOrder' => 'PMG\\BingAds\\CustomerBilling\\ArrayOfInsertionOrder',
       'ArrayOfPredicate' => 'PMG\\BingAds\\CustomerBilling\\ArrayOfPredicate',
       'Predicate' => 'PMG\\BingAds\\CustomerBilling\\Predicate',
       'ArrayOfOrderBy' => 'PMG\\BingAds\\CustomerBilling\\ArrayOfOrderBy',
       'OrderBy' => 'PMG\\BingAds\\CustomerBilling\\OrderBy',
       'Paging' => 'PMG\\BingAds\\CustomerBilling\\Paging',
+      'ArrayOfInsertionOrder' => 'PMG\\BingAds\\CustomerBilling\\ArrayOfInsertionOrder',
       'ArrayOfAdApiError' => 'PMG\\BingAds\\CustomerBilling\\ArrayOfAdApiError',
       'AdApiError' => 'PMG\\BingAds\\CustomerBilling\\AdApiError',
       'ApiBatchFault' => 'PMG\\BingAds\\CustomerBilling\\ApiBatchFault',
@@ -99,15 +97,6 @@ class CustomerBillingService extends \PMG\BingAds\BingSoapClient
     public function updateInsertionOrder(UpdateInsertionOrderRequest $parameters)
     {
         return $this->__soapCall("UpdateInsertionOrder", [$parameters]);
-    }
-
-    /**
-     * @param GetInsertionOrdersByAccountRequest $parameters
-     * @return GetInsertionOrdersByAccountResponse
-     */
-    public function getInsertionOrdersByAccount(GetInsertionOrdersByAccountRequest $parameters)
-    {
-        return $this->__soapCall("GetInsertionOrdersByAccount", [$parameters]);
     }
 
     /**

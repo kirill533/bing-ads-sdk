@@ -6,41 +6,16 @@ class UpdateAdGroupCriterionsResponse
 {
 
     /**
-     * @var boolean $IsMigrated
-     */
-    protected $IsMigrated = null;
-
-    /**
      * @var ArrayOfBatchErrorCollection $NestedPartialErrors
      */
     protected $NestedPartialErrors = null;
 
     /**
-     * @param boolean $IsMigrated
      * @param ArrayOfBatchErrorCollection $NestedPartialErrors
      */
-    public function __construct($IsMigrated = null, $NestedPartialErrors = null)
+    public function __construct($NestedPartialErrors = null)
     {
-    $this->IsMigrated = $IsMigrated;
     $this->NestedPartialErrors = $NestedPartialErrors;
-    }
-
-    /**
-     * @return boolean
-     */
-    public function getIsMigrated()
-    {
-        return $this->IsMigrated;
-    }
-
-    /**
-     * @param boolean $IsMigrated
-     * @return \PMG\BingAds\CampaignManagement\UpdateAdGroupCriterionsResponse
-     */
-    public function setIsMigrated($IsMigrated)
-    {
-        $this->IsMigrated = $IsMigrated;
-        return $this;
     }
 
     /**

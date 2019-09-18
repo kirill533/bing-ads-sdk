@@ -4,9 +4,9 @@ namespace PMG\BingAds\CustomerManagement;
 
 class CustomerManagementService extends \PMG\BingAds\BingSoapClient
 {
-    const WSDL_NAMESPACE = 'https://bingads.microsoft.com/Customer/v12';
-    const WSDL_PROD = 'https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc?singleWsdl';
-    const WSDL_SANDBOX = 'https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v12/CustomerManagementService.svc?singleWsdl';
+    const WSDL_NAMESPACE = 'https://bingads.microsoft.com/Customer/v13';
+    const WSDL_PROD = 'https://clientcenter.api.bingads.microsoft.com/Api/CustomerManagement/v13/CustomerManagementService.svc?singleWsdl';
+    const WSDL_SANDBOX = 'https://clientcenter.api.sandbox.bingads.microsoft.com/Api/CustomerManagement/v13/CustomerManagementService.svc?singleWsdl';
 
 
     /**
@@ -49,6 +49,8 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
       'GetUsersInfoResponse' => 'PMG\\BingAds\\CustomerManagement\\GetUsersInfoResponse',
       'GetCustomerPilotFeaturesRequest' => 'PMG\\BingAds\\CustomerManagement\\GetCustomerPilotFeaturesRequest',
       'GetCustomerPilotFeaturesResponse' => 'PMG\\BingAds\\CustomerManagement\\GetCustomerPilotFeaturesResponse',
+      'GetAccountPilotFeaturesRequest' => 'PMG\\BingAds\\CustomerManagement\\GetAccountPilotFeaturesRequest',
+      'GetAccountPilotFeaturesResponse' => 'PMG\\BingAds\\CustomerManagement\\GetAccountPilotFeaturesResponse',
       'GetPilotFeaturesCountriesRequest' => 'PMG\\BingAds\\CustomerManagement\\GetPilotFeaturesCountriesRequest',
       'GetPilotFeaturesCountriesResponse' => 'PMG\\BingAds\\CustomerManagement\\GetPilotFeaturesCountriesResponse',
       'GetAccessibleCustomerRequest' => 'PMG\\BingAds\\CustomerManagement\\GetAccessibleCustomerRequest',
@@ -81,6 +83,8 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
       'SearchUserInvitationsResponse' => 'PMG\\BingAds\\CustomerManagement\\SearchUserInvitationsResponse',
       'ValidateAddressRequest' => 'PMG\\BingAds\\CustomerManagement\\ValidateAddressRequest',
       'ValidateAddressResponse' => 'PMG\\BingAds\\CustomerManagement\\ValidateAddressResponse',
+      'GetLinkedAccountsAndCustomersInfoRequest' => 'PMG\\BingAds\\CustomerManagement\\GetLinkedAccountsAndCustomersInfoRequest',
+      'GetLinkedAccountsAndCustomersInfoResponse' => 'PMG\\BingAds\\CustomerManagement\\GetLinkedAccountsAndCustomersInfoResponse',
       'ArrayOfAccountInfo' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfAccountInfo',
       'AccountInfo' => 'PMG\\BingAds\\CustomerManagement\\AccountInfo',
       'AdvertiserAccount' => 'PMG\\BingAds\\CustomerManagement\\AdvertiserAccount',
@@ -303,6 +307,15 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
     }
 
     /**
+     * @param GetAccountPilotFeaturesRequest $parameters
+     * @return GetAccountPilotFeaturesResponse
+     */
+    public function getAccountPilotFeatures(GetAccountPilotFeaturesRequest $parameters)
+    {
+        return $this->__soapCall("GetAccountPilotFeatures", [$parameters]);
+    }
+
+    /**
      * @param GetPilotFeaturesCountriesRequest $parameters
      * @return GetPilotFeaturesCountriesResponse
      */
@@ -444,6 +457,15 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
     public function validateAddress(ValidateAddressRequest $parameters)
     {
         return $this->__soapCall("ValidateAddress", [$parameters]);
+    }
+
+    /**
+     * @param GetLinkedAccountsAndCustomersInfoRequest $parameters
+     * @return GetLinkedAccountsAndCustomersInfoResponse
+     */
+    public function getLinkedAccountsAndCustomersInfo(GetLinkedAccountsAndCustomersInfoRequest $parameters)
+    {
+        return $this->__soapCall("GetLinkedAccountsAndCustomersInfo", [$parameters]);
     }
 
 }

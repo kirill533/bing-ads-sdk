@@ -44,6 +44,12 @@ class DSAAutoTargetPerformanceReportColumn
     const CostPerAssist = 'CostPerAssist';
     const RevenuePerConversion = 'RevenuePerConversion';
     const RevenuePerAssist = 'RevenuePerAssist';
+    const AllConversions = 'AllConversions';
+    const AllRevenue = 'AllRevenue';
+    const AllConversionRate = 'AllConversionRate';
+    const AllCostPerConversion = 'AllCostPerConversion';
+    const AllReturnOnAdSpend = 'AllReturnOnAdSpend';
+    const AllRevenuePerConversion = 'AllRevenuePerConversion';
 
 
 }

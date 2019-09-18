@@ -11,11 +11,6 @@ class InsertionOrder
     protected $AccountId = null;
 
     /**
-     * @var float $BalanceAmount
-     */
-    protected $BalanceAmount = null;
-
-    /**
      * @var string $BookingCountryCode
      */
     protected $BookingCountryCode = null;
@@ -85,6 +80,46 @@ class InsertionOrder
      */
     protected $PendingChanges = null;
 
+    /**
+     * @var string $AccountNumber
+     */
+    protected $AccountNumber = null;
+
+    /**
+     * @var float $BudgetRemaining
+     */
+    protected $BudgetRemaining = null;
+
+    /**
+     * @var float $BudgetSpent
+     */
+    protected $BudgetSpent = null;
+
+    /**
+     * @var float $BudgetRemainingPercent
+     */
+    protected $BudgetRemainingPercent = null;
+
+    /**
+     * @var float $BudgetSpentPercent
+     */
+    protected $BudgetSpentPercent = null;
+
+    /**
+     * @var string $SeriesName
+     */
+    protected $SeriesName = null;
+
+    /**
+     * @var boolean $IsInSeries
+     */
+    protected $IsInSeries = null;
+
+    /**
+     * @var string $SeriesFrequencyType
+     */
+    protected $SeriesFrequencyType = null;
+
     
     public function __construct()
     {
@@ -106,24 +141,6 @@ class InsertionOrder
     public function setAccountId($AccountId)
     {
         $this->AccountId = $AccountId;
-        return $this;
-    }
-
-    /**
-     * @return float
-     */
-    public function getBalanceAmount()
-    {
-        return $this->BalanceAmount;
-    }
-
-    /**
-     * @param float $BalanceAmount
-     * @return \PMG\BingAds\CustomerBilling\InsertionOrder
-     */
-    public function setBalanceAmount($BalanceAmount)
-    {
-        $this->BalanceAmount = $BalanceAmount;
         return $this;
     }
 
@@ -397,6 +414,150 @@ class InsertionOrder
     public function setPendingChanges($PendingChanges)
     {
         $this->PendingChanges = $PendingChanges;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAccountNumber()
+    {
+        return $this->AccountNumber;
+    }
+
+    /**
+     * @param string $AccountNumber
+     * @return \PMG\BingAds\CustomerBilling\InsertionOrder
+     */
+    public function setAccountNumber($AccountNumber)
+    {
+        $this->AccountNumber = $AccountNumber;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getBudgetRemaining()
+    {
+        return $this->BudgetRemaining;
+    }
+
+    /**
+     * @param float $BudgetRemaining
+     * @return \PMG\BingAds\CustomerBilling\InsertionOrder
+     */
+    public function setBudgetRemaining($BudgetRemaining)
+    {
+        $this->BudgetRemaining = $BudgetRemaining;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getBudgetSpent()
+    {
+        return $this->BudgetSpent;
+    }
+
+    /**
+     * @param float $BudgetSpent
+     * @return \PMG\BingAds\CustomerBilling\InsertionOrder
+     */
+    public function setBudgetSpent($BudgetSpent)
+    {
+        $this->BudgetSpent = $BudgetSpent;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getBudgetRemainingPercent()
+    {
+        return $this->BudgetRemainingPercent;
+    }
+
+    /**
+     * @param float $BudgetRemainingPercent
+     * @return \PMG\BingAds\CustomerBilling\InsertionOrder
+     */
+    public function setBudgetRemainingPercent($BudgetRemainingPercent)
+    {
+        $this->BudgetRemainingPercent = $BudgetRemainingPercent;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getBudgetSpentPercent()
+    {
+        return $this->BudgetSpentPercent;
+    }
+
+    /**
+     * @param float $BudgetSpentPercent
+     * @return \PMG\BingAds\CustomerBilling\InsertionOrder
+     */
+    public function setBudgetSpentPercent($BudgetSpentPercent)
+    {
+        $this->BudgetSpentPercent = $BudgetSpentPercent;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSeriesName()
+    {
+        return $this->SeriesName;
+    }
+
+    /**
+     * @param string $SeriesName
+     * @return \PMG\BingAds\CustomerBilling\InsertionOrder
+     */
+    public function setSeriesName($SeriesName)
+    {
+        $this->SeriesName = $SeriesName;
+        return $this;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getIsInSeries()
+    {
+        return $this->IsInSeries;
+    }
+
+    /**
+     * @param boolean $IsInSeries
+     * @return \PMG\BingAds\CustomerBilling\InsertionOrder
+     */
+    public function setIsInSeries($IsInSeries)
+    {
+        $this->IsInSeries = $IsInSeries;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getSeriesFrequencyType()
+    {
+        return $this->SeriesFrequencyType;
+    }
+
+    /**
+     * @param string $SeriesFrequencyType
+     * @return \PMG\BingAds\CustomerBilling\InsertionOrder
+     */
+    public function setSeriesFrequencyType($SeriesFrequencyType)
+    {
+        $this->SeriesFrequencyType = $SeriesFrequencyType;
         return $this;
     }
 

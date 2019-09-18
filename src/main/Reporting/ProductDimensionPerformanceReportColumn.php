@@ -71,6 +71,14 @@ class ProductDimensionPerformanceReportColumn
     const AssistedClicks = 'AssistedClicks';
     const ClickSharePercent = 'ClickSharePercent';
     const AbsoluteTopImpressionSharePercent = 'AbsoluteTopImpressionSharePercent';
+    const AssistedConversions = 'AssistedConversions';
+    const AllConversions = 'AllConversions';
+    const AllRevenue = 'AllRevenue';
+    const AllConversionRate = 'AllConversionRate';
+    const AllCostPerConversion = 'AllCostPerConversion';
+    const AllReturnOnAdSpend = 'AllReturnOnAdSpend';
+    const AllRevenuePerConversion = 'AllRevenuePerConversion';
+    const CostPerConversion = 'CostPerConversion';
 
 
 }

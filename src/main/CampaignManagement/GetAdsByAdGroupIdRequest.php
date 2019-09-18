@@ -16,20 +16,13 @@ class GetAdsByAdGroupIdRequest
     protected $AdTypes = null;
 
     /**
-     * @var AdAdditionalField $ReturnAdditionalFields
-     */
-    protected $ReturnAdditionalFields = null;
-
-    /**
      * @param int $AdGroupId
      * @param ArrayOfAdType $AdTypes
-     * @param AdAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($AdGroupId = null, $AdTypes = null, $ReturnAdditionalFields = null)
+    public function __construct($AdGroupId = null, $AdTypes = null)
     {
     $this->AdGroupId = $AdGroupId;
     $this->AdTypes = $AdTypes;
-    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -65,24 +58,6 @@ class GetAdsByAdGroupIdRequest
     public function setAdTypes($AdTypes)
     {
         $this->AdTypes = $AdTypes;
-        return $this;
-    }
-
-    /**
-     * @return AdAdditionalField
-     */
-    public function getReturnAdditionalFields()
-    {
-        return $this->ReturnAdditionalFields;
-    }
-
-    /**
-     * @param AdAdditionalField $ReturnAdditionalFields
-     * @return \PMG\BingAds\CampaignManagement\GetAdsByAdGroupIdRequest
-     */
-    public function setReturnAdditionalFields($ReturnAdditionalFields)
-    {
-        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
         return $this;
     }
 

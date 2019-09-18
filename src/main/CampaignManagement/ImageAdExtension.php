@@ -21,6 +21,11 @@ class ImageAdExtension extends AdExtension
     protected $DestinationUrl = null;
 
     /**
+     * @var string $DisplayText
+     */
+    protected $DisplayText = null;
+
+    /**
      * @var ArrayOfAppUrl $FinalAppUrls
      */
     protected $FinalAppUrls = null;
@@ -44,6 +49,11 @@ class ImageAdExtension extends AdExtension
      * @var ArrayOflong $ImageMediaIds
      */
     protected $ImageMediaIds = null;
+
+    /**
+     * @var ArrayOfAssetLink $Images
+     */
+    protected $Images = null;
 
     /**
      * @var string $TrackingUrlTemplate
@@ -112,6 +122,24 @@ class ImageAdExtension extends AdExtension
     public function setDestinationUrl($DestinationUrl)
     {
         $this->DestinationUrl = $DestinationUrl;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDisplayText()
+    {
+        return $this->DisplayText;
+    }
+
+    /**
+     * @param string $DisplayText
+     * @return \PMG\BingAds\CampaignManagement\ImageAdExtension
+     */
+    public function setDisplayText($DisplayText)
+    {
+        $this->DisplayText = $DisplayText;
         return $this;
     }
 
@@ -202,6 +230,24 @@ class ImageAdExtension extends AdExtension
     public function setImageMediaIds($ImageMediaIds)
     {
         $this->ImageMediaIds = $ImageMediaIds;
+        return $this;
+    }
+
+    /**
+     * @return ArrayOfAssetLink
+     */
+    public function getImages()
+    {
+        return $this->Images;
+    }
+
+    /**
+     * @param ArrayOfAssetLink $Images
+     * @return \PMG\BingAds\CampaignManagement\ImageAdExtension
+     */
+    public function setImages($Images)
+    {
+        $this->Images = $Images;
         return $this;
     }
 

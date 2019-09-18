@@ -6,6 +6,11 @@ class UetTag
 {
 
     /**
+     * @var CustomerShare $CustomerShare
+     */
+    protected $CustomerShare = null;
+
+    /**
      * @var string $Description
      */
     protected $Description = null;
@@ -39,6 +44,24 @@ class UetTag
     public function __construct()
     {
     
+    }
+
+    /**
+     * @return CustomerShare
+     */
+    public function getCustomerShare()
+    {
+        return $this->CustomerShare;
+    }
+
+    /**
+     * @param CustomerShare $CustomerShare
+     * @return \PMG\BingAds\CampaignManagement\UetTag
+     */
+    public function setCustomerShare($CustomerShare)
+    {
+        $this->CustomerShare = $CustomerShare;
+        return $this;
     }
 
     /**

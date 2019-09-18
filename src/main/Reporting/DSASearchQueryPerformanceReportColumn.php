@@ -49,6 +49,12 @@ class DSASearchQueryPerformanceReportColumn
     const CustomerId = 'CustomerId';
     const CustomerName = 'CustomerName';
     const FeedUrl = 'FeedUrl';
+    const AllConversions = 'AllConversions';
+    const AllRevenue = 'AllRevenue';
+    const AllConversionRate = 'AllConversionRate';
+    const AllCostPerConversion = 'AllCostPerConversion';
+    const AllReturnOnAdSpend = 'AllReturnOnAdSpend';
+    const AllRevenuePerConversion = 'AllRevenuePerConversion';
 
 
 }

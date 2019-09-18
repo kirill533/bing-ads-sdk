@@ -90,7 +90,7 @@ class ArrayOfAddress implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->Address);
+        return new \ArrayIterator($this->Address ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAddress implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->Address);
+        return is_array($this->Address) ? count($this->Address) : 0;
     }
 
     /**

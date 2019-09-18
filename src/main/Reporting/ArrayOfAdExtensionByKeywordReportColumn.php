@@ -90,7 +90,7 @@ class ArrayOfAdExtensionByKeywordReportColumn implements \ArrayAccess, \Iterator
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdExtensionByKeywordReportColumn);
+        return new \ArrayIterator($this->AdExtensionByKeywordReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdExtensionByKeywordReportColumn implements \ArrayAccess, \Iterator
      */
     public function count()
     {
-      return count($this->AdExtensionByKeywordReportColumn);
+        return is_array($this->AdExtensionByKeywordReportColumn) ? count($this->AdExtensionByKeywordReportColumn) : 0;
     }
 
     /**

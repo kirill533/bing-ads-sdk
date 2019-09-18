@@ -90,7 +90,7 @@ class ArrayOfAdGroupBidLandscape implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdGroupBidLandscape);
+        return new \ArrayIterator($this->AdGroupBidLandscape ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdGroupBidLandscape implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function count()
     {
-      return count($this->AdGroupBidLandscape);
+        return is_array($this->AdGroupBidLandscape) ? count($this->AdGroupBidLandscape) : 0;
     }
 
     /**

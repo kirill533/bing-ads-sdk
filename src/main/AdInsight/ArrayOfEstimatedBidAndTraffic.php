@@ -90,7 +90,7 @@ class ArrayOfEstimatedBidAndTraffic implements \ArrayAccess, \IteratorAggregate,
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->EstimatedBidAndTraffic);
+        return new \ArrayIterator($this->EstimatedBidAndTraffic ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfEstimatedBidAndTraffic implements \ArrayAccess, \IteratorAggregate,
      */
     public function count()
     {
-      return count($this->EstimatedBidAndTraffic);
+        return is_array($this->EstimatedBidAndTraffic) ? count($this->EstimatedBidAndTraffic) : 0;
     }
 
     /**

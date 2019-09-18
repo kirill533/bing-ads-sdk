@@ -90,7 +90,7 @@ class ArrayOfBillingDocument implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->BillingDocument);
+        return new \ArrayIterator($this->BillingDocument ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfBillingDocument implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function count()
     {
-      return count($this->BillingDocument);
+        return is_array($this->BillingDocument) ? count($this->BillingDocument) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfKeywordEstimatedPosition implements \ArrayAccess, \IteratorAggregat
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordEstimatedPosition);
+        return new \ArrayIterator($this->KeywordEstimatedPosition ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordEstimatedPosition implements \ArrayAccess, \IteratorAggregat
      */
     public function count()
     {
-      return count($this->KeywordEstimatedPosition);
+        return is_array($this->KeywordEstimatedPosition) ? count($this->KeywordEstimatedPosition) : 0;
     }
 
     /**

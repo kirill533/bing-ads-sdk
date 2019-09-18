@@ -90,7 +90,7 @@ class ArrayOfLabelAssociation implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->LabelAssociation);
+        return new \ArrayIterator($this->LabelAssociation ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfLabelAssociation implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function count()
     {
-      return count($this->LabelAssociation);
+        return is_array($this->LabelAssociation) ? count($this->LabelAssociation) : 0;
     }
 
     /**

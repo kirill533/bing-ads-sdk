@@ -90,7 +90,7 @@ class ArrayOfSharedEntity implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->SharedEntity);
+        return new \ArrayIterator($this->SharedEntity ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfSharedEntity implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function count()
     {
-      return count($this->SharedEntity);
+        return is_array($this->SharedEntity) ? count($this->SharedEntity) : 0;
     }
 
     /**

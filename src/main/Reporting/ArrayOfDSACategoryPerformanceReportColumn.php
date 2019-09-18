@@ -90,7 +90,7 @@ class ArrayOfDSACategoryPerformanceReportColumn implements \ArrayAccess, \Iterat
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->DSACategoryPerformanceReportColumn);
+        return new \ArrayIterator($this->DSACategoryPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfDSACategoryPerformanceReportColumn implements \ArrayAccess, \Iterat
      */
     public function count()
     {
-      return count($this->DSACategoryPerformanceReportColumn);
+        return is_array($this->DSACategoryPerformanceReportColumn) ? count($this->DSACategoryPerformanceReportColumn) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfKeywordDemographicResult implements \ArrayAccess, \IteratorAggregat
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordDemographicResult);
+        return new \ArrayIterator($this->KeywordDemographicResult ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordDemographicResult implements \ArrayAccess, \IteratorAggregat
      */
     public function count()
     {
-      return count($this->KeywordDemographicResult);
+        return is_array($this->KeywordDemographicResult) ? count($this->KeywordDemographicResult) : 0;
     }
 
     /**

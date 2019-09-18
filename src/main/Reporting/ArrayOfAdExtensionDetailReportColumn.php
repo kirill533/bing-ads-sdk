@@ -90,7 +90,7 @@ class ArrayOfAdExtensionDetailReportColumn implements \ArrayAccess, \IteratorAgg
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdExtensionDetailReportColumn);
+        return new \ArrayIterator($this->AdExtensionDetailReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdExtensionDetailReportColumn implements \ArrayAccess, \IteratorAgg
      */
     public function count()
     {
-      return count($this->AdExtensionDetailReportColumn);
+        return is_array($this->AdExtensionDetailReportColumn) ? count($this->AdExtensionDetailReportColumn) : 0;
     }
 
     /**

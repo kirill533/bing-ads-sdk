@@ -90,7 +90,7 @@ class ArrayOfAudience implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->Audience);
+        return new \ArrayIterator($this->Audience ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAudience implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->Audience);
+        return is_array($this->Audience) ? count($this->Audience) : 0;
     }
 
     /**

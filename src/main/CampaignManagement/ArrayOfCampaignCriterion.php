@@ -90,7 +90,7 @@ class ArrayOfCampaignCriterion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->CampaignCriterion);
+        return new \ArrayIterator($this->CampaignCriterion ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCampaignCriterion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function count()
     {
-      return count($this->CampaignCriterion);
+        return is_array($this->CampaignCriterion) ? count($this->CampaignCriterion) : 0;
     }
 
     /**

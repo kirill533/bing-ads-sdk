@@ -90,7 +90,7 @@ class ArrayOfDomainCategory implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->DomainCategory);
+        return new \ArrayIterator($this->DomainCategory ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfDomainCategory implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function count()
     {
-      return count($this->DomainCategory);
+        return is_array($this->DomainCategory) ? count($this->DomainCategory) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfAdDynamicTextPerformanceReportColumn implements \ArrayAccess, \Iter
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdDynamicTextPerformanceReportColumn);
+        return new \ArrayIterator($this->AdDynamicTextPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdDynamicTextPerformanceReportColumn implements \ArrayAccess, \Iter
      */
     public function count()
     {
-      return count($this->AdDynamicTextPerformanceReportColumn);
+        return is_array($this->AdDynamicTextPerformanceReportColumn) ? count($this->AdDynamicTextPerformanceReportColumn) : 0;
     }
 
     /**

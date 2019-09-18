@@ -90,7 +90,7 @@ class ArrayOfDSASearchQueryPerformanceReportColumn implements \ArrayAccess, \Ite
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->DSASearchQueryPerformanceReportColumn);
+        return new \ArrayIterator($this->DSASearchQueryPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfDSASearchQueryPerformanceReportColumn implements \ArrayAccess, \Ite
      */
     public function count()
     {
-      return count($this->DSASearchQueryPerformanceReportColumn);
+        return is_array($this->DSASearchQueryPerformanceReportColumn) ? count($this->DSASearchQueryPerformanceReportColumn) : 0;
     }
 
     /**

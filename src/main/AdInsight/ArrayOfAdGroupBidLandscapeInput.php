@@ -90,7 +90,7 @@ class ArrayOfAdGroupBidLandscapeInput implements \ArrayAccess, \IteratorAggregat
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdGroupBidLandscapeInput);
+        return new \ArrayIterator($this->AdGroupBidLandscapeInput ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdGroupBidLandscapeInput implements \ArrayAccess, \IteratorAggregat
      */
     public function count()
     {
-      return count($this->AdGroupBidLandscapeInput);
+        return is_array($this->AdGroupBidLandscapeInput) ? count($this->AdGroupBidLandscapeInput) : 0;
     }
 
     /**

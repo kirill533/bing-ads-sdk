@@ -90,7 +90,7 @@ class ArrayOfNegativeKeywordConflictReportColumn implements \ArrayAccess, \Itera
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->NegativeKeywordConflictReportColumn);
+        return new \ArrayIterator($this->NegativeKeywordConflictReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfNegativeKeywordConflictReportColumn implements \ArrayAccess, \Itera
      */
     public function count()
     {
-      return count($this->NegativeKeywordConflictReportColumn);
+        return is_array($this->NegativeKeywordConflictReportColumn) ? count($this->NegativeKeywordConflictReportColumn) : 0;
     }
 
     /**

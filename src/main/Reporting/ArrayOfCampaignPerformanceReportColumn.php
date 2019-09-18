@@ -90,7 +90,7 @@ class ArrayOfCampaignPerformanceReportColumn implements \ArrayAccess, \IteratorA
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->CampaignPerformanceReportColumn);
+        return new \ArrayIterator($this->CampaignPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCampaignPerformanceReportColumn implements \ArrayAccess, \IteratorA
      */
     public function count()
     {
-      return count($this->CampaignPerformanceReportColumn);
+        return is_array($this->CampaignPerformanceReportColumn) ? count($this->CampaignPerformanceReportColumn) : 0;
     }
 
     /**

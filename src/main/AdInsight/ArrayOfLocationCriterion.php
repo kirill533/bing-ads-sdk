@@ -90,7 +90,7 @@ class ArrayOfLocationCriterion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->LocationCriterion);
+        return new \ArrayIterator($this->LocationCriterion ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfLocationCriterion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function count()
     {
-      return count($this->LocationCriterion);
+        return is_array($this->LocationCriterion) ? count($this->LocationCriterion) : 0;
     }
 
     /**

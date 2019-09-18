@@ -90,7 +90,7 @@ class ArrayOfBudgetPoint implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->BudgetPoint);
+        return new \ArrayIterator($this->BudgetPoint ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfBudgetPoint implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->BudgetPoint);
+        return is_array($this->BudgetPoint) ? count($this->BudgetPoint) : 0;
     }
 
     /**

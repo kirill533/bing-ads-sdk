@@ -90,7 +90,7 @@ class ArrayOfSharedListItem implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->SharedListItem);
+        return new \ArrayIterator($this->SharedListItem ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfSharedListItem implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function count()
     {
-      return count($this->SharedListItem);
+        return is_array($this->SharedListItem) ? count($this->SharedListItem) : 0;
     }
 
     /**

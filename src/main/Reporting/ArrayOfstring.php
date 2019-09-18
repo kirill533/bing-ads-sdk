@@ -90,7 +90,7 @@ class ArrayOfstring implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->string);
+        return new \ArrayIterator($this->string ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfstring implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->string);
+        return is_array($this->string) ? count($this->string) : 0;
     }
 
     /**

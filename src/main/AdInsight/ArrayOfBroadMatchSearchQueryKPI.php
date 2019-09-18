@@ -90,7 +90,7 @@ class ArrayOfBroadMatchSearchQueryKPI implements \ArrayAccess, \IteratorAggregat
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->BroadMatchSearchQueryKPI);
+        return new \ArrayIterator($this->BroadMatchSearchQueryKPI ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfBroadMatchSearchQueryKPI implements \ArrayAccess, \IteratorAggregat
      */
     public function count()
     {
-      return count($this->BroadMatchSearchQueryKPI);
+        return is_array($this->BroadMatchSearchQueryKPI) ? count($this->BroadMatchSearchQueryKPI) : 0;
     }
 
     /**

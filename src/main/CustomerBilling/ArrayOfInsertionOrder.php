@@ -90,7 +90,7 @@ class ArrayOfInsertionOrder implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->InsertionOrder);
+        return new \ArrayIterator($this->InsertionOrder ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfInsertionOrder implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function count()
     {
-      return count($this->InsertionOrder);
+        return is_array($this->InsertionOrder) ? count($this->InsertionOrder) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfMedia implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->Media);
+        return new \ArrayIterator($this->Media ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfMedia implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->Media);
+        return is_array($this->Media) ? count($this->Media) : 0;
     }
 
     /**

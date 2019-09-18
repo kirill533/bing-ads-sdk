@@ -90,7 +90,7 @@ class ArrayOfKeywordAndMatchType implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordAndMatchType);
+        return new \ArrayIterator($this->KeywordAndMatchType ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordAndMatchType implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function count()
     {
-      return count($this->KeywordAndMatchType);
+        return is_array($this->KeywordAndMatchType) ? count($this->KeywordAndMatchType) : 0;
     }
 
     /**

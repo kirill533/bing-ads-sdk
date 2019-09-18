@@ -90,7 +90,7 @@ class ArrayOfKeywordIdEstimatedBid implements \ArrayAccess, \IteratorAggregate, 
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordIdEstimatedBid);
+        return new \ArrayIterator($this->KeywordIdEstimatedBid ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordIdEstimatedBid implements \ArrayAccess, \IteratorAggregate, 
      */
     public function count()
     {
-      return count($this->KeywordIdEstimatedBid);
+        return is_array($this->KeywordIdEstimatedBid) ? count($this->KeywordIdEstimatedBid) : 0;
     }
 
     /**

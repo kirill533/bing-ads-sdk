@@ -90,7 +90,7 @@ class ArrayOfConversionGoal implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->ConversionGoal);
+        return new \ArrayIterator($this->ConversionGoal ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfConversionGoal implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function count()
     {
-      return count($this->ConversionGoal);
+        return is_array($this->ConversionGoal) ? count($this->ConversionGoal) : 0;
     }
 
     /**

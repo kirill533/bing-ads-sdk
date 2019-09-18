@@ -90,7 +90,7 @@ class ArrayOfBatchError implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->BatchError);
+        return new \ArrayIterator($this->BatchError ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfBatchError implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->BatchError);
+        return is_array($this->BatchError) ? count($this->BatchError) : 0;
     }
 
     /**

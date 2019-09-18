@@ -90,7 +90,7 @@ class ArrayOfPriceTableRow implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->PriceTableRow);
+        return new \ArrayIterator($this->PriceTableRow ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfPriceTableRow implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function count()
     {
-      return count($this->PriceTableRow);
+        return is_array($this->PriceTableRow) ? count($this->PriceTableRow) : 0;
     }
 
     /**

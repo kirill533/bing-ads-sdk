@@ -90,7 +90,7 @@ class ArrayOfDestinationUrlPerformanceReportColumn implements \ArrayAccess, \Ite
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->DestinationUrlPerformanceReportColumn);
+        return new \ArrayIterator($this->DestinationUrlPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfDestinationUrlPerformanceReportColumn implements \ArrayAccess, \Ite
      */
     public function count()
     {
-      return count($this->DestinationUrlPerformanceReportColumn);
+        return is_array($this->DestinationUrlPerformanceReportColumn) ? count($this->DestinationUrlPerformanceReportColumn) : 0;
     }
 
     /**

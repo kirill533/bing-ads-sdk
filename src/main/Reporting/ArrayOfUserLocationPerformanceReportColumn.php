@@ -90,7 +90,7 @@ class ArrayOfUserLocationPerformanceReportColumn implements \ArrayAccess, \Itera
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->UserLocationPerformanceReportColumn);
+        return new \ArrayIterator($this->UserLocationPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfUserLocationPerformanceReportColumn implements \ArrayAccess, \Itera
      */
     public function count()
     {
-      return count($this->UserLocationPerformanceReportColumn);
+        return is_array($this->UserLocationPerformanceReportColumn) ? count($this->UserLocationPerformanceReportColumn) : 0;
     }
 
     /**

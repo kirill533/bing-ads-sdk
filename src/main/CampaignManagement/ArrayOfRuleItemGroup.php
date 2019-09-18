@@ -90,7 +90,7 @@ class ArrayOfRuleItemGroup implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->RuleItemGroup);
+        return new \ArrayIterator($this->RuleItemGroup ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfRuleItemGroup implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function count()
     {
-      return count($this->RuleItemGroup);
+        return is_array($this->RuleItemGroup) ? count($this->RuleItemGroup) : 0;
     }
 
     /**

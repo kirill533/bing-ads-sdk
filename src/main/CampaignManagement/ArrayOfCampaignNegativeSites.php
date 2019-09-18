@@ -90,7 +90,7 @@ class ArrayOfCampaignNegativeSites implements \ArrayAccess, \IteratorAggregate, 
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->CampaignNegativeSites);
+        return new \ArrayIterator($this->CampaignNegativeSites ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCampaignNegativeSites implements \ArrayAccess, \IteratorAggregate, 
      */
     public function count()
     {
-      return count($this->CampaignNegativeSites);
+        return is_array($this->CampaignNegativeSites) ? count($this->CampaignNegativeSites) : 0;
     }
 
     /**

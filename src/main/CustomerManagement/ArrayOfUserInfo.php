@@ -90,7 +90,7 @@ class ArrayOfUserInfo implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->UserInfo);
+        return new \ArrayIterator($this->UserInfo ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfUserInfo implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->UserInfo);
+        return is_array($this->UserInfo) ? count($this->UserInfo) : 0;
     }
 
     /**

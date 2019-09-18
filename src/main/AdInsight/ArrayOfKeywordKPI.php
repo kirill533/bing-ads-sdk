@@ -90,7 +90,7 @@ class ArrayOfKeywordKPI implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordKPI);
+        return new \ArrayIterator($this->KeywordKPI ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordKPI implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->KeywordKPI);
+        return is_array($this->KeywordKPI) ? count($this->KeywordKPI) : 0;
     }
 
     /**

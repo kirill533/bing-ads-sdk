@@ -90,7 +90,7 @@ class ArrayOfUserInvitation implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->UserInvitation);
+        return new \ArrayIterator($this->UserInvitation ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfUserInvitation implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function count()
     {
-      return count($this->UserInvitation);
+        return is_array($this->UserInvitation) ? count($this->UserInvitation) : 0;
     }
 
     /**

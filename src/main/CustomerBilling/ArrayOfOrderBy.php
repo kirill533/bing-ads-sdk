@@ -90,7 +90,7 @@ class ArrayOfOrderBy implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->OrderBy);
+        return new \ArrayIterator($this->OrderBy ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfOrderBy implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->OrderBy);
+        return is_array($this->OrderBy) ? count($this->OrderBy) : 0;
     }
 
     /**

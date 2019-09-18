@@ -90,7 +90,7 @@ class ArrayOfCustomerRole implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->CustomerRole);
+        return new \ArrayIterator($this->CustomerRole ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCustomerRole implements \ArrayAccess, \IteratorAggregate, \Countabl
      */
     public function count()
     {
-      return count($this->CustomerRole);
+        return is_array($this->CustomerRole) ? count($this->CustomerRole) : 0;
     }
 
     /**

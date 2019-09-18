@@ -90,7 +90,7 @@ class ArrayOfKeywordPerformanceReportSort implements \ArrayAccess, \IteratorAggr
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordPerformanceReportSort);
+        return new \ArrayIterator($this->KeywordPerformanceReportSort ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordPerformanceReportSort implements \ArrayAccess, \IteratorAggr
      */
     public function count()
     {
-      return count($this->KeywordPerformanceReportSort);
+        return is_array($this->KeywordPerformanceReportSort) ? count($this->KeywordPerformanceReportSort) : 0;
     }
 
     /**

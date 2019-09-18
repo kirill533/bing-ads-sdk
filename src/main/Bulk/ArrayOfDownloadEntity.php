@@ -90,7 +90,7 @@ class ArrayOfDownloadEntity implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->DownloadEntity);
+        return new \ArrayIterator($this->DownloadEntity ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfDownloadEntity implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function count()
     {
-      return count($this->DownloadEntity);
+        return is_array($this->DownloadEntity) ? count($this->DownloadEntity) : 0;
     }
 
     /**

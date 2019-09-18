@@ -90,7 +90,7 @@ class ArrayOfCustomer implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->Customer);
+        return new \ArrayIterator($this->Customer ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCustomer implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->Customer);
+        return is_array($this->Customer) ? count($this->Customer) : 0;
     }
 
     /**

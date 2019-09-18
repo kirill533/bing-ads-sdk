@@ -90,7 +90,7 @@ class ArrayOfKeywordEstimator implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordEstimator);
+        return new \ArrayIterator($this->KeywordEstimator ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordEstimator implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function count()
     {
-      return count($this->KeywordEstimator);
+        return is_array($this->KeywordEstimator) ? count($this->KeywordEstimator) : 0;
     }
 
     /**

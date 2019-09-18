@@ -90,7 +90,7 @@ class ArrayOfMediaMetaData implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->MediaMetaData);
+        return new \ArrayIterator($this->MediaMetaData ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfMediaMetaData implements \ArrayAccess, \IteratorAggregate, \Countab
      */
     public function count()
     {
-      return count($this->MediaMetaData);
+        return is_array($this->MediaMetaData) ? count($this->MediaMetaData) : 0;
     }
 
     /**

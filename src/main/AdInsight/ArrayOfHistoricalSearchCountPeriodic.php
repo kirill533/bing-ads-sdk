@@ -90,7 +90,7 @@ class ArrayOfHistoricalSearchCountPeriodic implements \ArrayAccess, \IteratorAgg
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->HistoricalSearchCountPeriodic);
+        return new \ArrayIterator($this->HistoricalSearchCountPeriodic ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfHistoricalSearchCountPeriodic implements \ArrayAccess, \IteratorAgg
      */
     public function count()
     {
-      return count($this->HistoricalSearchCountPeriodic);
+        return is_array($this->HistoricalSearchCountPeriodic) ? count($this->HistoricalSearchCountPeriodic) : 0;
     }
 
     /**

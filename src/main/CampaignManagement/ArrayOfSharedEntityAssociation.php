@@ -90,7 +90,7 @@ class ArrayOfSharedEntityAssociation implements \ArrayAccess, \IteratorAggregate
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->SharedEntityAssociation);
+        return new \ArrayIterator($this->SharedEntityAssociation ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfSharedEntityAssociation implements \ArrayAccess, \IteratorAggregate
      */
     public function count()
     {
-      return count($this->SharedEntityAssociation);
+        return is_array($this->SharedEntityAssociation) ? count($this->SharedEntityAssociation) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfAccountInfoWithCustomerData implements \ArrayAccess, \IteratorAggre
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AccountInfoWithCustomerData);
+        return new \ArrayIterator($this->AccountInfoWithCustomerData ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAccountInfoWithCustomerData implements \ArrayAccess, \IteratorAggre
      */
     public function count()
     {
-      return count($this->AccountInfoWithCustomerData);
+        return is_array($this->AccountInfoWithCustomerData) ? count($this->AccountInfoWithCustomerData) : 0;
     }
 
     /**

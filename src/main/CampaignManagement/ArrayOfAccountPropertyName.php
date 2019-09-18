@@ -90,7 +90,7 @@ class ArrayOfAccountPropertyName implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AccountPropertyName);
+        return new \ArrayIterator($this->AccountPropertyName ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAccountPropertyName implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function count()
     {
-      return count($this->AccountPropertyName);
+        return is_array($this->AccountPropertyName) ? count($this->AccountPropertyName) : 0;
     }
 
     /**

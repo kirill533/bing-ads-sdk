@@ -90,7 +90,7 @@ class ArrayOfEditorialReasonCollection implements \ArrayAccess, \IteratorAggrega
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->EditorialReasonCollection);
+        return new \ArrayIterator($this->EditorialReasonCollection ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfEditorialReasonCollection implements \ArrayAccess, \IteratorAggrega
      */
     public function count()
     {
-      return count($this->EditorialReasonCollection);
+        return is_array($this->EditorialReasonCollection) ? count($this->EditorialReasonCollection) : 0;
     }
 
     /**

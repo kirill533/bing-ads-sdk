@@ -90,7 +90,7 @@ class ArrayOfNegativeKeyword implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->NegativeKeyword);
+        return new \ArrayIterator($this->NegativeKeyword ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfNegativeKeyword implements \ArrayAccess, \IteratorAggregate, \Count
      */
     public function count()
     {
-      return count($this->NegativeKeyword);
+        return is_array($this->NegativeKeyword) ? count($this->NegativeKeyword) : 0;
     }
 
     /**

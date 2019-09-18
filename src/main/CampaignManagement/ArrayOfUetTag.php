@@ -90,7 +90,7 @@ class ArrayOfUetTag implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->UetTag);
+        return new \ArrayIterator($this->UetTag ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfUetTag implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->UetTag);
+        return is_array($this->UetTag) ? count($this->UetTag) : 0;
     }
 
     /**

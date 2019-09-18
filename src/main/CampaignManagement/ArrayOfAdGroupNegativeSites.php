@@ -90,7 +90,7 @@ class ArrayOfAdGroupNegativeSites implements \ArrayAccess, \IteratorAggregate, \
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdGroupNegativeSites);
+        return new \ArrayIterator($this->AdGroupNegativeSites ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdGroupNegativeSites implements \ArrayAccess, \IteratorAggregate, \
      */
     public function count()
     {
-      return count($this->AdGroupNegativeSites);
+        return is_array($this->AdGroupNegativeSites) ? count($this->AdGroupNegativeSites) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfBMCStore implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->BMCStore);
+        return new \ArrayIterator($this->BMCStore ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfBMCStore implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->BMCStore);
+        return is_array($this->BMCStore) ? count($this->BMCStore) : 0;
     }
 
     /**

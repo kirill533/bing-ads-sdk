@@ -90,7 +90,7 @@ class ArrayOfCriterion implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->Criterion);
+        return new \ArrayIterator($this->Criterion ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCriterion implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->Criterion);
+        return is_array($this->Criterion) ? count($this->Criterion) : 0;
     }
 
     /**

@@ -90,7 +90,7 @@ class ArrayOfAudiencePerformanceReportColumn implements \ArrayAccess, \IteratorA
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AudiencePerformanceReportColumn);
+        return new \ArrayIterator($this->AudiencePerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAudiencePerformanceReportColumn implements \ArrayAccess, \IteratorA
      */
     public function count()
     {
-      return count($this->AudiencePerformanceReportColumn);
+        return is_array($this->AudiencePerformanceReportColumn) ? count($this->AudiencePerformanceReportColumn) : 0;
     }
 
     /**

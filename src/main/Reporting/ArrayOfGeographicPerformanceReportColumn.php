@@ -90,7 +90,7 @@ class ArrayOfGeographicPerformanceReportColumn implements \ArrayAccess, \Iterato
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->GeographicPerformanceReportColumn);
+        return new \ArrayIterator($this->GeographicPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfGeographicPerformanceReportColumn implements \ArrayAccess, \Iterato
      */
     public function count()
     {
-      return count($this->GeographicPerformanceReportColumn);
+        return is_array($this->GeographicPerformanceReportColumn) ? count($this->GeographicPerformanceReportColumn) : 0;
     }
 
     /**

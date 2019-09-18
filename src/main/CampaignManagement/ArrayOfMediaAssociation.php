@@ -90,7 +90,7 @@ class ArrayOfMediaAssociation implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->MediaAssociation);
+        return new \ArrayIterator($this->MediaAssociation ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfMediaAssociation implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function count()
     {
-      return count($this->MediaAssociation);
+        return is_array($this->MediaAssociation) ? count($this->MediaAssociation) : 0;
     }
 
     /**

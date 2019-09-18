@@ -90,7 +90,7 @@ class ArrayOfAuctionInsightKpi implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AuctionInsightKpi);
+        return new \ArrayIterator($this->AuctionInsightKpi ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAuctionInsightKpi implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function count()
     {
-      return count($this->AuctionInsightKpi);
+        return is_array($this->AuctionInsightKpi) ? count($this->AuctionInsightKpi) : 0;
     }
 
     /**

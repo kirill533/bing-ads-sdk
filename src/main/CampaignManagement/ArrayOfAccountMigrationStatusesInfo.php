@@ -90,7 +90,7 @@ class ArrayOfAccountMigrationStatusesInfo implements \ArrayAccess, \IteratorAggr
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AccountMigrationStatusesInfo);
+        return new \ArrayIterator($this->AccountMigrationStatusesInfo ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAccountMigrationStatusesInfo implements \ArrayAccess, \IteratorAggr
      */
     public function count()
     {
-      return count($this->AccountMigrationStatusesInfo);
+        return is_array($this->AccountMigrationStatusesInfo) ? count($this->AccountMigrationStatusesInfo) : 0;
     }
 
     /**

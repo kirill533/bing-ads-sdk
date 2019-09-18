@@ -90,7 +90,7 @@ class ArrayOfMediaRepresentation implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->MediaRepresentation);
+        return new \ArrayIterator($this->MediaRepresentation ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfMediaRepresentation implements \ArrayAccess, \IteratorAggregate, \C
      */
     public function count()
     {
-      return count($this->MediaRepresentation);
+        return is_array($this->MediaRepresentation) ? count($this->MediaRepresentation) : 0;
     }
 
     /**

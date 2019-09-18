@@ -90,7 +90,7 @@ class ArrayOfProductPartitionUnitPerformanceReportColumn implements \ArrayAccess
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->ProductPartitionUnitPerformanceReportColumn);
+        return new \ArrayIterator($this->ProductPartitionUnitPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfProductPartitionUnitPerformanceReportColumn implements \ArrayAccess
      */
     public function count()
     {
-      return count($this->ProductPartitionUnitPerformanceReportColumn);
+        return is_array($this->ProductPartitionUnitPerformanceReportColumn) ? count($this->ProductPartitionUnitPerformanceReportColumn) : 0;
     }
 
     /**

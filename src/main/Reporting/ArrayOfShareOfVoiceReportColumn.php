@@ -90,7 +90,7 @@ class ArrayOfShareOfVoiceReportColumn implements \ArrayAccess, \IteratorAggregat
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->ShareOfVoiceReportColumn);
+        return new \ArrayIterator($this->ShareOfVoiceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfShareOfVoiceReportColumn implements \ArrayAccess, \IteratorAggregat
      */
     public function count()
     {
-      return count($this->ShareOfVoiceReportColumn);
+        return is_array($this->ShareOfVoiceReportColumn) ? count($this->ShareOfVoiceReportColumn) : 0;
     }
 
     /**

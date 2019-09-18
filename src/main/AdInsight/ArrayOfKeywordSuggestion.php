@@ -90,7 +90,7 @@ class ArrayOfKeywordSuggestion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->KeywordSuggestion);
+        return new \ArrayIterator($this->KeywordSuggestion ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfKeywordSuggestion implements \ArrayAccess, \IteratorAggregate, \Cou
      */
     public function count()
     {
-      return count($this->KeywordSuggestion);
+        return is_array($this->KeywordSuggestion) ? count($this->KeywordSuggestion) : 0;
     }
 
     /**

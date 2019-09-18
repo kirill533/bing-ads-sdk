@@ -90,7 +90,7 @@ class ArrayOfSearchCountsByAttributes implements \ArrayAccess, \IteratorAggregat
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->SearchCountsByAttributes);
+        return new \ArrayIterator($this->SearchCountsByAttributes ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfSearchCountsByAttributes implements \ArrayAccess, \IteratorAggregat
      */
     public function count()
     {
-      return count($this->SearchCountsByAttributes);
+        return is_array($this->SearchCountsByAttributes) ? count($this->SearchCountsByAttributes) : 0;
     }
 
     /**

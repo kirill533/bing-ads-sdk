@@ -90,7 +90,7 @@ class ArrayOfBidOpportunity implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->BidOpportunity);
+        return new \ArrayIterator($this->BidOpportunity ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfBidOpportunity implements \ArrayAccess, \IteratorAggregate, \Counta
      */
     public function count()
     {
-      return count($this->BidOpportunity);
+        return is_array($this->BidOpportunity) ? count($this->BidOpportunity) : 0;
     }
 
     /**

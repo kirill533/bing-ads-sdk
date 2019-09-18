@@ -90,7 +90,7 @@ class ArrayOfProductDimensionPerformanceReportColumn implements \ArrayAccess, \I
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->ProductDimensionPerformanceReportColumn);
+        return new \ArrayIterator($this->ProductDimensionPerformanceReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfProductDimensionPerformanceReportColumn implements \ArrayAccess, \I
      */
     public function count()
     {
-      return count($this->ProductDimensionPerformanceReportColumn);
+        return is_array($this->ProductDimensionPerformanceReportColumn) ? count($this->ProductDimensionPerformanceReportColumn) : 0;
     }
 
     /**

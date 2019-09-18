@@ -90,7 +90,7 @@ class ArrayOfAdExtensionByAdReportColumn implements \ArrayAccess, \IteratorAggre
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AdExtensionByAdReportColumn);
+        return new \ArrayIterator($this->AdExtensionByAdReportColumn ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAdExtensionByAdReportColumn implements \ArrayAccess, \IteratorAggre
      */
     public function count()
     {
-      return count($this->AdExtensionByAdReportColumn);
+        return is_array($this->AdExtensionByAdReportColumn) ? count($this->AdExtensionByAdReportColumn) : 0;
     }
 
     /**

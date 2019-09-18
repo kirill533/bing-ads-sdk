@@ -90,7 +90,7 @@ class ArrayOfAppUrl implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->AppUrl);
+        return new \ArrayIterator($this->AppUrl ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfAppUrl implements \ArrayAccess, \IteratorAggregate, \Countable
      */
     public function count()
     {
-      return count($this->AppUrl);
+        return is_array($this->AppUrl) ? count($this->AppUrl) : 0;
     }
 
     /**

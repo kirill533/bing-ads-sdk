@@ -90,7 +90,7 @@ class ArrayOfCompetitionLevel implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function getIterator()
     {
-        return new \ArrayIterator($this->CompetitionLevel);
+        return new \ArrayIterator($this->CompetitionLevel ?? []);
     }
 
     /**
@@ -100,7 +100,7 @@ class ArrayOfCompetitionLevel implements \ArrayAccess, \IteratorAggregate, \Coun
      */
     public function count()
     {
-      return count($this->CompetitionLevel);
+        return is_array($this->CompetitionLevel) ? count($this->CompetitionLevel) : 0;
     }
 
     /**

@@ -2,6 +2,8 @@
 
 namespace PMG\BingAds;
 
+use Psr\EventDispatcher\EventDispatcherInterface;
+
 trait BingServiceDependencies
 {
     /**
@@ -18,6 +20,11 @@ trait BingServiceDependencies
      * @var PsrMessageConverter
      */
     private $messageConverter;
+
+    /**
+     * @var EventDispatcherInterface
+     */
+    private $events;
 
     /**
      * {@inheritdoc}
@@ -41,6 +48,14 @@ trait BingServiceDependencies
     public function setMessageConverter(PsrMessageConverter $converter) : void
     {
         $this->messageConverter = $converter;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setEventDispatcher(EventDispatcherInterface $events) : void
+    {
+        $this->events = $events;
     }
 
     protected function getRequestHeaders() : RequestHeaders
@@ -68,5 +83,14 @@ trait BingServiceDependencies
         }
 
         return $this->messageConverter;
+    }
+
+    protected function dispatchEvent(object $event) : object
+    {
+        if ($this->events instanceof EventDispatcherInterface) {
+            return $this->events->dispatch($event);
+        }
+
+        return $event;
     }
 }

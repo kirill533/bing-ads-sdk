@@ -5,6 +5,8 @@ namespace PMG\BingAds;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use PMG\BingAds\Exception\ApiException;
+use PMG\BingAds\Event\ErrorResponse;
+use PMG\BingAds\Event\SuccessfulResponse;
 
 class BingSoapClient extends \SoapClient implements BingService
 {
@@ -49,14 +51,21 @@ class BingSoapClient extends \SoapClient implements BingService
     public function __soapCall($func, $args, $options=null, $inputHeaders=null, &$outputHeaders=null)
     {
         try {
-            return parent::__soapCall($func, $args, $options, array_merge(
+            $response = parent::__soapCall($func, $args, $options, array_merge(
                 (array) $inputHeaders,
                 $this->createSoapHeaders()
             ), $outputHeaders);
+
+            $this->dispatchEvent(new SuccessfulResponse($this, $func));
+
+            return $response;
         } catch (\SoapFault $fault) {
             $exception = $this->getFaultParser()->toException($fault, $this->classmap);
             $exception->setRequest($this->lastRequest());
             $exception->setResponse($this->lastResponse());
+
+            $this->dispatchEvent(new ErrorResponse($this, $func, $exception));
+
             throw $exception;
         }
     }

@@ -25,8 +25,11 @@ class BingSoapClientTest extends TestCase
         $this->soapClient->getCampaignsByIds(new GetCampaignsByIdsRequest());
 
         $this->assertCount(1, $this->events->events);
-        $this->assertInstanceOf(SuccessfulResponse::class, $this->events->events[0]);
-        $this->assertSame('GetCampaignsByIds', $this->events->events[0]->getSoapFunctionName());
+        $event = $this->events->events[0];
+        $this->assertInstanceOf(SuccessfulResponse::class, $event);
+        $this->assertSame('GetCampaignsByIds', $event->getSoapFunctionName());
+        $this->assertEquals($this->soapClient->lastRequest(), $event->getHttpRequest());
+        $this->assertEquals($this->soapClient->lastResponse(), $event->getHttpResponse());
     }
 
     public function testErroredSoapCallsEmitSuccessEvents()
@@ -44,9 +47,12 @@ class BingSoapClientTest extends TestCase
 
         $this->assertInstanceOf(ApiException::class, $fault);
         $this->assertCount(1, $this->events->events);
-        $this->assertInstanceOf(ErrorResponse::class, $this->events->events[0]);
-        $this->assertSame('GetCampaignsByIds', $this->events->events[0]->getSoapFunctionName());
-        $this->assertSame($fault, $this->events->events[0]->getException());
+        $event = $this->events->events[0];
+        $this->assertInstanceOf(ErrorResponse::class, $event);
+        $this->assertSame('GetCampaignsByIds', $event->getSoapFunctionName());
+        $this->assertSame($fault, $event->getException());
+        $this->assertEquals($fault->getRequest(), $event->getHttpRequest());
+        $this->assertEquals($fault->getResponse(), $event->getHttpResponse());
     }
 
     protected function setUp() : void

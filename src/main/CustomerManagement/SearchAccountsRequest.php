@@ -21,15 +21,22 @@ class SearchAccountsRequest
     protected $PageInfo = null;
 
     /**
+     * @var AccountAdditionalField $ReturnAdditionalFields
+     */
+    protected $ReturnAdditionalFields = null;
+
+    /**
      * @param ArrayOfPredicate $Predicates
      * @param ArrayOfOrderBy $Ordering
      * @param Paging $PageInfo
+     * @param AccountAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($Predicates = null, $Ordering = null, $PageInfo = null)
+    public function __construct($Predicates = null, $Ordering = null, $PageInfo = null, $ReturnAdditionalFields = null)
     {
     $this->Predicates = $Predicates;
     $this->Ordering = $Ordering;
     $this->PageInfo = $PageInfo;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -83,6 +90,24 @@ class SearchAccountsRequest
     public function setPageInfo($PageInfo)
     {
         $this->PageInfo = $PageInfo;
+        return $this;
+    }
+
+    /**
+     * @return AccountAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param AccountAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\CustomerManagement\SearchAccountsRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
         return $this;
     }
 

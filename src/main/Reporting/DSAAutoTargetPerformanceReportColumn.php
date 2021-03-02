@@ -50,6 +50,11 @@ class DSAAutoTargetPerformanceReportColumn
     const AllCostPerConversion = 'AllCostPerConversion';
     const AllReturnOnAdSpend = 'AllReturnOnAdSpend';
     const AllRevenuePerConversion = 'AllRevenuePerConversion';
+    const ViewThroughConversions = 'ViewThroughConversions';
+    const Goal = 'Goal';
+    const GoalType = 'GoalType';
+    const AbsoluteTopImpressionRatePercent = 'AbsoluteTopImpressionRatePercent';
+    const TopImpressionRatePercent = 'TopImpressionRatePercent';
 
 
 }

@@ -11,11 +11,18 @@ class SetSharedEntityAssociationsRequest
     protected $Associations = null;
 
     /**
-     * @param ArrayOfSharedEntityAssociation $Associations
+     * @var EntityScope $SharedEntityScope
      */
-    public function __construct($Associations = null)
+    protected $SharedEntityScope = null;
+
+    /**
+     * @param ArrayOfSharedEntityAssociation $Associations
+     * @param EntityScope $SharedEntityScope
+     */
+    public function __construct($Associations = null, $SharedEntityScope = null)
     {
     $this->Associations = $Associations;
+    $this->SharedEntityScope = $SharedEntityScope;
     }
 
     /**
@@ -33,6 +40,24 @@ class SetSharedEntityAssociationsRequest
     public function setAssociations($Associations)
     {
         $this->Associations = $Associations;
+        return $this;
+    }
+
+    /**
+     * @return EntityScope
+     */
+    public function getSharedEntityScope()
+    {
+        return $this->SharedEntityScope;
+    }
+
+    /**
+     * @param EntityScope $SharedEntityScope
+     * @return \PMG\BingAds\CampaignManagement\SetSharedEntityAssociationsRequest
+     */
+    public function setSharedEntityScope($SharedEntityScope)
+    {
+        $this->SharedEntityScope = $SharedEntityScope;
         return $this;
     }
 

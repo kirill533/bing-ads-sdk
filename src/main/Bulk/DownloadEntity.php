@@ -92,6 +92,10 @@ class DownloadEntity
     const AdGroupSimilarRemarketingListAssociations = 'AdGroupSimilarRemarketingListAssociations';
     const AdGroupNegativeSimilarRemarketingListAssociations = 'AdGroupNegativeSimilarRemarketingListAssociations';
     const Experiments = 'Experiments';
+    const ActionAdExtensions = 'ActionAdExtensions';
+    const CampaignActionAdExtensions = 'CampaignActionAdExtensions';
+    const AdGroupActionAdExtensions = 'AdGroupActionAdExtensions';
+    const AccountActionAdExtensions = 'AccountActionAdExtensions';
     const ResponsiveSearchAds = 'ResponsiveSearchAds';
     const ResponsiveSearchAdLabels = 'ResponsiveSearchAdLabels';
     const CampaignAudienceAssociations = 'CampaignAudienceAssociations';
@@ -108,6 +112,31 @@ class DownloadEntity
     const CampaignNegativeSimilarRemarketingListAssociations = 'CampaignNegativeSimilarRemarketingListAssociations';
     const Feeds = 'Feeds';
     const FeedItems = 'FeedItems';
+    const CampaignNegativeStoreCriterions = 'CampaignNegativeStoreCriterions';
+    const PromotionAdExtensions = 'PromotionAdExtensions';
+    const AccountPromotionAdExtensions = 'AccountPromotionAdExtensions';
+    const CampaignPromotionAdExtensions = 'CampaignPromotionAdExtensions';
+    const AdGroupPromotionAdExtensions = 'AdGroupPromotionAdExtensions';
+    const CombinedLists = 'CombinedLists';
+    const AdGroupCombinedListAssociations = 'AdGroupCombinedListAssociations';
+    const AdGroupNegativeCombinedListAssociations = 'AdGroupNegativeCombinedListAssociations';
+    const CampaignCombinedListAssociations = 'CampaignCombinedListAssociations';
+    const CampaignNegativeCombinedListAssociations = 'CampaignNegativeCombinedListAssociations';
+    const Images = 'Images';
+    const CustomerLists = 'CustomerLists';
+    const AdGroupCustomerListAssociations = 'AdGroupCustomerListAssociations';
+    const AdGroupNegativeCustomerListAssociations = 'AdGroupNegativeCustomerListAssociations';
+    const CampaignCustomerListAssociations = 'CampaignCustomerListAssociations';
+    const CampaignNegativeCustomerListAssociations = 'CampaignNegativeCustomerListAssociations';
+    const FilterLinkAdExtensions = 'FilterLinkAdExtensions';
+    const AccountFilterLinkAdExtensions = 'AccountFilterLinkAdExtensions';
+    const CampaignFilterLinkAdExtensions = 'CampaignFilterLinkAdExtensions';
+    const AdGroupFilterLinkAdExtensions = 'AdGroupFilterLinkAdExtensions';
+    const FlyerAdExtensions = 'FlyerAdExtensions';
+    const AccountFlyerAdExtensions = 'AccountFlyerAdExtensions';
+    const CampaignFlyerAdExtensions = 'CampaignFlyerAdExtensions';
+    const AdGroupFlyerAdExtensions = 'AdGroupFlyerAdExtensions';
+    const PortfolioBidStrategies = 'PortfolioBidStrategies';
 
 
 }

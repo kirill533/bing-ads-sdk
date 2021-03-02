@@ -21,15 +21,22 @@ class GetAuctionInsightDataRequest
     protected $SearchParameters = null;
 
     /**
+     * @var AuctionInsightKpiAdditionalField $ReturnAdditionalFields
+     */
+    protected $ReturnAdditionalFields = null;
+
+    /**
      * @param EntityType $EntityType
      * @param ArrayOflong $EntityIds
      * @param ArrayOfSearchParameter $SearchParameters
+     * @param AuctionInsightKpiAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($EntityType = null, $EntityIds = null, $SearchParameters = null)
+    public function __construct($EntityType = null, $EntityIds = null, $SearchParameters = null, $ReturnAdditionalFields = null)
     {
     $this->EntityType = $EntityType;
     $this->EntityIds = $EntityIds;
     $this->SearchParameters = $SearchParameters;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -83,6 +90,24 @@ class GetAuctionInsightDataRequest
     public function setSearchParameters($SearchParameters)
     {
         $this->SearchParameters = $SearchParameters;
+        return $this;
+    }
+
+    /**
+     * @return AuctionInsightKpiAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param AuctionInsightKpiAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\AdInsight\GetAuctionInsightDataRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
         return $this;
     }
 

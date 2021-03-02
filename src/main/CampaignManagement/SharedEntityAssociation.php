@@ -16,6 +16,11 @@ class SharedEntityAssociation
     protected $EntityType = null;
 
     /**
+     * @var int $SharedEntityCustomerId
+     */
+    protected $SharedEntityCustomerId = null;
+
+    /**
      * @var int $SharedEntityId
      */
     protected $SharedEntityId = null;
@@ -68,6 +73,24 @@ class SharedEntityAssociation
     public function setEntityType($EntityType)
     {
         $this->EntityType = $EntityType;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getSharedEntityCustomerId()
+    {
+        return $this->SharedEntityCustomerId;
+    }
+
+    /**
+     * @param int $SharedEntityCustomerId
+     * @return \PMG\BingAds\CampaignManagement\SharedEntityAssociation
+     */
+    public function setSharedEntityCustomerId($SharedEntityCustomerId)
+    {
+        $this->SharedEntityCustomerId = $SharedEntityCustomerId;
         return $this;
     }
 

@@ -50,6 +50,11 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
      */
     protected $UrlCustomParameters = null;
 
+    /**
+     * @var CriterionCashback $CriterionCashback
+     */
+    protected $CriterionCashback = null;
+
     
     public function __construct()
     {
@@ -215,6 +220,24 @@ class BiddableAdGroupCriterion extends AdGroupCriterion
     public function setUrlCustomParameters($UrlCustomParameters)
     {
         $this->UrlCustomParameters = $UrlCustomParameters;
+        return $this;
+    }
+
+    /**
+     * @return CriterionCashback
+     */
+    public function getCriterionCashback()
+    {
+        return $this->CriterionCashback;
+    }
+
+    /**
+     * @param CriterionCashback $CriterionCashback
+     * @return \PMG\BingAds\CampaignManagement\BiddableAdGroupCriterion
+     */
+    public function setCriterionCashback($CriterionCashback)
+    {
+        $this->CriterionCashback = $CriterionCashback;
         return $this;
     }
 

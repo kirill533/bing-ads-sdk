@@ -11,11 +11,18 @@ class GetAccountRequest
     protected $AccountId = null;
 
     /**
-     * @param int $AccountId
+     * @var AccountAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($AccountId = null)
+    protected $ReturnAdditionalFields = null;
+
+    /**
+     * @param int $AccountId
+     * @param AccountAdditionalField $ReturnAdditionalFields
+     */
+    public function __construct($AccountId = null, $ReturnAdditionalFields = null)
     {
     $this->AccountId = $AccountId;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -33,6 +40,24 @@ class GetAccountRequest
     public function setAccountId($AccountId)
     {
         $this->AccountId = $AccountId;
+        return $this;
+    }
+
+    /**
+     * @return AccountAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param AccountAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\CustomerManagement\GetAccountRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
         return $this;
     }
 

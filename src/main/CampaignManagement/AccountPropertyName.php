@@ -10,6 +10,8 @@ class AccountPropertyName
     const MSCLKIDAutoTaggingEnabled = 'MSCLKIDAutoTaggingEnabled';
     const AdClickParallelTracking = 'AdClickParallelTracking';
     const FinalUrlSuffix = 'FinalUrlSuffix';
+    const IncludeViewThroughConversions = 'IncludeViewThroughConversions';
+    const ProfileExpansionEnabled = 'ProfileExpansionEnabled';
 
 
 }

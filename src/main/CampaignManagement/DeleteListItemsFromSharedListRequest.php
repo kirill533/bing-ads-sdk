@@ -16,13 +16,20 @@ class DeleteListItemsFromSharedListRequest
     protected $SharedList = null;
 
     /**
+     * @var EntityScope $SharedEntityScope
+     */
+    protected $SharedEntityScope = null;
+
+    /**
      * @param ArrayOflong $ListItemIds
      * @param SharedList $SharedList
+     * @param EntityScope $SharedEntityScope
      */
-    public function __construct($ListItemIds = null, $SharedList = null)
+    public function __construct($ListItemIds = null, $SharedList = null, $SharedEntityScope = null)
     {
     $this->ListItemIds = $ListItemIds;
     $this->SharedList = $SharedList;
+    $this->SharedEntityScope = $SharedEntityScope;
     }
 
     /**
@@ -58,6 +65,24 @@ class DeleteListItemsFromSharedListRequest
     public function setSharedList($SharedList)
     {
         $this->SharedList = $SharedList;
+        return $this;
+    }
+
+    /**
+     * @return EntityScope
+     */
+    public function getSharedEntityScope()
+    {
+        return $this->SharedEntityScope;
+    }
+
+    /**
+     * @param EntityScope $SharedEntityScope
+     * @return \PMG\BingAds\CampaignManagement\DeleteListItemsFromSharedListRequest
+     */
+    public function setSharedEntityScope($SharedEntityScope)
+    {
+        $this->SharedEntityScope = $SharedEntityScope;
         return $this;
     }
 

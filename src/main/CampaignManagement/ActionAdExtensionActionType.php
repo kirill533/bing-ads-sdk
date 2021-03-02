@@ -75,6 +75,8 @@ class ActionAdExtensionActionType
     const FindStore = 'FindStore';
     const SwitchNow = 'SwitchNow';
     const VisitStore = 'VisitStore';
+    const RenewNow = 'RenewNow';
+    const Reorder = 'Reorder';
 
 
 }

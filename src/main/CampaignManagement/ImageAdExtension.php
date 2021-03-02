@@ -56,6 +56,11 @@ class ImageAdExtension extends AdExtension
     protected $Images = null;
 
     /**
+     * @var ArrayOfstring $Layouts
+     */
+    protected $Layouts = null;
+
+    /**
      * @var string $TrackingUrlTemplate
      */
     protected $TrackingUrlTemplate = null;
@@ -248,6 +253,24 @@ class ImageAdExtension extends AdExtension
     public function setImages($Images)
     {
         $this->Images = $Images;
+        return $this;
+    }
+
+    /**
+     * @return ArrayOfstring
+     */
+    public function getLayouts()
+    {
+        return $this->Layouts;
+    }
+
+    /**
+     * @param ArrayOfstring $Layouts
+     * @return \PMG\BingAds\CampaignManagement\ImageAdExtension
+     */
+    public function setLayouts($Layouts)
+    {
+        $this->Layouts = $Layouts;
         return $this;
     }
 

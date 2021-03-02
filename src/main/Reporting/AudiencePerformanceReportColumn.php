@@ -43,6 +43,11 @@ class AudiencePerformanceReportColumn
     const AllRevenuePerConversion = 'AllRevenuePerConversion';
     const AssociationId = 'AssociationId';
     const AssociationLevel = 'AssociationLevel';
+    const ViewThroughConversions = 'ViewThroughConversions';
+    const Goal = 'Goal';
+    const GoalType = 'GoalType';
+    const AbsoluteTopImpressionRatePercent = 'AbsoluteTopImpressionRatePercent';
+    const TopImpressionRatePercent = 'TopImpressionRatePercent';
 
 
 }

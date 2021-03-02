@@ -21,15 +21,22 @@ class GetSharedEntityAssociationsBySharedEntityIdsRequest
     protected $SharedEntityType = null;
 
     /**
+     * @var EntityScope $SharedEntityScope
+     */
+    protected $SharedEntityScope = null;
+
+    /**
      * @param string $EntityType
      * @param ArrayOflong $SharedEntityIds
      * @param string $SharedEntityType
+     * @param EntityScope $SharedEntityScope
      */
-    public function __construct($EntityType = null, $SharedEntityIds = null, $SharedEntityType = null)
+    public function __construct($EntityType = null, $SharedEntityIds = null, $SharedEntityType = null, $SharedEntityScope = null)
     {
     $this->EntityType = $EntityType;
     $this->SharedEntityIds = $SharedEntityIds;
     $this->SharedEntityType = $SharedEntityType;
+    $this->SharedEntityScope = $SharedEntityScope;
     }
 
     /**
@@ -83,6 +90,24 @@ class GetSharedEntityAssociationsBySharedEntityIdsRequest
     public function setSharedEntityType($SharedEntityType)
     {
         $this->SharedEntityType = $SharedEntityType;
+        return $this;
+    }
+
+    /**
+     * @return EntityScope
+     */
+    public function getSharedEntityScope()
+    {
+        return $this->SharedEntityScope;
+    }
+
+    /**
+     * @param EntityScope $SharedEntityScope
+     * @return \PMG\BingAds\CampaignManagement\GetSharedEntityAssociationsBySharedEntityIdsRequest
+     */
+    public function setSharedEntityScope($SharedEntityScope)
+    {
+        $this->SharedEntityScope = $SharedEntityScope;
         return $this;
     }
 

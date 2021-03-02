@@ -50,6 +50,11 @@ class AdDynamicTextPerformanceReportColumn
     const AllConversions = 'AllConversions';
     const AllConversionRate = 'AllConversionRate';
     const AllCostPerConversion = 'AllCostPerConversion';
+    const ViewThroughConversions = 'ViewThroughConversions';
+    const Goal = 'Goal';
+    const GoalType = 'GoalType';
+    const AbsoluteTopImpressionRatePercent = 'AbsoluteTopImpressionRatePercent';
+    const TopImpressionRatePercent = 'TopImpressionRatePercent';
 
 
 }

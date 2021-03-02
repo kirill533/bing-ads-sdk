@@ -90,6 +90,16 @@ class AdGroup
      */
     protected $UrlCustomParameters = null;
 
+    /**
+     * @var boolean $AdScheduleUseSearcherTimeZone
+     */
+    protected $AdScheduleUseSearcherTimeZone = null;
+
+    /**
+     * @var string $AdGroupType
+     */
+    protected $AdGroupType = null;
+
     
     public function __construct()
     {
@@ -399,6 +409,42 @@ class AdGroup
     public function setUrlCustomParameters($UrlCustomParameters)
     {
         $this->UrlCustomParameters = $UrlCustomParameters;
+        return $this;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getAdScheduleUseSearcherTimeZone()
+    {
+        return $this->AdScheduleUseSearcherTimeZone;
+    }
+
+    /**
+     * @param boolean $AdScheduleUseSearcherTimeZone
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
+     */
+    public function setAdScheduleUseSearcherTimeZone($AdScheduleUseSearcherTimeZone)
+    {
+        $this->AdScheduleUseSearcherTimeZone = $AdScheduleUseSearcherTimeZone;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAdGroupType()
+    {
+        return $this->AdGroupType;
+    }
+
+    /**
+     * @param string $AdGroupType
+     * @return \PMG\BingAds\CampaignManagement\AdGroup
+     */
+    public function setAdGroupType($AdGroupType)
+    {
+        $this->AdGroupType = $AdGroupType;
         return $this;
     }
 

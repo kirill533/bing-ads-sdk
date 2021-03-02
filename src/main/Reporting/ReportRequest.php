@@ -26,6 +26,11 @@ class ReportRequest
     protected $Format = null;
 
     /**
+     * @var string $FormatVersion
+     */
+    protected $FormatVersion = null;
+
+    /**
      * @var string $ReportName
      */
     protected $ReportName = null;
@@ -110,6 +115,24 @@ class ReportRequest
     public function setFormat($Format)
     {
         $this->Format = $Format;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getFormatVersion()
+    {
+        return $this->FormatVersion;
+    }
+
+    /**
+     * @param string $FormatVersion
+     * @return \PMG\BingAds\Reporting\ReportRequest
+     */
+    public function setFormatVersion($FormatVersion)
+    {
+        $this->FormatVersion = $FormatVersion;
         return $this;
     }
 

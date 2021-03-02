@@ -26,6 +26,16 @@ class OfflineConversion
     protected $ConversionValue = null;
 
     /**
+     * @var float $ExternalAttributionCredit
+     */
+    protected $ExternalAttributionCredit = null;
+
+    /**
+     * @var string $ExternalAttributionModel
+     */
+    protected $ExternalAttributionModel = null;
+
+    /**
      * @var string $MicrosoftClickId
      */
     protected $MicrosoftClickId = null;
@@ -112,6 +122,42 @@ class OfflineConversion
     public function setConversionValue($ConversionValue)
     {
         $this->ConversionValue = $ConversionValue;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getExternalAttributionCredit()
+    {
+        return $this->ExternalAttributionCredit;
+    }
+
+    /**
+     * @param float $ExternalAttributionCredit
+     * @return \PMG\BingAds\CampaignManagement\OfflineConversion
+     */
+    public function setExternalAttributionCredit($ExternalAttributionCredit)
+    {
+        $this->ExternalAttributionCredit = $ExternalAttributionCredit;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getExternalAttributionModel()
+    {
+        return $this->ExternalAttributionModel;
+    }
+
+    /**
+     * @param string $ExternalAttributionModel
+     * @return \PMG\BingAds\CampaignManagement\OfflineConversion
+     */
+    public function setExternalAttributionModel($ExternalAttributionModel)
+    {
+        $this->ExternalAttributionModel = $ExternalAttributionModel;
         return $this;
     }
 

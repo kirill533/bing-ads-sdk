@@ -51,6 +51,9 @@ class ProductSearchQueryPerformanceReportColumn
     const AllConversionRate = 'AllConversionRate';
     const AllCostPerConversion = 'AllCostPerConversion';
     const AllRevenuePerConversion = 'AllRevenuePerConversion';
+    const Goal = 'Goal';
+    const GoalType = 'GoalType';
+    const AbsoluteTopImpressionRatePercent = 'AbsoluteTopImpressionRatePercent';
 
 
 }

@@ -10,6 +10,7 @@ class AudienceType
     const InMarket = 'InMarket';
     const Product = 'Product';
     const SimilarRemarketingList = 'SimilarRemarketingList';
+    const CombinedList = 'CombinedList';
 
 
 }

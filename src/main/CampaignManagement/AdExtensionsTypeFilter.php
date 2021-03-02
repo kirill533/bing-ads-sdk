@@ -14,6 +14,10 @@ class AdExtensionsTypeFilter
     const SitelinkAdExtension = 'SitelinkAdExtension';
     const StructuredSnippetAdExtension = 'StructuredSnippetAdExtension';
     const PriceAdExtension = 'PriceAdExtension';
+    const ActionAdExtension = 'ActionAdExtension';
+    const PromotionAdExtension = 'PromotionAdExtension';
+    const FilterLinkAdExtension = 'FilterLinkAdExtension';
+    const FlyerAdExtension = 'FlyerAdExtension';
 
 
 }

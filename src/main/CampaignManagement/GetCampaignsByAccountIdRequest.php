@@ -16,13 +16,20 @@ class GetCampaignsByAccountIdRequest
     protected $CampaignType = null;
 
     /**
+     * @var CampaignAdditionalField $ReturnAdditionalFields
+     */
+    protected $ReturnAdditionalFields = null;
+
+    /**
      * @param int $AccountId
      * @param CampaignType $CampaignType
+     * @param CampaignAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($AccountId = null, $CampaignType = null)
+    public function __construct($AccountId = null, $CampaignType = null, $ReturnAdditionalFields = null)
     {
     $this->AccountId = $AccountId;
     $this->CampaignType = $CampaignType;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -58,6 +65,24 @@ class GetCampaignsByAccountIdRequest
     public function setCampaignType($CampaignType)
     {
         $this->CampaignType = $CampaignType;
+        return $this;
+    }
+
+    /**
+     * @return CampaignAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param CampaignAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\CampaignManagement\GetCampaignsByAccountIdRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
         return $this;
     }
 

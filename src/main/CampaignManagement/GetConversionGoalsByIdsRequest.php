@@ -16,13 +16,20 @@ class GetConversionGoalsByIdsRequest
     protected $ConversionGoalTypes = null;
 
     /**
+     * @var ConversionGoalAdditionalField $ReturnAdditionalFields
+     */
+    protected $ReturnAdditionalFields = null;
+
+    /**
      * @param ArrayOflong $ConversionGoalIds
      * @param ConversionGoalType $ConversionGoalTypes
+     * @param ConversionGoalAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($ConversionGoalIds = null, $ConversionGoalTypes = null)
+    public function __construct($ConversionGoalIds = null, $ConversionGoalTypes = null, $ReturnAdditionalFields = null)
     {
     $this->ConversionGoalIds = $ConversionGoalIds;
     $this->ConversionGoalTypes = $ConversionGoalTypes;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -58,6 +65,24 @@ class GetConversionGoalsByIdsRequest
     public function setConversionGoalTypes($ConversionGoalTypes)
     {
         $this->ConversionGoalTypes = $ConversionGoalTypes;
+        return $this;
+    }
+
+    /**
+     * @return ConversionGoalAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param ConversionGoalAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\CampaignManagement\GetConversionGoalsByIdsRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
         return $this;
     }
 

@@ -24,6 +24,7 @@ class AdGroupCriterionType
     const Industry = 'Industry';
     const ProductAudience = 'ProductAudience';
     const SimilarRemarketingList = 'SimilarRemarketingList';
+    const CombinedList = 'CombinedList';
 
 
 }

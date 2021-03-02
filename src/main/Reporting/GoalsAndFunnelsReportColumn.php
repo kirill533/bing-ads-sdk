@@ -27,6 +27,7 @@ class GoalsAndFunnelsReportColumn
     const AdGroupStatus = 'AdGroupStatus';
     const KeywordStatus = 'KeywordStatus';
     const GoalType = 'GoalType';
+    const ViewThroughConversions = 'ViewThroughConversions';
 
 
 }

@@ -21,15 +21,22 @@ class GetCampaignCriterionsByIdsRequest
     protected $CriterionType = null;
 
     /**
+     * @var CriterionAdditionalField $ReturnAdditionalFields
+     */
+    protected $ReturnAdditionalFields = null;
+
+    /**
      * @param ArrayOflong $CampaignCriterionIds
      * @param int $CampaignId
      * @param CampaignCriterionType $CriterionType
+     * @param CriterionAdditionalField $ReturnAdditionalFields
      */
-    public function __construct($CampaignCriterionIds = null, $CampaignId = null, $CriterionType = null)
+    public function __construct($CampaignCriterionIds = null, $CampaignId = null, $CriterionType = null, $ReturnAdditionalFields = null)
     {
     $this->CampaignCriterionIds = $CampaignCriterionIds;
     $this->CampaignId = $CampaignId;
     $this->CriterionType = $CriterionType;
+    $this->ReturnAdditionalFields = $ReturnAdditionalFields;
     }
 
     /**
@@ -83,6 +90,24 @@ class GetCampaignCriterionsByIdsRequest
     public function setCriterionType($CriterionType)
     {
         $this->CriterionType = $CriterionType;
+        return $this;
+    }
+
+    /**
+     * @return CriterionAdditionalField
+     */
+    public function getReturnAdditionalFields()
+    {
+        return $this->ReturnAdditionalFields;
+    }
+
+    /**
+     * @param CriterionAdditionalField $ReturnAdditionalFields
+     * @return \PMG\BingAds\CampaignManagement\GetCampaignCriterionsByIdsRequest
+     */
+    public function setReturnAdditionalFields($ReturnAdditionalFields)
+    {
+        $this->ReturnAdditionalFields = $ReturnAdditionalFields;
         return $this;
     }
 

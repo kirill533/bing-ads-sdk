@@ -40,6 +40,11 @@ class AuctionInsightKpi
      */
     protected $OutrankingShare = null;
 
+    /**
+     * @var float $AbsoluteTopOfPageRate
+     */
+    protected $AbsoluteTopOfPageRate = null;
+
     
     public function __construct()
     {
@@ -169,6 +174,24 @@ class AuctionInsightKpi
     public function setOutrankingShare($OutrankingShare)
     {
         $this->OutrankingShare = $OutrankingShare;
+        return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getAbsoluteTopOfPageRate()
+    {
+        return $this->AbsoluteTopOfPageRate;
+    }
+
+    /**
+     * @param float $AbsoluteTopOfPageRate
+     * @return \PMG\BingAds\AdInsight\AuctionInsightKpi
+     */
+    public function setAbsoluteTopOfPageRate($AbsoluteTopOfPageRate)
+    {
+        $this->AbsoluteTopOfPageRate = $AbsoluteTopOfPageRate;
         return $this;
     }
 

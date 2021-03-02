@@ -9,6 +9,7 @@ class ConversionGoalTrackingStatus
     const NoRecentConversions = 'NoRecentConversions';
     const RecordingConversions = 'RecordingConversions';
     const TagInactive = 'TagInactive';
+    const InactiveDueToTagUnavailable = 'InactiveDueToTagUnavailable';
 
 
 }

@@ -95,6 +95,16 @@ class Campaign
      */
     protected $Languages = null;
 
+    /**
+     * @var boolean $AdScheduleUseSearcherTimeZone
+     */
+    protected $AdScheduleUseSearcherTimeZone = null;
+
+    /**
+     * @var int $BidStrategyId
+     */
+    protected $BidStrategyId = null;
+
     
     public function __construct()
     {
@@ -422,6 +432,42 @@ class Campaign
     public function setLanguages($Languages)
     {
         $this->Languages = $Languages;
+        return $this;
+    }
+
+    /**
+     * @return boolean
+     */
+    public function getAdScheduleUseSearcherTimeZone()
+    {
+        return $this->AdScheduleUseSearcherTimeZone;
+    }
+
+    /**
+     * @param boolean $AdScheduleUseSearcherTimeZone
+     * @return \PMG\BingAds\CampaignManagement\Campaign
+     */
+    public function setAdScheduleUseSearcherTimeZone($AdScheduleUseSearcherTimeZone)
+    {
+        $this->AdScheduleUseSearcherTimeZone = $AdScheduleUseSearcherTimeZone;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getBidStrategyId()
+    {
+        return $this->BidStrategyId;
+    }
+
+    /**
+     * @param int $BidStrategyId
+     * @return \PMG\BingAds\CampaignManagement\Campaign
+     */
+    public function setBidStrategyId($BidStrategyId)
+    {
+        $this->BidStrategyId = $BidStrategyId;
         return $this;
     }
 

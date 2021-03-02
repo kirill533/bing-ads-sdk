@@ -135,6 +135,16 @@ class AdvertiserAccount
      */
     protected $SoldToPaymentInstrumentId = null;
 
+    /**
+     * @var AccountTaxCertificate $TaxCertificate
+     */
+    protected $TaxCertificate = null;
+
+    /**
+     * @var string $AccountMode
+     */
+    protected $AccountMode = null;
+
     
     public function __construct()
     {
@@ -613,6 +623,42 @@ class AdvertiserAccount
     public function setSoldToPaymentInstrumentId($SoldToPaymentInstrumentId)
     {
         $this->SoldToPaymentInstrumentId = $SoldToPaymentInstrumentId;
+        return $this;
+    }
+
+    /**
+     * @return AccountTaxCertificate
+     */
+    public function getTaxCertificate()
+    {
+        return $this->TaxCertificate;
+    }
+
+    /**
+     * @param AccountTaxCertificate $TaxCertificate
+     * @return \PMG\BingAds\CustomerManagement\AdvertiserAccount
+     */
+    public function setTaxCertificate($TaxCertificate)
+    {
+        $this->TaxCertificate = $TaxCertificate;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAccountMode()
+    {
+        return $this->AccountMode;
+    }
+
+    /**
+     * @param string $AccountMode
+     * @return \PMG\BingAds\CustomerManagement\AdvertiserAccount
+     */
+    public function setAccountMode($AccountMode)
+    {
+        $this->AccountMode = $AccountMode;
         return $this;
     }
 

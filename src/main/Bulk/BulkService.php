@@ -31,9 +31,12 @@ class BulkService extends \PMG\BingAds\BingSoapClient
       'GetBulkUploadUrlResponse' => 'PMG\\BingAds\\Bulk\\GetBulkUploadUrlResponse',
       'GetBulkUploadStatusRequest' => 'PMG\\BingAds\\Bulk\\GetBulkUploadStatusRequest',
       'GetBulkUploadStatusResponse' => 'PMG\\BingAds\\Bulk\\GetBulkUploadStatusResponse',
+      'UploadEntityRecordsRequest' => 'PMG\\BingAds\\Bulk\\UploadEntityRecordsRequest',
+      'UploadEntityRecordsResponse' => 'PMG\\BingAds\\Bulk\\UploadEntityRecordsResponse',
       'ArrayOflong' => 'PMG\\BingAds\\Bulk\\ArrayOflong',
       'ArrayOfKeyValueOfstringstring' => 'PMG\\BingAds\\Bulk\\ArrayOfKeyValueOfstringstring',
       'KeyValueOfstringstring' => 'PMG\\BingAds\\Bulk\\KeyValueOfstringstring',
+      'ArrayOfstring' => 'PMG\\BingAds\\Bulk\\ArrayOfstring',
       'ArrayOfAdApiError' => 'PMG\\BingAds\\Bulk\\ArrayOfAdApiError',
       'AdApiError' => 'PMG\\BingAds\\Bulk\\AdApiError',
       'ArrayOfKeyValuePairOfstringstring' => 'PMG\\BingAds\\Bulk\\ArrayOfKeyValuePairOfstringstring',
@@ -100,6 +103,15 @@ class BulkService extends \PMG\BingAds\BingSoapClient
     public function getBulkUploadStatus(GetBulkUploadStatusRequest $parameters)
     {
         return $this->__soapCall("GetBulkUploadStatus", [$parameters]);
+    }
+
+    /**
+     * @param UploadEntityRecordsRequest $parameters
+     * @return UploadEntityRecordsResponse
+     */
+    public function uploadEntityRecords(UploadEntityRecordsRequest $parameters)
+    {
+        return $this->__soapCall("UploadEntityRecords", [$parameters]);
     }
 
 }

@@ -21,6 +21,11 @@ class ConversionGoal
     protected $ExcludeFromBidding = null;
 
     /**
+     * @var ConversionGoalCategory $GoalCategory
+     */
+    protected $GoalCategory = null;
+
+    /**
      * @var int $Id
      */
     protected $Id = null;
@@ -59,6 +64,11 @@ class ConversionGoal
      * @var ConversionGoalType $Type
      */
     protected $Type = null;
+
+    /**
+     * @var int $ViewThroughConversionWindowInMinutes
+     */
+    protected $ViewThroughConversionWindowInMinutes = null;
 
     
     public function __construct()
@@ -117,6 +127,24 @@ class ConversionGoal
     public function setExcludeFromBidding($ExcludeFromBidding)
     {
         $this->ExcludeFromBidding = $ExcludeFromBidding;
+        return $this;
+    }
+
+    /**
+     * @return ConversionGoalCategory
+     */
+    public function getGoalCategory()
+    {
+        return $this->GoalCategory;
+    }
+
+    /**
+     * @param ConversionGoalCategory $GoalCategory
+     * @return \PMG\BingAds\CampaignManagement\ConversionGoal
+     */
+    public function setGoalCategory($GoalCategory)
+    {
+        $this->GoalCategory = $GoalCategory;
         return $this;
     }
 
@@ -261,6 +289,24 @@ class ConversionGoal
     public function setType($Type)
     {
         $this->Type = $Type;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getViewThroughConversionWindowInMinutes()
+    {
+        return $this->ViewThroughConversionWindowInMinutes;
+    }
+
+    /**
+     * @param int $ViewThroughConversionWindowInMinutes
+     * @return \PMG\BingAds\CampaignManagement\ConversionGoal
+     */
+    public function setViewThroughConversionWindowInMinutes($ViewThroughConversionWindowInMinutes)
+    {
+        $this->ViewThroughConversionWindowInMinutes = $ViewThroughConversionWindowInMinutes;
         return $this;
     }
 

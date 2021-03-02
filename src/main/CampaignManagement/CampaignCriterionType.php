@@ -24,6 +24,8 @@ class CampaignCriterionType
     const Industry = 'Industry';
     const ProductAudience = 'ProductAudience';
     const SimilarRemarketingList = 'SimilarRemarketingList';
+    const Store = 'Store';
+    const CombinedList = 'CombinedList';
 
 
 }

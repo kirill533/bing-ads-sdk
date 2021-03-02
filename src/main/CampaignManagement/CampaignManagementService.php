@@ -41,12 +41,17 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'TargetCpaBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\TargetCpaBiddingScheme',
       'ManualCpcBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\ManualCpcBiddingScheme',
       'EnhancedCpcBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\EnhancedCpcBiddingScheme',
+      'ManualCpvBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\ManualCpvBiddingScheme',
+      'ManualCpmBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\ManualCpmBiddingScheme',
       'InheritFromParentBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\InheritFromParentBiddingScheme',
       'TargetRoasBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\TargetRoasBiddingScheme',
       'MaxRoasBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\MaxRoasBiddingScheme',
+      'MaxConversionValueBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\MaxConversionValueBiddingScheme',
+      'TargetImpressionShareBiddingScheme' => 'PMG\\BingAds\\CampaignManagement\\TargetImpressionShareBiddingScheme',
       'ArrayOfSetting' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfSetting',
       'Setting' => 'PMG\\BingAds\\CampaignManagement\\Setting',
       'ShoppingSetting' => 'PMG\\BingAds\\CampaignManagement\\ShoppingSetting',
+      'DynamicFeedSetting' => 'PMG\\BingAds\\CampaignManagement\\DynamicFeedSetting',
       'DynamicSearchAdsSetting' => 'PMG\\BingAds\\CampaignManagement\\DynamicSearchAdsSetting',
       'TargetSetting' => 'PMG\\BingAds\\CampaignManagement\\TargetSetting',
       'ArrayOfTargetSettingDetail' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfTargetSettingDetail',
@@ -165,10 +170,14 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'ReviewAdExtension' => 'PMG\\BingAds\\CampaignManagement\\ReviewAdExtension',
       'CalloutAdExtension' => 'PMG\\BingAds\\CampaignManagement\\CalloutAdExtension',
       'SitelinkAdExtension' => 'PMG\\BingAds\\CampaignManagement\\SitelinkAdExtension',
+      'ActionAdExtension' => 'PMG\\BingAds\\CampaignManagement\\ActionAdExtension',
       'StructuredSnippetAdExtension' => 'PMG\\BingAds\\CampaignManagement\\StructuredSnippetAdExtension',
       'PriceAdExtension' => 'PMG\\BingAds\\CampaignManagement\\PriceAdExtension',
       'ArrayOfPriceTableRow' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfPriceTableRow',
       'PriceTableRow' => 'PMG\\BingAds\\CampaignManagement\\PriceTableRow',
+      'PromotionAdExtension' => 'PMG\\BingAds\\CampaignManagement\\PromotionAdExtension',
+      'FilterLinkAdExtension' => 'PMG\\BingAds\\CampaignManagement\\FilterLinkAdExtension',
+      'FlyerAdExtension' => 'PMG\\BingAds\\CampaignManagement\\FlyerAdExtension',
       'AddAdExtensionsResponse' => 'PMG\\BingAds\\CampaignManagement\\AddAdExtensionsResponse',
       'ArrayOfAdExtensionIdentity' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfAdExtensionIdentity',
       'AdExtensionIdentity' => 'PMG\\BingAds\\CampaignManagement\\AdExtensionIdentity',
@@ -245,10 +254,13 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'LocationIntentCriterion' => 'PMG\\BingAds\\CampaignManagement\\LocationIntentCriterion',
       'AudienceCriterion' => 'PMG\\BingAds\\CampaignManagement\\AudienceCriterion',
       'ProfileCriterion' => 'PMG\\BingAds\\CampaignManagement\\ProfileCriterion',
+      'StoreCriterion' => 'PMG\\BingAds\\CampaignManagement\\StoreCriterion',
       'BiddableAdGroupCriterion' => 'PMG\\BingAds\\CampaignManagement\\BiddableAdGroupCriterion',
       'CriterionBid' => 'PMG\\BingAds\\CampaignManagement\\CriterionBid',
       'FixedBid' => 'PMG\\BingAds\\CampaignManagement\\FixedBid',
       'BidMultiplier' => 'PMG\\BingAds\\CampaignManagement\\BidMultiplier',
+      'CriterionCashback' => 'PMG\\BingAds\\CampaignManagement\\CriterionCashback',
+      'CashbackAdjustment' => 'PMG\\BingAds\\CampaignManagement\\CashbackAdjustment',
       'NegativeAdGroupCriterion' => 'PMG\\BingAds\\CampaignManagement\\NegativeAdGroupCriterion',
       'AddAdGroupCriterionsRequest' => 'PMG\\BingAds\\CampaignManagement\\AddAdGroupCriterionsRequest',
       'AddAdGroupCriterionsResponse' => 'PMG\\BingAds\\CampaignManagement\\AddAdGroupCriterionsResponse',
@@ -270,6 +282,7 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'ArrayOfNegativeKeyword' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfNegativeKeyword',
       'NegativeKeyword' => 'PMG\\BingAds\\CampaignManagement\\NegativeKeyword',
       'SharedListItem' => 'PMG\\BingAds\\CampaignManagement\\SharedListItem',
+      'NegativeSite' => 'PMG\\BingAds\\CampaignManagement\\NegativeSite',
       'AddNegativeKeywordsToEntitiesResponse' => 'PMG\\BingAds\\CampaignManagement\\AddNegativeKeywordsToEntitiesResponse',
       'ArrayOfIdCollection' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfIdCollection',
       'IdCollection' => 'PMG\\BingAds\\CampaignManagement\\IdCollection',
@@ -283,6 +296,9 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'SharedEntity' => 'PMG\\BingAds\\CampaignManagement\\SharedEntity',
       'SharedList' => 'PMG\\BingAds\\CampaignManagement\\SharedList',
       'NegativeKeywordList' => 'PMG\\BingAds\\CampaignManagement\\NegativeKeywordList',
+      'PlacementExclusionList' => 'PMG\\BingAds\\CampaignManagement\\PlacementExclusionList',
+      'GetSharedEntitiesRequest' => 'PMG\\BingAds\\CampaignManagement\\GetSharedEntitiesRequest',
+      'GetSharedEntitiesResponse' => 'PMG\\BingAds\\CampaignManagement\\GetSharedEntitiesResponse',
       'AddSharedEntityRequest' => 'PMG\\BingAds\\CampaignManagement\\AddSharedEntityRequest',
       'ArrayOfSharedListItem' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfSharedListItem',
       'AddSharedEntityResponse' => 'PMG\\BingAds\\CampaignManagement\\AddSharedEntityResponse',
@@ -334,6 +350,18 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'GetBudgetsByIdsResponse' => 'PMG\\BingAds\\CampaignManagement\\GetBudgetsByIdsResponse',
       'GetCampaignIdsByBudgetIdsRequest' => 'PMG\\BingAds\\CampaignManagement\\GetCampaignIdsByBudgetIdsRequest',
       'GetCampaignIdsByBudgetIdsResponse' => 'PMG\\BingAds\\CampaignManagement\\GetCampaignIdsByBudgetIdsResponse',
+      'AddBidStrategiesRequest' => 'PMG\\BingAds\\CampaignManagement\\AddBidStrategiesRequest',
+      'ArrayOfBidStrategy' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfBidStrategy',
+      'BidStrategy' => 'PMG\\BingAds\\CampaignManagement\\BidStrategy',
+      'AddBidStrategiesResponse' => 'PMG\\BingAds\\CampaignManagement\\AddBidStrategiesResponse',
+      'UpdateBidStrategiesRequest' => 'PMG\\BingAds\\CampaignManagement\\UpdateBidStrategiesRequest',
+      'UpdateBidStrategiesResponse' => 'PMG\\BingAds\\CampaignManagement\\UpdateBidStrategiesResponse',
+      'DeleteBidStrategiesRequest' => 'PMG\\BingAds\\CampaignManagement\\DeleteBidStrategiesRequest',
+      'DeleteBidStrategiesResponse' => 'PMG\\BingAds\\CampaignManagement\\DeleteBidStrategiesResponse',
+      'GetBidStrategiesByIdsRequest' => 'PMG\\BingAds\\CampaignManagement\\GetBidStrategiesByIdsRequest',
+      'GetBidStrategiesByIdsResponse' => 'PMG\\BingAds\\CampaignManagement\\GetBidStrategiesByIdsResponse',
+      'GetCampaignIdsByBidStrategyIdsRequest' => 'PMG\\BingAds\\CampaignManagement\\GetCampaignIdsByBidStrategyIdsRequest',
+      'GetCampaignIdsByBidStrategyIdsResponse' => 'PMG\\BingAds\\CampaignManagement\\GetCampaignIdsByBidStrategyIdsResponse',
       'AddAudiencesRequest' => 'PMG\\BingAds\\CampaignManagement\\AddAudiencesRequest',
       'ArrayOfAudience' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfAudience',
       'Audience' => 'PMG\\BingAds\\CampaignManagement\\Audience',
@@ -357,6 +385,9 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'InMarketAudience' => 'PMG\\BingAds\\CampaignManagement\\InMarketAudience',
       'ProductAudience' => 'PMG\\BingAds\\CampaignManagement\\ProductAudience',
       'SimilarRemarketingList' => 'PMG\\BingAds\\CampaignManagement\\SimilarRemarketingList',
+      'CombinedList' => 'PMG\\BingAds\\CampaignManagement\\CombinedList',
+      'ArrayOfCombinationRule' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfCombinationRule',
+      'CombinationRule' => 'PMG\\BingAds\\CampaignManagement\\CombinationRule',
       'AddAudiencesResponse' => 'PMG\\BingAds\\CampaignManagement\\AddAudiencesResponse',
       'UpdateAudiencesRequest' => 'PMG\\BingAds\\CampaignManagement\\UpdateAudiencesRequest',
       'UpdateAudiencesResponse' => 'PMG\\BingAds\\CampaignManagement\\UpdateAudiencesResponse',
@@ -394,6 +425,10 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'ArrayOfOfflineConversion' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfOfflineConversion',
       'OfflineConversion' => 'PMG\\BingAds\\CampaignManagement\\OfflineConversion',
       'ApplyOfflineConversionsResponse' => 'PMG\\BingAds\\CampaignManagement\\ApplyOfflineConversionsResponse',
+      'ApplyOfflineConversionAdjustmentsRequest' => 'PMG\\BingAds\\CampaignManagement\\ApplyOfflineConversionAdjustmentsRequest',
+      'ArrayOfOfflineConversionAdjustment' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfOfflineConversionAdjustment',
+      'OfflineConversionAdjustment' => 'PMG\\BingAds\\CampaignManagement\\OfflineConversionAdjustment',
+      'ApplyOfflineConversionAdjustmentsResponse' => 'PMG\\BingAds\\CampaignManagement\\ApplyOfflineConversionAdjustmentsResponse',
       'AddLabelsRequest' => 'PMG\\BingAds\\CampaignManagement\\AddLabelsRequest',
       'ArrayOfLabel' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfLabel',
       'Label' => 'PMG\\BingAds\\CampaignManagement\\Label',
@@ -430,12 +465,51 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
       'SearchCompaniesResponse' => 'PMG\\BingAds\\CampaignManagement\\SearchCompaniesResponse',
       'ArrayOfCompany' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfCompany',
       'Company' => 'PMG\\BingAds\\CampaignManagement\\Company',
+      'GetFileImportUploadUrlRequest' => 'PMG\\BingAds\\CampaignManagement\\GetFileImportUploadUrlRequest',
+      'GetFileImportUploadUrlResponse' => 'PMG\\BingAds\\CampaignManagement\\GetFileImportUploadUrlResponse',
+      'AddImportJobsRequest' => 'PMG\\BingAds\\CampaignManagement\\AddImportJobsRequest',
+      'ArrayOfImportJob' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfImportJob',
+      'ImportJob' => 'PMG\\BingAds\\CampaignManagement\\ImportJob',
+      'Frequency' => 'PMG\\BingAds\\CampaignManagement\\Frequency',
+      'ImportOption' => 'PMG\\BingAds\\CampaignManagement\\ImportOption',
+      'GoogleImportOption' => 'PMG\\BingAds\\CampaignManagement\\GoogleImportOption',
+      'ImportSearchAndReplaceForStringProperty' => 'PMG\\BingAds\\CampaignManagement\\ImportSearchAndReplaceForStringProperty',
+      'FileImportOption' => 'PMG\\BingAds\\CampaignManagement\\FileImportOption',
+      'GoogleImportJob' => 'PMG\\BingAds\\CampaignManagement\\GoogleImportJob',
+      'ArrayOfCampaignAdGroupIds' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfCampaignAdGroupIds',
+      'CampaignAdGroupIds' => 'PMG\\BingAds\\CampaignManagement\\CampaignAdGroupIds',
+      'FileImportJob' => 'PMG\\BingAds\\CampaignManagement\\FileImportJob',
+      'AddImportJobsResponse' => 'PMG\\BingAds\\CampaignManagement\\AddImportJobsResponse',
+      'GetImportResultsRequest' => 'PMG\\BingAds\\CampaignManagement\\GetImportResultsRequest',
+      'GetImportResultsResponse' => 'PMG\\BingAds\\CampaignManagement\\GetImportResultsResponse',
+      'ArrayOfImportResult' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfImportResult',
+      'ImportResult' => 'PMG\\BingAds\\CampaignManagement\\ImportResult',
+      'ArrayOfImportEntityStatistics' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfImportEntityStatistics',
+      'ImportEntityStatistics' => 'PMG\\BingAds\\CampaignManagement\\ImportEntityStatistics',
+      'GetImportJobsByIdsRequest' => 'PMG\\BingAds\\CampaignManagement\\GetImportJobsByIdsRequest',
+      'GetImportJobsByIdsResponse' => 'PMG\\BingAds\\CampaignManagement\\GetImportJobsByIdsResponse',
+      'DeleteImportJobsRequest' => 'PMG\\BingAds\\CampaignManagement\\DeleteImportJobsRequest',
+      'DeleteImportJobsResponse' => 'PMG\\BingAds\\CampaignManagement\\DeleteImportJobsResponse',
+      'GetImportEntityIdsMappingRequest' => 'PMG\\BingAds\\CampaignManagement\\GetImportEntityIdsMappingRequest',
+      'GetImportEntityIdsMappingResponse' => 'PMG\\BingAds\\CampaignManagement\\GetImportEntityIdsMappingResponse',
+      'AddVideosRequest' => 'PMG\\BingAds\\CampaignManagement\\AddVideosRequest',
+      'ArrayOfVideo' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfVideo',
+      'Video' => 'PMG\\BingAds\\CampaignManagement\\Video',
+      'AddVideosResponse' => 'PMG\\BingAds\\CampaignManagement\\AddVideosResponse',
+      'DeleteVideosRequest' => 'PMG\\BingAds\\CampaignManagement\\DeleteVideosRequest',
+      'DeleteVideosResponse' => 'PMG\\BingAds\\CampaignManagement\\DeleteVideosResponse',
+      'GetVideosByIdsRequest' => 'PMG\\BingAds\\CampaignManagement\\GetVideosByIdsRequest',
+      'GetVideosByIdsResponse' => 'PMG\\BingAds\\CampaignManagement\\GetVideosByIdsResponse',
+      'UpdateVideosRequest' => 'PMG\\BingAds\\CampaignManagement\\UpdateVideosRequest',
+      'UpdateVideosResponse' => 'PMG\\BingAds\\CampaignManagement\\UpdateVideosResponse',
       'ArrayOfstring' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfstring',
       'ArrayOfKeyValueOfstringstring' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfKeyValueOfstringstring',
       'KeyValueOfstringstring' => 'PMG\\BingAds\\CampaignManagement\\KeyValueOfstringstring',
       'ArrayOflong' => 'PMG\\BingAds\\CampaignManagement\\ArrayOflong',
       'ArrayOfKeyValuePairOfstringstring' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfKeyValuePairOfstringstring',
       'KeyValuePairOfstringstring' => 'PMG\\BingAds\\CampaignManagement\\KeyValuePairOfstringstring',
+      'ArrayOfKeyValuePairOflonglong' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfKeyValuePairOflonglong',
+      'KeyValuePairOflonglong' => 'PMG\\BingAds\\CampaignManagement\\KeyValuePairOflonglong',
       'ArrayOfNullableOflong' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfNullableOflong',
       'ArrayOfAdApiError' => 'PMG\\BingAds\\CampaignManagement\\ArrayOfAdApiError',
       'AdApiError' => 'PMG\\BingAds\\CampaignManagement\\AdApiError',
@@ -983,6 +1057,15 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
     }
 
     /**
+     * @param GetSharedEntitiesRequest $parameters
+     * @return GetSharedEntitiesResponse
+     */
+    public function getSharedEntities(GetSharedEntitiesRequest $parameters)
+    {
+        return $this->__soapCall("GetSharedEntities", [$parameters]);
+    }
+
+    /**
      * @param AddSharedEntityRequest $parameters
      * @return AddSharedEntityResponse
      */
@@ -1163,6 +1246,51 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
     }
 
     /**
+     * @param AddBidStrategiesRequest $parameters
+     * @return AddBidStrategiesResponse
+     */
+    public function addBidStrategies(AddBidStrategiesRequest $parameters)
+    {
+        return $this->__soapCall("AddBidStrategies", [$parameters]);
+    }
+
+    /**
+     * @param UpdateBidStrategiesRequest $parameters
+     * @return UpdateBidStrategiesResponse
+     */
+    public function updateBidStrategies(UpdateBidStrategiesRequest $parameters)
+    {
+        return $this->__soapCall("UpdateBidStrategies", [$parameters]);
+    }
+
+    /**
+     * @param DeleteBidStrategiesRequest $parameters
+     * @return DeleteBidStrategiesResponse
+     */
+    public function deleteBidStrategies(DeleteBidStrategiesRequest $parameters)
+    {
+        return $this->__soapCall("DeleteBidStrategies", [$parameters]);
+    }
+
+    /**
+     * @param GetBidStrategiesByIdsRequest $parameters
+     * @return GetBidStrategiesByIdsResponse
+     */
+    public function getBidStrategiesByIds(GetBidStrategiesByIdsRequest $parameters)
+    {
+        return $this->__soapCall("GetBidStrategiesByIds", [$parameters]);
+    }
+
+    /**
+     * @param GetCampaignIdsByBidStrategyIdsRequest $parameters
+     * @return GetCampaignIdsByBidStrategyIdsResponse
+     */
+    public function getCampaignIdsByBidStrategyIds(GetCampaignIdsByBidStrategyIdsRequest $parameters)
+    {
+        return $this->__soapCall("GetCampaignIdsByBidStrategyIds", [$parameters]);
+    }
+
+    /**
      * @param AddAudiencesRequest $parameters
      * @return AddAudiencesResponse
      */
@@ -1268,6 +1396,15 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
     public function applyOfflineConversions(ApplyOfflineConversionsRequest $parameters)
     {
         return $this->__soapCall("ApplyOfflineConversions", [$parameters]);
+    }
+
+    /**
+     * @param ApplyOfflineConversionAdjustmentsRequest $parameters
+     * @return ApplyOfflineConversionAdjustmentsResponse
+     */
+    public function applyOfflineConversionAdjustments(ApplyOfflineConversionAdjustmentsRequest $parameters)
+    {
+        return $this->__soapCall("ApplyOfflineConversionAdjustments", [$parameters]);
     }
 
     /**
@@ -1394,6 +1531,96 @@ class CampaignManagementService extends \PMG\BingAds\BingSoapClient
     public function searchCompanies(SearchCompaniesRequest $parameters)
     {
         return $this->__soapCall("SearchCompanies", [$parameters]);
+    }
+
+    /**
+     * @param GetFileImportUploadUrlRequest $parameters
+     * @return GetFileImportUploadUrlResponse
+     */
+    public function getFileImportUploadUrl(GetFileImportUploadUrlRequest $parameters)
+    {
+        return $this->__soapCall("GetFileImportUploadUrl", [$parameters]);
+    }
+
+    /**
+     * @param AddImportJobsRequest $parameters
+     * @return AddImportJobsResponse
+     */
+    public function addImportJobs(AddImportJobsRequest $parameters)
+    {
+        return $this->__soapCall("AddImportJobs", [$parameters]);
+    }
+
+    /**
+     * @param GetImportResultsRequest $parameters
+     * @return GetImportResultsResponse
+     */
+    public function getImportResults(GetImportResultsRequest $parameters)
+    {
+        return $this->__soapCall("GetImportResults", [$parameters]);
+    }
+
+    /**
+     * @param GetImportJobsByIdsRequest $parameters
+     * @return GetImportJobsByIdsResponse
+     */
+    public function getImportJobsByIds(GetImportJobsByIdsRequest $parameters)
+    {
+        return $this->__soapCall("GetImportJobsByIds", [$parameters]);
+    }
+
+    /**
+     * @param DeleteImportJobsRequest $parameters
+     * @return DeleteImportJobsResponse
+     */
+    public function deleteImportJobs(DeleteImportJobsRequest $parameters)
+    {
+        return $this->__soapCall("DeleteImportJobs", [$parameters]);
+    }
+
+    /**
+     * @param GetImportEntityIdsMappingRequest $parameters
+     * @return GetImportEntityIdsMappingResponse
+     */
+    public function getImportEntityIdsMapping(GetImportEntityIdsMappingRequest $parameters)
+    {
+        return $this->__soapCall("GetImportEntityIdsMapping", [$parameters]);
+    }
+
+    /**
+     * @param AddVideosRequest $parameters
+     * @return AddVideosResponse
+     */
+    public function addVideos(AddVideosRequest $parameters)
+    {
+        return $this->__soapCall("AddVideos", [$parameters]);
+    }
+
+    /**
+     * @param DeleteVideosRequest $parameters
+     * @return DeleteVideosResponse
+     */
+    public function deleteVideos(DeleteVideosRequest $parameters)
+    {
+        return $this->__soapCall("DeleteVideos", [$parameters]);
+    }
+
+    /**
+     * @param GetVideosByIdsRequest $parameters
+     * @return GetVideosByIdsResponse
+     */
+    public function getVideosByIds(GetVideosByIdsRequest $parameters)
+    {
+        return $this->__soapCall("GetVideosByIds", [$parameters]);
+    }
+
+    /**
+     * @param UpdateVideosRequest $parameters
+     * @return UpdateVideosResponse
+     */
+    public function updateVideos(UpdateVideosRequest $parameters)
+    {
+        return $this->__soapCall("UpdateVideos", [$parameters]);
     }
 
 }

@@ -65,6 +65,12 @@ class AccountPerformanceReportColumn
     const AllCostPerConversion = 'AllCostPerConversion';
     const AllReturnOnAdSpend = 'AllReturnOnAdSpend';
     const AllRevenuePerConversion = 'AllRevenuePerConversion';
+    const ViewThroughConversions = 'ViewThroughConversions';
+    const Goal = 'Goal';
+    const GoalType = 'GoalType';
+    const AudienceImpressionSharePercent = 'AudienceImpressionSharePercent';
+    const AudienceImpressionLostToRankPercent = 'AudienceImpressionLostToRankPercent';
+    const AudienceImpressionLostToBudgetPercent = 'AudienceImpressionLostToBudgetPercent';
 
 
 }

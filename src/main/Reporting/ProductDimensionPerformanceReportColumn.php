@@ -79,6 +79,12 @@ class ProductDimensionPerformanceReportColumn
     const AllReturnOnAdSpend = 'AllReturnOnAdSpend';
     const AllRevenuePerConversion = 'AllRevenuePerConversion';
     const CostPerConversion = 'CostPerConversion';
+    const ViewThroughConversions = 'ViewThroughConversions';
+    const Goal = 'Goal';
+    const GoalType = 'GoalType';
+    const ProductBought = 'ProductBought';
+    const QuantityBought = 'QuantityBought';
+    const AbsoluteTopImpressionRatePercent = 'AbsoluteTopImpressionRatePercent';
 
 
 }

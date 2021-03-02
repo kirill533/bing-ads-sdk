@@ -30,6 +30,11 @@ class AgeGenderAudienceReportColumn
     const BaseCampaignId = 'BaseCampaignId';
     const AllConversions = 'AllConversions';
     const AllRevenue = 'AllRevenue';
+    const ViewThroughConversions = 'ViewThroughConversions';
+    const Goal = 'Goal';
+    const GoalType = 'GoalType';
+    const AbsoluteTopImpressionRatePercent = 'AbsoluteTopImpressionRatePercent';
+    const TopImpressionRatePercent = 'TopImpressionRatePercent';
 
 
 }

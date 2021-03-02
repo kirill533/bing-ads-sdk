@@ -85,13 +85,17 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
       'ValidateAddressResponse' => 'PMG\\BingAds\\CustomerManagement\\ValidateAddressResponse',
       'GetLinkedAccountsAndCustomersInfoRequest' => 'PMG\\BingAds\\CustomerManagement\\GetLinkedAccountsAndCustomersInfoRequest',
       'GetLinkedAccountsAndCustomersInfoResponse' => 'PMG\\BingAds\\CustomerManagement\\GetLinkedAccountsAndCustomersInfoResponse',
+      'GetUserMFAStatusRequest' => 'PMG\\BingAds\\CustomerManagement\\GetUserMFAStatusRequest',
+      'GetUserMFAStatusResponse' => 'PMG\\BingAds\\CustomerManagement\\GetUserMFAStatusResponse',
       'ArrayOfAccountInfo' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfAccountInfo',
       'AccountInfo' => 'PMG\\BingAds\\CustomerManagement\\AccountInfo',
       'AdvertiserAccount' => 'PMG\\BingAds\\CustomerManagement\\AdvertiserAccount',
       'ArrayOfCustomerInfo' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfCustomerInfo',
       'CustomerInfo' => 'PMG\\BingAds\\CustomerManagement\\CustomerInfo',
       'Address' => 'PMG\\BingAds\\CustomerManagement\\Address',
+      'AccountTaxCertificate' => 'PMG\\BingAds\\CustomerManagement\\AccountTaxCertificate',
       'Customer' => 'PMG\\BingAds\\CustomerManagement\\Customer',
+      'UserInvitation' => 'PMG\\BingAds\\CustomerManagement\\UserInvitation',
       'User' => 'PMG\\BingAds\\CustomerManagement\\User',
       'ContactInfo' => 'PMG\\BingAds\\CustomerManagement\\ContactInfo',
       'PersonName' => 'PMG\\BingAds\\CustomerManagement\\PersonName',
@@ -113,7 +117,6 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
       'ArrayOfClientLink' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfClientLink',
       'ClientLink' => 'PMG\\BingAds\\CustomerManagement\\ClientLink',
       'ArrayOfAdvertiserAccount' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfAdvertiserAccount',
-      'UserInvitation' => 'PMG\\BingAds\\CustomerManagement\\UserInvitation',
       'ArrayOfUserInvitation' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfUserInvitation',
       'ArrayOfAddress' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfAddress',
       'ArrayOfAdApiError' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfAdApiError',
@@ -123,6 +126,8 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
       'ArrayOfArrayOfOperationError' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfArrayOfOperationError',
       'ArrayOfKeyValuePairOfstringstring' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfKeyValuePairOfstringstring',
       'KeyValuePairOfstringstring' => 'PMG\\BingAds\\CustomerManagement\\KeyValuePairOfstringstring',
+      'ArrayOfKeyValuePairOfstringbase64Binary' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfKeyValuePairOfstringbase64Binary',
+      'KeyValuePairOfstringbase64Binary' => 'PMG\\BingAds\\CustomerManagement\\KeyValuePairOfstringbase64Binary',
       'ArrayOflong' => 'PMG\\BingAds\\CustomerManagement\\ArrayOflong',
       'ArrayOfint' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfint',
       'ArrayOfstring' => 'PMG\\BingAds\\CustomerManagement\\ArrayOfstring',
@@ -466,6 +471,15 @@ class CustomerManagementService extends \PMG\BingAds\BingSoapClient
     public function getLinkedAccountsAndCustomersInfo(GetLinkedAccountsAndCustomersInfoRequest $parameters)
     {
         return $this->__soapCall("GetLinkedAccountsAndCustomersInfo", [$parameters]);
+    }
+
+    /**
+     * @param GetUserMFAStatusRequest $parameters
+     * @return GetUserMFAStatusResponse
+     */
+    public function getUserMFAStatus(GetUserMFAStatusRequest $parameters)
+    {
+        return $this->__soapCall("GetUserMFAStatus", [$parameters]);
     }
 
 }

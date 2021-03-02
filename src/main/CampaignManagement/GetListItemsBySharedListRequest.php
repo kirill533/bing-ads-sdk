@@ -11,11 +11,18 @@ class GetListItemsBySharedListRequest
     protected $SharedList = null;
 
     /**
-     * @param SharedList $SharedList
+     * @var EntityScope $SharedEntityScope
      */
-    public function __construct($SharedList = null)
+    protected $SharedEntityScope = null;
+
+    /**
+     * @param SharedList $SharedList
+     * @param EntityScope $SharedEntityScope
+     */
+    public function __construct($SharedList = null, $SharedEntityScope = null)
     {
     $this->SharedList = $SharedList;
+    $this->SharedEntityScope = $SharedEntityScope;
     }
 
     /**
@@ -33,6 +40,24 @@ class GetListItemsBySharedListRequest
     public function setSharedList($SharedList)
     {
         $this->SharedList = $SharedList;
+        return $this;
+    }
+
+    /**
+     * @return EntityScope
+     */
+    public function getSharedEntityScope()
+    {
+        return $this->SharedEntityScope;
+    }
+
+    /**
+     * @param EntityScope $SharedEntityScope
+     * @return \PMG\BingAds\CampaignManagement\GetListItemsBySharedListRequest
+     */
+    public function setSharedEntityScope($SharedEntityScope)
+    {
+        $this->SharedEntityScope = $SharedEntityScope;
         return $this;
     }
 

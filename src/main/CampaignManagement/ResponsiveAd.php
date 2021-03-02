@@ -36,6 +36,11 @@ class ResponsiveAd extends Ad
     protected $Images = null;
 
     /**
+     * @var ArrayOfstring $ImpressionTrackingUrls
+     */
+    protected $ImpressionTrackingUrls = null;
+
+    /**
      * @var AssetLink $LongHeadline
      */
     protected $LongHeadline = null;
@@ -161,6 +166,24 @@ class ResponsiveAd extends Ad
     public function setImages($Images)
     {
         $this->Images = $Images;
+        return $this;
+    }
+
+    /**
+     * @return ArrayOfstring
+     */
+    public function getImpressionTrackingUrls()
+    {
+        return $this->ImpressionTrackingUrls;
+    }
+
+    /**
+     * @param ArrayOfstring $ImpressionTrackingUrls
+     * @return \PMG\BingAds\CampaignManagement\ResponsiveAd
+     */
+    public function setImpressionTrackingUrls($ImpressionTrackingUrls)
+    {
+        $this->ImpressionTrackingUrls = $ImpressionTrackingUrls;
         return $this;
     }
 

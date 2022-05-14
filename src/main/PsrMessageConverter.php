@@ -2,9 +2,9 @@
 
 namespace PMG\BingAds;
 
+use GuzzleHttp\Psr7\Message;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
-use function GuzzleHttp\Psr7\{parse_request, parse_response};
 
 /**
  * The `SoapClient` can trace its own requests and just sends them
@@ -26,7 +26,7 @@ class PsrMessageConverter
         }
 
         try {
-            $req = parse_request(trim($headers)."\r\n\r\n".$this->scrubRequestHeaders(trim($body)));
+            $req = Message::parseRequest(trim($headers)."\r\n\r\n".$this->scrubRequestHeaders(trim($body)));
         } catch (\InvalidArgumentException $_) {
             return null;
         }
@@ -41,7 +41,7 @@ class PsrMessageConverter
         }
 
         try {
-            return parse_response(trim($headers)."\r\n\r\n".trim($body));
+            return Message::parseResponse(trim($headers)."\r\n\r\n".trim($body));
         } catch (\InvalidArgumentException $_) {
             return null;
         }

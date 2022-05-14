@@ -13,23 +13,17 @@
     "support": {
         "issues": "https://github.com/AgencyPMG/bing-ads-php/issues"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/AgencyPMG/wsdl2phpgenerator"
-        }
-    ],
     "require": {
         "php": "^7.4",
         "ext-soap": "*",
         "league/oauth2-client": "~2.0",
-        "guzzlehttp/psr7": "~1.0",
+        "guzzlehttp/psr7": "^1.0|^2.0",
         "psr/http-message": "~1.0",
         "psr/event-dispatcher": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "~7.2",
-        "pmg/wsdl2phpgenerator": "dev-master",
+        "wsdl2phpgenerator/wsdl2phpgenerator": "*",
         "symfony/filesystem": "~4.1",
         "psr/log": "~1.0"
     },
